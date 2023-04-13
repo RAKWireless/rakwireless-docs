@@ -7,7 +7,7 @@ rak_img: /assets/rakwireless/RAK-favicon-blue.png
 
 :::tip 📝 NOTE:
 This document is about RUI V2. The development of this framework is already discontinued. RUI V2 is only compatible to old modules RAK811, RAK4200, RAK4600, and RAK4270.
-		
+
 
 [RUI3](/RUI3/#overview) is the new version of RAKwireless Unified Interface and primarily supports RAK3172, RAK3172-SiP, and RAK4630. RUI3 is not compatible to old RAK modules.
 :::
@@ -20,7 +20,7 @@ In the field of LoRa communication, RAKwireless has launched RAK811, RAK4200, RA
 
 RAK's LoRaWAN node modules support not only out-of-the-box integration through the use of traditional AT commands, but also allows users to customize the firmware and access to the functionalities of the internal MCU. Users can adapt and extend the logic in the firmware to meet the requirements of their own solution.
 
-This document is aimed at developers who are familiar with the hardware of the RAK LoRaWAN module but want to extend its functionalities through customized versions of the firmware. In the following sections, the concept of the RAKwireless Unified Interface (RUI) API is introduced and explanations about how to extend the existing functionalities of the modules are provided. 
+This document is aimed at developers who are familiar with the hardware of the RAK LoRaWAN module but want to extend its functionalities through customized versions of the firmware. In the following sections, the concept of the RAKwireless Unified Interface (RUI) API is introduced and explanations about how to extend the existing functionalities of the modules are provided.
 
 Currently, the supported LoRaWAN modules are:
 *	RAK811 LoRaWAN module
@@ -30,8 +30,7 @@ Currently, the supported LoRaWAN modules are:
 *	Other complex modules that have the above modules inside, such as, RAK5205, RAK7204, etc.
 
 :::tip 📝 NOTE:
-The content of this document applies to modules with firmware version **3.x.x.14** and **above**. If it is lower than this version, please refer to the link below.
-[https://downloads.rakwireless.com/RUI/RUI_RAK_LoRaWAN_OpenMCU_Development_Guide-V4.0.pdf](https://downloads.rakwireless.com/RUI/RUI_RAK_LoRaWAN_OpenMCU_Development_Guide-V4.0.pdf)
+The content of this document applies to modules with firmware version **3.x.x.14** and **above**. If it is lower than this version, refer to this document: [RUI LoRaWAN OpenMCU Development Guide](https://downloads.rakwireless.com/RUI/RUI_RAK_LoRaWAN_OpenMCU_Development_Guide-V4.0.pdf).
 :::
 
 ## RUI Customized Development
@@ -42,9 +41,9 @@ The content of this document applies to modules with firmware version **3.x.x.14
 
 As shown in Figure 1, a firmware based on the RUI comprises two parts: the RUI SDK and the application.
 
-The SDK is the core of RUI. It was developed to support multiple types of the RAK's LoRaWAN modules. The complexity of the hardware is hidden and abstracted in this layer in order to expose a unified RUI API interface to simplify the development of the application layer. The application layer should contain the implementation of the business logic of the customized solution. 
+The SDK is the core of RUI. It was developed to support multiple types of the RAK's LoRaWAN modules. The complexity of the hardware is hidden and abstracted in this layer in order to expose a unified RUI API interface to simplify the development of the application layer. The application layer should contain the implementation of the business logic of the customized solution.
 
-For the purpose and usage of RUI API, please refer to the [RUI API Reference](/RUI/rui-api-reference/) Manual.
+For the purpose and usage of RUI API, refer to the [RUI API Reference](/RUI/rui-api-reference/) Manual.
 
 
 
@@ -54,9 +53,9 @@ For the purpose and usage of RUI API, please refer to the [RUI API Reference](/R
   caption="The RUI SDK"
 />
 
-The application is open-sourced. Users can take the existing application code provided by RAK as a reference and extend it according to their business requirements. 
+The application is open-sourced. Users can take the existing application code provided by RAK as a reference and extend it according to their business requirements.
 
-The RUI SDK layer is not open-sourced. These libraries are available through the RUI Online Compiler. Once users have finalized their application code, they can make use of the RUI Online Compiler to generate the final firmware. The output binary will contain the RUI SDK and the application code ready to be loaded into the target module. 
+The RUI SDK layer is not open-sourced. These libraries are available through the RUI Online Compiler. Once users have finalized their application code, they can make use of the RUI Online Compiler to generate the final firmware. The output binary will contain the RUI SDK and the application code ready to be loaded into the target module.
 
 ### API Usage
 
@@ -72,7 +71,7 @@ You can find the RAK’s repository in Github in this URL: [https://github.com/R
 
 As shown in Figure 2, the code repository is classified according to the model of the core module. Specific sample codes can be found inside of the directory of the corresponding core module.
 
-Taking the RAK811 module as an example. After entering into the "base on RAK811" directory, as shown in Figure 3, examples of application code based on the RAK811 module can be found. Some show how to control peripherals and sensors, others are the actual official firmware of products based on the RAK811 module. 
+Taking the RAK811 module as an example. After entering into the "base on RAK811" directory, as shown in Figure 3, examples of application code based on the RAK811 module can be found. Some show how to control peripherals and sensors, others are the actual official firmware of products based on the RAK811 module.
 
 <rk-img
   src="/assets/images/rui/rui-customized-development/github-repo-sample-code.png"
@@ -84,11 +83,11 @@ In Figure 3, the "RAK5205" directory contains the application source code corres
 
 The “RAK7204 " directory contains the application source code corresponding to the official firmware of RAK7204, an indoor environmental IoT product which including the sensor driver, AT command implementation, application logic processing, etc. In this implementation, quite a lot of RUI APIs are used. RAK7204 is based on the RAK811 module, and an environmental monitoring sensor (BME680) is added. Therefore, you can learn how to add an I2C sensor based on the RAK811 module through the product practice code, and quickly complete the development of customized firmware through the call of RUI API. For example, "app_7204.c ", see Figure 4, is the implementation of application logic processing. If you want to customize the application logic, you can focus on the code inside to understand the actual usage of RUI API.
 
-The “RAK811" is the application code corresponding to the official firmware of the RAK811 module. 
+The “RAK811" is the application code corresponding to the official firmware of the RAK811 module.
 
 ### Application Development
 
-These sample codes on RAK’s Github repository are actually complete applications. For example, the RAK7204 example code described earlier is shown in Figure 4. 
+These sample codes on RAK’s Github repository are actually complete applications. For example, the RAK7204 example code described earlier is shown in Figure 4.
 
 <rk-img
   src="/assets/images/rui/rui-customized-development/rak7204-sample-code.png"
@@ -96,19 +95,30 @@ These sample codes on RAK’s Github repository are actually complete applicatio
   caption="RAK’s Github, RAK7204 sample code"
 />
 
-For instance, Once the node received a LoRaWAN downlink data, it only prints the data out through the serial port without actually doing any action. Figure 5 shows a snippet of this callback from the "**app_7204.c**" file:
+For instance, Once the node received a LoRaWAN downlink data, it only prints the data out through the serial port without actually doing any action. Below is the snippet of the callback from the **app_7204.c** file:
 
-<rk-img
-  src="/assets/images/rui/rui-customized-development/rak7204-source-code.png"
-  width="60%"
-  caption="RAK’s Github, app_7204.c source code"
-/>
+```c
+void LoRaReceive_callback(RUI_RECEIVE_T* Receive_datapackage)
+{
+  char hex_str[3] = {0};
+  RUI_LOG_PRINTF("at+recv=%d,%d,%d,%d", Receive_datapackage->Port, Receive_datapackage->Rssi, Receive_datapackage->Snr, Receive_datapackage->BufferSize);
 
-Within this callback, customers can add their logic here and control a peripheral of RAK811 according to the content of the downlink data. 
+  if ((Receive_datapackage->Buffer != NULL) && Receive_datapackage->BufferSize) {
+    RUI_LOG_PRINTF(':');
+    for (int i = 0; i < Receive_datapackage->BufferSize; i++) {
+      sprintf(hex_str, "%02x", Receive_datapackage->Buffer[i]);
+      RUI_LOG_PRINTF('%s", hex_str);
+    }
+  }
+  RUI_LOG_PRINTF('\r\n");
+}
+```
+
+Within this callback, customers can add their logic here and control a peripheral of RAK811 according to the content of the downlink data.
 
 ### Compile Application
 
-After the customized an application code, you can use the RUI Online Compiler to generate the binaries. During the compilation (actually compilation and linking), the Online Compiler will automatically link the application with the libraries of RUI SDK together to output the final customized firmware. For specific usage, please refer to section 3, the online compilation platform.
+After the customized an application code, you can use the RUI Online Compiler to generate the binaries. During the compilation (actually compilation and linking), the Online Compiler will automatically link the application with the libraries of RUI SDK together to output the final customized firmware. For specific usage, refer to section 3, the online compilation platform.
 
 ### Download Firmware
 
@@ -124,7 +134,7 @@ Once the binary file is generated from the previous step, it has to be burned in
   caption="RAK Firmware Upgrade Tool."
 />
 
-As shown in Figure 6, the firmware update process is as simple as choosing the right serial port, select the binary file, and execute the update to the target module. This process should take less than one minute. 
+As shown in Figure 5, the firmware update process is as simple as choosing the right serial port, select the binary file, and execute the update to the target module. This process should take less than one minute.
 
 ## RUI Online Compiler Platform
 
@@ -134,7 +144,7 @@ This section describes how to compile customized firmware using the RUI Online C
 
 Go to [build.rakwireless.com](https://build.rakwireless.com/#/user/login) to access the beta version of the RUI Online Compiler.
 
-1. Open the login interface of the RUI Online Compiler platform as shown in Figure 7. For the first time, you need to register an account.
+1. Open the login interface of the RUI Online Compiler platform as shown in Figure 6. For the first time, you need to register an account.
 
 <rk-img
   src="/assets/images/rui/rui-customized-development/rui-online-login.png"
@@ -142,7 +152,7 @@ Go to [build.rakwireless.com](https://build.rakwireless.com/#/user/login) to acc
   caption="Login into RUI Online Compiler platform."
 />
 
-2. Click the “**Create an Account**” link in this interface to register an account. As shown in Figure 8, an **email** and a **password** will be required. Hit the “**Get verification code**” button to receive a code in your email and input in the form. Once that is done, click on the “**Create an Account**” button to finalize the operation. After activation, you can log into the platform.
+2. Click the “**Create an Account**” link in this interface to register an account. As shown in Figure 7, an **email** and a **password** will be required. Hit the “**Get verification code**” button to receive a code in your email and input in the form. Once that is done, click on the “**Create an Account**” button to finalize the operation. After activation, you can log into the platform.
 
 <rk-img
   src="/assets/images/rui/rui-customized-development/rui-online-signup.png"
@@ -152,7 +162,7 @@ Go to [build.rakwireless.com](https://build.rakwireless.com/#/user/login) to acc
 
 ### Code Compilation
 
-1. After logging in to the platform, as shown in Figure 9, you need to select first the model of the target module.
+1. After logging in to the platform, as shown in Figure 8, you need to select first the model of the target module.
 
 <rk-img
   src="/assets/images/rui/rui-customized-development/rui-online-platform.png"
@@ -160,7 +170,7 @@ Go to [build.rakwireless.com](https://build.rakwireless.com/#/user/login) to acc
   caption="Online Compiler platform."
 />
 
-2. The application code can be customized in any text editor. Once it is ready, they must be compressed into a ZIP format as shown in Figure 10. 
+2. The application code can be customized in any text editor. Once it is ready, they must be compressed into a ZIP format as shown in Figure 9.
 
 :::tip 📝 NOTE:
 Only the files are required, avoid creating a parent directory. Then the packaged application code is uploaded to the platform for compilation.
@@ -185,7 +195,7 @@ Only the files are required, avoid creating a parent directory. Then the package
 Besides c and h files, online compiler also supports prebuilt static libraries. It supports only three (3) kinds of static libraries:
 
 1. Compiled by [GNU toolchain](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads)
-2. Compiled by [ARM compiler 5](https://developer.arm.com/tools-and-software/embedded/arm-compiler/downloads/legacy-compilers) 
+2. Compiled by [ARM compiler 5](https://developer.arm.com/tools-and-software/embedded/arm-compiler/downloads/legacy-compilers)
 3. Compiled [ARM compiler 6](https://developer.arm.com/tools-and-software/embedded/arm-compiler/downloads/version-6)
 
 However, different products use different MCU, so instruction set architecture will be different:
@@ -269,10 +279,10 @@ For example:
 <br>
 
 3. **ARM compiler 6**
-  
+
   - **ARM Cortex M0**
     - *--target=arm-arm-none-eabi -mcpu=Cortex-M0 -fgnu*
-  
+
 For example:
 
 ```

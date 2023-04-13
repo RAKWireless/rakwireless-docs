@@ -33,7 +33,7 @@ Some configurations of RAK7268 will be needed as well as the creation of an appl
 4. By default, the gateway is preconfigured to work in built-in network server mode.
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/1.lora-network-settings.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/1.lora-network-settings.png"
   width="100%"
   caption="LoRa network settings"
 />
@@ -49,7 +49,7 @@ For more information about the built-in network server, you can check the [Netwo
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/2.application-tab.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/2.application-tab.png"
   width="100%"
   caption="Application tab"
 />
@@ -57,7 +57,7 @@ For more information about the built-in network server, you can check the [Netwo
 2. To add an application, type the name of the application in the **Please input application name** field and click the Add button. Then, you will see the page similar to **Figure 3**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/3.adding-application.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/3.adding-application.png"
   width="100%"
   caption="Adding application"
 />
@@ -68,7 +68,7 @@ For more information about the built-in network server, you can check the [Netwo
 - Optionally, you can enable the **Auto Add LoRa Device** feature via the switch. The feature enables the LoRa device to be automatically added to the application, after Application EUI and Key verification. When activated, an **Application EUI** field will pop up. Same as the **Application Key** field, you can generate a EUI via the **Generate EUI** button. Again, copy the **Application EUI** somewhere, as it will be used later when setting the WisBlock Kit.
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/4.application-eui-field.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/4.application-eui-field.png"
   width="80%"
   caption="Application EUI field"
 />
@@ -77,7 +77,7 @@ For more information about the built-in network server, you can check the [Netwo
 5. Head to the **Payload Formats** tab.
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/5.payload-format.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/5.payload-format.png"
   width="100%"
   caption="Payload format"
 />
@@ -85,7 +85,7 @@ For more information about the built-in network server, you can check the [Netwo
 6. From the **Payload Format** drop-down menu, choose the **CayenneLPP** format of the payload.
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/6.payload-format.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/6.payload-format.png"
   width="80%"
   caption="Payload format"
 />
@@ -105,7 +105,7 @@ Remember or write down the ID of the application, as it will be needed when crea
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/7.added-application.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/7.added-application.png"
   width="100%"
   caption="Added application"
 />
@@ -116,7 +116,7 @@ Remember or write down the ID of the application, as it will be needed when crea
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/8.add-end-device.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/8.add-end-device.png"
   width="100%"
   caption="Adding end device in the application"
 />
@@ -127,7 +127,7 @@ Copy the device EUI as it will be used later when setting the end device and add
 :::
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/9.configure-end-device.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/9.configure-end-device.png"
   width="100%"
   caption="Configuring end device"
 />
@@ -143,7 +143,7 @@ In this example, the device will be set in Class A, OTAA join mode.
 6. When everything is set, click **Save & Apply** to add the device to the application.
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/10.device-added.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/10.device-added.png"
   width="100%"
   caption="Successfully added device"
 />
@@ -153,7 +153,7 @@ In this example, the device will be set in Class A, OTAA join mode.
 1. Now, that the device is added, you can set up the MQTT integration. Head to the **LoRa Network** > **Global Integration** tab.
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/11.global-integration.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/11.global-integration.png"
   width="100%"
   caption="Global integration"
 />
@@ -176,7 +176,7 @@ Now you need to set up the end device to join the Built-in network server.
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/12.tera-term.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/12.tera-term.png"
   width="70%"
   caption="Tera Term program"
 />
@@ -195,7 +195,7 @@ Select **Serial**. From the **Port** drop-down menu, find the COM port of the Wi
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/13.serial-port.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/13.serial-port.png"
   width="70%"
   caption="Selecting Serial port"
 />
@@ -205,7 +205,7 @@ Select **Serial**. From the **Port** drop-down menu, find the COM port of the Wi
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/14.successfully-connected.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/14.successfully-connected.png"
   width="70%"
   caption="Successfully connected to the end device"
 />
@@ -214,7 +214,7 @@ Select **Serial**. From the **Port** drop-down menu, find the COM port of the Wi
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/15.setup-terminal.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/15.setup-terminal.png"
   width="70%"
   caption="Setup terminal"
 />
@@ -222,7 +222,7 @@ Select **Serial**. From the **Port** drop-down menu, find the COM port of the Wi
 5. Here, you will setup how Tera Term is to convert the carriage return (CR). In the **Terminal Setup**, find **Receive** in the **New-line** section.
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/16.receive-setting.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/16.receive-setting.png"
   width="70%"
   caption="Change receive setting"
 />
@@ -297,7 +297,7 @@ Class B is not supported.
 8. Example of WisBlock, set to **EU868**, **class A**, with send interval of **60 seconds** in OTAA join mode.
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/17.configuration-example.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/17.configuration-example.png"
   width="70%"
   caption="Configuration example"
 />
@@ -317,7 +317,7 @@ Where:
 - **W** is the number of attempts before the device quits retrying (between 0-255. Default is 0).
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/17.1.successfully-joined.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/17.1.successfully-joined.png"
   width="70%"
   caption="Successfully joined device"
 />
@@ -326,7 +326,7 @@ Where:
 10. Now, you can see that the device is active in the web UI of the gateway.
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/18.active-device.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/18.active-device.png"
   width="100%"
   caption="Active device"
 />
@@ -343,7 +343,7 @@ Now, that you have a WisBlock sending data in the built-in network server, you c
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/19.device-page.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/19.device-page.png"
   width="100%"
   caption="Device page"
 />
@@ -352,7 +352,7 @@ Now, that you have a WisBlock sending data in the built-in network server, you c
 3. Select **API** and click **Next**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/20.add-device.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/20.add-device.png"
   width="100%"
   caption="Add device"
 />
@@ -361,7 +361,7 @@ Now, that you have a WisBlock sending data in the built-in network server, you c
 4. As this is a new device and does not have a ready-to-use template, on the Step 2 tab, click **New Product** and give it a name in the **Product Name** field. Then click **Next**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/21.step2.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/21.step2.png"
   width="100%"
   caption="Add API device step 2"
 />
@@ -370,7 +370,7 @@ Now, that you have a WisBlock sending data in the built-in network server, you c
 5. On the Step 3 tab, leave the **Serial Number** field blank. Datacake will generate a random one for the device. Give a name for your WisBlock in the **Name** field. Click **Next** to continue.
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/22.step3.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/22.step3.png"
   width="100%"
   caption="Add API device step 3"
 />
@@ -378,7 +378,7 @@ Now, that you have a WisBlock sending data in the built-in network server, you c
 6. In the last step, choose the payment plan of your device fleet. For this example, we will use the **Free** plan. After the payment plan is selected, click **Add 1 device**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/23.payment-plan.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/23.payment-plan.png"
   width="100%"
   caption="Payment plan"
 />
@@ -386,7 +386,7 @@ Now, that you have a WisBlock sending data in the built-in network server, you c
 7.	Now you can see your device registered in the **Devices** tab.
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/24.registered-device.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/24.registered-device.png"
   width="100%"
   caption="Registered device"
 />
@@ -398,7 +398,7 @@ Now, that you have a WisBlock sending data in the built-in network server, you c
 1. From the Devices page, click on the name of your device and head to the **Configuration** menu.
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/25.configuration-menu.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/25.configuration-menu.png"
   width="100%"
   caption="Configuration menu"
 />
@@ -408,7 +408,7 @@ Now, that you have a WisBlock sending data in the built-in network server, you c
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/26.mqtt-configuration.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/26.mqtt-configuration.png"
   width="100%"
   caption="MQTT configuration"
 />
@@ -417,7 +417,7 @@ Now, that you have a WisBlock sending data in the built-in network server, you c
 4.	Then click **+Add new MQTT server**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/27.add-mqtt.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/27.add-mqtt.png"
   width="80%"
   caption="Add MQTT Broker"
 />
@@ -438,7 +438,7 @@ If you have set any **SSL/TLS** encryption and authentication for more secure co
 1. The specific thing here is that you will need the same number of decoders as the number of measurements you will visualize. For example, if you want to visualize temperature and barometer, you will need two decoders (one for each measurement). Click **+Add Uplink Decoder** to add your first decoder.
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/28.add-decoder.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/28.add-decoder.png"
   width="70%"
   caption="Add decoder"
 />
@@ -487,7 +487,7 @@ Change the **serial_number** with the serial number of your device that you have
 5. Now that you have a decoder for the temperature, head to the **Fields** section and click **+Add Field**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/29.add-field.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/29.add-field.png"
   width="100%"
   caption="Add field"
 />
@@ -495,7 +495,7 @@ Change the **serial_number** with the serial number of your device that you have
 6. Here, you will set the field settings.
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/30.field-settings.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/30.field-settings.png"
   width="80%"
   caption="Field settings"
 />
@@ -514,7 +514,7 @@ The **Identifier** field will automatically be filled based on the name.
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/31.temp-value.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/31.temp-value.png"
   width="100%"
   caption="Temperature value"
 />
@@ -524,7 +524,7 @@ This is an example of how to create a Temperature value and decoder for it. You 
 :::
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/32.uplink-decoders.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/32.uplink-decoders.png"
   width="100%"
   caption="Complete uplink decoders and fields for WisBlock Kit 4"
 />
@@ -536,10 +536,10 @@ When an uplink is received, refresh the page and the **Current Value** of the fi
 
 The Dashboard can be unique for each user. You can use your imagination to create a dashboard to correspond with your project’s needs.
 
-1. To create a dashboard, head to the Dashboard tab of the device in Datacake and click on the Edit mode switch (![edit-mode.png](/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/edit-mode.png))
+1. To create a dashboard, head to the Dashboard tab of the device in Datacake and click on the Edit mode switch (![edit-mode.png](/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/edit-mode.png))
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/33.edit-mode.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/33.edit-mode.png"
   width="100%"
   caption="Edit mode of the Dashboard"
 />
@@ -547,7 +547,7 @@ The Dashboard can be unique for each user. You can use your imagination to creat
 2. To add widgets that will help you visualize the data, click **+ Add Widget**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/34.datacake-widget.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/34.datacake-widget.png"
   width="80%"
   caption="Datacake widgets"
 />
@@ -556,7 +556,7 @@ The Dashboard can be unique for each user. You can use your imagination to creat
 4. In the **Title** field from the **Basic** tab, give a name to the widget. As this is an example with temperature, name it **Temperature**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/35.chart-widget.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/35.chart-widget.png"
   width="80%"
   caption="Chart widget"
 />
@@ -564,7 +564,7 @@ The Dashboard can be unique for each user. You can use your imagination to creat
 5. Now, you need to set the value of the temperature field to this widget. Click the **Data** tab and then **+Add Field**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/36.set-value.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/36.set-value.png"
   width="80%"
   caption="Set field value to chart widget"
 />
@@ -572,7 +572,7 @@ The Dashboard can be unique for each user. You can use your imagination to creat
 6. From the **Field** drop-down menu, choose **Temperature** then click **Save**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/37.add-field.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/37.add-field.png"
   width="80%"
   caption="Add field to widget"
 />
@@ -580,19 +580,19 @@ The Dashboard can be unique for each user. You can use your imagination to creat
 7. The chart will appear in the Dashboard page.
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/38.temp-chart.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/38.temp-chart.png"
   width="100%"
   caption="Temperature chart"
 />
 
 
-8. To add another widget, click again the **+Add Widget** button while the **Edit mode** switch is enabled (![add-widget.png](/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/add-widget.png)).
+8. To add another widget, click again the **+Add Widget** button while the **Edit mode** switch is enabled (![add-widget.png](/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/add-widget.png)).
 9. When you are done with adding widgets, don’t forget to switch off the edit mode, to save the edits.
 10. You can see an idea of a complete dashboard for the WisBlock Kit 4.
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/WisBlock-Kit-4-RAK-Built-in-Network-Server-and-Datacake/39.dashboard.png"
+  src="/assets/images/knowledge-hub/learn/wisblock-kit-4-rak-built-in-ns-and-datacake/39.dashboard.png"
   width="100%"
   caption="Example dashboard "
 />

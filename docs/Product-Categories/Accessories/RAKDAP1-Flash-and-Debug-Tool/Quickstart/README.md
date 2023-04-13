@@ -76,17 +76,18 @@ pip3 is required to install additional Python packages.
 Open the terminal on your Mac machine and type the following commands:
 
 ```
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+ruby -e $(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)
 ```
 
 ```
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 ```
 
-If you have OS X 10.12 (Sierra) or older use the following command instead:
-```
-export PATH="/usr/local/opt/python/libexec/bin:$PATH"
-```
+:::tip 📝 NOTE
+If your macOS is based on Apple M chips, you might need to use this path:
+
+`export PATH="/opt/homebrew/opt/python/libexec/bin:$PATH"` or `export PATH="/opt/homebrew/opt/python@3/libexec/bin:$PATH"`
+:::
 
 ```
 brew install python
@@ -252,6 +253,23 @@ To check installed packages, you can use the command:
 pyocd pack -s
 ```
 
+Before flashing a new firmware, you can also perform the erase command.
+
+:::warning ⚠️ WARNING
+
+Erasing the flash memory will remove all configured parameters in the modules like factory settings and LoRaWAN parameters (EUIs and keys).
+
+:::
+
+```
+pyocd erase -t \<PACKAGE\> --chip
+```
+
+For example, if you use RAK4630 module, you can use this command:
+
+```
+pyocd erase -t nrf52840 --chip
+```
 
 ## How to Flash an MCU
 
@@ -331,10 +349,12 @@ Here is an overview on how to connect the SWD interface. If you cannot find your
 <rk-img
   src="/assets/images/accessories/rakdap1-flash-and-debug-tool/RAKDAP1_New_1.png"
   width="50%"
-  caption="RAK4600 Evaluation Board Pinout"
+  caption="RAK4630 in WisBlock Base"
 />
 
-Open the command prompt and change the folder where you have saved the bootloader or firmware that you want to flash. The command syntax to flash the file is the following:
+Open the command prompt or terminal, then go to the directory where you saved the firmware file you want to flash using the `cd <path>` command.
+
+The pyocd command syntax to flash the file is the following:
 
 ```
 pyocd flash -t \<PACKAGE\> \<FILENAME\>
