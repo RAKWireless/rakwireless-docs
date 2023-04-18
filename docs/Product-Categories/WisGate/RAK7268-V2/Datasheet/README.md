@@ -313,6 +313,8 @@ The firmware sits on OpenWRT. There is a Web UI for easy configuration and manag
 
 ## Certification
 
+<rk-certifications :params="$page.frontmatter.certifications" />
+
 ### FCC Caution
 
 Any changes or modifications not expressly approved by the party responsible for compliance could void the user's authority to operate the equipment.

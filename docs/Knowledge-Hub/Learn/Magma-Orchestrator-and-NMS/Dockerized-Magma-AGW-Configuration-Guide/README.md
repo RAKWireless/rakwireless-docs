@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/learn/magma-box/overview/magma-box.png
+rak_img: /assets/images/knowledge-hub/learn/magma-box/magma-box.png
 rak_desc: This guide provides a step-by-step tutorial on Dockerized Magma AGW 1.8.0 Configuration.
 tags:
   - User Manual
@@ -46,7 +46,7 @@ After the installation of Magma AGW on Magma Box, customers can run their local 
 Orc8r is a cloud service that provides a simple and consistent way to configure and monitor the wireless network securely. The Orc8r can be hosted on a public/private cloud or local server/PC. The metrics acquired through the platform allows you to see the analytics and traffic flows of the wireless users through the Magma web UI.
 
 <p align="center">
-<img src="/assets/images/knowledge-hub/learn/magma-box/configuration-guide/1.magma-box-running-with-agw.png" width="100%">
+<img src="/assets/images/knowledge-hub/learn/magma-box/configuration-guide/1.magma-box-with-agw.png" width="100%">
 </p>
 
 When the user decides to connect the AGW to an installed Orc8r, the AGW running on Magma Box needs some configuration:
@@ -97,7 +97,7 @@ The Magma AGW running on Magma Box’s default PLMN is `00101`, and its binding 
 A 4G eNodeB or 5G gNodeB, at least, needs to set its PLMN and MME/AMF IP to connect to the EPC/5GC. This can be done by configuring the eNodeB/gNodeB via its local Web Manager or GUI. Take Baicells Neutrino 430 as an example, Chapter **3.5.6 Configure Quick Settings** in [Baicells Neutrino430 Installation Guide](https://img.baicells.com//Upload/20220416/FILE/802142f3-d816-4f94-9985-2b513ef8569a.pdf) describes how to configure the PLMN and MME IP.
 
 <p align="center">
-<img src="/assets/images/knowledge-hub/learn/magma-box/configuration-guide/2.quick-setting.png" width="80%">
+<img src="/assets/images/knowledge-hub/learn/magma-box/configuration-guide/2.quick-setting-config.png" width="80%">
 </p>
 
 ## Edge Computing Support
@@ -109,7 +109,7 @@ Magma Box allows customers to run their application on it, still the application
 :::
 
 <p align="center">
-<img src="/assets/images/knowledge-hub/learn/magma-box/configuration-guide/3.edge-computing.png" width="100%">
+<img src="/assets/images/knowledge-hub/learn/magma-box/configuration-guide/3.edge-computing-diagram.png" width="100%">
 </p>
 
 There are two key points of running an Edge Computing application:
@@ -200,14 +200,14 @@ Each AGW running on Magma Box have its own database, actually, it's sqlite3, to 
 <br>
 
 <p align="center">
-<img src="/assets/images/knowledge-hub/learn/magma-box/configuration-guide/4.subscriber-configuration.png" width="80%">
+<img src="/assets/images/knowledge-hub/learn/magma-box/configuration-guide/4.subscriber-config.png" width="80%">
 
 ## Adding New Subscriber
 
 This shows how to add a new subscriber to the Magma Box:
 
 <p align="center">
-<img src="/assets/images/knowledge-hub/learn/magma-box/configuration-guide/5.adding-new-subscriber.png" width="80%">
+<img src="/assets/images/knowledge-hub/learn/magma-box/configuration-guide/5.add-new-subscriber.png" width="80%">
 </p>
 
 For example:
@@ -229,7 +229,7 @@ IMSI001010000000022
 <br>
 
 <p align="center">
-<img src="/assets/images/knowledge-hub/learn/magma-box/configuration-guide/6.show-subscriber.png" width="80%">
+<img src="/assets/images/knowledge-hub/learn/magma-box/configuration-guide/6.new-subscriber.png" width="80%">
 </p>
 
 ## Updating Subscriber
@@ -237,7 +237,7 @@ IMSI001010000000022
 As seen above, after adding a new subscriber, there's no APN configured. The subscriber's data has to be updated to make it complete.
 
 <p align="center">
-<img src="/assets/images/knowledge-hub/learn/magma-box/configuration-guide/7.updating-subscriber.png" width="80%">
+<img src="/assets/images/knowledge-hub/learn/magma-box/configuration-guide/7.update-subscriber.png" width="80%">
 </p>
 
 Here takes APN `internet` and `ims` as an example:
@@ -250,7 +250,7 @@ internet,9,15,1,1,2000000000,2000000000,0,,,, IMSI001010000000022
 <br>
 
 <p align="center">
-<img src="/assets/images/knowledge-hub/learn/magma-box/configuration-guide/8.update-subscriber-data.png" width="80%">
+<img src="/assets/images/knowledge-hub/learn/magma-box/configuration-guide/8.subscriber-data.png" width="80%">
 </p>
 
 ## Deleting Subscriber
@@ -264,5 +264,5 @@ $SID
 <br>
 
 <p align="center">
-<img src="/assets/images/knowledge-hub/learn/magma-box/configuration-guide/9.deleting-subscriber.png" width="80%">
+<img src="/assets/images/knowledge-hub/learn/magma-box/configuration-guide/9.remove-subscriber.png" width="80%">
 </p>

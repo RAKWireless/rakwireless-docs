@@ -18,7 +18,7 @@ Bluetooth LE (BLE) devices are used in applications where power consumption is c
 The BLE protocol stack architecture consists of two parts: **Controller** and **Host**. Both are interfaced using **HCI** (Host to Controller Interface). The **HCI** layer provides communication between controller and host through standard interface types. Standard **HCI** commands and events are defined in the Bluetooth specifications.
 
 <rk-img
-  src="/assets/images/rui3/ble_examples/ble-stack.jpg"
+  src="/assets/images/rui3/ble_examples/ble-stack.png"
   width="70%"
   caption="BLE protocol stack architecture"
 />

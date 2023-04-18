@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/learn/magma-box/overview/magma-box.png
+rak_img: /assets/images/knowledge-hub/learn/magma-box/magma-box.png
 rak_desc: This guide provides a step-by-step tutorial on Dockerized Magma AGW 1.8.0 Configuration.
 tags:
   - User Manual
