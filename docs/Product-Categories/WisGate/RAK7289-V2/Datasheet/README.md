@@ -39,6 +39,11 @@ The RAK7289 V2 supports WisGateOS 2, which is based on the latest OpenWRT kernel
 
 Simply said, the RAK7289 is suited for any use case scenario, be it rapid deployment or customization with regard to UI and functionality.
 
+
+:::warning ⚠️ WARNING
+This product is designed to be powered by 12&nbsp;V<sub>DC</sub> via a dedicated power port. The use of solar chargers is prohibited, as they may provide overvoltage and cause damage to the device. We strongly advise against using such chargers with this product, and any damage resulting from their use will void the warranty.
+:::
+
 ### Product Features
 
 #### Hardware

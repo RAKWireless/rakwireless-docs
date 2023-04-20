@@ -37,7 +37,7 @@
       <slot name="bottom" />
     </q-scroll-area>
     <q-btn
-      v-if="buySection"
+      v-if="buySection && button_stat"
       class="q-my-md"
       label="Buy from Store"
       color="primary"
@@ -57,7 +57,6 @@ import SidebarLinks from '@theme/components/SidebarLinks.vue'
 import NavLinks from '@theme/components/NavLinks.vue'
 import RkToolbarDropdown from '@theme/components/RkToolbarDropdown.vue'
 import Buy from '../../includes/buy'
-
 export default {
   name: 'Sidebar',
   props: ['items'],
@@ -77,8 +76,36 @@ export default {
       backgroundColor: '#027be3',
       width: '9px',
       opacity: 0.2
+    },
+
+  button_stat: true
+
+}),
+
+  mounted(){
+    this.pageUrl = window.location.href;
+    if (this.pageUrl.includes("BuyfromStore")) {
+      this.button_stat = false;
     }
-  }),
+    // console.log(this.button_stat)
+  },
+
+  created() {
+    if (localStorage.getItem('button_stat')) {
+      this.button_stat = localStorage.getItem('button_stat') === 'true';
+    }
+  },
+
+  methods: {
+    setInitialScroll() {
+      const { path } = this.$page
+      const element = document.getElementById(path)
+      if (!element) return
+
+      this.$refs.scrollArea.setScrollPosition(element.offsetTop)
+    },
+  },
+
   computed: {
     buySection() {
       const match = this.$page.path.match(
@@ -90,15 +117,7 @@ export default {
       return Buy[match[0]]
     }
   },
-  methods: {
-    setInitialScroll() {
-      const { path } = this.$page
-      const element = document.getElementById(path)
-      if (!element) return
 
-      this.$refs.scrollArea.setScrollPosition(element.offsetTop)
-    }
-  },
   updated() {
     this.setInitialScroll()
   }
@@ -109,6 +128,7 @@ export default {
   //   }
   // }
 }
+
 </script>
 
 <style lang="stylus">
@@ -170,4 +190,5 @@ export default {
     }
   }
 }
+
 </style>

@@ -29,6 +29,10 @@ The RAK7289 V2 supports WisGateOS 2, which is based on the latest OpenWRT kernel
 
 Simply said, the RAK7289 V2 is suited for any use case scenario, be it rapid deployment or customization with regard to UI and functionality.
 
+:::warning ⚠️ WARNING
+This product is designed to be powered by 12&nbsp;V<sub>DC</sub> via a dedicated power port. The use of solar chargers is prohibited, as they may provide overvoltage and cause damage to the device. We strongly advise against using such chargers with this product, and any damage resulting from their use will void the warranty.
+:::
+
 ## Product Features
 
 ### Hardware
@@ -38,7 +42,7 @@ Simply said, the RAK7289 V2 is suited for any use case scenario, be it rapid dep
 - Dual LoRa Concentrators for up to 16 channels
 - Backhaul: Wi-Fi, Ethernet, LTE (optional, available with RAK7289C)
 - GPS
-- Supports DC 12&nbsp;V or solar power supply with electricity monitoring (Solar Kit optional) 
+- Supports DC 12&nbsp;V or solar power supply with electricity monitoring (Solar Kit optional)
 - Internal antenna for Wi-Fi, GPS, and LTE, external antenna for LoRa
 - Dying-gasp (optional)
 
@@ -52,5 +56,5 @@ Simply said, the RAK7289 V2 is suited for any use case scenario, be it rapid dep
 - MQTT v3.1 bridging with TLS encryption
 - Buffering of LoRa frames in Packet Forwarder mode in case of NS outage (no data loss)
 - Full-duplex (optional)
-- Listen Before Talk (optional) 
+- Listen Before Talk (optional)
 - Fine timestamping (optional)

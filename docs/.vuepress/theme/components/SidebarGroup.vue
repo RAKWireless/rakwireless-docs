@@ -12,24 +12,21 @@
     <RouterLink
       v-if="item.path"
       class="sidebar-heading clickable"
-      :class="{
-        open,
-        'active': isActive($route, item.path)
-      }"
+      :class="{ open, 'active': isActive($route, item.path) }"
       :to="item.path"
       @click.native="$emit('toggle')"
     >
-      <span class="float-left" style="width:90%">{{ item.title }}</span>
-      <span v-if="collapsable" class="arrow" :class="open ? 'down' : 'right'" />
+      <span class="title">{{ item.title }}</span>
+      <span v-if="collapsable" class="arrow" :class="open ? 'down' : 'right'"></span>
       <!-- Temporarily disabled -->
       <div v-if="item.download" class="float-right">
-        <q-btn icon="fas fa-download" size="xs" @click="onDownload(item.path)" round flat dense />
+        <q-btn icon="fas fa-download" size="0.5rem" @click="onDownload(item.path)" round flat dense />
       </div>
     </RouterLink>
 
     <p v-else class="sidebar-heading" :class="{ open }" @click="$emit('toggle')">
       <span>{{ item.title }}</span>
-      <span v-if="collapsable" class="arrow" :class="open ? 'down' : 'right'" />
+      <span v-if="collapsable" class="arrow" :class="open ? 'down' : 'right'"></span>
     </p>
 
     <DropdownTransition>

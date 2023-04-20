@@ -3272,5 +3272,203 @@ module.exports = {
 }
 ],
 
+// WisBlock Kits
 
+'/Product-Categories/WisBlock/Kit1-IoT-Starter/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/Kit1-IoT-Starter/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/Kit1-IoT-Starter/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+
+'/Product-Categories/WisBlock/Kit2-Biometric-Monitoring/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/Kit2-Biometric-Monitoring/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/Kit2-Biometric-Monitoring/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+
+'/Product-Categories/WisBlock/Kit3-Movement-Detection/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/Kit3-Movement-Detection/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/Kit3-Movement-Detection/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+
+'/Product-Categories/WisBlock/Kit4-Industrial/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/Kit4-Industrial/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/Kit4-Industrial/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+
+'/Product-Categories/WisBlock/Kit5-Home-and-Office-Security/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/Kit5-Home-and-Office-Security/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/Kit5-Home-and-Office-Security/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+
+'/Product-Categories/WisBlock/Kit6-Light-and-Color/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/Kit6-lightcolort/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/Kit6-Light-and-Color/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+
+'/Product-Categories/WisBlock/Kit7-Agriculture/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/Kit7-Agriculture/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/Kit7-Agriculture/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+
+'/Product-Categories/WisBlock/Kit8-Industrial-IO-and-Communication/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/Kit8-Industrial-IO-and-Communication/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/Kit8-Industrial-IO-and-Communication/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+
+'/Product-Categories/WisBlock/Kit9-Indoor-Tracker/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/Kit9-Indoor-Tracker/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/Kit9-Indoor-Tracker/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+
+'/Product-Categories/WisBlock/Kit10-Outdoor-Tracker/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/Kit10-Outdoor-Tracker/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/Kit10-Outdoor-Tracker/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+
+'/Product-Categories/WisBlock/Kit11-Environment-Sensor/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisBlock/Kit11-Environment-Sensor/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisBlock/Kit11-Environment-Sensor/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
 }

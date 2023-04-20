@@ -1143,6 +1143,64 @@ export default {
     store: 'https://store.rakwireless.com/products/lpwan-tracker-solution-kit?utm_source=RAK10700&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
+  // Kits
+
+  '/Product-Categories/WisBlock/Kit1-IoT-Starter/': {
+    label: 'WisBlock IoT Starter Kit',
+    img: '/assets/images/wisblock/kits/1_iot_starter_kit_1.png',
+    store: 'https://store.rakwireless.com/products/wisblock-iot-starter-kit?utm_source=IoTStarterKit&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/Kit2-Biometric-Monitoring/': {
+    label: 'WisBlock Biometric Monitoring Kit',
+    img: '/assets/images/wisblock/kits/2_biometric_kit_1.png',
+    store: 'https://store.rakwireless.com/products/wisblock-biometric-monitoring-kit?utm_source=BiometricKit&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/Kit3-Movement-Detection/': {
+    label: 'WisBlock Movement Detection Kit',
+    img: '/assets/images/wisblock/kits/3_movement_kit_1.png',
+    store: 'https://store.rakwireless.com/products/wisblock-movement-detection-kit?utm_source=MovementDetectionKit&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/Kit4-Industrial/': {
+    label: 'WisBlock Industrial 4.0 Kit',
+    img: '/assets/images/wisblock/kits/4_industrial_kit_1.png',
+    store: 'https://store.rakwireless.com/products/wisblock-industrial-4-0-kit?utm_source=IndustrialKit&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/Kit5-Home-and-Office-Security/': {
+    label: 'WisBlock Home and Office Security Kit',
+    img: '/assets/images/wisblock/kits/5_homeoffice_kit_1.png',
+    store: 'https://store.rakwireless.com/products/wisblock-home-office-security-kit?utm_source=HomeOfficeSecurity&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/Kit6-Light-and-Color/': {
+    label: 'WisBlock Light and Color Kit',
+    img: '/assets/images/wisblock/kits/6_lightcolor_kit_1.png',
+    store: 'https://store.rakwireless.com/products/wisblock-light-and-color-kit?utm_source=LightColorKit&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/Kit7-Agriculture/': {
+    label: 'WisBlock Agriculture Kit',
+    img: '/assets/images/wisblock/kits/7_agriculture_kit_1.png',
+    store: 'https://store.rakwireless.com/products/wisblock-agriculture-kit?utm_source=AgricultureKit&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/Kit8-Industrial-IO-and-Communication/': {
+    label: 'WisBlock Industrial IO and Communication Kit',
+    img: '/assets/images/wisblock/kits/8_industrial_comms_kit_1.png',
+    store: 'https://store.rakwireless.com/products/wisblock-industial-io-and-communication-kit?utm_source=IndustrialIOandCommunicationKit&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/Kit9-Indoor-Tracker/': {
+    label: 'WisBlock Indoor Location Tracker Kit',
+    img: '/assets/images/wisblock/kits/9_indoor_tracker_kit_1.png',
+    store: 'https://store.rakwireless.com/products/wisblock-indoor-location-tracker-kit.com/?utm_source=IndoorTrackerKit&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/Kit10-Outdoor-Tracker/': {
+    label: 'WisBlock Outdoor Location Tracker Kit',
+    img: '/assets/images/wisblock/kits/10_outdoor_tracker_kit_1.png',
+    store: 'https://store.rakwireless.com/products/wisblock-outdoor-location-tracker-kit?utm_source=OutdoorTrackerKit&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/Kit11-Environment-Sensor/': {
+    label: 'WisBlock Environment Sensor Kit',
+    img: '/assets/images/wisblock/kits/11_environment_kit_1.png',
+    store: 'https://store.rakwireless.com/products/wisblock-environment-sensor-kit?utm_source=EnvironmentKit&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+
 
   // Enclosures
 

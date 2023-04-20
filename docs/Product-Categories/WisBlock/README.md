@@ -204,8 +204,16 @@ WisBlock Solutions are ready-to-use products built with WisBlock modules. They c
 
 <rk-products :tags="['wisblock', 'wissol']" />
 
+## WisBlock Kits
+<rk-head img="/assets/rakwireless/product-categories/WisBlock-Kits.svg">
 
-## WisBlock Enclosure 
+WisBlock Kits are collections of WisBlock Modules designed to work on different applications like Industrial, Health monitoring, Movement detection, and others. It also features connectivity like LoRa/LoRaWAN, Cellular IoT, and BLE.
+
+</rk-head>
+
+<rk-products :tags="['wisblock', 'wiskit']" />
+
+## WisBlock Enclosure
 <rk-head img="/assets/rakwireless/product-categories/WisBlock-Enclosures.svg">
 
 WisBlock Unify Enclosure is designed specifically for WisBlock Modules. It supports different mounting accessory options both for indoor and outdoor IoT device deployments.
