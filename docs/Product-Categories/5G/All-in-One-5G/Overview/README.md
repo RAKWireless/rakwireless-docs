@@ -4,7 +4,7 @@ rak_desc: All-in-One 5G is an indoor device which integrates all the AGW, LTE an
 rak_grp: 5g
 rak_model: M320
 prev: ../../
-next: ../Installation-Guide/
+next: ../Quickstart/
 tags:
   - 5G
   - All-in-One-5G
@@ -15,6 +15,7 @@ tags:
 
 Thank you for choosing **All-in-One 5G** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
+* [Quick Start Guide](../Quickstart/)
 * [Installation Guide](../Installation-Guide/)
 * [Datasheet](../Datasheet/)
 * [Test Report](../Test-Report/)

@@ -1,5 +1,5 @@
 ---
-prev: ../Overview/
+prev: ../Quickstart/
 next: ../Datasheet/
 tags:
   - Installation Guide

@@ -8,6 +8,14 @@ module.exports = {
         sidebarDepth: 4
       },
       {
+        title: 'Quick Start Guide',
+        path: '/Product-Categories/5G/All-in-One-5G/Quickstart/',
+        collapsable: false,
+        nested: true,
+        download: true,
+        sidebarDepth: 4
+      },
+      {
         title: 'Installation Guide',
         path: '/Product-Categories/5G/All-in-One-5G/Installation-Guide/',
         collapsable: false,
