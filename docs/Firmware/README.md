@@ -38,7 +38,7 @@ The firmware page contains the device's latest firmware version categorized per 
 | **RAK7200** | V3.X.0.13 | -                                                                                    | [Download](https://downloads.rakwireless.com/LoRa/RAK7200-Tracker/Firmware/RAK7200_Latest_Firmware.zip)                                                                                                              |
 | **RAK7204** | V3.0.0.14 | -                                                                                    | [Download - (H)](https://downloads.rakwireless.com/LoRa/RAK7204/Firmware/RAK7204_H_Latest_Firmware.rar) <br> [Download - (L)](https://downloads.rakwireless.com/LoRa/RAK7204/Firmware/RAK7204_L_Latest_Firmware.rar) |
 | **RAK7201** | V1.0.2    | [Download](https://downloads.rakwireless.com/LoRa/RAK7201/Firmware/Release_Note.txt) | [Download](https://downloads.rakwireless.com/LoRa/RAK7201/Firmware/RAK7201_Latest_Firmware.zip)                                                                                                                      |
-| **RAK7431** | V1.1.0067 | -                                                                                    | [Download](https://downloads.rakwireless.com/LoRa/RAK7431/Firmware/RAK7431_Latest_Firmware.zip)                                                                                                                      |
+| **RAK7431** | V1.1.0069 | -                                                                                    | [Download](https://downloads.rakwireless.com/LoRa/RAK7431/Firmware/RAK7431_Latest_Firmware.zip)                                                                                                                      |
 
 
 

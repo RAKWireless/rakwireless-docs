@@ -166,7 +166,7 @@ RAK7431 allows for three installation methods: wall mounting, DIN rail installat
 
 | Model   | Firmware Version | Source                                                                                          |
 | ------- | ---------------- | ----------------------------------------------------------------------------------------------- |
-| RAK7431 | 1.1.0067         | [Download](https://downloads.rakwireless.com/LoRa/RAK7431/Firmware/RAK7431_Latest_Firmware.zip) |
+| RAK7431 | 1.1.0069         | [Download](https://downloads.rakwireless.com/LoRa/RAK7431/Firmware/RAK7431_Latest_Firmware.zip) |
 
 ## Certification
 
