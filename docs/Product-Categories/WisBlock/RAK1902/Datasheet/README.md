@@ -14,7 +14,7 @@ tags:
 ## Overview
 
 <rk-img
-  src="/assets/images/wisblock/rak1902/datasheet/RAK1902.svg"
+  src="/assets/images/wisblock/rak1902/datasheet/rak1902.png"
   width="50%"
   caption="RAK1902 WisBlock Sensor"
 />
@@ -42,7 +42,7 @@ The RAK1902 WisBlock Barometer Pressure Sensor Module, part of the RAK Wireless 
 **Figure 2** shows the mounting mechanism of the RAK1902 module on a [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. The RAK1902 module can be mounted on the slots: **A, B, C, D, E, & F**.
 
 <rk-img
-  src="/assets/images/wisblock/rak1902/datasheet/RAK19xx_mounting.png"
+  src="/assets/images/wisblock/rak1902/datasheet/rak19xx-mounting.png"
   width="50%"
   caption="RAK1902 WisBlock Sensor Mounting"
 />
@@ -61,8 +61,8 @@ The hardware specification is categorized into four parts. It shows the chipset 
 The RAK1902 WisBlock Barometer Pressure Sensor Module comprises a standard WisBlock connector. The WisBlock connector allows the RAK1902 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 3**.
 
 <rk-img
-  src="/assets/images/wisblock/rak1902/datasheet/RAK1902_pinout.svg"
-  width="60%"
+  src="/assets/images/wisblock/rak1902/datasheet/rak1902-pinout.png"
+  width="50%"
   caption="RAK1902 WisBlock Sensor connector pinout"
 />
 
@@ -115,7 +115,7 @@ If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse 
 **Figure 3** shows the dimensions and the mechanic drawing of the RAK1902 module.
 
 <rk-img
-  src="/assets/images/wisblock/rak1902/datasheet/RAK19xx_mechanic_drawing.png"
+  src="/assets/images/wisblock/rak1902/datasheet/rak19xx-mechanic-drawing.png"
   width="60%"
   caption="RAK1902 WisBlock Sensor Mechanic Drawing"
 />
@@ -123,7 +123,7 @@ If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse 
 ##### WisConnector PCB Layout
 
 <rk-img
-  src="/assets/images/wisblock/rak1902/datasheet/MxxS1003K6M.png"
+  src="/assets/images/wisblock/rak1902/datasheet/mxxs1003k6m.png"
   width="100%"
   caption="WisConnector PCB footprint and recommendations"
 />
@@ -132,8 +132,8 @@ If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse 
 **Figure 5** shows the schematic of the RAK1902 module.
 
 <rk-img
-  src="/assets/images/wisblock/rak1902/datasheet/RAK1902_schematics.png"
-  width="70%"
+  src="/assets/images/wisblock/rak1902/datasheet/rak1902-schematics.png"
+  width="80%"
   caption="RAK1902 WisBlock Sensor schematics"
 />
 

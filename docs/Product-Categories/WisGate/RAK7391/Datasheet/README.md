@@ -7,6 +7,9 @@ tags:
   - RAK7391
   - Datasheet
   - WisGate
+certifications:
+  - [FCC, https://downloads.rakwireless.com/LoRa/RAK7391/Certification/RAK7391_FCC_Certification.pdf]
+  - [ISED, https://downloads.rakwireless.com/LoRa/RAK7391/Certification/RAK7391_ISED_Certification.pdf]
 ---
 
 # RAK7391 WisGate Connect Datasheet
@@ -178,6 +181,7 @@ This section discusses the different interaces of RAK7391 WisGate Connect.
         - [mPCIe Interfaces](#mpcie-interfaces)
         - [M.2 Interface](#m2-interface)
         - [WisBlock IO Slots](#wisblock-io-slots)
+  - [Certification](#certification)
 
 
 ##### CM4 Module Connectors
@@ -369,3 +373,7 @@ RAK7391 has an M.2 B-key interface, which provides PCIe and USB3.0 signals. Curr
 ##### WisBlock IO Slots
 
 The WisBlock IO interface is a standard, open interface defined by RAK. It is compatible with many sensors and other modules, providing users with many different choices. The RAK7391 is compatible with the majority of WisBlock IO modules, allowing the user to use industrial protocols from the RAK7391 or connect sensors and actuators to it.
+
+## Certification
+
+<rk-certifications :params="$page.frontmatter.certifications" />

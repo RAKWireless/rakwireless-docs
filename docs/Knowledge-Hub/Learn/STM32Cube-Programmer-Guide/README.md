@@ -51,15 +51,7 @@ If you have no ST-LINK hardware tool, you can only use the STM32's built-in UART
   caption="RAK3172-SiP Boot Pin to VCC"
 />
 
-2. Open the STM32CubeProgrammer software.
-
-<rk-img
-  src="/assets/images/knowledge-hub/learn/stm32cubeprogrammer/stm32cubeprogrammer.png"
-  width="100%"
-  caption="STM32CubeProgrammer"
-/>
-
-3. Select **UART** on the tool selection.
+2. Open the STM32CubeProgrammer software, and select **UART** on the tool selection.
 
 <rk-img
   src="/assets/images/knowledge-hub/learn/stm32cubeprogrammer/tool_select.png"
@@ -67,7 +59,7 @@ If you have no ST-LINK hardware tool, you can only use the STM32's built-in UART
   caption="Select UART"
 />
 
-4. With the RAK module connected to the PC, select the correct assigned port (COM19 in this guide), then click **Connect**. If a wrong port is selected, the connection will fail.
+3. With the RAK module connected to the PC, select the correct assigned port (COM19 in this guide), then click **Connect**. If a wrong port is selected, the connection will fail.
 
 <rk-img
   src="/assets/images/knowledge-hub/learn/stm32cubeprogrammer/port_select.png"
@@ -75,7 +67,7 @@ If you have no ST-LINK hardware tool, you can only use the STM32's built-in UART
   caption="Select COM port"
 />
 
-5. You should see that the device and its memory are read by STM32CubeProgrammer.
+4. You should see that the device and its memory are read by STM32CubeProgrammer.
 
 :::tip 📝 NOTE
 - If the module is not detected by the STM32CubeProgrammer, double-check if the BOOT pin is configured properly.
@@ -89,7 +81,7 @@ If you have no ST-LINK hardware tool, you can only use the STM32's built-in UART
   caption="Successful Device Connection"
 />
 
-6. After a successful connection, you have to open the firmware file you need to upload. This is usually a `.hex` file that contains both the RAK Bootloader and the latest application code. You have to check the specific RAK module documentation for the correct hex file.
+5. After a successful connection, you have to open the firmware file you need to upload. This is usually a `.hex` file that contains both the RAK Bootloader and the latest application code. You have to check the specific RAK module documentation for the correct hex file.
 
 <rk-img
   src="/assets/images/knowledge-hub/learn/stm32cubeprogrammer/open_file_button.png"
@@ -103,7 +95,7 @@ If you have no ST-LINK hardware tool, you can only use the STM32's built-in UART
   caption="Selecting the correct .hex file"
 />
 
-7. Click **Download** to start uploading the firmware file. If all is successful, you should see 100%. At this point, you can now remove the connection of **BOOT pin** to VCC and restart the module to run the updated application code.
+6. Click **Download** to start uploading the firmware file. If all is successful, you should see 100%. At this point, you can now remove the connection of **BOOT pin** to VCC and restart the module to run the updated application code.
 
 <rk-img
   src="/assets/images/knowledge-hub/learn/stm32cubeprogrammer/download.png"
@@ -121,15 +113,7 @@ If you have no ST-LINK hardware tool, you can only use the STM32's built-in UART
   caption="STLINK V2 and SWD pinout label"
 />
 
-2. Open the STM32CubeProgrammer software.
-
-<rk-img
-  src="/assets/images/knowledge-hub/learn/stm32cubeprogrammer/stm32cubeprogrammer.png"
-  width="100%"
-  caption="STM32CubeProgrammer"
-/>
-
-3. Select **ST-LINK** on the tool selection.
+2. Open the STM32CubeProgrammer software, and select **ST-LINK** on the tool selection.
 
 <rk-img
   src="/assets/images/knowledge-hub/learn/stm32cubeprogrammer/stlink_selection.png"
@@ -137,7 +121,7 @@ If you have no ST-LINK hardware tool, you can only use the STM32's built-in UART
   caption="Select ST-LINK"
 />
 
-4. If the ST-LINK is not detected by the PC, you need to click refresh. Then you can now click **Connect** button.
+3. If the ST-LINK is not detected by the PC, you need to click refresh. Then you can now click **Connect** button.
 
 <rk-img
   src="/assets/images/knowledge-hub/learn/stm32cubeprogrammer/stlink_refresh.png"
@@ -145,7 +129,7 @@ If you have no ST-LINK hardware tool, you can only use the STM32's built-in UART
   caption="Refresh button to detect ST-LINK"
 />
 
-5. With a successful connection, you should see that the device and its memory content are read by STM32CubeProgrammer.
+4. With a successful connection, you should see that the device and its memory content are read by STM32CubeProgrammer.
 
 :::tip 📝 NOTE
 - If the module is not detected by the STM32CubeProgrammer, double check if the module has the right external power source.
@@ -158,7 +142,7 @@ If you have no ST-LINK hardware tool, you can only use the STM32's built-in UART
   caption="Successful device connection"
 />
 
-6. You also have the option to perform a full chip erase using ST-LINK if you need your RAK module to be as fresh as a newly purchased module.
+5. You also have the option to perform a full chip erase using ST-LINK if you need your RAK module to be as fresh as a newly purchased module.
 
 <rk-img
   src="/assets/images/knowledge-hub/learn/stm32cubeprogrammer/stlink_erasebutton.png"
@@ -172,7 +156,7 @@ If you have no ST-LINK hardware tool, you can only use the STM32's built-in UART
   caption="Full chip erase"
 />
 
-7. After successful mass erase, you have to open the firmware file you need to upload. This is usually a `.hex` file that contains both the RAK Bootloader and the latest application code. You have to check the specific RAK module documentation for the correct hex file.
+6. After successful mass erase, you have to open the firmware file you need to upload. This is usually a `.hex` file that contains both the RAK Bootloader and the latest application code. You have to check the specific RAK module documentation for the correct hex file.
 
 <rk-img
   src="/assets/images/knowledge-hub/learn/stm32cubeprogrammer/stlink_openfile.png"
@@ -186,7 +170,7 @@ If you have no ST-LINK hardware tool, you can only use the STM32's built-in UART
   caption="Selecting the correct .hex file"
 />
 
-8. Click **Download** to start uploading the firmware file.
+7. Click **Download** to start uploading the firmware file.
 
 <rk-img
   src="/assets/images/knowledge-hub/learn/stm32cubeprogrammer/stlink_downloadbutton.png"
@@ -194,7 +178,7 @@ If you have no ST-LINK hardware tool, you can only use the STM32's built-in UART
   caption="Upload the firmware using Download button"
 />
 
-9. If all is successful, you should see 100%. At this point, you can now remove the connection of the module to the ST-LINK and run your device normally.
+8. If all is successful, you should see 100%. At this point, you can now remove the connection of the module to the ST-LINK and run your device normally.
 
 <rk-img
   src="/assets/images/knowledge-hub/learn/stm32cubeprogrammer/stlink_success.png"

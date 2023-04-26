@@ -14,7 +14,7 @@ next: false
 ## Overview
 
 <rk-img
-  src="/assets/images/wisblock/rak1904/datasheet/RAK1904.svg"
+  src="/assets/images/wisblock/rak1904/datasheet/rak1904-front-back.png"
   width="50%"
   caption="RAK1904 WisBlock Sensor Mounting"
 />
@@ -62,8 +62,8 @@ The hardware specification is categorized into six parts. It shows the chipset o
 The RAK1904 WisBlock 3-axis Acceleration Sensor Module comprises a standard WisBlock connector. The WisBlock connector allows the RAK1904 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 3**.
 
 <rk-img
-  src="/assets/images/wisblock/rak1904/datasheet/RAK1904_pinout.svg"
-  width="60%"
+  src="/assets/images/wisblock/rak1904/datasheet/rak1904-pinout-diagram.png"
+  width="50%"
   caption="RAK1904 WisBlock Sensor Pinout Diagram"
 />
 

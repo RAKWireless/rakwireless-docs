@@ -14,8 +14,8 @@ next: false
 ## Overview
 
 <rk-img
-  src="/assets/images/wisblock/rak1910/datasheet/RAK1910.svg"
-  width="50%"
+  src="/assets/images/wisblock/rak1910/datasheet/rak1910-front-back.png"
+  width="35%"
   caption="RAK1910 WisBlock GNSS Location Module"
 />
 
