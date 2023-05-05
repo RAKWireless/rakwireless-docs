@@ -5,7 +5,12 @@ module.exports = {
       collapsable: false,
       sidebarDepth: 4,
       children: [
-        ['/RUI/', 'Getting Started']
+        {
+          title: 'Getting Started',
+          path: '/RUI/',
+          nested: true,
+          download: true
+        }
       ]
     },
     {
@@ -13,7 +18,12 @@ module.exports = {
       collapsable: false,
       sidebarDepth: 4,
       children: [
-        ['/RUI/rui-api-reference/', 'Getting Started']
+        {
+          title: 'Getting Started',
+          path: '/RUI/rui-api-reference/',
+          nested: true,
+          download: true
+        }
       ]
     },
     {
@@ -21,7 +31,12 @@ module.exports = {
       collapsable: false,
       sidebarDepth: 4,
       children: [
-        ['/RUI/rui-cellular-general-format/', 'RUI Cellular General Format']
+        {
+          title: 'RUI Cellular General Format',
+          path: '/RUI/rui-cellular-general-format/',
+          nested: true,
+          download: true
+        }
       ]
     },
     {
@@ -29,7 +44,12 @@ module.exports = {
       collapsable: false,
       sidebarDepth: 4,
       children: [
-        ['/RUI/rui-lora-general-format/', 'RUI LoRa General Format']
+        {
+          title: 'RUI LoRa General Format',
+          path: '/RUI/rui-lora-general-format/',
+          nested: true,
+          download: true
+        }
       ]
     },
     {
@@ -37,7 +57,12 @@ module.exports = {
       collapsable: false,
       sidebarDepth: 4,
       children: [
-        ['/RUI/rui-ble-general-format/', 'RUI BLE General Format']
+        {
+          title: 'RUI BLE General Format',
+          path: '/RUI/rui-ble-general-format/',
+          nested: true,
+          download: true
+        }
       ]
     },
     {
@@ -45,7 +70,12 @@ module.exports = {
       collapsable: false,
       sidebarDepth: 4,
       children: [
-        ['/RUI/rui-sensor-general-format/', 'RUI Sensor General Format']
+        {
+          title: 'RUI Sensor General Format',
+          path: '/RUI/rui-sensor-general-format/',
+          nested: true,
+          download: true
+        }
       ]
     },
     {
@@ -54,7 +84,12 @@ module.exports = {
       collapsable: false,
       sidebarDepth: 4,
       children: [
-        ['/RUI/rui-interface-general-format/', 'RUI Interface General Format']
+        {
+          title: 'RUI Interface General Format',
+          path: '/RUI/rui-interface-general-format/',
+          nested: true,
+          download: true
+        }
       ]
     },
     {
@@ -62,7 +97,12 @@ module.exports = {
       collapsable: false,
       sidebarDepth: 4,
       children: [
-        ['/RUI/rui-device-general-format/', 'RUI Device General Format']
+        {
+          title: 'RUI Device General Format',
+          path: '/RUI/rui-device-general-format/',
+          nested: true,
+          download: true
+        }
       ]
     },
   ],

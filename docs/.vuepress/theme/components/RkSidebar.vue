@@ -37,7 +37,8 @@
       <slot name="bottom" />
     </q-scroll-area>
     <q-btn
-      v-if="buySection && button_stat"
+      v-show="showBuyButton"
+      v-if="buySection"
       class="q-my-md"
       label="Buy from Store"
       color="primary"
@@ -78,23 +79,23 @@ export default {
       opacity: 0.2
     },
 
-  button_stat: true
+  // button_stat: true
 
 }),
 
-  mounted(){
-    this.pageUrl = window.location.href;
-    if (this.pageUrl.includes("BuyfromStore")) {
-      this.button_stat = false;
-    }
-    // console.log(this.button_stat)
-  },
+  // mounted(){
+  //   this.pageUrl = window.location.href;
+  //   if (this.pageUrl.includes("BuyfromStore")) {
+  //     this.button_stat = false;
+  //   }
+  //   // console.log(this.button_stat)
+  // },
 
-  created() {
-    if (localStorage.getItem('button_stat')) {
-      this.button_stat = localStorage.getItem('button_stat') === 'true';
-    }
-  },
+  // created() {
+  //   if (localStorage.getItem('button_stat')) {
+  //     this.button_stat = localStorage.getItem('button_stat') === 'true';
+  //   }
+  // },
 
   methods: {
     setInitialScroll() {
@@ -115,12 +116,19 @@ export default {
         return null
 
       return Buy[match[0]]
+    },
+    showBuyButton(){
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const buyButton = urlParams.get('buyBtn')
+
+      return buyButton == 'false' ? false:true;
     }
   },
 
   updated() {
     this.setInitialScroll()
-  }
+  },
   // not applicable for ssr
   // watch: {
   //   $page: function (val) {

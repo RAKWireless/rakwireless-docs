@@ -27,9 +27,9 @@ export default {
   },
   methods: {
     canonical() {
-      const buyFromStore = vars.disableBuyButtonFeature ? 'BuyfromStore' : '';
-      const pageURL = `${vars.baseURL}${this.$page.path}?${buyFromStore}`;
-      return this.$page.path.includes('/Introduction/') ? vars.canonical.replace('<pageURL>', 'https://docs.rakwireless.com/') : vars.canonical.replace('<pageURL>', pageURL);
+      // const buyFromStore = vars.disableBuyButtonFeature ? 'BuyfromStore' : '';
+      // const pageURL = `${vars.baseURL}${this.$page.path}?${buyFromStore}`;
+      return this.$page.path.includes('/Introduction/') ? vars.canonical.replace('<pageURL>', 'https://docs.rakwireless.com/') : vars.canonical.replace('<pageURL>', vars.baseURL + this.$page.path)
     },
     pageOG() {
       const title = this.$page.title

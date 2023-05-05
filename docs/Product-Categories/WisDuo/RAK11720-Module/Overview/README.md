@@ -16,7 +16,7 @@ Thank you for choosing **RAK11720 WisDuo LPWAN Module** in your awesome IoT proj
 * [Quick Start Guide](../Quickstart/)
 * [AT Command Manual](../AT-Command-Manual/)
 * [Datasheet](../Datasheet/)
-* [RAK11720 3D Model](https://downloads.rakwireless.com/3D_File/WisDuo/3D_RAK11720.stp)
+* [RAK11720 3D Model](https://downloads.rakwireless.com/3D_File/WisDuo/3D_RAK11720.step)
 
 ## Product Description
 

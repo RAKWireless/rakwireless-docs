@@ -50,7 +50,7 @@ The Bluetooth LE specification divides the band into 40 channels of 1&nbsp;MHz s
 
 <rk-img
   src="/assets/images/rui3/ble_examples/ble-channels.png"
-  width="60%"
+  width="80%"
   caption="BLE channels"
 />
 
@@ -67,7 +67,7 @@ This layer sits above the Physical Layer. It is responsible for advertising, sca
 
 <rk-img
   src="/assets/images/rui3/ble_examples/ble-ll-states.png"
-  width="50%"
+  width="55%"
   caption="BLE link layer states"
 />
 
