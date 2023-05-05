@@ -43,7 +43,7 @@ You can see the current version of Arduino IDE is V1.8.13, and there are several
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/installation-of-board-support-package-in-arduino-ide/1.download-arduino.png"
+  src="/assets/images/knowledge-hub/learn/bsp-installation-in-arduino-ide/1.download-arduino.png"
   width="100%"
   caption="Arduino IDE latest version"
 />
@@ -56,7 +56,7 @@ Now let's install the Arduino IDE, which you just downloaded, on your Windows PC
 1. Click **I Agree** to proceed.
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/installation-of-board-support-package-in-arduino-ide/2.agreement-license.png"
+  src="/assets/images/knowledge-hub/learn/bsp-installation-in-arduino-ide/2.agreement-license.png"
   width="45%"
   caption="Arduino Setup Licence Agreement"
 />
@@ -64,7 +64,7 @@ Now let's install the Arduino IDE, which you just downloaded, on your Windows PC
 2. Click **Next**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/installation-of-board-support-package-in-arduino-ide/3.installation-options.png"
+  src="/assets/images/knowledge-hub/learn/bsp-installation-in-arduino-ide/3.installation-options.png"
   width="45%"
   caption="Arduino Setup Installation Options"
 />
@@ -72,13 +72,13 @@ Now let's install the Arduino IDE, which you just downloaded, on your Windows PC
 3. Click **Install**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/installation-of-board-support-package-in-arduino-ide/4.installation-folder.png"
+  src="/assets/images/knowledge-hub/learn/bsp-installation-in-arduino-ide/4.installation-folder.png"
   width="45%"
   caption="Installing Arduino IDE"
 />
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/installation-of-board-support-package-in-arduino-ide/5.installing.png"
+  src="/assets/images/knowledge-hub/learn/bsp-installation-in-arduino-ide/5.installing.png"
   width="45%"
   caption="Ongoing Installation"
 />
@@ -87,7 +87,7 @@ Now let's install the Arduino IDE, which you just downloaded, on your Windows PC
 After 100% progress, the Arduino IDE has been installed successfully.
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/installation-of-board-support-package-in-arduino-ide/6.installation-success.png"
+  src="/assets/images/knowledge-hub/learn/bsp-installation-in-arduino-ide/6.installation-success.png"
   width="45%"
   caption="Successful Installation"
 />
@@ -114,7 +114,7 @@ In Mac OS X, the same with Linux, there is no install process. It is just a proc
 ### Open Arduino IDE
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/installation-of-board-support-package-in-arduino-ide/7.arduino-ide.png"
+  src="/assets/images/knowledge-hub/learn/bsp-installation-in-arduino-ide/7.arduino-ide.png"
   width="75%"
   caption="Arduino IDE"
 />
@@ -136,7 +136,7 @@ The operating buttons has five operations.
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/installation-of-board-support-package-in-arduino-ide/8.operating-buttons.png"
+  src="/assets/images/knowledge-hub/learn/bsp-installation-in-arduino-ide/8.operating-buttons.png"
   width="30%"
   caption="Operating Buttons"
 />
@@ -162,7 +162,7 @@ Once Arduino IDE has been installed successfully, and you've understood the main
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/installation-of-board-support-package-in-arduino-ide/9.preferences.png"
+  src="/assets/images/knowledge-hub/learn/bsp-installation-in-arduino-ide/9.preferences.png"
   width="75%"
   caption="Preferences"
 />
@@ -175,7 +175,7 @@ You need to enable verbose output, as well, by clicking the checkboxes `compilat
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/installation-of-board-support-package-in-arduino-ide/add_bsp_icon.png"
+  src="/assets/images/knowledge-hub/learn/bsp-installation-in-arduino-ide/add_bsp_icon.png"
   width="75%"
   caption="Modifying Additional Board Manager URLs"
 />
@@ -184,7 +184,7 @@ You need to enable verbose output, as well, by clicking the checkboxes `compilat
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/installation-of-board-support-package-in-arduino-ide/add-bsp-url.png"
+  src="/assets/images/knowledge-hub/learn/bsp-installation-in-arduino-ide/add-bsp-url.png"
   width="75%"
   caption="Adding RAKwireless WisBlock Core BSP"
 />
@@ -203,7 +203,7 @@ If you are using Linux, you need to install adafruit-nrfutil via pip.
 6. Open the Boards Manager from Tools Menu.
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/installation-of-board-support-package-in-arduino-ide/11.boards-manager.png"
+  src="/assets/images/knowledge-hub/learn/bsp-installation-in-arduino-ide/11.boards-manager.png"
   width="75%"
   caption="Opening Boards Manager"
 />
@@ -211,7 +211,7 @@ If you are using Linux, you need to install adafruit-nrfutil via pip.
 7. Write **RAK** in the search bar, as shown in Figure 13. This will show the available RAKwireless WisBlock Core boards that you can add in your Arduino Board list. Choose the WisBlock Core that you have, select the updated version from the dropdown list, and click **Install**.
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/installation-of-board-support-package-in-arduino-ide/wisblock_core.png"
+  src="/assets/images/knowledge-hub/learn/bsp-installation-in-arduino-ide/wisblock_core.png"
   width="75%"
   caption="Installing WisBlock Core Boards"
 />
@@ -221,7 +221,7 @@ If you are using Linux, you need to install adafruit-nrfutil via pip.
 
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/installation-of-board-support-package-in-arduino-ide/13.rakwireless-nrf-modules.png"
+  src="/assets/images/knowledge-hub/learn/bsp-installation-in-arduino-ide/13.rakwireless-nrf-modules.png"
   width="75%"
   caption="Selecting RAKwireless WisBlock Core"
 />
@@ -238,7 +238,7 @@ Aside from that, each WisBlock Modules has its own quick start guide to help you
 :::
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/installation-of-board-support-package-in-arduino-ide/14.wisblock-modules.png"
+  src="/assets/images/knowledge-hub/learn/bsp-installation-in-arduino-ide/14.wisblock-modules.png"
   width="100%"
   caption="Selecting WisBlock Modules Examples"
 />
@@ -248,7 +248,7 @@ Aside from that, each WisBlock Modules has its own quick start guide to help you
 Let's take one of the examples and compile it.
 Open the LoRaWAN-OTAA example from the File -> Example menu.
 <rk-img
-  src="/assets/images/knowledge-hub/learn/installation-of-board-support-package-in-arduino-ide/15.select-lora-otaa-example.png"
+  src="/assets/images/knowledge-hub/learn/bsp-installation-in-arduino-ide/15.select-lora-otaa-example.png"
   width="75%"
   caption="Selecting LoRa OTAA example"
 />
@@ -258,7 +258,7 @@ The example will open in a new window. You can close the old window.
 Next we need to install the LPWAN library. In the code in line 20 you can see the link for the required library
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/installation-of-board-support-package-in-arduino-ide/16.install-library-step1.png"
+  src="/assets/images/knowledge-hub/learn/bsp-installation-in-arduino-ide/16.install-library-step1.png"
   width="75%"
   caption="Install LPWAN library step 1"
 />
@@ -266,7 +266,7 @@ Next we need to install the LPWAN library. In the code in line 20 you can see th
 Double click on the link to open the library manager. It will show you the required library.
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/installation-of-board-support-package-in-arduino-ide/17.install-library-step2.png"
+  src="/assets/images/knowledge-hub/learn/bsp-installation-in-arduino-ide/17.install-library-step2.png"
   width="75%"
   caption="Install LPWAN library step 1"
 />
@@ -278,7 +278,7 @@ Now we are ready to compile the example code.
 Click on the **Verify/Compile** icon in the menu.
 
 <rk-img
-  src="/assets/images/knowledge-hub/learn/installation-of-board-support-package-in-arduino-ide/18.compile-example.png"
+  src="/assets/images/knowledge-hub/learn/bsp-installation-in-arduino-ide/18.compile-example.png"
   width="75%"
   caption="Compile example"
 />

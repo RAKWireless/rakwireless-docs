@@ -362,6 +362,23 @@ module.exports = {
     sidebarDepth: 4
   }
   ],
+  '/Product-Categories/WisBlock/RAKBox-UO150x100x50/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisBlock/RAKBox-UO150x100x50/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisBlock/RAKBox-UO150x100x50/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  }
+  ],
   '/Product-Categories/WisBlock/RAKBox-UO180x130x60/': [{
     title: 'Product Overview',
     path: '/Product-Categories/WisBlock/RAKBox-UO180x130x60/Overview/',

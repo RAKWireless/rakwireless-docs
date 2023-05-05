@@ -736,7 +736,7 @@ export default {
     store: 'https://store.rakwireless.com/products/rak12023-rak12035-wisblock-soil-moisture-sensor?utm_source=RAK12035&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisBlock/RAK12037/': {
-    label: 'RAK12047 WisBlock CO2 Sensor Module',
+    label: 'RAK12037 WisBlock CO2 Sensor Module',
     img: '/assets/images/wisblock/rak12037/RAK12037.png',
     store: 'https://store.rakwireless.com/products/co2-sensor-sensirion-scd30-rak12037?utm_source=RAK12037&utm_medium=Document&utm_campaign=BuyFromStore'
   },
