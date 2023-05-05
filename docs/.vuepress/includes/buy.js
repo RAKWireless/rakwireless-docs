@@ -806,7 +806,7 @@ export default {
     store: 'https://store.rakwireless.com/products/rak1903-opt3001dnpr-ambient-light-sensor?utm_source=RAK1903&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisBlock/RAK1904/': {
-    label: 'RAK1904 WisBlock 3-axis Acceleration Sensor',
+    label: 'RAK1904 WisBlock 3-Axis Acceleration Sensor',
     img: '/assets/images/wisblock/rak1904/RAK1904.png',
     store: 'https://store.rakwireless.com/products/rak1904-lis3dh-3-axis-acceleration-sensor?utm_source=RAK1904&utm_medium=Document&utm_campaign=BuyFromStore'
   },

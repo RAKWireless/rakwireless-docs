@@ -236,9 +236,9 @@ The hardware specification covers the interfacing of the RAK7289 V2 and its corr
 The firmware sits on OpenWRT. There is a Web UI for easy configuration and management of the device, as well as the possibility for SSH2 management. The WisGateOS V2 supports the feature to install extensions (WireGuard, Custom Logo, Breathing Light, and more to come). TThe extensions are available in [RAK download center](https://downloads.rakwireless.com/LoRa/WisGateOS2/WisGateOS2-Extensions/).
 
 
-|                 Model                 | Firmware Version |                             Source                             |
-| :-----------------------------------: | :--------------: | :------------------------------------------------------------: |
-| RAK7289V2/RAK7289CV2 WisGate Edge Pro |   WisGateOS 2    | [Download](https://downloads.rakwireless.com/LoRa/WisGateOS2/) |
+|                 Model                 | Firmware Version |                                            Source                                            |
+| :-----------------------------------: | :--------------: | :------------------------------------------------------------------------------------------: |
+| RAK7289V2/RAK7289CV2 WisGate Edge Pro |   WisGateOS 2    | [Download](https://downloads.rakwireless.com/LoRa/WisGateOS2/WisGateOS2_Latest_Firmware.zip) |
 
 ### Software
 

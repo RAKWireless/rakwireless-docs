@@ -12,6 +12,7 @@ certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/RAK7268V2H/Certification/RAK7268CV2H_RAK7268V2H_CE_Certification.pdf]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK7268V2H/Certification/RAK7268CV2H_RAK7268V2H_FCC_Certification.pdf]
   - [ISED, https://downloads.rakwireless.com/LoRa/RAK7268V2H/Certification/RAK7268CV2H_RAK7268V2H_ISED_Certification.pdf]
+  - [KCC, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268V2_RAK7268CV2_KC_Certification.pdf]
   - [RCM, https://downloads.rakwireless.com/LoRa/RAK7268V2H/Certification/RAK7268CV2H_RAK7268V2H_RCM_Certification.pdf]
   - [REACH, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268C_RAK7268CV2_RAK7268_RAK7268V2_REACH_Report.pdf]
   - [RoHS, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268C_RAK7268CV2_RAK7268_RAK7268V2_RoHS_Report.pdf]
@@ -285,9 +286,9 @@ The casing is IP30 rated and is made of plastic. There are holes for a mounting 
 
 The firmware sits on OpenWRT. There is a Web UI for easy configuration and management of the device, as well as the possibility for SSH2 management. The WisGateOS V2 supports the feature to install extensions (WireGuard, Custom Logo, Breathing Light, and more to come). The extensions are available in [RAK download center](https://downloads.rakwireless.com/LoRa/WisGateOS2/WisGateOS2-Extensions/).
 
-|             Model              | Firmware Version |                             Source                             |
-| :----------------------------: | :--------------: | :------------------------------------------------------------: |
-| RAK7268V2 WisGate Edge Lite 2  |   WisGateOS 2    | [Download](https://downloads.rakwireless.com/LoRa/WisGateOS2/) |
+|             Model             | Firmware Version |                                            Source                                            |
+| :---------------------------: | :--------------: | :------------------------------------------------------------------------------------------: |
+| RAK7268V2 WisGate Edge Lite 2 |   WisGateOS 2    | [Download](https://downloads.rakwireless.com/LoRa/WisGateOS2/WisGateOS2_Latest_Firmware.zip) |
 
 ### Software
 

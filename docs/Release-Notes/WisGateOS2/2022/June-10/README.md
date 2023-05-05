@@ -2,7 +2,7 @@
 release_date: 06/10/2022
 version: "2.0.1"
 release_note_description: Unified operative system for the WisGate Edge line that provides a feature-rich environment to access and configure the LoRaWAN gateway. The latest version of WisGateOS 2 is based on the latest version of the OpenWRT kernel for better security. WisGateOS 2 uses a simplified user interface that makes it easier to use and program. Integrated with WisDM, which allows the remote management of gateways and firmware. With extension functionality, the user can add extra features and functions to their gateways.
-download_link: https://downloads.rakwireless.com/LoRa/WisGateOS2/WisGateOS2_2.0.1.zip
+download_link: https://downloads.rakwireless.com/LoRa/WisGateOS2/History-Version-Release/WisGateOS2_2.0.1.zip
 logo: /assets/images/release-notes/WisGateOS2.png
 
 ---
