@@ -87,7 +87,7 @@ Detailed information about the RAK4631 BLE and LoRa antenna can be found on the 
 :::
 
 | Region        | Frequency (MHz) | GNSS Tracker Solution                      |
-| ------------- | --------------- | ------------------------------------------- |
+| ------------- | --------------- | ------------------------------------------ |
 | Russia        | RU864           | GNSS Tracker IN865 / EU868 / RU864         |
 | India         | IN865           | GNSS Tracker IN865 / EU868 / RU864         |
 | Europe        | EU868           | GNSS Tracker IN865 / EU868 / RU864         |
@@ -186,19 +186,29 @@ The table below lists the operation and storage temperature requirements.
 
 Download the latest firmware version of GNSS Tracker in the table provided below.
 
-| Model            | Version | Source                                                                                         |
-| ---------------- | ------- | ---------------------------------------------------------------------------------------------- |
-| GNSS Tracker    | V1.0.1  | [Download](https://downloads.rakwireless.com/LoRa/WisBlock/Solutions/LPWAN-Tracker-Latest.zip) |
-| Firmware Updater | NA      | [Download](https://downloads.rakwireless.com/LoRa/WisBlock/Solutions/updater.zip)              |
+| Model            | Version | Source                                                                                             |
+| ---------------- | ------- | -------------------------------------------------------------------------------------------------- |
+| GNSS Tracker     | V1.1.2  | [Download](https://downloads.rakwireless.com/LoRa/WisBlock/Solutions/LPWAN-Tracker-Latest.zip)     |
+| GNSS Tracker UF2 | V1.1.2  | [Download](https://downloads.rakwireless.com/LoRa/WisBlock/Solutions/LPWAN-Tracker-Latest-UF2.zip) |
+| Firmware Updater | NA      | [Download](https://downloads.rakwireless.com/LoRa/WisBlock/Solutions/updater.zip)                  |
 
 #### Flashing the Updated Firmware over USB
 
-1. Download the latest firmware into a folder on your computer.
-2. Download the firmware update into the same folder.
-3. Open a command prompt in the same folder.
-4. Connect the WisBlock GNSS Tracker over USB to the computer.
-5. Get the COM port the GNSS Tracker is using, e.g. COM19.
+1. Download the latest firmware to a folder on your computer.
+2. Download the firmware update in the same folder.
+3. In the same folder, open the command prompt.
+4. Connect the WisBlock GNSS Tracker to the computer using USB.
+5. Get the COM port the GNSS Tracker is using, for example, COM19.
 6. Flash the new firmware with the command **`adafruit-nrfutil dfu serial --package LPWAN-Tracker-Latest.zip -p COM19 -b 115200`**.
+
+#### Flashing the Updated Firmware over USB using UF2 file
+
+1. Download the [latest UF2 firmware file](https://downloads.rakwireless.com/LoRa/WisBlock/Solutions/LPWAN-Tracker-Latest-UF2.zip) to your computer. You must extract `LPWAN-Tracker-Latest.uf2` from this zip file.
+2. Connect the WisBlock GNSS Tracker to the computer using USB.
+3. Press the reset button twice.
+4. There should be a new USB drive named `RAK4631` on your computer after double-clicking on reset.
+5. Open this drive and drag the extracted UF2 file `LPWAN-Tracker-Latest.uf2` to that USB drive. It will overwrite the `CURRENT.UF2` file and automatically reset the RAK4631 module in the tracker.
+6. After reset, the tracker has the updated firmware uploaded.
 
 #### Flashing the Updated Firmware over BLE
 

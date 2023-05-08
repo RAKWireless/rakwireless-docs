@@ -38,6 +38,10 @@ RAK4631 is also included in various WisBlock kits in the RAKwireless store:
 
 #### Software
 
+::: tip 📝 NOTE
+This software guide is only compatible with the RAK4631 Arduino BSP; it will not work with the RAK4631-R, but you can [convert it to the RAK4631](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK4631-R/DFU/#converting-rak4631-r-to-rak4631).
+:::
+
 You can choose Arduino IDE or Platform IO in coding the RAK4631 WisBlock Core.
 
 <b>Programming RAK4631 via Arduino IDE:</b>

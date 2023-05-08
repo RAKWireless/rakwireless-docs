@@ -47,7 +47,7 @@ The firmware page contains the device's latest firmware version categorized per 
 
 | Device       | Version | Release Notes | Firmware Link                                                                                  |
 | ------------ | ------- | ------------- | ---------------------------------------------------------------------------------------------- |
-| **RAK10700** | V1.0.1  | -             | [Download](https://downloads.rakwireless.com/LoRa/WisBlock/Solutions/LPWAN-Tracker-Latest.zip) |
+| **RAK10700** | V1.1.2  | -             | [Download](https://downloads.rakwireless.com/LoRa/WisBlock/Solutions/LPWAN-Tracker-Latest.zip) |
 
 
 ## WisDuo

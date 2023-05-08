@@ -26,7 +26,7 @@ During AT mode, the RUI3 powered device is compatible to WisToolBox.
   - [RAK3372 / RAK3172 Evaluation Board](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/Overview)
   - [RAK3172-SiP](/Product-Categories/WisDuo/RAK3172-SiP/Overview)
   - [RAK3272-SiP](/Product-Categories/WisDuo/RAK3272-SiP-Breakout-Board/Overview)
-  - [RAK11720](/Product-Categories/WisDuo/RAK11721-Breakout-Board/Overview)
+  - [RAK11720](/Product-Categories/WisDuo/RAK11720-Module/Overview)
   - [RAK11721](/Product-Categories/WisDuo/RAK11721-Breakout-Board/Overview)
   - [RAK11722](/Product-Categories/WisBlock/RAK11722/Overview)
 
@@ -256,19 +256,19 @@ Description: MCU Reset
 
 This command is used to trigger a reset on the module.
 
-| Command | Input Parameter | Return Value                                        | Return Code |
-| ------- | --------------- | --------------------------------------------------- | ----------- |
-| `ATZ?`  | -               | `ATZ`: triggers a reset on the MCU.                 | OK          |
-| `ATZ`   | -               | No return value and return code. The module resets. | -           |
+| Command | Input Parameter | Return Value                                        | Return Code                |
+| ------- | --------------- | --------------------------------------------------- | -------------------------- |
+| `ATZ?`  | -               | `ATZ`: triggers a reset on the MCU.                 | OK                         |
+| `ATZ`   | -               | No return value and return code. The module resets. | *Shows device information* |
 
 **Example:**
 
 ```
 ATZ
-RAKWireless Example
+RAKwireless RAK3172
 ------------------------------------------------------
-Current Work Mode: LoRaWAN.
-
+Version: RUI_4.0.4_RAK3172-E
+Current Work Mode: LoRa P2P.
 ```
 
 [Back](#content)
@@ -375,7 +375,7 @@ OK
 [Back](#content)
 
 
-### AT+VER 
+### AT+VER
 
 Description: Version of the firmware
 
@@ -516,11 +516,11 @@ Description: Alias name of the device
 
 This command allows the user to set an alias name for the device.
 
-| Command            | Input Parameter    | Return Value                                           | Return Code            |
-| ------------------ | ------------------ | ------------------------------------------------------ | ---------------------- |
-| `AT+ALIAS?`        | -                  | `AT+ALIAS`: add an alias name to the device            | OK                     |
-| `AT+ALIAS=?`       | -                  | `<string, 16char>`                                     | OK                     |
-| `AT+ALIAS=<Input>` | `<string, 16char>` | -                                                      | OK <br> AT_PARAM_ERROR |
+| Command            | Input Parameter    | Return Value                                | Return Code            |
+| ------------------ | ------------------ | ------------------------------------------- | ---------------------- |
+| `AT+ALIAS?`        | -                  | `AT+ALIAS`: add an alias name to the device | OK                     |
+| `AT+ALIAS=?`       | -                  | `<string, 16char>`                          | OK                     |
+| `AT+ALIAS=<Input>` | `<string, 16char>` | -                                           | OK <br> AT_PARAM_ERROR |
 
 **Example:**
 ```
@@ -540,10 +540,10 @@ Description: System voltage of the device
 
 This command allows the user to get the System Voltage.
 
-| Command            | Input Parameter    | Return Value                                           | Return Code            |
-| ------------------ | ------------------ | ------------------------------------------------------ | ---------------------- |
-| `AT+SYSV?`         | -                  | `AT+SYSV`: get the System Voltage                      | OK                     |
-| `AT+SYSV=?`        | -                  | `<float>`                                              | OK                     |
+| Command     | Input Parameter | Return Value                      | Return Code |
+| ----------- | --------------- | --------------------------------- | ----------- |
+| `AT+SYSV?`  | -               | `AT+SYSV`: get the System Voltage | OK          |
+| `AT+SYSV=?` | -               | `<float>`                         | OK          |
 
 **Example:**
 ```
@@ -555,15 +555,15 @@ OK
 
 ### AT+BLEMAC
 
-Description: BLE Mac Address of the device 
+Description: BLE Mac Address of the device
 
 This command allows the user to get or set the BLE Mac address.
 
-| Command            | Input Parameter    | Return Value                                            | Return Code            |
-| ------------------ | ------------------ | ------------------------------------------------------- | ---------------------- |
-| `AT+BLEMAC?`       | -                  | `AT+BLEMAC`: get or set the BLE Mac address             | OK                     |
-| `AT+BLEMAC=?`      | -                  | `<string>:<string>:<string>:<string>:<string>:<string>` | OK                     |
-| `AT+BLEMAC=<Input>`| `<string, 12 char>`| `<string>`                                              | OK                     |
+| Command             | Input Parameter     | Return Value                                            | Return Code |
+| ------------------- | ------------------- | ------------------------------------------------------- | ----------- |
+| `AT+BLEMAC?`        | -                   | `AT+BLEMAC`: get or set the BLE Mac address             | OK          |
+| `AT+BLEMAC=?`       | -                   | `<string>:<string>:<string>:<string>:<string>:<string>` | OK          |
+| `AT+BLEMAC=<Input>` | `<string, 12 char>` | `<string>`                                              | OK          |
 
 **Example:**
 ```
@@ -576,15 +576,15 @@ OK
 
 ### AT+BOOTVER
 
-Description: RUI bootloader version of the device 
+Description: RUI bootloader version of the device
 
 This command allows the user to get the version of RUI bootloader.
 
-| Command             | Input Parameter    | Return Value                                           | Return Code            |
-| ------------------- | ------------------ | ------------------------------------------------------ | ---------------------- |
-| `AT+BOOTVER?`       | -                  | `AT+BOOTVER`: get the version of RUI bootloader        | OK                     |
-| `AT+BOOTVER=?`      | -                  | `<string>`                                             | OK                     |
-| `AT+BOOTVER=<Input>`| -                  | RUI Bootloader Version                                 | OK                     |
+| Command              | Input Parameter | Return Value                                    | Return Code |
+| -------------------- | --------------- | ----------------------------------------------- | ----------- |
+| `AT+BOOTVER?`        | -               | `AT+BOOTVER`: get the version of RUI bootloader | OK          |
+| `AT+BOOTVER=?`       | -               | `<string>`                                      | OK          |
+| `AT+BOOTVER=<Input>` | -               | RUI Bootloader Version                          | OK          |
 
 **Example:**
 ```
@@ -597,15 +597,15 @@ OK
 
 ### AT+LPM
 
-Description: Low power mode of the device 
+Description: Low power mode of the device
 
 This command provides a way to enable/disable low power mode. LPM makes the device sleep automatically after sending AT commands. This eliminates the need to send AT+SLEEP.
 
-| Command             | Input Parameter    | Return Value                                           | Return Code            |
-| ------------------- | ------------------ | ------------------------------------------------------ | ---------------------- |
-| `AT+LPM?`           | -                  | `AT+LPM`: get or set the low power mode (0=OFF; 1=ON)  | OK                     |
-| `AT+LPM=?`          | -                  | `<string>`                                             | OK                     |
-| `AT+LPM=<Input>`    | `0 or 1`           | -                                                      | OK <br> AT_PARAM_ERROR |
+| Command          | Input Parameter | Return Value                                          | Return Code            |
+| ---------------- | --------------- | ----------------------------------------------------- | ---------------------- |
+| `AT+LPM?`        | -               | `AT+LPM`: get or set the low power mode (0=OFF; 1=ON) | OK                     |
+| `AT+LPM=?`       | -               | `<string>`                                            | OK                     |
+| `AT+LPM=<Input>` | `0 or 1`        | -                                                     | OK <br> AT_PARAM_ERROR |
 
 **Example:**
 ```
@@ -626,11 +626,11 @@ Description: Sleep level for low power mode
 
 This command sets the low power mode level of the RAK3172 module in LPM. Stop2 Mode is more optimized for low current consumption compared to Stop1 Mode but it will not allow you to wake up using UART1. On Stop1 Mode, both UART1 and UART2 can wake up the device from LPM.
 
-| Command              | Input Parameter    | Return Value                                                                       | Return Code            |
-| -------------------- | ------------------ | ---------------------------------------------------------------------------------- | ---------------------- |
-| `AT+LPMLVL?`         | -                  | `AT+LPMLVL`: get or set the low power mode level (1 = STOP1 Mode; 2 = STOP2 Mode)  | OK                     |
-| `AT+LPMLVL=?`        | -                  | `1 or 2`                                                                           | OK                     |
-| `AT+LPMLVL=<Input>`  | `1 or 2`           | -                                                                                  | OK <br> AT_PARAM_ERROR |
+| Command             | Input Parameter | Return Value                                                                      | Return Code            |
+| ------------------- | --------------- | --------------------------------------------------------------------------------- | ---------------------- |
+| `AT+LPMLVL?`        | -               | `AT+LPMLVL`: get or set the low power mode level (1 = STOP1 Mode; 2 = STOP2 Mode) | OK                     |
+| `AT+LPMLVL=?`       | -               | `1 or 2`                                                                          | OK                     |
+| `AT+LPMLVL=<Input>` | `1 or 2`        | -                                                                                 | OK <br> AT_PARAM_ERROR |
 
 **Example:**
 ```
@@ -648,7 +648,7 @@ OK
 
 ## Bootloader Commands
 
-This section describes the bootloader commands related to the device.    
+This section describes the bootloader commands related to the device.
 
 ### AT+BOOT
 
@@ -683,9 +683,9 @@ Description: Version of the Bootloader (Bootloader only).
 
 This command is used to access the version of the bootloader (Bootloader only).
 
-| Command                 | Input Parameter | Return Value                                          | Return Code |
-| ----------------------- | --------------- | ----------------------------------------------------- | ----------- |
-| `AT+VER=?`              | -               | `RUI_BOOT_0.6_STM32WLE5CC `                           | -           |
+| Command    | Input Parameter | Return Value                | Return Code |
+| ---------- | --------------- | --------------------------- | ----------- |
+| `AT+VER=?` | -               | `RUI_BOOT_0.6_STM32WLE5CC ` | -           |
 
 **Example:**
 
@@ -702,9 +702,9 @@ Description: Version of the Bootloader (Bootloader only).
 
 This command is used to access the version of the bootloader (Bootloader only).
 
-| Command                 | Input Parameter | Return Value                                          | Return Code |
-| ----------------------- | --------------- | ----------------------------------------------------- | ----------- |
-| `AT+VERSION`            | -               | `RUI_BOOT_0.6_STM32WLE5CC `                           | -           |
+| Command      | Input Parameter | Return Value                | Return Code |
+| ------------ | --------------- | --------------------------- | ----------- |
+| `AT+VERSION` | -               | `RUI_BOOT_0.6_STM32WLE5CC ` | -           |
 
 **Example:**
 
@@ -721,9 +721,9 @@ Description: Bootloader Status (Bootloader only).
 
 This command is used to get the status of the bootloader (Bootloader only).
 
-| Command                 | Input Parameter | Return Value                                          | Return Code |
-| ----------------------- | --------------- | ----------------------------------------------------- | ----------- |
-| `AT+BOOSTATUS`          | -               | `Boot Mode `                                          | -           |
+| Command        | Input Parameter | Return Value | Return Code |
+| -------------- | --------------- | ------------ | ----------- |
+| `AT+BOOSTATUS` | -               | `Boot Mode ` | -           |
 
 **Example:**
 
@@ -740,9 +740,9 @@ Description: Leaving Boot Mode (Bootloader only).
 
 This command is used to leave and boot into application (Bootloader only).
 
-| Command                 | Input Parameter | Return Value                                          | Return Code |
-| ----------------------- | --------------- | ----------------------------------------------------- | ----------- |
-| `AT+RUN`                | -               | `Stop Boot Mode `                                     | -           |
+| Command  | Input Parameter | Return Value      | Return Code |
+| -------- | --------------- | ----------------- | ----------- |
+| `AT+RUN` | -               | `Stop Boot Mode ` | -           |
 
 **Example:**
 
@@ -763,9 +763,9 @@ Description: Device Reset (Bootloader only).
 
 This command is used to reset the device (Bootloader only).
 
-| Command                 | Input Parameter | Return Value                                          | Return Code |
-| ----------------------- | --------------- | ----------------------------------------------------- | ----------- |
-| `AT+RESET`              | -               | -                                                     | -           |
+| Command    | Input Parameter | Return Value | Return Code |
+| ---------- | --------------- | ------------ | ----------- |
+| `AT+RESET` | -               | -            | -           |
 
 **Example:**
 
@@ -995,7 +995,7 @@ This command is used to access the application key.
 | Command             | Input Parameter | Return Value                                                       | Return Code            |
 | ------------------- | --------------- | ------------------------------------------------------------------ | ---------------------- |
 | `AT+APPKEY?`        | -               | `AT+APPKEY`: get or set the application key (16&nbsp;bytes in hex) | OK                     |
-| `AT+APPKEY=?`       | -               | < 16&nbsp;hex >                                                     | OK                     |
+| `AT+APPKEY=?`       | -               | < 16&nbsp;hex >                                                    | OK                     |
 | `AT+APPKEY=<Input>` | < 16&nbsp;hex > | -                                                                  | OK <br> AT_PARAM_ERROR |
 
 **Example:**
@@ -1146,10 +1146,10 @@ Description: MC Root Key
 
 This command is used to get the mc root key of the device.
 
-| Command             | Input Parameter    | Return Value                                           | Return Code            |
-| ------------------- | ------------------ | ------------------------------------------------------ | ---------------------- |
-| `AT+MCROOTKEY?`     | -                  | `AT+MCROOTKEY`: get the mc root key (32 bytes in hex)  | OK                     |
-| `AT+MCROOTKEY=?`    | -                  | `<32 hex>`                                             | OK                     |
+| Command          | Input Parameter | Return Value                                          | Return Code |
+| ---------------- | --------------- | ----------------------------------------------------- | ----------- |
+| `AT+MCROOTKEY?`  | -               | `AT+MCROOTKEY`: get the mc root key (32 bytes in hex) | OK          |
+| `AT+MCROOTKEY=?` | -               | `<32 hex>`                                            | OK          |
 
 **Example:**
 
@@ -1941,11 +1941,11 @@ Description: LoRaWAN "Listen Before Talk" (LBT)
 
 This command is used to enable or disable LoRaWAN LBT.
 
-| Command             | Input Parameter    | Return Value                                                                        | Return Code            |
-| ------------------- | ------------------ | ----------------------------------------------------------------------------------- | ---------------------- |
-| `AT+LBT?`           | -                  | `AT+LBT`: get or set the LoRaWAN LBT (support Korea Japan) (0=Disabled; 1=Enabled)  | OK                     |
-| `AT+LBT=?`          | -                  | `<0-1>`                                                                             | OK                     |
-| `AT+LBT=<Input>`    | `<0-1>`            | -                                                                                   | OK <br> AT_PARAM_ERROR |
+| Command          | Input Parameter | Return Value                                                                       | Return Code            |
+| ---------------- | --------------- | ---------------------------------------------------------------------------------- | ---------------------- |
+| `AT+LBT?`        | -               | `AT+LBT`: get or set the LoRaWAN LBT (support Korea Japan) (0=Disabled; 1=Enabled) | OK                     |
+| `AT+LBT=?`       | -               | `<0-1>`                                                                            | OK                     |
+| `AT+LBT=<Input>` | `<0-1>`         | -                                                                                  | OK <br> AT_PARAM_ERROR |
 
 **Example:**
 ```
@@ -1965,11 +1965,11 @@ Description: LoRaWAN "Listen Before Talk" RSSI (LBTRSSI)
 
 This command is used to set or get LoRaWAN LBT RSSI.
 
-| Command               | Input Parameter    | Return Value                                                         | Return Code            |
-| --------------------- | ------------------ | -------------------------------------------------------------------- | ---------------------- |
-| `AT+LBTRSSI?`         | -                  | `AT+LBTRSSI`: get or set the LoRaWAN LBT RSSI (support Korea Japan)  | OK                     |
-| `AT+LBTRSSI=?`        | -                  | `<RSSI>`                                                             | OK                     |
-| `AT+LBTRSSI=<Input>`  | `<RSSI>`           | -                                                                    | OK <br> AT_PARAM_ERROR |
+| Command              | Input Parameter | Return Value                                                        | Return Code            |
+| -------------------- | --------------- | ------------------------------------------------------------------- | ---------------------- |
+| `AT+LBTRSSI?`        | -               | `AT+LBTRSSI`: get or set the LoRaWAN LBT RSSI (support Korea Japan) | OK                     |
+| `AT+LBTRSSI=?`       | -               | `<RSSI>`                                                            | OK                     |
+| `AT+LBTRSSI=<Input>` | `<RSSI>`        | -                                                                   | OK <br> AT_PARAM_ERROR |
 
 **Example:**
 ```
@@ -1989,11 +1989,11 @@ Description: LoRaWAN "Listen Before Talk" Scantime (LBTSCANTIME)
 
 This command is used to set or get LoRaWAN LBT Scantime.
 
-| Command                   | Input Parameter    | Return Value                                                                 | Return Code            |
-| ------------------------- | ------------------ | ---------------------------------------------------------------------------- | ---------------------- |
-| `AT+LBTSCANTIME?`         | -                  | `AT+LBTSCANTIME`: get or set the LoRaWAN LBT scantime (support Korea Japan)  | OK                     |
-| `AT+LBTSCANTIME=?`        | -                  | `<time>`                                                                     | OK                     |
-| `AT+LBTSCANTIME=<Input>`  | `<time>`           | -                                                                            | OK <br> AT_PARAM_ERROR |
+| Command                  | Input Parameter | Return Value                                                                | Return Code            |
+| ------------------------ | --------------- | --------------------------------------------------------------------------- | ---------------------- |
+| `AT+LBTSCANTIME?`        | -               | `AT+LBTSCANTIME`: get or set the LoRaWAN LBT scantime (support Korea Japan) | OK                     |
+| `AT+LBTSCANTIME=?`       | -               | `<time>`                                                                    | OK                     |
+| `AT+LBTSCANTIME=<Input>` | `<time>`        | -                                                                           | OK <br> AT_PARAM_ERROR |
 
 **Example:**
 ```
@@ -2013,11 +2013,11 @@ Description: Time Request
 
 This command is used to request the current date and time.
 
-| Command               | Input Parameter    | Return Value                                                                 | Return Code            |
-| ----------------------| ------------------ | ---------------------------------------------------------------------------- | ---------------------- |
-| `AT+TIMEREQ?`         | -                  | `AT+TIMEREQ`: request the current date and time (0=Disabled, 1=Enabled)      | OK                     |
-| `AT+TIMEREQ=?`        | -                  | `<0-1>`                                                                      | OK                     |
-| `AT+TIMEREQ=<Input>`  | `<0-1>`            | -                                                                            | OK <br> AT_PARAM_ERROR |
+| Command              | Input Parameter | Return Value                                                            | Return Code            |
+| -------------------- | --------------- | ----------------------------------------------------------------------- | ---------------------- |
+| `AT+TIMEREQ?`        | -               | `AT+TIMEREQ`: request the current date and time (0=Disabled, 1=Enabled) | OK                     |
+| `AT+TIMEREQ=?`       | -               | `<0-1>`                                                                 | OK                     |
+| `AT+TIMEREQ=<Input>` | `<0-1>`         | -                                                                       | OK <br> AT_PARAM_ERROR |
 
 **Example:**
 ```
@@ -3354,11 +3354,11 @@ Description: Active region
 
 This command sets numbers corresponding to active regions.
 
-| Command           | Input Parameter     | Return Value                                                                                                                                                     | Return Code                                |
-| ----------------- | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
-| `AT+BAND?`        | -                   | `AT+BAND`: get or set the active region<br>(0 = EU433, 1 = CN470, 2 = RU864, 3 = IN865, 4 = EU868,<br>5 = US915, 6 = AU915, 7 = KR920, 8 = AS923-1, 9 = AS923-2, 10 = AS923-3, 11 = AS923-4) | OK                                         |
-| `AT+BAND=?`       | -                   | 0,1,2,3,4,5,6,7,8,9,10,11                                                                                                                                              | OK                                         |
-| `AT+BAND=<Input>` | 0,1,2,3,4,5,6,7,8,9,10,11 | -                                                                                                                                                                | OK <br>  AT_PARAM_ERROR <br> AT_BUSY_ERROR |
+| Command           | Input Parameter           | Return Value                                                                                                                                                                                 | Return Code                                |
+| ----------------- | ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| `AT+BAND?`        | -                         | `AT+BAND`: get or set the active region<br>(0 = EU433, 1 = CN470, 2 = RU864, 3 = IN865, 4 = EU868,<br>5 = US915, 6 = AU915, 7 = KR920, 8 = AS923-1, 9 = AS923-2, 10 = AS923-3, 11 = AS923-4) | OK                                         |
+| `AT+BAND=?`       | -                         | 0,1,2,3,4,5,6,7,8,9,10,11                                                                                                                                                                    | OK                                         |
+| `AT+BAND=<Input>` | 0,1,2,3,4,5,6,7,8,9,10,11 | -                                                                                                                                                                                            | OK <br>  AT_PARAM_ERROR <br> AT_BUSY_ERROR |
 
 **Example:**
 ```
@@ -3408,8 +3408,10 @@ AT+NWM=1
 OK
 
 AT+NWM=0
-RAKwireless RAK3172-E Example
+OK
+RAKwireless RAK3172
 ------------------------------------------------------
+Version: RUI_4.0.4_RAK3172-E
 Current Work Mode: LoRa P2P.
 ```
 
@@ -3612,20 +3614,24 @@ Description: P2P send data
 
 This command provides the way to P2P send data.
 
-| Command            | Input Parameter | Return Value                      | Return Code            |
-| ------------------ | --------------- | --------------------------------- | ---------------------- |
-| `AT+PSEND?`        | -               | `AT+PSEND`: send data in P2P mode | OK                     |
-| `AT+PSEND=<Input>` | `<payload>`     | -                                 | OK <br> AT_PARAM_ERROR |
+| Command            | Input Parameter | Return Value                      | Return Code                                 |
+| ------------------ | --------------- | --------------------------------- | ------------------------------------------- |
+| `AT+PSEND?`        | -               | `AT+PSEND`: send data in P2P mode | OK                                          |
+| `AT+PSEND=<Input>` | `<payload>`     | -                                 | OK <br> +EVT:TXP2P DONE <br> AT_PARAM_ERROR |
 
 **Example:**
 ```
 AT+PSEND=112233
 OK
++EVT:TXP2P DONE
 ```
 
 :::tip 📝 NOTE
+- `OK` will return immediately after the command is sent to the module.
+- `+EVT:TXP2P DONE` will return once the payload has been sent.
 - `AT_PARAM_ERROR` is returned when setting wrong or malformed value.
-- `<payload>`: 2~500 digit length, must be an even number of digits and character 0-9, a-f, A-F only, representing 1~256 hexadecimal numbers.
+- `<payload>`: 2~500 digit length, must be an even number of digits and characters 0-9, a-f, A-F only, representing 1~256 hexadecimal numbers.
+- `AT+PSEND` can be blocked by certain settings of P2P RX mode. You can disable P2P RX mode and switch to P2P TX mode via the `AT+PRECV=0` command to ensure that P2P RX mode is not blocking the `AT+PSEND` command.
 :::
 
 [Back](#content)
@@ -3652,7 +3658,7 @@ When valid LoRa P2P packets are received, the format is RSSI, SNR and Payload.
 
 **Examples:**
 
-1. P2P LoRa RX configurable duration value is from 1 to 65533&nbsp;ms. In this example, the device will wait for LoRa P2P Packets for 30&nbsp;seconds. It will automatically disable RX mode and switch to TX mode after the timeout. The callback after timeout is `+EVT:RXP2P RECEIVE TIMEOUT`.
+1. P2P LoRa RX configurable duration value ranges from 1 to 65532&nbsp;ms. In this example, the device will wait 30&nbsp;seconds for LoRa P2P packets. After the timeout, it will automatically disable RX mode and switch to TX mode. The callback after timeout is `+EVT:RXP2P RECEIVE TIMEOUT`.
 ```
 AT+PRECV=30000
 OK
@@ -3669,9 +3675,14 @@ OK
 ```
 :::tip 📝 NOTE
 If configured in continuous RX mode `AT+PRECV=65534`, any new values to `AT+PRECV` will not be accepted. RX mode must be disabled first via `AT+PRECV=0`.
-During continuous RX mode, there are many LoRa P2P parameters that cannot be modified as well. `AT+PRECV` must be set to zero first.
+During continuous RX mode, many LoRa P2P parameters cannot be modified as well. `AT+PRECV` must be set to zero first.
 :::
-4. If the value is 0, the device will stop listening to P2P LoRa packets. It disables LoRa P2P RX mode and switch to TX mode.
+4. If the value is set to **65533**, the device will continuously listen to P2P LoRa packets without any timeout and will still allow P2P TX. **The device is in RX mode and also allows P2P Transmission**. After P2P transmission, it will switch to RX mode.
+```
+AT+PRECV=65533
+OK
+```
+5. If the value is 0, the device will stop listening to P2P LoRa packets. It disables LoRa P2P RX mode and switches to TX mode.
 ```
 AT+PRECV=0
 OK
@@ -3722,11 +3733,11 @@ Description: P2P Encryption KEY
 
 This command Key will encrypt the data being sent and received.
 
-| Command             | Input Parameter | Return Value                                                           | Return Code |
-| ------------------- | --------------- | ---------------------------------------------------------------------- | ----------- |
+| Command             | Input Parameter | Return Value                                                                | Return Code |
+| ------------------- | --------------- | --------------------------------------------------------------------------- | ----------- |
 | `AT+ENCKEY?`        | -               | `AT+ENCRY`: get or set the encryption key of P2P mode (8&nbsp;bytes in hex) | OK          |
 | `AT+ENCKEY=?`       | -               | <8&nbsp;hex>                                                                | OK          |
-| `AT+ENCKEY=<Input>` | <8&nbsp;hex>         | -                                                                      | OK          |
+| `AT+ENCKEY=<Input>` | <8&nbsp;hex>    | -                                                                           | OK          |
 
 **Example:**
 ```
@@ -3788,11 +3799,11 @@ Description: P2P IQ Inversion
 
 This command is used to get or set P2P IQ Inversion (1=ON, 0=OFF).
 
-| Command                 | Input Parameter          | Return Value                                                 | Return Code             |
-| ----------------------- | ------------------------ | ------------------------------------------------------------ | ----------------------- |
-| `AT+IQINVER?`           | -                        | `AT+IQINVER`: get or set P2P IQ inversion (1 = on, 0 = off)  | OK                      |
-| `AT+IQINVER=?`          | -                        | `<0 or 1>`                                                   | OK                      |
-| `AT+IQINVER=<Input>`    | `<0 or 1>`               | -                                                            | OK <br> AT_PARAM_ERROR  |
+| Command              | Input Parameter | Return Value                                                | Return Code            |
+| -------------------- | --------------- | ----------------------------------------------------------- | ---------------------- |
+| `AT+IQINVER?`        | -               | `AT+IQINVER`: get or set P2P IQ inversion (1 = on, 0 = off) | OK                     |
+| `AT+IQINVER=?`       | -               | `<0 or 1>`                                                  | OK                     |
+| `AT+IQINVER=<Input>` | `<0 or 1>`      | -                                                           | OK <br> AT_PARAM_ERROR |
 
 **Example:**
 ```
@@ -3816,11 +3827,11 @@ Description: P2P Syncword in P2P Mode
 
 This command is used to get or set P2P syncword (0x0000 - 0xffff).
 
-| Command                 | Input Parameter          | Return Value                                                 | Return Code             |
-| ----------------------- | ------------------------ | ------------------------------------------------------------ | ----------------------- |
-| `AT+SYNCWORD?`          | -                        | `AT+SYNCWORD`: get or set P2P syncword (0x0000 - 0xffff)     | OK                      |
-| `AT+SYNCWORD=?`         | -                        | `<2 Hex>`                                                    | OK                      |
-| `AT+SYNCWORD=<Input>`   | `<2 Hex>`                | -                                                            | OK <br> AT_PARAM_ERROR  |
+| Command               | Input Parameter | Return Value                                             | Return Code            |
+| --------------------- | --------------- | -------------------------------------------------------- | ---------------------- |
+| `AT+SYNCWORD?`        | -               | `AT+SYNCWORD`: get or set P2P syncword (0x0000 - 0xffff) | OK                     |
+| `AT+SYNCWORD=?`       | -               | `<2 Hex>`                                                | OK                     |
+| `AT+SYNCWORD=<Input>` | `<2 Hex>`       | -                                                        | OK <br> AT_PARAM_ERROR |
 
 **Example:**
 ```
@@ -3845,11 +3856,11 @@ Description: Frequency in P2P Mode
 
 This command is used to access the frequency in P2P mode.
 
-| Command                    | Input Parameter          | Return Value                                                 | Return Code             |
-| -------------------------- | ------------------------ | ------------------------------------------------------------ | ----------------------- |
-| `AT+RFFREQUENCY?`          | -                        | `AT+RFFREQUENCY`: get or set P2P Frequency                   | OK                      |
-| `AT+RFFREQUENCY=?`         | -                        | `<interger>`                                                 | OK                      |
-| `AT+RFFREQUENCY=<Input>`   | `<interger>`             | -                                                            | OK <br> AT_PARAM_ERROR  |
+| Command                  | Input Parameter | Return Value                               | Return Code            |
+| ------------------------ | --------------- | ------------------------------------------ | ---------------------- |
+| `AT+RFFREQUENCY?`        | -               | `AT+RFFREQUENCY`: get or set P2P Frequency | OK                     |
+| `AT+RFFREQUENCY=?`       | -               | `<interger>`                               | OK                     |
+| `AT+RFFREQUENCY=<Input>` | `<interger>`    | -                                          | OK <br> AT_PARAM_ERROR |
 
 **Example:**
 ```
@@ -3874,11 +3885,11 @@ Description: P2P Tx Power (5 - 22)
 
 This command is used to get or set the P2P Tx Power (5 - 22).
 
-| Command                      | Input Parameter          | Return Value                                                 | Return Code             |
-| ---------------------------- | ------------------------ | ------------------------------------------------------------ | ----------------------- |
-| `AT+TXOUTPUTPOWER?`          | -                        | `AT+TXOUTPUTPOWER`: get or set P2P Tx Power(5-22)            | OK                      |
-| `AT+TXOUTPUTPOWER=?`         | -                        | `<powerlevel>`                                               | OK                      |
-| `AT+TXOUTPUTPOWER=<Input>`   | `<powerlevel>`           | -                                                            | OK <br> AT_PARAM_ERROR  |
+| Command                    | Input Parameter | Return Value                                      | Return Code            |
+| -------------------------- | --------------- | ------------------------------------------------- | ---------------------- |
+| `AT+TXOUTPUTPOWER?`        | -               | `AT+TXOUTPUTPOWER`: get or set P2P Tx Power(5-22) | OK                     |
+| `AT+TXOUTPUTPOWER=?`       | -               | `<powerlevel>`                                    | OK                     |
+| `AT+TXOUTPUTPOWER=<Input>` | `<powerlevel>`  | -                                                 | OK <br> AT_PARAM_ERROR |
 
 **Example:**
 ```
@@ -3903,11 +3914,11 @@ Description: P2P Bandwidth
 
 This command is used to get or set the P2P Bandwidth.
 
-| Command                  | Input Parameter  | Return Value                                                                                                                                                         | Return Code             |
-| ------------------------ | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| `AT+BANDWIDTH?`          | -                | `AT+BANDWIDTH`: get or set P2P Bandwidth(LORA: 0 = 125, 1 = 250, 2 = 500, 3 = 7.8, 4 = 10.4, 5 = 15.63, 6 = 20.83, 7 = 31.25, 8 = 41.67, 9 = 62.5  FSK:4800-467000)  | OK                      |
-| `AT+BANDWIDTH=?`         | -                | `<bandwidth>`                                                                                                                                                        | OK                      |
-| `AT+BANDWIDTH=<Input>`   | `<bandwidth>`    | -                                                                                                                                                                    | OK <br> AT_PARAM_ERROR  |
+| Command                | Input Parameter | Return Value                                                                                                                                                        | Return Code            |
+| ---------------------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- |
+| `AT+BANDWIDTH?`        | -               | `AT+BANDWIDTH`: get or set P2P Bandwidth(LORA: 0 = 125, 1 = 250, 2 = 500, 3 = 7.8, 4 = 10.4, 5 = 15.63, 6 = 20.83, 7 = 31.25, 8 = 41.67, 9 = 62.5  FSK:4800-467000) | OK                     |
+| `AT+BANDWIDTH=?`       | -               | `<bandwidth>`                                                                                                                                                       | OK                     |
+| `AT+BANDWIDTH=<Input>` | `<bandwidth>`   | -                                                                                                                                                                   | OK <br> AT_PARAM_ERROR |
 
 **Example:**
 ```
@@ -3932,11 +3943,11 @@ Description: P2P Spreading Factor (5 -12)
 
 This command is used to get or set the P2P spreading factor (5 - 12).
 
-| Command                        | Input Parameter          | Return Value                                                   | Return Code             |
-| ------------------------------ | ------------------------ | -------------------------------------------------------------- | ----------------------- |
-| `AT+SPREADINGFACTOR?`          | -                        | `AT+SPREADINGFACTOR`: get or set P2P Spreading Factor (5-12)   | OK                      |
-| `AT+SPREADINGFACTOR=?`         | -                        | `<spreading factor>`                                           | OK                      |
-| `AT+SPREADINGFACTOR=<Input>`   | `<spreading factor>`     | -                                                              | OK <br> AT_PARAM_ERROR  |
+| Command                      | Input Parameter      | Return Value                                                 | Return Code            |
+| ---------------------------- | -------------------- | ------------------------------------------------------------ | ---------------------- |
+| `AT+SPREADINGFACTOR?`        | -                    | `AT+SPREADINGFACTOR`: get or set P2P Spreading Factor (5-12) | OK                     |
+| `AT+SPREADINGFACTOR=?`       | -                    | `<spreading factor>`                                         | OK                     |
+| `AT+SPREADINGFACTOR=<Input>` | `<spreading factor>` | -                                                            | OK <br> AT_PARAM_ERROR |
 
 **Example:**
 ```
@@ -3957,15 +3968,15 @@ OK
 
 ### AT+CODINGRATE
 
-Description: P2P Coding Rate 
+Description: P2P Coding Rate
 
 This command is used to get or set the P2P code rate.
 
-| Command                        | Input Parameter          | Return Value                                                           | Return Code             |
-| ------------------------------ | ------------------------ | ---------------------------------------------------------------------- | ----------------------- |
-| `AT+CODINGRATE?`               | -                        | `AT+CODINGRATE`: get or set P2P Code Rate(0=4/5, 1=4/6, 2=4/7, 3=4/8)  | OK                      |
-| `AT+CODINGRATE=?`              | -                        | `<coding rate>`                                                        | OK                      |
-| `AT+CODINGRATE=<Input>`        | `<coding rate>`          | -                                                                      | OK <br> AT_PARAM_ERROR  |
+| Command                 | Input Parameter | Return Value                                                          | Return Code            |
+| ----------------------- | --------------- | --------------------------------------------------------------------- | ---------------------- |
+| `AT+CODINGRATE?`        | -               | `AT+CODINGRATE`: get or set P2P Code Rate(0=4/5, 1=4/6, 2=4/7, 3=4/8) | OK                     |
+| `AT+CODINGRATE=?`       | -               | `<coding rate>`                                                       | OK                     |
+| `AT+CODINGRATE=<Input>` | `<coding rate>` | -                                                                     | OK <br> AT_PARAM_ERROR |
 
 **Example:**
 ```
@@ -3990,11 +4001,11 @@ Description: P2P Preamble Length (5 - 65535)
 
 This command is used to get or set the P2P preamble length (5 - 65535).
 
-| Command                        | Input Parameter          | Return Value                                                           | Return Code             |
-| ------------------------------ | ------------------------ | ---------------------------------------------------------------------- | ----------------------- |
-| `AT+PREAMBLELENGTH?`           | -                        | `AT+PREAMBLELENGTH`: get or set P2P Preamble Length (5-65535)          | OK                      |
-| `AT+PREAMBLELENGTH=?`          | -                        | `<interger>`                                                           | OK                      |
-| `AT+PREAMBLELENGTH=<Input>`    | `<interger>`             | -                                                                      | OK <br> AT_PARAM_ERROR  |
+| Command                     | Input Parameter | Return Value                                                  | Return Code            |
+| --------------------------- | --------------- | ------------------------------------------------------------- | ---------------------- |
+| `AT+PREAMBLELENGTH?`        | -               | `AT+PREAMBLELENGTH`: get or set P2P Preamble Length (5-65535) | OK                     |
+| `AT+PREAMBLELENGTH=?`       | -               | `<interger>`                                                  | OK                     |
+| `AT+PREAMBLELENGTH=<Input>` | `<interger>`    | -                                                             | OK <br> AT_PARAM_ERROR |
 
 **Example:**
 ```
@@ -4019,11 +4030,11 @@ Description: P2P Symbol Timeout (0 - 248)
 
 This command is used to get or set the P2P symbol timeout (0 - 248).
 
-| Command                       | Input Parameter          | Return Value                                                           | Return Code             |
-| ----------------------------- | ------------------------ | ---------------------------------------------------------------------- | ----------------------- |
-| `AT+SYMBOLTIMEOUT?`           | -                        | `AT+SYMBOLTIMEOUT`: get or set P2P symbolTimeout (0-248)               | OK                      |
-| `AT+SYMBOLTIMEOUT=?`          | -                        | `<interger>`                                                           | OK                      |
-| `AT+SYMBOLTIMEOUT=<Input>`    | `<interger>`             | -                                                                      | OK <br> AT_PARAM_ERROR  |
+| Command                    | Input Parameter | Return Value                                             | Return Code            |
+| -------------------------- | --------------- | -------------------------------------------------------- | ---------------------- |
+| `AT+SYMBOLTIMEOUT?`        | -               | `AT+SYMBOLTIMEOUT`: get or set P2P symbolTimeout (0-248) | OK                     |
+| `AT+SYMBOLTIMEOUT=?`       | -               | `<interger>`                                             | OK                     |
+| `AT+SYMBOLTIMEOUT=<Input>` | `<interger>`    | -                                                        | OK <br> AT_PARAM_ERROR |
 
 **Example:**
 ```
@@ -4056,6 +4067,10 @@ This command is used to add a new multicast group and multicast parameters.
 | ------------------------------ | ------------------------------------------------------------------------------ | --------------------------------------- | ------------------------ |
 | `AT+ADDMULC?`                  | -                                                                              | `AT+ADDMULC`: add a new multicast group | `OK`                     |
 | `AT+ADDMULC=<Input Parameter>` | *`[Class]:[DevAddr]:[NwkSKey]:[AppSKey]:[Frequency]:[Datarate]:[Periodicity]`* | -                                       | `OK` or `AT_PARAM_ERROR` |
+
+:::tip 📝 NOTE:
+Class B and Class C use the same command input parameters. The periodicity needs to be configured even on Class C so that the command will be accepted with the needed parameters.
+:::
 
 **Examples**:
 
@@ -4375,11 +4390,11 @@ Description: Send Continuous Wave
 
 This command is used to enable continuous RF transmissions with configurable frequency, transmit power and duration. Also, you can get the RF transmission's details by using this command.
 
-| Command            | Input Parameter          | Return Value                                           | Return Code            |
-| ------------------ | ------------------------ | ------------------------------------------------------ | ---------------------- |
-| `AT+CW?`           | -                        | `AT+CW`: start continuous wave                         | OK                     |
-| `AT+CW=?`          | -                        | `<freq>:<power>:<time>:`                               | OK                     |
-| `AT+CW=<Input>`    | `<freq>:<power>:<time>:` | -                                                      | OK <br> AT_BUSY_ERROR  |
+| Command         | Input Parameter          | Return Value                   | Return Code           |
+| --------------- | ------------------------ | ------------------------------ | --------------------- |
+| `AT+CW?`        | -                        | `AT+CW`: start continuous wave | OK                    |
+| `AT+CW=?`       | -                        | `<freq>:<power>:<time>:`       | OK                    |
+| `AT+CW=<Input>` | `<freq>:<power>:<time>:` | -                              | OK <br> AT_BUSY_ERROR |
 
 **Example:**
 ```
@@ -4406,11 +4421,11 @@ Description: RF Tx Hopping Test in Random Sequence
 
 This command is used to access and configure RF Tx hopping test in random sequence.
 
-| Command                 | Input Parameter                             | Return Value                                                                                        | Return Code            |
-| ----------------------- | ------------------------------------------- | --------------------------------------------------------------------------------------------------- | ---------------------- |
-| `AT+TRTH?`              | -                                           | `AT+TRTH`: start RF TX hopping test from Fstart to Fstop, with Fdelta interval in random sequence   | OK                     |
-| `AT+TRTH=?`             | -                                           | `<Fstart>:<Fstop>:<Fdelta>:<PacketNb>`                                                              | OK                     |
-| `AT+TRTH=<Input>`       | `<Fstart>:<Fstop>:<Fdelta>:<PacketNb>`      | -                                                                                                   | OK <br> AT_BUSY_ERROR  |
+| Command           | Input Parameter                        | Return Value                                                                                      | Return Code           |
+| ----------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------- | --------------------- |
+| `AT+TRTH?`        | -                                      | `AT+TRTH`: start RF TX hopping test from Fstart to Fstop, with Fdelta interval in random sequence | OK                    |
+| `AT+TRTH=?`       | -                                      | `<Fstart>:<Fstop>:<Fdelta>:<PacketNb>`                                                            | OK                    |
+| `AT+TRTH=<Input>` | `<Fstart>:<Fstop>:<Fdelta>:<PacketNb>` | -                                                                                                 | OK <br> AT_BUSY_ERROR |
 
 **Example:**
 ```

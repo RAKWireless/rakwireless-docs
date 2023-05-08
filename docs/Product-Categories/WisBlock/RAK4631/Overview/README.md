@@ -17,10 +17,6 @@ tags:
 
 Thank you for choosing **RAK4631 WisBlock LPWAN Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
-::: tip 📝 NOTE
-RAK4631 and RAK4631-R share common hardware and are 100% identical but they have different firmware. **RAK4631-R** is based on RUI V3 which gives you flexibility in developing optimized firmware using the RUI V3 APIs. While **RAK4631**'s firmware is based on arduino port of nRF52840 chip.
-:::
-
 * [RAK4631 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
@@ -44,6 +40,11 @@ RAK4631 and RAK4631-R share common hardware and are 100% identical but they have
 
 Both LoRaWAN and LoRa point-to-point connections are supported by an Arduino™ library.
 
+::: tip 📝 NOTE
+The RAK4631 and RAK4631-R share common hardware and are 100% identical, but their firmware is different. **RAK4631** firmware is based on the Arduino BSP of the nRF52840 chip, whereas **RAK4631-R** firmware is based on RUI V3, giving you the flexibility to develop optimized firmware using the [RUI3 APIs](/RUI3/Arduino-API/) or via [RUI3 AT commands](/RUI3/Serial-Operating-Modes/AT-Command-Manual/).
+
+You can [convert your RAK4631 to RAK4631-R](/Product-Categories/WisBlock/RAK4631-R/DFU/#updating-rak4631-to-rui3) if you prefer [RUI3](/RUI3/).
+:::
 
 ## Product Features
 

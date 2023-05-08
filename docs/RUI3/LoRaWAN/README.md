@@ -144,20 +144,20 @@ enum _RAK_LORA_BAND
 ```
 
 
-| Enumerator       |             |
-| ---------------- | ----------- |
-| RAK_REGION_EU433 | EU433       |
-| RAK_REGION_CN470 | CN470 ~ 510 |
-| RAK_REGION_RU864 | RU864 ~ 870 |
-| RAK_REGION_IN865 | IN865 ~ 867 |
-| RAK_REGION_EU868 | EU863 ~ 870 |
-| RAK_REGION_US915 | US902 ~ 928 |
-| RAK_REGION_AU915 | AU915 ~ 928 |
-| RAK_REGION_KR920 | KR920 ~ 923 |
-| RAK_REGION_AS923-1 | AS923-1       |
-| RAK_REGION_AS923-2 | AS923-2       |
-| RAK_REGION_AS923-3 | AS923-3       |
-| RAK_REGION_AS923-4 | AS923-4       |
+| Enumerator         |             |
+| ------------------ | ----------- |
+| RAK_REGION_EU433   | EU433       |
+| RAK_REGION_CN470   | CN470 ~ 510 |
+| RAK_REGION_RU864   | RU864 ~ 870 |
+| RAK_REGION_IN865   | IN865 ~ 867 |
+| RAK_REGION_EU868   | EU863 ~ 870 |
+| RAK_REGION_US915   | US902 ~ 928 |
+| RAK_REGION_AU915   | AU915 ~ 928 |
+| RAK_REGION_KR920   | KR920 ~ 923 |
+| RAK_REGION_AS923-1 | AS923-1     |
+| RAK_REGION_AS923-2 | AS923-2     |
+| RAK_REGION_AS923-3 | AS923-3     |
+| RAK_REGION_AS923-4 | AS923-4     |
 
 ```c
 typedef enum
@@ -287,7 +287,7 @@ The LoRaWAN receive frame control structure
 
 ```
 
-#### Port 
+#### Port
 
 Application port
 
@@ -295,7 +295,7 @@ Application port
 uint8_t Port
 ```
 
-#### RxDatarate 
+#### RxDatarate
 
 Downlink datarate
 
@@ -399,7 +399,7 @@ RAKLorawan::appeui
 
 #### get()
 
-This API allows the user to get the global application identifier. 
+This API allows the user to get the global application identifier.
 
 ```c
 api.lorawan.appeui.get(buf, len);
@@ -468,24 +468,24 @@ api.lorawan.appeui.set(buf, len);
 ```c{11}
 
     // OTAA Application EUI MSB
-    uint8_t node_app_eui[8] = {0x0E, 0x0D, 0x0D, 0x01, 0x0E, 0x01, 0x02, 0x03}; 
-     
+    uint8_t node_app_eui[8] = {0x0E, 0x0D, 0x0D, 0x01, 0x0E, 0x01, 0x02, 0x03};
+
     void setup()
     {
         Serial.begin(115200);
-    
+
         api.lorawan.njm.set(RAK_LORA_OTAA); // Set LoRaWan join mode to OTAA
-    
+
         if(api.lorawan.appeui.set(node_app_eui, 8) == true)
             Serial.println("LoRaWan AppEUI set success");
         else
             Serial.println("LoRaWan AppEUI set fail");
     }
-    
+
     void loop()
     {
         uint8_t buff[8];
-    
+
         if(api.lorawan.appeui.get(buff, 8) == true) {
             Serial.print("LoRaWan AppEUI = 0x");
             for(int i = 0; i < 8; i++) {
@@ -495,7 +495,7 @@ api.lorawan.appeui.set(buf, len);
         } else {
             Serial.println("LoRaWan AppEUI get fail");
         }
-    
+
         delay(1000);
     }
 ```
@@ -974,7 +974,7 @@ void loop()
 
 ### netid
 
-This API allows the user to access the network identifier (NetID). 
+This API allows the user to access the network identifier (NetID).
 
 ```c
 RAKLorawan::netid
@@ -982,7 +982,7 @@ RAKLorawan::netid
 
 #### get()
 
-This API allows the user to get the network identifier (NetID). 
+This API allows the user to get the network identifier (NetID).
 
 ```c
 api.lorawan.netid.get(buf, len);
@@ -1171,7 +1171,7 @@ void loop()
 ## Joining and Sending Data on LoRa Network
 
 
-### rety 
+### rety
 
 This API gets or sets the times of retransmission of Confirm packet data.
 
@@ -1185,7 +1185,7 @@ This API allows to get the times of retransmission of Confirm packet data.
 
 
 ```c
-api.lorawan.rety.get();	
+api.lorawan.rety.get();
 ```
 
 
@@ -1279,7 +1279,7 @@ api.lorawan.cfm.get();
 void setup()
 {
     Serial.begin(115200);
-    
+
     Serial.printf("Set confirm mode status %s\n\r", api.lorawan.cfm.set(1) ? "Success" : "Fail");
 }
 
@@ -1385,16 +1385,16 @@ void setup()
 void loop()
 {
     uint8_t payload[] = "example";
-    
+
     if (api.lorawan.send(sizeof(payload), payload, 129, true, 1)) {
         Serial.println("Send Success");
         Serial.printf("Send confirm %s\r\n", api.lorawan.cfs.get() ? "Success" : "Fail");
-    
+
     } else {
         Serial.println("Send fail");
 
     }
-    
+
     delay(5000);
 }
 
@@ -1817,7 +1817,7 @@ void loop()
 This API is used to register a callback function, so that application can be notified when joining process is done.
 
 ```c
-api.lorawan.registerJoinCallback(service_lora_join_cb callback);	
+api.lorawan.registerJoinCallback(service_lora_join_cb callback);
 ```
 
 
@@ -1899,7 +1899,7 @@ void loop()
 This API is used to register a callback function, so that application can be notified when uplink process is done.
 
 ```c
-api.lorawan.registerSendCallback(service_lora_send_cb callback);	
+api.lorawan.registerSendCallback(service_lora_send_cb callback);
 ```
 
 
@@ -2090,13 +2090,13 @@ void loop()
 {
     switch(api.lorawan.deviceClass.get()) {
         case 0:
-            Serial.println("Device is in Class A");      
+            Serial.println("Device is in Class A");
             break;
         case 1:
-            Serial.println("Device is in Class B");      
+            Serial.println("Device is in Class B");
             break;
         case 2:
-            Serial.println("Device is in Class C");      
+            Serial.println("Device is in Class C");
             break;
     }
 
@@ -2932,7 +2932,7 @@ void loop()
 
 ### pgslot
 
-This API allows the user to get or set the unicast ping slot periodicity. 
+This API allows the user to get or set the unicast ping slot periodicity.
 
 ```c
 RAKLorawan::pgslot
@@ -3213,7 +3213,7 @@ void setup()
   api.lorawan.njm.set(1);
   api.lorawan.join();
 
-  //Wait for Join success 
+  //Wait for Join success
   while (api.lorawan.njs.get() == 0)
   {
     Serial.print("Waiting for Lorawan join...");
@@ -3514,7 +3514,7 @@ uint8_t node_device_eui[8] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
 uint8_t node_app_eui[8] = {0x0E, 0x0D, 0x0D, 0x01, 0x0E, 0x01, 0x02, 0x03};
 // OTAA Application Key MSB
 uint8_t node_app_key[16] = {0x2B, 0x7E, 0x15, 0x16, 0x28, 0xAE, 0xD2, 0xA6, 0xAB, 0xF7, 0x15, 0x88, 0x09, 0xCF, 0x4F, 0x3C};
-     
+
 void setup()
 {
   Serial.begin(115200);
@@ -3526,7 +3526,7 @@ void setup()
 
   api.lorawan.njm.set(1);
   api.lorawan.join();
-  
+
   //Wait for Join success
   while (api.lorawan.njs.get() == 0)
   {
@@ -3549,7 +3549,7 @@ void loop()
   Serial.print("\r\n");
 
   delay(5000);
-} 
+}
 ```
 :::
 
@@ -3572,7 +3572,7 @@ RAKLorawan::mask
 This API allows the user to get the channel mask, close or open the channel.
 
 ```c
-api.lorawan.mask.get(buff);	
+api.lorawan.mask.get(buff);
 ```
 
 
@@ -3598,7 +3598,7 @@ void setup()
 
 void loop()
 {
-    
+
     Serial.printf("Get channel mask %s\r\n", api.lorawan.mask.get(&maskBuff) ? "Success" : "Fail");
     Serial.printf("Channel mask = %04X\r\n", maskBuff);
     delay(1000);
@@ -3612,7 +3612,7 @@ void loop()
 This API allows the user to set the channel mask, close or open the channel.
 
 ```c
-api.lorawan.mask.set(value);	
+api.lorawan.mask.set(value);
 ```
 
 
@@ -3682,14 +3682,14 @@ This API gets the number corresponding to active regions.
 
 
 ```c
-api.lorawan.band.get();	
+api.lorawan.band.get();
 ```
 
 
-| **Function**      | `int32_t get()`                                                                                                                                                       |
-| ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Returns**       | the active region                                                                                                                                                     |
-| **Return Values** | **0** - EU433  <br>  **1** - CN470 <br> **2** - RU864 <br> **3**	- IN865 <br> **4** - EU868 <br> **5**	- US915 <br> **6** - AU915 <br> **7** - KR920 <br> **8** - AS923-1 <br> **9** - AS923-2 <br> **10** - AS923-3 <br> **11** - AS923-4|
+| **Function**      | `int32_t get()`                                                                                                                                                                                                                            |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Returns**       | the active region                                                                                                                                                                                                                          |
+| **Return Values** | **0** - EU433  <br>  **1** - CN470 <br> **2** - RU864 <br> **3**	- IN865 <br> **4** - EU868 <br> **5**	- US915 <br> **6** - AU915 <br> **7** - KR920 <br> **8** - AS923-1 <br> **9** - AS923-2 <br> **10** - AS923-3 <br> **11** - AS923-4 |
 
 
 ::: details Click to View Example
@@ -3717,7 +3717,7 @@ This API set number corresponding to active regions.
 
 
 ```c
-api.lorawan.band.set(value);	
+api.lorawan.band.set(value);
 ```
 
 
@@ -3793,7 +3793,7 @@ void loop()
 ```
 :::
 
-#### set() 
+#### set()
 
 This API allows to set the network working mode (0 = P2P, 1 = LoRaWAN, 2 = FSK).
 
@@ -3855,8 +3855,8 @@ api.lorawan.pfreq.get();
 void setup()
 {
     Serial.begin(115200);
-    Serial.printf("Set Node device work mode %s\r\n", api.lorawan.nwm.set(0) ? "Success" : "Fail");   
-    Serial.printf("Set P2P mode frequency %s\r\n", api.lorawan.pfreq.set(868000000) ? "Success" : "Fail");   
+    Serial.printf("Set Node device work mode %s\r\n", api.lorawan.nwm.set(0) ? "Success" : "Fail");
+    Serial.printf("Set P2P mode frequency %s\r\n", api.lorawan.pfreq.set(868000000) ? "Success" : "Fail");
 }
 
 void loop()
@@ -3876,7 +3876,7 @@ This API allows to set the P2P frequency.
 
 
 ```c
-api.lorawan.pfreq.set(value);	
+api.lorawan.pfreq.set(value);
 ```
 
 | **Function**      | `bool set(uint32_t value)`                                                           |
@@ -3918,7 +3918,7 @@ RAKLorawan::psf
 This API allows to get P2P Spreading Factor (6, 7, 8, 9, 10, 11, 12).
 
 ```c
-api.lorawan.psf.get();	
+api.lorawan.psf.get();
 ```
 
 | **Function** | `uint8_t get()`          |
@@ -3950,7 +3950,7 @@ void loop()
 This API allows to set P2P Spreading Factor (6,7, 8, 9, 10, 11, 12).
 
 ```c
-api.lorawan.psf.set(value);	
+api.lorawan.psf.set(value);
 ```
 
 
@@ -4106,7 +4106,7 @@ This API allows to set code rate for the P2P mode.
 
 
 ```c
-api.lorawan.pcr.set(value);	
+api.lorawan.pcr.set(value);
 ```
 
 | **Function**      | `bool set(uint8_t value)`                                                            |
@@ -4183,12 +4183,12 @@ void loop()
 This API allows to set P2P Preamble Length (2-65535).
 
 ```c
-api.lorawan.ppl.set(value);	
+api.lorawan.ppl.set(value);
 ```
 
 | **Function**   | `bool set(uint16_t value)`                                                                                        |
 | -------------- | ----------------------------------------------------------------------------------------------------------------- |
-| **Parameters** | **value** - the P2P preamble length (2-65536)                                                                      |
+| **Parameters** | **value** - the P2P preamble length (2-65536)                                                                     |
 | **Returns**    | **TRUE** for setting P2P preamble length success <br> **FALSE** for setting preamble length fail (Type: **bool**) |
 
 
@@ -4305,7 +4305,7 @@ RAKLorawan::encry
 This API allows to get the status of P2P mode encryption.
 
 ```c
-api.lorawan.encry.get();	
+api.lorawan.encry.get();
 ```
 
 | **Function**      | `bool get()`                                                                            |
@@ -4324,9 +4324,9 @@ void setup()
 {
     Serial.begin(115200);
     startTime = millis();
-  
+
     Serial.println("P2P Start");
-    
+
     Serial.printf("Set Node device work mode %s\r\n", api.lorawan.nwm.set(0) ? "Success" : "Fail");
     Serial.printf("Set P2P mode frequency %s\r\n", api.lorawan.pfreq.set(868000000) ? "Success" : "Fail");
     Serial.printf("Set P2P mode spreading factor %s\r\n", api.lorawan.psf.set(12) ? "Success" : "Fail");
@@ -4344,7 +4344,7 @@ void setup()
             Serial.printf("%02X", encrypt_buff[i]);
         }
     Serial.println("");
-  
+
     randomSeed(millis());
 }
 
@@ -4353,7 +4353,7 @@ void loop()
     uint8_t payload[] = "payload";
 
     int rxDelay = random(3000, 5000);
-  
+
     // Receive P2P data every 10 seconds
     if(millis() - startTime >= 10*1000) {
       Serial.printf("P2P Rx start for %d millisSeconds\r\n", rxDelay);
@@ -4361,7 +4361,7 @@ void loop()
       Serial.printf("P2P set Rx mode %s\r\n",api.lorawan.precv(rxDelay) ? "Success" : "Fail");
       delay(rxDelay);
     } else {
-    
+
       Serial.printf("P2P send %s\r\n", api.lorawan.psend(sizeof(payload), payload)? "Success" : "Fail");
       delay(1000);
     }
@@ -4378,7 +4378,7 @@ This API allows to enable or disable P2P mode encryption.
 
 
 ```c
-api.lorawan.encry.set(value);	
+api.lorawan.encry.set(value);
 ```
 
 | **Function**      | `bool set(bool value)`                                                                                    |
@@ -4398,9 +4398,9 @@ void setup()
 {
     Serial.begin(115200);
     startTime = millis();
-  
+
     Serial.println("P2P Start");
-    
+
     Serial.printf("Set Node device work mode %s\r\n", api.lorawan.nwm.set(0) ? "Success" : "Fail");
     Serial.printf("Set P2P mode frequency %s\r\n", api.lorawan.pfreq.set(868000000) ? "Success" : "Fail");
     Serial.printf("Set P2P mode spreading factor %s\r\n", api.lorawan.psf.set(12) ? "Success" : "Fail");
@@ -4419,7 +4419,7 @@ void setup()
             Serial.printf("%02X", encrypt_buff[i]);
         }
     Serial.println("");
-  
+
     randomSeed(millis());
 }
 
@@ -4428,7 +4428,7 @@ void loop()
     uint8_t payload[] = "payload";
 
     int rxDelay = random(3000, 5000);
-  
+
     // Receive P2P data every 10 seconds
     if(millis() - startTime >= 10*1000) {
       Serial.printf("P2P Rx start for %d millisSeconds\r\n", rxDelay);
@@ -4436,7 +4436,7 @@ void loop()
       Serial.printf("P2P set Rx mode %s\r\n",api.lorawan.precv(rxDelay) ? "Success" : "Fail");
       delay(rxDelay);
     } else {
-    
+
       Serial.printf("P2P send %s\r\n", api.lorawan.psend(sizeof(payload), payload)? "Success" : "Fail");
       delay(1000);
     }
@@ -4463,11 +4463,11 @@ api.lorawan.enckey.get(buff, len);
 ```
 
 
-| **Function**      | `bool get(uint8_t * buff, uint32_t len)`                                                                          |
-| ----------------- | ----------------------------------------------------------------------------------------------------------------- |
+| **Function**      | `bool get(uint8_t * buff, uint32_t len)`                                                                         |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------- |
 | **Parameters**    | **buff**	- the buffer to store encryption key <br> **len** - the length of encryption key (must be 8&nbsp;bytes) |
-| **Returns**       | bool                                                                                                              |
-| **Return Values** | **TRUE** for getting encryption key success <br> **FALSE** for getting encryption key failure                     |
+| **Returns**       | bool                                                                                                             |
+| **Return Values** | **TRUE** for getting encryption key success <br> **FALSE** for getting encryption key failure                    |
 
 
 ::: details Click to View Example
@@ -4480,9 +4480,9 @@ void setup()
 {
     Serial.begin(115200);
     startTime = millis();
-  
+
     Serial.println("P2P Start");
-    
+
     Serial.printf("Set Node device work mode %s\r\n", api.lorawan.nwm.set(0) ? "Success" : "Fail");
     Serial.printf("Set P2P mode frequency %s\r\n", api.lorawan.pfreq.set(868000000) ? "Success" : "Fail");
     Serial.printf("Set P2P mode spreading factor %s\r\n", api.lorawan.psf.set(12) ? "Success" : "Fail");
@@ -4501,7 +4501,7 @@ void setup()
             Serial.printf("%02X", encrypt_buff[i]);
         }
     Serial.println("");
-  
+
     randomSeed(millis());
 }
 
@@ -4510,7 +4510,7 @@ void loop()
     uint8_t payload[] = "payload";
 
     int rxDelay = random(3000, 5000);
-  
+
     // Receive P2P data every 10 seconds
     if(millis() - startTime >= 10*1000) {
       Serial.printf("P2P Rx start for %d millisSeconds\r\n", rxDelay);
@@ -4518,7 +4518,7 @@ void loop()
       Serial.printf("P2P set Rx mode %s\r\n",api.lorawan.precv(rxDelay) ? "Success" : "Fail");
       delay(rxDelay);
     } else {
-    
+
       Serial.printf("P2P send %s\r\n", api.lorawan.psend(sizeof(payload), payload)? "Success" : "Fail");
       delay(1000);
     }
@@ -4535,7 +4535,7 @@ This API allows to set the key of P2P mode encryption.
 
 
 ```c
-api.lorawan.enckey.set(buff, len);	
+api.lorawan.enckey.set(buff, len);
 ```
 
 | **Function**      | `bool set(uint8_t * buff, uint32_t len)`                                                                       |
@@ -4556,9 +4556,9 @@ void setup()
 {
     Serial.begin(115200);
     startTime = millis();
-  
+
     Serial.println("P2P Start");
-    
+
     Serial.printf("Set Node device work mode %s\r\n", api.lorawan.nwm.set(0) ? "Success" : "Fail");
     Serial.printf("Set P2P mode frequency %s\r\n", api.lorawan.pfreq.set(868000000) ? "Success" : "Fail");
     Serial.printf("Set P2P mode spreading factor %s\r\n", api.lorawan.psf.set(12) ? "Success" : "Fail");
@@ -4577,7 +4577,7 @@ void setup()
             Serial.printf("%02X", encrypt_buff[i]);
         }
     Serial.println("");
-    
+
     randomSeed(millis());
 }
 
@@ -4586,7 +4586,7 @@ void loop()
     uint8_t payload[] = "payload";
 
     int rxDelay = random(3000, 5000);
-  
+
     // Receive P2P data every 10 seconds
     if(millis() - startTime >= 10*1000) {
       Serial.printf("P2P Rx start for %d millisSeconds\r\n", rxDelay);
@@ -4594,7 +4594,7 @@ void loop()
       Serial.printf("P2P set Rx mode %s\r\n",api.lorawan.precv(rxDelay) ? "Success" : "Fail");
       delay(rxDelay);
     } else {
-    
+
       Serial.printf("P2P send %s\r\n", api.lorawan.psend(sizeof(payload), payload)? "Success" : "Fail");
       delay(1000);
     }
@@ -4619,7 +4619,7 @@ RAKLorawan::pbr
 This API allows to get the P2P FSK modem bitrate (600&nbsp;b/s - 307200&nbsp;b/s).
 
 ```c
-api.lorawan.pbr.get();	
+api.lorawan.pbr.get();
 ```
 
 | **Function** | `uint32_t get()`          |
@@ -4655,7 +4655,7 @@ RAKLorawan::pfdev
 This API allows to get the P2P FSK modem frequency deviation.
 
 ```c
-api.lorawan.pfdev.get();	
+api.lorawan.pfdev.get();
 ```
 
 | **Function** | `uint32_t get()`                      |
@@ -4670,7 +4670,7 @@ api.lorawan.pfdev.get();
 This API allows to set the P2P FSK modem frequency deviation.
 
 ```c
-api.lorawan.pfdev.set(value);	
+api.lorawan.pfdev.set(value);
 ```
 
 | **Function**   | `bool set(uint32_t value)` |
@@ -4682,10 +4682,9 @@ api.lorawan.pfdev.set(value);
 
 This API is used to register a callback function, so that application can be notified on receiving P2P data.
 
-
 ```c
-api.lorawan.registerPRecvCallback(service_lora_p2p_recv_cb_type callback);	
-```band
+api.lorawan.registerPRecvCallback(service_lora_p2p_recv_cb_type callback);
+```
 
 
 | **Function**      | `bool registerPRecvCallback(service_lora_p2p_recv_cb_type callback)`                                |
@@ -4693,8 +4692,8 @@ api.lorawan.registerPRecvCallback(service_lora_p2p_recv_cb_type callback);
 | **Parameters**    | **The** - callback function                                                                         |
 | **Returns**       | bool                                                                                                |
 | **Return Values** | **TRUE** for setting callback function success <br> **FALSE** for setting callback function failure |
- 
- 
+
+
 ::: details Click to View Example
 ```c{28}
 void recv_cb(rui_lora_p2p_recv_t data) {
@@ -4715,7 +4714,7 @@ void setup()
   startTime = millis();
 
   Serial.println("P2P Start");
-  
+
   Serial.printf("Set Node device work mode %s\r\n", api.lorawan.nwm.set(0) ? "Success" : "Fail");
   Serial.printf("Set P2P mode frequency %s\r\n", api.lorawan.pfreq.set(868000000) ? "Success" : "Fail");
   Serial.printf("Set P2P mode spreading factor %s\r\n", api.lorawan.psf.set(12) ? "Success" : "Fail");
@@ -4743,24 +4742,21 @@ void loop()
     Serial.printf("P2P set Rx mode %s\r\n",api.lorawan.precv(rxDelay) ? "Success" : "Fail");
     delay(rxDelay);
   } else {
-  
+
     Serial.printf("P2P send %s\r\n", api.lorawan.psend(sizeof(payload), payload)? "Success" : "Fail");
     delay(1000);
   }
-
-}  
-
+}
 
 ```
 :::
-
 
 ### registerPSendCallback()
 
 This API is used to register a callback function, so that application can be notified when P2P uplink process is done.
 
 ```c
-api.lorawan.registerPSendCallback(service_lora_p2p_send_cb_type callback);	
+api.lorawan.registerPSendCallback(service_lora_p2p_send_cb_type callback);
 ```
 
 | **Function**      | `bool registerPSendCallback(service_lora_p2p_send_cb_type callback)`                                |
@@ -4791,7 +4787,7 @@ void setup()
   startTime = millis();
 
   Serial.println("P2P Start");
-  
+
   Serial.printf("Set Node device work mode %s\r\n", api.lorawan.nwm.set(0) ? "Success" : "Fail");
   Serial.printf("Set P2P mode frequency %s\r\n", api.lorawan.pfreq.set(868000000) ? "Success" : "Fail");
   Serial.printf("Set P2P mode spreading factor %s\r\n", api.lorawan.psf.set(12) ? "Success" : "Fail");
@@ -4819,12 +4815,12 @@ void loop()
     Serial.printf("P2P set Rx mode %s\r\n",api.lorawan.precv(rxDelay) ? "Success" : "Fail");
     delay(rxDelay);
   } else {
-  
+
     Serial.printf("P2P send %s\r\n", api.lorawan.psend(sizeof(payload), payload)? "Success" : "Fail");
     delay(1000);
   }
 
-}    
+}
 
 ```
 :::
@@ -4833,9 +4829,13 @@ void loop()
 
 This API provides the way to P2P send data.
 
+:::tip 📝 NOTE
+P2P TX mode can be blocked by certain settings in P2P RX mode. You can disable P2P RX mode and switch to P2P TX mode via `api.lorawan.precv(0)` to ensure that P2P RX mode is not blocking the `psend()` API.
+:::
+
 
 ```c
-api.lorawan.psend(length, payload);	
+api.lorawan.psend(length, payload);
 ```
 
 | **Function**      | `bool psend(uint8_t length, uint8_t * payload)`                                             |
@@ -4865,10 +4865,53 @@ void setup()
 void loop()
 {
     uint8_t payload[] = "payload";
-    Serial.printf("P2P send %s\r\n", api.lorawan.psend(sizeof(payload), payload)? "Success" : "Fail"); 
+    Serial.printf("P2P send %s\r\n", api.lorawan.psend(sizeof(payload), payload)? "Success" : "Fail");
 
     delay(5000);
 }
+
+```
+:::
+
+
+### precv()
+
+This API is used to enter P2P RX mode for a specified period.
+
+```c
+api.lorawan.precv(uint32_t timeout)
+```
+
+| **Function**      | `bool precv(uint32_t timeout)`                                                                                                                                                                                                                                                                                                                 |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Parameters**    | **timeout** - the duration of P2P Rx mode in milliseconds <br> Special timeout values: <br> **65535**: Stay in RX mode until a packet is received. <br> **65534**: Permanent RX mode (TX not possible) until `api.lorawan.precv(0)` is executed. <br> **65533**: Permanent RX mode and still allows TX without calling `api.lorawan.precv(0)`. |
+| **Returns**       | bool                                                                                                                                                                                                                                                                                                                                           |
+| **Return Values** | **TRUE** for entering P2P Rx mode success <br> **FALSE** for failure to activate P2P RX mode                                                                                                                                                                                                                                                   |
+
+
+::: details Click to View Example
+```c{18}
+void setup()
+  {
+      Serial.begin(115200);
+
+      Serial.println("P2P Start");
+
+      Serial.printf("Set Node device work mode %s\r\n", api.lorawan.nwm.set(0) ? "Success" : "Fail");
+      Serial.printf("Set P2P mode frequency %s\r\n", api.lorawan.pfreq.set(868000000) ? "Success" : "Fail");
+      Serial.printf("Set P2P mode spreading factor %s\r\n", api.lorawan.psf.set(12) ? "Success" : "Fail");
+      Serial.printf("Set P2P mode bandwidth %s\r\n", api.lorawan.pbw.set(125) ? "Success" : "Fail");
+      Serial.printf("Set P2P mode code rate %s\r\n", api.lorawan.pcr.set(0) ? "Success" : "Fail");
+      Serial.printf("Set P2P mode preamble length %s\r\n", api.lorawan.ppl.set(8) ? "Success" : "Fail");
+      Serial.printf("Set P2P mode tx power %s\r\n", api.lorawan.ptp.set(22) ? "Success" : "Fail");
+  }
+
+  void loop()
+  {
+      Serial.printf("P2P set Rx mode %s\r\n",api.lorawan.precv(5000) ? "Success" : "Fail");
+
+      delay(6000);
+  }
 
 ```
 :::
@@ -4881,7 +4924,7 @@ void loop()
 This API adds a new multicast group configure multicast parameters.
 
 ```c
-api.lorawan.addmulc(session);	
+api.lorawan.addmulc(session);
 ```
 
 
@@ -4929,13 +4972,13 @@ RAK_LORA_McSession session = {
   api.lorawan.appeui.set(node_app_eui, 8);
   api.lorawan.appkey.set(node_app_key, 16);
   api.lorawan.deui.set(node_device_eui, 8);
-   
+
   api.lorawan.band.set(4);
   api.lorawan.njm.set(1);
   api.lorawan.deviceClass.set(2);
   api.lorawan.join();
 
-  //Wait for Join success 
+  //Wait for Join success
   while (api.lorawan.njs.get() == 0)
   {
     Serial.print("Waiting for Lorawan join...");
@@ -4953,7 +4996,7 @@ RAK_LORA_McSession session = {
   } else {
     Serial.println("Add Multicast Fail");
   }
-  
+
 }
 
 void loop()
@@ -4970,7 +5013,7 @@ void loop()
 This API allows the removal of a configured multicast group.
 
 ```c
-api.lorawan.rmvmulc(devAddr);	
+api.lorawan.rmvmulc(devAddr);
 ```
 
 
@@ -5016,13 +5059,13 @@ void setup()
   api.lorawan.appeui.set(node_app_eui, 8);
   api.lorawan.appkey.set(node_app_key, 16);
   api.lorawan.deui.set(node_device_eui, 8);
-   
+
   api.lorawan.band.set(4);
   api.lorawan.njm.set(1);
   api.lorawan.deviceClass.set(2);
   api.lorawan.join();
 
-  //Wait for Join success 
+  //Wait for Join success
   while (api.lorawan.njs.get() == 0)
   {
     Serial.print("Waiting for Lorawan join...");
@@ -5040,14 +5083,14 @@ void setup()
   } else {
     Serial.println("Add Multicast Fail");
   }
-  
+
 }
 
 void loop()
 {
   if(millis() > 100000) {
      Serial.printf("Remove a multicast group %s\r\n", api.lorawan.rmvmulc(node_mc_address[0]<<24 | node_mc_address[1]<<16 | node_mc_address[2]<<8 | node_mc_address[3]));
-   } 
+   }
 }
 
 ```
@@ -5060,7 +5103,7 @@ void loop()
 This command can view current configured multicast group information.
 
 ```c
-api.lorawan.lstmulc(&multicast_list);	
+api.lorawan.lstmulc(&multicast_list);
 ```
 
 | **Function**      | `bool lstmulc(RAK_LORA_McSession * iterator)`                                            |
@@ -5106,13 +5149,13 @@ RAK_LORA_McSession session = {
   api.lorawan.appeui.set(node_app_eui, 8);
   api.lorawan.appkey.set(node_app_key, 16);
   api.lorawan.deui.set(node_device_eui, 8);
-   
+
   api.lorawan.band.set(4);
   api.lorawan.njm.set(1);
   api.lorawan.deviceClass.set(2);
   api.lorawan.join();
 
-  //Wait for Join success 
+  //Wait for Join success
   while (api.lorawan.njs.get() == 0)
   {
     Serial.print("Waiting for Lorawan join...");
@@ -5130,7 +5173,7 @@ RAK_LORA_McSession session = {
   } else {
     Serial.println("Add Multicast Fail");
   }
-  
+
 }
 
 void loop()

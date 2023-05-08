@@ -33,6 +33,11 @@ The module complies with LoRaWAN 1.0.2 protocols, it also supports LoRa point-to
 
 The RF communication characteristic of the module (LoRa + BLE) makes it suitable for a variety of applications in the IoT field such as home automation, sensor networks, building automation, personal area networks applications (health/fitness sensors, and monitors, etc.).
 
+::: tip 📝 NOTE
+The RAK4631 and RAK4631-R share common hardware and are 100% identical, but their firmware is different. **RAK4631** firmware is based on the Arduino BSP of the nRF52840 chip, whereas **RAK4631-R** firmware is based on RUI V3, giving you the flexibility to develop optimized firmware using the [RUI3 APIs](/RUI3/Arduino-API/) or via [RUI3 AT commands](/RUI3/Serial-Operating-Modes/AT-Command-Manual/).
+
+You can [convert your RAK4631 to RAK4631-R](/Product-Categories/WisBlock/RAK4631-R/DFU/#updating-rak4631-to-rui3) if you prefer [RUI3](/RUI3/).
+:::
 
 ### Features
 

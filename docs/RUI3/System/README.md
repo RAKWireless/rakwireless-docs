@@ -316,7 +316,7 @@ void loop()
 
 ## Timer
 
-On RUI3 Timer API, there are two different Timer modes based on the trigger. 
+On RUI3 Timer API, there are two different Timer modes based on the trigger.
 
 
 | **Timer Mode**     | **Comments**                 |
@@ -413,7 +413,7 @@ void setup()
 
 void loop()
 {
-  api.system.sleep.cpu(1000); 
+  api.system.sleep.cpu(1000);
 }
 ```
 :::
@@ -481,10 +481,17 @@ Sets up the sleep function.
 api.system.sleep.setup(mode);
 ```
 
-| **Function**   | `void setup(RUI_WAKEUP_TRIGGER_MODE mode, uint32_t pin)`                                                                      |
-| -------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| **Parameters** | **mode** - This decide to use Rising or Falling trigger mode<br> **pin** - This is the pin to be chosen as the wake up source |
-| **Returns**    | void                                                                                                                          |
+On sleep mode, the device wake up trigger can be configured.
+
+| **Trigger Mode**        | **Description**                      |
+| ----------------------- | ------------------------------------ |
+| RUI_WAKEUP_RISING_EDGE  | Trigger wake up during rising edge.  |
+| RUI_WAKEUP_FALLING_EDGE | Trigger wake up during falling edge. |
+
+| **Function**   | `void setup(RUI_WAKEUP_TRIGGER_MODE mode, uint32_t pin)`                                                                         |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| **Parameters** | **mode** - This decide to use Rising or Falling trigger mode. <br> **pin** - This is the pin to be chosen as the wake up source. |
+| **Returns**    | void                                                                                                                             |
 
 
 :::details Click to View Example
@@ -531,12 +538,12 @@ void setup()
 {
   string password = "12345678";
   api.system.pword.set(password); // set the password to 12345678
-  api.system.pword.lock();        // lock the default port 
+  api.system.pword.lock();        // lock the default port
 }
 
 void loop()
 {
-  loopCount++; 
+  loopCount++;
 
       if (loopCount == 60)
         api.system.pword.unlock();   // unlock the default port after 60 seconds
@@ -556,7 +563,7 @@ If you never set a password successfully, the default password will be **0000000
 :::
 
 ```c
-api.system.pword.lock()	
+api.system.pword.lock()
 ```
 
 | **Function** | `void lock(void)` |
@@ -592,7 +599,7 @@ void loop()
 This api allows user to unlock the default serial without password when its locked.
 
 ```c
-api.system.pword.unlock()	
+api.system.pword.unlock()
 ```
 
 | **Function** | `void unlock(void)` |
@@ -752,11 +759,11 @@ void loop()
 
 Changes AT command permission.
 
-PERMISSION LEVEL: 
+PERMISSION LEVEL:
 * `RAK_ATCMD_PERM_READ`, `RAK_ATCMD_PERM_WRITE`, `RAK_ATCMD_PERM_WRITEONCEREAD`, `RAK_ATCMD_PERM_DISABLE` AT commands' default permission are `RAK_ATCMD_PERM_READ | RAK_ATCMD_PERM_WRITE`.
 
 ```c
-#define CHANGE_ATCMD_PERM(_atcmd_name, _atcmd_perm)		
+#define CHANGE_ATCMD_PERM(_atcmd_name, _atcmd_perm)
 ```
 
 **Value:**
@@ -814,7 +821,7 @@ void loop()
   loopCount++;
 
   if(loopCount == 60)
-    api.system.reboot();  // Reboot after 60 seconds 
+    api.system.reboot();  // Reboot after 60 seconds
 
   delay(1000);
 }
