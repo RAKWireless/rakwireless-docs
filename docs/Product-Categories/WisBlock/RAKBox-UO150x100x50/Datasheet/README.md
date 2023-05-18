@@ -34,23 +34,17 @@ Moreover, it supports different types of mounting options such as pole, wall, DI
 - Logo customization possibility
 - Support opening as required
 
-## Ports
-
 <rk-img
-  src="/assets/images/wisblock/rakbox-uo150x100x50/datasheet/ports.png"
-  width="80%"
-  caption="Unify Enclosure for WisBlock Ports"
+  src="/assets/images/wisblock/rakbox-uo150x100x50/datasheet/uo150x100x50.png"
+  width="40%"
+  caption="Unify Enclosure for WisBlock"
 />
+
+## Ports
 
 - 1 x 16&nbsp;mm Port supporting N-type connectors
 - 1 x 16&nbsp;mm Port supporting 16&nbsp;mm Circular connector
 - 1 x Type-C Port for WisBlock Base Board RAK19001
-
-<rk-img
-  src="/assets/images/wisblock/rakbox-uo150x100x50/datasheet/uo150x100x50.png"
-  width="40%"
-  caption="Unify Enclosure for WisBlock Type-C Port"
-/>
 
 ## Supported Mounting Options
 

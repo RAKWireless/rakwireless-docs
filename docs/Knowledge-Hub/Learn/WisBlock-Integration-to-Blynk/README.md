@@ -1,13 +1,13 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/banners/general_banner.jpg
+rak_img: /assets/images/knowledge-hub/learn/wisblock-integration-to-blynk/wisblock-blynk.png
 rak_desc: This tutorial shows the basics to start creating your custom firmware with RUI3 API.
 tags:
   - Tutorial
   - WisBlock
   - Blynk
 header:
-  title: LoRa, E-paper, and QR Codes - Making Low-Power, Long-Range Connected Badges
+  title: WisBlock Integration to Blynk
   caption: by <b>Rommel Jay Gadil</b>
   img: /assets/images/knowledge-hub/banners/high-power-wifi-module-and-power-line-communications.jpg
 posted: 19/05/2022 3:30 PM

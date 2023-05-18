@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/banners/general_banner.jpg
+rak_img: /assets/images/knowledge-hub/learn/helium-mapper/helium-mapper.png
 rak_desc: A guide on how to create a Helium Mapper with WisBlock devices.
 tags:
   - Tutorial

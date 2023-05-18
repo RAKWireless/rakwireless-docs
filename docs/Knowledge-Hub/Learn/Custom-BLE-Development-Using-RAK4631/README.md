@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/banners/general_banner.jpg
+rak_img: /assets/images/knowledge-hub/learn/custom-ble-development/custom-ble-development.png
 rak_desc: A guide on how to develop a custom BLE (Peripheral) using RAK4631 WisBlock Core.
 tags:
   - Tutorial

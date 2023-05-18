@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/banners/general_banner.jpg
+rak_img: /assets/images/knowledge-hub/learn/get-started-with-rui3/wisblock-rui3.png
 rak_desc: This tutorial shows the basics to start creating your custom firmware with RUI3 API.
 tags:
   - Tutorial

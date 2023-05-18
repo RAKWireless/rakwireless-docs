@@ -8,7 +8,9 @@ tags:
   - M320
 rak_desc: Provides comprehensive information about your All-in-One 5G to help you use it. This information includes technical specifications, characteristics, and requirements.
 rak_img: /assets/images/5g/all-in-one-5g/all-in-one-5g.png
-
+certifications:
+  - [FCC, https://downloads.rakwireless.com/5G/Certification/M310_FCC_Certification.pdf]
+  - [FCC, https://downloads.rakwireless.com/5G/Certification/M320_FCC_Certification.pdf]
 ---
 
 # All-in-One 5G Datasheet
@@ -248,5 +250,6 @@ The following introduces the software specifications of the All-in-One 5G:
 - Supports OpenVPN, Ping Watch Dog
 - Supports MQTT Bridge
 
+## Certification
 
-
+<rk-certifications :params="$page.frontmatter.certifications" />

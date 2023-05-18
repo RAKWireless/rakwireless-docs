@@ -1055,7 +1055,7 @@ export default {
 
   '/Product-Categories/WisBlock/RAK12002/': {
     label: 'RAK12002 WisBlock RTC module',
-    img: '/assets/images/wisblock/rak12002/rak12002.png',
+    img: '/assets/images/wisblock/rak12002/RAK12002.png',
     store: 'https://store.rakwireless.com/products/rtc-module-rak12002?utm_source=RAK12002&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisBlock/RAK18001/': {
@@ -1207,22 +1207,27 @@ export default {
   '/Product-Categories/WisBlock/RAKBox-UO100x75x38-Solar/': {
     label: 'WisBlock Unify Outdoor Enclosure 100x75x38 with Solar Panel',
     img: '/assets/images/wisblock/rakbox-uo100x75x38-solar/uo_home.png',
-    store: 'https://store.rakwireless.com/products/unify-enclosure-ip65-100-75-38-solar?utm_source=RAKBox-UO100x75x38-solar&utm_medium=Document&utm_campaign=BuyFromStore'
+    store: 'https://store.rakwireless.com/products/unify-enclosure-ip65-100x75x38-solar?utm_source=RAKBox-UO100x75x38-solar&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisBlock/RAKBox-UO100x75x38/': {
     label: 'WisBlock Unify Outdoor Enclosure 100x75x38',
     img: '/assets/images/wisblock/rakbox-uo100x75x38/uo_home.png',
-    store: 'https://store.rakwireless.com/products/unify-enclosure-ip65-100-75-38?utm_source=RAKBox-UO100x75x38&utm_medium=Document&utm_campaign=BuyFromStore'
+    store: 'https://store.rakwireless.com/products/unify-enclosure-ip65-100-75-38mm?utm_source=RAKBox-UO100x75x38&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisBlock/RAKBox-UO150x100x45/': {
     label: 'WisBlock Unify Outdoor Enclosure 150x100x45',
     img: '/assets/images/wisblock/rakbox-uo150x100x45/uo_home.png',
-    store: 'https://store.rakwireless.com/products/unify-enclosure-ip65-150-100-45?utm_source=RAKBox-UO150x100x45&utm_medium=Document&utm_campaign=BuyFromStore'
+    store: 'https://store.rakwireless.com/products/unify-enclosure-ip67-150-100-45mm?utm_source=RAKBox-UO150x100x45&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/RAKBox-UO150x100x50/': {
+    label: 'WisBlock Unify Outdoor Enclosure 150x100x50',
+    img: '/assets/images/wisblock/rakbox-uo150x100x50/uo150x100x50-home.png',
+    store: 'https://store.rakwireless.com/products/outdoor-unify-enclosure?utm_source=RAKBox-UO150x100x50&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisBlock/RAKBox-UO180x130x60/': {
     label: 'WisBlock Unify Outdoor Enclosure 180x130x60',
     img: '/assets/images/wisblock/rakbox-uo180x130x60/uo_home.png',
-    store: 'https://store.rakwireless.com/products/unify-enclosure-ip65-180x130x60mm?utm_source=RAKBox-UO180x130x60&utm_medium=Document&utm_campaign=BuyFromStore'
+    store: 'https://store.rakwireless.com/products/unify-enclosure-ip67-180-130-60mm?utm_source=RAKBox-UO180x130x60&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisBlock/RAKBox-Accessories/': {
     label: 'WisBlock Unify Enclosure Accessories',

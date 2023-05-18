@@ -466,7 +466,7 @@ The new WisGateOS V2 now offers Extension features, where you can install and se
 This guide assumes that you have some knowledge in setting up a WireGuard server and have a WireGuard server set up. <!--If you are not familiar with the WireGuard server, you can check this link <mark><link></mark>  to learn how to set up a WireGuard server.-->
 
 :::tip 📝 NOTE
-WireGuard extension can only be installed on WisGate Edge V2 gateways, with  WisGateOS 2 only.
+WireGuard extension can only be installed on WisGate Edge V2 gateways, with WisGateOS 2 only.
 :::
 
 - Download the [WireGuard Extension](https://downloads.rakwireless.com/LoRa/WisGateOS2/WisGateOS2-Extensions/wes-wireguard-1.0.0_b36.ipk).
@@ -546,7 +546,7 @@ Thus, by connecting to the server via a remote client, the user can remotely man
 The OpenVPN extension can only be installed on WisGate Edge V2 gateways, operating with WisGateOS 2.
 :::
 
-- Download the [OpenVPN Extension](https://downloads.rakwireless.com/LoRa/WisGateOS2/WisGateOS2-Extensions/wes-openvpn-1.0.0_b13.ipk).
+- Download the [OpenVPN Extension](https://downloads.rakwireless.com/LoRa/WisGateOS2/WisGateOS2-Extensions/wes-openvpn-1.0.0_b14.ipk).
 
 #### Installing the Extension
 

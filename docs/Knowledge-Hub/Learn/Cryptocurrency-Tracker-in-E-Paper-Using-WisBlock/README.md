@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/banners/general_banner.jpg
+rak_img: /assets/images/knowledge-hub/learn/cryptocurrency-with-wisblock/crypto-tracker.png
 rak_desc: A guide on how to build a cryptocurrency tracker with WisBlock.
 tags:
   - Tutorial

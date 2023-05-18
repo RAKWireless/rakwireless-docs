@@ -15,6 +15,7 @@ certifications:
   - [ISED, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_ISED_Certification.pdf]
   - [JRL, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_JRL_certification.pdf]
   - [KCC, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_KC_Certification.pdf]
+  - [MOC, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_MOC_Certification.pdf]
   - [NCC, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_NCC_Certification.pdf]
   - [RCM, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_RCM_Certification.pdf]
   - [REACH, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_REACH_Report.pdf]

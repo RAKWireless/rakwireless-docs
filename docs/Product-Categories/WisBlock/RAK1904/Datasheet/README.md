@@ -9,7 +9,7 @@ prev: ../Quickstart/
 next: false
 ---
 
-# RAK1904 WisBlock 3-axis Acceleration Sensor Module Datasheet
+# RAK1904 WisBlock 3-Axis Acceleration Sensor Module Datasheet
 
 ## Overview
 

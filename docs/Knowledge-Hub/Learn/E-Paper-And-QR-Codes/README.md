@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/banners/general_banner.jpg
+rak_img: /assets/images/knowledge-hub/learn/e-paper-and-qr-codes/epaper-qr.png
 rak_desc: A brief guide on how to combine E-Paper, QR codes, and LoRa using WisBlock.
 tags:
   - Tutorial

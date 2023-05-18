@@ -11,9 +11,9 @@ tags:
     - LIS3DH
 ---
 
-# RAK1904 WisBlock 3-axis Acceleration Sensor Module
+# RAK1904 WisBlock 3-Axis Acceleration Sensor Module
 
-Thank you for choosing **RAK1904 WisBlock 3-axis Acceleration Sensor Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK1904 WisBlock 3-Axis Acceleration Sensor Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [RAK1904 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)

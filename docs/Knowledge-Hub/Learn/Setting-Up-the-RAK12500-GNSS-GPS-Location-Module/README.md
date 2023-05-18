@@ -15,13 +15,13 @@ tags:
   - Location Sensor
   - Tutorial
 header:
-  title: Setting Up and Testing GNSS/GPS Module
+  title: Setting Up the RAK12500 GNSS/GPS Module
   caption: by <b>Kongduino</b>
   img: /assets/images/knowledge-hub/banners/high-power-wifi-module-and-power-line-communications.jpg
 posted: 10/26/2021 09:00 PM
 ---
 
-# Setting Up and Testing RAK12500 GNSS/GPS Module
+# Setting Up the RAK12500 GNSS/GPS Module
 
 ## Overview
 
