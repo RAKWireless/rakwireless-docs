@@ -44,7 +44,7 @@ Overall, the RAKwireless Link.ONE is a powerful and flexible IoT device that pro
   - Supports LTE CAT M1 and LTE CAT NB2
   - GNSS location
 - Monogoto SIM card
-  - Data package of 500&nbsp;Mb for 10&nbsp;years
+  - Data package of 500&nbsp;MB for 10&nbsp;years
   - Worldwide coverage, see Monogoto coverage map
 - Unify Enclosure 100x75x38&nbsp;mm
   - IP65 enclosure

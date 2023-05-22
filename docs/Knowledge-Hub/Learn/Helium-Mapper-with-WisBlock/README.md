@@ -107,20 +107,14 @@ If you purchased the Helium Mapper Kit, feel free to skip this section. Instead,
 Assume you are already familiar with PlatformIO and use it to run WisBlock projects. In that case, you can clone the project from GitHub using the command share below and then compile and flash it quickly using the PlatformIO upload option. This option is suitable for those who wish to review the firmware source code, contribute to it, or use it as a baseline for their very own mapper implementation.
 
 ```
-git clone https://github.com/rakstars/WisBlock-RAK4631-Helium-Mapper
+git clone https://github.com/RAKWireless/WisBlock-RAK4631-Helium-Mapper.git
 ```
 
 However, if you haven’t used PlatformIO with WisBlock before and want to explore setting it up, you can refer to [another guide](https://github.com/RAKWireless/WisBlock/tree/master/PlatformIO/RAK4630).
 
 ### Using a Ready-to-Use Package
 
-The other option is to flash a ready-to-use package available on the releases of the GitHub repo.
-
-Download the package by using the following command and setting the `<version>` according to the latest release.
-
-```
-wget https://github.com/rakstars/WisBlock-RAK4631-Helium-Mapper/releases/download/v1.0.0/WisBlock-RAK4631-Helium-Mapper_<version>.zip
-```
+You can also download the package at [RAK Downloads Center](https://downloads.rakwireless.com/LoRa/WisBlock/RAK4631/Solutions/Helium-Mapper/).
 
 Follow the step-by-step instructions provided in this [post](https://forum.rakwireless.com/t/bootloader-fails-to-upgrade-via-ble/4193/5) to check if the RAK4631 has the latest bootloader. Then you can use the following adafruit-nrfutil command to upload the firmware file you downloaded previously. Remember to set the `<version>` and specify the serial `<port>` of the WisBlock that is connected.
 

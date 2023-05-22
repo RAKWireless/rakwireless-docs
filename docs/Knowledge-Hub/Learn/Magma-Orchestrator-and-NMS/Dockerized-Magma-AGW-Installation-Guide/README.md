@@ -212,8 +212,7 @@ After powering up the Magma Box, connect it with SSH with the initial Ubuntu pas
 4. Download the installation bash script from Magma's GitHub repository and execute.
 
 ```bash
-# wget https://github.com/magma/magma/raw/v1.8/lte/gateway/deploy
-/agw_install_docker.sh
+# wget https://github.com/magma/magma/raw/v1.8/lte/gateway/deploy/agw_install_docker.sh
 # sudo bash agw_install_docker.sh
 ```
 
