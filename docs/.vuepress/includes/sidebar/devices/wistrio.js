@@ -155,5 +155,30 @@ module.exports = {
       download: true,
       sidebarDepth: 4
     }
+  ],
+  '/Product-Categories/WisTrio/LINKONE/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisTrio/LINKONE/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Quick Start Guide',
+    path: '/Product-Categories/WisTrio/LINKONE/Quickstart/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisTrio/LINKONE/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  }
   ]
 }

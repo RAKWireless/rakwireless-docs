@@ -1,11 +1,11 @@
 ---
 rak_desc: Provides comprehensive information about your RAK5860 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 rak_img: /assets/images/wisblock/rak5860/RAK5860.png
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 tags:
-  - datasheet
-  - wisblock
+  - Datasheet
+  - WisBlock
   - RAK5860
 certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/WisBlock/RAK5860/Certification/RAK5860_CE_Certification.zip]
@@ -14,8 +14,6 @@ certifications:
 ---
 
 # RAK5860 WisBlock NB-IoT Interface Module Datasheet
-
-
 
 ## Overview
 
@@ -45,25 +43,24 @@ The overview shows the realistic view of the RAK5860 module and its block diagra
 
 #### Board Overview
 
-**Figure 1** shows a realistic view and main component description of the RAK5860 Module
+**Figure 1** shows a realistic view and main component description of the RAK5860 Module.
 
 <rk-img
   src="/assets/images/wisblock/rak5860/datasheet/board-overview-1.png"
-  width="60%"
+  width="50%"
   caption="RAK5860 Board Realistic View (Front)"
 />
 
 
 <rk-img
   src="/assets/images/wisblock/rak5860/datasheet/board-overview-2.png"
-  width="60%"
+  width="50%"
   caption="RAK5860 Board Realistic View (Back)"
 />
 
-
 #### Mounting Sketch
 
-**Figure 3** shows how the RAK5860 module (a WisIO module) is integrated with the RAK5005 baseboard, and the mounting sketch is also shown.
+**Figure 3** shows how the RAK5860 module (a WisIO module) is integrated with the RAK5005 baseboard. The mounting sketch is also shown.
 
 <rk-img
   src="/assets/images/wisblock/rak5860/datasheet/mounting-sketch.png"
@@ -71,14 +68,13 @@ The overview shows the realistic view of the RAK5860 module and its block diagra
   caption="Mounting Sketch"
 />
 
-
 #### Block Diagram
 
 <br>
 
 <rk-img
   src="/assets/images/wisblock/rak5860/datasheet/block-diagram.svg"
-  width="60%"
+  width="50%"
   caption="RAK5860 Block Diagram"
 />
 
@@ -93,16 +89,16 @@ The hardware specification of the RAK5860 is categorized into two. It covers the
 
 
 #### Electrical Characteristics
+
 ##### Absolute Maximum Ratings
 
 The table below shows the absolute maximum ratings of the RAK5860 module.
 
 | **Symbol**              | **Description**             | **Min.** | **Nom.** | **Max.** | **Unit** |
 | ----------------------- | --------------------------- | -------- | -------- | -------- | -------- |
-| VBAT                    | Power Supply for the Module | -0.5     |          | 4.2      | V        |
-| USB_VBUS                | USB Connection Detection    | 1.3      |          | 1.8      | V        |
-| Voltage at Digital Pins |                             | -0.3     |          | 2.09     | V        |
-
+| VBAT                    | Power Supply for the Module | -0.5     | -        | 4.2      | V        |
+| USB_VBUS                | USB Connection Detection    | 1.3      | -        | 1.8      | V        |
+| Voltage at Digital Pins | -                           | -0.3     | -        | 2.09     | V        |
 
 ##### Recommended Operating Conditions
 
@@ -111,10 +107,12 @@ The table below shows the recommended operating conditions of the RAK5860 module
 | **Symbol** | **Description**             | **Min.** | **Nom.** | **Max.** | **Unit** |
 | ---------- | --------------------------- | -------- | -------- | -------- | -------- |
 | VBAT       | Power Supply for the Module | 2.6      | 3.3      | 4.2      | V        |
-| USB_VBUS   | USB Connection Detection    | 1.3      |          | 1.8      | V        |
-| USBPHY_3P3 | Power for USB PHY Circuit   |          | 3.3      |          | V        |
+| USB_VBUS   | USB Connection Detection    | 1.3      | -        | 1.8      | V        |
+| USBPHY_3P3 | Power for USB PHY Circuit   | -        | 3.3      | -        | V        |
 
-
+:::warning ⚠️ WARNING
+A battery connected to the WisBlock Base is required. USB power is not enough to make the module work reliably.
+:::
 
 #### Mechanical Characteristics
 
@@ -124,7 +122,7 @@ The table below shows the recommended operating conditions of the RAK5860 module
 
 <rk-img
   src="/assets/images/wisblock/rak5860/datasheet/mechanical_dimensions.png"
-  width="40%"
+  width="30%"
   caption="Mechanical Dimensions"
 />
 
@@ -140,10 +138,10 @@ The table below shows the recommended operating conditions of the RAK5860 module
 
 The following sections will describe the schematic of the RAK5860 module, which include:
 
-* Turn on/off module
+* Turn on/off Module
 * IO Connector
-* Voltage-level translator
-* SIM card circuit
+* Voltage-level Translator
+* SIM Card Circuit
 * USB Connector
 * Status Indication LEDs
 * Main Antenna
@@ -151,15 +149,15 @@ The following sections will describe the schematic of the RAK5860 module, which 
 
 ##### Turn On/Off Mechanism
 
-**Figure 7** shows a circuit to allow turn on or to turn off the module. By default, the internal Quectel BG77 module is in power off mode, it can be turned on by driving WIS_PWRKEY to a high state (positive digital pulse) for a period of 500-1000&nbsp;ms.
+**Figure 7** shows a circuit to allow the turn on or to turn off the module. By default, the internal Quectel BG77 module is in power-off mode, it can be turned on by driving WIS_PWRKEY to a high state (positive digital pulse) for a period of 500-1000&nbsp;ms.
 
-Driving WIS_PWRKEY high for 650-1500&nbsp;ms, the module will execute power-down procedure after WIS_PWRKEY is released, then enter off mode.
+Driving WIS_PWRKEY high for 650-1500&nbsp;ms, the module will execute a power-down procedure after WIS_PWRKEY is released, then enter off mode.
 
 Alternatively, you can send a command **`AT+QPOWD`** command that turns off the internal Quectel BG77 module.
 
 <rk-img
   src="/assets/images/wisblock/rak5860/datasheet/turn-on-off.png"
-  width="50%"
+  width="40%"
   caption="Turn On/Off Module Circuit"
 />
 
@@ -169,20 +167,20 @@ Alternatively, you can send a command **`AT+QPOWD`** command that turns off the 
 
 <rk-img
   src="/assets/images/wisblock/rak5860/datasheet/wisio-connector.png"
-  width="75%"
+  width="60%"
   caption="WisIO Connector Pin Definition"
 />
 
 The RAK5860 only uses a subset of all the pins available in the IO connector. These are shown in the table below:
 
-| **Name**   | **Description**                   | **Comment**                                                                                                                                                       |
-| ---------- | --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| VBAT       | BG77 Power Supply                 | Max 4.2V                                                                                                                                                          |
-| 3v3_S      | 3.3V for GNSS Antenna             | 3V3_S is controlled by IO2 of WisBlock (P1.02 of NRF52840). This pin must be set HIGH in your code so that the active GPS antenna has a power supply and will work. |
-| 3V3        | 3.3V For Voltage Level Transistor |                                                                                                                                                                   |
-| WIS_PWRKEY | Turn on/off BG77                  | Active High                                                                                                                                                       |
-| WIS_TX     | UART TXD                          | BG77 MAIN_RX, 1.8&nbsp;V power domain                                                                                                                             |
-| WIS_RX     | UART RXD                          | BG77 MAIN_TX, 1.8&nbsp;V power domain                                                                                                                             |
+| **Name**   | **Description**                         | **Comment**                                                                                                                                                         |
+| ---------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| VBAT       | BG77 Power Supply                       | Max 4.2&nbsp;V                                                                                                                                                      |
+| 3v3_S      | 3.3&nbsp;V for GNSS Antenna             | 3V3_S is controlled by IO2 of WisBlock (P1.02 of NRF52840). This pin must be set HIGH in your code so that the active GPS antenna has a power supply and will work. |
+| 3V3        | 3.3&nbsp;V For Voltage Level Transistor |                                                                                                                                                                     |
+| WIS_PWRKEY | Turn on/off BG77                        | Active High                                                                                                                                                         |
+| WIS_TX     | UART TXD                                | BG77 MAIN_RX, 1.8&nbsp;V power domain                                                                                                                               |
+| WIS_RX     | UART RXD                                | BG77 MAIN_TX, 1.8&nbsp;V power domain                                                                                                                               |
 
 
 ##### IO Connector Pin Order
@@ -197,39 +195,39 @@ The RAK5860 only uses a subset of all the pins available in the IO connector. Th
 
 ##### Voltage-level Translator
 
-Within the BG77, all interfaces are designed to work with 1.8&nbsp;V level. RAK5860 features a voltage-level translator in order to down-convert the 3.3&nbsp;V coming from the WisBlock Core module. **Figure 10** shows the design of the internal voltage-level translator.
+Within the BG77, all interfaces are designed to work with 1.8&nbsp;V level. RAK5860 features a voltage-level translator to down-convert the 3.3&nbsp;V coming from the WisBlock Core module. **Figure 10** shows the design of the internal voltage-level translator.
 
 <rk-img
   src="/assets/images/wisblock/rak5860/datasheet/voltage-level-translator.png"
-  width="50%"
+  width="40%"
   caption="3.3 V to 1.8 V voltage-level translator"
 />
 
-* When WIS_TX is high (3.3&nbsp;V), the NPN triode is turned off, BG77_RX is pulled high (1.8&nbsp;V)
+* When WIS_TX is high (3.3&nbsp;V), the NPN triode is turned off, BG77_RX is pulled high (1.8&nbsp;V).
 
 * When WISTX is low (0&nbsp;V), the NPN triode is turned on, BG77 RX is low (0&nbsp;V).
 
 <rk-img
   src="/assets/images/wisblock/rak5860/datasheet/voltage_level-translator-1.png"
-  width="50%"
+  width="40%"
   caption="1.8 V to 3.3 V voltage-level translator"
 />
 
 * When BG77_TX is low (0&nbsp;V), the NPN triode is turned on, WIS_RX is low (0&nbsp;V)
 
-* When BG77TX is high (1.8&nbsp;V), the NPN triode is turned off, WIS RX is pulled high (3.3&nbsp;V)
+* When BG77TX is high (1.8&nbsp;V), the NPN triode is turned off, and WIS RX is pulled high (3.3&nbsp;V)
 
 :::tip 📝 NOTE:
-VDD_EXT is 1.8&nbsp;V, from BG77 internal regulator, BG77 pin 21
+VDD_EXT is 1.8&nbsp;V, from BG77 internal regulator, BG77 pin 21.
 :::
 
 ##### SIM Card Circuit
 
-The RAK5860 module only supports the 1.8&nbsp;V ESIM/SIM card, the following **Figure 12** shows the SIM interface circuit. By default, a Nano SIM card is used, and eSIM is not mounting. In order to offer good ESD protection, a TVS diode array is added to the SIM card circuitry.
+The RAK5860 module only supports the 1.8&nbsp;V ESIM/SIM card. **Figure 12** shows the SIM interface circuit. By default, a Nano SIM card is used, and eSIM is not mounting. To offer good ESD protection, a TVS diode array is added to the SIM card circuitry.
 
 <rk-img
   src="/assets/images/wisblock/rak5860/datasheet/sim-card.png"
-  width="75%"
+  width="85%"
   caption="SIM Card Circuit"
 />
 
@@ -242,7 +240,7 @@ To offer good ESD protection, a TVS diode array is added to the USB connector ci
 
 <rk-img
   src="/assets/images/wisblock/rak5860/datasheet/usb_connector.png"
-  width="50%"
+  width="40%"
   caption="USB Connector"
 />
 
@@ -251,7 +249,7 @@ The USB connection detection pin input voltage range is 1.3~1.8&nbsp;V. **Figure
 
 <rk-img
   src="/assets/images/wisblock/rak5860/datasheet/usb_connection_detection.png"
-  width="50%"
+  width="30%"
   caption="USB connection detection pin power supply"
 />
 
@@ -267,11 +265,11 @@ The USB connection detection pin input voltage range is 1.3~1.8&nbsp;V. **Figure
 
 ##### Status Indication LEDs
 
-**Figure 16** shows the operation status and network activity status led circuit, when BG77 is powered on, blue led is lit, different activity network status, the green led is lit or not is different.
+**Figure 16** shows the operation status and network activity status. When BG77 is powered on, the blue led is lit. Different activity network status, the green led is lit or not is different.
 
 <rk-img
   src="/assets/images/wisblock/rak5860/datasheet/status_indication-led.png"
-  width="75%"
+  width="60%"
   caption="Status indication LED circuit"
 />
 
@@ -281,7 +279,7 @@ The RAK5860 module’s main antenna has a reserve π-type matching circuit for b
 
 <rk-img
   src="/assets/images/wisblock/rak5860/datasheet/main_antenna.png"
-  width="50%"
+  width="30%"
   caption="Main Antenna Circuit"
 />
 
@@ -303,5 +301,3 @@ The RAK5860 module is designed with an active antenna. The 3V3_S is from the Wis
 ## Certification
 
 <rk-certifications :params="$page.frontmatter.certifications" />
-
-

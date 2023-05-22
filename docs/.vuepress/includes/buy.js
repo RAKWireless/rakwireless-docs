@@ -194,6 +194,11 @@ export default {
     img: '/assets/images/wistrio/rak8212/quickstart/overview/RAK8212.png',
     store: 'https://store.rakwireless.com/products/rak8212-itracker-pro?utm_source=RAK8212iTrackerPro&utm_medium=Document&utm_campaign=BuyFromStore'
   },
+  '/Product-Categories/WisTrio/LINKONE/': {
+    label: 'Link.One Cellular + LoRa Board',
+    img: '/assets/images/wistrio/linkone/linkone.png',
+    store: 'https://store.rakwireless.com/products/link-one-lte-m-nb-iot-lorawan-device-based-on-nrf52840-sx1262-and-bg77-arduino-ide-compatible?variant=42659406512326?utm_source=LinkOne&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
 
 
   //WisHat
