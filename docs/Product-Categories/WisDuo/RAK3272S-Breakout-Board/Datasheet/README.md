@@ -200,11 +200,11 @@ If BOOT mode is not initiated, you can manually send `AT+BOOT` command to start 
 
 #### Firmware / OS
 
-| Model   | Version | Source                                                                                          |
-| ------- | ------- | ----------------------------------------------------------------------------------------------- |
-| RAK3272S(.bin) | RUI3 (default baudrate = 115200)   | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3172-E_latest.bin) |
-| RAK3272S(.hex) | RUI3 (default baudrate = 115200)   | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3172-E_latest_final.hex) |
-| RAK3272S | **DEPRECATED** V1.0.4 (default baudrate = 9600) | [Download](https://downloads.rakwireless.com/LoRa/RAK3172/Firmware/RAK3172_Latest_Firmware.zip) |
+| Model          | Version                                         | Source                                                                                          |
+| -------------- | ----------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| RAK3272S(.bin) | RUI3 (default baudrate = 115200)                | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3172-E_latest.bin)               |
+| RAK3272S(.hex) | RUI3 (default baudrate = 115200)                | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3172-E_latest_final.hex)         |
+| RAK3272S       | **DEPRECATED** V1.0.4 (default baudrate = 9600) | [Download](https://downloads.rakwireless.com/LoRa/RAK3172/Firmware/RAK3172_Latest_Firmware.zip) |
 
 :::warning ⚠️ WARNING
 There are RAK3172 devices loaded with old firmware versions which are not based on RUI3 (RAKwireless Unified Interface V3). These devices have v1.0.4 and below.

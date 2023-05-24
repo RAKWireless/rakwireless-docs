@@ -246,7 +246,7 @@ The firmware sits on OpenWRT, which makes it possible to customize it. There is 
 
 | Model                       | Firmware Version | Source                                                                                          |
 | --------------------------- | ---------------- | ----------------------------------------------------------------------------------------------- |
-| RAK7268 WisGate Edge Lite 2 | WisGateOS V1.0.2 | [Download](https://downloads.rakwireless.com/LoRa/RAK7268/Firmware/RAK7268_Latest_Firmware.zip) |
+| RAK7268 WisGate Edge Lite 2 | WisGateOS V1.3.8 | [Download](https://downloads.rakwireless.com/LoRa/RAK7268/Firmware/RAK7268_Latest_Firmware.zip) |
 
 ### Software
 

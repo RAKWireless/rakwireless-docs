@@ -13,11 +13,15 @@ As of March 2021, all RAK's WisGate Edge gateways are running the new WisGateOS.
 
 ###### Release Versions
 
+- <b> 2023 </b>
+    - [May 17](/Release-Notes/WisGateOS/2023/May-17/)
+
+
 - <b> 2022 </b>
     - [December 19](/Release-Notes/WisGateOS/2022/December-19/)
     - [July 15](/Release-Notes/WisGateOS/2022/July-15/)
     - [April 21](/Release-Notes/WisGateOS/2022/April-21/)
-    - [January](/Release-Notes/WisGateOS/2022/January-22/)
+    - [January 22](/Release-Notes/WisGateOS/2022/January-22/)
 
 
 - <b> 2021 </b>

@@ -208,6 +208,10 @@ The hardware specification covers the interfacing of the RAK7289 and its corresp
 
 The firmware sits on OpenWRT, which makes it possible to customize it. There is a Web UI for easy configuration and management of the device, as well as the possibility for SSH2 management.
 
+| Model                       | Firmware Version | Source                                                                                          |
+| --------------------------- | ---------------- | ----------------------------------------------------------------------------------------------- |
+| RAK7289 WisGate Edge Pro    | WisGateOS V1.3.8 | [Download](https://downloads.rakwireless.com/LoRa/RAK7289/Firmware/RAK7289_Latest_Firmware.zip) |
+
 ### Software
 
 #### Software Features
