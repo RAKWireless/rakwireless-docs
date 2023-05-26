@@ -20,7 +20,7 @@ tags:
 |Available connectors|All connectors are accessible except for the outdoor enclosure, where only the 1&nbsp;Gb Ethernet port, USB Type-C, and serial console are accessible from outside.|
 |MiniPCIe Slot #1|RAK2247-SPI/USB LoRaWAN Concentrator <br> RAK2287-SPI/USB LoRaWAN Concentrator <br> RAK5146-SPI/USB LoRaWAN Concentrator <br> RAK8213 EG95-E/NA LTE Module|
 |MiniPCIe Slot #2|RAK2247-SPI/USB LoRaWAN Concentrator <br> RAK2287-SPI/USB LoRaWAN Concentrator <br> RAK5146-SPI/USB LoRaWAN Concentrator <br> RAK8213 EG95-E/NA LTE Module|
-|MiniPCIe Slot #3|RAK2247-USB LoRaWAN Concentrator <br> RAK2287-USB LoRaWAN Concentrator <br> RAK5146-USB LoRaWAN Concentrator <br> RAK8213 EG95-E/NA LTE Module <br> WiFi6 module (with M.2 to MiniPCIe adapter) <br> 1/2 channels MiniPCIe to SATA converter|
+|MiniPCIe Slot #3|RAK8213 EG95-E/NA LTE Module <br> WiFi6 module (with M.2 to MiniPCIe adapter) <br> 1/2 channels MiniPCIe to SATA converter|
 |WisBlock Slot #1|All IO WisBlock Modules (not all might be supported in software yet)|
 |WisBlock Slot #2|All IO WisBlock Modules (not all might be supported in software yet)|
 |Raspberry Pi Hat Header|Alpha Network WiFi HaLow Hat|
