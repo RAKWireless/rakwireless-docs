@@ -14,7 +14,7 @@ header:
 </template>
 <template #answer>
 
-Yes, with the newly released **RAK RUI API**, it is now possible to connect specific sensors in your device. You will be able to customize your own firmware for your specific needs whether be a project or even as a hobby. Check out this [Guide](https://doc.rakwireless.com/developer-tools/developer-tools/getting-started) for more information about RAK RUI API. You can also check out this sample [Firmware Customizing](https://doc.rakwireless.com/rak7204-lora-environmental-sensor/firmware-customizing) guide on how to upload your firmware to your device.
+Yes, with the newly released **RAK RUI API**, it is now possible to connect specific sensors in your device. You will be able to customize your own firmware for your specific needs whether be a project or even as a hobby. Check out the [RUI API Reference](https://docs.rakwireless.com/RUI/rui-api-reference/) for more information about RAK RUI API. You can also check out this sample [Product Configuration](https://docs.rakwireless.com/Product-Categories/WisNode/RAK7204/Quickstart/#interfacing-with-the-rak7204-wisnode-sense-home).
 
 </template>
 </faq>
@@ -25,7 +25,7 @@ Yes, with the newly released **RAK RUI API**, it is now possible to connect spec
 </template>
 <template #answer>
 
-The RAK5205 LPWAN Tracker board is built on the Semtech SX1276 chip, with the STM32L1 MCU at its core. It supports **I2C, GPIOs, UART and ADC interfaces**. The board supports all LoRaWAN frequency channels (EU433, EU868, CN470 , US915, AS920, AS923, AU915, KR920, IN865) which is easy to configure while building the firmware from the source code. The RAK5205 has 7 GPIOs labeled as **PA8, PB3, PB5, SWD*TMS, SWD* CLK, LED1_PA12 and LED2_PB4**. Checkout the [RAK5205 Datasheet](/en-us/datasheet/rak5205/pin-definition.html) for a full overview of the pinout diagram.
+The RAK5205 LPWAN Tracker board is built on the Semtech SX1276 chip, with the STM32L1 MCU at its core. It supports **I2C, GPIOs, UART and ADC interfaces**. The board supports all LoRaWAN frequency channels (EU433, EU868, CN470 , US915, AS920, AS923, AU915, KR920, IN865) which is easy to configure while building the firmware from the source code. The RAK5205 has 7 GPIOs labeled as **PA8, PB3, PB5, SWD*TMS, SWD* CLK, LED1_PA12 and LED2_PB4**. Checkout the [RAK5205 WisTrio LPWAN Tracker Datasheet](https://docs.rakwireless.com/Product-Categories/WisTrio/RAK7205-5205/Datasheet/) for a full overview of the pinout diagram.
 
 </template>
 </faq>
@@ -57,7 +57,7 @@ RAK Gateways support all LoRaWAN frequency channels as shown in the list provide
 </template>
 <template #answer>
 
-Yes. We have provided a pre-compiled firmware image that you can just easily use and flash it into your Raspberry Pi 4. You can check out the [RAK2245 - Pi Hat Device Firmware Setup](/en-us/quick-start-guide/gateways/rak2245-pi-hat-edition/device-firmware-setup.html) guide on how to burn the firmware image into your Raspberry Pi device.
+Yes. We have provided a pre-compiled firmware image that you can just easily use and flash it into your Raspberry Pi 4. You can refer to [RAK2245 Pi HAT Product Configuration](https://docs.rakwireless.com/Product-Categories/WisLink/RAK2245-Pi-HAT/Quickstart/#product-configuration).
 
 Note:
 
@@ -72,7 +72,7 @@ Note:
 </template>
 <template #answer>
 
-Technically, one can achieve with a range of **10-15 km** but there are a lot of factors that one should consider like placement of gateway, type of antenna used, message payload, physical obstructions and many more. In Rakwireless, we have obtained with a range of **20km** through the use of the **RAK7249 Macro Outdoor Gateway.** Checkout the [RAKwireless LoRaWAN Coverage Drive Test Document](https://downloads.rakwireless.com/en/LoRa/DIY-Gateway-RAK7249/Application-Notes/RAKwireless_LoRAWAN_Coverage_Drive_Test_Report.pdf) to learn more.
+Technically, one can achieve a range of **10-15&nbsp;km** but there are a lot of factors that one should consider like placement of gateway, type of antenna used, message payload, physical obstructions and many more. In RAKwireless, we have obtained with a range of **20&nbsp;km** through the use of the **RAK7249 Macro Outdoor Gateway**. Checkout the [RAKwireless LoRaWAN Coverage Drive Test Document](https://downloads.rakwireless.com/en/LoRa/DIY-Gateway-RAK7249/Application-Notes/RAKwireless_LoRAWAN_Coverage_Drive_Test_Report.pdf) to learn more.
 
 </template>
 </faq>
@@ -83,7 +83,7 @@ Technically, one can achieve with a range of **10-15 km** but there are a lot of
 </template>
 <template #answer>
 
-Whenever the keys 1 - 4 is pressed, the corresponding basket light under each key lights up for 300ms. To enter Configuration Mode, long press Key 1 for at least 500 ms. Press Key 1 again for at least 500 ms to exit Configuration Mode.
+Whenever the keys 1 - 4 is pressed, the corresponding basket light under each key lights up for 300&nbsp;ms. To enter Configuration Mode, long press Key 1 for at least 500&nbsp;ms. Press Key 1 again for at least 500&nbsp;ms to exit Configuration Mode.
 
 | Mode                    | Red LED     | Green LED | Blue LED                  |
 | ----------------------- | ----------- | --------- | ------------------------- |
@@ -107,12 +107,12 @@ Whenever the keys 1 - 4 is pressed, the corresponding basket light under each ke
 
 * **At 8-Channels Working**
 
-  - 12V DC Power Supply-Average Power: 12 Volts x 0.32 Amperes = **8.84 Watts**
-  - PoE 48V Power Supply-Average Power: 48 Volts x 0.1 Amperes = **4.8 Watts**
+  - 12&nbsp;V DC Power Supply-Average Power: 12&nbsp;Volts x 0.32&nbsp;Amperes = **8.84&nbsp;Watts**
+  - PoE 48&nbsp;V Power Supply-Average Power: 48&nbsp;Volts x 0.1&nbsp;Amperes = **4.8&nbsp;Watts**
 
 * **At 16-Channels Working**
-  - 12V DC Power Supply-Average Power: 12 Volts x 0.46 Amperes = **5.52 Watts**
-  - PoE 48V Power Supply-Average Power: 48 Volts x 0.13 Amperes = **6.24 Watts**
+  - 12&nbsp;V DC Power Supply-Average Power: 12&nbsp;Volts x 0.46&nbsp;Amperes = **5.52&nbsp;Watts**
+  - PoE 48&nbsp;V Power Supply-Average Power: 48&nbsp;Volts x 0.13&nbsp;Amperes = **6.24&nbsp;Watts**
 
 </template>
 </faq>

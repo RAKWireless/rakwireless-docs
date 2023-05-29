@@ -113,7 +113,7 @@ After cutting the Internal Mounting Plate, install the WisBlock Base board onto 
 
 ### 4. Attach the Mounting Plate to the Enclosure
 
-Then install the WisBlock Internal Mounting Plate to the base of the enclosure using four (4) pieces of M3*4&nbsp;mm Countersunk head screws, as shown in **Figure 9**.
+Then, install the WisBlock Internal Mounting Plate to the base of the enclosure using four (4) pieces of M3*4&nbsp;mm Countersunk head screws, as shown in **Figure 9**.
 
 <rk-img
   src="/assets/images/wisblock/rakbox-uo100x75x38-solar/installation/plate-enclosure.png"
@@ -126,7 +126,7 @@ Then install the WisBlock Internal Mounting Plate to the base of the enclosure u
 Finally, close the WisBlock Unify Enclosure with the top lid using four pieces of M3*8&nbsp;mm head screw with a washer, as shown in **Figure 10**.
 
 ::: tip 📝 NOTE
-You have the ensure that the **solar panel wire** will not be squeezed by the gasket and is properly arranged inside the enclosure with the other parts inside like the circuit board, stand-offs, screws, etc.
+Make sure that the **solar panel wire** will not be squeezed by the gasket and is properly arranged inside the enclosure with the other parts inside like the circuit board, stand-offs, screws, etc.
 :::
 
 <rk-img
@@ -139,14 +139,14 @@ You have the ensure that the **solar panel wire** will not be squeezed by the ga
 
 After full assembly of the enclosure, the next step is to choose the right mounting accessory for your application:
 
-- [Pole Mount Vertical (Mark A)](#pole-mount-vertical-mark-a)
-- [Wall Mount (Mark D)](#wall-mount-mark-d)
-- [Belt Clip Mount (Mark E)](#belt-clip-mount-mark-e)
-- [DIN Mount (Mark F)](#din-mount-mark-f)
-- [Magnet Mount (Mark G)](#magnet-mount-mark-g)
-- [Belt Loop Mount (Mark H)](#belt-loop-mount-mark-h)
-- [Label Mount (Mark I)](#label-mount-mark-i)
-- [Hook Loop Mount (Mark J)](#hook-loop-mount-mark-j)
+- [Pole Mount Vertical (Type A)](#pole-mount-vertical-type-a) <br>
+- [Wall Mount (Type D)](#wall-mount-type-d)
+- [Belt Clip Mount (Type E)](#belt-clip-mount-type-e)
+- [DIN Mount (Type F)](#din-mount-type-f)
+- [Magnet Mount (Type G)](#magnet-mount-type-g)
+- [Belt Loop Mount (Type H)](#belt-loop-mount-type-h)
+- [Label Mount (Type I)](#label-mount-type-i)
+- [Hook Loop Mount (Type J)](#hook-loop-mount-type-j)
 
 Each mount accessory has a mark indicated by a capital letter, as shown in **Figure 11**, and each WisBlock Unify Enclosure has several fixed positions, which are indicated by a mark of numerals, as shown in **Figure 12**. The small-sized WisBlock Unify Enclosure has only four (4) fixed positions.
 
@@ -162,14 +162,14 @@ Each mount accessory has a mark indicated by a capital letter, as shown in **Fig
   caption="WisBlock Unify Enclosure marked with numerals"
 />
 
-### Pole Mount Vertical (Mark A)
+### Pole Mount Vertical (Type A)
 
 1. For vertical pole mount, use two (2) pieces of mount accessories, which has an indicated mark of the letter **A**, as shown in **Figure 13**.
 
 <rk-img
   src="/assets/images/wisblock/rakbox-uo100x75x38-solar/installation/pole-vertical-A.png"
   width="40%"
-  caption="Mount accessory marked with letter A"
+  caption="Mount accessory marked with the letter A"
 />
 
 2. Fix the pole mounts marked with the letter **A** on the WisBlock Unify Enclosure using four (4) pieces of M3*8&nbsp;mm Head screw with a washer. Place it on fixed positions number **1 & 3** of the enclosure as shown in **Figure 14**.
@@ -197,14 +197,14 @@ The steel strips **ONLY** support 60-85&nbsp;mm diameter of the pole.
 />
 
 
-### Wall Mount (Mark D)
+### Wall Mount (Type D)
 
 1. For wall mount, use two (2) pieces of mount accessories with an indicator marked with the letter **D**, as shown in **Figure 16**.
 
 <rk-img
   src="/assets/images/wisblock/rakbox-uo100x75x38-solar/installation/wall-mount-D.png"
   width="40%"
-  caption="Mount accessory marked with letter D"
+  caption="Mount accessory marked with the letter D"
 />
 
 2. Fix the wall mounts marked with the letter **D** on the WisBlock Unify Enclosure using four (4) pieces of M3*8&nbsp;mm head screw with a washer. Place it on fixed positions number **1 & 3** or **2 & 4** of the enclosure, as shown in **Figure 17**.
@@ -223,7 +223,7 @@ The steel strips **ONLY** support 60-85&nbsp;mm diameter of the pole.
 
 - **Step 1**: Use a Φ5&nbsp;mm drill head to drill holes in the wall. Drill at least 55-60&nbsp;mm in depth.
 - **Step 2**: Plug the screw anchors into the drilled holes. You can use a hammer to plug it in. It helps the screws to have a secure fit on the wall.
-- **Step 3**: Fix the WisBlock Unify Enclosure on the wall using two (2) pieces of st3.5*35&nbsp;mm tapping screws.
+- **Step 3**: Fix the WisBlock Unify Enclosure on the wall using two (2) pieces of ST3.5*35&nbsp;mm tapping screws.
 
 <rk-img
   src="/assets/images/wisblock/rakbox-uo100x75x38-solar/installation/wall-enclosure.png"
@@ -232,14 +232,14 @@ The steel strips **ONLY** support 60-85&nbsp;mm diameter of the pole.
 />
 
 
-### Belt Clip Mount (Mark E)
+### Belt Clip Mount (Type E)
 
 1. For belt clip mount, use one (1) piece of mount accessory with an indicator marked with the letter **E**, as shown in **Figure 19**.
 
 <rk-img
   src="/assets/images/wisblock/rakbox-uo100x75x38-solar/installation/belt-clip-E.png"
   width="30%"
-  caption="Mount accessory marked with letter E"
+  caption="Mount accessory marked with the letter E"
 />
 
 2. Fix the belt clip mount marked with the letter **E** on the WisBlock Unify Enclosure using two (2) pieces of M3*8&nbsp;mm Head screw with washer. Place it on fixed positions number **1 or 3** of the enclosure as shown in **Figure 20**.
@@ -262,14 +262,14 @@ The steel strips **ONLY** support 60-85&nbsp;mm diameter of the pole.
   caption="Fixing the enclosure on the belt clip"
 />
 
-### DIN Mount (Mark F)
+### DIN Mount (Type F)
 
 1. For DIN mount, use two (2) pieces of mount accessories with an indicator marked with the letter **F**, as shown in **Figure 22**.
 
 <rk-img
   src="/assets/images/wisblock/rakbox-uo100x75x38-solar/installation/din-mount-F.png"
   width="50%"
-  caption="Mount accessory marked with letter F"
+  caption="Mount accessory marked with the letter F"
 />
 
 2. Fix the DIN mount marked with the letter **F** on the WisBlock Unify Enclosure using four (4) pieces of M3*8&nbsp;mm Head screw with the washer. Place it on fixed positions number **1 & 3** or **2 & 4** of the enclosure as shown in **Figure 23** and **Figure 24**.
@@ -298,18 +298,18 @@ The steel strips **ONLY** support 60-85&nbsp;mm diameter of the pole.
   caption="Fixing the enclosure on the DIN rail"
 />
 
-### Magnet Mount (Mark G)
+### Magnet Mount (Type G)
 
 1. For magnet mount, use one (1) up to two (2) pieces of mount accessories with an indicator marked with the letter **G** as shown in **Figure 26**.
 
 ::: tip 📝 NOTE
-- The number of magnets used will depend on the weight of the device and enclosure.
+- The number of magnets to be used will depend on the weight of the device and enclosure.
 :::
 
 <rk-img
   src="/assets/images/wisblock/rakbox-uo100x75x38-solar/installation/magnet-mount-G.png"
   width="30%"
-  caption="Mount accessory marked with letter G"
+  caption="Mount accessory marked with the letter G"
 />
 
 2. Fix the magnet mount marked with the letter **G** on the WisBlock Unify Enclosure using one (1) to two (2) pieces of M3*8&nbsp;mm Head screw with washer. Place it on fixed positions number **1 & 3** of the enclosure as shown in **Figure 27**.
@@ -327,7 +327,7 @@ The steel strips **ONLY** support 60-85&nbsp;mm diameter of the pole.
 3. Place the magnets onto the mounting as shown in **Figure 28**.
 
 ::: tip 📝 NOTE
-- Please confirm the number of magnets according to the weight of the device. The small unify enclosure supports up to 2 magnets.
+- Confirm the number of magnets according to the weight of the device. The small unify enclosure supports up to 2 magnets.
 :::
 
 :::warning ⚠️ WARNING
@@ -367,14 +367,14 @@ Handle with care to avoid personal injury or damage to the magnet.
 />
 
 
-### Belt Loop Mount (Mark H)
+### Belt Loop Mount (Type H)
 
 1. For belt loop mount, use two (2) pieces of mount accessories with an indicator marked with the letter **H**, as shown in **Figure 30**.
 
 <rk-img
   src="/assets/images/wisblock/rakbox-uo100x75x38-solar/installation/belt-loop-H.png"
   width="40%"
-  caption="Mount accessory marked with letter H"
+  caption="Mount accessory marked with the letter H"
 />
 
 2. Fix the belt loop mount marked with the letter **H** on the WisBlock Unify Enclosure using four (4) pieces of M3*8&nbsp;mm Head screw with a washer. Place it on fixed positions number **1 to 4** of the enclosure as shown in **Figure 31**.
@@ -398,14 +398,14 @@ Handle with care to avoid personal injury or damage to the magnet.
 />
 
 
-### Label Mount (Mark I)
+### Label Mount (Type I)
 
 1. For label mount, use one (1) piece of mount accessory with an indicator marked with the letter **I**, as shown in **Figure 33**.
 
 <rk-img
   src="/assets/images/wisblock/rakbox-uo100x75x38-solar/installation/label-mount-I.png"
   width="30%"
-  caption="Mount accessory marked with letter I"
+  caption="Mount accessory marked with the letter I"
 />
 
 2. Fix the label mount marked with the letter **I** on the WisBlock Unify Enclosure using two (2) pieces of M3*8&nbsp;mm Head screw with washer. Place it on fixed position numbers **1 to 4** of the enclosure as shown in **Figure 34**.
@@ -420,7 +420,7 @@ Handle with care to avoid personal injury or damage to the magnet.
 | :---: | :----------: |
 | Small |    1 - 4     |
 
-3. Lastly, you can paste a 30x18&nbsp;mm Fillet R4 label in the label zone as shown in **Figure 35** and **Figure 36**.
+3. Lastly, you can paste a 30 x 18&nbsp;mm Fillet R4 label in the label zone as shown in **Figure 35** and **Figure 36**.
 
 <rk-img
   src="/assets/images/wisblock/rakbox-uo100x75x38-solar/installation/label-size.png"
@@ -435,14 +435,14 @@ Handle with care to avoid personal injury or damage to the magnet.
 />
 
 
-### Hook Loop Mount (Mark J)
+### Hook Loop Mount (Type J)
 
 1. For hook loop mount, use one (1) piece of mount accessory with an indicator marked with the letter **J**, as shown in **Figure 37**.
 
 <rk-img
   src="/assets/images/wisblock/rakbox-uo100x75x38-solar/installation/hook-loop-J.png"
   width="30%"
-  caption="Mount accessory marked with letter J"
+  caption="Mount accessory marked with the letter J"
 />
 
 2. Fix the hook loop mount marked with the letter **J** on the WisBlock Unify Enclosure using two (2) pieces of M3*8&nbsp;mm Head screw with washer. Place it on fixed position number **1 or 3** of the enclosure as shown in **Figure 38**.

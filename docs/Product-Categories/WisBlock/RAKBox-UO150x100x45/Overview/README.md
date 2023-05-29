@@ -15,11 +15,9 @@ tags:
 
 Thank you for choosing **RAKBox-UO150x100x45** for your awesome IoT project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
-
 - [Installation Guide](../Installation/)
 - [Datasheet](../Datasheet/)
 - [RAKBox-UO150x100x45 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/Unify%20Enclosure/RAKBox-UO150x100x45/)
-
 
 ## Product description
 

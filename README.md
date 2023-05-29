@@ -57,8 +57,6 @@ If there is a `yarn` error in running the local server, you can either do the fo
 1. Add `yarn` to the **Environment Variables**;
 2. Use a lower version of **Node.js**, preferably **v16.19.x**.
 
-:::
-
 ### Contribution
 
 Contributions are highly appreciated. Feel free to dive in and follow the [**Contributing Guidelines**](CONTRIBUTING.md).

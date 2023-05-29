@@ -12,6 +12,7 @@ tags:
 # WisBlock Unify Outdoor Enclosure 100x75x38 with Solar Panel Datasheet
 
 ## Overview
+
 ### Description
 RAKBox-UO100x75x38 with Solar Panel is a small-sized **WisBlock Unify Enclosure** that allows you to charge the battery using solar energy. It is an IP65-rated protection class that allows the unit to be used outdoors while protecting the internal components from dust and water. It is also a weatherproof fire retardant enclosure made from ABS plastic specially designed for WisBlock Products. It also has a solar panel included for powering up your devices and charging the batteries.
 
@@ -19,7 +20,7 @@ Moreover, it supports different types of mounting options such as pole, wall, DI
 
 ## Features
 - IP65-rated
-- with Solar Panel
+- With Solar Panel
 - Dimensions L x W x H: 100&nbsp;mm x 75&nbsp;mm x 38&nbsp;mm
 - Available in two (2) colors: cool gray and white color
 - Two base plate options: **Plain Base Plate** and **WisBlock Bespoke Base Plate**
@@ -32,7 +33,7 @@ Moreover, it supports different types of mounting options such as pole, wall, DI
 - Current at nominal power: 90&nbsp;mA (±5%)
 - Cell efficiency: 18%
 - Working Environment:
-  - Temperature (0-65°C)
+  - Temperature (0-65°&nbsp;C)
   - Humidity (45-85%)
   - UV resistance
 - The ZH1.5-2P connector
@@ -53,7 +54,7 @@ The installation guide for mounting the different types of accessories can be fo
 
 These are the measurements when the mounting is attached to the enclosure:
 
-- [Pole Mount Vertical](#pole-mount-vertical)
+- [Pole Mount Vertical](#pole-mount-vertical) <br>
 - [Wall Mount](#wall-mount)
 - [Belt Clip Mount](#belt-clip-mount)
 - [DIN Mount](#din-mount)
@@ -78,7 +79,12 @@ These are the measurements when the mounting is attached to the enclosure:
   caption="Dimensions of the enclosure with vertical pole mount"
 />
 
-
+<rk-btn
+  src="https://store.rakwireless.com/products/unify-pole-mounting-vertical-kit?utm_source=TypeA&utm_medium=Document&utm_campaign=BuyFromStore"
+  label="Buy from Store"
+  size="1.0rem"
+  _blank
+/>
 
 ### Wall Mount
 
@@ -96,6 +102,12 @@ These are the measurements when the mounting is attached to the enclosure:
   caption="Dimensions of the enclosure with wall mount"
 />
 
+<rk-btn
+  src="https://store.rakwireless.com/products/unify-wall-mounting-kit?utm_source=TypeD&utm_medium=Document&utm_campaign=BuyFromStore"
+  label="Buy from Store"
+  size="1.0rem"
+  _blank
+/>
 
 ### Belt Clip Mount
 
@@ -111,6 +123,13 @@ These are the measurements when the mounting is attached to the enclosure:
   src="/assets/images/wisblock/rakbox-uo100x75x38-solar/datasheet/belt-clip-dim.png"
   width="60%"
   caption="Dimensions of the enclosure with belt clip mount"
+/>
+
+<rk-btn
+  src="https://store.rakwireless.com/products/unify-belt-clip-kit-type-e?utm_source=TypeE&utm_medium=Document&utm_campaign=BuyFromStore"
+  label="Buy from Store"
+  size="1.0rem"
+  _blank
 />
 
 ### DIN Mount
@@ -129,6 +148,12 @@ These are the measurements when the mounting is attached to the enclosure:
   caption="Dimensions of the enclosure with DIN mount"
 />
 
+<rk-btn
+  src="https://store.rakwireless.com/products/unify-din-rail-mounting-kit-type-f?utm_source=TypeF&utm_medium=Document&utm_campaign=BuyFromStore"
+  label="Buy from Store"
+  size="1.0rem"
+  _blank
+/>
 
 ### Magnet Mount
 
@@ -146,6 +171,12 @@ These are the measurements when the mounting is attached to the enclosure:
   caption="Dimensions of the enclosure with magnet mount"
 />
 
+<rk-btn
+  src="https://store.rakwireless.com/products/unify-magnet-mounting-kit-type-g?utm_source=TypeG&utm_medium=Document&utm_campaign=BuyFromStore"
+  label="Buy from Store"
+  size="1.0rem"
+  _blank
+/>
 
 ### Belt Loop Mount
 
@@ -163,6 +194,12 @@ These are the measurements when the mounting is attached to the enclosure:
   caption="Dimensions of the enclosure with belt loop mount"
 />
 
+<rk-btn
+  src="https://store.rakwireless.com/products/unify-belt-loop-kit-type-h?utm_source=TypeH&utm_medium=Document&utm_campaign=BuyFromStore"
+  label="Buy from Store"
+  size="1.0rem"
+  _blank
+/>
 
 ### Label Mount
 
@@ -180,6 +217,12 @@ These are the measurements when the mounting is attached to the enclosure:
   caption="Dimensions of the enclosure with label mount"
 />
 
+<rk-btn
+  src="https://store.rakwireless.com/products/unify-label-kit-type-i?utm_source=TypeI&utm_medium=Document&utm_campaign=BuyFromStore"
+  label="Buy from Store"
+  size="1.0rem"
+  _blank
+/>
 
 ### Hook Loop Mount
 
@@ -195,4 +238,11 @@ These are the measurements when the mounting is attached to the enclosure:
   src="/assets/images/wisblock/rakbox-uo100x75x38-solar/datasheet/hook-loop-dim.png"
   width="60%"
   caption="Dimensions of the enclosure with hook loop mount"
+/>
+
+<rk-btn
+  src="https://store.rakwireless.com/products/unify-hook-loop-kit-type-j?utm_source=TypeJ&utm_medium=Document&utm_campaign=BuyFromStore"
+  label="Buy from Store"
+  size="1.0rem"
+  _blank
 />

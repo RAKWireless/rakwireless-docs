@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/banners/general_banner.jpg
+rak_img: /assets/images/knowledge-hub/learn/wisblock-integration-to-ubidots-mqtt-google-assistant/setup-components.png
 rak_desc: A step-by-step guide on how to integrate RAK11200 WisBlock Core (which is based on ESP32) and with Google Assistant to control devices with voice commands.
 tags:
   - Google Assistant

@@ -26,7 +26,7 @@ Moreover, it supports different types of mounting options such as pole, wall, DI
 
 ## Product Features
 - IP65-rated
-- with Solar Panel
+- With Solar Panel
 - Dimensions L x W x H: 100&nbsp;mm x 75&nbsp;mm x 38&nbsp;mm
 - Available in two (2) colors: cool gray and white color
 - Two base plate options: **Plain Base Plate** and **WisBlock Bespoke Base Plate**

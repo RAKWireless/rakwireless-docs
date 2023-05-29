@@ -16,7 +16,7 @@ header:
 
 ![LoRaWAN Encryption Method](/assets/images/faq/software/item1.jpg)
 
-Whenever the gateway receives data from the nodes, the payload data is encoded in base64 and encrypted before it is sent into the server. Upon arriving in the server, the data packet is automatically decrypted which will revert the data to its base64 encoded form. Manual decoding must be done by the user to have the base64 encoded data be similar to the payload sent by the node
+Whenever the gateway receives data from the nodes, the payload data is encoded in base64 and encrypted before it is sent into the server. Upon arriving in the server, the data packet is automatically decrypted which will revert the data to its base64 encoded form. Manual decoding must be done by the user to have the base64 encoded data be similar to the payload sent by the node.
 
 </template>
 </faq>
@@ -165,7 +165,7 @@ mosquitto_sub -t "application/123/device/+/rx" -v  #display only the RX payloads
 
 **Events**
 
-The MQTT integration exposes all events as documented by [Event Types](https://www.chirpstack.io/application-server/integrate/sending-receiving/#event-types). The following mapping to MQTT topics applies for the available events:
+The MQTT integration exposes all events as documented by [Event Types](https://www.chirpstack.io/docs/chirpstack/integrations/events.html). The following mapping to MQTT topics applies for the available events:
 
 - **Uplink**: application/[applicationID]/device/[devEUI]/rx
 - **Status**: application/[applicationID]/device/[devEUI]/status
@@ -174,7 +174,7 @@ The MQTT integration exposes all events as documented by [Event Types](https://w
 - **Scheduling downlink data**: application/[applicationID]/device/[devEUI]/tx
 
 * Considerations:
-  - For versions before v1.0.0 ".../device/.." is configured as ".../node/...." Please refer to the [application_server.integration.mqtt configuration](https://www.chirpstack.io/application-server/install/config/) for the correct topic.
+  - For versions before v1.0.0 ".../device/.." is configured as ".../node/...." Please refer to the [ChirpStack MQTT Forwarder Configuration](https://www.chirpstack.io/docs/chirpstack-mqtt-forwarder/configuration.html) for the correct topic.
   - The Application ID and Device EUI of the device will be taken from the topic.
 
 **Example Payload:**
@@ -285,7 +285,7 @@ To optimize our gateways’ RF performance and coverage, we use different hardwa
 </template>
 <template #answer>
 
-Yes. Every country has its regulations about available frequency bands and restrictions for using them. For more information and to check the available LoRaWAN frequency bands for your country, read the LoRa Alliance’s [RP002-1.0.1 LoRaWAN Regional Parameters](https://lora-alliance.org/sites/default/files/2020-06/rp_2-1.0.1.pdf).
+Yes. Every country has its regulations about available frequency bands and restrictions for using them. For more information and to check the available LoRaWAN frequency bands for your country, read the LoRa Alliance’s [RP2-1.0.3 LoRaWAN Regional Parameters](https://lora-alliance.org/resource_hub/rp2-1-0-3-lorawan-regional-parameters/).
 
 </template>
 </faq>

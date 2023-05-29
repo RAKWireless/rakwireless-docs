@@ -1,6 +1,6 @@
 ---
 sidebar: false
-rak_img: /assets/images/knowledge-hub/learn/manage-uplink-and-downlink/overview.png
+rak_img: /assets/images/knowledge-hub/learn/manage-uplink-and-downlink/uplink-downlink.png
 rak_desc: This guide provides a step-by-step tutorial on how to manage uplink and downlink data of RUI3 devices and connect it with TTS v3 and Ubidots.
 tags:
   - Tutorial

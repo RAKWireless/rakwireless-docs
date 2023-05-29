@@ -40,7 +40,7 @@ The installation guide for mounting the different types of accessories of the la
 
 These are the measurements when the mounting is attached to the enclosure.
 
-- [Pole Mount Vertical](#pole-mount-vertical)
+- [Pole Mount Vertical](#pole-mount-vertical) <br>
 - [Pole Mount Horizontal](#pole-mount-horizontal)
 - [Wall Mount](#wall-mount)
 - [Belt Clip Mount](#belt-clip-mount)
@@ -58,12 +58,19 @@ These are the measurements when the mounting is attached to the enclosure.
   caption="Vertical pole mount"
 />
 
-**Figure 3** below shows the dimensions of the large unify enclosure with vertical pole mounts attached to it.
+**Figure 3** shows the dimensions of the large unify enclosure with vertical pole mounts attached to it.
 
 <rk-img
   src="/assets/images/wisblock/rakbox-uo180x130x60/datasheet/vertical-pole-dim.png"
   width="60%"
   caption="Dimensions of the enclosure with vertical pole mount"
+/>
+
+<rk-btn
+  src="https://store.rakwireless.com/products/unify-pole-mounting-vertical-kit?utm_source=TypeA&utm_medium=Document&utm_campaign=BuyFromStore"
+  label="Buy from Store"
+  size="1.0rem"
+  _blank
 />
 
 ### Pole Mount Horizontal
@@ -74,12 +81,19 @@ These are the measurements when the mounting is attached to the enclosure.
   caption="Horizontal pole mount"
 />
 
-**Figure 5** below shows the dimensions of the large unify enclosure with horizontal pole mounts attached to it.
+**Figure 5** shows the dimensions of the large unify enclosure with horizontal pole mounts attached to it.
 
 <rk-img
   src="/assets/images/wisblock/rakbox-uo180x130x60/datasheet/horizontal-pole-dim.png"
   width="60%"
   caption="Dimensions of the enclosure with horizontal pole mount"
+/>
+
+<rk-btn
+  src="https://store.rakwireless.com/products/unify-pole-mounting-horizontal-kit-type-b-1?utm_source=TypeB&utm_medium=Document&utm_campaign=BuyFromStore"
+  label="Buy from Store"
+  size="1.0rem"
+  _blank
 />
 
 ### Wall Mount
@@ -90,7 +104,7 @@ These are the measurements when the mounting is attached to the enclosure.
   caption="Wall mount"
 />
 
-**Figure 7** below shows the dimensions of the large unify enclosure with wall mounts attached to it.
+**Figure 7** shows the dimensions of the large unify enclosure with wall mounts attached to it.
 
 <rk-img
   src="/assets/images/wisblock/rakbox-uo180x130x60/datasheet/wall-mount-dim.png"
@@ -98,6 +112,12 @@ These are the measurements when the mounting is attached to the enclosure.
   caption="Dimensions of the enclosure with wall mount"
 />
 
+<rk-btn
+  src="https://store.rakwireless.com/products/unify-wall-mounting-kit?utm_source=TypeD&utm_medium=Document&utm_campaign=BuyFromStore"
+  label="Buy from Store"
+  size="1.0rem"
+  _blank
+/>
 
 ### Belt Clip Mount
 
@@ -107,12 +127,19 @@ These are the measurements when the mounting is attached to the enclosure.
   caption="Belt clip mount"
 />
 
-**Figure 9** below shows the dimensions of the large unify enclosure with a belt clip mount attached to it.
+**Figure 9** shows the dimensions of the large unify enclosure with a belt clip mount attached to it.
 
 <rk-img
   src="/assets/images/wisblock/rakbox-uo180x130x60/datasheet/belt-clip-dim.png"
   width="60%"
   caption="Dimensions of the enclosure with belt clip mount"
+/>
+
+<rk-btn
+  src="https://store.rakwireless.com/products/unify-belt-clip-kit-type-e?utm_source=TypeE&utm_medium=Document&utm_campaign=BuyFromStore"
+  label="Buy from Store"
+  size="1.0rem"
+  _blank
 />
 
 ### DIN Mount
@@ -123,7 +150,7 @@ These are the measurements when the mounting is attached to the enclosure.
   caption="DIN mount"
 />
 
-**Figure 11** below shows the dimensions of the large unify enclosure with a DIN mount attached to it.
+**Figure 11** shows the dimensions of the large unify enclosure with a DIN mount attached to it.
 
 <rk-img
   src="/assets/images/wisblock/rakbox-uo180x130x60/datasheet/din-mount-dim.png"
@@ -131,6 +158,12 @@ These are the measurements when the mounting is attached to the enclosure.
   caption="Dimensions of the enclosure with DIN mount"
 />
 
+<rk-btn
+  src="https://store.rakwireless.com/products/unify-din-rail-mounting-kit-type-f?utm_source=TypeF&utm_medium=Document&utm_campaign=BuyFromStore"
+  label="Buy from Store"
+  size="1.0rem"
+  _blank
+/>
 
 ### Magnet Mount
 
@@ -140,7 +173,7 @@ These are the measurements when the mounting is attached to the enclosure.
   caption="Magnet mount"
 />
 
-**Figure 13** below shows the dimensions of the large unify enclosure with a magnet mount attached to it.
+**Figure 13** shows the dimensions of the large unify enclosure with a magnet mount attached to it.
 
 <rk-img
   src="/assets/images/wisblock/rakbox-uo180x130x60/datasheet/magnet-mount-dim.png"
@@ -148,6 +181,12 @@ These are the measurements when the mounting is attached to the enclosure.
   caption="Dimensions of the enclosure with magnet mount"
 />
 
+<rk-btn
+  src="https://store.rakwireless.com/products/unify-magnet-mounting-kit-type-g?utm_source=TypeG&utm_medium=Document&utm_campaign=BuyFromStore"
+  label="Buy from Store"
+  size="1.0rem"
+  _blank
+/>
 
 ### Belt Loop Mount
 
@@ -157,7 +196,7 @@ These are the measurements when the mounting is attached to the enclosure.
   caption="Belt loop mount"
 />
 
-**Figure 15** below shows the dimensions of the large unify enclosure with a belt loop mount attached to it.
+**Figure 15** shows the dimensions of the large unify enclosure with a belt loop mount attached to it.
 
 <rk-img
   src="/assets/images/wisblock/rakbox-uo180x130x60/datasheet/belt-loop-dim.png"
@@ -165,6 +204,12 @@ These are the measurements when the mounting is attached to the enclosure.
   caption="Dimensions of the enclosure with belt loop mount"
 />
 
+<rk-btn
+  src="https://store.rakwireless.com/products/unify-belt-loop-kit-type-h?utm_source=TypeH&utm_medium=Document&utm_campaign=BuyFromStore"
+  label="Buy from Store"
+  size="1.0rem"
+  _blank
+/>
 
 ### Label Mount
 
@@ -174,7 +219,7 @@ These are the measurements when the mounting is attached to the enclosure.
   caption="Label mount"
 />
 
-**Figure 17** below shows the dimensions of the large unify enclosure with the label mount attached to it.
+**Figure 17** shows the dimensions of the large unify enclosure with the label mount attached to it.
 
 <rk-img
   src="/assets/images/wisblock/rakbox-uo180x130x60/datasheet/label-mount-dim.png"
@@ -182,6 +227,12 @@ These are the measurements when the mounting is attached to the enclosure.
   caption="Dimensions of the enclosure with label mount"
 />
 
+<rk-btn
+  src="https://store.rakwireless.com/products/unify-label-kit-type-i?utm_source=TypeI&utm_medium=Document&utm_campaign=BuyFromStore"
+  label="Buy from Store"
+  size="1.0rem"
+  _blank
+/>
 
 ### Hook Loop Mount
 
@@ -191,10 +242,17 @@ These are the measurements when the mounting is attached to the enclosure.
   caption="Hook loop mount"
 />
 
-**Figure 19** below shows the dimensions of the large unify enclosure with the label mount attached to it.
+**Figure 19** shows the dimensions of the large unify enclosure with the label mount attached to it.
 
 <rk-img
   src="/assets/images/wisblock/rakbox-uo180x130x60/datasheet/hook-loop-dim.png"
   width="60%"
   caption="Dimensions of the enclosure with hook loop mount"
+/>
+
+<rk-btn
+  src="https://store.rakwireless.com/products/unify-hook-loop-kit-type-j?utm_source=TypeJ&utm_medium=Document&utm_campaign=BuyFromStore"
+  label="Buy from Store"
+  size="1.0rem"
+  _blank
 />
