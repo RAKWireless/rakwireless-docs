@@ -106,7 +106,7 @@ The overview presents the block diagram for the RAK7289 V2 that shows the intern
         <tr><td rowspan="5">LoRa feature</td><td>SX1303 mPCIe card (connects maximum of two)</td></tr>
         <tr><td>8 Channels (16 channels optional)</td></tr>
         <tr><td>RX Sensitivity: -139&nbsp;dBm (Min)</td></tr>
-        <tr><td>TX Power: 17&nbsp;dBm (Max)</td></tr>
+        <tr><td>TX Power: 27&nbsp;dBm (Max)</td></tr>
         <tr><td>Listen Before Talk</td></tr>
         <tr><td>Frequency</td><td>EU433/CN470/EU868/US915/AS923/AS923-1/AS923-2/AS923-3/AS923-4/AU915/IN865/KR920</td></tr>
         <tr><td rowspan="8">Cellular Feature (available with RAK7289C V2)</td><td>Supports Quectel EG95-E/EG95-NA (IoT/M2M -optimized LTE Cat 4 Module)</td></tr>
