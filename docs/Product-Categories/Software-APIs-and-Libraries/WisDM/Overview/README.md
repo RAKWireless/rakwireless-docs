@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/software-apis-and-library/wisdm/overview/wisdm.png
+rak_img: /assets/images/software-apis-and-library/wisdm/wisdm.png
 rak_desc: WisDM is RAKwireless cloud-based device management platform. It is designed to help you optimize the ways of controlling your gateways. This manual explains in detail the functionalities and configurations of WisDM.
 rak_grp: [software-apis-and-libraries, wisdm]
 prev: ../Software-APIs-and-Libraries/
@@ -38,7 +38,7 @@ To connect to WisDM, you need the RAKwireless Edge Gateways running WisGate OS v
 Log in to WisDM using your RAK ID. If you don't have a RAK ID yet, refer to the [FAQ page](https://support.wisdm.rakwireless.com/hc/en-us/sections/4410156423319-Login-RAK-ID) and create one.
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisdm/overview/1.access-wisdm.png"
+  src="/assets/images/software-apis-and-library/wisdm/1.access-wisdm.png"
   width="100%"
   caption="Accessing WisDM"
 />
@@ -53,7 +53,7 @@ RAK ID is the authentication service of RAKwireless. It is a set of credentials 
 :::
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisdm/overview/2.sign-in.png"
+  src="/assets/images/software-apis-and-library/wisdm/2.sign-in.png"
   width="60%"
   caption="Signing in"
 />
@@ -67,7 +67,7 @@ In the context of WisDM structure, Organization is your account, and it ties all
 
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisdm/overview/3.create-organization.png"
+  src="/assets/images/software-apis-and-library/wisdm/3.create-organization.png"
   width="100%"
   caption="Create an organization"
 />
@@ -75,7 +75,7 @@ In the context of WisDM structure, Organization is your account, and it ties all
 Fill in some basic information for the organization. The page consists of the following elements:
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisdm/overview/4.organization-information.png"
+  src="/assets/images/software-apis-and-library/wisdm/4.organization-information.png"
   width="100%"
   caption="Organization information"
 />
@@ -89,7 +89,7 @@ After filling in the required information, choose the subscription plan. Choosin
 
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisdm/overview/5.subscription-plan.png"
+  src="/assets/images/software-apis-and-library/wisdm/5.subscription-plan.png"
   width="100%"
   caption="Subscription Plan"
 />
@@ -97,7 +97,7 @@ After filling in the required information, choose the subscription plan. Choosin
 WisDM offers a free subscription plan that allows you to manage up to three (3) gateways. The different paid subscription plans allow you to manage a variety of gateways. More about the subscription plans and what they provide can be found on the [FAQ](https://support.wisdm.rakwireless.com/hc/en-us/sections/4410156421399-Subscription) page.
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisdm/overview/6.subscription-plan.png"
+  src="/assets/images/software-apis-and-library/wisdm/6.subscription-plan.png"
   width="100%"
   caption="Successfully creating an organization"
 />
@@ -111,7 +111,7 @@ In the context of WisDM’s structure, location is a logical entity that defines
 You can add a location by clicking the **New Location** button.
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisdm/overview/7.subscription-plan.png"
+  src="/assets/images/software-apis-and-library/wisdm/7.subscription-plan.png"
   width="100%"
   caption="General information"
 />
@@ -122,7 +122,7 @@ Then fill in the following information:
 - **Location address** – you can copy the organization address or set a new one, either by typing the address in the search bar or by choosing it from the map on the right.
 - **Location email settings** – you will be notified when there is any change in the gateway’s activity.
   <rk-img
-    src="/assets/images/software-apis-and-library/wisdm/overview/8.email-notif.png"
+    src="/assets/images/software-apis-and-library/wisdm/8.email-notif.png"
     width="80%"
     caption="Email notifications"
   />
@@ -140,7 +140,7 @@ The location can be set to work in three modes, depending on the user’s needs.
 After choosing the work mode and the band that the location will operate on, configure the following settings:
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisdm/overview/9.network-configuration.png"
+  src="/assets/images/software-apis-and-library/wisdm/9.network-configuration.png"
   width="100%"
   caption="Network configuration"
 />
@@ -161,7 +161,7 @@ The further configurations for the three possible work modes differ in the follo
 If you opt for advanced frequency options, you will see the following options:
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisdm/overview/10.frequency-settings.png"
+  src="/assets/images/software-apis-and-library/wisdm/10.frequency-settings.png"
   width="70%"
   caption="Advanced frequency settings"
 />
@@ -173,7 +173,7 @@ By choosing the channel plan, the fields related to the frequency configuration 
 When creating a new location in Basics Station work mode, you need to set up the following configurations:
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisdm/overview/11.basics-station.png"
+  src="/assets/images/software-apis-and-library/wisdm/11.basics-station.png"
   width="100%"
   caption="Location in Basics Station work mode"
 />
@@ -187,7 +187,7 @@ When creating a new location in Basics Station work mode, you need to set up the
 When creating a new location in built-in network server work mode, you need to set up the following configurations:
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisdm/overview/12.network-server.png"
+  src="/assets/images/software-apis-and-library/wisdm/12.network-server.png"
   width="100%"
   caption="Location in built-in network server work mode"
 />
@@ -195,7 +195,7 @@ When creating a new location in built-in network server work mode, you need to s
 **Network Server** - By default, the settings are pre-filled. For more details, you can check the guide for setting the WisDM location in built-in work mode.
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisdm/overview/13.drop-down.png"
+  src="/assets/images/software-apis-and-library/wisdm/13.drop-down.png"
   width="100%"
   caption="Network server drop-down menu"
 />
@@ -203,7 +203,7 @@ When creating a new location in built-in network server work mode, you need to s
 **Disable frame-counter validate** - The frame-counting provides an additional layer of security between the end devices and the LoRa network server. Disabling the frame-counter validation should be done only in specific cases and on the user's own responsibility.
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisdm/overview/14.gateway-backend.png"
+  src="/assets/images/software-apis-and-library/wisdm/14.gateway-backend.png"
   width="100%"
   caption="Gateway backend drop-down menu"
 />
@@ -212,7 +212,7 @@ When creating a new location in built-in network server work mode, you need to s
 
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisdm/overview/15.integration-interface.png"
+  src="/assets/images/software-apis-and-library/wisdm/15.integration-interface.png"
   width="100%"
   caption="Integration interface drop-down menu"
 />
@@ -220,7 +220,7 @@ When creating a new location in built-in network server work mode, you need to s
 **Integration interface** – The Built-in network server provides integration to share the data of registered end devices for post-processing to third-party services.
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisdm/overview/16.integration-enabled.png"
+  src="/assets/images/software-apis-and-library/wisdm/16.integration-enabled.png"
   width="100%"
   caption="Integration interface enabled"
 />
@@ -230,7 +230,7 @@ When creating a new location in built-in network server work mode, you need to s
 To start the process of adding a gateway to a location in a packet forwarder work mode, click the **Add gateway** button.
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisdm/overview/17.integration-enabled.png"
+  src="/assets/images/software-apis-and-library/wisdm/17.integration-enabled.png"
   width="100%"
   caption="Adding a gateway to a location"
 />
@@ -238,7 +238,7 @@ To start the process of adding a gateway to a location in a packet forwarder wor
 On the next page, you can see the following required information to add a gateway:
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisdm/overview/18.gateway-information.png"
+  src="/assets/images/software-apis-and-library/wisdm/18.gateway-information.png"
   width="100%"
   caption="Adding gateway information"
 />
@@ -250,7 +250,7 @@ On the next page, you can see the following required information to add a gatewa
 - **Gateway EUI** – can be found on the WisGate OS web page. **Status>overview>system>gateway EUI**
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisdm/overview/19.gateway-availability.png"
+  src="/assets/images/software-apis-and-library/wisdm/19.gateway-availability.png"
   width="80%"
   caption="Available and unavailable gateways"
 />
@@ -267,7 +267,7 @@ On the next page, you can see the following required information to add a gatewa
 
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisdm/overview/20.gateway-location.png"
+  src="/assets/images/software-apis-and-library/wisdm/20.gateway-location.png"
   width="100%"
   caption="Adding a gateway to a location in built-in network server mode"
 />
@@ -281,7 +281,7 @@ When you add a gateway to WisDM, you add it to a location. Without specifying a 
 Unassigned gateways are gateways that you remove from the location. Removing them means they are not actively working for you but remain within the organization for you to assign to a location later.
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisdm/overview/20.1.assigned-unassigned.png"
+  src="/assets/images/software-apis-and-library/wisdm/20.1.assigned-unassigned.png"
   width="100%"
   caption="Assigned/Unassigned gateways"
 />
@@ -314,7 +314,7 @@ The Location supervisor in WisDM has access to several locations pre-stated by t
 
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisdm/overview/21.structure-menu.png"
+  src="/assets/images/software-apis-and-library/wisdm/21.structure-menu.png"
   width="100%"
   caption="Main structure menu"
 />
@@ -335,7 +335,7 @@ More about payment security can be found on the [FAQ](https://support.wisdm.rakw
 ### Subscription Plans and Pricing
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisdm/overview/22.pricing.png"
+  src="/assets/images/software-apis-and-library/wisdm/5.subscription-plan.png"
   width="100%"
   caption="Pricing plans"
 />
@@ -362,7 +362,7 @@ WisDM provides a few subscriptions to match the needs of the organization:
 You can upgrade your subscription plan at any time. You will only pay the difference. between your current and the new plan.
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisdm/overview/23.upgrading.png"
+  src="/assets/images/software-apis-and-library/wisdm/22.upgrading.png"
   width="50%"
   caption="Subscription upgrade"
 />
@@ -371,20 +371,13 @@ You can upgrade your subscription plan at any time. You will only pay the differ
 
 #### Subscription Downgrade
 
-<rk-img
-  src="/assets/images/software-apis-and-library/wisdm/overview/24.downgrading.png"
-  width="50%"
-  caption="Subscription downgrade"
-/>
-
-
 There are two approaches to how your subscription could be downgraded:
 1. During the current billing cycle - once you choose to downgrade a subscription it will still be active until the end of the paid billing cycle. We do not provide refunds.
 2. During the retry period – the downgrade happens immediately.
 
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisdm/overview/25.additional-selector.png"
+  src="/assets/images/software-apis-and-library/wisdm/23.additional-selector.png"
   width="30%"
   caption="Additional selector"
 />
@@ -406,7 +399,7 @@ The billing ownership within an Organization can be changed. The billing ownersh
 
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisdm/overview/26.transfer-ownership.png"
+  src="/assets/images/software-apis-and-library/wisdm/24.transfer-ownership.png"
   width="90%"
   caption="Transfer ownership"
 />
@@ -418,7 +411,7 @@ The billing ownership within an Organization can be changed. The billing ownersh
 
 
 <rk-img
-  src="/assets/images/software-apis-and-library/wisdm/overview/27.grant-access.png"
+  src="/assets/images/software-apis-and-library/wisdm/25.grant-access.png"
   width="90%"
   caption="Granting temporary access to RAK support team"
 />

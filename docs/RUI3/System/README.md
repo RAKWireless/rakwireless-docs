@@ -247,8 +247,8 @@ void loop()
   {
     flash_data |= flash_read[0] << 0;
     flash_data |= flash_read[1] << 8;
-    flash_data |= flash_read[0] << 16;
-    flash_data |= flash_read[0] << 24;
+    flash_data |= flash_read[2] << 16;
+    flash_data |= flash_read[3] << 24;
     Serial.println(flash_data);
   }
   else
@@ -300,8 +300,8 @@ void loop()
   {
     flash_data |= flash_read[0] << 0;
     flash_data |= flash_read[1] << 8;
-    flash_data |= flash_read[0] << 16;
-    flash_data |= flash_read[0] << 24;
+    flash_data |= flash_read[2] << 16;
+    flash_data |= flash_read[3] << 24;
     Serial.println(flash_data);
   }
   else

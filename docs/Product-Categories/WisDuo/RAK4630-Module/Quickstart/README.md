@@ -23,7 +23,7 @@ Before going through the steps in the installation guide of the RAK4630 WisDuo L
 
 #### Hardware
 
-- [RAK4630 WisDuo LPWAN Module](https://store.rakwireless.com/products/rak4630-wisduo-lpwan-module?utm_source=RAK4630Module&utm_medium=Document&utm_campaign=BuyFromStore)
+- [RAK4630 WisDuo LPWAN+BLE Module](https://store.rakwireless.com/products/rak4630-wisduo-lpwan-module?utm_source=RAK4630Module&utm_medium=Document&utm_campaign=BuyFromStore)
 - Computer
 - USB to UART TTL adapter
 
@@ -32,7 +32,7 @@ Before going through the steps in the installation guide of the RAK4630 WisDuo L
 - Download and install the [Arduino IDE](https://www.arduino.cc/en/Main/Software).
 :::warning ⚠️ WARNING
 _**If you are using Windows 10**_.
-Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Please install the original Arduino IDE from the Arduino official website! The Arduino app from the Microsoft App Store has problems using third-party Board Support Packages.
+Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the original Arduino IDE from the Arduino official website! The Arduino app from the Microsoft App Store has problems using third-party Board Support Packages.
 :::
 - Add [RAK4630 as a supported board in Arduino IDE](/Product-Categories/wisduo/rak4630-module/Quickstart/#-board-support-package-in-arduino-ide) by updating Board Manager URLs in **Preferences** settings of Arduino IDE with this JSON URL `https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main/package_rakwireless.com_rui_index.json`. After that, you can then add **RAKwireless RUI nRF Boards** via Arduino board manager.
 - [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools)
@@ -50,6 +50,10 @@ The RAK4630 requires a few hardware connections before you can make it work. The
   width="65%"
   caption="RAK4630 minimum schematic"
 />
+
+:::warning ⚠️ WARNING
+VBAT should be higher than 3.3&nbsp;V. The recommended value is the nominal voltage of a Li-Ion battery, which ranges from 3.7&nbsp;V to 4.2&nbsp;V. This is required because the power configuration of the nRF52840 inside the RAK4630 is High Voltage, DC/DC with REG0 and REG1 enabled.
+:::
 
 Ensure that the antennas are properly connected to have a good LoRa and BLE signal. Also, note that you can damage the RF section of the chip if you power the module without an antenna connected to the IPEX connectors.
 
@@ -156,6 +160,10 @@ Once the Arduino IDE has been installed successfully, you can now configure the 
   width="70%"
   caption="RAK4630 with two LEDs"
 />
+
+:::warning ⚠️ WARNING
+VBAT should be higher than 3.3&nbsp;V. The recommended value is the nominal voltage of a Li-Ion battery, which ranges from 3.7&nbsp;V to 4.2&nbsp;V. This is required because the power configuration of the nRF52840 inside the RAK4630 is High Voltage, DC/DC with REG0 and REG1 enabled.
+:::
 
 2. Connect the RAK4630 via USB and check RAK4630 COM Port using Windows **Device Manager**. Double-click the reset button if the module is not detected.
 

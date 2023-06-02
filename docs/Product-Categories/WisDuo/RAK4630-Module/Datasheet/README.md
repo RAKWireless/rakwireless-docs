@@ -16,7 +16,7 @@ certifications:
 
 ---
 
-# RAK4630 WisBlock LPWAN Module Datasheet
+# RAK4630 WisBlock LPWAN+BLE Module Datasheet
 
 
 ## Overview
@@ -39,9 +39,9 @@ The default firmware of RAK4630 is based on RUI3 (RAKwireless Unified Interface)
 - TCXO crystal for LoRa chip
 - I/O ports: UART/I2C/GPIO/USB
 - SPI pins and optional NFC interface are accessible using WisBlock IO module
-- Temperature range: -40&nbsp;°C to +85&nbsp;°C
+- Temperature range: -40°&nbsp;C to +85°&nbsp;C
 - Supply voltage: 2.0 ~ 3.6&nbsp;V
-- Low-Power Wireless Systems with 7.8&nbsp;KHz to 500&nbsp;KHz Bandwidth
+- Low-Power Wireless Systems with 7.8&nbsp;kHz to 500&nbsp;kHz Bandwidth
 - Ultra-Low Power Consumption 4.23&nbsp;uA in sleep mode
 - LoRa PA Boost mode with 22&nbsp;dBm output power
 - BLE5.0 (Tx power -20 to +4&nbsp;dBm in 4&nbsp;dB steps)
@@ -69,6 +69,10 @@ The hardware specification is categorized into three parts. It covers the RF, el
   width="60%"
   caption="RAK4630 module pinout diagram"
 />
+
+:::warning ⚠️ WARNING
+When using `RF_LoRa` and `RF_BT` for antenna connection and not the IPEX connector variant, make sure there is no ground plane (in all layers of the PCB) under the RF trace path to eliminate the possible effects of unwanted stray capacitance which can cause degradation of the RF signal levels.
+:::
 
 | **Pin No.** | **Name**                        |
 | ----------- | ------------------------------- |

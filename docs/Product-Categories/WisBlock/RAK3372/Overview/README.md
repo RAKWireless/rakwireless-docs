@@ -30,9 +30,9 @@ The module itself comprises RAK3172 as its main component. The RAK3372 is based 
 ## Product Features
 
 - I/O ports: UART/I2C/GPIO
-- Temperature range: -40°&nbsp;C to +85°&nbsp;C
+- Temperature range: -70°&nbsp;C to +85°&nbsp;C
 - Supply voltage: 2.0 ~ 3.6&nbsp;V
-- Low-Power Wireless Systems with 7.8&nbsp;KHz to 500&nbsp;kHz Bandwidth
+- Low-Power Wireless Systems with 7.8&nbsp;kHz to 500&nbsp;kHz Bandwidth
 - Ultra-Low Power Consumption of less than 2.0&nbsp;uA in sleep mode
 - LoRa PA Boost mode with 22&nbsp;dBm output power
 - Serial Wire Debug (SWD) interface

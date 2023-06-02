@@ -23,7 +23,7 @@ Before going through the steps of installing the RAK11720 WisDuo LPWAN Module, m
 
 #### Hardware
 
-- [RAK11720 WisDuo LPWAN Module](https://store.rakwireless.com/products/rak11720-ambiq-apollo3-module-for-lorawan?utm_source=RAK11720&utm_medium=Document&utm_campaign=BuyFromStore)
+- [RAK11720 WisDuo LPWAN+BLE Module](https://store.rakwireless.com/products/rak11720-ambiq-apollo3-module-for-lorawan?utm_source=RAK11720&utm_medium=Document&utm_campaign=BuyFromStore)
 - Computer
 - USB to UART TTL adapter
 

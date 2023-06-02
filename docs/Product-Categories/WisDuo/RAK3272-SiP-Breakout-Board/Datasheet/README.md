@@ -15,7 +15,7 @@ tags:
 
 ### Description
 
-The RAK3272-SiP and RAK3272LP-SiP Breakout Boards were designed to allow easy access to the [RAK3172-SiP/RAK3172LP-SiP](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3172-Module/Overview) module pins to simplify development and testing. The two SiP module variants use different RF output paths to optimize current consumption depending on the application. RAK3172-SiP uses RFO_HP while RAK3172LP-SiP uses the RFO_LP on the STM32WL SoC transceiver.
+The RAK3272-SiP and RAK3272LP-SiP Breakout Boards were designed to allow easy access to the [RAK3172-SiP/RAK3172LP-SiP](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3172-SiP/Overview) module pins to simplify development and testing. The two SiP module variants use different RF output paths to optimize current consumption depending on the application. RAK3172-SiP uses RFO_HP while RAK3172LP-SiP uses the RFO_LP on the STM32WL SoC transceiver.
 
 The microcontroller GPIO pins are accessible via 2.54&nbsp;mm headers. The breakout board itself has a RAK3172-SiP or RAK3172LP-SiP (based on STM32WLE5JC) as its core. The STM32WLE5JC is part of the [STM32WLE5x](https://www.st.com/en/microcontrollers-microprocessors/stm32wlex.html) family. This core is based on an Arm® Cortex®‐M4 core running at 48&nbsp;MHz, and a sub-GHz radio based on Semtech SX126x.
 

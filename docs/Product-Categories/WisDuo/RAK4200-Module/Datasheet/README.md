@@ -31,7 +31,7 @@ The module complies with LoRaWAN 1.0.2 specification. It also supports LoRa P2P 
 * **Compact Form Factor**: 15 x 15.5 x 2.5&nbsp;mm
 * 20 Pin Stamp Pad for PCB SMT mounting
 * **I/O ports**: UART/I2C/GPIO/ADC
-* **Temperature range**: -40&nbsp;°C to +85&nbsp;°C
+* **Temperature range**: -40°&nbsp;C to +85°&nbsp;C
 * **Supply voltage**: 2.0 ~ 3.6&nbsp;V
 * **Frequency range**: 863–870&nbsp;MHz (EU) / 902–928&nbsp;MHz (US), ISM and SRD systems
 * Low-Power Wireless Systems with 7.8&nbsp;kHz to 500&nbsp;kHz Bandwidth
@@ -74,13 +74,15 @@ The hardware specification is categorized into five parts. It covers the pinouts
 
 #### Pin Definition
 
-
-
 <rk-img
   src="/assets/images/wisduo/rak4200-module/datasheet/pinout-for-rak4200.svg"
   width="65%"
   caption="Pinout for RAK4200"
 />
+
+:::warning ⚠️ WARNING
+When using `RF` pin for antenna connection and not the IPEX connector variant, make sure there is no ground plane (in all layers of the PCB) under the RF trace path to eliminate the possible effects of unwanted stray capacitance which can cause degradation of the RF signal levels.
+:::
 
 | Pin | Name     | I/O | Description                                     |
 | --- | -------- | --- | ----------------------------------------------- |

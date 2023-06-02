@@ -135,6 +135,10 @@ The table below shows the pin definition and description of RAK11300:
 
 ##### Antenna Interface
 
+:::warning ⚠️ WARNING
+When using `RF_LoRa` for antenna connection and not the IPEX connector variant, make sure there is no ground plane (in all layers of the PCB) under the RF trace path to eliminate the possible effects of unwanted stray capacitance which can cause degradation of the RF signal levels.
+:::
+
 | Pin Name | Pin No. | Type | Description            | Comment                                                                                                          |
 | -------- | ------- | ---- | ---------------------- | ---------------------------------------------------------------------------------------------------------------- |
 | RF_LoRa  | 38      | IO   | LoRa antenna interface | 50&nbsp;Ω Impedance<br/>This pin can't be used on modules with an IPEX connector. If unused, keep this pin open. |

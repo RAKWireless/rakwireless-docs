@@ -86,6 +86,10 @@ Provided in this section is the pinout of the RAK4260 WisDuo LPWAN Module.
   caption="RAK4260 Board Pinout"
 />
 
+:::warning ⚠️ WARNING
+When using `RFC` pin for antenna connection and not the IPEX connector variant, make sure there is no ground plane (in all layers of the PCB) under the RF trace path to eliminate the possible effects of unwanted stray capacitance which can cause degradation of the RF signal levels.
+:::
+
 |  PIN  |     NAME      |  I/O  |                Description                 |
 | :---: | :-----------: | :---: | :----------------------------------------: |
 |   1   |      GND      |   -   |                   Ground                   |

@@ -36,4 +36,4 @@ This module complies with Class A, B, & C of LoRaWAN 1.0.3 specifications. It al
 - Serial Wire Debug (SWD) interface
 - Module size: 25.4 x 32.3&nbsp;mm
 - Supply Voltage: 2.0&nbsp;V ~ 3.6&nbsp;V
-- Temperature Range: -40&nbsp;°C ~ 85&nbsp;°C
+- Temperature Range: -20&nbsp;°C ~ 85&nbsp;°C

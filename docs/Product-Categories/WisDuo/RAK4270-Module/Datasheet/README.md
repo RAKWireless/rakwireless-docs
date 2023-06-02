@@ -37,10 +37,10 @@ You can configure the mode and operation of the RAK4270 module using [RAK4270 AT
 - 20 pin stamp pad for PCB SMT board-to-board soldering
 - I/O ports: **UART/I2C/GPIO/ADC**
 - AT commands control interface
-- Temperature range: **-30&nbsp;°C to +85&nbsp;°C**
+- Temperature range: **-30°&nbsp;C to +85°&nbsp;C**
 - Supply voltage: **2.0 to 3.6&nbsp;V**
 - **Supported bands**: (EU433, CN470, IN865, EU868, AU915, US915, KR920, and AS923-1/2/3/4)
-- LoRa bandwidth range of 7.8&nbsp;kHz to&nbsp;500 kHz, SF5 to SF12, BR=0.018~62.5&nbsp;kb/s
+- LoRa bandwidth range of 7.8&nbsp;kHz to 500&nbsp;kHz, SF5 to SF12, BR=0.018~62.5&nbsp;kb/s
 - Ultra-Low Power Consumption of 2.31&nbsp;μA (down to 1.61&nbsp;μA @ 2.0&nbsp;V) in sleep mode
 - ARM Cortex-M0+ 32-bit RISC core
 - 128&nbsp;kbytes flash memory with ECC
@@ -95,6 +95,10 @@ The hardware specification discusses the interfaces, pinouts and its correspondi
   width="60%"
   caption="RAK4270 Pinout"
 />
+
+:::warning ⚠️ WARNING
+When using `RF` pin for antenna connection and not the IPEX connector variant, make sure there is no ground plane (in all layers of the PCB) under the RF trace path to eliminate the possible effects of unwanted stray capacitance which can cause degradation of the RF signal levels.
+:::
 
 | Pin | Name          | Type | Description                                                       | Alternate Functions                                             |
 | --- | ------------- | ---- | ----------------------------------------------------------------- | --------------------------------------------------------------- |

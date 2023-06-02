@@ -21,10 +21,17 @@ Thank you for choosing **RAK3172 WisDuo LPWAN Module** in your awesome IoT proje
 * [Reference Design](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3272S-Breakout-Board/Datasheet/#schematic-diagram)
 
 :::tip 📝 NOTE:
-There are two variants available for the RAK3172 Module: (1) with the CE & UKCA Certification Mark and (2) with FCC, IC & RCM Certification Mark.
+There are two certification variants available for the RAK3172 Module: (1) with the CE & UKCA Certification Mark and (2) with FCC, IC & RCM Certification Mark.
 
 If you need LoRa module with BLE 5.0 capability, you can check [RAK11720](https://store.rakwireless.com/products/rak11720-ambiq-apollo3-module-for-lorawan?utm_source=RAK11720&utm_medium=Document&utm_campaign=BuyFromStore) which is pin-to-pin compatible to RAK3172 with extra pins for additional ground and BLE RF antenna port.
 :::
+
+:::warning ⚠️ WARNING
+Temperature ratings:<br>
+**RAK3172** is -20°&nbsp;C to 85°&nbsp;C<br>
+**RAK3172-T** is -70°&nbsp;C to 85°&nbsp;C<br>
+:::
+
 ## Product Description
 
 RAK3172 is a low-power long-range transceiver module based on the STM32WLE5CC chip. It provides an easy-to-use, small-size, low-power solution for long-range wireless data applications. This module complies with Class A, B, & C of LoRaWAN 1.0.3 specifications. It can easily connect to different LoRaWAN server platforms like TheThingsNetwork (TTN), Chirpstack, Actility, etc. It also supports LoRa Point-to-Point (P2P) communication mode which helps you in implementing your own customized long-range LoRa network quickly.
@@ -47,4 +54,6 @@ You can configure the mode and operation of the module using AT commands via a U
 - 64&nbsp;kbytes RAM
 - Ultra-Low Power Consumption of 1.69&nbsp;μA in sleep mode
 - **Supply Voltage**: 2.0&nbsp;V ~ 3.6&nbsp;V
-- **Temperature Range**: -40°&nbsp;C ~ 85°&nbsp;C
+- **Temperature Range**:
+    - **RAK3172**: -20°&nbsp;C ~ 85°&nbsp;C
+    - **RAK3172-T**: -70°&nbsp;C ~ 85°&nbsp;C

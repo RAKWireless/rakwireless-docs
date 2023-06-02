@@ -91,6 +91,9 @@ You can check the pin definitions on the table and illustration, as shown in **F
   caption="RAK3172-SiP top view pin diagram"
 />
 
+:::warning ⚠️ WARNING
+Make sure there is no ground plane (in all layers of the PCB) under the `RF_OUT` trace path to eliminate the possible effects of unwanted stray capacitance which can cause degradation of the RF signal levels.
+:::
 
 | **Pin No.** | **Name**     | **Type** | **Description**                                                    |
 | ----------- | ------------ | -------- | ------------------------------------------------------------------ |

@@ -9,9 +9,9 @@ tags:
     - wisduo
 ---
 
-# RAK11720 WisDuo LPWAN Module
+# RAK11720 WisDuo LPWAN+BLE Module
 
-Thank you for choosing **RAK11720 WisDuo LPWAN Module** in your awesome IoT project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
+Thank you for choosing **RAK11720 WisDuo LPWAN+BLE Module** in your awesome IoT project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [Quick Start Guide](../Quickstart/)
 * [AT Command Manual](../AT-Command-Manual/)

@@ -16,7 +16,7 @@ Thank you for choosing **RAK3172 Evaluation Board** in your awesome IoT Project!
 * [Quick Start Guide](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/Quickstart/)
 * [AT Command Manual](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/AT-Command-Manual/)
 * [Datasheet](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/Datasheet/)
-* [RAK3172-E 3D Model](https://downloads.rakwireless.com/3D_File/WisDuo/3D_RAK3172E.stp)
+* [RAK3172-E 3D Model](https://downloads.rakwireless.com/3D_File/WisDuo/3D_RAK3172-E.zip)
 
 ## Product Description
 
@@ -38,4 +38,4 @@ This module complies with Class A, B & C of LoRaWAN 1.0.3 specifications. It als
 - 256&nbsp;kbytes flash memory with ECC
 - 64&nbsp;kbytes RAM
 - **Supply Voltage**: 5&nbsp;V via USB or 3.7-4.2&nbsp;V using Li-Ion Battery
-- **Temperature Range**: -35°&nbsp;C ~ 70°&nbsp;C
+- **Temperature Range**: -20°&nbsp;C ~ 70°&nbsp;C

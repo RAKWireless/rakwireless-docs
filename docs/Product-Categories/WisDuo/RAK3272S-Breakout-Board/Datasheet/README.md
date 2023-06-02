@@ -30,7 +30,7 @@ This module complies with Class A, B, & C of LoRaWAN 1.0.3 specifications. It al
 - Module size: 25.4 x 32.3&nbsp;mm
 - Ultra-low-power consumption of 1.69&nbsp;μA in sleep mode
 - Supply Voltage: 2.0&nbsp;V ~ 3.6&nbsp;V
-- Temperature Range: -40&nbsp;°C ~ 85&nbsp;°C
+- Temperature Range: -20&nbsp;°C ~ 85&nbsp;°C
 
 
 ## Specifications

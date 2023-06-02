@@ -18,8 +18,6 @@ certifications:
 # RAK811 WisDuo LPWAN Module Datasheet
 
 
-
-
 ## Overview
 
 ### Description
@@ -77,6 +75,10 @@ The hardware specification is categorized into six parts. It discusses the pinou
 #### Pin Definition
 
 The RAK811 supports two different frequency variations: **Low Radio Frequency** and **High Radio Frequency**.
+
+:::warning ⚠️ WARNING
+When using `RF_OUT` for antenna connection and not the IPEX connector variant, make sure there is no ground plane (in all layers of the PCB) under the RF trace path to eliminate the possible effects of unwanted stray capacitance which can cause degradation of the RF signal levels.
+:::
 
 ##### 1. Low Radio Frequency Version (RAK811(L))
 
@@ -359,7 +361,7 @@ RAK811 supports two UARTs: UART1 (pin6-TX1, pin7-RX1) and UART3 (pin25-TX3, pin2
 Referred to IPC/JEDEC standard:
 
 - MSL Rating : Class 3
-- Peak Temperature : < 250&nbsp;°C
+- Peak Temperature : < 250°&nbsp;C
 - Number of Times : ≤ 2 times
 
 <rk-img

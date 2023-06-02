@@ -45,13 +45,22 @@ You can configure the mode and operation of the module using AT commands via a U
 - 64&nbsp;kbytes RAM
 - Ultra-low-power consumption of 1.69&nbsp;μA in sleep mode
 - **Supply Voltage**: 2.0&nbsp;V ~ 3.6&nbsp;V
-- **Temperature range**: -40°&nbsp;C ~ 85°&nbsp;C
+- **Temperature Range**:
+  - **RAK3172**: -20°&nbsp;C ~ 85°&nbsp;C
+  - **RAK3172-T**: -70°&nbsp;C ~ 85°&nbsp;C
 
 :::tip 📝 NOTE:
-There are two variants available for the RAK3172 Module: (1) with the CE & UKCA Certification Mark and (2) with FCC, IC & RCM Certification Mark.
+There are two certification variants available for the RAK3172 Module: (1) with the CE & UKCA Certification Mark and (2) with FCC, IC, & RCM Certification Mark.
 
 If you need LoRa module with BLE 5.0 capability, you can check [RAK11720](https://store.rakwireless.com/products/rak11720-ambiq-apollo3-module-for-lorawan?utm_source=RAK11720&utm_medium=Document&utm_campaign=BuyFromStore) which is pin-to-pin compatible to RAK3172 with extra pins for additional ground and BLE RF antenna port.
 :::
+
+:::warning ⚠️ WARNING
+Temperature ratings:<br>
+**RAK3172** is -20°&nbsp;C to 85°&nbsp;C<br>
+**RAK3172-T** is -70°&nbsp;C to 85°&nbsp;C<br>
+:::
+
 ## Specifications
 
 This section covers the hardware and software specifications of RAK3172. Also, it includes the block diagram and the updated firmware link of the RAK3172 WisDuo module.
@@ -89,6 +98,9 @@ A dedicated internal SPI interface called **SUBGHZSPI** is used to communicate w
   caption="Board Pinout for RAK3172"
 />
 
+:::warning ⚠️ WARNING
+When using `RF` pin for antenna connection and not the IPEX connector variant, make sure there is no ground plane (in all layers of the PCB) under the RF trace path to eliminate the possible effects of unwanted stray capacitance which can cause degradation of the RF signal levels.
+:::
 
 | **Pin No.** | **Name**      | **Type** | **Description**                                                                                   |
 | ----------- | ------------- | -------- | ------------------------------------------------------------------------------------------------- |
@@ -195,7 +207,7 @@ For the reference application schematic of RAK3172 with minimum components requi
 
 | Feature               | Minimum | Typical | Maximum | Unit |
 | --------------------- | ------- | ------- | ------- | ---- |
-| Operating Temperature | -40     | 25      | 85      | °C   |
+| Operating Temperature | -20     | 25      | 85      | °C   |
 
 ##### Storage Temperature
 
@@ -242,11 +254,13 @@ If BOOT mode is not initiated, you can manually send `AT+BOOT` command to start 
 
 #### Firmware / OS
 
-| Model          | Version                                         | Source                                                                                          |
-| -------------- | ----------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| RAK3172 (.bin) | RUI3 (default baudrate = 115200)                | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3172-E_latest.bin)               |
-| RAK3172 (.hex) | RUI3 (default baudrate = 115200)                | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3172-E_latest_final.hex)         |
-| RAK3172        | **DEPRECATED** V1.0.4 (default baudrate = 9600) | [Download](https://downloads.rakwireless.com/LoRa/RAK3172/Firmware/RAK3172_Latest_Firmware.zip) |
+| Model            | Version                                                          | Source                                                                                          |
+| ---------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| RAK3172 (.bin)   | RUI3 Application Code only (default baudrate = 115200)           | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3172-E_latest.bin)               |
+| RAK3172 (.hex)   | RUI3 Bootloader and Application Code(default baudrate = 115200)  | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3172-E_latest_final.hex)         |
+| RAK3172-T (.bin) | RUI3 Application Code only(default baudrate = 115200)            | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3172-T_latest.bin)               |
+| RAK3172-T (.hex) | RUI3 Bootloader and Application Code (default baudrate = 115200) | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3172-T_latest_final.hex)         |
+| RAK3172 (OLD)    | **DEPRECATED** V1.0.4 (default baudrate = 9600)                  | [Download](https://downloads.rakwireless.com/LoRa/RAK3172/Firmware/RAK3172_Latest_Firmware.zip) |
 
 :::warning ⚠️ WARNING
 There are RAK3172 devices loaded with old firmware versions which are not based on RUI3 (RAKwireless Unified Interface V3). These devices have v1.0.4 and below.

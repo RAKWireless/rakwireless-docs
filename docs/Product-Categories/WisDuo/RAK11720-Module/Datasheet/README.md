@@ -8,7 +8,7 @@ tags:
   - RAK11720
 ---
 
-# RAK11720 WisDuo LPWAN Module Datasheet
+# RAK11720 WisDuo LPWAN+BLE Module Datasheet
 
 ## Overview
 
@@ -70,6 +70,10 @@ The hardware specification is categorized into three parts. It covers the RF, el
   width="55%"
   caption="RAK11720 Pin Illustration"
 />
+
+:::warning ⚠️ WARNING
+When using `LORA RF` and `BLE RF` for antenna connection and not the IPEX connector variant, make sure there is no ground plane (in all layers of the PCB) under the RF trace path to eliminate the possible effects of unwanted stray capacitance which can cause degradation of the RF signal levels.
+:::
 
 | **Pin No.** | **Name**      | **Type** | **Description**                                                         |
 | ----------- | ------------- | -------- | ----------------------------------------------------------------------- |

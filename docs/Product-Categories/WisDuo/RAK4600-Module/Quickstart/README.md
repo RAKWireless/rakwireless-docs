@@ -32,7 +32,7 @@ Before going through the step in the installation guide of the RAK4600 WisDuo LP
 
 #### Hardware Tools
 
-1. [**RAK4600 WisDuo LPWAN Module**](https://store.rakwireless.com/products/rak4600-lora-module?utm_source=RAK4600LPWANModule&utm_medium=Document&utm_campaign=BuyFromStore)
+1. [**RAK4600 WisDuo LPWAN+BLE Module**](https://store.rakwireless.com/products/rak4600-lora-module?utm_source=RAK4600LPWANModule&utm_medium=Document&utm_campaign=BuyFromStore)
 2. Windows PC
 3. USB to TTL adapter
 4. [RAKDAP1 Flash and Debug Tool](https://store.rakwireless.com/products/daplink-tool?utm_source=RAKDAP1&utm_medium=Document&utm_campaign=BuyFromStore)
