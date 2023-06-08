@@ -100,7 +100,7 @@ Using your preferred Web browser, input the aforementioned IP Address and you sh
   width="100%"
   caption="Web User Interface Log-in"
 />
-C:\Users\Mark\Documents\Work\RAKwireless\Documentation\rakwireless-docs-internal\docs\.vuepress\public\assets\images\wisgate\rak7268\supported-lora-network-servers\aws
+
 The first firmware version that supports AWS IoT Core for LoRaWAN is 1.2.0065_Release_r209, it can be verified on Status -> Overview -> System -> Firmware Version.
 
 Navigate to System -> Backup/Flash Firmware -> Flash new firmware image, and upgrade the firmware.

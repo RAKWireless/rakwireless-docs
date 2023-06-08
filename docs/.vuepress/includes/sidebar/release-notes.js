@@ -164,6 +164,61 @@ module.exports = {
       ]
     },
     {
+      title : 'WisGateOS2',
+      path: '/Release-Notes/WisGateOS2/',
+      nested: true,
+      collapsible: false,
+      collapsed: true,
+      children : [
+        {
+          title : '2023',
+          nested: false,
+          collapsible: true,
+          collapsed : true,
+          children : [
+            {
+              title : 'May 12',
+              path : '/Release-Notes/WisGateOS2/2023/May-12',
+              collapsable: false
+            },
+            {
+              title : 'March 24',
+              path : '/Release-Notes/WisGateOS2/2023/March-24',
+              collapsable: false
+            },
+            {
+              title : 'January 13',
+              path : '/Release-Notes/WisGateOS2/2023/January-13',
+              collapsable: false
+            },
+          ],
+        },
+        {
+          title : '2022',
+          nested: false,
+          collapsible: true,
+          collapsed : true,
+          children : [
+            {
+              title : 'October 18',
+              path : '/Release-Notes/WisGateOS2/2022/October-18',
+              collapsable: false
+            },
+            {
+              title : 'September 13',
+              path : '/Release-Notes/WisGateOS2/2022/September-13',
+              collapsable: false
+            },
+            {
+              title : 'June 10',
+              path : '/Release-Notes/WisGateOS2/2022/June-10',
+              collapsable: false
+            },
+          ]
+        }
+      ]
+    },
+    {
       title : 'WisGateOS',
       path: '/Release-Notes/WisGateOS/',
       nested: true,
@@ -179,6 +234,11 @@ module.exports = {
             {
               title : 'May 17',
               path : '/Release-Notes/WisGateOS/2023/May-17',
+              collapsable: false
+            },
+            {
+              title : 'June 27',
+              path : '/Release-Notes/WisGateOS/2023/June-27',
               collapsable: false
             },
           ]
@@ -263,6 +323,11 @@ module.exports = {
           collapsible: true,
           collapsed : true,
           children : [
+            {
+              title : 'June 26',
+              path : '/Release-Notes/WisGateOS2/2023/June-26',
+              collapsable: false
+            },
             {
               title : 'May 12',
               path : '/Release-Notes/WisGateOS2/2023/May-12',

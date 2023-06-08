@@ -136,11 +136,16 @@ Wait for the process to finish.
 
 The breathing light LED is located on the top cover of the WisGate Edge Lite 2 gateways and helps to easily determine the gateway’s status visually. The breathing light extension allows you to enable or disable the breathing light on the gateway’s top cover. The default state of the LED is as in its Normal state - a slowly blinking blue light.
 
-- Download the [Breathing Light Extension](https://downloads.rakwireless.com/LoRa/WisGateOS2/WisGateOS2-Extensions/wes-breathing-light-1.0.0_b6.ipk).
-
 ::: tip 📝 NOTE
 Breathing Light extension is available only for the WisGate Edge Lite 2 version 2 gateways.
 :::
+
+<rk-btn
+  src="https://downloads.rakwireless.com/LoRa/WisGateOS2/WisGateOS2-Extensions/wes-breathing-light-1.0.0_b6.ipk"
+  label="Download Breathing Light Extension"
+  size="1.5rem"
+  _blank
+/>
 
 #### Working Modes
 
@@ -198,7 +203,12 @@ The Custom Logo extension allows you to upload your logo in the Web UI. This ext
 
 Being able to rebrand your Web UI is particularly useful and even required when it comes to companies that need to promote and visualize their brand or product. This is where RAKWireless’ white label feature comes in handy for the clients.
 
-- Download the [Custom Logo Extension](https://downloads.rakwireless.com/LoRa/WisGateOS2/WisGateOS2-Extensions/wes-custom-logo-1.0.0_b1.ipk).
+<rk-btn
+  src="https://downloads.rakwireless.com/LoRa/WisGateOS2/WisGateOS2-Extensions/wes-custom-logo-1.0.0_b1.ipk"
+  label="Download Custom Logo Extension"
+  size="1.5rem"
+  _blank
+/>
 
 #### Size and Format Requirements
 
@@ -276,8 +286,12 @@ The frequency plan will be limited to a particular region. Tx power will be limi
 * Downlink Tx Power
 * Beacon Tx Power
 
-
-- Download the [Country Settings Extension](https://downloads.rakwireless.com/LoRa/WisGateOS2/WisGateOS2-Extensions/wes-country-settings-1.0.0_b28.ipk).
+<rk-btn
+  src="https://downloads.rakwireless.com/LoRa/WisGateOS2/WisGateOS2-Extensions/wes-country-settings-1.0.0_b28.ipk"
+  label="Download Country Settings Extension"
+  size="1.5rem"
+  _blank
+/>
 
 
 #### Installing the Extension
@@ -340,7 +354,12 @@ To install the extensions, follow the steps in the [guide](https://docs.rakwirel
 
 This extension can add or delete packet traffic management rules on the gateway through the Open/Close port extension, allowing the host IP of any (or specific) network segment to communicate with the gateway through the specified port.
 
-- Download the [Open/Close Port Extension](https://downloads.rakwireless.com/LoRa/WisGateOS2/WisGateOS2-Extensions/wes-open-close-port-0.0.1_b11.ipk).
+<rk-btn
+  src="https://downloads.rakwireless.com/LoRa/WisGateOS2/WisGateOS2-Extensions/wes-open-close-port-0.0.1_b11.ipk"
+  label="Download Open/Close Port Extension"
+  size="1.5rem"
+  _blank
+/>
 
 #### Installing the Extension
 
@@ -408,8 +427,12 @@ For example, the **Allow-http** service indicates that any host in WAN can commu
 
 The Solar battery extension is used to display the status of the solar battery used by the gateway, including the solar battery's performance, battery health status, cycle period, battery power, charging and discharging mode, and other information. The extension is compatible only with **RAK7289 WisGate Edge Pro gateways**. You can learn the status of solar batteries used in real time through the UI interface.
 
-
-- Download the [Solar Battery Extension](https://downloads.rakwireless.com/LoRa/WisGateOS2/WisGateOS2-Extensions/wes-solar-battery-1.0.0_b19.ipk).
+<rk-btn
+  src="https://downloads.rakwireless.com/LoRa/WisGateOS2/WisGateOS2-Extensions/wes-solar-battery-1.0.0_b19.ipk"
+  label="Download Solar Battery Extension"
+  size="1.5rem"
+  _blank
+/>
 
 #### Installation
 
@@ -469,7 +492,13 @@ This guide assumes that you have some knowledge in setting up a WireGuard server
 WireGuard extension can only be installed on WisGate Edge V2 gateways, with WisGateOS 2 only.
 :::
 
-- Download the [WireGuard Extension](https://downloads.rakwireless.com/LoRa/WisGateOS2/WisGateOS2-Extensions/wes-wireguard-1.0.0_b36.ipk).
+
+<rk-btn
+  src="https://downloads.rakwireless.com/LoRa/WisGateOS2/WisGateOS2-Extensions/wes-wireguard-1.0.1_b46.ipk"
+  label="Download WireGuard Extension"
+  size="1.5rem"
+  _blank
+/>
 
 #### Installing the Extension
 
@@ -546,7 +575,12 @@ Thus, by connecting to the server via a remote client, the user can remotely man
 The OpenVPN extension can only be installed on WisGate Edge V2 gateways, operating with WisGateOS 2.
 :::
 
-- Download the [OpenVPN Extension](https://downloads.rakwireless.com/LoRa/WisGateOS2/WisGateOS2-Extensions/wes-openvpn-1.0.0_b14.ipk).
+<rk-btn
+  src="https://downloads.rakwireless.com/LoRa/WisGateOS2/WisGateOS2-Extensions/wes-openvpn-1.0.0_b14.ipk"
+  label="Download OpenVPN Extension"
+  size="1.5rem"
+  _blank
+/>
 
 #### Installing the Extension
 

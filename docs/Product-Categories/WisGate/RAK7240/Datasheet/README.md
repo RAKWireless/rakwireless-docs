@@ -150,7 +150,7 @@ The status of the LEDs is described as below. Please refer to the printing of th
 
 | Model                      | Firmware Version | Source                                                                                          |
 | -------------------------- | ---------------- | ----------------------------------------------------------------------------------------------- |
-| RAK7240 WisGate Edge Prime | WisGateOS V1.3.8 | [Download](https://downloads.rakwireless.com/LoRa/RAK7240/Firmware/RAK7240_Latest_Firmware.zip) |
+| RAK7240 WisGate Edge Prime | WisGateOS V1.3.9 | [Download](https://downloads.rakwireless.com/LoRa/WisGateOS/WisGateOS_Latest_Firmware.zip)      |
 
 ### Software
 

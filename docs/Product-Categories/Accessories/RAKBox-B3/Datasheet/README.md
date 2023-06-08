@@ -11,25 +11,19 @@ rak_img: /assets/images/accessories/rakbox-b3/overview/overview.png
 
 # WisBlock RAKBox-B3 Enclosure Datasheet
 
-RAKBox-B3 is an IP20 rated enclosure for indoor usage. It is designed specifically for the WisBlock products.
+RAKBox-B3 is an IP20-rated enclosure for indoor usage. It is designed specifically for WisBlock products.
 
 ## Lightweight Plastic Design
 
-- The enclosure is a small and lightweight design.
+- The enclosure has a small and lightweight design.
 - Perfect for setups where space is limited.
-- The slots in the cover allow airflow through the enclosure for applications that measure air temperature and humidity.
-
-<rk-img
-  src="/assets/images/accessories/rakbox-b3/datasheet/top-view.png"
-  width="35%"
-  caption="WisBlock RAKBox-B3 Enclosure Overview"
-/>
+- The slots in the cover allow airflow through the enclosure for applications that measure ambient environmental parameters like temperature, humidity, gases, and air quality.
 
 ## Mechanical Characteristics
 
-- Dimensions W x L x H: 90mm x 85mm x34mm
-- Weight: approximately 3.87oz (110g)
-- Material thickness: 3mm
+- Dimensions W x L x H: 90 x 85 x 34&nbsp;mm
+- Weight: approximately 3.87&nbsp;oz (110&nbsp;g)
+- Material thickness: 3&nbsp;mm
 - Support wall mounting
 - Ingress Protection: IP20
 
@@ -43,12 +37,12 @@ RAKBox-B3 is an IP20 rated enclosure for indoor usage. It is designed specifical
 
 The enclosure is compatible with the following WisBlock modules:
 
-- WisBase RAK5005-O
-- WisCore RAK4631
-- WisSensor RAK1901
-- WisSensor RAK1902
-- WisSensor RAK1904
-- WisSensor RAK1906
+- WisBlock Base RAK19007
+- WisBlock Core RAK4631
+- WisBlock Sensor RAK1901
+- WisBlock Sensor RAK1902
+- WisBlock Sensor RAK1904
+- WisBlock Sensor RAK1906
 
 ## Package Content
 
@@ -57,7 +51,7 @@ The enclosure is compatible with the following WisBlock modules:
 
 ## Mounting Kit
 
-Screws for wall mount are included in the package.
+Screws for the wall mount are included in the package.
 
 <rk-img
   src="/assets/images/accessories/rakbox-b3/datasheet/mounting-kit.png"

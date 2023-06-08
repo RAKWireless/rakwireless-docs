@@ -9,8 +9,7 @@ tags:
   - WisGate
 ---
 
-# RAK7391 WisGate Connect Assembly Guide 
-
+# RAK7391 WisGate Connect Assembly Guide
 
 ## Indoor Rack Enclosure
 
@@ -32,7 +31,6 @@ tags:
 />
 
 
-
 3. Fix the RAK7391 bottom of the lining plate with four M3*6 screws.
 
 <rk-img
@@ -42,7 +40,7 @@ tags:
 />
 
 
-4. Pass the RF cable/connector through the circular openings in the shell and fix it with the washer and nut. If such connectors are not required for your setup, plug the openings with the provided rubber plugs.
+4. Pass the RF cable/connector through the circular openings in the shell and fix it with the washer and nut. Make sure the pigtails are long enough and that the connector polarity matches the polarity of your antenna (SMA/RP-SMA). If such connectors are not required for your setup, simply plug the openings with the provided rubber plugs.
 
 <rk-img
   src="/assets/images/wisgate/rak7391/assembly-guide/4.antenna-connectors.svg"
@@ -51,8 +49,7 @@ tags:
 />
 
 
-
-5. Based on the requirements of your use case, install the needed modules.
+5. Based on the requirements of your use case, install the needed modules. If you use LoRaWAN concentrators, make sure to install them in MiniPCIe slots #1 or #2, which have SPI and USB2 interfaces. Slot #3 includes USB3 and PCIe interfaces.
 
 
 <rk-img
@@ -69,7 +66,8 @@ tags:
 />
 
 
-6. Install the RF cable/connector and the LCD on the front panel according to your setup requirements, and fix the display with M2*3 screws. The spare RF holes can be plugged in with a rubber plug.
+6. Install the RF cable/connector and LCD on the front panel according to your setup requirements, and secure the display with M2*3 screws. Rubber plugs can be inserted into the spare RF holes. Make sure the pigtails are long enough and that the connector polarity matches your antenna (SMA/RP-SMA).
+
 
 <rk-img
   src="/assets/images/wisgate/rak7391/assembly-guide/7.fix-antenna-connectors.svg"
@@ -132,8 +130,7 @@ tags:
 />
 
 
-
-4. Based on the requirements of your use case, install the needed modules and the CM4.
+4. Based on the requirements of your use case, install the needed modules and the CM4. If you use LoRaWAN concentrators, make sure to install them in MiniPCIe slots #1 or #2, which have SPI and USB2 interfaces. Slot #3 includes USB3 and PCIe interfaces.
 
 <rk-img
   src="/assets/images/wisgate/rak7391/assembly-guide/14.add-modules.svg"
@@ -148,7 +145,7 @@ tags:
   caption="Adding different types of modules"
 />
 
-5. Prepare the front and back panels by adding the RF cable/connectors as needed and the OLED screen. Unused antenna holes can be sealed using rubber plugs.
+5. Prepare the front and back panels by adding the RF cable/connectors and the OLED screen as needed. Make sure the pigtails are long enough and that the polarity of the connector matches the polarity of your antennas (SMA/RP-SMA). Rubber plugs can be used to seal unused antenna holes.
 
 <rk-img
   src="/assets/images/wisgate/rak7391/assembly-guide/16.front-panel.svg"
@@ -213,7 +210,7 @@ tags:
 />
 
 
-2. Install the RF cable/connector in the left antenna connector opening and plug the right one. If an external antenna is not required, plug both holes.
+2. Install the RF cable/connector in the left antenna connector opening and plug the right one. Make sure the pigtail is long enough to reach the module it has to be connected to. If an external antenna is not required, plug both holes.
 
 <rk-img
   src="/assets/images/wisgate/rak7391/assembly-guide/23.antenna-connector.svg"
@@ -249,7 +246,7 @@ tags:
 />
 
 
-6. Install additional modules according to your preferred setup.
+6. Install additional modules according to your preferred setup. If you use LoRaWAN concentrators, make sure to install them in MiniPCIe slots #1 or #2, which have SPI and USB2 interfaces. Slot #3 includes USB3 and PCIe interfaces.
 
 
 <rk-img
@@ -310,7 +307,6 @@ Instructions on mounting and securing the mounting kit to the enclosure and the 
   caption="Fixing the bracket to the enclosure"
 />
 
-           
 
 2. Position and tighten the pole clamps together around the pole with bolts, washers, and nuts.
 
@@ -377,4 +373,3 @@ To better protect the Ethernet cable gland and the antenna connector from the we
   width="50%"
   caption="Final PVC wrapping"
 />
- 

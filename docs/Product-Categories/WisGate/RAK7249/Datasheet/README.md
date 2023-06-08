@@ -232,7 +232,7 @@ RAK7249 supports software in LoRa, Network and Management. Supported features ar
 
 | Model                    | Firmware Version | Source                                                                                                      |
 | ------------------------ | ---------------- | ----------------------------------------------------------------------------------------------------------- |
-| RAK7249 WisGate Edge Max | WisGateOS V1.3.8 | [Download](https://downloads.rakwireless.com/LoRa/DIY-Gateway-RAK7249/Firmware/RAK7249_Latest_Firmware.zip) |
+| RAK7249 WisGate Edge Max | WisGateOS V1.3.9 | [Download](https://downloads.rakwireless.com/LoRa/WisGateOS/WisGateOS_Latest_Firmware.zip) |
 
 ### Software
 

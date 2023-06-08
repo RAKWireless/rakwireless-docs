@@ -11,6 +11,16 @@ logo: /assets/images/release-notes/WisGateOS2.png
 
 ---
 
+::: tip 📝 NOTE
+
+WisGateOS 2 is available only for version 2 WisGate Edge gateways.
+The supported models are as follows:
+ - WisGate Edge Pro version 2: RAK7289V2, RAK7289CV2, RAK7289V2H, RAK7289CV2H
+ - WisGate Edge Lite 2 version 2:  RAK7268V2, RAK7268CV2, RAK7268V2H, RAK7268CV2H
+ - WisGate Edge Prime version 2: RAK7240V2, RAK7240CV2, RAK7240V2H, RAK7240CV2H
+
+:::
+
 
 ## Added
 

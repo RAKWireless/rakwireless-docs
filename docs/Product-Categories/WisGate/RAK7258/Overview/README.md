@@ -20,7 +20,7 @@ Thank you for choosing **RAK7258 WisGate Edge Lite** in your awesome IoT Project
 * [OpenWRT Recovery Procedure](/Knowledge-Hub/Learn/OpenWRT-Recovery-Procedure/)
 * [Use the MQTT Broker Like a Pro + Examples](/Knowledge-Hub/Learn/Use-the-MQTT-Broker-Like-a-Pro/)
 * [AWS IoT Core Integration](/Knowledge-Hub/Learn/AWS-IoT-Core-Integration/)
-* [RAK7258 Latest Firmware](https://downloads.rakwireless.com/LoRa/Indoor-Gateway-RAK7258/Firmware/RAK7258_Latest_Firmware.zip)
+* [RAK7258 Latest Firmware](https://downloads.rakwireless.com/LoRa/WisGateOS/WisGateOS_Latest_Firmware.zip)
 
 
 ## Product Description

@@ -21,7 +21,11 @@ rak_img: /assets/images/accessories/rakbox-b3/overview/overview.png
 
 ## Assembly
 
-**Step 1:** Fix the sensor module with one M1.2\*3 screws on the mounting plate. For assembly method and precautions, refer to  [WisBlock Base Board Installation Guide](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/).
+**Step 1:** Fix the core and sensor modules to the WisBlock Base with an appropriate number of M1.2*3 screws. For assembly methods and precautions, refer to the [WisBlock Base Board Installation Guide](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/).
+
+::: tip 📝 NOTE
+To optimize ambient monitoring, place the RAK1902 barometric pressure (for WisBlock Kit 1) on the bottom sensor slot, then place the light and temperature sensor on the top side.
+:::
 
 <rk-img
   src="/assets/images/accessories/rakbox-b3/installation/attaching-sensor.png"
@@ -29,7 +33,7 @@ rak_img: /assets/images/accessories/rakbox-b3/overview/overview.png
   caption="Assembly - Attaching Sensor"
 />
 
-**Step 2:** Stick the foam to the position of the pin hole on the WisBlock module. The foam is used as base for the antenna later.
+**Step 2:** Stick the foam to the position of the shield cover and IO slot on the WisBlock module. The foam is used as a base for the antenna later.
 
 <rk-img
   src="/assets/images/accessories/rakbox-b3/installation/attaching-foam.png"
@@ -37,7 +41,7 @@ rak_img: /assets/images/accessories/rakbox-b3/overview/overview.png
   caption="Assembly - Attaching Foam for Antenna"
 />
 
-**Step 3:** Fix the WisBlock module with three M2.5 \* 4 screws .
+**Step 3:** Fix the mounting plate with tapping screws on the enclosure.
 
 <rk-img
   src="/assets/images/accessories/rakbox-b3/installation/wisblock-box1.png"
@@ -45,21 +49,14 @@ rak_img: /assets/images/accessories/rakbox-b3/overview/overview.png
   caption="Assembly - Attaching Screws"
 />
 
-**Step 4:** Stick the antenna to the foam and clip the antenna wire into the IPEX connector.
-
-<rk-img
-  src="/assets/images/accessories/rakbox-b3/installation/wisblock-box2.png"
-  width="40%"
-  caption="Assembly - Attaching Antenna"
-/>
 
 ## Installation
 
-**Step 1**: Use Ø5mm drill head, drill 2 holes on the wall according to the dimension of the following picture;
+**Step 1**: Use Ø5&nbsp;mm drill head, and drill 2 holes on the wall according to the dimension of the following picture:
 
 <rk-img
   src="/assets/images/accessories/rakbox-b3/installation/box-screw-distance.png"
-  width="30%"
+  width="25%"
   caption="2 Drill Holes"
 />
 
@@ -67,30 +64,51 @@ rak_img: /assets/images/accessories/rakbox-b3/overview/overview.png
 
 <rk-img
   src="/assets/images/accessories/rakbox-b3/installation/wall-screw.png"
-  width="30%"
-  caption="Attaching to the wall"
+  width="40%"
+  caption="Attaching to the Wall"
 />
 
 **Step 3:** Install the device with two screws.
 
 <rk-img
   src="/assets/images/accessories/rakbox-b3/installation/box-screw.png"
-  width="30%"
+  width="40%"
   caption="Installing the Device in the Wall"
 />
 
-**Step 4:** Install the battery and plug the terminal into the socket of PCB.
+**Step 4:** Install the battery with two double-sided adhesive foam.
+
+::: tip 📝 NOTE
+The dimension of the battery should not exceed 65 x 44 x 8&nbsp;mm.
+:::
 
 <rk-img
-  src="/assets/images/accessories/rakbox-b3/installation/image-20200715110559582.png"
-  width="30%"
+  src="/assets/images/accessories/rakbox-b3/installation/battery-install.png"
+  width="40%"
   caption="Attaching Battery"
 />
 
-**Step 5:** Install the cover.
+**Step 5:** Install the WisBlock Base board with four M2.5*4 screws.
+
+<rk-img
+  src="/assets/images/accessories/rakbox-b3/installation/final-steps-1.png"
+  width="40%"
+  caption="Fix WisBlock Modules"
+/>
+
+**Step 6:** Stick the antenna to the foam and clip the antenna wire into the IPEX connector. Then, plug the terminal of the battery into the socket of the WisBlock Base.
+
+<rk-img
+  src="/assets/images/accessories/rakbox-b3/installation/final-steps-2.png"
+  width="40%"
+  caption="Attach the Antennas"
+/>
+
+
+**Step 7:** Install the cover.
 
 <rk-img
   src="/assets/images/accessories/rakbox-b3/installation/box-cover.png"
-  width="30%"
+  width="50%"
   caption="Install the Cover"
 />

@@ -1,7 +1,7 @@
 <template>
   <div class="bg-grey-1 text-grey-7" style="padding: 2.5rem 0 ">
     <!-- <rk-faq-footer v-show="this.isShow"/> -->
-    
+
     <div
       class="q-mx-md text-center text-italic q-px-md"
       style="max-width: 40rem; margin: 1.5rem auto 0 auto;"
@@ -27,7 +27,7 @@
           type="a"
           :href="link.href"
           target="_blank"
-          size="1.5rem"
+          size="1rem"
           flat
           dense
         />
@@ -54,7 +54,7 @@ export default {
       },
       {
         icon: 'fab fa-linkedin',
-        href: 'https://www.linkedin.com/company/rak-wireless/'
+        href: 'https://www.linkedin.com/company/rakwireless/'
       },
       {
         icon: 'fab fa-twitter-square',
@@ -66,8 +66,24 @@ export default {
       },
       {
         icon: 'fab fa-tiktok',
-        href: 'https://www.tiktok.com/@rakwireless '
-      }
+        href: 'https://www.tiktok.com/@rakwireless'
+      },
+      {
+        icon: 'fab fa-pinterest',
+        href: 'https://pinterest.com/rakwireless'
+      },
+      {
+        icon: 'fab fa-github',
+        href: 'https://github.com/RAKWireless'
+      },
+      {
+        icon: 'fab fa-medium',
+        href: 'https://medium.com/@rakwireless'
+      },
+      {
+        icon: 'fab fa-discord',
+        href: 'https://discord.com/invite/Tk9VGRFG4w'
+      },
     ]
   }),
   methods : {

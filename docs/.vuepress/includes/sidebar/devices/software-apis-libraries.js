@@ -111,5 +111,47 @@ module.exports = {
         download: true,
         sidebarDepth: 4
       },
+    ],
+    '/Product-Categories/Software-APIs-and-Libraries/RAKPiOS/': [
+      {
+        title: 'RAKPiOS Overview',
+        path: '/Product-Categories/Software-APIs-and-Libraries/RAKPiOS/Overview/',
+        collapsable: false,
+        nested: true,
+        download: true,
+        sidebarDepth: 4
+      },
+      {
+        title: 'Quick Start Guide',
+        path: '/Product-Categories/Software-APIs-and-Libraries/RAKPiOS/Quickstart/',
+        collapsable: false,
+        nested: true,
+        download: true,
+        sidebarDepth: 4
+      },
+      {
+        title: 'Service Management with Portainer',
+        path: '/Product-Categories/Software-APIs-and-Libraries/RAKPiOS/Portainer/',
+        collapsable: false,
+        nested: true,
+        download: true,
+        sidebarDepth: 4
+      },
+      {
+        title: 'Command Line Utility',
+        path: '/Product-Categories/Software-APIs-and-Libraries/RAKPiOS/Command-Line/',
+        collapsable: false,
+        nested: true,
+        download: true,
+        sidebarDepth: 4
+      },
+      {
+        title: 'Tools',
+        path: '/Product-Categories/Software-APIs-and-Libraries/RAKPiOS/Tools/',
+        collapsable: false,
+        nested: true,
+        download: true,
+        sidebarDepth: 4
+      },
     ]
   }
