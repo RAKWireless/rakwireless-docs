@@ -79,7 +79,7 @@ However, you can switch these two terminals by connecting the PWM1 to R6 and PWM
 
 | SLOT A | SLOT B | SLOT C | SLOT D |
 | ------ | ------ | ------ | ------ |
-| IO2    | IO1    | IO4    | IO5    |
+| IO2    | IO1    | IO4    | IO6    |
 
 #### Electrical Characteristics
 

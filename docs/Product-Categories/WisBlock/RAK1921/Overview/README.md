@@ -21,8 +21,6 @@ Thank you for choosing **RAK1921 WisBlock OLED Display** in your awesome IoT Pro
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
 * [RAK1921 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK1921.stp)
-* [40-Pin Male Connector 3D File](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
-* [WisBlock IO Tutorial](/Knowledge-Hub/Learn/WisBlock-IO-Tutorial/)
 
 **Examples**
 

@@ -295,19 +295,20 @@ You can use any of the pins below as Digital Pin.
 
 | **Pin Name** | **Alternative Pin Usage** |
 | ------------ | ------------------------- |
-| PA0          |                           |
-| PA1          |                           |
+| PA0          |             -             |
+| PA1          |             -             |
 | PA4          | SPI                       |
 | PA5          | SPI                       |
 | PA6          | SPI                       |
 | PA7          | SPI                       |
-| PA8          |                           |
+| PA8          |             -             |
 | PA9          | I2C_SCL                   |
-| PA15         |                           |
-| PB2          |                           |
+| PA10         | I2C_SDA / ADC4            |
+| PA15         | ADC5                      |
+| PB2          | ADC3                      |
 | PB3          | ADC1                      |
 | PB4          | ADC2                      |
-| PB5          |                           |
+| PB5          |             -             |
 | PB6          | UART1_TX                  |
 | PB7          | UART1_RX                  |
 
@@ -362,7 +363,9 @@ You can use any of the pins below as Analog Input.
 | --------------- | ------------ |
 | ADC1            | PB3          |
 | ADC2            | PB4          |
-
+| ADC3            | PB2          |
+| ADC4            | PA10         |
+| ADC5            | PA15         |
 
 Use Arduino [analogRead](https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/) to read the value from the specified Analog Input pin.
 

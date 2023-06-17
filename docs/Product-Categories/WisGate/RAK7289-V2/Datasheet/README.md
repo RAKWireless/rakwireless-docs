@@ -79,16 +79,15 @@ The overview presents the block diagram for the RAK7289 V2 that shows the intern
 ## Block Diagram
 
 <rk-img
-  src="/assets/images/wisgate/rak7289-v2/datasheet/1.with-lte.png"
-  width="70%"
-  caption="RAK7289 V2 WisGate Edge Pro V2 with LTE block diagram"
-/>
-
-
-<rk-img
   src="/assets/images/wisgate/rak7289-v2/datasheet/2.without-lte.png"
   width="70%"
-  caption="RAK7289 V2 WisGate Edge Pro V2 without LTE block diagram"
+  caption="RAK7289V2 WisGate Edge Pro V2 without LTE block diagram"
+/>
+
+<rk-img
+  src="/assets/images/wisgate/rak7289-v2/datasheet/1.with-lte.png"
+  width="70%"
+  caption="RAK7289CV2 WisGate Edge Pro V2 with LTE block diagram"
 />
 
 

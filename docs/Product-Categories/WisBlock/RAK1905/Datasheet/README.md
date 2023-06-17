@@ -87,6 +87,10 @@ If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse 
 | ------ | ------ | ------ | ------ | ------ | ------ |
 | IO1    | IO2    | IO3    | IO5    | IO4    | IO6    |
 
+:::tip 📝 NOTE:
+If there are other sensor modules connected on the base other than RAK1905 and are using the configurable 3V3_S voltage source, you cannot use SLOT B since 3V3_S is controlled via WB_IO2 pin.
+:::
+
 #### Electrical Characteristics
 
 | Symbol | Description                                                                                | Min. | Nom. | Max. | Unit |

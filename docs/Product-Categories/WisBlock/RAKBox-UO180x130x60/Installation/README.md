@@ -63,7 +63,7 @@ Then, install the WisBlock Internal Mount Plate to the base of the enclosure usi
 
 ### 4. Cover the Enclosure with a Lid
 
-Finally, close the WisBlock Unify Enclosure with the top lid using four (4) pieces of M3 x 8&nbsp;mm head screw with a washer, as shown in **Figure 5**.
+Finally, close the WisBlock Unify Enclosure with the top lid using four (4) pieces of M4 x 8&nbsp;mm head screw with a washer, as shown in **Figure 5**.
 
 <rk-img
   src="/assets/images/wisblock/rakbox-uo180x130x60/installation/close-enclosure.png"

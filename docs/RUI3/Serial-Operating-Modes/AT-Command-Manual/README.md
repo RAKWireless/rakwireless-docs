@@ -1542,10 +1542,10 @@ When operating in CLASS B, more return value is shown, that shows the current st
 
 | Class B Status | Description      |
 | -------------- | ---------------- |
-| `B,S0`         | DeviceTimeReq    |
-| `B,S1`         | Beacon Searching |
-| `B,S2`         | Beacon Locked    |
-| `B,S3`         | Beacon Failed    |
+| `B:S0`         | DeviceTimeReq    |
+| `B:S1`         | Beacon Searching |
+| `B:S2`         | Beacon Locked    |
+| `B:S3`         | Beacon Failed    |
 
 
 **Example**:
@@ -1554,7 +1554,7 @@ AT+CLASS=B
 OK
 
 AT+CLASS=?
-AT+CLASS=B,S0
+AT+CLASS=B:S0
 OK
 ```
 :::

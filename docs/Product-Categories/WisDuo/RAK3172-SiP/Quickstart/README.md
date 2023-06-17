@@ -289,34 +289,33 @@ You can use any of the pins below as Digital Pin.
 | PA5           | SPI1_CLK                  |
 | PA6           | SPI1_MISO                 |
 | PA7           | SPI1_MOSI                 |
-| PA8           |                           |
+| PA8           |            -              |
 | PA9           | I2C_SCL                   |
-| PA10          | I2C_SDA                   |
-| PA15          |                           |
-| PB1           |                           |
-| PB2           |                           |
-| PB3           | ADC0                      |
-| PB4           | ADC1                      |
-| PB5           |                           |
+| PA10          | I2C_SDA / PIN_A4          |
+| PA15          | PIN_A3                    |
+| PB1           |            -              |
+| PB2           | PIN_A2                    |
+| PB3           | PIN_A0                    |
+| PB4           | PIN_A1                    |
+| PB5           |            -              |
 | PB6           | UART1_TX                  |
 | PB7           | UART1_RX                  |
-| PB8           |                           |
-| PB9           |                           |
-| PB10          |                           |
-| PB11          |                           |
-| PB12          |                           |
-| PB13          |                           |
-| PB14          |                           |
-| PB15          |                           |
-| PC0           |                           |
-| PC1           |                           |
-| PC2           |                           |
-| PC3           |                           |
-| PC4           |                           |
-| PC5           |                           |
-| PC6           |                           |
-| PC13          |                           |
-
+| PB8           |            -              |
+| PB9           |            -              |
+| PB10          |            -              |
+| PB11          |            -              |
+| PB12          |            -              |
+| PB13          |            -              |
+| PB14          |            -              |
+| PB15          |            -              |
+| PC0           |            -              |
+| PC1           |            -              |
+| PC2           |            -              |
+| PC3           |            -              |
+| PC4           |            -              |
+| PC5           |            -              |
+| PC6           |            -              |
+| PC13          |            -              |
 
 In **Figure 21**, the available I/O pins are shown in purple.
 
@@ -366,8 +365,11 @@ You can use any of the pins below as Analog Input.
 
 | **Port Name** | **ADC** | **Pin Number** |
 | ------------- | ------- | :------------: |
-| PB3           | ADC0    |       14       |
-| PB4           | ADC1    |       15       |
+| PB3           | PIN_A0  |       14       |
+| PB4           | PIN_A1  |       15       |
+| PB2           | PIN_A2  |       57       |
+| PA10          | PIN_A3  |       62       |
+| PA15          | PIN_A4  |       8        |
 
 
 

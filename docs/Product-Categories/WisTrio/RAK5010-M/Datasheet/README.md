@@ -5,7 +5,7 @@ tags:
   - datasheet
   - wistrio
   - RAK5010-M
-rak_desc: Provides comprehensive information about your RAK5010-M WisTrio NB-IoT Tracker to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_desc: Provides comprehensive information about your RAK5010-M-BG95 WisTrio NB-IoT Tracker to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 rak_img: /assets/images/wistrio/rak5010-m/overview/RAK5010-M.png
 certifications:
   - [RoHS, https://downloads.rakwireless.com/LoRa/RAK5010/Certification/RAK5010_ROHS_Report.pdf]
@@ -13,29 +13,30 @@ certifications:
 
 # RAK5010-M WisTrio NB-IoT Tracker Datasheet
 
-
-
 ## Overview
 
 ### Description
 
-The **RAK5010-M WisTrio NB-IoT Tracker** is an advanced, highly flexible eMTC/NB-IoT/EGPRS tracker based on Quectel BG96 LTE Cat M1&NB1, integrated with GPS, BLE, and a variety of sensors. The MCU running the board is a Nordic nRF52840 controller.
+The **RAK5010-M-BG95 WisTrio NB-IoT Tracker** is an advanced, highly flexible eMTC/NB-IoT/EGPRS tracker based on Quectel BG95-M3 (BG96 on the old model) LTE Cat M1&NB1, integrated with GPS, BLE, and a variety of sensors. The MCU running the board is a Nordic nRF52840 controller.
 
 With the GPS and BLE features, the device can be used in a wide range of applications from outdoor to indoor scenarios where location-based services are necessary.
 
-The board is equipped with two sensors on board: humidity and temperature sensor and 3-axis motion sensor. Additionally, the extension IOs in the module allow expandable sensor application in addition to the on-board ones.
+The board is equipped with two sensors on board: a humidity and temperature sensor and a 3-axis motion sensor. Additionally, the extension IOs in the module allow expandable sensor applications in addition to the onboard ones.
 
 This board is particularly suitable to be used as a quick testing and prototyping tool for applications requiring Nb-IoT connectivity.
 Application development supports the GCC environment.
 
+:::tip 📝 NOTE
+**RAK5010-M-BG95** is an updated model of **RAK5010-M**. It uses the same circuit board and components except for the Quectel cellular modem used. The RAK5010-M-BG95 uses **BG95-M3** while the original RAK5010-M-BG95 uses **BG96**. It shares the same AT commands set as well so if you are using the AT command interface, the two versions are compatible. If using a custom firmware (created with our RUI V2 or another IDE), you have to take into account that on the BG95-M3 you cannot use the cellular connection and the GNSS location acquisition at the same time. You have to stop the cellular connection before you can start the location acquisition.
+:::
+
 ### Features
 
-- **Quectel BG96** with LTE CAT M1, LTE NB1, EGPRS and GNSS
+- **Quectel BG95-M3** with LTE CAT M1, LTE NB1, EGPRS and GNSS
 - **Nordic nRF52840**, with BLE 5.0 and long-range BLE
-- nRF52840 integrates the ultra-low power microcontroller ARM Cortex-M4 (64&nbsp;Mhz)
+- nRF52840 integrates the ultra-low power microcontroller ARM Cortex-M4 (64&nbsp;MHz)
 - Built-in humidity and temperature sensor and 3-axis motion sensor
-- iPEX connectors for the LoRa and GPS antenna and an on-board ceramic
-  antenna for the BLE
+- iPEX connectors for the LoRa and GPS antenna and an on-board ceramic antenna for the BLE
 - Nano SIM and ESIM options
 - Can be powered by either Micro USB, 3.7&nbsp;V rechargeable battery or a 5&nbsp;V Solar Panel Port
 - Multiple interfaces, I2C, UART, GPIO, and ADC
@@ -44,12 +45,11 @@ Application development supports the GCC environment.
 
 ### Overview
 
-The overview presents the RAK5010-M WisTrio top view and its block diagram that shows the core of the board.
-
+The overview presents the RAK5010-M-BG95 WisTrio top view and its block diagram that shows the core of the board.
 
 #### Module Overview
 
-Figure 1 shows the top view and the interfaces of the RAK5010-M NB-IoT tracker board.
+**Figure 1** shows the top view and the interfaces of the RAK5010-M-BG95 NB-IoT tracker board.
 
 <rk-img
   src="/assets/images/wistrio/rak5010-m/datasheet/top-view-of-the-board-with-interfaces.jpg"
@@ -57,7 +57,7 @@ Figure 1 shows the top view and the interfaces of the RAK5010-M NB-IoT tracker b
   caption="Top View of the Board with Interfaces"
 />
 
-Figure 2 shows the bottom of the board. In Figure 3, the dimensions are shown, and Figure 4 shows the header pin spacing.
+**Figure 2** shows the bottom of the board. In **Figure 3**, the dimensions are shown, and **Figure 4** shows the header pin spacing.
 
 <rk-img
   src="/assets/images/wistrio/rak5010-m/datasheet/bottom-view-of-the-board-with-interfaces.jpg"
@@ -79,21 +79,21 @@ Figure 2 shows the bottom of the board. In Figure 3, the dimensions are shown, a
 
 #### Block Diagram
 
-The block diagram below shows the internal architecture and external interfaces of the RAK5010-M board.
+The block diagram below shows the internal architecture and external interfaces of the RAK5010-M-BG95 board.
 
 <rk-img
   src="/assets/images/wistrio/rak5010-m/datasheet/block-diagram.svg"
   width="80%"
-  caption="RAK5010-M Block Diagram"
+  caption="RAK5010-M-BG95 Block Diagram"
 />
 
 ### Hardware
 
-The hardware specification is categorized into seven parts. It discusses the interfacing, pinouts, and its corresponding functions and diagrams. It also covers the standard parameters of the board in terms of Electrical, Mechanical and Environmental of which the tabular data of the functionalities and the standard values are presented. Moreover, a thorough discussion of the RAK5010-M specification is included in this section.
+The hardware specification is categorized into seven parts. It discusses the interfacing, pinouts, and their corresponding functions and diagrams. It also covers the standard parameters of the board in terms of Electrical, Mechanical, and Environmental of which the tabular data of the functionalities and the standard values are presented. Moreover, a thorough discussion of the RAK5010-M-BG95 specification is included in this section.
 
 #### Interfaces
 
-The node is built around the BG96 module and the nRF52840 BLE chip. It provides the following interfaces, headers, jumpers, buttons and connectors:
+The node is built around the BG95-M3 module and the nRF52840 BLE chip. It provides the following interfaces, headers, jumpers, buttons, and connectors:
 
 - Micro USB
 - 2 sets of 4-pin 2.54&nbsp;mm Headers (UART, GPIOS, I2C, power)
@@ -102,7 +102,7 @@ The node is built around the BG96 module and the nRF52840 BLE chip. It provides 
 - 2-pin Solar Panel female interface
 - LEDs
 - Reset Button
-- PWR Button for the BG96
+- PWR Button for the BG95-M3
 
 There are two antenna connectors:
 
@@ -111,7 +111,7 @@ There are two antenna connectors:
 
 ##### Micro-B USB Interface
 
-A Standard Micro-B USB is compliant with USB 2.0 standard specification. This USB interface is connected to the USB port of NRF52840 for default. It also can connect to BG96 by reworking some resistor on the board. If this USB port is connected to the BG96, BG96 AT command port, GNSS port, and debug port can be accessed through this USB. It is also used as a charge input port for the battery. The Micro-B USB pin definition is shown in Figure 6:
+A Standard Micro-B USB is compliant with USB 2.0 standard specification. This USB interface is connected to the USB port of NRF52840 by default. It also can connect to BG95-M3 by reworking some resistors on the board. If this USB port is connected to the BG95-M3, BG95-M3 AT command port, GNSS port, and debug port can be accessed through this USB. It is also used as a charge input port for the battery. The Micro-B USB pin definition is shown in Figure 6:
 
 <rk-img
   src="/assets/images/wistrio/rak5010-m/datasheet/usb-connector-pinout.png"
@@ -127,53 +127,52 @@ A Standard Micro-B USB is compliant with USB 2.0 standard specification. This US
 |   4   |          NC          |
 |   5   |         GND          |
 
-This USB port is also used as port for charging the battery.
+This USB port is also used as a port for charging the battery.
 
 ##### LEDs
 
 Three LEDs are used to indicate operating status, here are their functions:
 
-|    Color    |        Connection         |                 Function                 |
-| :---------: | :-----------------------: | :--------------------------------------: |
-| 🟢 Green LED | connected to the nRF52840 |           Defined by the user            |
-| 🔵 Blue LED  |    connect to the BG96    |    Indicates the status of the BG96     |
-|  🔴 Red LED  |    connect to the BG96    | Indicates the network status of the BG96 |
+|    Color    |        Connection         |                  Function                   |
+| :---------: | :-----------------------: | :-----------------------------------------: |
+| 🟢 Green LED | connected to the nRF52840 |             Defined by the user             |
+| 🔵 Blue LED  |  connect to the BG95-M3   |     Indicates the status of the BG95-M3     |
+|  🔴 Red LED  |  connect to the BG95-M3   | Indicates the network status of the BG95-M3 |
 
 ##### RESET Push Button
 
-Reset Push Button is used to reset the nRF52840. You can control the BG96 reset with by the firmware of the nRF52840.
+The Reset Push Button is used to reset the nRF52840. You can control the BG95-M3 reset with the firmware of the nRF52840.
 
 ##### PWRKEY Push Button
 
-When the BG96 is in power off mode, it can be turned back on to normal mode by holding the PWRKEY button for at least 100&nbsp;ms. Holding the PWRKEY button for at least 650&nbsp;ms, the module will execute the power-down procedure after the PWRKEY is released.
+When the BG95-M3 is in power off mode, it can be turned back on to normal mode by holding the PWRKEY button for at least 100&nbsp;ms. Holding the PWRKEY button for at least 650&nbsp;ms, the module will execute the power-down procedure after the PWRKEY is released.
 
-##### IO Connections between the BG96 and the nRF52840
+##### IO Connections between the BG95-M3 and the nRF52840
 
-The nRF52840 communicates with the BG96 primarily though the UART interface. There is, however, additional signaling between the two modules. This is for the purpose
-of auto monitoring of status indicators and control. The pin mapping is shown
+The nRF52840 communicates with the BG95-M3 primarily through the UART interface. There is, however, additional signaling between the two modules. This is for auto-monitoring of status indicators and control. The pin mapping is shown
 below:
 
-| Function of BG96 | PIN definition on nRF52840  |
-| :--------------: | :-------------------------: |
-|    TX of UART    | P0.08 (RX for the nRF52840) |
-|    RX of UART    | P0.06 (TX for the nRF52840) |
-|     BG96_CTS     |            P0.11            |
-|     BG96_RTS     |            P0.07            |
-|     BG96_RI      |            P0.27            |
-|   BG96_STATUS    |            P0.31            |
-|    BG96_RESET    |            P0.28            |
-|   BG96_PWRKEY    |            P0.02            |
-|  BG96_WDISABLE   |            P0.29            |
-|     BG96_DTR     |            P0.26            |
-|  BG96_AP READY   |            P0.30            |
-|     BG96_PSM     |            P0.03            |
+| Function of BG95-M3 | PIN definition on nRF52840  |
+| :-----------------: | :-------------------------: |
+|     TX of UART      | P0.08 (RX for the nRF52840) |
+|     RX of UART      | P0.06 (TX for the nRF52840) |
+|     BG95-M3_CTS     |            P0.11            |
+|     BG95-M3_RTS     |            P0.07            |
+|     BG95-M3_RI      |            P0.27            |
+|   BG95-M3_STATUS    |            P0.31            |
+|    BG95-M3_RESET    |            P0.28            |
+|   BG95-M3_PWRKEY    |            P0.02            |
+|  BG95-M3_WDISABLE   |            P0.29            |
+|     BG95-M3_DTR     |            P0.26            |
+|  BG95-M3_AP READY   |            P0.30            |
+|     BG95-M3_PSM     |            P0.03            |
 
-If BG96_RESET, BG96_PWRKEY, and BG96_WDISABLE are not set correctly, the BG96 module will not boot up normally. When powering up, the BG96 RESET should be retained at a low-level voltage, the BG96_WDISABLE should be retained at low-level voltage, and the BG96_PWRKEY should be given a pulse with a high level and at least 100&nbsp;ms width to turn the BG96 normally.
+If BG95-M3_RESET, BG95-M3_PWRKEY, and BG95-M3_WDISABLE are not set correctly, the BG95-M3 module will not boot up normally. When powering up, the BG95-M3 RESET should be retained at a low-level voltage, the BG95-M3_WDISABLE should be retained at a low-level voltage, and the BG95-M3_PWRKEY should be given a pulse with a high level, and at least 100&nbsp;ms width to turn the BG95-M3 normally.
 
 <rk-img
   src="/assets/images/wistrio/rak5010-m/datasheet/turning-on-the-bg96-via-the-pwrkey.jpg"
   width="50%"
-  caption="Turning on the BG96 via the PWRKEY"
+  caption="Turning on the BG95-M3 via the PWRKEY"
 />
 
 ##### Antenna Connector
@@ -186,7 +185,7 @@ There are two connectors on the board:
 
 ##### P1
 
-**Solar panel interface**
+**Solar Panel Interface**
 
 |  Pin  | Pin Name |       Description       |
 | :---: | :------: | :---------------------: |
@@ -199,7 +198,7 @@ The output of the solar panel cannot exceed 5.5&nbsp;V. Otherwise, it may cause 
 
 ##### P2
 
-**Li-ion battery connector**
+**Li-Ion Battery Connector**
 
 |  Pin  | Pin Name |       Description       |
 | :---: | :------: | :---------------------: |
@@ -208,7 +207,7 @@ The output of the solar panel cannot exceed 5.5&nbsp;V. Otherwise, it may cause 
 
 ##### J9
 
-J9 is J-LINK connector, with J-LINK debugger, you can program and debug nRF52840.
+J9 is a J-LINK connector, with a J-LINK debugger, you can program and debug nRF52840.
 
 |  Pin  | Pin Name |                       Description                        |
 | :---: | :------: | :------------------------------------------------------: |
@@ -218,10 +217,10 @@ J9 is J-LINK connector, with J-LINK debugger, you can program and debug nRF52840
 |   4   |   GND    |                           GND                            |
 
 :::tip 📝 NOTE
-VDD of J9 should connect to the PIN1 of SEGGER J-LINK (see Figure 8) debugger for SWDIO/SWDCLK reference voltage. If this pin is not connected correctly, the J-LINK logic level may not match the required VDD for nRF52840, and it may damage the nRF52840.
+VDD of J9 should connect to the PIN1 of SEGGER J-LINK (see **Figure 8**) debugger for SWDIO/SWDCLK reference voltage. If this pin is not connected correctly, the J-LINK logic level may not match the required VDD for nRF52840, and it may damage the nRF52840.
 :::
 
-Figure 8 shows the definition of 20-Pin segger J-LINK connector:
+**Figure 8** shows the definition of a 20-Pin segger J-LINK connector:
 
 <rk-img
   src="/assets/images/wistrio/rak5010-m/datasheet/j-link-pinout.png"
@@ -229,22 +228,22 @@ Figure 8 shows the definition of 20-Pin segger J-LINK connector:
   caption="J-LINK Pinout"
 />
 
-|  Pin  | Signal | Type  |                                                                                                                                           Description                                                                                                                                            |
-| :---: | :----: | :---: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|   1   | VTref  | Input | This is the target reference voltage. It is used to check if the target has power, to create the logic-level reference for the input comparators, and to control the output logic levels to the target. It is normally supplied from VDD of the target board and must not have a series resistor |
+|  Pin  | Signal | Type  |                                                                                                                                              Description                                                                                                                                              |
+| :---: | :----: | :---: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|   1   | VTref  | Input | This is the target reference voltage. It is used to check if the target has power, to create the logic-level reference for the input comparators, and to control the output logic levels to the target. It is normally supplied from the VDD of the target board and must not have a series resistor. |
 
 ##### J10 and J12
 
-J10 and J12 are IO extension headers. Those are bridged from the nRF52840 IOs, through logical level shift circuits. Thus, the IOs level is set by the VREF pin. The function of these IOs is configurable. They can work as UART, I2C，general GPIO, or ADC.
+J10 and J12 are IO extension headers. Those are bridged from the nRF52840 IOs, through logical level shift circuits. Thus, the IOs level is set by the VREF pin. The function of these IOs is configurable. They can work as UART, I2C, general GPIO, or ADC.
 
 - Definition of J10:
 
-|  Pin  | Pin Name |                                                                                                           Description                                                                                                           |
-| :---: | :------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|   1   |   GND    |                                                                                                               GND                                                                                                               |
-|   2   |   VBAT   |                                                                                                    Connected to the Battery                                                                                                     |
-|   3   |   AIN    | Configurable IO, connected to AIN3 (P0.05) on nRF52840. If used as ADC, the input range is configurable. Refer to the manual of nrf52840. If used as general IO, the logic level is 1.8&nbsp;V, and there no level shift on it. |
-|   4   | NRF_IO1  |                                                      Configurable IO, connected to P0.19 on the nRF52840. There is a level shift circuit between this pin and the nRF52840                                                      |
+|  Pin  | Pin Name |                                                                                                            Description                                                                                                             |
+| :---: | :------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|   1   |   GND    |                                                                                                                GND                                                                                                                 |
+|   2   |   VBAT   |                                                                                                      Connected to the Battery                                                                                                      |
+|   3   |   AIN    | Configurable IO, connected to AIN3 (P0.05) on nRF52840. If used as ADC, the input range is configurable. Refer to the manual of nrf52840. If used as general IO, the logic level is 1.8&nbsp;V, and there is no level shift on it. |
+|   4   | NRF_IO1  |                                                       Configurable IO, connected to P0.19 on the nRF52840. There is a level shift circuit between this pin and the nRF52840                                                        |
 
 - Definition of J12:
 
@@ -255,7 +254,7 @@ J10 and J12 are IO extension headers. Those are bridged from the nRF52840 IOs, t
 |   3   | NRF_IO3  | Configurable IO, connect to P1.02 on the nRF52840. There is a level shift circuit between this pin and the nRF52840 |
 |   4   | NRF_IO4  | Configurable IO, connect to P1.01 on the nRF52840. There is a level shift circuit between this pin and the nRF52840 |
 
-The logic level shift circuit on the RAK5010-M board connects EXT_VREF to your extension board’s power and equalizes it to the logical level of the IO on your extension board.
+The logic level shift circuit on the RAK5010-M-BG95 board connects EXT_VREF to your extension board’s power and equalizes it to the logical level of the IO on your extension board.
 
 <rk-img
   src="/assets/images/wistrio/rak5010-m/datasheet/typical-converter-circuitry.jpg"
@@ -265,18 +264,18 @@ The logic level shift circuit on the RAK5010-M board connects EXT_VREF to your e
 
 #### System on a Chip (SoCs) and Sensors
 
-This section provides detail specifications about the different module present in the RAK5010-M device.
+This section provides detailed specifications about the different modules present in the RAK5010-M-BG95 device.
 
-##### 1. BG96
+##### 1. BG95-M3 Module
 
-###### 1.1 Frequency Bands
+###### BG95-M3 Frequency Bands
 
 |                        LTE Bands                         |      GSM      | Rx-Diversity  |                     GNSS                     |
 | :------------------------------------------------------: | :-----------: | :-----------: | :------------------------------------------: |
 |                    **Cat M1 & NB1**:                     |       -       |       -       |                      -                       |
 | LTE-FDD: B1/B2/B3/B4/ B5/B8/B12/B13/B18/ B19/B20/B26/B28 | GSM850/GSM900 | Not Supported | GPS, GLONASS, BeiDou/ Compass, Galileo, QZSS |
 
-###### 1.2 Key Feature of BG96 Module
+###### BG95-M3 Key Features
 
 |        Feature         | Details                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | :--------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -302,19 +301,19 @@ This section provides detail specifications about the different module present i
 
 The Temperature and Humidity Sensor is an SHTC3 from Sensirion.
 
-###### 3.1 Temperature
+###### Temperature
 
-|    Parameter    | Conditions |       Value        | Units |
-| :-------------: | :--------: | :----------------: | :---: |
-|    Accuracy     |    Typ     |        ±2.0        |  °C   |
-|    Tolerance    |    Max     | See _**Figure 2**_ |  °C   |
-|  Repeatability  |     -      |        0.1         |  °C   |
-|   Resolution    |     -      |        0.01        |  °C   |
-| Specified Range |     -      |    -40 to +125     |  °C   |
-|  Response Time  |   τ 63%    |      <5 to 30      |   s   |
-| Long-term Drift |    Typ.    |        <0.2        | °C/y  |
+|    Parameter    | Conditions |      Value       | Units |
+| :-------------: | :--------: | :--------------: | :---: |
+|    Accuracy     |    Typ     |       ±2.0       |  °C   |
+|    Tolerance    |    Max     | See **Figure 2** |  °C   |
+|  Repeatability  |     -      |       0.1        |  °C   |
+|   Resolution    |     -      |       0.01       |  °C   |
+| Specified Range |     -      |   -40 to +125    |  °C   |
+|  Response Time  |   τ 63%    |     <5 to 30     |   s   |
+| Long-term Drift |    Typ.    |       <0.2       | °C/y  |
 
-###### 3.2 Humidity
+###### Humidity
 
 |    Parameter    | Conditions |       Value        | Units |
 | :-------------: | :--------: | :----------------: | :---: |
@@ -352,14 +351,13 @@ The Temperature and Humidity Sensor is an SHTC3 from Sensirion.
 
 ##### 1. LTE Antenna
 
-
 <rk-img
   src="/assets/images/wistrio/rak5010-m/datasheet/ipex-onboard-connector-for-the-lte-antenna.jpg"
   width="25%"
   caption="iPEX onboard connector for the LTE antenna"
 />
 
-A PCB antenna (Figure 11) is included with the board. In case you want to use another antenna, keep in mind that you need to have the proper connector (iPEX) and have it tuned to the frequency band of operation in your region.
+A PCB antenna (**Figure 11**) is included with the board. In case you want to use another antenna, keep in mind that you need to have the proper connector (iPEX) and have it tuned to the frequency band of operation in your region.
 
 <rk-img
   src="/assets/images/wistrio/rak5010-m/datasheet/pcb-lte-antenna-with-pigtail.png"
@@ -367,7 +365,7 @@ A PCB antenna (Figure 11) is included with the board. In case you want to use an
   caption="PCB LTE Antenna with Pigtail"
 />
 
-###### Antenna Specifications
+###### LTE Antenna Specifications
 
 | Item               | Specifications             |
 | ------------------ | -------------------------- |
@@ -378,17 +376,16 @@ A PCB antenna (Figure 11) is included with the board. In case you want to use an
 | Impedance (Ω)      | 50                         |
 | Antenna Type       | PCB                        |
 
-###### Environmental Requirements
+###### LTE Antenna Environmental Requirements
 
 The antenna environmental requirements are listed in the table below:
 
 | Conditions | Temperature               | Humidity |
 | ---------- | ------------------------- | -------- |
-| Working    | -40&nbsp;ºC ~ +75&nbsp;ºC | 0% ~ 95% |
-| Storage    | 40&nbsp;ºC ~ +85&nbsp;ºC  | 0% ~ 95% |
+| Working    | -40°&nbsp;C ~ +75°&nbsp;C | 0% ~ 95% |
+| Storage    | 40°&nbsp;C ~ +85°&nbsp;C  | 0% ~ 95% |
 
 ##### 2. GPS Antenna
-
 
 <rk-img
   src="/assets/images/wistrio/rak5010-m/datasheet/ipex-onboard-connector-for-the-gps-antenna.jpg"
@@ -398,7 +395,7 @@ The antenna environmental requirements are listed in the table below:
 
 ###### GPS Antenna Power Supply Control
 
-To support low power and long battery life, the active GPS antenna power supply should be shut down when system doesn’t access the data from the GPS module. The GPS power supply is controlled by nRF52840 with MOSFET. The pin map of GPS_EN on Nrf52840 is P1.07, and the circuit is shown in Figures 13 and 14:
+To support low power and long battery life, the active GPS antenna power supply should be shut down when the system doesn’t access the data from the GPS module. The GPS power supply is controlled by nRF52840 with MOSFET. The pin map of GPS_EN on Nrf52840 is P1.07 and the circuit is shown in Figures 13 and 14:
 
 <rk-img
   src="/assets/images/wistrio/rak5010-m/datasheet/circuit-diagram.png"
@@ -414,7 +411,7 @@ To support low power and long battery life, the active GPS antenna power supply 
 - **Set P1.07=1, GPS antenna power is on.**
 - **Set P1.07=0, GPS antenna power is off.**
 
-###### Antenna Specifications
+###### GPS Antenna Specifications
 
 <rk-img
   src="/assets/images/wistrio/rak5010-m/datasheet/gps-antenna.png"
@@ -422,19 +419,19 @@ To support low power and long battery life, the active GPS antenna power supply 
   caption="GPS Antenna"
 />
 
-| Item                                         | Specifications        | PET  |
-| -------------------------------------------- | --------------------- | ---- |
-| Range of Receiving Frequency                 | 1575.42±1.1           | ±2.5 |
-| Center Frequency (MHz) w/ 30mm2 (2 GND plane | 1575.42               | ±3.0 |
-| Bandwidth (MHz) (Return Loss ≤ -10dB)        | ≥10                   | ±0.5 |
-| VSWR (in Center Frequency)                   | ≤1.5                  | ±0.5 |
-| Gain (Zenith) (dBi Typ.) w/ 70mm2 GND Plane  | 4.5                   | ±0.5 |
-| Axial Ratio (dB) w/ 70mm2 GND Plane          | 3.0                   | ±0.2 |
-| Polarization                                 | Right-Handed Circular |      |
-| Impedance (Ω)                                | 50                    |      |
-| Frequency Temperature Coefficient (ppm/ºC)   | 0±10                  |      |
+| **Item**                                          | **Specifications**    | **PET** |
+| ------------------------------------------------- | --------------------- | ------- |
+| Range of Receiving Frequency                      | 1575.42±1.1           | ±2.5    |
+| Center Frequency (MHz) w/ 30&nbsp;mm2 GND plane   | 1575.42               | ±3.0    |
+| Bandwidth (MHz) (Return Loss ≤ -10&nbsp;dB)       | ≥10                   | ±0.5    |
+| VSWR (in Center Frequency)                        | ≤1.5                  | ±0.5    |
+| Gain (Zenith) (dBi Typ.) w/ 70&nbsp;mm2 GND Plane | 4.5                   | ±0.5    |
+| Axial Ratio (dB) w/ 70&nbsp;mm2 GND Plane         | 3.0                   | ±0.2    |
+| Polarization                                      | Right-Handed Circular | -       |
+| Impedance (Ω)                                     | 50                    | -       |
+| Frequency Temperature Coefficient (ppm/ºC)        | 0±10                  | -       |
 
-###### Amplifier Specifications
+###### GPS Antenna Amplifier Specifications
 
 | Item              | Specifications   |
 | ----------------- | ---------------- |
@@ -445,7 +442,7 @@ To support low power and long battery life, the active GPS antenna power supply 
 | DC Voltage        | 3 ~ 5&nbsp;V     |
 | DC Current        | 10&nbsp;mA       |
 
-###### Environmental Test Performance Specifications
+###### GPS Antenna Environmental Test Performance Specifications
 
 | Item              | Normal Temp.     | High Temp.       | Low Temp.        |
 | ----------------- | ---------------- | ---------------- | ---------------- |
@@ -454,20 +451,19 @@ To support low power and long battery life, the active GPS antenna power supply 
 | Noise Coefficient | ≤ 2.0            | ≤ 2.0            | ≤ 2.0            |
 
 :::tip 📝 NOTE
-**1. High temperature test**: Soap in temperature (85&nbsp;°C) and humidity (95%) chamber for 24-hour and return to normal temperature (at least for 1-hour) without visual shape change. <br> **2. Low temperature test**: Soap in temperature (-40&nbsp;°C) chamber for 24-hour and return to normal temperature (at least for 1-hour) without visual shape change.
+**High-temperature test**: Soap in temperature (85°&nbsp;C) and humidity (95%) chamber for 24 hours and return to normal temperature (at least for 1 hour) without visual shape change. <br> **Low-temperature test**: Soap in temperature (-40°&nbsp;C) chamber for 24 hours and return to normal temperature (at least for 1 hour) without visual shape change.
 :::
 
-###### Environmental Requirements
+###### GPS Antenna Environmental Requirements
 
 | Conditions | Temperature               | Humidity |
 | ---------- | ------------------------- | -------- |
-| Working    | -35&nbsp;ºC ~ +80&nbsp;ºC | 0% ~ 95% |
-| Storage    | -35&nbsp;ºC ~ +80&nbsp;ºC | 0% ~ 95% |
+| Working    | -35°&nbsp;C ~ +80°&nbsp;C | 0% ~ 95% |
+| Storage    | -35°&nbsp;C ~ +80°&nbsp;C | 0% ~ 95% |
 
 #### Electrical Characteristics
 
 ##### Schematic Diagram
-
 
 <rk-img
   src="/assets/images/wistrio/rak5010-m/datasheet/schematic-diagram-part-1.png"
@@ -491,26 +487,26 @@ To support low power and long battery life, the active GPS antenna power supply 
 
 Functional operation of the device under the conditions listed is not advised. Hence, exposure to maximum rating conditions may affect device reliability.
 
-|               Ratings               | Maximum Value (V) |
-| :---------------------------------: | :---------------: |
-|   Vbus, power supply on UBS port    |    -0.3 - 5.5     |
-|        Vbat, battery voltage        |    -0.3 - 4.3     |
-|      Vconn solar panel voltage      |    -0.3 - 5.5     |
-|         IOs of J-link (J9)          |    -0.3 - 1.9     |
-| IOs of BG96, nRF52840 - J10 and J12 |    -0.3 -VREF     |
-|                 ESD                 |       2000        |
+|                Ratings                 | Maximum Value (V) |
+| :------------------------------------: | :---------------: |
+|     Vbus, power supply on UBS port     |    -0.3 - 5.5     |
+|         Vbat, battery voltage          |    -0.3 - 4.3     |
+|       Vconn solar panel voltage        |    -0.3 - 5.5     |
+|           IOs of J-link (J9)           |    -0.3 - 1.9     |
+| IOs of BG95-M3, nRF52840 - J10 and J12 |    -0.3 -VREF     |
+|                  ESD                   |       2000        |
 
 :::warning ⚠️ WARNING
-The RAK5010-M, as any electronic equipment, is sensitive to electrostatic discharge (ESD). Improper handling can cause permanent damage to module.
+The RAK5010-M, like any electronic equipment, is sensitive to electrostatic discharge (ESD). Improper handling can cause permanent damage to the module.
 :::
 
 ##### Current Consumption
 
-|                             Conditions                              |   Current   |
-| :-----------------------------------------------------------------: | :---------: |
-| The nRF52840 is Running, the BG96 transmits data @ NB1, 23&nbsp;dBm | 200&nbsp;mA |
-|    BLE transmits @ 0&nbsp;dBm, the BG96 is in power saving mode     |  7&nbsp;mA  |
-|   The nRF52840 is in sleep mode, the BG96 is in power saving mode   | 13&nbsp;µA  |
+|                               Conditions                               |   Current   |
+| :--------------------------------------------------------------------: | :---------: |
+| The nRF52840 is Running, the BG95-M3 transmits data @ NB1, 23&nbsp;dBm | 200&nbsp;mA |
+|    BLE transmits @ 0&nbsp;dBm, the BG95-M3 is in power saving mode     |  7&nbsp;mA  |
+|   The nRF52840 is in sleep mode, the BG95-M3 is in power saving mode   | 13&nbsp;µA  |
 
 :::tip 📝 NOTE
 For the above results to be reached, the nRF52840 regulator has to be in DC-DC mode and all the sensors have to be in sleep mode.
@@ -518,7 +514,7 @@ For the above results to be reached, the nRF52840 regulator has to be in DC-DC m
 
 ##### Power Requirements
 
-The RAK5010-M tracker board can be powered by a battery, connected to the P2. The nominal operational voltage of the battery should be within the range in the table:
+The RAK5010-M-BG95 tracker board can be powered by a battery, connected to the P2. The nominal operational voltage of the battery should be within the range in the table:
 
 |  Min  | Type  |  Max  | Unit  |
 | :---: | :---: | :---: | :---: |
@@ -540,18 +536,13 @@ A suitable Li-Ion battery would have the following parameters:
 |     Capacity      | As required |
 | Discharge Current |  2&nbsp;A   |
 
-A 5&nbsp;V solar panel can be connected to the board via the P1 connector to serve for the purpose of charging the battery.
-
+A 5&nbsp;V solar panel can be connected to the board via the P1 connector to serve the purpose of charging the battery.
 
 :::warning ⚠️ WARNING
-
 To avoid damage both to the battery and board:
-
-  1. Do not power the USB port if a non-rechargeable battery is connected to the RAK5010-M
+  1. Do not power the USB port if a non-rechargeable battery is connected to the RAK5010-M.
   2. Do not attach the solar panel if the non-rechargeable battery is used.
-
 :::
-
 
 <rk-img
   src="/assets/images/wistrio/rak5010-m/datasheet/battery-charging-via-solar-panel.jpg"
@@ -561,16 +552,16 @@ To avoid damage both to the battery and board:
 
 ##### Laboratory Testings
 
-Figures 20 and 21 display the average current consumptions based on the different test cases.
+**Figure 20** and **Figure 21** display the average current consumption based on the different test cases.
 
 **Equipments**:
 
 - Oscilloscope
-- RAK5010-M WisTrio NB-IoT Tracker Pro
+- RAK5010-M-BG95 WisTrio NB-IoT Tracker Pro
 
-**LoRa Packet Sending**
+**Cellular Packet Sending**
 
-The RAK5010-M WisTrio NB-IoT Tracker Pro takes **489.733&nbsp;ms** to send a LoRa packet which consumes **64.9&nbsp;mA** of current.
+The RAK5010-M-BG95 WisTrio NB-IoT Tracker Pro takes **489.733&nbsp;ms** to send a Cellular packet which consumes **64.9&nbsp;mA** of current.
 
 - **Sending Time**: 489.733&nbsp;ms
 - **Current consumption**: 64.9&nbsp;mA
@@ -578,25 +569,24 @@ The RAK5010-M WisTrio NB-IoT Tracker Pro takes **489.733&nbsp;ms** to send a LoR
 <rk-img
   src="/assets/images/wistrio/rak5010-m/datasheet/oscilloscope-screen-capture-of-lora®-packet-sending.jpg"
   width="85%"
-  caption="Oscilloscope Screen Capture of LoRa Packet Sending"
+  caption="Oscilloscope Screen Capture of Cellular Packet Sending"
 />
 
 **Sleep Mode**
 
-The RAK5010-M WisTrio NB-IoT Tracker Pro when in sleep mode consumes **20.5&nbsp;uA** of current.
+The RAK5010-M-BG95 WisTrio NB-IoT Tracker Pro when in sleep mode consumes **20.5&nbsp;uA** of current.
 
 - **Current consumption**: 20.5&nbsp;uA
 
 <rk-img
   src="/assets/images/wistrio/rak5010-m/datasheet/oscilloscope-screen-capture-of-rak4600-lora®-module-in-sleep-mode.jpg"
   width="85%"
-  caption="Oscilloscope Screen Capture of RAK4600 LoRa Module in Sleep Mode"
+  caption="Oscilloscope Screen Capture of RAK5010-M-BG95  LoRa Module in Sleep Mode"
 />
 
 #### Mechanical Characteristics
 
 ##### Module Dimensions
-
 
 <rk-img
   src="/assets/images/wistrio/rak5010-m/datasheet/top-view-mechanical-dimension.jpg"
@@ -616,32 +606,29 @@ The table below lists the operation and storage temperature requirements:
 
 |        Parameter        |     Min     |   Typical   |     Max     |
 | :---------------------: | :---------: | :---------: | :---------: |
-| Operational Temp. Range | -35&nbsp;ºC | +25&nbsp;ºC | +75&nbsp;ºC |
-|  Extended Temp. Range   | -40&nbsp;ºC | +25&nbsp;ºC | +80&nbsp;ºC |
-|   Storage Temp. Range   | -40&nbsp;ºC | +25&nbsp;ºC | +80&nbsp;ºC |
+| Operational Temp. Range | -35°&nbsp;C | +25°&nbsp;C | +75°&nbsp;C |
+|  Extended Temp. Range   | -40°&nbsp;C | +25°&nbsp;C | +80°&nbsp;C |
+|   Storage Temp. Range   | -40°&nbsp;C | +25°&nbsp;C | +80°&nbsp;C |
 
 ### Firmware
 
-Download the latest firmware version of the RAK5010-M WisTrio provided in the table below.
+Download the latest firmware version of the RAK5010-M-BG95 WisTrio provided in the table below.
 
 :::warning ⚠️ WARNING
-RAK5010-M and RAK5010 have the same PCB, but their firmware are different and not interchangeable.
-:::
+RAK5010-M-BG95 and RAK5010-BG95 have the same PCB, but their firmware is different and not interchangeable.:::
 
-| Model     | Version   | Source                                                                                                |
-| --------- | --------- | ----------------------------------------------------------------------------------------------------- |
-| RAK5010-M | V3.0.0.15 | [Download](https://downloads.rakwireless.com/Cellular/RAK5010/Firmware/RAK5010-M_Latest_Firmware.zip) |
+| Model          | Version   | Source                                                                                                |
+| -------------- | --------- | ----------------------------------------------------------------------------------------------------- |
+| RAK5010-M-BG95 | V3.0.0.15 | [Download](https://downloads.rakwireless.com/Cellular/RAK5010/Firmware/RAK5010-M_Latest_Firmware.zip) |
 
 ## Models / Bundles
 
 ### Ordering Information
 
-| **Part Number** | **Built-in Nordic nRF52840** | **Built-in Nordic BG96** | **Built-in Temperature and Humidity Sensor** | **Built-in 3-axis Motion Sensor** | **Built-in Pressure Sensor** | **Built in Light Sensor** |
-| --------------- | ---------------------------- | ------------------------ | -------------------------------------------- | --------------------------------- | ---------------------------- | ------------------------- |
-| RAK5010         | ✓                            | ✓                        | ✓                                            | ✓                                 | ✓                            | ✓                         |
-| RAK5010-M       | ✓                            | ✓                        | ✓                                            | ✓                                 |                              |                           |
-
-
+| **Part Number** | **Built-in Nordic nRF52840** | **Built-in Nordic BG95-M3** | **Built-in Temperature and Humidity Sensor** | **Built-in 3-axis Motion Sensor** | **Built-in Pressure Sensor** | **Built in Light Sensor** |
+| --------------- | ---------------------------- | --------------------------- | -------------------------------------------- | --------------------------------- | ---------------------------- | ------------------------- |
+| RAK5010-BG95    | ✓                            | ✓                           | ✓                                            | ✓                                 | ✓                            | ✓                         |
+| RAK5010-M-BG95  | ✓                            | ✓                           | ✓                                            | ✓                                 |                              |                           |
 
 ## Certification
 

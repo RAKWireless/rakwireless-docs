@@ -71,7 +71,7 @@ The overview presents the block diagram for the RAK7268V2 that shows the interna
 <rk-img
   src="/assets/images/wisgate/rak7268-v2/datasheet/block-diagram-with-lte.png"
   width="100%"
-  caption="RAK7268V2 WisGate Edge Lite 2 with LTE Block Diagram"
+  caption="RAK7268CV2 WisGate Edge Lite 2 with LTE Block Diagram"
 />
 
 

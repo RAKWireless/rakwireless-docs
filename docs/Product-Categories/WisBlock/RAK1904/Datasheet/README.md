@@ -78,7 +78,9 @@ If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse 
 | ------ | ------ | ------ | ------ | ------ | ------ |
 | WB_IO1 | WB_IO2 | WB_IO3 | WB_IO5 | WB_IO4 | WB_IO6 |
 
-
+:::tip 📝 NOTE:
+If there are other sensor modules connected on the base other than RAK1904 and are using the configurable 3V3_S voltage source, you cannot use SLOT B since 3V3_S is controlled via WB_IO2 pin.
+:::
 
 #### Sensors
 ##### Acceleration Sensor
