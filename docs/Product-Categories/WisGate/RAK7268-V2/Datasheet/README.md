@@ -11,7 +11,7 @@ next: false
 certifications:
   - [Anatel, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268V2_ANATEL_Certification.pdf]
   - [Anatel, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268CV2_ANATEL_Certification.pdf]
-  - [CE, https://downloads.rakwireless.com/LoRa/RAK7268V2H/Certification/RAK7268CV2H_RAK7268V2H_CE_Certification.pdf]
+  - [CE, https://downloads.rakwireless.com/LoRa/RAK7268V2/Certification/RAK7268V2_CE_Certification.zip]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK7268V2H/Certification/RAK7268CV2H_RAK7268V2H_FCC_Certification.pdf]
   - [ISED, https://downloads.rakwireless.com/LoRa/RAK7268V2H/Certification/RAK7268CV2H_RAK7268V2H_ISED_Certification.pdf]
   - [KCC, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268V2_RAK7268CV2_KC_Certification.pdf]

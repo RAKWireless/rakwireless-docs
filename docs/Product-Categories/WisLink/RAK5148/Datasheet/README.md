@@ -7,6 +7,10 @@ tags:
   - datasheet
   - wislink
   - RAK5148
+certifications:
+  - [CE, https://downloads.rakwireless.com/LoRa/RAK5148/Certification/RAK5148_CE_Certification.pdf]
+  - [FCC, https://downloads.rakwireless.com/LoRa/RAK5148/Certification/RAK5148_FCC_Certification.pdf]
+  - [ISED, https://downloads.rakwireless.com/LoRa/RAK5148/Certification/RAK5148_ISED_Certification.pdf]
 ---
 
 # RAK5148 WisLink LPWAN 2.4 GHz Concentrator Module Datasheet

@@ -385,7 +385,39 @@ module.exports = {
   }
 
 ],
-
+'/Product-Categories/WisGate/RAK7394/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisGate/RAK7394/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Quickstart',
+  path: '/Product-Categories/WisGate/RAK7394/Quickstart/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Supported LoRa Network Servers',
+  path: '/Product-Categories/WisGate/RAK7394/Supported-LoRa-Network-Servers/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisGate/RAK7394/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
 '/Product-Categories/WisGate/RAK-Hotspot/': [{
   title: 'Product Overview',
   path: '/Product-Categories/WisGate/RAK-Hotspot/Overview/',

@@ -466,6 +466,11 @@ export default {
     img: '/assets/images/wisgate/rak7271-7371/overview/RAK7271-RAK7371.png',
     store: 'https://store.rakwireless.com/products/wisgate-developer-base?utm_source=wisgatedeveloperbase&utm_medium=Document&utm_campaign=BuyFromStore'
   },
+  '/Product-Categories/WisGate/RAK7394/': {
+    label: 'RAK7394 WisGate Developer CM4',
+    img: '/assets/images/wisgate/rak7394/overview/rak7394.png',
+    store: 'https://store.rakwireless.com/products/wisgate-developer-cm4-cm4-cm4p-rak7394-rak7394p-rak7394c?utm_source=RAK7394WisGateDeveloperCM4&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
 
   // Connect
 
@@ -1492,10 +1497,25 @@ export default {
     img: '/assets/images/accessories/solar-panel-kit-for-battery-plus/solar-panel-kit-for-battery-plus-overview.png',
     store: 'https://store.rakwireless.com/products/solar-panel-for-rak-battery-plus-with-mounting-kit?utm_source=SolarPanelBatteryPlus&utm_medium=Document&utm_campaign=BuyFromStore'
   },
+  '/Product-Categories/Accessories/RAK9154/': {
+    label: 'RAK9154 Solar Battery',
+    img: '/assets/images/accessories/rak9154/rak9154.png',
+    store: 'https://store.rakwireless.com/products/rak-battery-lite-solar-power-solution-rak9154?utm_source=RAK9154SolarBattery&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
   '/Product-Categories/Accessories/Solar-Panel/': {
     label: 'Solar Panel 80 x 45 mm',
     img: '/assets/images/accessories/solar-panel/solar-panel.png',
     store: 'https://store.rakwireless.com/products/solar-panel?utm_source=SmallSolarPanel&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/Accessories/UPS-12V1A-V01/': {
+    label: 'UPS 12V1A-V01',
+    img: '/assets/images/accessories/ups-12v1a-v01/1.ups-12v1a-v01.png',
+    store: 'https://store.rakwireless.com/products/poe-backup-ups-with-12v-dc-output-compatible-with-rak7286v2?utm_source=UPS12V1A&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/Accessories/UPS-PoE-03/': {
+    label: 'UPS PoE-03',
+    img: '/assets/images/accessories/ups-poe-03/1.ups-poe-03.png',
+    store: 'https://store.rakwireless.com/products/poe-backup-ups-for-rak-edge-gateway-with-poe-output-compatible-with-rak7286v2-rak7289v2-and-rak7240v2?utm_source=UPSPoE03&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/Accessories/RAK9105P/': {
     label: 'RAK9105P PoE Power Convertor',
@@ -1506,6 +1526,11 @@ export default {
     label: 'RAK9105U USB Power Convertor',
     img: '/assets/images/accessories/rak9105u/rak9105u.png',
     store: 'https://store.rakwireless.com'
+  },
+  '/Product-Categories/Accessories/UPS-PoE-03/': {
+    label: 'RAK9105U USB Power Convertor',
+    img: '/assets/images/accessories/ups-poe-03/1.ups-poe-03.png',
+    store: 'https://store.rakwireless.com/products/poe-backup-ups-for-rak-edge-gateway-with-poe-output-compatible-with-rak7286v2-rak7289v2-and-rak7240v2?utm_source=UPSPoE03&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
 

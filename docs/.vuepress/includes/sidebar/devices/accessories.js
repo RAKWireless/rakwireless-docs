@@ -896,6 +896,32 @@ module.exports = {
       sidebarDepth: 4
     }
   ],
+  '/Product-Categories/Accessories/RAK9154/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/RAK9154/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Installation Guide',
+      path: '/Product-Categories/Accessories/RAK9154/Installation-Guide/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/RAK9154/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }
+  ],
   '/Product-Categories/Accessories/Solar-Panel/': [
     {
       title: 'Overview',
@@ -934,6 +960,58 @@ module.exports = {
     {
       title: 'Datasheet',
       path: '/Product-Categories/Accessories/RAK9155/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }
+  ],
+  '/Product-Categories/Accessories/UPS-12V1A-V01/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/UPS-12V1A-V01/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Quick Start Guide',
+      path: '/Product-Categories/Accessories/UPS-12V1A-V01/Quickstart/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/UPS-12V1A-V01/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }
+  ],
+  '/Product-Categories/Accessories/UPS-PoE-03/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/UPS-PoE-03/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Quick Start Guide',
+      path: '/Product-Categories/Accessories/UPS-PoE-03/Quickstart/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/UPS-PoE-03/Datasheet/',
       collapsable: false,
       nested: true,
       download: true,

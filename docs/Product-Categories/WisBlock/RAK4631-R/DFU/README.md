@@ -1,6 +1,6 @@
 ---
 rak_desc: RAK4631-R RUI3 based firmware can be updated via USB connection or wirelessly via BLE using OTA DFU (Device Firmware Upgrade). It guides on how to do perform firmware upgrades for the RAK4631-R WisBlock Core.
-rak_img: /assets/images/wisblock/rak4631-r/RAK4631-R.png
+rak_img: /assets/images/wisblock/rak4631-r/overview/RAK4631-R_home.png
 prev: ../AT-Command-Manual/
 next: ../Datasheet/
 tags:
@@ -64,16 +64,10 @@ After connecting your RAK4631-R to WisBlock Base, you can immediately update its
   caption="Checking COM Port via Device Manager"
 />
 
-5. After that, you need to send `AT+BOOT` command to the device via Serial Terminal software. You can follow the [guide on using Tera Term](/Product-Categories/WisBlock/RAK4631-R/DFU/#how-to-check-firmware-version-using-tera-term) but instead of checking the firmware version, you have to input `AT+BOOT`. You will see no reply since the module will restart then will be disconnected momentarily before re-establishing again the connection to Tera Term.
+5. After that, you need to send `AT+BOOT` command to the device. You can follow the [guide on using Tera Term](/Product-Categories/WisBlock/RAK4631-R/DFU/#how-to-check-firmware-version-using-tera-term) but instead of checking the firmware version, you have to input `AT+BOOT`. You will see no reply since the module will restart then will be disconnected momentarily before re-establishing again the connection to Tera Term.
 
 ::: tip 📝 NOTE
-You have to disconnect the device connection to TeraTerm/Serial Terminal software or close it so that the COM port will be free when you do the firmware update on the next step. Else, you will have error during FW update.
-:::
-
-:::warning ⚠️ WARNING
-**Recovery Mode**
-
-If `AT+BOOT` is not possible to be sent to the device, you can enable DFU mode via WisBlock Base TX1 pin. You need to connect TX1 pin to GND then reset the device to enter DFU mode. You can now proceed on the next step and upload the firmware even without the `AT+BOOT` command.
+You have to disconnect the device connection to Tera Term or close it so that the COM port will be free when you do the firmware update on the next step. Else, you will have error during FW update.
 :::
 
 <rk-img
@@ -83,10 +77,6 @@ If `AT+BOOT` is not possible to be sent to the device, you can enable DFU mode v
 />
 
 6. After initiating Boot mode, you can now execute the firmware update. You need to open command prompt and must be in `RAK4631-R Update` folder directory to do the firmware update. This is folder where you place the nRFutil and the latest firmware. You need to input `cd C:/RAK4631-R Update/` followed  by `nrfutil.exe dfu serial -pkg RAK4631_latest_dfu_package.zip -p COM32`. You have to ensure that you have the right `.zip` file name and `COM port number` to avoid errors.
-
-::: tip 📝 NOTE
-You need to change the COM port number in the command based on your PC. In this example, it is COM32 but it can be different in your PC.
-:::
 
 <rk-img
   src="/assets/images/wisblock/rak4631-r/dfu/x5_sucesss_nrfutil.png"
@@ -169,7 +159,57 @@ AT+BOOT
 `nrfutil dfu usb-serial -pkg RAK4631_latest_dfu_package.zip -p /dev/ttyACM0`
 
 
+<!-- same section
 
+#### Setup the nRFutil-Linux Utility and Environment
+
+
+1. Open the terminal shell go to the directory where you put the [DFU Distribution Package](https://downloads.rakwireless.com/RUI/V3/Image/).
+
+2. After that, execute the following commands:
+
+```
+sudo apt-get update
+sudo apt-get install net-tools git curl python xclip python3-pip
+
+```
+
+If you encountered a “**version `GLIBC_2.25' not found**” error message that means your GLIBC version is too old. Use the suggested Ubuntu Version.
+
+<!--
+```
+root@rayl-virtual-machine:/RAK/RAK_nrfutil# ./nrfutil-linux dfu usb-serial -pkg example_rak4631_0.0.0+user_dfu_package.zip -p /dev/ttyACM0 [3008] Error loading Python lib '/tmp/_MEI1uU96m/libpython3.7m.so.1.0': dlopen: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.25' not found (required by /tmp/_MEI1uU96m/libpython3.7m.so.1.0)
+```
+
+::: tip 📝 NOTE
+
+Building System Package is based on the Ubuntu-20.04.2.0-desktop-amd64.
+   - [Ubuntu 20.04.2.0](https://ubuntu.com/download/desktop/thank-you?version=20.04.2.0&architecture=amd64)
+:::
+
+
+#### Checking the Device with a USB Interface
+
+When you plug in the RAK4631 through the USB to Ubuntu, you will see the related information "**ttyACM0: USB ACM device**" from the dmesg command.
+
+<rk-img
+  src="/assets/images/wisblock/rak4631-r/dfu/dmesg-tty.png"
+  width="90%"
+  caption="dmesg command tty device"
+/>
+-->
+<!--
+```
+root@ray-virtual-machine:/RAK/RAK_nrfutil# dmesg
+[ 3687.959409] usb 2-2.2: new full-speed USB device number 9 using uhci_hcd
+[ 3688.250378] usb 2-2.2: New USB device found, idVendor=1915, idProduct=521f, bcdDevice=1.00
+[ 3688.250383] usb 2-2.2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[ 3688.250386] usb 2-2.2: Product: Rak4631 Serial COM
+[ 3688.250388] usb 2-2.2: Manufacturer: Nordic Semiconductor
+[ 3688.250389] usb 2-2.2: SerialNumber: F681ABF8B921
+[ 3688.262421] cdc_acm 2-2.2:1.0: ttyACMO: USB ACM device
+root@ray-virtual-machine:/RAK/RAK_nrfutil#
+```
 -->
 
 #### Setup the Device Console Port in Linux
@@ -196,7 +236,32 @@ AT+VER=?
 
 You should see then the current FW version of the module.
 
+<!--
 
+#### Connect the Device into the DFU Mode
+
+1. Open minicom and enter the following AT command:
+
+```
+AT+BOOT
+```
+
+2. Before upgrading the dfu package, confirm the module into the DFU mode.
+3. The device will reset, and then you can close the minicom window.
+
+
+#### Bootloader Update via USB
+
+1. Open the terminal shell go to the directory where you put the [DFU Distribution Package](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK4631_latest_dfu_package.zip).
+2. After that, execute the following command:
+
+`./nrfutil-linux dfu usb-serial -pkg RAK4631_latest_dfu_package.zip -p /dev/ttyACM0`
+
+::: tip 📝 NOTE
+You have to make sure that you are uploading in the right port else it will fail.
+:::
+
+-->
 
 
 ### For MacOS
@@ -207,12 +272,6 @@ You should see then the current FW version of the module.
 
 ```
 cd /Users/username/Downloads
-```
-
-or you can directly try
-
-```
-cd Downloads
 ```
 
 3. Make the `nrfutil-mac.1` executable.
@@ -273,14 +332,36 @@ This section covers how to update your RAK4631-R firmware wirelessly via BLE. Fi
 />
 
 
+<!--
 
+::: tip 📝 NOTE
+
+iOS and Android are supported.
+ - iOS: 6. OTA DFU over BLE
+ - Android: 7. OTA DFU over BLE
+:::
+
+-->
 
 ### For iOS
 
+<!--
 
+#### iOS and nRF Connect Version
+
+iOS 14.4 to do OTA DFU over BLE and nRF Connect is using the application version of 2.4.11.
+
+<rk-img
+  src="/assets/images/wisblock/rak4631-r/quickstart/ios-nrfconnect.png"
+  width="90%"
+  caption="iOS 14.4 and nRF Connect 2.4.11"
+/>
+
+--->
 
 
 #### OTA DFU over BLE
+
 
 1. Download the [DFU package](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK4631_latest_dfu_package.zip) of the RAK4631-R and save it on your mobile phone.
 
@@ -312,6 +393,7 @@ By default, the BLE signal of the RAK4631-R is turned off automatically if no co
   caption="Secure DFU Service"
 />
 
+
 5. Choose "**Secure DFU Service**" and click the button highlighted in red, as shown in **Figure 13**.
 
 
@@ -321,6 +403,7 @@ By default, the BLE signal of the RAK4631-R is turned off automatically if no co
   caption="Buttonless DFU"
 />
 
+
 7. A **Write Value** window will pop up. Select **Bool** tab, move the switch from `False` to `True` then press **Write** button.
 
 <rk-img
@@ -328,6 +411,7 @@ By default, the BLE signal of the RAK4631-R is turned off automatically if no co
   width="70%"
   caption="Resetting the Bootloader via Bluetooth"
 />
+
 
 8. Now, the RAK4631-R is now working in DFU Mode. In the application, you will see the default status overview of RAK4631-R.
 
@@ -337,6 +421,7 @@ By default, the BLE signal of the RAK4631-R is turned off automatically if no co
   caption="RAK4631-R default status overview after resetting"
 />
 
+
 9. In the Scanner list, find a BLE device named **DfuTarg** and then click the **Connect** button.
 
 
@@ -345,6 +430,7 @@ By default, the BLE signal of the RAK4631-R is turned off automatically if no co
   width="40%"
   caption="RAK4631-R Default Bluetooth ID after Resetting"
 />
+
 
 10. After connected, select the **DFU** tab, then click **Open Document Picker**. This will prompt you to select the Distribution packet zip file of the firmware you have downloaded. Press **OK**, and it will automatically start to upgrade the firmware of your RAK4631-R through DFU over BLE.
 
@@ -360,6 +446,7 @@ By default, the BLE signal of the RAK4631-R is turned off automatically if no co
 You can upload the Distribution packet (ZIP) file to [iCloud Services](https://www.icloud.com/) and download it to your smartphone.
 :::
 
+
 11. After upgrading, the module restarts, and the DFU connection will be disconnected. Now, you can use your RAK4631-R with the latest firmware.
 
 
@@ -373,7 +460,20 @@ You can upload the Distribution packet (ZIP) file to [iCloud Services](https://w
 
 ### For Android
 
+<!--
 
+#### Android and nRF Connect version
+
+Android 6.0 to do OTA DFU over BLE and nRF Connect is using the application version of 4.24.3.
+
+
+<rk-img
+  src="/assets/images/wisblock/rak4631-r/quickstart/android-nrfconnect.png"
+  width="70%"
+  caption="Android 6.0 and nRF Connect 4.24.3"
+/>
+
+--->
 
 
 #### OTA DFU Over BLE
@@ -409,6 +509,7 @@ By default, the BLE signal of the RAK4631-R is turned off automatically if no co
   caption="Secure DFU Service in the Nordic App"
 />
 
+
 5. Choose "**Secure DFU Services**" and click the button highlighted in red, as shown in **Figure 21**.
 
 <rk-img
@@ -416,6 +517,7 @@ By default, the BLE signal of the RAK4631-R is turned off automatically if no co
   width="40%"
   caption="Buttonless DFU"
 />
+
 
 6. Click the arrow up button highlighted in a red box.
 
@@ -427,6 +529,7 @@ By default, the BLE signal of the RAK4631-R is turned off automatically if no co
   caption="Resetting the Bootloader via Bluetooth"
 />
 
+
 8. Now, the RAK4631-R is now working in DFU Mode. In the application, you will see the default status overview of RAK4631-R.
 
 
@@ -435,6 +538,7 @@ By default, the BLE signal of the RAK4631-R is turned off automatically if no co
   width="40%"
   caption="RAK4631-R default status overview after resetting"
 />
+
 
 9. In the Devices list, find a BLE device named **DfuTarg** and click on the **Connect** button.
 
@@ -459,6 +563,7 @@ After connected, click on the **DFU** icon highlighted in red, as shown below.
 ::: tip 📝 NOTE
 You can upload the Distribution packet (ZIP) file to Google Drive and download it to your smartphone.
 :::
+
 
 11.  After upgrading, the module restarts, and the DFU connection will be disconnected. Now, you can use your RAK4631-R with the latest firmware.
 
@@ -485,7 +590,7 @@ Converting the RAK4631 to RAK4631-R is a two-step processes. First, you need to 
 #### Bootloader Update via USB
 
 1. Create a new folder in your `C:\` drive named `RAK4631 Bootloader to RUI v3`.
-2. Download the [adafruit-nrfutil.exe (you need to unzip/extract the downloaded zip to get the .exe file)](https://github.com/adafruit/Adafruit_nRF52_nrfutil/releases/download/0.5.3.post17/adafruit-nrfutil--0.5.3.post17-win.zip) and [rui3_nrf52840_bootloader](https://downloads.rakwireless.com/RUI/RUI3/Bootloader%20Upgrade/rui3_nrf52840_bootloader_latest.zip) then copy both files to `RAK4631 Bootloader to RUI v3` folder you created.
+2. Download the [adafruit-nrfutil.exe (you need to unzip the downloaded file)](https://github.com/adafruit/Adafruit_nRF52_nrfutil/releases/download/0.5.3.post17/adafruit-nrfutil--0.5.3.post17-win.zip) and [rui3_nrf52840_bootloader](https://downloads.rakwireless.com/RUI/RUI3/Bootloader%20Upgrade/rui3_nrf52840_bootloader_latest.zip) then copy both files to `RAK4631 Bootloader to RUI v3` folder you created.
 
 <rk-img
   src="/assets/images/wisblock/rak4631-r/dfu/1_nrf_rui3_bootloader.png"
@@ -502,12 +607,6 @@ Converting the RAK4631 to RAK4631-R is a two-step processes. First, you need to 
 />
 
 4. You are now ready to do the bootloader upgrade. Open the command prompt and change directory via `cd C:\RAK4631 Bootloader to RUI v3\`. After that, you can now execute the bootloader upgrade using the command below.
-
-::: tip 📝 NOTE
-You need to change the COM port number in the command based on your PC. In this example, it is COM31 but it can be different in your PC.
-
-If you see errors, check again if you are in the right directory and have the necessary files as shown in Figure 27.
-:::
 
 ```
 adafruit-nrfutil.exe --verbose dfu serial --package rui3_nrf52840_bootloader_latest.zip --port COM31 -b 115200 --singlebank --touch 1200
@@ -542,7 +641,7 @@ adafruit-nrfutil.exe --verbose dfu serial --package rui3_nrf52840_bootloader_lat
 3. You are now ready to do the firmware update. Open the command prompt and change directory via `cd C:\RAK4631 Bootloader to RUI v3\`. After that, you can now execute the firmware update using the command below.
 
 ```
-nrfutil.exe dfu serial -pkg rui3_rak4631_latest.zip -p COM32
+nrfutil.exe dfu serial -pkg rui3_rak4631_latest -p COM32
 ```
 
 <rk-img
@@ -610,10 +709,107 @@ The -p parameter is RAK4631-R **USB CDC** device name.
   caption="Firmware update via USB"
 />
 
-this case, the RAK4631-R **USB CDC** device name is `/dev/ttyACM0`
+<!--
+#### Setup the Linux Environment
+
+1. First, open a new terminal, then install all dependencies.
+
+<!--
+1. Open a new terminal, then go to the directory where you put the [DFU Distribution Package](https://downloads.rakwireless.com/RUI/V3/Image/).
+
+2. Install all dependencies.
+
+
+```
+sudo apt-get update
+sudo apt-get install net-tools git curl python xclip python3-pip
+```
+
+2. The following prerequisite must be installed: `Python 3.7` or later.
+Check your Python version, as shown below:
+
+<rk-img
+  src="/assets/images/wisblock/rak4631-r/dfu/python-version.png"
+  width="90%"
+  caption="Check Python version"
+/>
+
+3. Add .local folder to Linux `$PATH` variable.
+
+```
+export PATH="$HOME/.local:$PATH"
+```
+
+4. Now you can install `adafruit-nrfutil` and `nrfutil` :
+
+`nrfutil` and `adafruit-nrfutil` are available as a package in the Python Package Index (PyPI). Execute the commands below:
+
+```
+sudo apt-get update
+pip3 install nrfutil --user
+pip3 install adafruit-nrfutil==0.5.3.post16 --user
+```
+<!--
+1.  Download the [nrfutil-linux](https://github.com/NordicSemiconductor/pc-nrfutil/releases))
+2.  Use “`sudo apt-get`” to install the dependent tool in Ubuntu.
+-->
+<!--
+::: tip 📝 NOTE
+
+Building System Package is based on the Ubuntu-20.04.2.0-desktop-amd64.
+   - [Ubuntu 20.04.2.0](https://ubuntu.com/download/desktop/thank-you?version=20.04.2.0&architecture=amd64)
+:::
+
+#### How to check the USB CDC device name
+
+When a RAK4631-R is plugged into Linux via USB port, you will see the related information about RAK4631-R **USB CDC** device: `ttyACM0: USB ACM device` from the `dmesg` command. Open a new terminal and execute the command below:
+```
+dmesg
+```
+<rk-img
+  src="/assets/images/wisblock/rak4631-r/quickstart/dmesg.png"
+  width="90%"
+  caption="dmesg command"
+/>
+
+In this case, the RAK4631-R **USB CDC** device name is `/dev/ttyACM0`
 -->
 
+<!--
+#### Bootloader update via USB on Linux
 
+After determining the **USB CDC** device name go to the directory where you put the [RUI V3 Bootloader](https://downloads.rakwireless.com/RUI/V3/Image/). Then execute the following command:
+
+```
+adafruit-nrfutil --verbose dfu serial --package ruiv3_bootloader.zip -p /dev/ttyACM0
+```
+The -p parameter is RAK4631-R **USB CDC** device name.
+
+<rk-img
+  src="/assets/images/wisblock/rak4631-r/dfu/rui-boot-linux.png"
+  width="90%"
+  caption="Bootloader update via USB"
+/>
+
+#### Firmware update via USB on Linux
+
+Download the latest version of [RUI V3 Firmware](https://downloads.rakwireless.com/RUI/V3/Image/).
+
+On the download folder, execute the following command:
+
+```
+ nrfutil dfu usb-serial -pkg ruiv3-basic_p1_final.42.zip -p /dev/ttyACM0
+```
+
+The -p parameter is RAK4631-R **USB CDC** device name.
+
+<rk-img
+  src="/assets/images/wisblock/rak4631-r/quickstart/ruiv3-fw.png"
+  width="90%"
+  caption="Firmware update via USB"
+/>
+
+-->
 
 #### Set Up the Device Console Port in Linux
 
@@ -637,7 +833,45 @@ minicom -D /dev/ttyACM0
   caption="Minicom utility"
 />
 
+<!-- I will add minicom here
+1.  Download the console tool of putty from Ubuntu.
+2.  `sudo apt-get update`
+3.  `sudo apt-get install putty`
+4.  Open the putty console with the ttyACM0 interface.
+5.  `sudo putty /dev/ttyACM0 -serial -sercfg 115200,8,n,1,N`
 
+
+<rk-img
+  src="/assets/images/wisblock/rak4631-r/quickstart/upgrading-to-rui/Picture10.jpg"
+  width="60%"
+  caption="Putty with ttyACM0 device"
+/>
+
+#### How to check the device FW Version
+1.  How to check the device FW version from putty.
+2.  `sudo putty /dev/ttyACM0 -serial -sercfg 115200,8,n,1,N`
+
+
+<rk-img
+  src="/assets/images/wisblock/rak4631-r/quickstart/upgrading-to-rui/Picture11.jpg"
+  width="60%"
+  caption="Get the device FW Version"
+/>
+
+::: tip 📝 NOTE
+
+AT+VER:
+
+```
+?>at+ver=?
+
+AT+VER=3.0.0-p1_final.42
+
+```
+
+:::
+
+-->
 
 ### Using MacOS
 
@@ -649,12 +883,6 @@ minicom -D /dev/ttyACM0
 
 ```
 cd /Users/username/Downloads
-```
-
-or you can directly try
-
-```
-cd Downloads
 ```
 
 3. Make the `adafruit-nrfutil-macos` executable.
@@ -710,12 +938,6 @@ After updating the bootloader, you can now upload the RAK4631-R firmware by foll
 
 ```
 cd /Users/username/Downloads
-```
-
-or you can directly try
-
-```
-cd Downloads
 ```
 
 3. Make the `nrfutil-mac.1` executable.

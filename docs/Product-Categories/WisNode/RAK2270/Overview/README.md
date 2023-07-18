@@ -9,14 +9,14 @@ tags:
     - wisnode
 ---
 
-# RAK2270 WisNode Sticker Tracker
+# RAK2270 Sticker Tracker
 
-Thank you for choosing **RAK2270 WisNode Sticker Tracker** in your awesome IoT project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
+Thank you for choosing **RAK2270 Sticker Tracker** in your awesome IoT project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 
 ## Product Description
 
-**RAK2270 WisNode Sticker Tracker** is a battery-powered LoRaWAN tracker with a label-like form factor. It’s compact; simply tear, peel, and stick RAK2270 to any product to virtually track its location in real time by leveraging the location estimator functionality of the Helium network server. It is activated using a Ri sensor, making it buttonless for ease of use.
+**RAK2270 Sticker Tracker** is a battery-powered LoRaWAN tracker with a label-like form factor. It’s compact; simply tear, peel, and stick RAK2270 to any product to virtually track its location in real time by leveraging the location estimator functionality of the Helium network server. It is activated using a Ri sensor, making it buttonless for ease of use.
 
 With its built-in temperature sensor, it measures temperatures ranging from -20°&nbsp;C to +60°&nbsp;C with a temperature resolution of 0.1°&nbsp;C while simultaneously uploading the data to the server. It also includes an integrated 3-axis accelerometer that automatically adjusts the device positioning frequency. Because it detects whether the device is stationary or moving, it reduces device usage time.
 
