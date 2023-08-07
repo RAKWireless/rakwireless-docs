@@ -1,7 +1,7 @@
 ---
 rak_desc: Contains a list of the modules and sensors included in this fully customizable WisBlock Industrial Kit for industrial applications.
 rak_img: /assets/images/wisblock/kits/4_industrial_kit_1.png
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 tags:
   - datasheet

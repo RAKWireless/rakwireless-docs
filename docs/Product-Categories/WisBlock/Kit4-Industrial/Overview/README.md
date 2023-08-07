@@ -4,7 +4,7 @@ rak_desc: The WisBlock Industrial 4.0 Kit is an IoT kit that includes a range of
 rak_grp: [wisblock,wiskit]
 rak_model: Industry 4.0
 prev: ../../
-next: ../Datasheet/
+next: ../Quickstart/
 tags:
     - WisBlock Industrial 4.0 Kit
     - WisBlock Kit
@@ -16,6 +16,7 @@ tags:
 
 Thank you for choosing **WisBlock Industrial 4.0 Kit** in your awesome IoT project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
+* [Quick Start Guide](../QuickStart/)
 * [Datasheet](../Datasheet/)
 
 ## Product Description

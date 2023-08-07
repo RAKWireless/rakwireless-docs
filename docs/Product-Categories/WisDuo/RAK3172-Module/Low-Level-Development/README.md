@@ -567,7 +567,11 @@ To upload this binary file, you need to use STM32CubeProgrammer created by STMic
 
 [Download the latest version STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) and the one compatible with your computer.
 
-In this guide, you will use the internal UART bootloader of the STM32WL and connect the RAK3172 to a USB to Serial converter tool like the RAKDAP1. You need to connect five pins: power supply pins (3.3&nbsp;V and GND), UART2 pins (TX and RX), and the Boot0 pin (connected to 3.3&nbsp;V), as shown in **Figure 53**.
+In this guide, you will use the internal UART bootloader of the STM32WL and connect the RAK3172 to a USB to Serial converter tool. You need to connect five pins: power supply pins (3.3&nbsp;V and GND), UART2 pins (TX and RX), and the Boot0 pin (connected to 3.3&nbsp;V), as shown in **Figure 53**.
+
+:::warning ⚠️ WARNING
+RAKDAP1 hardware debugger **DOES NOT** work with STM32CubeProgrammer. It is advisable to use alternative USB-UART converter when using the UART bootloader of STM32WL to upload a .bin nor .hex file.
+:::
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/low-level-development/RAK3172_boot0.png"
@@ -640,7 +644,7 @@ You can also use an ST-LINK to upload the `.bin` file to RAK3172.
 6. After the successful download, restart the device and remove the connection of the Boot0 pin to VDD (3.3&nbsp;V), leaving you only with four-pin connections (power supply lines and UART2) as shown in **Figure 62**.
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/low-level-development/RAK3172_UART_Connection.svg"
+  src="/assets/images/wisduo/rak3172-module/low-level-development/RAK3172_UART_Connection.png"
   width="50%"
   caption="RAK3172 Connection to UART"
 />

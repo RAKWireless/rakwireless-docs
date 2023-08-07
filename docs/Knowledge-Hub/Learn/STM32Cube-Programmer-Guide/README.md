@@ -39,6 +39,10 @@ If you have no ST-LINK hardware tool, you can only use the STM32's built-in UART
 
 1. Your RAK module must be connected to the PC via a USB-UART converter (VCC, GND, TX, and RX). It must be in STM32 UART Bootloader mode as well. To do this, you have to connect the **BOOT pin** of the module to VCC (3.3&nbsp;V) then reset (momentary pull down of reset pin) the module. You can also power up the module while **BOOT pin** already connected to VCC so you will not need to reset. Take note that after a successful upload, you have to remove the **BOOT pin** connection to VCC.
 
+:::warning ⚠️ WARNING
+RAKDAP1 hardware debugger **DOES NOT** work with STM32CubeProgrammer. It is advisable to use alternative USB-UART converter when using the UART bootloader of STM32WL to upload a .bin nor .hex file.
+:::
+
 <rk-img
   src="/assets/images/knowledge-hub/learn/stm32cubeprogrammer/boot_pin.png"
   width="80%"

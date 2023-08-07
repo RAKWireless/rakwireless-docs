@@ -71,6 +71,10 @@ RAK2247 WisLink LPWAN Concentrator integrates one SX1301 chip and two SX1255/7. 
 
 The hardware is categorized into six (6) parts. It discusses the interfacing, pinouts and its corresponding functions and diagrams. It also covers the parameters and standard values of the board.
 
+:::tip 📝 NOTE
+Detailed electrical and RF testing results can be found on [RAK2247 Hardware Test Report](https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/Test-Report/RAK2247_VA_Test_Report_EU868.docx).
+:::
+
 #### Interface
 
 ##### Power Supply

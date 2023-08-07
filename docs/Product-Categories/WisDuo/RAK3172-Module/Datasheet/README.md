@@ -142,6 +142,10 @@ When using `RF` pin for antenna connection and not the IPEX connector variant, m
 
 The RAK3172 supports two different frequency variations: RAK3172(L) Low Radio Frequency and RAK3172(H) High Radio Frequency.
 
+:::tip 📝 NOTE:
+Performance test and evaluation of RAK3172-T (with TXCO), can be found on the [RAK3172-T TCXO Verification Report](https://downloads.rakwireless.com/LoRa/RAK3172-T/Test-Report/RAK3172_TCXO_Verification_Report%20_V1.2.pdf))
+:::
+
 ##### Operating Frequencies
 
 | Module     | Region        | Frequency     |
