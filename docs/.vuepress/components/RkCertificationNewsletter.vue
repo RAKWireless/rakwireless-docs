@@ -1,23 +1,28 @@
 <template>
-  <div class="newsletter-container grid">
+  <div class="newsletter--container">
     <div class="text-container">
-      <h3 class="text-white">Keep Updated! 📧</h3>
-      <p class="text-white">
-        Get monthly updates of our products and tools by subscribing
-        to our newsletter!
+      <p>
+        Stay ahead of the game and be the first to know about RAK’s IoT Services and Solutions
       </p>
     </div>
     <div class="form-container">
+      <div class="form-container-header">
+        <p>Get 15% off voucher (plus the latest news on products and more) by joining our newsletter.</p>
+      </div>
       <form>
-        <input type="email" placeholder="example@email.com" v-model="email" />
+        <input type="email" placeholder="Your email address" v-model="email" />
         <input
           type="submit"
           :disable="email === '' || email.length < 1 ? true : false"
-          value="SUBSCRIBE"
+          value="Sign up"
           @click="subscribeToList($event, email)"
         />
-        <p class="text-white text-center">{{ message }}</p>
+        <p>{{ message }}</p>
       </form>
+      <div class="form-checkbox">
+        <input type="checkbox" required>
+        <span>By continuing, you agree to our Privacy Notice and consent to receive marketing emails from RAKwireless regarding its and its affiliates’ products and services.</span>
+      </div>
     </div>
   </div>
 </template>
@@ -59,208 +64,145 @@ export default {
 };
 </script>
 
-<style scope>
-.text-container {
-  padding-left: 50px;
+<style scoped>
+:root {
+  --primary-color : #FFFFFF;
+  --secondary-color : #0c6bc4;
+  --font-xl : 20px;
+  --font-base: 16px;
+  --line-height-base: 16px;
 }
 
-.form-container {
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  height: 100%;
-  width: 100%;
-  padding-right: 50px;
+.newsletter--container {
+  background-color:#0c6bc4;
+  padding: 20px 48px;
+  display: grid;
+  color: #FFFFFF;
+  gap:20px;
 }
+
+.text-container {
+  display:flex;
+  align-items:center;
+  font-size: 24px;
+
+}
+
+.text-container > p {
+  line-height: 32px;
+}
+.form-container > form {
+  display: flex;
+  align-items:center;
+}
+
+.form-checkbox {
+  margin-top: 10px;
+}
+
+.form-checkbox > span {
+  font-size: 12px;
+  color: #A1B6E5;
+}
+
+.form-checkbox > input[type='checkbox'] {
+  outline:  none;
+  border: 1px solid #A1B6E5;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
 
 input[type="email"]:focus {
   outline: none;
 }
 
 input[type="email"] {
-  width: 450px;
-  height: 50px;
-  padding-right: 110px;
-  padding-left: 10px;
-  border-radius: 10px;
-  border: none;
-  vertical-align: middle;
+  width: 100%;
+	outline: none;
+	border: none;
+	background-color: transparent;
+	color: #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+	padding: 12px 0;
+	font-size: 24px;
+	line-height: 40px;
+}
+
+input[type="email"]::placeholder {
+  color: #FFFFFF;
 }
 
 input[type="submit"] {
-  background-color: #3e3d3e;
-  color: white;
-  margin-left: -110px;
-  padding: 0 8px;
-  height: 50px;
-  width: 110px;
-  border: none;
-  border-radius: 0 10px 10px 0;
-  vertical-align:middle;
+	padding: .375rem 1.25rem;
+	border-radius: 100px;
+	outline: none;
+	border: 1px solid #FFFFFF;
+	background-color: #FFFFFF;
+	color: #0c6bc4;
+	box-sizing: border-box;
+	cursor: pointer;
+	transition-duration: 300ms;
+	transition-timing-function: cubic-bezier(0,0,.2,1);
 }
 
 input[type="submit"]:hover {
   cursor: pointer;
 }
 
-.newsletter-container {
-  position: relative;
-  background-color: #0c6bc4;
-  padding: 20px;
-  height: 200px;
-}
+/* desktop 1280px */
+/* medium 601 - 1279px */
+/* mobile 360 - 600 */
 
-.newsletter-message {
-  color: #ffffff;
-  text-align: center;
-}
-
-.grid {
-  display: flex;
-}
-.text-white {
-  color: #ffffff;
-}
-
-@media only screen and (max-width: 1286px) {
-  /* .text-container {
-    height: 150px !important;
-  } */
-  input[type="email"] {
-    width: 320px;
-    height: 40px;
-    padding-right: 80px;
-    padding-left: 10px;
-    border-radius: 10px;
-  }
-
-  input[type="submit"] {
-    margin-left: -80px;
-    padding: 0 4px;
-    height: 40px;
-    width: 80px;
-    border-radius: 0 10px 10px 0;
-  }
-  .form-container {
-    display: flex;
-    align-items: center;
-    padding-right:0;
-  }
-  .newsletter-container {
-    height: 200px;
-  }
-
-}
-
-@media (min-width:920px) and (max-width: 1100px) {
-  input[type="email"] {
-    width: 280px;
-  }
-
-  input[type="submit"] {
-    margin-left: -75px;
-    padding: 0 2px;
-    width: 75px;
-  }
-}
-@media (min-width:770px) and(max-width:900px){
-  input[type="email"] {
-    width: 300px;
-  }
-
-  input[type="submit"] {
-    margin-left: -75px;
-    padding: 0 2px;
-    width: 75px;
-  }
-
-  .newsletter-container {
-    height:240px !important;
-  }
-
-  .form-container {
-    display: flex;
-    align-items: start;
-    justify-content: center;
-  }
-}
-
-@media (min-width:428px) and (max-width: 768px){
-  .text-container {
-    height:150px !important;
-    padding:0;
-  }
-
-  input[type="email"] {
-    width: 300px;
-    height: 40px;
-    padding-right: 50px;
-    padding-left: 10px;
-    border-radius: 10px;
-  }
-
-  input[type="submit"] {
-    margin-left: -80px;
-    padding: 0 4px;
-    height: 40px;
-    width: 80px;
-  }
-
-  .form-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .newsletter-container {
-    height:300px;
-  }
-
-  .grid{
-    display:grid;
-    grid-template-columns: fit-content(100%);
-  }
-
-  .form-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@media (min-width: 1280px) {
+  .newsletter--container {
+    grid-template-columns: 1fr 1fr;
   }
 
   .text-container {
-    padding:0;
+    padding-right:100px;
   }
 }
 
-@media only screen and (max-width:427px) {
+@media (min-width: 801px) and (max-width: 1279px) {
+  .newsletter--container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 800px) {
+  .newsletter--container {
+    grid-template-columns: 1fr;
+    padding: 20px 16px;
+    gap:0;
+  }
+
   input[type="email"] {
-    width: 230px;
-    height: 40px;
+    padding-right:5px;
   }
-
-  input[type="submit"] {
-    margin-left: -75px;
-    padding: 0 2px;
-    height: 40px;
-    width: 75px;
-  }
-
-  .newsletter-container {
-    height:300px;
-  }
-
-  .grid{
-    display:grid;
-    grid-template-columns: fit-content(100%);
-  }
-
-
-  .form-container {
-    align-items: center;
-    justify-content: center;
+  input[type="email"],
+  input[type="email"]::placeholder {
+    font-size: 16px;
   }
   .text-container {
-    padding:0;
+    font-size: 16px;
   }
+
+  .text-container > p {
+    line-height: 18px;
+  }
+
+  .form-container-header {
+    font-size: 12px;
+    line-height:16px;
+  }
+
+  .form-checkbox > span {
+    font-size: 12px;
+    line-height: 16px;
+    color: #A1B6E5;
+  }
+
 }
+
 </style>

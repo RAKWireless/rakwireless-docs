@@ -111,6 +111,11 @@ module.exports = {
           collapsed: true,
           children : [
             {
+              title : 'August 4',
+              path : '/Release-Notes/WisDM/2023/August-4',
+              collapsable: false
+            },
+            {
               title : 'April 25',
               path : '/Release-Notes/WisDM/2023/April-25',
               collapsable: false
@@ -331,6 +336,19 @@ module.exports = {
       collapsible: false,
       sidebarDepth: 4,
       children : [
+        {
+          title : '2023',
+          nested: false,
+          collapsible: true,
+          collapsed : true,
+          children : [
+            {
+              title : 'August 9',
+              path : '/Release-Notes/WisToolBox/2023/August-9',
+              collapsable: false
+            },
+          ]
+        },
         {
           title : '2022',
           nested: false,

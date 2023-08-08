@@ -102,6 +102,7 @@ The key parameters of the hybrid battery system are as follows:
 | Standard Discharge  Current          | 0.16 C (8 A)                                                     |                                                                                                                              |
 | Max Discharge Continuous Current     | 0.2 C (10 A)                                                     |                                                                                                                              |
 | ∆Voltage                             | ≤20 mV                                                           | 60 min after put in standby, stopped or after charging/discharging.                                                          |
+| Enclosure Flammability rating        | UL94 5VA                                                         | 
 | Weight                               | ~8 kg                                                            |                                                                                                                              |
 | Dimensions (L/W/H)                   | 499x280x75（±3) mm                                                |                                                                                                                              |
 

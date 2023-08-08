@@ -175,7 +175,7 @@ only in RAK7268CV2)</td><td>Slow Flicker (1800&nbsp;ms High / 200&nbsp;ms Low) -
         <tr><td>Ingress protection</td><td>IP30</td></tr>
         <tr><td>Enclosure material</td><td>Plastic</td></tr>
         <tr><td>Weight</td><td>0.3 kg</td></tr>
-        <tr><td>Dimensions</td><td>166x127x36&nbsp;mm</td></tr>
+        <tr><td>Dimensions</td><td>166 x 127.5 x 36&nbsp;mm</td></tr>
         <tr><td>Operating temperature</td><td>-10 to 55&nbsp;˚C</td></tr>
         <tr><td>Installation method</td><td>Wall mounting</td></tr>
     </tbody>
@@ -278,7 +278,7 @@ The casing is IP30 rated and is made of plastic. There are holes for a mounting 
 <table>
     <thead><tr><th>Parameter</th><th>Value</th></tr></thead>
     <tbody>
-        <tr><td>Dimensions</td><td>66x127x36&nbsp;mm</td></tr>
+        <tr><td>Dimensions</td><td>166 x 127.5 x 36&nbsp;mm</td></tr>
         <tr><td>Weight</td><td>0.3&nbsp;kg</td></tr>
         <tr><td>Operating temperature</td><td>-10&nbsp;°C to 55&nbsp;°C</td></tr>
 </tbody>
