@@ -113,6 +113,11 @@ export default {
     img: '/assets/images/wisnode/rak2171/RAK2171.png',
     store: 'https://store.rakwireless.com/products/wisnode-trackit-set-rak2171?utm_source=RAK2171WisNodeTrackIt&utm_medium=Document&utm_campaign=BuyFromStore'
   },
+  '/Product-Categories/WisNode/RAK2270/': {
+    label: 'RAK2270 WisNode Sticker Tracker',
+    img: '/assets/images/wisnode/rak2270/RAK2270.png',
+    store: 'https://store.rakwireless.com/products/rak2270-rak-sticker-tracker?utm_source=RAK2270RAKStickerTracker&utm_medium=Document&utm_campaign=BuyFromStore&variant=42714196803782'
+  },
   '/Product-Categories/WisNode/RAK7200/': {
     label: 'RAK7200 WisNode Track Lite',
     img: '/assets/images/wisnode/rak7200/quickstart/overview/RAK7200.png',
@@ -1161,7 +1166,7 @@ export default {
     store: 'https://store.rakwireless.com/products/wisblock-biometric-monitoring-kit?utm_source=BiometricKit&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisBlock/Kit3-Movement-Detection/': {
-    label: 'WisBlock Movement Detection Kit',
+    label: 'WisBlock IoT Education Kit - Movement Detection',
     img: '/assets/images/wisblock/kits/3_movement_kit_1.png',
     store: 'https://store.rakwireless.com/products/wisblock-movement-detection-kit?utm_source=MovementDetectionKit&utm_medium=Document&utm_campaign=BuyFromStore'
   },

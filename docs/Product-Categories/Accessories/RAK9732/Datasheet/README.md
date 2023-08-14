@@ -42,14 +42,14 @@ This Pulsar cable is a high-grade cable, suitable for outdoor applications with 
 
 ### Power Loss Report
 
-| Frequency          | 1.5&nbsp;m Length |
-| ------------------ | ----------------- |
-| 433 - 435&nbsp;MHz | ≤ 0.30&nbsp;dB    |
-| 470 - 510&nbsp;MHz | ≤ 0.35&nbsp;dB    |
-| 863 - 870&nbsp;MHz | ≤ 0.40&nbsp;dB    |
-| 902 - 930&nbsp;MHz | ≤ 0.45&nbsp;dB    |
-| 2.4&nbsp;GHz       | ≤ 0.70&nbsp;dB    |
-| 4&nbsp;GHz         | ≤ 0.90&nbsp;dB    |
+| Frequency          | 1.5&nbsp;m Length | 3&nbsp;m Length | 5&nbsp;m Length | 10&nbsp;m Length |
+| ------------------ | ----------------- | ----------------- | ----------------- | ----------------- |
+| 433 - 435&nbsp;MHz | ≤ 0.30&nbsp;dB    | ≤ 0.45&nbsp;dB    | ≤ 0.65&nbsp;dB    | ≤ 1.15&nbsp;dB    |
+| 470 - 510&nbsp;MHz | ≤ 0.35&nbsp;dB    | ≤ 0.5&nbsp;dB    | ≤ 0.7&nbsp;dB    | ≤ 1.20&nbsp;dB    |
+| 863 - 870&nbsp;MHz | ≤ 0.40&nbsp;dB    | ≤ 0.63&nbsp;dB    | ≤ 0.85&nbsp;dB    | ≤ 1.65&nbsp;dB    |
+| 902 - 930&nbsp;MHz | ≤ 0.45&nbsp;dB    | ≤ 0.65&nbsp;dB    | ≤ 0.9&nbsp;dB    | ≤ 1.70&nbsp;dB    |
+| 2.4&nbsp;GHz       | ≤ 0.70&nbsp;dB    | ≤ 0.95&nbsp;dB    | ≤ 1.2&nbsp;dB    | ≤ 2.70&nbsp;dB    |
+| 4&nbsp;GHz         | ≤ 0.90&nbsp;dB    | ≤ 1.45&nbsp;dB    | ≤ 2.15&nbsp;dB    | ≤ 4.05&nbsp;dB    |
 
 
 ### Mechanical Specifications

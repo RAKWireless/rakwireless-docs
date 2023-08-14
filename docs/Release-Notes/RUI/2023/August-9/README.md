@@ -15,7 +15,7 @@ download_link: https://downloads.rakwireless.com/RUI/RUI3/Image/
 | No.  | Feature                                                    | Description                                                  |
 | ---- | ---------------------------------------------------------- | ------------------------------------------------------------ |
 | 1    | Add support for CAD to LoRa P2P send command               | Add `AT+CAD`: Get or set the Channel Activity Detection status of P2P mode |
-| 2    | Add support for Encryption method to LoRa P2P send command | **Add AT+CRYPIV**: Set or set the encryption IV of P2P mode (16 bytes in hex) |
+| 2    | Add support for Encryption method to LoRa P2P send command | Add `AT+CRYPIV`: Set or set the encryption IV of P2P mode (16 bytes in hex) |
 
 ##### Changed
 
@@ -32,7 +32,7 @@ download_link: https://downloads.rakwireless.com/RUI/RUI3/Image/
 | RUI-566                   | Test P2P encryption between RAK HW and ESP32 HW.             |
 | RU-825                    | LoRa P2P Receive Callback throws different payload when Encrypted is Enabled on RAK3172. |
 | RU-899                    | Encryption Key of LoRa P2P Getting Erased (go back to 0000000000000000). |
-| RUI-902                   | `AT+BAT=?`: Always returns `0.00 0n` RAK3172-SIP.             |
+| RUI-902                   | `AT+BAT=?`: Always returns `0.00` on RAK3172-SIP.             |
 | RU-915                    | `4.0.0_219_RAK11720` can't wakeup when P2P Receive window open(over 10S or do not close windows). |
 | RU-953                    | **RAK11720**: `RUI3 V4.0.4_239` battery voltage is wrong.           |
 | RU-956                    | **RAK4631**: Sometimes the 1-wire interface does not respond. |

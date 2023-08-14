@@ -299,6 +299,31 @@ module.exports = {
     sidebarDepth: 4
   },
   ],
+  '/Product-Categories/WisNode/RAK2270/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisNode/RAK2270/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  // {
+  //   title: 'Quick Start Guide',
+  //   path: '/Product-Categories/WisNode/RAK2270/Quickstart/',
+  //   collapsable: false,
+  //   nested: true,
+  //   download: true,
+  //   sidebarDepth: 4
+  // },
+  // {
+  //   title: 'Datasheet',
+  //   path: '/Product-Categories/WisNode/RAK2270/Datasheet/',
+  //   collapsable: false,
+  //   nested: true,
+  //   download: true,
+  //   sidebarDepth: 4
+  // },
+  ],
   '/Product-Categories/WisNode/RAK10701-L/': [{
     title: 'Product Overview',
     path: '/Product-Categories/WisNode/RAK10701-L/Overview/',

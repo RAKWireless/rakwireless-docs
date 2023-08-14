@@ -22,7 +22,7 @@ This Pulsar cable is a high-grade cable, suitable for outdoor applications with 
 
 ## Product Features
 
--   Cable length variants: 1.5&nbsp;m
+-   Cable length variants: 1.5, 3, 5, 10&nbsp;m 
 -   Connector: N-type male to N-type male
 -   Frequency Range: 0~6&nbsp;GHz
 -   Cable type: LMR400

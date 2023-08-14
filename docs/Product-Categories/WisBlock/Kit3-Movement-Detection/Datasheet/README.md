@@ -1,35 +1,35 @@
 ---
 rak_desc: Contains a list of the modules and sensors included in this fully customizable WisBlock Movement Detection Kit for your IoT applications.
 rak_img: /assets/images/wisblock/kits/3_movement_kit_1.png
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 tags:
   - datasheet
   - WisBlock
-  - WisBlock Movement Detection Kit
+  - WisBlock IoT Education Kit - Movement Detection
   - WisBlock Kit
 ---
 
-# WisBlock Movement Detection Kit Datasheet
+# WisBlock IoT Education Kit - Movement Detection Datasheet
 
 ## Overview
 
 ### Description
 
-The **WisBlock Movement Detection Kit** is a comprehensive and customizable IoT kit designed for motion detection applications. This kit includes a variety of contact and non-contact motion sensors, including an accelerometer, gyroscope, PIR (Passive Infrared) sensor, and radar sensor. These sensors provide accurate and reliable motion detection data, making them ideal for a variety of use cases.
+The **WisBlock IoT Education Kit - Movement Detection** is a comprehensive and customizable IoT kit designed for motion detection applications. This kit includes a variety of contact and non-contact motion sensors, including an accelerometer, gyroscope, PIR (Passive Infrared) sensor, and radar sensor. These sensors provide accurate and reliable motion detection data, making them ideal for a variety of use cases.
 
 Depending on the use case, this kit supports a variety of connectivity options, including LoRaWAN, BLE, LTE-M (optional), and NB-IoT (optional), enabling long-range and short-range communication. With this kit, you can easily create custom motion detection solutions for a range of applications, including building automation, security systems, and environmental monitoring.
 
 ### Features
 
 - Compatible with Arduino IDE
-- USB C interface for data, power, and battery charging
+- USB-C interface for data, power, and battery charging
 - Supports Li-Ion batteries with built-in solar charging capability
 - Multiple communication protocols: LoRa/LoRaWAN, BLE, LTE-M (optional), and NB-IoT (optional)
 - Included modules:
     - Two WisBlock Core modules - [RAK4631 LPWAN Module](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK4631/Quickstart/)
     - One standard [RAK19007 WisBlock Base Board](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK19007/Quickstart/) with 4 sensor slots and 1 IO slot
-    - One standard [RAK19003 WisBlock Mini Base Board](/Product-Categories/WisBlock/RAK19003/Quickstart/) with 2 sensor slots
+    - One standard [RAK19003 WisBlock Mini Base Board](/Product-Categories/WisBlock/RAK19003/Quickstart/) with two (2) sensor slots
     - Two [RAK12033 6-axis ACC Motion Sensor](/Product-Categories/WisBlock/RAK12033/Quickstart/)
     - Two [RAK12025 Gyroscope](/Product-Categories/WisBlock/RAK12025/Quickstart/)
     - Two [RAK12013 Radar Sensor](/Product-Categories/WisBlock/RAK12013/Quickstart/)
@@ -46,12 +46,12 @@ Depending on the use case, this kit supports a variety of connectivity options, 
 
 ### Overview
 
-The WisBlock Movement Detection Kit includes the following modules:
+The WisBlock IoT Education Kit - Movement Detection includes the following modules:
 
 <rk-img
   src="/assets/images/wisblock/kits/3_movement_kit_2.png"
   width="80%"
-  caption="Modules of the WisBlock Movement Detection Kit"
+  caption="Modules of the WisBlock IoT Education Kit - Movement Detection"
 />
 
 ### Hardware
@@ -102,4 +102,4 @@ The cellular modules support different cellular protocols, as shown in the table
 
 #### Interconnections
 
-The WisBlock Movement Detection Kit is designed to get you started on your IoT projects. Before connecting various modules, you must first check for any potential conflicts. To determine whether there are conflicts, you can use the [WisBlock Pin Mapper tool](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/).
+The WisBlock IoT Education Kit - Movement Detection is designed to get you started on your IoT projects. Before connecting various modules, you must first check for any potential conflicts. To determine whether there are conflicts, you can use the [WisBlock Pin Mapper tool](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/).
