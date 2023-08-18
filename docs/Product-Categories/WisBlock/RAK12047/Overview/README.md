@@ -26,7 +26,7 @@ Thank you for choosing **RAK12047 WisBlock VOC Sensor Module** in your awesome I
 **Examples**
 
 For All WisBlock Core Modules:
-* [Sample Code: RAK12047](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK12047_VOC_GetVOCIndex_SGP40)
+* [Sample Code: RAK12047](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK12047_VOC_GetVOCIndex_SGP40)
 
 ## Product Description
 
