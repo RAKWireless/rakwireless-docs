@@ -6,6 +6,12 @@ export const categories = [
     desc:"Easy-to-use Arduino Compatible Firmware APIs for RAK Modules"
   },
   {
+    img:"/assets/rakwireless/product-categories/all-in-one-5g.png",
+    path:"/Release-Notes/5G/",
+    label:"All-in-One. 5G",
+    desc:"All-in-One. 5G is the world's first programmable and open 5G indoor device"
+  },
+  {
     img:"/assets/images/release-notes/WisDM.png",
     path:"/Release-Notes/WisDM/",
     label:"WisDM",

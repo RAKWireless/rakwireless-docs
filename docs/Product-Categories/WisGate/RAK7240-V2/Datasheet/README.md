@@ -164,9 +164,9 @@ RAK7240V2 supports different software features such as LoRa, Network, and Manage
 
 ### Firmware
 
-| Model                                   | Firmware    | Source                                                         |
-| --------------------------------------- | ----------- | -------------------------------------------------------------- |
-| RAK7240V2/RAK7240CV2 WisGate Edge Prime | WisGateOS 2 | [Download](https://downloads.rakwireless.com/LoRa/WisGateOS2/) |
+| Model                                   | Firmware    | Source                                                                                       |
+| --------------------------------------- | ----------- | -------------------------------------------------------------------------------------------- |
+| RAK7240V2/RAK7240CV2 WisGate Edge Prime | WisGateOS 2 | [Download](https://downloads.rakwireless.com/LoRa/WisGateOS2/WisGateOS2_Latest_Firmware.zip) |
 
 
 ## Models / Bundles

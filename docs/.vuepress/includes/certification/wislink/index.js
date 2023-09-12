@@ -72,6 +72,14 @@ export const categoriesWisLink = [
           ]
         },
         {
+          device: "RAK5148",
+          data: [
+            { country: "Europe", cert: "CE", link: "https://downloads.rakwireless.com/LoRa/RAK5148/Certification/RAK5148_CE_Certification.pdf" },
+            { country: "USA", cert: "FCC", link: "https://downloads.rakwireless.com/LoRa/RAK5148/Certification/RAK5148_FCC_Certification.pdf" },
+            { country: "Canada", cert: "ISED", link: "https://downloads.rakwireless.com/LoRa/RAK5148/Certification/RAK5148_ISED_Certification.pdf" },
+          ]
+        },
+        {
           device: "LX200V50",
           data: [
             { country: "Europe", cert: "CE", link: "https://downloads.rakwireless.com/PLC/LX200V50/Certification/RAK_PLC_LX200V50_CE_Certification.pdf" },

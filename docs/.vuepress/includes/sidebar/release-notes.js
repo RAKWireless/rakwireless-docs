@@ -101,6 +101,27 @@ module.exports = {
       ]
     },
     {
+      title : '5G',
+      path: '/Release-Notes/5G/',
+      collapsible: false,
+      sidebarDepth: 4,
+      children : [
+        {
+          title : '2023',
+          nested: false,
+          collapsible: true,
+          collapsed : true,
+          children : [
+            {
+              title : 'August 9',
+              path : '/Release-Notes/WisToolBox/2023/August-9',
+              collapsable: false
+            },
+          ]
+        },
+      ]
+    },
+    {
       title : 'WisDM',
       path: '/Release-Notes/WisDM/',
       collapsible: false,
@@ -186,6 +207,11 @@ module.exports = {
           collapsible: true,
           collapsed : true,
           children : [
+            {
+              title : 'September 15',
+              path : '/Release-Notes/WisGateOS2/2023/September-15',
+              collapsable: false
+            },
             {
               title : 'August 3',
               path : '/Release-Notes/WisGateOS2/2023/August-3',
