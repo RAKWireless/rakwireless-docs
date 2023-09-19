@@ -1,6 +1,6 @@
 ---
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK7391. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device.
-rak_img: /assets/images/wisgate/rak7391/overview/RAK7391.png
+rak_img: /assets/images/wisgate/rak7391/RAK7391.png
 prev: ../Overview/
 next: ../Assembly-Guide/
 tags:

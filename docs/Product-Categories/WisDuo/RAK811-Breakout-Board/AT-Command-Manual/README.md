@@ -1,6 +1,6 @@
 ---
 rak_desc: For an easier experience with your LoRaWAN Module, a comprehensive list of commands for the LoRa P2P and LoRaWAN communication is provided. A serial communication interface is also presented for the two-way communication of the RAK811 Breakout Board.
-rak_img: /assets/images/wisduo/rak811-breakout-board/quickstart/overview/RAK811-Breakout.png
+rak_img: /assets/images/wisduo/rak811-breakout-board/RAK811-Breakout.png
 prev: ../Datasheet/
 next: false
 tags:

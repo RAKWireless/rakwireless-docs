@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK4600 Evaluation Board to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisduo/rak4600-evaluation-board/overview/RAK4600-Evaluation.png
+rak_img: /assets/images/wisduo/rak4600-evaluation-board/RAK4600-Evaluation.png
 tags:
   - datasheet
   - wisduo

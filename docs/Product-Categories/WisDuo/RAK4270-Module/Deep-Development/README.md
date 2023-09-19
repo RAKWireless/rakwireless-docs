@@ -4,7 +4,7 @@ next: ../Datasheet/
 tags:
   - wisduo
   - RAK4270
-rak_img: /assets/images/wisduo/rak4270-module/overview/RAK4270-Module.png
+rak_img: /assets/images/wisduo/rak4270-module/RAK4270-Module.png
 
 ---
 

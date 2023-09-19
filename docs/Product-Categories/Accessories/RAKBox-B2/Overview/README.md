@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/accessories/rakbox-b2/overview/overview.png
+rak_img: /assets/images/accessories/rakbox-b2/overview.png
 rak_desc: RAKBox-B2 is a small, lightweight enclosure with a solar panel. It is IP67 rated enclosure for outdoor usage
 prev: ../../
 next: ../Datasheet/

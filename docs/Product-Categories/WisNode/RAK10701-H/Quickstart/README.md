@@ -1,6 +1,6 @@
 ---
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK10701-H Field Mapper for Helium Network. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module.
-rak_img: /assets/images/wisnode/rak10701/overview/RAK10701-H.png
+rak_img: /assets/images/wisnode/rak10701/RAK10701-H.png
 prev: ../Overview/
 next: ../Datasheet/
 tags:

@@ -10,6 +10,7 @@ WisDM is a RAKwireless cloud-based device management platform designed to help y
 ###### Release Versions
 
 - <b> 2023 </b>
+    - [November 1](/Release-Notes/WisDM/2023/November-1/)
     - [August 4](/Release-Notes/WisDM/2023/August-4/)
     - [April 25](/Release-Notes/WisDM/2023/April-25/)
 

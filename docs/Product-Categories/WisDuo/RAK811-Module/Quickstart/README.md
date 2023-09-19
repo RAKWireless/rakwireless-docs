@@ -1,6 +1,6 @@
 ---
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK811 Module. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module.
-rak_img: /assets/images/wisduo/rak811-module/overview/RAK811-Module.png
+rak_img: /assets/images/wisduo/rak811-module/RAK811-Module.png
 prev: ../Overview/
 next: ../AT-Command-Manual/
 tags:

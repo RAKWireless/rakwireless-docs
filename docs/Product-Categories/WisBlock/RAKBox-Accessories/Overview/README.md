@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisblock/rakbox-accessories/overview/uo_home.png
+rak_img: /assets/images/wisblock/rakbox-accessories/uo_home.png
 rak_desc: RAKBox Accessories shows the different mounting options of the accessories included in the WisBlock Unify Enclosures.
 prev: ../../
 next: ../Datasheet/
@@ -16,7 +16,7 @@ tags:
 The WisBlock Unify Enclosure supports different types of mounting accessories.
 
 <rk-img
-  src="/assets/images/wisblock/rakbox-accessories/overview/list.png"
+  src="/assets/images/wisblock/rakbox-accessories/list.png"
   width="80%"
   caption="Different mounting options"
 />

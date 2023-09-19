@@ -7,7 +7,7 @@ tags:
   - accessories
   - datasheet
 rak_desc: Provides comprehensive information about your RAK9155 Battery Plus to help you use it. This information includes technical specifications, characteristics, and requirements.
-rak_img: /assets/images/accessories/rak9155/overview/RAK9155.png
+rak_img: /assets/images/accessories/rak9155/RAK9155.png
 certifications:
   - [CE, https://downloads.rakwireless.com/Accessories/RAK9155/Certification/RAK9155_CE_Certification.jpg]
   - [FCC, https://downloads.rakwireless.com/Accessories/RAK9155/Certification/RAK9155_FCC_Certification.jpg]

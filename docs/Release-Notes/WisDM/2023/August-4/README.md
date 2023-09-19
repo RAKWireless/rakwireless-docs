@@ -16,7 +16,7 @@ logo: /assets/rakwireless/product-categories/WisDM.png
 
 | No. | Feature                              | Description                                                                                                                                                                                                                                                                          | Reference |
 | --- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------- |
-| 1   | Enhancing Firmware Upgrade Awareness | when customers opt for a firmware upgrade, the specific gateway's firmware will include a pre-announcement section. The feature is coming with WisGateOS 2.2. This ensures that customers receive crucial information and announcements before proceeding with the firmware upgrade. | -         |
+| 1   | Enhancing Firmware Upgrade Awareness | When customers opt for a firmware upgrade, the specific gateway's firmware will include a pre-announcement section. The feature is coming with WisGateOS 2.2. This ensures that customers receive crucial information and announcements before proceeding with the firmware upgrade. | -         |
 
 ##### Fixed
 

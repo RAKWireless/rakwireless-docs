@@ -1,6 +1,6 @@
 ---
 rak_desc: Contains a comprehensive guide in setting up both your RAK7394 and Amazon Web Services account and permissions. It also includes instructions for connecting and configuring your LoRaWAN Gateway with TTN and ChirpStack.
-rak_img: /assets/images/wisgate/rak7394/overview/rak7394.png
+rak_img: /assets/images/wisgate/rak7394/rak7394.png
 tags:
   - RAK7394
   - RAK7394P

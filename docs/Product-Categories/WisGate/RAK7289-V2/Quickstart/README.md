@@ -1,6 +1,6 @@
 ---
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK7289 V2. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device.
-rak_img: /assets/images/wisgate/rak7289-v2/overview/RAK7289V2.png
+rak_img: /assets/images/wisgate/rak7289-v2/RAK7289V2.png
 prev: ../Overview/
 next: ../Supported-LoRa-Network-Servers/
 tags:

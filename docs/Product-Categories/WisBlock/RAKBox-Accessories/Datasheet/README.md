@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your WisBlock RAKBox-Accessories Enclosure to help you use it. This information includes technical specifications and characteristics.
-rak_img: /assets/images/wisblock/rakbox-accessories/overview/uo_home.png
+rak_img: /assets/images/wisblock/rakbox-accessories/uo_home.png
 prev: ../Overview/
 next: false
 tags:

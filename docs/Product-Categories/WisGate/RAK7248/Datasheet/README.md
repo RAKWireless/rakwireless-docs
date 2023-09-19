@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK7248 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisgate/rak7248/overview/RAK7248.png
+rak_img: /assets/images/wisgate/rak7248/RAK7248.png
 tags:
   - datasheet
   - wisgate

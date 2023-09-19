@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisgate/rak7289-v2/overview/RAK7289V2.png
+rak_img: /assets/images/wisgate/rak7289-v2/RAK7289V2.png
 rak_desc: RAK7289 V2 WisGate Edge Pro is an ideal product for IoT commercial deployment. With its industrial-grade components, it achieves a high standard of reliability. It supports WisGateOS 2, which is based on the latest OpenWRT kernel and accommodates the latest security update.
 rak_grp: [wisgate, edge]
 prev: ../Supported-LoRa-Network-Servers/
@@ -123,7 +123,8 @@ The overview presents the block diagram for the RAK7289 V2 that shows the intern
         <tr><td>Wi-Fi: Internal antenna</td></tr>
         <tr><td>Ingress protection</td><td>IP67</td></tr>
         <tr><td>Enclosure material</td><td>Aluminium and plastic</td></tr>
-        <tr><td>Operating temperature</td><td>-30&nbsp;˚C to +55&nbsp;˚C</td></tr>
+        <tr><td>Operating temperature</td><td>-30˚&nbsp;C to +55˚&nbsp;C</td></tr>
+        <tr><td>Operating humidity</td><td>0-95% RH non-condensing</td></tr>
         <tr><td>Installation Method</td><td>Pole or wall mounting</td></tr>
 </tbody>
 </table>
@@ -187,9 +188,6 @@ The hardware specification covers the interfacing of the RAK7289 V2 and its corr
   width="80%"
   caption="RAK7289 WisGate Edge Pro interfaces"
 />
-
-
-
 
 - The function of the Reset key is as follows:
   - **Short press:** Restart the gateway.

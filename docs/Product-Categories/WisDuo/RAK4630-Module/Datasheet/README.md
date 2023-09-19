@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK4630 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisduo/rak4630-module/overview/RAK4630-Module.png
+rak_img: /assets/images/wisduo/rak4630-module/RAK4630-Module.png
 prev: ../DFU/
 next: false
 tags:

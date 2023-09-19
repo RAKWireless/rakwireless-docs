@@ -1,6 +1,6 @@
 ---
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK4260 Evaluation Board. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module.
-rak_img: /assets/images/wisduo/rak4260-evaluation-board/overview/RAK4260-Evaluation.png
+rak_img: /assets/images/wisduo/rak4260-evaluation-board/RAK4260-Evaluation.png
 prev: ../Overview/
 next: ../Low-Level-Development/
 tags:

@@ -1,6 +1,6 @@
 ---
 rak_desc: RAK4630 RUI3 based firmware can be updated via USB connection or wirelessly via BLE using OTA DFU (Device Firmware Upgrade). It guides on how to do perform firmware upgrades for the RAK4630 WisDuo.
-rak_img: /assets/images/wisduo/rak4630-module/overview/RAK4630-Module.png
+rak_img: /assets/images/wisduo/rak4630-module/RAK4630-Module.png
 prev: ../AT-Command-Manual/
 next: ../Datasheet/
 tags:

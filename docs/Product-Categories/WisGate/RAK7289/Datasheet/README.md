@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK7289 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisgate/rak7289/overview/RAK7289.png
+rak_img: /assets/images/wisgate/rak7289/RAK7289.png
 tags:
   - datasheet
   - wisgate
@@ -107,7 +107,8 @@ The overview presents the block diagram for the RAK7289 that shows the internal 
         <tr><td>Wi-Fi: Internal antenna</td></tr>
         <tr><td>Ingress protection</td><td>IP67</td><tr>
         <tr><td>Enclosure material</td><td>Aluminum and plastic</td></tr>
-        <tr><td>Operating temperature</td><td>-30 ˚C to +55 ˚C</td></tr>
+        <tr><td>Operating temperature</td><td>-30˚&nbsp;C to +55˚&nbsp;C</td></tr>
+        <tr><td>Operating humidity</td><td>0-95% RH non-condensing</td></tr>
         <tr><td>Installation method</td><td>Pole or wall mounting</td></tr>
     </tbody>
 </table>

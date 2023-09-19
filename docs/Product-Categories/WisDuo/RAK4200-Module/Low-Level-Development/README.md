@@ -1,6 +1,6 @@
 ---
 rak_desc: Aside from the default RAK firmware on the RAK4200 Module, you can create custom firmware using RUI (RAKwireless Unified Interface) or the actual SDK from the manufacturer of the microcontroller that is used inside the module.
-rak_img: /assets/images/wisduo/rak4200-module/overview/RAK4200-Module.png
+rak_img: /assets/images/wisduo/rak4200-module/RAK4200-Module.png
 prev: ../AT-Command-Manual/
 next: ../Datasheet/
 tags:

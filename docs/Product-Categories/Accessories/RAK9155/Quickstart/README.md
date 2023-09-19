@@ -5,7 +5,7 @@ tags:
   - RAK9155
   - quick start guide
 rak_desc: Provides comprehensive information about your RAK9155 to help you use it. This information includes technical specifications, characteristics, and requirements.
-rak_img: /assets/images/accessories/rak9155/overview/RAK9155.png
+rak_img: /assets/images/accessories/rak9155/RAK9155.png
 ---
 
 # RAK9155 Quick Start Guide

@@ -1,6 +1,6 @@
 ---
 rak_desc: A step-by-step guide on how to assemble and mount the enclosure of RAK7391 WisGate Connect is shown here. Strict adherence to the following steps guarantees a secured and durable indoor and outdoor casing.
-rak_img: /assets/images/wisgate/rak7391/overview/RAK7391.png
+rak_img: /assets/images/wisgate/rak7391/RAK7391.png
 prev: ../Quickstart/
 next: ../Compatible-Hardware/
 tags:

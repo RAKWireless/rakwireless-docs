@@ -11,7 +11,7 @@ certifications:
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification/RAK2287_FCC_Certification.zip]
   - [IC, https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification/RAK2287_IC_Certification.zip]
 rak_desc: Covers the comprehensive information of your RAK2287/RAK5146 Pi HAT to help you in using it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wishat/rak2287-pi-hat/overview/RAK2287.png
+rak_img: /assets/images/wishat/rak2287-pi-hat/RAK2287.png
 
 ---
 

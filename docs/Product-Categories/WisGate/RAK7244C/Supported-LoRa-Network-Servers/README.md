@@ -1,6 +1,6 @@
 ---
 rak_desc: Contains a comprehensive guide in setting up your RAK7244C with TTN and ChirpStack.
-rak_img: /assets/images/wisgate/rak7244c/quickstart/overview/RAK7244C.png
+rak_img: /assets/images/wisgate/rak7244c/RAK7244C.png
 tags:
   - AWS
   - wisgate

@@ -1,6 +1,6 @@
 ---
 rak_desc: Walks through different connection scenarios with your RAK Hotspot v2. This includes both the outdoor and indoor enclosure and antennas of RAKwireless suitable for your LoRaWAN Gateway.
-rak_img: /assets/images/wisgate/rak-hotspot-v2/overview/RAK-Hotspot-V2.png
+rak_img: /assets/images/wisgate/rak-hotspot-v2/RAK-Hotspot-V2.png
 next: ../Datasheet/
 prev: ../Quickstart/
 tags:

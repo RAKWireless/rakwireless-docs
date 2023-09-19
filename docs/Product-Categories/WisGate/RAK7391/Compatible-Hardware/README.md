@@ -1,6 +1,6 @@
 ---
 rak_desc: Tested and working hardware compatible with the WisGate Connect.
-rak_img: /assets/images/wisgate/rak7391/overview/RAK7391.png
+rak_img: /assets/images/wisgate/rak7391/RAK7391.png
 prev: ../Assembly-Guide/
 next: ../Services/
 tags:

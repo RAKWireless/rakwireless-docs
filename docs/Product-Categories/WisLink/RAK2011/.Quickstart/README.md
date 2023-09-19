@@ -4,7 +4,7 @@ next: ../Datasheet/
 tags:
   - RAK2011
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK2011 WisLink Cellular BG96 Arduino Shield. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device. 
-rak_img: /assets/images/wislink-lte/rak2011/overview/rak2011-buy.png
+rak_img: /assets/images/wislink-lte/rak2011/rak2011.png
 
 ---
 

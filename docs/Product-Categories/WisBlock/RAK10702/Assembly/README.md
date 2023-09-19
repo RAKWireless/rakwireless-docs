@@ -72,13 +72,13 @@ This step is only required if the kit includes the E-Ink display.
 
 Stick the adhesive EVA on the back of the display screen. The distance to the edge is 1&nbsp;mm.
 
-<!-- Refer to the image for the positioning.  -->
+Refer to the image for the positioning. 
 
-<!-- <rk-img
-    src="/assets/images/wisblock/rak10702/assembly/6-epd-1.svg"
+<rk-img
+    src="/assets/images/wisblock/rak10702/assembly/6-epd-1.png"
     caption="E-Ink preparation"
     width="60%"
-/> -->
+/>
 
 ### Prepare the Enclosure Lid
 
@@ -196,9 +196,9 @@ This step is not mandatory.
 
 If you want to open the enclosure, insert a screwdriver in the hole in the below image, and lever open the top cover.
 
-<!-- <rk-img
-    src="/assets/images/wisblock/rak10702/assembly/18-mount-6.svg"
+<rk-img
+    src="/assets/images/wisblock/rak10702/assembly/18-mount-6.png"
     caption="Opening the enclosure"
-    width="60%"
-/> -->
+    width="35%"
+/>
 

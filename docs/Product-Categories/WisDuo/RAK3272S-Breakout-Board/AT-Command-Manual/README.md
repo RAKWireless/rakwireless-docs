@@ -6,7 +6,7 @@ tags:
     - wisduo
     - AT Command Manual
     - RAK3272S  Breakout Board
-rak_img: /assets/images/wisduo/rak3272s-breakout-board/overview/RAK3272S-Breakout.png
+rak_img: /assets/images/wisduo/rak3272s-breakout-board/RAK3272S-Breakout.png
 
 ---
 

@@ -17,7 +17,7 @@ This document describes in detail the functionality of RAKPiOS. It provides a ge
 
 
 <rk-img
-  src="/assets/images/software-apis-and-library/rakpios/overview/1.software-structures.png"
+  src="/assets/images/software-apis-and-library/rakpios/1.software-structures.png"
   width="70%"
   caption="RAKPiOS Architecture"
 />

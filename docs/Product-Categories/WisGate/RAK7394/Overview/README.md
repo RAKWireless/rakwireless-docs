@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisgate/rak7394/overview/rak7394.png
+rak_img: /assets/images/wisgate/rak7394/rak7394.png
 rak_desc: The RAK7394 WisGate Developer CM4 is a LoRaWAN Gateway that consists of a RAKR314 CM4 Carrier Board + Raspberry Pi Compute Module 4 (CM4), RAK2287 Concentrator, and RAK2287 Pi HAT. The RAK7394 has a cellular and a PoE variant, the RAK7394C and RAK7394P. 
 rak_grp: [wisgate, developer]
 prev: ../../

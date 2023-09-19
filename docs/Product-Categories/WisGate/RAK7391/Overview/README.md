@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisgate/rak7391/overview/RAK7391.png
+rak_img: /assets/images/wisgate/rak7391/RAK7391.png
 rak_desc: RAK7391 WisGate Connect is a Raspberry Pi CM4-based gateway product meant to support different radio and WisBlock modules. It has several interfaces to meet the needs of different developers - HDMI, Ethernet, USB, mPCIe, CSI, DSI, M.2, WisBlock, PoE, and Raspberry Pi HAT.
 rak_grp: [wisgate, connect]
 prev: ../../
@@ -60,7 +60,7 @@ A custom «distro» for the WisGate Connect called RAKPiOS has been prepared. Th
 You can easily deploy several IoT services from a curated list of docker containers available from the device.
 
 <rk-img
-  src="/assets/images/wisgate/rak7391/overview/1.software-structures.png"
+  src="/assets/images/wisgate/rak7391/1.software-structures.png"
   width="70%"
   caption="Software structure"
 />

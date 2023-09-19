@@ -6,7 +6,7 @@ tags:
     - wisduo
     - AT Command Manual
     - RAK11721 Breakout Board
-rak_img: /assets/images/wisduo/rak11721-breakout-board/overview/RAK11721-Breakout.png
+rak_img: /assets/images/wisduo/rak11721-breakout-board/RAK11721-Breakout.png
 ---
 
 # RAK11721 AT Command Manual

@@ -1,7 +1,7 @@
 ---
 static_root:
 rak_desc: Provides comprehensive information about your RAK Hotspot v2 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisgate/rak-hotspot-v2/overview/RAK-Hotspot-V2.png
+rak_img: /assets/images/wisgate/rak-hotspot-v2/RAK-Hotspot-V2.png
 tags:
   - datasheet
   - wisgate

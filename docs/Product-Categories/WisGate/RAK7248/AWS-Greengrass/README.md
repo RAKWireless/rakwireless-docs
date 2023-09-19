@@ -1,6 +1,6 @@
 ---
 rak_desc: Contains a comprehensive guide in setting up both your RAK7248 and Amazon Web Services account and permissions.
-rak_img: /assets/images/wisgate/rak7248/overview/RAK7248.png
+rak_img: /assets/images/wisgate/rak7248/RAK7248.png
 tags:
   - AWS IoT Greengrass
   - wisgate

@@ -48,13 +48,13 @@ export default {
     </script>
   `,
   googleAnalytics: `
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9MEJ39NSTZ"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z8BEQCK5JQ"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'G-9MEJ39NSTZ');
+      gtag('config', 'G-Z8BEQCK5JQ');
     </script>
   `,
   homeOG: `

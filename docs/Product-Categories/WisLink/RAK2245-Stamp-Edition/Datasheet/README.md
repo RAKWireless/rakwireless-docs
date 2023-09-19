@@ -10,7 +10,7 @@ certifications:
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK2245/Certification-Report/RAK2245_FCC_Certification.zip]
   - [RoHS, https://downloads.rakwireless.com/LoRa/RAK2245/Certification-Report/RAK2245_RoHS_Report.pdf]
 rak_desc: Provides comprehensive information about your RAK2245 WisLink-LoRa Stamp Edition to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wislink-lora/rak2245-stamp-edition/quickstart/overview/RAK2245-Stamp.png
+rak_img: /assets/images/wislink-lora/rak2245-stamp-edition/RAK2245-Stamp.png
 
 ---
 

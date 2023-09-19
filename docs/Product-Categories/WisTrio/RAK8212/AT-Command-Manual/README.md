@@ -6,7 +6,7 @@ tags:
   - wistrio
   - RAK8212
 rak_desc: For an easier experience with your RAK8212 WisTrio iTracker Pro, a comprehensive list of commands in configuring your device is provided.
-rak_img: /assets/images/wistrio/rak8212/quickstart/overview/RAK8212.png
+rak_img: /assets/images/wistrio/rak8212/RAK8212.png
 ---
 
 # RAK8212 AT Command Manual

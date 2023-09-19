@@ -1,6 +1,6 @@
 ---
 rak_desc: RAK4631-R RUI3 based firmware can be updated via USB connection or wirelessly via BLE using OTA DFU (Device Firmware Upgrade). It guides on how to do perform firmware upgrades for the RAK4631-R WisBlock Core.
-rak_img: /assets/images/wisblock/rak4631-r/overview/RAK4631-R_home.png
+rak_img: /assets/images/wisblock/rak4631-r/RAK4631-R.png
 prev: ../AT-Command-Manual/
 next: ../Datasheet/
 tags:

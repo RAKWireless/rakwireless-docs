@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/accessories/rakbox-b5/overview/overview.png
+rak_img: /assets/images/accessories/rakbox-b5/overview.png
 rak_desc: RAKBox-B5 is a transparent enclosure and perfect for coding and debugging of a prototype WisBlock.
 rak_grp: [accessories, enclosures]
 rak_model: RAKBox-B5

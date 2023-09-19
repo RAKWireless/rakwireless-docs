@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK811 Module to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisduo/rak811-module/overview/RAK811-Module.png
+rak_img: /assets/images/wisduo/rak811-module/RAK811-Module.png
 prev: ../Low-Level-Development/
 tags:
   - datasheet

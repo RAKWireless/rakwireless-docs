@@ -1,6 +1,6 @@
 ---
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK7289. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device.
-rak_img: /assets/images/wisgate/rak7289/overview/RAK7289.png
+rak_img: /assets/images/wisgate/rak7289/RAK7289.png
 prev: ../Overview/
 next: ../Datasheet/
 tags:

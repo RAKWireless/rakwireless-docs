@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisduo/rak3272-sip-breakout-board/overview/RAK3272-SiP-Breakout.png
+rak_img: /assets/images/wisduo/rak3272-sip-breakout-board/RAK3272-SiP-Breakout.png
 rak_desc: The RAK3272-SiP Breakout Board is made to quickly evaluate the RAK3272-SiP module. The form factor board allows access to most GPIOs.
 rak_grp: [wisduo, breakout]
 prev: ../../

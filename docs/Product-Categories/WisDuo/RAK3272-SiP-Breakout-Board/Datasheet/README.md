@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK3272-SiP Breakout Board to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisduo/rak3272-sip-breakout-board/overview/RAK3272-SiP-Breakout.png
+rak_img: /assets/images/wisduo/rak3272-sip-breakout-board/RAK3272-SiP-Breakout.png
 prev: ../AT-Command-Manual/
 next: false
 tags:

@@ -6,7 +6,7 @@ tags:
     - wisduo
     - AT Command Manual
     - RAK3272-SiP Breakout Board
-rak_img: /assets/images/wisduo/rak3272-sip-breakout-board/overview/RAK3272-SiP-Breakout.png
+rak_img: /assets/images/wisduo/rak3272-sip-breakout-board/RAK3272-SiP-Breakout.png
 ---
 
 # RAK3272-SiP Breakout Board AT Command Manual

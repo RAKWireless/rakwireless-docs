@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisnode/rak10701/overview/RAK10701-H.png
+rak_img: /assets/images/wisnode/rak10701/RAK10701-H.png
 rak_desc: RAK10701-H Field Mapper for Helium Network is a ready-to-use WisNode for evaluating the coverage of Helium Network. It has a GNSS, a touchscreen LCD for the user interface, and is powered by a rechargeable battery.
 rak_grp: [wisnode,track]
 prev: ../../

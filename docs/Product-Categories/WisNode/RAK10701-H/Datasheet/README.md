@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information of your RAK10701-H Field Mapper for Helium Network to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisnode/rak10701/overview/RAK10701-H.png
+rak_img: /assets/images/wisnode/rak10701/RAK10701-H.png
 prev: ../Quickstart/
 next: false
 tags:
@@ -191,5 +191,5 @@ Download the latest firmware version of RAK10701-H in the table provided below.
 
 | Model                                      | Version | Firmware                                                              |
 | ------------------------------------------ | ------- | --------------------------------------------------------------------- |
-| RAK10701 - Field Mapper for Helium Network | V1.0.6  | [Download](https://downloads.rakwireless.com/LoRa/RAK10701/Firmware/RAK10701_H_Latest_Firmware.zip) |
+| RAK10701-H | V1.1.1  | [Download - .hex](https://downloads.rakwireless.com/LoRa/RAK10701/Firmware/RAK10701_H_Latest_Firmware.hex) <br> [Download - .zip](https://downloads.rakwireless.com/LoRa/RAK10701/Firmware/RAK10701_H_Latest_Firmware.zip) |
 

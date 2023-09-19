@@ -1,6 +1,6 @@
 ---
 rak_desc: Contains a comprehensive guide in setting up both your RAK7289 and Amazon Web Services account and permissions. It also includes instructions in connecting and configuring your LoRaWAN Gateway to The Things Network and LORIOT.
-rak_img: /assets/images/wisgate/rak7289/overview/RAK7289.png
+rak_img: /assets/images/wisgate/rak7289/RAK7289.png
 tags:
   - AWS
   - wisgate

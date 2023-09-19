@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK4600 Module to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisduo/rak4600-module/overview/RAK4600-Module.png
+rak_img: /assets/images/wisduo/rak4600-module/RAK4600-Module.png
 tags:
   - datasheet
   - wisduo

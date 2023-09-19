@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information of your RAK10701-P Field Tester for LoRaWAN to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisnode/rak10701/overview/RAK10701-P.png
+rak_img: /assets/images/wisnode/rak10701/RAK10701-P.png
 prev: ../Quickstart/
 next: false
 tags:
@@ -199,5 +199,5 @@ Download the latest firmware version of RAK10701-P in the table provided below.
 
 | Model                                      | Version | Firmware                                                              |
 | ------------------------------------------ | ------- | --------------------------------------------------------------------- |
-| RAK10701 - Field Tester for LoRaWAN | V1.0.6  | [Download](https://downloads.rakwireless.com/LoRa/RAK10701/Firmware/RAK10701_L_P_Latest_Firmware.zip) |
+| RAK10701-P| V1.1.1  | [Download - .hex](https://downloads.rakwireless.com/LoRa/RAK10701/Firmware/RAK10701_L_P_Latest_Firmware.hex) <br> [Download - .zip](https://downloads.rakwireless.com/LoRa/RAK10701/Firmware/RAK10701_L_P_Latest_Firmware.zip) |
 

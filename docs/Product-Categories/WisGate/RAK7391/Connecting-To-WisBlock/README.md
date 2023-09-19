@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides information on how to connect your RAK7391 to any WisBlock modules. This information includes technical specifications, characteristics, and requirements.
-rak_img: /assets/images/wisgate/rak7391/overview/RAK7391.png
+rak_img: /assets/images/wisgate/rak7391/RAK7391.png
 prev: ../Services/
 next: ../Datasheet/
 tags:

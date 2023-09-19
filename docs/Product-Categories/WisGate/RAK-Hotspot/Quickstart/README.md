@@ -1,6 +1,6 @@
 ---
 rak_desc: Contains instructions and tutorials for installing and deploying your RAK Hotspot . Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Gateway.
-rak_img: /assets/images/wisgate/rak-hotspot/overview/RAK-Hotspot.png
+rak_img: /assets/images/wisgate/rak-hotspot/RAK-Hotspot.png
 next: ../Backup/
 prev: ../Overview/
 tags:
