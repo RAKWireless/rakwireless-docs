@@ -645,6 +645,11 @@ export default {
     img: '/assets/images/wisblock/rak12007/RAK12007.png',
     store: 'https://store.rakwireless.com/products/ultrasonic-sensor-module-rak12007?utm_source=RAK12007&utm_medium=Document&utm_campaign=BuyFromStore'
   },
+  '/Product-Categories/WisBlock/RAK12008/': {
+    label: 'RAK12008 WisBlock WisBlock CO2 Sensor',
+    img: '/assets/images/wisblock/rak12008/RAK12008.png',
+    store: 'https://store.rakwireless.com/products/wisblock-co2-sensor-rak12008?utm_source=RAK12008&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
   '/Product-Categories/WisBlock/RAK12009/': {
     label: 'RAK12009 WisBlock Alcohol Gas Module',
     img: '/assets/images/wisblock/rak12009/RAK12009.png',
@@ -695,6 +700,11 @@ export default {
     img: '/assets/images/wisblock/rak12019/RAK12019.png',
     store: 'https://store.rakwireless.com/products/rak12019-wisblock-uv-sensor?utm_source=RAK12019&utm_medium=Document&utm_campaign=BuyFromStore'
   },
+  '/Product-Categories/WisBlock/RAK12020/': {
+    label: 'RAK12020 WisBlock Light Sensor',
+    img: '/assets/images/wisblock/rak12020/RAK12020.png',
+    store: 'https://store.rakwireless.com/products/wisblock-light-sensor-rak12020?utm_source=RAK12020&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
   '/Product-Categories/WisBlock/RAK12021/': {
     label: 'RAK12021 WisBlock RGB Sensor Module',
     img: '/assets/images/wisblock/rak12021/RAK12021.png',
@@ -735,6 +745,11 @@ export default {
     img: '/assets/images/wisblock/rak12031/RAK12031.png',
     store: 'https://store.rakwireless.com/products/rak12028-rak12031-wisblock-through-beam-fork-sensor?utm_source=RAK12031&utm_medium=Document&utm_campaign=BuyFromStore'
   },
+  '/Product-Categories/WisBlock/RAK12032/': {
+    label: 'RAK12032 WisBlock 3-Axis Accelerometer Sensor',
+    img: '/assets/images/wisblock/rak12032/RAK12032.png',
+    store: 'https://store.rakwireless.com/products/rak12032-3-axis-accelerometer?utm_source=RAK12032&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
   '/Product-Categories/WisBlock/RAK12033/': {
     label: 'RAK12033 WisBlock 6-Axis Accelerometer Sensor Module',
     img: '/assets/images/wisblock/rak12033/RAK12033.png',
@@ -760,6 +775,16 @@ export default {
     img: '/assets/images/wisblock/rak12039/RAK12039.png',
     store: 'https://store.rakwireless.com/products/particle-matter-sensor-plantower-pmsa003i-rak12039?utm_source=RAK12039&utm_medium=Document&utm_campaign=BuyFromStore'
   },
+  '/Product-Categories/WisBlock/RAK12040/': {
+    label: 'RAK12040 WisBlock 8x8 IR Sensor',
+    img: '/assets/images/wisblock/rak12040/RAK12040.png',
+    store: 'https://store.rakwireless.com/products/wisblock-8x8-pixel-ir-array-sensor-rak12040?utm_source=RAK12040&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/RAK12044/': {
+    label: 'RAK12044 WisBlock Hall Effect Sensor',
+    img: '/assets/images/wisblock/rak12044/RAK12044.png',
+    store: 'https://store.rakwireless.com/products/wisblock-hall-effect-magnetic-sensor-rak12044?utm_source=RAK12044&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
   '/Product-Categories/WisBlock/RAK12047/': {
     label: 'RAK12047 WisBlock VOC Sensor Module',
     img: '/assets/images/wisblock/rak12047/RAK12047.png',
@@ -769,6 +794,16 @@ export default {
     label: 'RAK12052 WisBlock Thermal IR Array Module',
     img: '/assets/images/wisblock/rak12052/RAK12052.png',
     store: 'https://store.rakwireless.com/products/32x24-pixel-mlx90640-ir-array-module-rak12052?utm_source=RAK12052&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/RAK12054/': {
+    label: 'RAK12054 WisBlock Encoder Sensor',
+    img: '/assets/images/wisblock/rak12054/RAK12054.png',
+    store: 'https://store.rakwireless.com/products/wisblock-hall-effect-magnetic-sensor-rak12054?utm_source=RAK12054&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/RAK12059/': {
+    label: 'RAK12059 WisBlock Liquid Level Sensor',
+    img: '/assets/images/wisblock/rak12059/RAK12059.png',
+    store: 'https://store.rakwireless.com/products/wisblock-water-level-sensor-rak12059?utm_source=RAK12059&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisBlock/RAK12500/': {
     label: 'RAK12500 WisBlock GNSS Location Module',
@@ -789,6 +824,21 @@ export default {
     label: 'RAK14008 WisBlock Gesture Sensor Module',
     img: '/assets/images/wisblock/rak14008/RAK14008.png',
     store: 'https://store.rakwireless.com/products/rak14008-wisblock-gesture-sensor?utm_source=RAK14008&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/RAK15003/': {
+    label: 'RAK15003 WisBlock 32kByte FRAM Module',
+    img: '/assets/images/wisblock/rak15003/RAK15003.png',
+    store: 'https://store.rakwireless.com/products/wisblock-32kbyte-fram-nvram-module-rak15003?utm_source=RAK15003&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/RAK15005/': {
+    label: 'RAK15005 WisBlock 128kByte FRAM Module',
+    img: '/assets/images/wisblock/rak15005/RAK15005.png',
+    store: 'https://store.rakwireless.com/products/wisblock-128kbyte-fram-nvram-module-rak15005?utm_source=RAK15005&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/RAK15006/': {
+    label: 'RAK15006 WisBlock 512kByte FRAM Module',
+    img: '/assets/images/wisblock/rak15006/RAK15006.png',
+    store: 'https://store.rakwireless.com/products/wisblock-512kbyte-fram-nvram-module-rak15006?utm_source=RAK15006&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisBlock/RAK16000/': {
     label: 'RAK16000 WisBlock DC Current Module',
@@ -1148,6 +1198,12 @@ export default {
     label: 'RAK17000 WisBlock Motor Control Module',
     img: '/assets/images/wisblock/rak17000/RAK17000.png',
     store: 'https://store.rakwireless.com/products/motor-control-module-rak17000?utm_source=RAK17000&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+
+  '/Product-Categories/WisBlock/RAK17001/': {
+    label: 'RAK17001 WisBlock H-Bridge Module',
+    img: '/assets/images/wisblock/rak17001/RAK17001.png',
+    store: 'https://store.rakwireless.com/products/wisblock-h-bridge-motor-driver-rak17001?utm_source=RAK17001&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
   // Solutions
