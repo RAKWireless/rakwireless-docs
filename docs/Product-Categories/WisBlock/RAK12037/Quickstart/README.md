@@ -140,13 +140,14 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 ::: details Click Here to View Example Code
 ```c
 /**
-   @file RAK12037_AutoCalibrate_SCD30.ino
+   @file RAK12037_BasicReadings_SCD30.ino
    @author rakwireless.com
-   @brief SCD30 Automatic self-calibration(ASC) Example.
+   @brief  Example of reading SCD30 sensor and displaying data through serial port.
    @version 0.1
    @date 2022-1-18
    @copyright Copyright (c) 2022
 **/
+
 #include <Wire.h>
 
 #include "SparkFun_SCD30_Arduino_Library.h" // Click here to get the library: http://librarymanager/All#SparkFun_SCD30
@@ -158,40 +159,35 @@ void setup()
   pinMode(WB_IO2, OUTPUT);
   digitalWrite(WB_IO2, HIGH);
 
-  // Initialize Serial for debug output
-  time_t timeout = millis();
-  Serial.begin(115200);
-  while (!Serial)
-  {
-    if ((millis() - timeout) < 5000)
-    {
-      delay(100);
-    }
-    else
-    {
-      break;
-    }
-  }
+	// Initialize Serial for debug output
+	time_t timeout = millis();
+	Serial.begin(115200);
+	while (!Serial)
+	{
+		if ((millis() - timeout) < 5000)
+		{
+			delay(100);
+		}
+		else
+		{
+			break;
+		}
+	}
 
-  Serial.println("SCD30 Automatic self-calibration Example.");
+  Serial.println("SCD30 Basic Readings Example.");
 
   Wire.begin();
 
-  //Start sensor using the Wire port and enable the auto-calibration (ASC)
-  if (airSensor.begin(Wire, true) == false)
+  delay(500);
+
+  if (airSensor.begin() == false)
   {
     Serial.println("Air sensor not detected. Please check wiring. Freezing...");
-    while (1)
-    {
-      delay(10);
-    }
+		while (1)
+		{
+			delay(10);
+		}
   }
-
-  Serial.print("Automatic self-calibration set to：");
-  if (airSensor.getAutoSelfCalibration() == true)
-    Serial.println("true");
-  else
-    Serial.println("false");
 }
 
 void loop()
@@ -214,9 +210,9 @@ void loop()
 
   delay(3000);
 }
-
 ```
 :::
+
 ::: tip 📝 NOTE
 If you experience any error in compiling the example sketch, check the updated code for your WisBlock Core Module that can be found on the [RAK12037 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK12037_CO2_SCD30) and this sample code in GitHub will work on all WisBlock Core.
 :::

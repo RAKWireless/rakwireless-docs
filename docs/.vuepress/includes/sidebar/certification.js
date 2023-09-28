@@ -335,6 +335,11 @@ module.exports = {
             collapsable: true,
             children: [
               {
+                title: 'RAK9154',
+                path: '/Certification/accessories/?device=RAK9154',
+                collapsable: false
+              },
+              {
                 title: 'RAK9155',
                 path: '/Certification/accessories/?device=RAK9155',
                 collapsable: false

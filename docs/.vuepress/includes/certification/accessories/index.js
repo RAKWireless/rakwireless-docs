@@ -4,6 +4,14 @@ export const categoriesAccessories = [
       path: "/Certification/Accessories/",
       devices: [
         {
+          device: "RAK9154",
+          data: [
+            { country: "Europe", cert: "CE", link: "https://downloads.rakwireless.com/Accessories/RAK9154/Certification/RAK9154_CE_Certification.pdf" },
+            { country: "Europe", cert: "RoHS", link: "https://downloads.rakwireless.com/Accessories/RAK9154/Certification/RAK9154_RoHS_Report.pdf" },
+            { country: "USA", cert: "FCC", link: "https://downloads.rakwireless.com/Accessories/RAK9154/Certification/RAK9154_FCC_Certification.pdf" },
+          ]
+        },
+        {
           device: "RAK9155",
           data: [
             { country: "Europe", cert: "CE", link: "https://downloads.rakwireless.com/Accessories/RAK9155/Certification/RAK9155_CE_Certification.jpg" },
