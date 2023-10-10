@@ -49,13 +49,15 @@ module.exports = {
           path: '/RUI3/BLE/',
           nested: true,
           download: true
-        },
+        }
+        /*
         {
           title: 'Binary Mode',
           path: '/RUI3/Binary-Mode/',
           nested: true,
           download: true
         }
+        */
       ]
     },
     {
@@ -82,12 +84,14 @@ module.exports = {
           nested: true,
           download: true
         },
+        /*
         {
           title: 'Binary Command Manual',
           path: '/RUI3/Serial-Operating-Modes/Binary-Command-Manual/',
           nested: true,
           download: true
         },
+        */
         {
           title: 'Custom Mode',
           path: '/RUI3/Serial-Operating-Modes/Custom-Mode/',

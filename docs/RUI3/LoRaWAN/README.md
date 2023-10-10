@@ -1609,7 +1609,7 @@ api.lorawan.send(length, payload, fport, confirm, retry);
 
 | **Function**      | `bool send(uint8_t length,uint8_t * payload, uint8_t fport, bool confirm = true, uint8_t retry)`                                                                                                                                                                                                     |
 | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Parameters**    | **length** - the length of the payload <br> **payload** - the date to uplink <br> **fport** - allow 1 ~ 223 <br> **confirm** - Override cfm setting to get confirm message from gateway (just for this time) <br> **retry** - Override retry setting to retry if sending failed (just for this time) |
+| **Parameters**    | **length** - the length of the payload <br> **payload** - the data to uplink <br> **fport** - allow 1 ~ 223 <br> **confirm** - Override cfm setting to get confirm message from gateway (just for this time) <br> **retry** - Override retry setting to retry if sending failed (just for this time) |
 | **Returns**       | bool                                                                                                                                                                                                                                                                                                 |
 | **Return Values** | **TRUE** for sending uplink success <br> **FALSE** for sending uplink                                                                                                                                                                                                                                |
 
@@ -1673,7 +1673,7 @@ api.lorawan.lpsend(port, ack, payload, length);
 
 | **Function**      | `bool lpsend(uint8_t port, bool ack, uint8_t * payload, int length)`                                                                                                                                  |
 | ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Parameters**    | **port** - application port to be transmitted  <br> **ack** - indicate this is a confirmed message or not  <br>  **payload**	the date you want to send   <br>  **length** - the length of the payload |
+| **Parameters**    | **port** - application port to be transmitted  <br> **ack** - indicate this is a confirmed message or not  <br>  **payload**	the data you want to send   <br>  **length** - the length of the payload |
 | **Returns**       | bool                                                                                                                                                                                                  |
 | **Return Values** | **TRUE** for sending data success <br> **FALSE** for sending data failure                                                                                                                             |
 
@@ -2287,7 +2287,7 @@ api.lorawan.dr.set(value);
 | ----------------- | --------------------------------------------------------------------------------------- |
 | **Parameters**    | **value** - the data rate                                                               |
 | **Returns**       | bool                                                                                    |
-| **Return Values** | **TRUE** for setting data rate success   <br>   **FALSE** for setting date rate failure |
+| **Return Values** | **TRUE** for setting data rate success   <br>   **FALSE** for setting data rate failure |
 
 
 ::: details Click to View Example
@@ -2709,7 +2709,7 @@ api.lorawan.rx2dr.set(value);
 
 | **Function**      | `bool set(uint8_t value)`                                                           |
 | ----------------- | ----------------------------------------------------------------------------------- |
-| **Parameters**    | **value** - the date rate of received window 2                                      |
+| **Parameters**    | **value** - the data rate of received window 2                                      |
 | **Returns**       | bool                                                                                |
 | **Return Values** | **TRUE** for setting data rate success <br> **FALSE** for setting data rate failure |
 
@@ -3675,6 +3675,14 @@ RAKLorawan::band
 
 :::
 
+::: tip 📝 NOTE
+
+If you use US915, channel 8-15 is commonly used on 8-ch Gateway/LoRaWAN network setup. You can use mask API to enable only these channels.
+```c
+uint16_t maskBuff = 0x0002;
+Serial.printf("Set channel mask %s\r\n", api.lorawan.mask.set(&maskBuff) ? "Success" : "Fail");
+```
+:::
 
 #### get()
 
@@ -4317,8 +4325,8 @@ api.lorawan.encry.get();
 ::: details Click to View Example
 ```c{21}
 long startTime;
-uint8_t node_encrypt_key[8] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
-uint8_t encrypt_buff[8];
+uint8_t node_encrypt_key[16] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
+uint8_t encrypt_buff[16];
 
 void setup()
 {
@@ -4335,12 +4343,12 @@ void setup()
     Serial.printf("Set P2P mode preamble length %s\r\n", api.lorawan.ppl.set(8) ? "Success" : "Fail");
     Serial.printf("Set P2P mode tx power %s\r\n", api.lorawan.ptp.set(22) ? "Success" : "Fail");
     Serial.printf("Set P2P mode encryption status %s\r\n", api.lorawan.encry.set(1) ? "Success" : "Fail");
-    Serial.printf("Set P2P mode encryption Key %s\r\n\r\n", api.lorawan.enckey.set(node_encrypt_key, 8) ? "Success" : "Fail");
+    Serial.printf("Set P2P mode encryption Key %s\r\n\r\n", api.lorawan.enckey.set(node_encrypt_key, 16) ? "Success" : "Fail");
     Serial.printf("P2P encryption status = %s\r\n", api.lorawan.encry.get() ? "Enable" : "Disable");
 
-    api.lorawan.enckey.get(encrypt_buff, 8);
+    api.lorawan.enckey.get(encrypt_buff, 16);
     Serial.printf("P2P encryption Key = 0x");
-        for (int i = 0 ; i < 8 ; i++) {
+        for (int i = 0 ; i < 16 ; i++) {
             Serial.printf("%02X", encrypt_buff[i]);
         }
     Serial.println("");
@@ -4391,8 +4399,8 @@ api.lorawan.encry.set(value);
 ::: details Click to View Example
 ```c{19}
 long startTime;
-uint8_t node_encrypt_key[8] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
-uint8_t encrypt_buff[8];
+uint8_t node_encrypt_key[16] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
+uint8_t encrypt_buff[16];
 
 void setup()
 {
@@ -4409,13 +4417,13 @@ void setup()
     Serial.printf("Set P2P mode preamble length %s\r\n", api.lorawan.ppl.set(8) ? "Success" : "Fail");
     Serial.printf("Set P2P mode tx power %s\r\n", api.lorawan.ptp.set(22) ? "Success" : "Fail");
     Serial.printf("Set P2P mode encryption status %s\r\n", api.lorawan.encry.set(1) ? "Success" : "Fail");
-    Serial.printf("Set P2P mode encryption Key %s\r\n\r\n", api.lorawan.enckey.set(node_encrypt_key, 8) ? "Success" : "Fail");
+    Serial.printf("Set P2P mode encryption Key %s\r\n\r\n", api.lorawan.enckey.set(node_encrypt_key, 16) ? "Success" : "Fail");
 
     Serial.printf("P2P encryption status = %s\r\n", api.lorawan.encry.get() ? "Enable" : "Disable");
 
-    api.lorawan.enckey.get(encrypt_buff, 8);
+    api.lorawan.enckey.get(encrypt_buff, 16);
     Serial.printf("P2P encryption Key = 0x");
-        for (int i = 0 ; i < 8 ; i++) {
+        for (int i = 0 ; i < 16 ; i++) {
             Serial.printf("%02X", encrypt_buff[i]);
         }
     Serial.println("");
@@ -4447,7 +4455,7 @@ void loop()
 
 ### enckey
 
-This API will encrypt the date being sent and received.
+This API will encrypt the data being sent and received.
 
 ```c
 RAKLorawan::enckey
@@ -4465,7 +4473,7 @@ api.lorawan.enckey.get(buff, len);
 
 | **Function**      | `bool get(uint8_t * buff, uint32_t len)`                                                                         |
 | ----------------- | ---------------------------------------------------------------------------------------------------------------- |
-| **Parameters**    | **buff**	- the buffer to store encryption key <br> **len** - the length of encryption key (must be 8&nbsp;bytes) |
+| **Parameters**    | **buff**	- the buffer to store encryption key <br> **len** - the length of encryption key (must be 16&nbsp;bytes) |
 | **Returns**       | bool                                                                                                             |
 | **Return Values** | **TRUE** for getting encryption key success <br> **FALSE** for getting encryption key failure                    |
 
@@ -4473,8 +4481,8 @@ api.lorawan.enckey.get(buff, len);
 ::: details Click to View Example
 ```c{24}
 long startTime;
-uint8_t node_encrypt_key[8] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
-uint8_t encrypt_buff[8];
+uint8_t node_encrypt_key[16] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
+uint8_t encrypt_buff[16];
 
 void setup()
 {
@@ -4491,13 +4499,13 @@ void setup()
     Serial.printf("Set P2P mode preamble length %s\r\n", api.lorawan.ppl.set(8) ? "Success" : "Fail");
     Serial.printf("Set P2P mode tx power %s\r\n", api.lorawan.ptp.set(22) ? "Success" : "Fail");
     Serial.printf("Set P2P mode encryption status %s\r\n", api.lorawan.encry.set(1) ? "Success" : "Fail");
-    Serial.printf("Set P2P mode encryption Key %s\r\n\r\n", api.lorawan.enckey.set(node_encrypt_key, 8) ? "Success" : "Fail");
+    Serial.printf("Set P2P mode encryption Key %s\r\n\r\n", api.lorawan.enckey.set(node_encrypt_key, 16) ? "Success" : "Fail");
 
     Serial.printf("P2P encryption status = %s\r\n", api.lorawan.encry.get() ? "Enable" : "Disable");
 
-    api.lorawan.enckey.get(encrypt_buff, 8);
+    api.lorawan.enckey.get(encrypt_buff, 16);
     Serial.printf("P2P encryption Key = 0x");
-        for (int i = 0 ; i < 8 ; i++) {
+        for (int i = 0 ; i < 16 ; i++) {
             Serial.printf("%02X", encrypt_buff[i]);
         }
     Serial.println("");
@@ -4540,7 +4548,7 @@ api.lorawan.enckey.set(buff, len);
 
 | **Function**      | `bool set(uint8_t * buff, uint32_t len)`                                                                       |
 | ----------------- | -------------------------------------------------------------------------------------------------------------- |
-| **Parameters**    | **buff** - the buffer to set encryption key <br> **len** - the length of encryption key (must be 8&nbsp;bytes) |
+| **Parameters**    | **buff** - the buffer to set encryption key <br> **len** - the length of encryption key (must be 16&nbsp;bytes) |
 | **Returns**       | bool                                                                                                           |
 | **Return Values** | **TRUE** for setting encryption key success <br> **FALSE** for setting encryption failure                      |
 
@@ -4549,8 +4557,8 @@ api.lorawan.enckey.set(buff, len);
 ::: details Click to View Example
 ```c{20}
 long startTime;
-uint8_t node_encrypt_key[8] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
-uint8_t encrypt_buff[8];
+uint8_t node_encrypt_key[16] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
+uint8_t encrypt_buff[16];
 
 void setup()
 {
@@ -4567,13 +4575,13 @@ void setup()
     Serial.printf("Set P2P mode preamble length %s\r\n", api.lorawan.ppl.set(8) ? "Success" : "Fail");
     Serial.printf("Set P2P mode tx power %s\r\n", api.lorawan.ptp.set(22) ? "Success" : "Fail");
     Serial.printf("Set P2P mode encryption status %s\r\n", api.lorawan.encry.set(1) ? "Success" : "Fail");
-    Serial.printf("Set P2P mode encryption Key %s\r\n\r\n", api.lorawan.enckey.set(node_encrypt_key, 8) ? "Success" : "Fail");
+    Serial.printf("Set P2P mode encryption Key %s\r\n\r\n", api.lorawan.enckey.set(node_encrypt_key, 16) ? "Success" : "Fail");
 
     Serial.printf("P2P encryption status = %s\r\n", api.lorawan.encry.get() ? "Enable" : "Disable");
 
-    api.lorawan.enckey.get(encrypt_buff, 8);
+    api.lorawan.enckey.get(encrypt_buff, 16);
     Serial.printf("P2P encryption Key = 0x");
-        for (int i = 0 ; i < 8 ; i++) {
+        for (int i = 0 ; i < 16 ; i++) {
             Serial.printf("%02X", encrypt_buff[i]);
         }
     Serial.println("");

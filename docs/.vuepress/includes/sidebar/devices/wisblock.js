@@ -362,23 +362,6 @@ module.exports = {
     sidebarDepth: 4
   }
   ],
-  '/Product-Categories/WisBlock/RAKBox-UO150x100x50/': [{
-    title: 'Product Overview',
-    path: '/Product-Categories/WisBlock/RAKBox-UO150x100x50/Overview/',
-    collapsable: false,
-    nested: true,
-    download: true,
-    sidebarDepth: 4
-  },
-  {
-    title: 'Datasheet',
-    path: '/Product-Categories/WisBlock/RAKBox-UO150x100x50/Datasheet/',
-    collapsable: false,
-    nested: true,
-    download: true,
-    sidebarDepth: 4
-  }
-  ],
   '/Product-Categories/WisBlock/RAKBox-UO180x130x60/': [{
     title: 'Product Overview',
     path: '/Product-Categories/WisBlock/RAKBox-UO180x130x60/Overview/',
@@ -694,6 +677,14 @@ module.exports = {
     nested: true,
     download: true,
     sidebarDepth: 4
+  },
+  {
+	  title: 'Amazon Sidewalk Starter Kit',
+	  path: '/Product-Categories/WisBlock/RAK4631/Sidewalk/',
+	  collapsable: false,
+	  nested: true,
+	  download: true,
+	  sidebarDepth: 4
   },
   {
     title: 'Datasheet',
@@ -3509,6 +3500,14 @@ module.exports = {
   sidebarDepth: 4
 },
 {
+  title: 'Quick Start Guide',
+  path: '/Product-Categories/WisBlock/Kit2-Biometric-Monitoring/Quickstart/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
   title: 'Datasheet',
   path: '/Product-Categories/WisBlock/Kit2-Biometric-Monitoring/Datasheet/',
   collapsable: false,
@@ -3590,7 +3589,15 @@ module.exports = {
 
 '/Product-Categories/WisBlock/Kit6-Light-and-Color/': [{
   title: 'Product Overview',
-  path: '/Product-Categories/WisBlock/Kit6-lightcolort/Overview/',
+  path: '/Product-Categories/WisBlock/Kit6-Light-and-Color/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Quick Start Guide',
+  path: '/Product-Categories/WisBlock/Kit6-Light-and-Color/Quickstart/',
   collapsable: false,
   nested: true,
   download: true,

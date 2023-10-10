@@ -82,6 +82,10 @@ enum RAK_CHARS_PROPERTIES
 
 ## BLE UART
 
+::: tip 📝 NOTE
+Serial6 is the UART interface for BLE. To enable AT commands via BLE, you can use `Serial6.begin(115200, RAK_AT_MODE);`. 
+:::
+
 ### start()
 
 This API is used to start the BLE UART Service.
@@ -254,7 +258,7 @@ api.ble.settings.txPower.get()
 This API is used to set the time interval between two consecutive advertisements of Bluetooth low energy peripherals.
 
 ```c
-)api.ble.settings.advertiseInterval.set(adv_interval)
+api.ble.settings.advertiseInterval.set(adv_interval)
 ```
 
 

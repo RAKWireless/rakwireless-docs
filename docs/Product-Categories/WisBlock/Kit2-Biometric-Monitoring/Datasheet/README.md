@@ -1,7 +1,7 @@
 ---
 rak_desc: Contains a list of the modules and sensors included in this fully customizable WisBlock Biometric Monitoring Kit for your wearable monitoring IoT applications.
 rak_img: /assets/images/wisblock/kits/2_biometric_kit_1.png
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 tags:
   - datasheet

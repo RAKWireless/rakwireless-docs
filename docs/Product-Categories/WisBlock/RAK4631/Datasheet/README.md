@@ -1,7 +1,7 @@
 ---
 rak_desc: Provides comprehensive information about your RAK4631 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 rak_img: /assets/images/wisblock/rak4631/RAK4631.png
-prev: ../AT-Command-Manual/
+prev: ../Sidewalk/
 next: false
 tags:
   - datasheet

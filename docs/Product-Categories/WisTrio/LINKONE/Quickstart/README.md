@@ -24,10 +24,6 @@ Before going through each step in the installation guide of the Link.ONE WisTrio
 - Li-Ion 3.7&nbsp;V rechargeable battery
 - 5&nbsp;V Solar Panel (optional)
 
-:::tip 📝 NOTE:
-This device already includes a [Monogoto SIM](https://store.rakwireless.com/products/iot-sim-card-for-wisnode-modules?variant=42658018787526) which has 500&nbsp;MB that is useable for up to 10&nbsp;years.
-:::
-
 #### Software
 
 - Download and install the [ArduinoIDE](https://www.arduino.cc/en/Main/Software).
@@ -169,19 +165,6 @@ This section provides different example codes that can be used with Link.ONE.
 - [MQTT](/Product-Categories/WisTrio/LINKONE/Quickstart/#mqtt-example)
 
 
-The following examples show different protocols that Link.ONE can use to access and send data to the cloud. This can be done easily with the included Monogoto SIM card on Link.ONE.
-
-:::warning ⚠️WARNING
-All the examples that use cellular connectivity should update the APN sections of the code for Monogoto. To illustrate, the code below configures the PDP context to `1` and APN to `data.mono` for Monogoto SIM.
-
-```c
-  command = "AT+QICSGP=1,1,\"data.mono\",\"\",\"\",1";
-  BG77_write(command.c_str());
-  BG77_read(2000);
-```
-:::
-
-
 ###### GNSS Satellite Example
 
 1. Go to the [GNSS satellite example code from the RAK5860 repository](https://github.com/RAKWireless/WisBlock/blob/master/examples/common/communications/Cellular/RAK5860_BG77_Module/RAK5860_GNSS_Satellite/RAK5860_GNSS_Satellite.ino).
@@ -223,7 +206,11 @@ If there are no coordinates data shown, make sure that you are exposed to a clea
 3. The process will first configure the APN of the cellular network, then set up the URL of the HTTP server to be accessed, send an HTTP GET/Read request, and enable the output of the HTTP response header to display on the Serial Terminal of the Arduino IDE.
 
 :::tip 📝 NOTE:
-The APN must be configured to `data.mono`. The server to be accessed in the example is `sina.com`, but this can be changed to a different website.
+
+The APN must be configured to the correct setting based on the SIM card used on Link.ONE.
+
+The server to be accessed in the example is `sina.com`, but this can be changed to a different website.
+
 :::
 
 <rk-img

@@ -4,7 +4,7 @@ rak_desc: The WisBlock Light and Color Kit is a comprehensive IoT kit which incl
 rak_grp: [wisblock,wiskit]
 rak_model: Light and Color
 prev: ../../
-next: ../Datasheet/
+next: ../Quickstart/
 tags:
     - WisBlock Kit
     - WisBlock Light and Color Kit
@@ -16,6 +16,7 @@ tags:
 
 Thank you for choosing **WisBlock Light and Color Kit** in your awesome IoT project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
+* [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 
 ## Product Description

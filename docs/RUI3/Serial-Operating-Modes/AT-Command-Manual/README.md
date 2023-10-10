@@ -5,9 +5,9 @@ AT command is the initial setting in the default serial port used on RUI3 device
 
 ### Switching to AT Mode
 
-**Binary Mode to AT Command**
+<!---**Binary Mode to AT Command**
 
-`AT+ATM` command on a Serial Port will switch its serial operating mode to AT Command mode. In Binary Command mode, you can also send byte array `0x7E 0x00 0x04 0x01 0x00 0x00 0x00 0x02 0x48 x04` to switch to AT Command mode.
+`AT+ATM` command on a Serial Port will switch its serial operating mode to AT Command mode. In Binary Command mode, you can also send byte array `0x7E 0x00 0x04 0x01 0x00 0x00 0x00 0x02 0x48 x04` to switch to AT Command mode.-->
 
 **Custom Mode to AT Command**
 
@@ -21,7 +21,7 @@ During AT mode, the RUI3 powered device is compatible to WisToolBox.
 
   - [RAK4630](/Product-Categories/WisDuo/RAK4630-Module/Overview)
   - [RAK4631-R](/Product-Categories/WisBlock/RAK4631-R/Overview)
-  - [RAK3172](/Product-Categories/WisDuo/RAK3172-Module/Overview)
+  - [RAK3172 or RAK3172-T](/Product-Categories/WisDuo/RAK3172-Module/Overview)
   - [RAK3272S](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/Overview)
   - [RAK3372 / RAK3172 Evaluation Board](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/Overview)
   - [RAK3172-SiP](/Product-Categories/WisDuo/RAK3172-SiP/Overview)
@@ -78,129 +78,129 @@ More details on each command description and examples are given in the remainder
   - [Content](#content)
   - [General Commands](#general-commands)
     - [AT](#at)
-    - [AT?](#at-1)
+    - [AT?](#at-2)
     - [ATE](#ate)
     - [ATZ](#atz)
     - [ATR](#atr)
-    - [AT+SN](#atsn)
-    - [AT+BAT](#atbat)
-    - [AT+BUILDTIME](#atbuildtime)
-    - [AT+REPOINFO](#atrepoinfo)
-    - [AT+VER](#atver)
-    - [AT+CLIVER](#atcliver)
-    - [AT+APIVER](#atapiver)
-    - [AT+HWMODEL](#athwmodel)
-    - [AT+HWID](#athwid)
-    - [AT+SLEEP](#atsleep)
-    - [AT+ALIAS](#atalias)
-    - [AT+SYSV](#atsysv)
-    - [AT+BLEMAC](#atblemac)
-    - [AT+BOOTVER](#atbootver)
-    - [AT+LPM](#atlpm)
-    - [AT+LPMLVL](#atlpmlvl)
+    - [AT+SN](#at-sn)
+    - [AT+BAT](#at-bat)
+    - [AT+BUILDTIME](#at-buildtime)
+    - [AT+REPOINFO](#at-repoinfo)
+    - [AT+VER](#at-ver)
+    - [AT+CLIVER](#at-cliver)
+    - [AT+APIVER](#at-apiver)
+    - [AT+HWMODEL](#at-hwmodel)
+    - [AT+HWID](#at-hwid)
+    - [AT+SLEEP](#at-sleep)
+    - [AT+ALIAS](#at-alias)
+    - [AT+SYSV](#at-sysv)
+    - [AT+BLEMAC](#at-blemac)
+    - [AT+BOOTVER](#at-bootver)
+    - [AT+LPM](#at-lpm)
+    - [AT+LPMLVL](#at-lpmlvl)
   - [Bootloader Commands](#bootloader-commands)
-    - [AT+BOOT](#atboot)
-    - [AT+VER](#atver-1)
-    - [AT+VERSION](#atversion)
-    - [AT+BOOTSTATUS](#atbootstatus)
-    - [AT+RUN](#atrun)
-    - [AT+RESET](#atreset)
+    - [AT+BOOT](#at-boot)
+    - [AT+VER](#at-ver-2)
+    - [AT+VERSION](#at-version)
+    - [AT+BOOTSTATUS](#at-bootstatus)
+    - [AT+RUN](#at-run)
+    - [AT+RESET](#at-reset)
   - [Miscellaneous AT Command](#miscellaneous-at-command)
-    - [AT+LOCK](#atlock)
-    - [AT+PWORD](#atpword)
-    - [AT+BAUD](#atbaud)
-    - [AT+ATM](#atatm)
-    - [AT+APM](#atapm)
+    - [AT+LOCK](#at-lock)
+    - [AT+PWORD](#at-pword)
+    - [AT+BAUD](#at-baud)
+    - [AT+ATM](#at-atm)
+    <!--- - [AT+APM](#at-apm)-->
   - [LoRaWAN Keys and IDs](#lorawan-keys-and-ids)
-    - [AT+DEVEUI](#atdeveui)
-    - [AT+APPEUI](#atappeui)
-    - [AT+APPKEY](#atappkey)
-    - [AT+DEVADDR](#atdevaddr)
-    - [AT+APPSKEY](#atappskey)
-    - [AT+NWKSKEY](#atnwkskey)
-    - [AT+NETID](#atnetid)
-    - [AT+MCROOTKEY](#atmcrootkey)
+    - [AT+DEVEUI](#at-deveui)
+    - [AT+APPEUI](#at-appeui)
+    - [AT+APPKEY](#at-appkey)
+    - [AT+DEVADDR](#at-devaddr)
+    - [AT+APPSKEY](#at-appskey)
+    - [AT+NWKSKEY](#at-nwkskey)
+    - [AT+NETID](#at-netid)
+    - [AT+MCROOTKEY](#at-mcrootkey)
   - [LoRaWAN Joining and Sending](#lorawan-joining-and-sending)
-    - [AT+CFM](#atcfm)
-    - [AT+CFS](#atcfs)
-    - [AT+JOIN](#atjoin)
-    - [AT+NJM](#atnjm)
-    - [AT+NJS](#atnjs)
-    - [AT+RECV](#atrecv)
-    - [AT+SEND](#atsend)
-    - [AT+LPSEND](#atlpsend)
-    - [AT+RETY](#atrety)
+    - [AT+CFM](#at-cfm)
+    - [AT+CFS](#at-cfs)
+    - [AT+JOIN](#at-join)
+    - [AT+NJM](#at-njm)
+    - [AT+NJS](#at-njs)
+    - [AT+RECV](#at-recv)
+    - [AT+SEND](#at-send)
+    - [AT+LPSEND](#at-lpsend)
+    - [AT+RETY](#at-rety)
   - [LoRaWAN Network Management](#lorawan-network-management)
-    - [AT+ADR](#atadr)
-    - [AT+CLASS](#atclass)
-    - [AT+DCS](#atdcs)
-    - [AT+DR](#atdr)
-    - [AT+JN1DL](#atjn1dl)
-    - [AT+JN2DL](#atjn2dl)
-    - [AT+PNM](#atpnm)
-    - [AT+RX1DL](#atrx1dl)
-    - [AT+RX2DL](#atrx2dl)
-    - [AT+RX2DR](#atrx2dr)
-    - [AT+RX2FQ](#atrx2fq)
-    - [AT+TXP](#attxp)
-    - [AT+LINKCHECK](#atlinkcheck)
-    - [AT+LBT](#atlbt)
-    - [AT+LBTRSSI](#atlbtrssi)
-    - [AT+LBTSCANTIME](#atlbtscantime)
-    - [AT+TIMEREQ](#attimereq)
+    - [AT+ADR](#at-adr)
+    - [AT+CLASS](#at-class)
+    - [AT+DCS](#at-dcs)
+    - [AT+DR](#at-dr)
+    - [AT+JN1DL](#at-jn1dl)
+    - [AT+JN2DL](#at-jn2dl)
+    - [AT+PNM](#at-pnm)
+    - [AT+RX1DL](#at-rx1dl)
+    - [AT+RX2DL](#at-rx2dl)
+    - [AT+RX2DR](#at-rx2dr)
+    - [AT+RX2FQ](#at-rx2fq)
+    - [AT+TXP](#at-txp)
+    - [AT+LINKCHECK](#at-linkcheck)
+    - [AT+LBT](#at-lbt)
+    - [AT+LBTRSSI](#at-lbtrssi)
+    - [AT+LBTSCANTIME](#at-lbtscantime)
+    - [AT+TIMEREQ](#at-timereq)
   - [Class B Mode](#class-b-mode)
-    - [AT+PGSLOT](#atpgslot)
-    - [AT+BFREQ](#atbfreq)
-    - [AT+BTIME](#atbtime)
-    - [AT+BGW](#atbgw)
-    - [AT+LTIME](#atltime)
+    - [AT+PGSLOT](#at-pgslot)
+    - [AT+BFREQ](#at-bfreq)
+    - [AT+BTIME](#at-btime)
+    - [AT+BGW](#at-bgw)
+    - [AT+LTIME](#at-ltime)
   - [Asynchronous Events](#asynchronous-events)
   - [LoRaWAN Information](#lorawan-information)
-    - [AT+RSSI](#atrssi)
-    - [AT+ARSSI](#atarssi)
-    - [AT+SNR](#atsnr)
+    - [AT+RSSI](#at-rssi)
+    - [AT+ARSSI](#at-arssi)
+    - [AT+SNR](#at-snr)
   - [Supplement Command](#supplement-command)
-    - [AT+MASK](#atmask)
-    - [AT+CHE](#atche)
-    - [AT+CHS](#atchs)
-    - [AT+BAND](#atband)
+    - [AT+MASK](#at-mask)
+    - [AT+CHE](#at-che)
+    - [AT+CHS](#at-chs)
+    - [AT+BAND](#at-band)
   - [P2P Instructions](#p2p-instructions)
-    - [AT+NWM](#atnwm)
-    - [AT+PFREQ](#atpfreq)
-    - [AT+PSF](#atpsf)
-    - [AT+PBW](#atpbw)
-    - [AT+PCR](#atpcr)
-    - [AT+PPL](#atppl)
-    - [AT+PTP](#atptp)
-    - [AT+PSEND](#atpsend)
-    - [AT+PRECV](#atprecv)
-    - [AT+ENCRY](#atencry)
-    - [AT+ENCKEY](#atenckey)
-    - [AT+P2P](#atp2p)
-    - [AT+IQINVER](#atiqinver)
-    - [AT+SYNCWORD](#atsyncword)
-    - [AT+RFFREQUENCY](#atrffrequency)
-    - [AT+TXOUTPUTPOWER](#attxoutputpower)
-    - [AT+BANDWIDTH](#atbandwidth)
-    - [AT+SPREADINGFACTOR](#atspreadingfactor)
-    - [AT+CODINGRATE](#atcodingrate)
-    - [AT+PREAMBLELENGTH](#atpreamblelength)
-    - [AT+SYMBOLTIMEOUT](#atsymboltimeout)
+    - [AT+NWM](#at-nwm)
+    - [AT+PFREQ](#at-pfreq)
+    - [AT+PSF](#at-psf)
+    - [AT+PBW](#at-pbw)
+    - [AT+PCR](#at-pcr)
+    - [AT+PPL](#at-ppl)
+    - [AT+PTP](#at-ptp)
+    - [AT+PSEND](#at-psend)
+    - [AT+PRECV](#at-precv)
+    - [AT+ENCRY](#at-encry)
+    - [AT+ENCKEY](#at-enckey)
+    - [AT+P2P](#at-p2p)
+    - [AT+IQINVER](#at-iqinver)
+    - [AT+SYNCWORD](#at-syncword)
+    - [AT+RFFREQUENCY](#at-rffrequency)
+    - [AT+TXOUTPUTPOWER](#at-txoutputpower)
+    - [AT+BANDWIDTH](#at-bandwidth)
+    - [AT+SPREADINGFACTOR](#at-spreadingfactor)
+    - [AT+CODINGRATE](#at-codingrate)
+    - [AT+PREAMBLELENGTH](#at-preamblelength)
+    - [AT+SYMBOLTIMEOUT](#at-symboltimeout)
   - [LoRaWAN Multicast Group](#lorawan-multicast-group)
-    - [AT+ADDMULC](#ataddmulc)
-    - [AT+RMVMULC](#atrmvmulc)
-    - [AT+LSTMULC](#atlstmulc)
+    - [AT+ADDMULC](#at-addmulc)
+    - [AT+RMVMULC](#at-rmvmulc)
+    - [AT+LSTMULC](#at-lstmulc)
   - [RF Test](#rf-test)
-    - [AT+TRSSI](#attrssi)
-    - [AT+TTONE](#atttone)
-    - [AT+TTX](#atttx)
-    - [AT+TRX](#attrx)
-    - [AT+TCONF](#attconf)
-    - [AT+TTH](#attth)
-    - [AT+TOFF](#attoff)
-    - [AT+CERTIF](#atcertif)
-    - [AT+CW](#atcw)
-    - [AT+TRTH](#attrth)
+    - [AT+TRSSI](#at-trssi)
+    - [AT+TTONE](#at-ttone)
+    - [AT+TTX](#at-ttx)
+    - [AT+TRX](#at-trx)
+    - [AT+TCONF](#at-tconf)
+    - [AT+TTH](#at-tth)
+    - [AT+TOFF](#at-toff)
+    - [AT+CERTIF](#at-certif)
+    - [AT+CW](#at-cw)
+    - [AT+TRTH](#at-trth)
 
 ## General Commands
 
@@ -894,7 +894,7 @@ AT Command mode is the default serial port setting of RUI3 devices.
 
 [Back](#content)
 
-
+<!---
 ### AT+APM
 
 Description: API mode
@@ -914,7 +914,7 @@ If it has been changed, use the recover commands to roll back to `AT+ATM` mode.
 :::
 
 [Back](#content)
-
+-->>
 
 ## LoRaWAN Keys and IDs
 
@@ -2176,31 +2176,31 @@ OK
 
 This section describes the output from serial/comm lines of the module that can occur at any point in time while the device is operational. Host parser may need to handle this event at any time.
 
-| Event                      | UART output         | Status description                                                                               |
-| -------------------------- | ------------------- | ------------------------------------------------------------------------------------------------ |
-| Beacon acquisition process | `+BC:`*< status >*  | `FAILED` = beacon sync failed                                                                    |
-|                            |                     | `DONE` = Switch to classB mode                                                                   |
-|                            |                     | `LOST` = No Beacon received for 2 hours, switch to classA                                        |
-|                            |                     | `LOCKED` = Receive Beacon                                                                        |
-| Pingslot process           | `+PS:`*< status >*  | `DONE` = At this time, ping slots will be opened periodically. The modem is now in Class B mode. |
-| Class B/C downlink         | `+EVT:`*< status >* | `RX3/RXC, RSSI -110, SNR 5` = indicates that data has been received on pingslot received window. |
-|                            |                     | `PortNumber:12345678` = received binary data on PortNumber.                                      |
-|                            |                     | `UNICAST` = lets host know that the Rx is in unicast Class B mode.                               |
-|                            |                     | `MULCAST MC1` = Data received in multicast group 1.                                              |
-| Class A downlink           | `+EVT:`*< status >* | `RX1/RX2, RSSI -110, SNR 5`                                                                      |
-|                            |                     | `PortNumber:12345678` = received binary data on PortNumber.                                      |
-| Join                       | `+EVT:`*< status >* | `JOIN FAILED`                                                                                    |
-|                            |                     | `JOINED`                                                                                         |
-| Confirm                    | `+EVT:`*< status >* | `SEND CONFIRMED OK`                                                                              |
-|                            |                     | `SEND CONFIRMED FAILED`                                                                          |
-| P2P                        | `+EVT:`*< status >* | `00112233` = received binary data format data                                                    |
-|                            |                     | `RXP2P, RSSI -110, SNR 5` = indicates that data has been received on P2P received window.        |
-| Link Check                 | `+EVT:`*< status >* | `LINKCHECK:Y0,Y1,Y2,Y3,Y4`                                                                       |
-|                            |                     | Y0 = represents link status (1:links success, 2: link fail)                                      |
-|                            |                     | Y1 = represents the DemodMargin                                                                  |
-|                            |                     | Y2 = represents the NbGateways                                                                   |
-|                            |                     | Y3 = represents the RSSI                                                                         |
-|                            |                     | Y4 = represents the SNR                                                                          |
+| Event                         | UART output         | Status description                                                                                               |
+| ----------------------------- | ------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| Beacon check via `AT+CLASS=?` | `+BC:`*< status >*  | `LOCKED` = Receive Beacon.                                                                                       |
+|                               |                     | `DONE` = Switch to Class B mode.                                                                                 |
+|                               |                     | `FAILED` = Beacon sync failed.                                                                                   |
+| Pingslot process              | `+PS:`*< status >*  | `DONE` = At this time, ping slots will be opened periodically. The modem is now in Class B mode.                 |
+| Class B/C downlink            | `+EVT:`*< status >* | `RX_B:-47:3:UNICAST:2:4321` -47 is RSSI, 3 is SNR, Unicast for B / Multicast for C, 2 is Fport, 4321 is payload. |
+| Class A downlink              | `+EVT:`*< status >* | `RX_1:-70:8:UNICAST:1:1234` -70 is RSSI, 8 is SNR, 1 is Fport, 1234 is payload.                                  |
+| Join                          | `+EVT:`*< status >* | `JOINED`                                                                                                         |
+|                               |                     | `JOIN_FAILED_TX_TIMEOUT`                                                                                         |
+|                               |                     | `JOIN_FAILED_RX_TIMEOUT`                                                                                         |
+|                               |                     | `JOIN_FAILED_errorcode` = errorcode can specify specific error on joining process.                               |
+| LoRaWAN Uplink                |                     | `+EVT:TX_DONE`                                                                                                   |
+|                               |                     | `AT_NO_NETWORK_JOINED`                                                                                           |
+| Confirm                       | `+EVT:`*< status >* | `SEND_CONFIRMED_OK`                                                                                              |
+|                               |                     | `SEND_CONFIRMED_FAILED`                                                                                          |
+| P2P                           | `+EVT:`*< status >* | `TXP2P DONE` = Done sending data.                                                                                |
+|                               |                     | `RXP2P RECEIVE TIMEOUT` = Nothing received on the configured P2P LoRa RX window.                                 |
+|                               |                     | `RXP2P:-112:1:1234` =  -112 is RSSI, 1 is SNR and 1234 is the payload.                                           |
+| Link Check                    | `+EVT:`*< status >* | `LINKCHECK:Y0:Y1:Y2:Y3:Y4`                                                                                       |
+|                               |                     | Y0 = represents link status (1:links success, 2: link fail)                                                      |
+|                               |                     | Y1 = represents the DemodMargin                                                                                  |
+|                               |                     | Y2 = represents the NbGateways                                                                                   |
+|                               |                     | Y3 = represents the RSSI                                                                                         |
+|                               |                     | Y4 = represents the SNR                                                                                          |
 
 [Back](#content)
 
@@ -3335,6 +3335,7 @@ OK
 
 ```
 :::tip 📝 NOTE
+- If you are using US915, it is common to have an 8-ch Gateway/LNS setup with channels 8–15. To enable these channels, use `AT+MASK=0002`.
 - `AT_PARAM_ERROR` is returned when setting wrong or malformed value.
 - `AT_BUSY_ERROR` is returned when the set command process is already running.
 - In this case, the default value is 4, and it depends on the region. 0: EU433 1: CN470 2: RU864 3: IN865 4: EU868 5: US915 6: AU915 7: KR920 8: AS923-1 9: AS923-2 `<Input>`: 1 decimal integer and the range of values is 0~8.
@@ -3697,25 +3698,25 @@ Description: P2P Encryption KEY
 
 This command Key will encrypt the data being sent and received.
 
-| Command             | Input Parameter | Return Value                                                                | Return Code |
-| ------------------- | --------------- | --------------------------------------------------------------------------- | ----------- |
-| `AT+ENCKEY?`        | -               | `AT+ENCRY`: get or set the encryption key of P2P mode (8&nbsp;bytes in hex) | OK          |
-| `AT+ENCKEY=?`       | -               | <8&nbsp;hex>                                                                | OK          |
-| `AT+ENCKEY=<Input>` | <8&nbsp;hex>    | -                                                                           | OK          |
+| Command             | Input Parameter | Return Value                                                                 | Return Code |
+| ------------------- | --------------- | ---------------------------------------------------------------------------- | ----------- |
+| `AT+ENCKEY?`        | -               | `AT+ENCRY`: get or set the encryption key of P2P mode (16&nbsp;bytes in hex) | OK          |
+| `AT+ENCKEY=?`       | -               | <16&nbsp;hex>                                                                | OK          |
+| `AT+ENCKEY=<Input>` | <16&nbsp;hex>   | -                                                                            | OK          |
 
 **Example:**
 ```
-AT+ENCKEY=0102030405060708
+AT+ENCKEY=01020304050607080102030405060708
 OK
 
 AT+ENCKEY=?
-AT+ENCKEY=0102030405060708
+AT+ENCKEY=01020304050607080102030405060708
 OK
 ```
 
 :::tip 📝 NOTE
 - `AT_PARAM_ERROR` is returned when setting wrong or malformed value.
-- `<Input>`: 16 digit length, character 0-9, a-f, A-F only, representing eight (8) hexadecimal numbers.
+- `<Input>`: 32 digit length, character 0-9, a-f, A-F only, representing eight (16) hexadecimal numbers.
 :::
 
 [Back](#content)

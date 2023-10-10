@@ -29,7 +29,7 @@ If you need LoRa module with BLE 5.0 capability, you can check [RAK11720](https:
 :::warning ⚠️ WARNING
 Temperature ratings:<br>
 **RAK3172** is -20°&nbsp;C to 85°&nbsp;C<br>
-**RAK3172-T** is -70°&nbsp;C to 85°&nbsp;C<br>
+**RAK3172-T** is -40°&nbsp;C to 85°&nbsp;C<br>
 :::
 
 ## Product Description
@@ -56,4 +56,4 @@ You can configure the mode and operation of the module using AT commands via a U
 - **Supply Voltage**: 2.0&nbsp;V ~ 3.6&nbsp;V
 - **Temperature Range**:
     - **RAK3172**: -20°&nbsp;C ~ 85°&nbsp;C
-    - **RAK3172-T**: -70°&nbsp;C ~ 85°&nbsp;C
+    - **RAK3172-T**: -40°&nbsp;C ~ 85°&nbsp;C

@@ -4,7 +4,7 @@ rak_desc: The WisBlock Biometric Monitoring Kit is a comprehensive and customiza
 rak_grp: [wisblock,wiskit]
 rak_model: Biometric
 prev: ../../
-next: ../Datasheet/
+next: ../Quickstart/
 tags:
     - WisBlock Biometric Monitoring Kit
     - WisBlock Kit
@@ -16,6 +16,7 @@ tags:
 
 Thank you for choosing **WisBlock Biometric Monitoring Kit** in your awesome IoT project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
+* [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 
 ## Product Description

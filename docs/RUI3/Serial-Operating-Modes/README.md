@@ -1,11 +1,11 @@
 # RAK Unified Interface V3 (RUI3) Serial Operating Modes
 
-RAKwireless offers **RAKwireless Unified Interface V3 (RUI3)** which allows you to develop firmware for you RAKwireless devices and modules quickly and easily. RUI3 has APIs that you can use to create your own custom firmware on the module itself. You also have the option to use an external host microcontroller or microprocessor which sends commands via AT or Binary Commands to RUI3 compatible module. The commands are sent via serial interface (abstracted as Serial Port) thru UART, USB, BLE and NFC. 
+RAKwireless offers **RAKwireless Unified Interface V3 (RUI3)** which allows you to develop firmware for you RAKwireless devices and modules quickly and easily. RUI3 has APIs that you can use to create your own custom firmware on the module itself. You also have the option to use an external host microcontroller or microprocessor which sends commands via AT commands <!---or Binary Commands--> to RUI3 compatible module. The commands are sent via serial interface (abstracted as Serial Port) thru UART, USB, BLE and NFC. 
 
 This guide gives information and details about the three Serial Operating Modes of RUI3:
 
 - [AT Mode](/RUI3/Serial-Operating-Modes/AT-Command-Manual/)
-- [Binary Mode](/RUI3/Serial-Operating-Modes/Binary-Command-Manual/)
+<!--- - [Binary Mode](/RUI3/Serial-Operating-Modes/Binary-Command-Manual/)-->
 - [Custom Mode](/RUI3/Serial-Operating-Modes/Custom-Mode/)
 
 ## RUI3 Serial Operating Modes 
@@ -21,7 +21,7 @@ AT+APPEUI=?
 0102030405060708
 OK
 ```
-
+<!---
 ### Binary Mode
 
 It is designed for efficient and reliable M2M communication. It is like the standard AT command mode but it is more efficient because it uses byte arrays based on the proprietary RUI3 protocol. It has added data integrity feature by the implemented checksum in each command in the protocol. It can be used for both configuring devices and transmitting data just like the standard AT command.
@@ -37,10 +37,11 @@ For example, `AT+APPEUI=?` binary command will show the Device EUI but in Binary
 ::: tip 📝 NOTE
 You can to check the Binary Command Mode documentation for more details about the protocol.
 :::
+-->
 
 ### Custom Mode
 
-The AT and Binary Modes have their corresponding parsers to analyze every byte received from the serial port (in every command sent, there will be expected reply). In custom mode, you can disable AT and Binary Modes and create your own set of command and write dedicated parsers for each custom commands you designed. This gives you flexibility in creating your own command. This mode requires you to use RUI3 APIs.
+The AT command<!---and Binary Modes have their--> has corresponding parsers to analyze every byte received from the serial port (in every command sent, there will be expected reply). In custom mode, you can disable AT Command<!---and Binary Modes--> and create your own set of command and write dedicated parsers for each custom commands you designed. This gives you flexibility in creating your own command. This mode requires you to use RUI3 APIs.
 
 ## RAK Modules Default Serial Operating Mode
 
@@ -83,6 +84,7 @@ The default mode of every serial port can be switched to a new mode. After switc
 
 After switching to a new mode, the new mode setting will be kept even if the device resets.
 
+<!---
 <rk-img
   src="/assets/images/rui3/mode_switch.png"
   width="85%"
@@ -92,11 +94,13 @@ After switching to a new mode, the new mode setting will be kept even if the dev
 **AT Command to Binary Mode**
 
 `AT+APM` command on a Serial Port will switch its serial operating mode to Binary Command mode.
+-->
 
 **AT Command to Custom Mode**
 
 You need to use the RUI API `Serial.begin` to switch the serial operating mode to custom mode. There is no direct AT command to switch to custom mode. You have to upload a firmware that uses the RUI API to the device. For example, in switching the Serial1 to custom mode, you will need `Serial1.begin(115200,RAK_CUSTOM_MODE)`.
 
+<!---
 **Binary Mode to AT Command**
 
 `AT+ATM` command on a Serial Port will switch its serial operating mode to AT Command mode. In Binary Command mode, you can also send byte array `0x7E 0x00 0x04 0x01 0x00 0x00 0x00 0x02 0x48 x04` to switch to AT Command mode.
@@ -104,11 +108,12 @@ You need to use the RUI API `Serial.begin` to switch the serial operating mode t
 **Binary Mode to Custom Mode**
 
 You need to use the RUI API `Serial.begin` to switch the serial operating mode to custom mode. There is no direct Binary command to switch to custom mode. You have to upload a firmware that uses the RUI API to the device. For example, in switching Serial1 to custom mode, you will need `Serial1.begin(115200,RAK_CUSTOM_MODE)`.
-
+-->
 **Custom Mode to AT Command**
 
 `AT+ATM` command on a Serial Port will switch its serial operating mode to AT Command mode.
 
+<!---
 **Custom Mode to Binary Mode**
 
 You need to use the RUI API `Serial.begin` to switch the serial operating mode to Binary mode. For example, in switching Serial1 to Binary mode, you will need `Serial1.begin(115200,API_MODE)`.
@@ -122,4 +127,14 @@ You need to use the RUI API `Serial.begin` to switch the serial operating mode t
 | Benefit      | Friendly interface for human | Efficient in M2M case and can send data or configure devices | Extendable                        |
 | Drawback     | Inefficient in M2M case      | Complicated                                                  | Need to write parser from scratch |
 | Prerequisite | No                           | No                                                           | Need to setup IDE to write code   |
+-->
 
+## Serial Operating Mode Design Summary
+
+|              | **AT Command Mode**          |  **Custom Mode**                   |
+| ------------ | ---------------------------- | ---------------------------------- |
+| Target User  | Human/Machine                |  Human/Machine                     |
+| Purpose      | Configure devices            |  Customize serial port parser      |
+| Benefit      | Friendly interface for human |  Extendable                        |
+| Drawback     | Inefficient in M2M case      |  Need to write parser from scratch |
+| Prerequisite | No                           |  Need to setup IDE to write code   |

@@ -14,7 +14,7 @@ rak_img: /assets/images/wistrio/linkone/linkone.png
 ## Overview
 ### Description
 
-The **RAKwireless Link.ONE** is a versatile IoT device that combines Cellular IoT (LTE-M/NB-IoT) and LoRaWAN technology, making it ideal for a wide range of IoT applications. The device is based on the Nordic nRF52840 SoC, Semtech SX1262 LoRa transceiver, and Quectel BG77 LTE module with built-in GPS, providing a powerful and flexible platform for IoT development. Additionally, Link.ONE includes Monogoto SIM which provides global cellular connectivity service for IoT devices, ensuring that the device can connect to the cloud regardless of location.
+The **RAKwireless Link.ONE** is a versatile IoT device that combines Cellular IoT (LTE-M/NB-IoT) and LoRaWAN technology, making it ideal for a wide range of IoT applications. The device is based on the Nordic nRF52840 SoC, Semtech SX1262 LoRa transceiver, and Quectel BG77 LTE module with built-in GPS, providing a powerful and flexible platform for IoT development.
 
 Link.ONE also includes support for modular sensor modules based on the WisBlock platform, providing developers with a range of sensors and interfaces that can be easily integrated with the device. This modular approach to sensor integration allows developers to quickly and easily customize the device to meet the specific needs of their application, without having to design and build custom hardware.
 
@@ -43,9 +43,6 @@ Overall, the RAKwireless Link.ONE is a powerful and flexible IoT device that pro
   - Nano SIM and ESIM options
   - Supports LTE CAT M1 and LTE CAT NB2
   - GNSS location
-- Monogoto SIM card
-  - Data package of 500&nbsp;MB for 10&nbsp;years
-  - Worldwide coverage, see Monogoto coverage map
 - Unify Enclosure 100x75x38&nbsp;mm
   - IP65 enclosure
   - Prepared for USB access and an external LTE antenna
@@ -61,7 +58,7 @@ Overall, the RAKwireless Link.ONE is a powerful and flexible IoT device that pro
 <rk-img
   src="/assets/images/wistrio/linkone/datasheet/linkone-set.png"
   width="60%"
-  caption="Link.ONE Complete Set with Monogoto SIM card"
+  caption="Link.ONE Complete Set"
 />
 
 ### Hardware
@@ -163,7 +160,7 @@ You can check the complete [8xx MHz Antenna Datasheet](https://downloads.rakwire
 
 ##### Cellular
 
-Link.ONE supports LPWAN Cellular technologies like LTE-M and NB-IoT. It includes a Monogot SIM card with a 500&nbsp;MB data plan that is usable for 10&nbsp;years.
+Link.ONE supports LPWAN Cellular technologies like LTE-M and NB-IoT.
 
 ###### Frequency Bands
 
