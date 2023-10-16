@@ -204,7 +204,7 @@ The Custom Logo extension allows you to upload your logo in the Web UI. This ext
 Being able to rebrand your Web UI is particularly useful and even required when it comes to companies that need to promote and visualize their brand or product. This is where RAKWireless’ white label feature comes in handy for the clients.
 
 <rk-btn
-  src="https://downloads.rakwireless.com/LoRa/WisGateOS2/WisGateOS2-Extensions/wes-custom-logo-1.0.0_b1.ipk"
+  src="https://downloads.rakwireless.com/LoRa/WisGateOS2/WisGateOS2-Extensions/wes-custom-logo-1.0.1_b18.ipk"
   label="Download Custom Logo Extension"
   size="1.5rem"
   _blank

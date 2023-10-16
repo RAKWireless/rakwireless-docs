@@ -252,7 +252,7 @@ python3 env_check.py
 
 <rk-img
   src="/assets/images/wisblock/rak4631/sidewalk/python-1.png"
-  width="50%"
+  width="45%"
   caption="Environment Test Script"
 />
 
@@ -264,7 +264,7 @@ python3 ApplicationServerDeployment/deploy_stack.py
 
 <rk-img
   src="/assets/images/wisblock/rak4631/sidewalk/python-2.png"
-  width="75%"
+  width="65%"
   caption="Deployment of Sidewalk Stack"
 />
 
@@ -276,8 +276,6 @@ You can create a device profile on your own or let the system create it for you.
 
 1. Login to AWS as the admin user.
 2. Make sure to set the region to **us-east-1**, and click **IoT Core**.
-
-<!-- Blurry image -->
 
 <rk-img
   src="/assets/images/wisblock/rak4631/sidewalk/aws-9.png"
@@ -383,7 +381,7 @@ The programming pins of the WisBlock RAK4631 Core module are exposed on one side
 
 <rk-img
   src="/assets/images/wisblock/rak4631/sidewalk/rakdap1.png"
-  width="65%"
+  width="50%"
   caption="RAK4630 and RAKDAP1 Connection"
 />
 
@@ -403,7 +401,7 @@ RAKDAP1 requires a Python 3 installation before it can be used. Download the lat
 
 <rk-img
   src="/assets/images/wisblock/rak4631/sidewalk/python-3.png"
-  width="60%"
+  width="50%"
   caption="Python Installation"
 />
 
@@ -411,7 +409,7 @@ RAKDAP1 requires a Python 3 installation before it can be used. Download the lat
 
 <rk-img
   src="/assets/images/wisblock/rak4631/sidewalk/python-4.png"
-  width="60%"
+  width="50%"
   caption="Python Installation"
 />
 

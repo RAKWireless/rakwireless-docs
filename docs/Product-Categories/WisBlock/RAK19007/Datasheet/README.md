@@ -508,13 +508,13 @@ The table below lists the operation and storage temperature requirements of RAK1
 The component schematics diagram of the RAK19007 is shown in **Figure 15** and **Figure 16**.
 
 <rk-img
-  src="/assets/images/wisblock/rak19007/datasheet/image-20220217100026263.png"
+  src="/assets/images/wisblock/rak19007/datasheet/power-schematic.png"
   width="100%"
   caption="RAK19007 schematic diagram (Power)"
 />
 
 <rk-img
-  src="/assets/images/wisblock/rak19007/datasheet//image-20220217100101212.png"
+  src="/assets/images/wisblock/rak19007/datasheet/slots-schematic.png"
   width="100%"
   caption="RAK19007 schematic diagram (Slots)"
 />

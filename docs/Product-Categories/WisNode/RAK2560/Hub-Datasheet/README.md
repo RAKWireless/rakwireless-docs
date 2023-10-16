@@ -181,7 +181,7 @@ Download the latest firmware version of RAK2560 Sensor Hub in the table provided
 
 |       Model        |    Version     |                                             Firmware                                              |
 | :----------------: | :------------: | :-----------------------------------------------------------------------------------------------: |
-| RAK2560 Sensor Hub | Release 1.1.65 | [Download](https://downloads.rakwireless.com/LoRa/SensorHub/Firmware/RAK2560_Latest_Firmware.zip) |
+| RAK2560 Sensor Hub | Release 1.1.79 | [Download](https://downloads.rakwireless.com/LoRa/SensorHub/Firmware/RAK2560_Latest_Firmware.zip) |
 
 ## Certification
 
