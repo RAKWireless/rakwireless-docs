@@ -30,10 +30,11 @@ Before going through each and every step on using RAK4631 WisBlock Core, make su
 
 RAK4631 is also included in various WisBlock kits in the RAKwireless store:
 
-- [WisBlock Starter Kit](https://store.rakwireless.com/collections/kits-bundles/products/wisblock-starter-kit?utm_source=WisBlockStarterKit&utm_medium=Document&utm_campaign=BuyFromStore) - This includes a RAK4631 with RAK5005-O WisBlock Base board. This kit is ideal to get started immediately with WisBlock.
-- [WisBlock Kit](https://store.rakwireless.com/collections/kits-bundles/products/wisblock-kit?variant=37758662049990?utm_source=WisBlockKit&utm_medium=Document&utm_campaign=BuyFromStore) - This is like the Starter Kit but with various WisBlock modules already included on the kit like sensors, IO, and other interfaces.
-- [WisBlock Connected Box](https://store.rakwireless.com/collections/kits-bundles/products/wisblock-connected-box?utm_source=WisBlockConnectedBox&utm_medium=Document&utm_campaign=BuyFromStore) - This is like the WisBlock Kit but cheaper because some modules and peripherals are not included. **Excluded** parts are RAKBox-B5, RAK1921, RAKDAP1, electric screwdriver (manual is included), and battery holder.
-- [Helium Developer Kit](https://store.rakwireless.com/collections/kits-bundles/products/helium-developer-kit?utm_source=HeliumDeveloperKit&utm_medium=Document&utm_campaign=BuyFromStore) - This is the WisBlock Kit for the Helium brand.
+- [WisBlock Starter Kit](https://store.rakwireless.com/collections/kits-bundles/products/wisblock-starter-kit?utm_source=WisBlockStarterKit&utm_medium=Document&utm_campaign=BuyFromStore) - includes the RAK4631 with RAK5005-O WisBlock Base Board. This kit is ideal to get started immediately with WisBlock.
+- [WisBlock Kit](https://store.rakwireless.com/collections/kits-bundles/products/wisblock-kit?variant=37758662049990?utm_source=WisBlockKit&utm_medium=Document&utm_campaign=BuyFromStore) - a Starter Kit with various WisBlock modules already included on the kit like sensors, IO, and other interfaces.
+- [WisBlock Connected Box](https://store.rakwireless.com/collections/kits-bundles/products/wisblock-connected-box?utm_source=WisBlockConnectedBox&utm_medium=Document&utm_campaign=BuyFromStore) - a WisBlock Kit but cheaper because some modules and peripherals are not included. **Excluded** parts are RAKBox-B5, RAK1921, RAKDAP1, electric screwdriver (manual is included), and battery holder.
+- [Helium Developer Kit](https://store.rakwireless.com/collections/kits-bundles/products/helium-developer-kit?utm_source=HeliumDeveloperKit&utm_medium=Document&utm_campaign=BuyFromStore) - the WisBlock Kit for the Helium brand.
+- [Meshtatic Starter Kit](https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?utm_source=meshtatickit&utm_medium=Document&utm_campaign=BuyFromStore) - includes the RAK4631 with RAK19007 as its WisBlock Base Board.
 
 
 #### Software
