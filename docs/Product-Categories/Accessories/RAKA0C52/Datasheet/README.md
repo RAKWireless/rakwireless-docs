@@ -1,7 +1,7 @@
 ---
 prev: ../Overview/
 next: false
-tags: 
+tags:
     - RAKA0C52
     - datasheet
 rak_desc: Provides comprehensive information about your Magnetic Antenna Base to help you use it. This information includes technical specifications and characteristics.
@@ -37,19 +37,21 @@ rak_img: /assets/images/accessories/rak0c52/1.antenna-up.png
 
 ## Specifications
 
-  
-| Model                     | Antenna Magnetic base        |
+
+| Model                     | Antenna Magnetic Base        |
 | :------------------------ | ---------------------------- |
 | **Frequency Range**       | DC0~6&nbsp;GHz               |
 | **VSWR**                  | ≤ 2.0                        |
-| **Cable length**          | 2 meters                     |
-| **Cable type**            | LMR200                       |
+| **Maximum Input Power**   | 5% ~ 95%                     |
+| **Cable Length**          | 2 meters                     |
+| **Cable Type**            | LMR200                       |
 | **Impedance**             | 50&nbsp;Ω                    |
 | **Polarization**          | Linear                       |
-| **Material(color)**       | Plastic (Black)              |
-| **Connector type**        | N-type female to RP-SMA      |
-| **Body dimensions**       | Փ88.0&nbsp;mm x 27.5&nbsp;mm |
-| **Operation Temperature** | -30&nbsp;°C ~ +75&nbsp;°C    |
+| **Material (color)**      | Plastic (Black)              |
+| **Connector Type**        | N-type female to RP-SMA      |
+| **Body Dimensions**       | Փ88.0&nbsp;mm x 27.5&nbsp;mm |
+| **Operation Temperature** | -40&nbsp;°C ~ +65&nbsp;°C    |
+| **Storage Temperature**   | -40&nbsp;°C ~ +80&nbsp;°C    |
 | **Humidity Range**        | 5% ~ 95%                     |
 
 

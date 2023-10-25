@@ -12,15 +12,51 @@ tags:
 
 # WisGateOS 2 Extensions
 
+:::warning ⚠️ IMPORTANT
+WisGateOS 2.2 comes with significant updates that affect all extensions, downgrade flow, and others. Read the following critical points carefully:
+- **Downgrading Restrictions**: Once you upgrade to WisGateOS 2.2.x, you will not be able to revert to version 2.1.x using the standard downgrade (WebUI). Make sure to back up and secure all critical data before proceeding with the upgrade. Only through a recovery procedure will a downgrade be possible. The steps for the recovery procedure can be found here: [OpenWRT Recovery Procedure](https://docs.rakwireless.com/Knowledge-Hub/Learn/OpenWRT-Recovery-Procedure/).
+- **Extension Signature Requirement**: All extensions for WisGateOS 2.2.x will now require a signature for increased security and compatibility. Extensions that lack this signature (such as those for WisGateOS 2.0.x/2.1.x) will not be installable on 2.2.x. This ensures that you are running the new firmware with verified and trusted extensions. On WisGateOS 2.2.x, the Extension Gallery will automatically update installed Extensions. Some extensions, such as WireGuard, require manual installation after upgrading to WisGateOS 2.2.x.
+- **Internet Connection**: Because the new firmware and Extension gallery require a signature check, an Internet connection is required during the update.
+- **Dual Firmware**: Some customers may still be using firmware version 2.1.x. Both versions will be supported, but it is critical to use the correct and corresponding extensions for each version to avoid compatibility issues. We strongly recommend moving to the new WisGateOS 2.2.x to be able to use the latest features, security, and services.
+:::
+
+The following table list the supported WisGate Edge Gateway models of every WisGateOS:
+
+|              WisGateOS 1.x               |                  WisGateOS 2.x                  |
+| :--------------------------------------: | :---------------------------------------------: |
+|  WisGate Edge Lite (RAK7258 / RAK7258C)  | WisGate Edge Lite 2 V2 (RAK7268V2 / RAK7268CV2) |
+| WisGate Edge Lite 2 (RAK7268 / RAK7268C) |  WisGate Edge Pro V2 (RAK7289V2 / RAK7289CV2)   |
+|  WisGate Edge Pro (RAK7289 / RAK7289C)   | WisGate Edge Prime V2 (RAK7240V2 / RAK7240CV2)  |
+| WisGate Edge Prime (RAK7240 / RAK7240C)  |                        -                        |
+
+
+|           Feature            | WisGateOS 1.x | WisGateOS 2.x |
+| :--------------------------: | :-----------: | :-----------: |
+|            UDP PF            |       ✔       |       ✔       |
+|        Basics Station        |       ✔       |       ✔       |
+|         Built-in LNS         |       ✔       |       ✔       |
+|      MQTT integrations       |       ✔       |       ✔       |
+|      HTTP integrations       |       ✔       |       ✔       |
+|           MultiWAN           |       ✔       |       ✔       |
+|      WisDM integration       |       ✔       |       ✔       |
+|   Latest OpenWrt security    |       X       |       ✔       |
+| Secure activation from WisDM |       X       |       ✔       |
+|          OpenSSL1.1          |       X       |       ✔       |
+|           OpenVPN            |       X       |       ✔       |
+|          WireGuard           |       X       |       ✔       |
+|          Extensions          |       X       |       ✔       |
+|             LBT*             |       X       |       ✔       |
+|        Spectral Scan*        |       X       |       ✔       |
+
+::: tip 📝 NOTE
+Some extensions will be available for certain gateway models since they are related to specific hardware functionality.
+:::
+
 ## Overview
 
 WisGateOS 2 features an extension functionality, which provides additional features and functions that can be added or removed, based on your needs. Later this year, RAKwireless will provide the option for our users to build their own extensions.
 
 The extensions are built to work with version 2 gateways running the WisGateOS 2.
-
-::: tip 📝 NOTE
-Some extensions will be available for certain gateway models since they are related to specific hardware functionality.
-:::
 
 
 ## How to Add or Remove an Extension
@@ -134,6 +170,8 @@ Wait for the process to finish.
 
 ### Breathing Light
 
+***Compatible with WisGateOS2 2.2.0x/2.1.x only.***
+
 The breathing light LED is located on the top cover of the WisGate Edge Lite 2 gateways and helps to easily determine the gateway’s status visually. The breathing light extension allows you to enable or disable the breathing light on the gateway’s top cover. The default state of the LED is as in its Normal state - a slowly blinking blue light.
 
 ::: tip 📝 NOTE
@@ -148,6 +186,8 @@ Breathing Light extension is available only for the WisGate Edge Lite 2 version 
 />
 
 #### Working Modes
+
+***Compatible with WisGateOS2 2.2.0x/2.1.x only.***
 
 By using the breathing light extension you can personalize the LED light’s working modes, frequency, and color. There are two working modes. The first one is All. If you choose it, the LED light will be active when your gateway is working properly. The second work mode is Warning only – the LED light signifies if there is some kind of malfunction.
 
@@ -198,6 +238,7 @@ You can check the status of the LED on the gateway itself.
 
 ### Custom Logo
 
+***Compatible with WisGateOS2 2.2.0x/2.1.x only.***
 
 The Custom Logo extension allows you to upload your logo in the Web UI. This extension is universal and it works for all gateways, supporting WisGateOS 2. The Custom Logo extension is created with the thought of small or bigger enterprises that want their logo to be recognized and used in their everyday work.
 
@@ -256,11 +297,13 @@ You can check the guide on how to download the extension above.
   caption="Logo Preview for Mobile Users"
 />
 
-1. To apply the selected logos, click **Save changes**. The page will reload and apply the logos.
+4. To apply the selected logos, click **Save changes**. The page will reload and apply the logos.
 
 
 
 ### Country Settings/LBT
+
+***Compatible with WisGateOS2 2.2.0x/2.1.x only.***
 
 LBT (Listen Before Talk) means that, before transmitting, the gateway checks the availability of the channel. This is necessary because LoRaWAN is a multi-channel protocol and uses ISM Band. Anyone can use the band - a collision occurs if two or more end devices send signals simultaneously.
 
@@ -352,6 +395,8 @@ To install the extensions, follow the steps in the [guide](https://docs.rakwirel
 
 ### Open/Close Port
 
+***Compatible with WisGateOS2 2.2.0x/2.1.x only.***
+
 This extension can add or delete packet traffic management rules on the gateway through the Open/Close port extension, allowing the host IP of any (or specific) network segment to communicate with the gateway through the specified port.
 
 <rk-btn
@@ -424,6 +469,7 @@ For example, the **Allow-http** service indicates that any host in WAN can commu
 
 ### Solar Battery
 
+***Compatible with WisGateOS2 2.2.0x/2.1.x only.***
 
 The Solar battery extension is used to display the status of the solar battery used by the gateway, including the solar battery's performance, battery health status, cycle period, battery power, charging and discharging mode, and other information. The extension is compatible only with **RAK7289 WisGate Edge Pro gateways**. You can learn the status of solar batteries used in real time through the UI interface.
 
@@ -481,6 +527,7 @@ To install the extension, follow the steps in the [guide](https://docs.rakwirele
 
 ### Wireguard
 
+***Compatible with WisGateOS2 2.2.0x/2.1.x only.***
 
 WireGuard is a simple but fast VPN. It aims to be faster, simpler, and leaner than the IPsec protocol. It intends to be more performant than the well-known RAKwireless - OpenVPN. Before, it was not possible to use the WireGuard protocol on the RAKwireless gateways, but that is not the case now.
 
@@ -566,6 +613,8 @@ Remember to add the WireGuard Client credentials to the WireGuard server configu
 />
 
 ### OpenVPN
+
+***Compatible with WisGateOS2 2.2.0x/2.1.x only.***
 
 OpenVPN is a virtual private network (VPN). A VPN is created where a server is deployed that both the Gateway and any number of customer devices (PC, Phone, etc.) can connect to via a public IP address. This is possible to implement using any of the backhaul connectivity options the Gateway supports (Ethernet, Wi-Fi, LTE). For the LTE backhaul, make sure that the gateway has a static public IP.
 
