@@ -10,9 +10,53 @@ tags:
 
 # WisGate OS 2 User Manual
 
+:::warning ⚠️ IMPORTANT
+WisGateOS 2.2 comes with significant updates that affect all extensions, downgrade flow, and others. Read the following critical points carefully:
+- **Downgrading Restrictions**: Once you upgrade to WisGateOS 2.2.x, you will not be able to revert to version 2.1.x using the standard downgrade (WebUI). Make sure to back up and secure all critical data before proceeding with the upgrade. Only through a recovery procedure will a downgrade be possible. The steps for the recovery procedure can be found here: [OpenWRT Recovery Procedure](https://docs.rakwireless.com/Knowledge-Hub/Learn/OpenWRT-Recovery-Procedure/).
+- **Extension Signature Requirement**: All extensions for WisGateOS 2.2.x will now require a signature for increased security and compatibility. Extensions that lack this signature (such as those for WisGateOS 2.0.x/2.1.x) will not be installable on 2.2.x. This ensures that you are running the new firmware with verified and trusted extensions. On WisGateOS 2.2.x, the Extension Gallery will automatically update installed Extensions. Some extensions, such as WireGuard, require manual installation after upgrading to WisGateOS 2.2.x.
+- **Internet Connection**: Because the new firmware and Extension gallery require a signature check, an Internet connection is required during the update.
+- **Dual Firmware**: Some customers may still be using firmware version 2.1.x. Both versions will be supported, but it is critical to use the correct and corresponding extensions for each version to avoid compatibility issues. We strongly recommend moving to the new WisGateOS 2.2.x to be able to use the latest features, security, and services.
+:::
+
+The following table list the supported WisGate Edge Gateway models of every WisGateOS:
+
+|              WisGateOS 1.x               |                  WisGateOS 2.x                  |
+| :--------------------------------------: | :---------------------------------------------: |
+|  WisGate Edge Lite (RAK7258 / RAK7258C)  | WisGate Edge Lite 2 V2 (RAK7268V2 / RAK7268CV2) |
+| WisGate Edge Lite 2 (RAK7268 / RAK7268C) |  WisGate Edge Pro V2 (RAK7289V2 / RAK7289CV2)   |
+|  WisGate Edge Pro (RAK7289 / RAK7289C)   | WisGate Edge Prime V2 (RAK7240V2 / RAK7240CV2)  |
+| WisGate Edge Prime (RAK7240 / RAK7240C)  |                        -                        |
+
+::: tip 📝 NOTE
+The hardware in V1 and V2 gateways is different. WisGateOS 2 can be used only with V2 gateways.
+:::
+
+
+|           Feature            | WisGateOS 1.x | WisGateOS 2.x |
+| :--------------------------: | :-----------: | :-----------: |
+|            UDP PF            |       ✔       |       ✔       |
+|        Basics Station        |       ✔       |       ✔       |
+|         Built-in LNS         |       ✔       |       ✔       |
+|      MQTT integrations       |       ✔       |       ✔       |
+|      HTTP integrations       |       ✔       |       ✔       |
+|           MultiWAN           |       ✔       |       ✔       |
+|      WisDM integration       |       ✔       |       ✔       |
+|   Latest OpenWrt security    |       X       |       ✔       |
+| Secure activation from WisDM |       X       |       ✔       |
+|          OpenSSL1.1          |       X       |       ✔       |
+|           OpenVPN            |       X       |       ✔       |
+|          WireGuard           |       X       |       ✔       |
+|          Extensions          |       X       |       ✔       |
+|             LBT              |       X       |       ✔       |
+|        Spectral Scan         |       X       |       ✔       |
+
+::: tip 📝 NOTE
+**LBT** and **Spectral Scan** will be available for certain gateway models since they are related to specific hardware functionality.
+:::
+
 ## Overview
 
-This document describes in detail the functionality of the WisGateOS 2. The system builds on top of OpenWRT and runs on all RAK WisGate Edge V2 gateways. The guide presents general overview and provides guides and detailed configuration of the gateway. It functions as reference for several products with similar functionality. Thus, some sections will apply to certain products and not others. 
+This document describes in detail the functionality of the WisGateOS 2. The system builds on top of OpenWRT and runs on all RAK WisGate Edge V2 gateways. The guide presents general overview and provides guides and detailed configuration of the gateway. It functions as reference for several products with similar functionality. Thus, some sections will apply to certain products and not others.
 
 
 
@@ -21,7 +65,7 @@ This document describes in detail the functionality of the WisGateOS 2. The syst
 To power up the gateway, check the Quick Start guide of the respective device. There are two ways to access the gateway (**Wi-Fi AP Mode** and **WAN Port (Ethernet)**) explained in the corresponding document.
 
 ::: tip 📝 NOTE
-Make sure all the antennas are connected before powering the Gateway. 
+Make sure all the antennas are connected before powering the Gateway.
 :::
 
 
@@ -34,7 +78,7 @@ The password needs to comply with the following rules:
 - Should be at least 12 characters long;
 - Has at least one special character (!“#$%&\‘()*+,-./:;<=>?@[\]^_`{|}~);
 - Has at least one number;
-- Has at least one standard Latin letter (used in the English alphabet). 
+- Has at least one standard Latin letter (used in the English alphabet).
 
 <rk-img
   src="/assets/images/software-apis-and-library/wisgateos2/main/1.png"
@@ -110,9 +154,9 @@ The page consists of several blocks where the user can see information about the
   - **Frequency band** – The frequency band set on the gateway.
   - **Number of channels** – The number of the channels of the gateway (8-channel/16-channel).
   - **Uptime** **–** The time the gateway has been working for.
-  - **Local time**- The local time set to the gateway**.** 
+  - **Local time**- The local time set to the gateway**.**
   - **Firmware** – The details about the firmware version. The **Firmware details** button will redirect the user to the **General settings**, which are explained in the **Settings** menu further down this document.
-- **Packet capture** - This is the feature that records data packets transmitted in the network. By clicking the arrow (<img src="/assets/images/software-apis-and-library/wisgateos2/main/b.png"/>), the user will be redirected to the **Gateway Packet Capture** menu. 
+- **Packet capture** - This is the feature that records data packets transmitted in the network. By clicking the arrow (<img src="/assets/images/software-apis-and-library/wisgateos2/main/b.png"/>), the user will be redirected to the **Gateway Packet Capture** menu.
 
 <rk-img
   src="/assets/images/software-apis-and-library/wisgateos2/main/7.png"
@@ -122,7 +166,7 @@ The page consists of several blocks where the user can see information about the
 
 - Gateway Packet Capture menu:
   - **Pause/Restart session** – Тhe button pauses or restarts the session.
-  - **Download session** – Тhe button downloads a .json file with packets data in it. 
+  - **Download session** – Тhe button downloads a .json file with packets data in it.
   - **Filter** – The button drops-down a filter menu. The **Reset filter** text, will reset the filter to default. The user can filter the packets by:
     - **Type** – Тype of the packet.
     - **Frequency** – The frequency on which the packet is received/sent.
@@ -181,42 +225,42 @@ When you choose **Packet forwarder** work mode, the settings will change to the 
   - **Conform to LoRaWAN** - When enabled (by default), the gateway will comply to the LoRaWAN protocol. The user can disable it and set their own channels.
 
     When **Conform to LoRaWAN** is disabled, you can either **Select a template** or manually **Edit** the LoRa channels for each concentrator.
-    
+
     <rk-img
         src="/assets/images/software-apis-and-library/wisgateos2/main/11.1.png"
         width="100%"
         caption="Confirm to LoRaWAN is disabled"
     />
-    
+
     - **Select a template** - The user have a list of templates for frequency plans to choose from depending on the LoRaWAN region that the gateway supports.
     - **Edit** button - Clicking the button will redirect the user to the LoRa Concentrator settings, where they can set custom channels.
-    
+
       <rk-img
         src="/assets/images/software-apis-and-library/wisgateos2/main/11.2.png"
         width="100%"
         caption="LoRa Concentrator settings"
         />
-       
+
       - **Radio 0 Center Frequency (Mhz)** – The center frequency for radio 0.
       - **Radio 1 Center Frequency (Mhz)** ­- The center frequency for radio 1.
       - **Minimum TX frequency (Mhz)** – The minimum frequency for transmission.
       - **Maximum TX frequency (Mhz)** – The maximum TX frequency for transmission.
       - **Channels** - The user can enable/disable channels with the corresponding switch. In the **Radio** field, the user can select what radio the channel must use. In the **IF** field, the difference of the frequency of the selected radio center frequency in kHz is written.
-  
+
   - **LoRaWAN Public** - When enabled (by default), the gateway will process data from all end devices. If you want to create a private network, you can turn it off. The gateway will process the data only from the end devices, which sync word is changed to private.
-  - **Additional for the middle band gateways** (supporting **RU864**, **IN865**, and **EU868** LoRaWAN regions) - Under the **LoRaWAN Public** switch, the user sees the default channels and can remove them by clicking on the **X** next to each. 
-  
+  - **Additional for the middle band gateways** (supporting **RU864**, **IN865**, and **EU868** LoRaWAN regions) - Under the **LoRaWAN Public** switch, the user sees the default channels and can remove them by clicking on the **X** next to each.
+
     - **Multi-SF LoRa Channel Frequency (MHz)** – The user can add a frequency for the Multi-SF LoRa channel.
     - **Standard LoRa Channel Frequency (MHz)** – The user can add a frequency for the standard LoRa channel.
     - **FSK Channel Frequency (MHz)** – The user can add a frequency for the FSK channel.
-  - **Additional for the high band gateways** (supporting **US915**, **AU915**, **KR920**, and **AS923** LoRaWAN regions) - Under the **LoRaWAN Public** switch, the user sees the **Frequency Sub-band** section. From the drop-down menu, the user can choose sub-bands to use for the uplink traffic. 
-  
+  - **Additional for the high band gateways** (supporting **US915**, **AU915**, **KR920**, and **AS923** LoRaWAN regions) - Under the **LoRaWAN Public** switch, the user sees the **Frequency Sub-band** section. From the drop-down menu, the user can choose sub-bands to use for the uplink traffic.
+
 - **Protocol** - Here, click on **Choose from the available protocols** and expand the options, the user can choose which protocol to use as well as the **Static Interval (sec)** (the time interval of how often statistics are pushed to the server).
 - **Semtech UDP GWMP Protocol** - Choosing this option will give the user the ability to set **UDP Protocol Parameters**.
 
   - **Server address** – The address of the LoRa Network Server (LNS).
   - **Server Port Up/Down** – The ports of the LoRa Server that are going to be used for inbound and outbound traffic.
-  - **Push Timeout (sec)** - The time delay for the server response after sending uplink data. 
+  - **Push Timeout (sec)** - The time delay for the server response after sending uplink data.
   - **Keepalive Interval (sec)** - The interval of which the gateway sends data to make sure that the server is aware that the gateway is online.
   - **Auto-restart Threshold** - This variable defines how many times the Keepalive Interval can expire before the Packet Forwarder restarts.
 
@@ -293,7 +337,7 @@ When the **Basics station** work mode is chosen, the corresponding settings pop 
   width="100%"
   caption="Basics station server setup"
 />
-  
+
   - **Basics Station Server Type** - The user can choose between **CUPS-BOOT Server**, **CUPS Server**, **LNS Server**.
   - **Server URL** – The address of the server to which the gateway is going to connect.
   - **Server Port** – This is the corresponding port of the server.
@@ -324,12 +368,12 @@ When the **Built-in network server** work mode is chosen, the corresponding sett
   />
   - **Region** - Here is where the region is set. Note that different hardware supports different LoRaWAN regions.
   - **LoRaWAN Public** - When enabled (by default), the gateway will process data from all end devices. If you want to create a private network, you can turn it off. The gateway will process the data only from the end devices, which sync word is changed to private.
-  - **Additional for the middle band gateways** (supporting **RU864**, **IN865**, and **EU868** LoRaWAN regions) - Under the **LoRaWAN Public** switch, the user sees the default channels and can remove them by clicking on the **X** next to each. 
+  - **Additional for the middle band gateways** (supporting **RU864**, **IN865**, and **EU868** LoRaWAN regions) - Under the **LoRaWAN Public** switch, the user sees the default channels and can remove them by clicking on the **X** next to each.
 
     - **Multi-SF LoRa Channel Frequency (MHz)** – The user can add a frequency for the Multi-SF LoRa channel.
     - **Standard LoRa Channel Frequency (MHz)** – The user can add a frequency for the standard LoRa channel.
     - **FSK Channel Frequency (MHz)** – The user can add a frequency for the FSK channel.
-  - **Additional for the high band gateways** (supporting **US915**, **AU915**, **KR920**, and **AS923** LoRaWAN regions) - Under the **LoRaWAN Public** switch, the user sees the **Frequency Sub-band** section. From the drop-down menu, the user can choose sub-bands to use for the uplink traffic. 
+  - **Additional for the high band gateways** (supporting **US915**, **AU915**, **KR920**, and **AS923** LoRaWAN regions) - Under the **LoRaWAN Public** switch, the user sees the **Frequency Sub-band** section. From the drop-down menu, the user can choose sub-bands to use for the uplink traffic.
 
 - **Network Server Parameters** - The user needs to click on **Network server parameters are used to configure general setup for your LoRa built-in server. This section is required for filling-in.** to expand the settings menu.
 
@@ -349,7 +393,7 @@ When the **Built-in network server** work mode is chosen, the corresponding sett
   - **RX2 Data Rate** - The Data Rate of the frames to be sent in the second receive window.
   - **Downlink Tx Power (dBm)** – It is useful, if you want to use a larger antenna with more gain. Values from -6 to 20 are permissible.
   - **Disable Frame-counter Validate** - this function turns on/off the Frame counter validation.
-  - **End device-status request interval (s)** - This shows how often should the end-devices be polled for their status Log Level. 
+  - **End device-status request interval (s)** - This shows how often should the end-devices be polled for their status Log Level.
   - **Statistic Interval (sec)** – This shows how often the statistics will be gathered.
 
 - **Gateway backend** - To extend the settings field, the user needs to click on **Configure the Gateway Backend to allow the central gateway and extenders to communicate via MQTT**.
@@ -386,13 +430,13 @@ When the **Built-in network server** work mode is chosen, the corresponding sett
   - **Beacon TX Power** – This is the transmit power of the beacon ping.
 
 - **Integration Interface Parameters** - Here, the user can configure an integration to an external server. To expand the menu, the user needs to click on **Configure the Integration Interface to forward all received data to an external network server**. The settings change depending on the chosen **Integration mode.**
-  
+
 <rk-img
   src="/assets/images/software-apis-and-library/wisgateos2/main/24.png"
   width="100%"
   caption="Integration Interface Parameters"
 />
-  
+
   - **Enable Integration Interface** – This switch enables the Integration Interface switch enables/disables the integration.
   - **Generic MQTT** integration mode:
     - **MQTT Broker Address** - The IP address of the machine where the MQTT Broker is hosted (default is 127.0.0.1 for the built-in one).
@@ -408,8 +452,8 @@ When the **Built-in network server** work mode is chosen, the corresponding sett
   - **AWS IoT Core** integration mode:
     - **AWS IoT Core endpoint URL** – This is the address of the AWS.
     - **AWS IoT Core endpoint Port** – The corresponding port of the server.
-    - **Root CA** - CA certificate provided by the AWS IoT Core. 
-    - **Certificate** - Certificate for the gateway, generated by AWS IoT Core. 
+    - **Root CA** - CA certificate provided by the AWS IoT Core.
+    - **Certificate** - Certificate for the gateway, generated by AWS IoT Core.
     - **Key** - Private key for the gateway, generated by AWS IoT Core.
 
 ### Applications
@@ -460,7 +504,7 @@ In the Network menu, the user can do changes on the **WAN** (Wide Area Network) 
 
 ### WAN
 
-In the WAN menu, the user can change the priority of the WAN interfaces. If the highest priority interface goes down, the next in line will be used to access the Internet. The red/green light on the left of the WAN interface name shows if that interface is available. 
+In the WAN menu, the user can change the priority of the WAN interfaces. If the highest priority interface goes down, the next in line will be used to access the Internet. The red/green light on the left of the WAN interface name shows if that interface is available.
 
 <rk-img
   src="/assets/images/software-apis-and-library/wisgateos2/main/28.png"
@@ -476,7 +520,7 @@ To rearrange the default order click on the **Change priority** button. The prio
   caption="Editing WAN interface's priority"
 />
 
-The user can expand each interface window by clicking on the name of the interface or the arrow on the left of the interface (<img src="/assets/images/software-apis-and-library/wisgateos2/main/d.png"/>). 
+The user can expand each interface window by clicking on the name of the interface or the arrow on the left of the interface (<img src="/assets/images/software-apis-and-library/wisgateos2/main/d.png"/>).
 
 - **Ethernet** - The user can see information about the selected interface. There is also a **Settings** button which redirects to the selected interface’s settings.
 
@@ -490,7 +534,7 @@ The user can expand each interface window by clicking on the name of the interfa
   - **IP Address** – The address assigned to the gateway.
   - **Netmask** – The netmask of the gateway.
   - **Connection time** – The time of the gateway's connection to that interface.
-  - **RX** – Packets received. 
+  - **RX** – Packets received.
   - **TX** – Packets sent.
   - **DNS** – DNS server addresses.
 
@@ -565,7 +609,7 @@ The user can expand each interface window by clicking on the name of the interfa
       - **IPv4 Router** – The address of the router in IPv4.
       - **DNS Server** – Custom DNS server address.
     - **DHCP client** - The router’s DHCP server will assign IP to the gateway.
-      - **Use custom DNS server** – When disabled, the DNS server addresses advertised from the router will be ignored. 
+      - **Use custom DNS server** – When disabled, the DNS server addresses advertised from the router will be ignored.
       - **DNS Server** – The user can add custom DNS.
 
 - **Wi-Fi settings Tracking tab** -  Here, the user can set up continuous tracking of the interface to automatically switch the gateway to the next available interface when the current interface is no longer stable.
@@ -575,7 +619,7 @@ The user can expand each interface window by clicking on the name of the interfa
         width="100%"
         caption="Wi-Fi settings Tracking tab"
     />
- 
+
   - **IP** ­– The user can add IP address to send the ping test.
   - **Reliability** – The added minimum number of IP addresses that must respond to confirm a successful ping test.
   - **Ping count** – The counter of the pings.
@@ -618,7 +662,7 @@ The user can expand each interface window by clicking on the name of the interfa
         width="100%"
         caption="Cellular settings Tracking tab"
     />
-  
+
   - **IP** ­– The user can add IP address to send the ping test.
   - **Reliability** – The added minimum number of IP addresses that must respond to confirm a successful ping test.
   - **Ping count** – Counter of the pings.
@@ -631,7 +675,7 @@ The user can expand each interface window by clicking on the name of the interfa
 
 In the LAN tab, the user can see and edit information about the Local Area Network.
 
-The red/green light on the left shows if the interface is enabled/disabled. You can expand each LAN interface window, by clicking on its name or the arrow on the right (<img src="/assets/images/software-apis-and-library/wisgateos2/main/d.png"/>) of the interface. 
+The red/green light on the left shows if the interface is enabled/disabled. You can expand each LAN interface window, by clicking on its name or the arrow on the right (<img src="/assets/images/software-apis-and-library/wisgateos2/main/d.png"/>) of the interface.
 
 <rk-img
         src="/assets/images/software-apis-and-library/wisgateos2/main/39.png"
@@ -694,7 +738,7 @@ The red/green light on the left shows if the interface is enabled/disabled. You 
         width="100%"
         caption="Wi-Fi settings"
     />
-  
+
   - **Enabled/Disabled** – Enables/disables the LAN Wi-Fi interface.
   - **Channel** – The user can set a channel for the Wi-Fi. Default is **Auto**, the gateway will automatically choose a channel.
   - **(E)SSID** – The name of the AP.
@@ -703,11 +747,11 @@ The red/green light on the left shows if the interface is enabled/disabled. You 
 
 ## Diagnostics
 
-In the **Diagnostics** menu, the user can review the logs on the gateway and perform checks. 
+In the **Diagnostics** menu, the user can review the logs on the gateway and perform checks.
 
 ### System log
 
-On this page, the user can see the complete system logs. It is mainly used for debugging purposes. The System Log reports both system information and actual data from LoRa frames coming from the end nodes. 
+On this page, the user can see the complete system logs. It is mainly used for debugging purposes. The System Log reports both system information and actual data from LoRa frames coming from the end nodes.
 
 At the top right corner there is the **Auto Refresh** button. Depending on the state (ON or OFF) the auto-refresh will be enabled or disabled.
 
@@ -720,7 +764,7 @@ At the top right corner there is the **Auto Refresh** button. Depending on the s
 ### Network utilities
 
 This is where the user can perform checks via the built-in tools: **Ping**, **Trace**, **Nslookup**. The user can either enter an URL or an IP Address in the text box and execute the command with one of the buttons. The results are conveniently displayed in a CLI box.
- 
+
 <rk-img
   src="/assets/images/software-apis-and-library/wisgateos2/main/47.png"
   width="100%"
@@ -836,7 +880,7 @@ Choosing the **User preferences** option will redirect the user to the correspon
   src="/assets/images/software-apis-and-library/wisgateos2/main/56.png"
   width="100%"
   caption="User preferences"
-/> 
+/>
 
 - **Change password** – Here, the user can change the password for access for the Web UI.
 - **Time settings** – Here, the user can set local time to the gateway.

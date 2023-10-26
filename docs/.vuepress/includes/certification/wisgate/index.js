@@ -48,7 +48,7 @@ export const categoriesWisGate = [
             { country: "Europe", cert: "REACH", link: "https://downloads.rakwireless.com/LoRa/DIY-Gateway-RAK7249/Certification-Report/RAK7249_REACH_Report.pdf" },
             { country: "Europe", cert: "RoHS", link: "https://downloads.rakwireless.com/LoRa/DIY-Gateway-RAK7249/Certification-Report/RAK7249_RoHS_Report.pdf" },
             { country: "USA", cert: "FCC", link: "https://downloads.rakwireless.com/LoRa/DIY-Gateway-RAK7249/Certification-Report/RAK7249_FCC_Certification.zip" },
-            { country: "Australia", cert: "ISED", link: "https://downloads.rakwireless.com/LoRa/DIY-Gateway-RAK7249/Certification-Report/RAK7249_ISED_Certification.pdf" },
+            { country: "Canada", cert: "ISED", link: "https://downloads.rakwireless.com/LoRa/DIY-Gateway-RAK7249/Certification-Report/RAK7249_ISED_Certification.pdf" },
             { country: "Russia", cert: "EAC", link: "https://downloads.rakwireless.com/LoRa/DIY-Gateway-RAK7249/Certification-Report/RAK7249_EAC_Certification.pdf" },
             { country: "Russia", cert: "FAC", link: "https://downloads.rakwireless.com/LoRa/DIY-Gateway-RAK7249/Certification-Report/RAK7249_FAC_Certification.pdf" },
             { country: "Russia", cert: "RFC", link: "https://downloads.rakwireless.com/LoRa/DIY-Gateway-RAK7249/Certification-Report/RAK7249_RFC_Certification.pdf" },

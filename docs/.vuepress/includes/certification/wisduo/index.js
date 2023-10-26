@@ -25,6 +25,7 @@ export const categoriesWisDuo = [
             { country: "Japan", cert: "MIC", link: "https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_JRL_Certification.pdf" },
             { country: "Korea", cert: "KC", link: "https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_KC_Certification.pdf" },
             { country: "LoRa Alliance", cert: "LoRa", link: "https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_LoRa_Alliance_Certification.pdf" },
+            { country: "New Zealand", cert: "RSM", link: "https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_RSM_Certification.pdf" },
             { country: "UK", cert: "UKCA", link: "https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_UKCA_Certification.pdf" },
           ]
         },

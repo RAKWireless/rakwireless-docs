@@ -39,7 +39,7 @@ export const categoriesWisNode = [
           device: "RAK7431",
           data: [
             { country: "Europe", cert: "CE", link: "https://downloads.rakwireless.com/LoRa/RAK7431/Certification-Report/RAK7431_CE_Certification.zip" },
-            { country: "Europe", cert: "CE", link: "https://downloads.rakwireless.com/LoRa/RAK7431/Certification-Report/RAK7431_FCC_Certification.zip" },
+            { country: "USA", cert: "FCC", link: "https://downloads.rakwireless.com/LoRa/RAK7431/Certification-Report/RAK7431_FCC_Certification.zip" },            
           ]
         },
       ]
