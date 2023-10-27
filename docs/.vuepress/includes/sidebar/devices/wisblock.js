@@ -2499,6 +2499,32 @@ module.exports = {
   }
   ],
 
+	'/Product-Categories/WisBlock/RAK13102/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisBlock/RAK13102/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Quick Start Guide',
+    path: '/Product-Categories/WisBlock/RAK13102/Quickstart/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisBlock/RAK13102/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  }
+  ],
+
   '/Product-Categories/WisBlock/RAK12010/': [{
     title: 'Product Overview',
     path: '/Product-Categories/WisBlock/RAK12010/Overview/',
@@ -3183,6 +3209,48 @@ module.exports = {
   {
     title: 'Datasheet',
     path: '/Product-Categories/WisBlock/RAK10700/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  }
+  ],
+
+  '/Product-Categories/WisBlock/RAK10702/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisBlock/RAK10702/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Quick Start Guide',
+    path: '/Product-Categories/WisBlock/RAK10702/Quickstart/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'AT Command Manual',
+    path: '/Product-Categories/WisBlock/RAK10702/AT-Command-Manual/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Assembly Guide',
+    path: '/Product-Categories/WisBlock/RAK10702/Assembly/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisBlock/RAK10702/Datasheet/',
     collapsable: false,
     nested: true,
     download: true,

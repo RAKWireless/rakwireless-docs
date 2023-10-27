@@ -18,11 +18,11 @@ Thank you for choosing **Link.ONE WisTrio LTE-M NB-IoT LoRaWAN Development Board
 
 ## Product Description
 
-The **RAKwireless Link.ONE** is a versatile IoT device that combines Cellular IoT (LTE-M/NB-IoT) and LoRaWAN technology, making it ideal for a wide range of IoT applications. The device is based on the Nordic nRF52840 SoC, Semtech SX1262 LoRa transceiver, and Quectel BG77 LTE module with built-in GPS, providing a powerful and flexible platform for IoT development.
+The **RAKwireless Link.ONE** is a versatile IoT device that combines cellular IoT (LTE-M/NB-IoT) and LoRaWAN technology, making it ideal for a wide range of IoT applications. The device is based on the Nordic nRF52840 SoC, Semtech SX1262 LoRa transceiver, and Quectel BG77 LTE module with built-in GPS, providing a powerful and flexible platform for IoT development.
 
-Link.ONE also includes support for modular sensor modules based on the WisBlock platform, providing developers with a range of sensors and interfaces that can be easily integrated with the device. This modular approach to sensor integration allows developers to quickly and easily customize the device to meet the specific needs of their application, without having to design and build custom hardware.
+Link.ONE also supports modular sensor modules based on the WisBlock platform. It provides developers with a range of sensors and interfaces that can be easily integrated with the device. This modular approach to sensor integration allows developers to quickly and easily customize the device to meet the specific needs of their application without having to design and build custom hardware.
 
-Overall, the RAKwireless Link.ONE is a powerful and flexible IoT device that provides a range of connectivity options, security features, and modular sensor module support, making it an ideal choice for developers looking to quickly and easily develop and deploy secure and customizable IoT applications.
+Overall, the RAKwireless Link.ONE is a powerful and flexible IoT device that provides a range of connectivity options, security features, and modular sensor module support. It is an ideal device for developers looking to quickly and easily develop and deploy secure and customizable IoT applications.
 
 ## Product Features
 
@@ -35,7 +35,7 @@ Overall, the RAKwireless Link.ONE is a powerful and flexible IoT device that pro
   - 4&nbsp;MHz CPU clock
   - 1&nbsp;MB Flash, 256&nbsp;KB RAM
   - Wide range of connections:
-    - I2C, SPI, Analog inputs,
+    - I2C, SPI, & Analog inputs
     - Digital inputs and outputs
 - Semtech SX1262:
   - Low power and high range

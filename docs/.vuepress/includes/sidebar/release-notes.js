@@ -17,6 +17,11 @@ module.exports = {
           collapsed: true,
           children : [
             {
+              title : 'October 20',
+              path : '/Release-Notes/RUI/2023/October-20',
+              collapsable: false
+            },
+            {
               title : 'August 9',
               path : '/Release-Notes/RUI/2023/August-9',
               collapsable: false

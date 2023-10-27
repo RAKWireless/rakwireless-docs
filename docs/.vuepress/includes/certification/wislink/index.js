@@ -80,6 +80,12 @@ export const categoriesWisLink = [
           ]
         },
         {
+          device: "LX200V30",
+          data: [
+            { country: "Europe", cert: "RoHS", link: "https://downloads.rakwireless.com/PLC/LX200V30/Certification%20Report/LX200V30_RoHS_Certification.pdf" },
+          ]
+        },
+        {
           device: "LX200V50",
           data: [
             { country: "Europe", cert: "CE", link: "https://downloads.rakwireless.com/PLC/LX200V50/Certification/RAK_PLC_LX200V50_CE_Certification.pdf" },

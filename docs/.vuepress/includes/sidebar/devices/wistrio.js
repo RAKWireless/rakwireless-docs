@@ -180,5 +180,30 @@ module.exports = {
     download: true,
     sidebarDepth: 4
   }
-  ]
+	],
+	'/Product-Categories/WisTrio/BLUESONE/': [{
+		title: 'Product Overview',
+		path: '/Product-Categories/WisTrio/BLUESONE/Overview/',
+		collapsable: false,
+		nested: true,
+		download: true,
+		sidebarDepth: 4
+	},
+	{
+		title: 'Quick Start Guide',
+		path: '/Product-Categories/WisTrio/BLUESONE/Quickstart/',
+		collapsable: false,
+		nested: true,
+		download: true,
+		sidebarDepth: 4
+	},
+	{
+		title: 'Datasheet',
+		path: '/Product-Categories/WisTrio/BLUESONE/Datasheet/',
+		collapsable: false,
+		nested: true,
+		download: true,
+		sidebarDepth: 4
+	}
+	]
 }

@@ -204,6 +204,11 @@ export default {
     img: '/assets/images/wistrio/linkone/linkone.png',
     store: 'https://store.rakwireless.com/products/link-one-lte-m-nb-iot-lorawan-device-based-on-nrf52840-sx1262-and-bg77-arduino-ide-compatible?variant=42659406512326?utm_source=LinkOne&utm_medium=Document&utm_campaign=BuyFromStore'
   },
+  '/Product-Categories/WisTrio/BLUESONE/': {
+    label: 'Blues.One Cellular + LoRa Board',
+    img: '/assets/images/wistrio/bluesone/bluesone.png',
+    store: 'https://store.rakwireless.com/products/blues-one'
+  },
 
 
   //WisHat
@@ -590,6 +595,11 @@ export default {
     label: 'RAK13101 WisBlock GSM Module',
     img: '/assets/images/wisblock/rak13101/RAK13101.png',
     store: 'https://store.rakwireless.com/products/wisblock-gsm-module-rak13101?utm_source=RAK13101&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/RAK13102/': {
+    label: 'RAK13102 WisBlock NoteCarrier Module',
+    img: '/assets/images/wisblock/rak13102/RAK13102.png',
+    store: 'https://store.rakwireless.com/products/blues-one'
   },
   '/Product-Categories/WisBlock/RAK13300/': {
     label: 'RAK13300 WisBlock LPWAN Wireless Module',
@@ -1212,6 +1222,11 @@ export default {
     label: 'RAK10700 WisBlock GNSS Tracker for LoRaWAN',
     img: '/assets/images/wisblock/rak10700/RAKBox-B2-Enclosure.png',
     store: 'https://store.rakwireless.com/products/lpwan-tracker-solution-kit?utm_source=RAK10700&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisBlock/RAK10702/': {
+    label: 'RAK10702 WisBlock Indoor Comfort Node',
+    img: '/assets/images/wisblock/rak10702/rak10702.png',
+    store: 'https://store.rakwireless.com/collections/wisblock-solutions'
   },
 
   // Kits

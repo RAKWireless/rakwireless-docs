@@ -12,13 +12,14 @@ rak_img: /assets/images/wistrio/linkone/linkone.png
 # Link.ONE WisTrio LTE-M NB-IoT LoRaWAN Development Board Datasheet
 
 ## Overview
+
 ### Description
 
-The **RAKwireless Link.ONE** is a versatile IoT device that combines Cellular IoT (LTE-M/NB-IoT) and LoRaWAN technology, making it ideal for a wide range of IoT applications. The device is based on the Nordic nRF52840 SoC, Semtech SX1262 LoRa transceiver, and Quectel BG77 LTE module with built-in GPS, providing a powerful and flexible platform for IoT development.
+The **RAKwireless Link.ONE** is a versatile IoT device that combines cellular IoT (LTE-M/NB-IoT) and LoRaWAN technology, making it ideal for a wide range of IoT applications. The device is based on the Nordic nRF52840 SoC, Semtech SX1262 LoRa transceiver, and Quectel BG77 LTE module with built-in GPS, providing a powerful and flexible platform for IoT development.
 
-Link.ONE also includes support for modular sensor modules based on the WisBlock platform, providing developers with a range of sensors and interfaces that can be easily integrated with the device. This modular approach to sensor integration allows developers to quickly and easily customize the device to meet the specific needs of their application, without having to design and build custom hardware.
+Link.ONE also supports modular sensor modules based on the WisBlock platform. It provides developers with a range of sensors and interfaces that can be easily integrated with the device. This modular approach to sensor integration allows developers to quickly and easily customize the device to meet the specific needs of their application without having to design and build custom hardware.
 
-Overall, the RAKwireless Link.ONE is a powerful and flexible IoT device that provides a range of connectivity options, security features, and modular sensor module support, making it an ideal choice for developers looking to quickly and easily develop and deploy secure and customizable IoT applications.
+Overall, the RAKwireless Link.ONE is a powerful and flexible IoT device that provides a range of connectivity options, security features, and modular sensor module support. It is an ideal device for developers looking to quickly and easily develop and deploy secure and customizable IoT applications.
 
 ### Features
 
@@ -63,7 +64,7 @@ Overall, the RAKwireless Link.ONE is a powerful and flexible IoT device that pro
 
 ### Hardware
 
-The hardware specification is categorized into several parts. It discusses the interfaces, modules, RF sections, and their corresponding antennas. It also covers the standard parameters in terms of Electrical, Mechanical, and Environmental details.
+The hardware specification is categorized into six parts. It discusses the interfaces, modules, RF sections, and their corresponding antennas. It also covers the standard parameters in terms of electrical, mechanical, and environmental of the Link.ONE.
 
 #### Interfaces
 
@@ -107,7 +108,7 @@ Link.ONE is composed of several WisBlock modules, which include base, core, and 
 
 ##### LoRaWAN
 
-Link.ONE supports the LoRaWAN bands as shown in the table below:
+Link.ONE supports the LoRaWAN bands, as shown in the table below:
 
 | Region        | Frequency (MHz) | Core Module |
 | ------------- | --------------- | ----------- |
@@ -132,7 +133,7 @@ The Bluetooth functionality of Link.ONE is a feature built-in to the nRF52840 MC
 
 ###### LoRaWAN and BLE Antenna
 
-Link.ONE uses a WisBlock baseplate that has a built-in antenna for LoRa Sub-Ghz Antenna and 2.4&nbsp;Ghz for Bluetooth BLE.
+Link.ONE uses a WisBlock baseplate that has a built-in antenna for LoRa Sub-GHz antenna and 2.4&nbsp;GHz for Bluetooth BLE.
 
 <rk-img
   src="/assets/images/wistrio/linkone/datasheet/wisblock_baseplate.png"
@@ -140,7 +141,7 @@ Link.ONE uses a WisBlock baseplate that has a built-in antenna for LoRa Sub-Ghz 
   caption="WisBlock Mounting Plate with Antenna"
 />
 
-The designs for 8xx and 9xx MHz are different to optimally achieve the best efficiency and range possible
+The designs for 8xx and 9xx MHz are different to optimally achieve the best efficiency and range possible.
 
 <rk-img
   src="/assets/images/wistrio/linkone/datasheet/wisblock-plate-antenna.png"
@@ -170,11 +171,11 @@ Link.ONE supports LPWAN Cellular technologies like LTE-M and NB-IoT.
 
 ###### Cellular Specification
 
-| Item               | CAT M1                                       | CAT NB2                                       | CAT NB1                                   |
-| ------------------ | -------------------------------------------- | --------------------------------------------- | ----------------------------------------- |
-| Data               | Max. 588&nbsp;kbps (DL)/ 1119&nbsp;kbps (UL) | Max. 127&nbsp;kbps (DL)/ 158.5&nbsp;kbps (UL) | Max. 32&nbsp;kbps (DL)/ 70&nbsp;kbps (DL) |
-| Output Power (Max) | 21&nbsp;dBm                                  | 21&nbsp;dBm                                   | 21&nbsp;dBm                               |
-| VoLTE              | Supported                                    | Not Supported                                 | Not Supported                             |
+| Item               | CAT M1                                       | CAT NB2                                        | CAT NB1                                    |
+| ------------------ | -------------------------------------------- | ---------------------------------------------- | ------------------------------------------ |
+| Data               | Max. 588&nbsp;kbps (DL)/ 1119&nbsp;kbps (UL) | Max. 127&nbsp;kbps (DL) / 158.5&nbsp;kbps (UL) | Max. 32&nbsp;kbps (DL) / 70&nbsp;kbps (DL) |
+| Output Power (Max) | 21&nbsp;dBm                                  | 21&nbsp;dBm                                    | 21&nbsp;dBm                                |
+| VoLTE              | Supported                                    | Not Supported                                  | Not Supported                              |
 
 ###### Cellular Antenna
 
@@ -203,7 +204,7 @@ The dipole antenna for LTE-M and NB-IoT is externally connected via an SMA conne
 | Range of Receiving Frequency                                   | 1575.42 ± 1.1         | ±2.5 |
 | Center Frequency (MHz) w/ 30&nbsp;mm<sup>2</sup> (2 GND plane) | 1575.42               | ±3.0 |
 | Bandwidth (MHz) (Return Loss ≤ -10&nbsp;dB)                    | ≥10                   | ±0.5 |
-| VSWR (in Center Frequency)                                     | ≤1.5                  | ±0.5 |
+| VSWR (in center frequency)                                     | ≤1.5                  | ±0.5 |
 | Gain (Zenith) (dBi Typ.) w/ 70&nbsp;mm<sup>2</sup> GND Plane   | 4.5                   | ±0.5 |
 | Axial Ratio (dB) w/ 70&nbsp;mm<sup>2</sup> GND Plane           | 3.0                   | ±0.2 |
 | Polarization                                                   | Right-Handed Circular |      |
@@ -262,6 +263,17 @@ A suitable Li-ion battery should have the following parameters:
 - Make sure the battery wires match the polarity on the WisBlock Base board. Not all batteries have the same wiring.
 :::
 
+#### Environmental Characteristics
+
+The table below lists the operation and storage temperature requirements:
+
+|        Parameter        |     Min     |   Typical   |     Max     |
+| :---------------------: | :---------: | :---------: | :---------: |
+| Operational Temp. Range | -35°&nbsp;C | +25°&nbsp;C | +75°&nbsp;C |
+|  Extended Temp. Range   | -40°&nbsp;C | +25°&nbsp;C | +80°&nbsp;C |
+|   Storage Temp. Range   | -40°&nbsp;C | +25°&nbsp;C | +80°&nbsp;C |
+
+
 #### Mechanical Characteristics
 
 ##### Module Dimensions
@@ -272,12 +284,3 @@ The complete details of module dimensions and enclosure can be found on their sp
 - [RAK5860 WisBlock Wireless](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK5860/Datasheet/#board-dimensions)
 - [Outdoor Unify Enclosure 100x75x38](https://docs.rakwireless.com/Product-Categories/WisBlock/RAKBox-UO100x75x38/Datasheet/#enclosure-mechanical-dimensions)
 
-#### Environmental Characteristics
-
-The table below lists the operation and storage temperature requirements:
-
-|        Parameter        |     Min     |   Typical   |     Max     |
-| :---------------------: | :---------: | :---------: | :---------: |
-| Operational Temp. Range | -35°&nbsp;C | +25°&nbsp;C | +75°&nbsp;C |
-|  Extended Temp. Range   | -40°&nbsp;C | +25°&nbsp;C | +80°&nbsp;C |
-|   Storage Temp. Range   | -40°&nbsp;C | +25°&nbsp;C | +80°&nbsp;C |
