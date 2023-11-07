@@ -305,7 +305,7 @@ There is no need to save the changes created on the flows canvas since it is aut
 
 This section shows how to use the RAK10701-P Field Tester Pro for LoRaWAN to The Things Stack.
 
-1. First, log in to TTNv3. To do so, head to the TTNv3 [site](https://console.cloud.thethings.network/) and select your cluster. If you already have a TTN account, you can use your The Things ID credentials to log in.
+1. Log in to TTNv3. To do so, head to the TTNv3 [site](https://console.cloud.thethings.network/) and select your cluster. If you already have a TTN account, you can use your The Things ID credentials to log in.
 
 <rk-img
   src="/assets/images/wisnode/rak10701/quickstart/image001.png"
@@ -1073,6 +1073,369 @@ function Encoder(measurements, port) {
 ```
 13. You can now proceed on [device configuration](/Product-Categories/WisNode/RAK10701-P/Quickstart/#configuration-of-rak10701-p-using-wistoolbox) so that the proper EUIs and KEY will match the one in the network server.
 
+#### RAK10701-P Field Tester Pro Guide for LORIOT and Datacake
+
+In this document, you will find a step-by-step guide for performing a field mapping test using LORIOT network management system and Datacake's platform to visualize your results. This solution will help you in your network planning ventures and ensure your decisions are data-driven and adequate to your surroundings.
+
+##### Prerequisites
+
+- [RAK10701 WisNode Field Tester for LoRaWAN](https://store.rakwireless.com/products/field-tester-for-lorawan-rak10701?variant=42437595726022)
+- [LORIOT account](https://www.loriot.io/login.html)
+- [Datacake account](https://datacake.co/pricing)
+- Gateway
+
+##### Setting LORIOT as the LNS
+
+1. Forward a gateway to LORIOT, which will be the LNS (LoRa Network Server) for this use case. For registration of the gateway to LORIOT, you will need the gateway’s MAC and EUI, which can be found on the Overview page of WisGateOS 2.
+
+<rk-img
+src="/assets/images/wisnode/rak10701/quickstart/1. wisgate edges web ui.png"
+width="100%"
+caption="WisGate Edges web UI"
+/>
+
+2. Go to your LORIOT profile. From the menu on the left, navigate through **Networks**>**{your_network}**>**+Add Gateway**.
+
+<rk-img
+src="/assets/images/wisnode/rak10701/quickstart/2. loriot console.png"
+width="100%"
+caption="LORIOT console"
+/>
+
+:::tip 📝 NOTE
+The LORIOT platform provides you with a **Sample Network** at the point of your profile creation. You can use it for free. If you wish to create a new one, or delete the provided one, you will need a paid plan to continue.
+:::
+
+3. For the base platform select **Basics Station Semtech**. You will be asked to provide eth0 MAC address and EUI, which you obtained in step 1. After filling in these values, press the **Register Basics Station Semtech gateway** at the bottom of the page.
+
+<rk-img
+src="/assets/images/wisnode/rak10701/quickstart/3. registering the gateway to loriot.png"
+width="100%"
+caption="Registering The Gateway To LORIOT"
+/>
+
+4. The last thing you need to do to connect your gateway with LORIOT LNS is to provide the Basics Station configuration to the gateway. This can be done by going to the gateway's **web UI**>**LoRa**>**Configuration** and doing a Basics station server setup.
+
+<rk-img
+src="/assets/images/wisnode/rak10701/quickstart/4. gateway configuration page.png"
+width="100%"
+caption="Gateway Configuration Page"
+/>
+
+You can find the Trust (CA Certificate), the Server URL, and the Server port in LORIOT by navigating to the newly registered **Gateway**>**Certificate**. Use the configuration provided by LORIOT as it may differ from the guide depending on your region.
+
+<rk-img
+src="/assets/images/wisnode/rak10701/quickstart/5. certificate.png"
+width="100%"
+caption="Certificate"
+/>
+
+5. If the steps are followed correctly, the gateway should show a **Connected** status.
+
+
+##### Adding the Device and LORIOT to Datacake Integration
+
+1. Add the device to LORIOT. In the LORIOT platform, navigate to **Applications**>**{your_appliaction}** and use the **Enroll Device** utility from the menu on the left. Fill out your Device EUI, Join (APP) EUI, and Application Key.
+
+<rk-img
+src="/assets/images/wisnode/rak10701/quickstart/6. adding the device to the loriot platform.png"
+width="100%"
+caption="Adding The Device To The LORIOT Platform"
+/>
+
+:::tip 📝 NOTE
+The LORIOT platform provides you with a **Sample Application** at the point of your profile creation. You can use it for free. If you wish to create a new one or delete the provided one, you will need a paid plan to continue.
+:::
+
+2. Use the Output utility to set up the Datacake integration. For now, just give it a name.The Authorization requires additional settings that will not be covered by this guide. For more information regarding this process, refer to [Datacake's guide](https://docs.datacake.de/lorawan/lns/loriot).
+
+<rk-img
+src="/assets/images/wisnode/rak10701/quickstart/7. add output.png"
+width="100%"
+caption="Add Output"
+/>
+
+3. Now, you need to add the device in Datacake. To register a new device, navigate to the **Devices** tab in your Datacake account. Click the **+Add Device** button.
+
+<rk-img
+src="/assets/images/wisnode/rak10701/quickstart/8. datacake platform.png"
+width="100%"
+caption="Datacake Platform"
+/>
+
+4. Choose **New Product** under **Datacake Product**. Enter the device name in the **Product name** input box, and proceed by clicking **Next**.
+
+<rk-img
+src="/assets/images/wisnode/rak10701/quickstart/9. add lorawan device 1.png"
+width="70%"
+caption="Add Lorawan Device 1"
+/>
+
+5. Select **LORIOT** as the Network Server and click **Next**.
+
+<rk-img
+src="/assets/images/wisnode/rak10701/quickstart/10. add lorawan device 2.png"
+width="100%"
+caption="Add Lorawan Device 2"
+/>
+
+6. On the next page, you will have to enter the name and DEVEUI of the device. Select the plan for Datacake according to your needs and finish the device-adding procedure.
+
+7. Now, navigate to **Configuration** in the newly created device at Datacake and scroll down to the **Network Server** configuration. Click **Change**.
+
+<rk-img
+src="/assets/images/wisnode/rak10701/quickstart/11. device network server configuration.png"
+width="100%"
+caption="Device Network Server Configuration"
+/>
+
+8. You will need the LORIOT Access Token, which is generated from the LORIOT console. Navigate to **LORIOT**>**Access Tokens** and copy the token to put it in Datacake.
+
+<rk-img
+src="/assets/images/wisnode/rak10701/quickstart/12. loriot access token.png"
+width="100%"
+caption="LORIOT Access Token"
+/>
+
+<rk-img
+src="/assets/images/wisnode/rak10701/quickstart/13. access token field in datacake.png"
+width="50%"
+caption="Access Token Field In Datacake"
+/>
+
+You can generate a new access token or use the existing one. 
+
+9. If everything is done correctly, you should see a trickle of RAW data in the Debug window of Datacake.
+
+##### Setting up the Uplink Payload Decoder and the Downlink Encoder
+
+1. In the Datacake console, navigate to the **Configuration** tab of your RAK10701 device. At the bottom of the page, you will find the **Payload Decoder** field. Copy the decoder provided below and paste it in that field. This decoder will calculate the values displayed on the screen of the Field Tester.
+
+```js
+function distance(lat1, lon1, lat2, lon2) {
+	if ((lat1 == lat2) && (lon1 == lon2)) {
+		return 0;
+	}
+	else {
+		var radlat1 = Math.PI * lat1 / 180;
+		var radlat2 = Math.PI * lat2 / 180;
+		var theta = lon1 - lon2;
+		var radtheta = Math.PI * theta / 180;
+		var dist = Math.sin(radlat1) * Math.sin(radlat2) + Math.cos(radlat1) * Math.cos(radlat2) * Math.cos(radtheta);
+		if (dist > 1) {
+			dist = 1;
+		}
+		dist = Math.acos(dist);
+		dist = dist * 180 / Math.PI;
+		dist = dist * 60 * 1.1515;
+		dist = dist * 1.609344;
+		return dist;
+	}
+}
+
+function Decoder(bytes, fPort) {
+	var decoded = {};
+	// avoid sending Downlink ACK to integration (Cargo)
+	if (fPort === 1) {
+		var lonSign = (bytes[0] >> 7) & 0x01 ? -1 : 1;
+		var latSign = (bytes[0] >> 6) & 0x01 ? -1 : 1;
+
+		var encLat = ((bytes[0] & 0x3f) << 17) +
+			(bytes[1] << 9) +
+			(bytes[2] << 1) +
+			(bytes[3] >> 7);
+
+		var encLon = ((bytes[3] & 0x7f) << 16) +
+			(bytes[4] << 8) +
+			bytes[5];
+
+		var hdop = bytes[8] / 10;
+		var sats = bytes[9];
+
+		var maxHdop = 2;
+		var minSats = 5;
+
+		if ((hdop < maxHdop) && (sats >= minSats)) {
+			// Send only acceptable quality of position to mappers
+			decoded.latitude = latSign * (encLat * 108 + 53) / 10000000;
+			decoded.longitude = lonSign * (encLon * 215 + 107) / 10000000;
+			decoded.altitude = ((bytes[6] << 8) + bytes[7]) - 1000;
+			decoded.accuracy = (hdop * 5 + 5) / 10
+			decoded.hdop = hdop;
+			decoded.sats = sats;
+			decoded.location = "(" + decoded.latitude + "," + decoded.longitude + ")";
+		} else {
+			decoded.error = "Need more GPS precision (hdop must be <" + maxHdop +
+				" & sats must be >= " + minSats + ") current hdop: " + hdop + " & sats:" + sats;
+			decoded.latitude = latSign * (encLat * 108 + 53) / 10000000;
+			decoded.longitude = lonSign * (encLon * 215 + 107) / 10000000;
+			decoded.altitude = ((bytes[6] << 8) + bytes[7]) - 1000;
+			decoded.accuracy = (hdop * 5 + 5) / 10
+			decoded.hdop = hdop;
+			decoded.sats = sats;
+			decoded.location = "(" + decoded.latitude + "," + decoded.longitude + ")";
+		}
+		// 		decoded.raw = rawPayload.uplink_message.rx_metadata[0].location;
+		decoded.num_gw = normalizedPayload.gateways.length;
+		decoded.minRSSI = 0;
+		decoded.maxRSSI = 0;
+		decoded.minSNR = 0;
+		decoded.maxSNR = 0;
+		decoded.minDistance = 0;
+		decoded.maxDistance = 0;
+		var server_type = 0;
+		// Check if payload comes from TTN
+		if (typeof (rawPayload.uplink_message) != "undefined") {
+			console.log("Found TTN format");
+			server_type = 1;
+			decoded.is_chirpstack = 1;
+		}
+		// Check if payload comes from Helium
+		else if (typeof (rawPayload.hotspots) != "undefined") {
+			console.log("Found Helium format");
+			server_type = 2;
+		}
+		// Check if payload comes from Chirpstack
+		else if (typeof (rawPayload.rxInfo) != "undefined") {
+			console.log("Found Chirpstack format");
+			server_type = 3;
+			decoded.is_chirpstack = 1;
+		}
+		// Check if payload comes from LORIOT
+		else if (typeof (rawPayload.cmd) != "undefined") {
+			console.log("Found LORIOT format");
+			server_type = 4;
+			decoded.is_chirpstack = 1;
+		}
+		else {
+			console.log("Unknown raw format");
+		}
+
+		var gw_lat = {};
+		var gw_long = {};
+
+		decoded.num_gw = 0;
+		for (idx_tst = 0; idx_tst < 10; idx_tst++)
+		{
+			if (typeof (normalizedPayload.gateways[idx_tst]) != "undefined")
+			{
+				console.log("Found gateway with IDX " + idx_tst);
+				decoded.num_gw += 1;
+			}
+		}
+
+		for (idx = 0; idx < decoded.num_gw; idx++) {
+			var new_rssi = (!!normalizedPayload.gateways && !!normalizedPayload.gateways[idx] && normalizedPayload.gateways[idx].rssi) || 0;
+			var new_snr = (!!normalizedPayload.gateways && !!normalizedPayload.gateways[idx] && normalizedPayload.gateways[idx].snr) || 0;
+			if ((new_rssi < decoded.minRSSI) || (decoded.minRSSI == 0)) {
+				decoded.minRSSI = new_rssi;
+			}
+			if ((new_rssi > decoded.maxRSSI) || (decoded.maxRSSI == 0)) {
+				decoded.maxRSSI = new_rssi;
+			}
+			if ((new_snr < decoded.minSNR) || (decoded.minSNR == 0)) {
+				decoded.minSNR = new_snr;
+			}
+			if ((new_snr > decoded.maxSNR) || (decoded.maxSNR == 0)) {
+				decoded.maxSNR = new_snr;
+			}
+			switch (server_type) {
+				//TTN
+				case 1:
+					gw_lat[idx] = rawPayload.uplink_message.rx_metadata[idx].location.latitude;
+					gw_long[idx] = rawPayload.uplink_message.rx_metadata[idx].location.longitude;
+					break;
+				// Helium
+				case 2:
+					gw_lat[idx] = rawPayload.hotspots[idx].lat;
+					gw_long[idx] = rawPayload.hotspots[idx].long;
+					break;
+				// Chirpstack
+				case 3:
+					gw_lat[idx] = rawPayload.rxInfo[idx].location.latitude;
+					gw_long[idx] = rawPayload.rxInfo[idx].location.longitude;
+					break;
+					
+				//LORIOT
+				case 4:
+					gw_lat[idx] = rawPayload.gws[0].lat;
+					gw_long[idx] = rawPayload.gws[0].lon;
+					break;
+				default:
+					console.log("Unknown LNS");
+					break;
+			}
+
+			console.log("IDX " + idx + " lat " + gw_lat[idx] + " long " + gw_long[idx]);
+
+			// Calculate distance
+			var new_distance = distance(gw_lat[idx], gw_long[idx], decoded.latitude, decoded.longitude);
+			if ((new_distance * 1000 < decoded.minDistance) || (decoded.minDistance == 0)) {
+				decoded.minDistance = new_distance * 1000;
+			}
+			if ((new_distance * 1000 > decoded.maxDistance) || (decoded.maxDistance == 0)) {
+				decoded.maxDistance = new_distance * 1000;
+			}
+		}
+
+		var hotspot_name = ""
+		for (idx = 0; idx < decoded.num_gw; idx++) {
+			var index = idx + 1;
+			if (index < 9) {
+				hotspot_name = "hotspot_0" + index.toString();
+			} else {
+				hotspot_name = "hotspot_" + index.toString();
+			}
+			console.log(hotspot_name);
+			decoded[hotspot_name] = "(" + gw_lat[idx] + "," + gw_long[idx] + ")";
+		}
+
+		decoded.maxMod = 1 + parseInt((Math.round(decoded.maxDistance / 250.0)), 10);
+		decoded.minMod = 1 + parseInt((Math.round(decoded.minDistance / 250.0)), 10);
+		
+		return decoded;
+	}
+	return null;
+
+}
+```
+
+<rk-img
+src="/assets/images/wisnode/rak10701/quickstart/14. datacake payload decoder field.png"
+width="100%"
+caption="Datacake Payload Decoder Field"
+/>
+
+2. After saving the payload decoder it is time to set the downlink payload encoder. Navigate to **Downlinks** and copy-paste the provided encoder in the field. Set the port to 2 and use the **IS_CHIRPSTACK** field to trigger the downlink.
+
+```js
+function Encoder(measurements, port) {
+    var buf = [];
+    buf[0] = 1;
+    buf[1] = measurements.MINRSSI.value + 200;
+    buf[2] = measurements.MAXRSSI.value + 200;
+    // var temp = parseInt(measurements.MINMOD.value,10);
+    if (measurements.MINMOD.value == 0) {
+        measurements.MINMOD.value = 1;
+    }
+    console.log(measurements.MINMOD.value);
+    buf[3] = measurements.MINMOD.value;
+    if (measurements.MAXMOD.value == 0) {
+        measurements.MAXMOD.value = 1;
+    }
+    buf[4] = measurements.MAXMOD.value;
+    buf[5] = measurements.NUM_GW.value;
+    return buf;
+}
+```
+
+<rk-img
+src="/assets/images/wisnode/rak10701/quickstart/15. downlink configuration.png"
+width="50%"
+caption="Downlink Configuration"
+/>
+
+3. You should now be able to see the data from the downlink on your Field Tester's screen.
 
 ### Configuration of RAK10701-P Using WisToolBox
 

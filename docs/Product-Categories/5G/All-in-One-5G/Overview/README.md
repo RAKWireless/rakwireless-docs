@@ -16,6 +16,9 @@ tags:
 Thank you for choosing **All-in-One 5G** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
 
 * [Quick Start Guide](../Quickstart/)
+* [User Manual](../User-Manual/)
+  * [5G LTE Radio Configuration](../User-Manual/)
+  * [5G NR Radio Configuration](../User-Manual/NR-Radio-Configuration/)
 * [Installation Guide](../Installation-Guide/)
 * [Datasheet](../Datasheet/)
 * [Test Report](../Test-Report/)

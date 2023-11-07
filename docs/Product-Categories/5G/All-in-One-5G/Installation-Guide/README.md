@@ -1,5 +1,5 @@
 ---
-prev: ../Quickstart/
+prev: ../../User-Manual/NR-Radio-Configuration/
 next: ../Datasheet/
 tags:
   - Installation Guide
