@@ -6,7 +6,7 @@ rak_img: /assets/images/certifications/certification-banner.jpg
 <rk-certification-home/>
 
 
-## Data and Information Security
+## Data Protection and Information Security
 
 ### GDPR Compliant
 
@@ -16,13 +16,14 @@ rak_img: /assets/images/certifications/certification-banner.jpg
 
 ### ISO27001 Certification
 
-- [<b>International Information Security Management System Standard</b>](https://www.iso.org/isoiec-27001-information-security.html)
+- [<b>RAKwireless ISO27001 Certificate</b>](https://downloads.rakwireless.com/misc/RAK%20Certificate/RAKwireless-ISO27001-Certificate.pdf)
 
 
 ### LoRaWAN Certification
 
 - [<b>International Technology Alliance about LoRaWAN Standard</b>](https://lora-alliance.org/about-lora-alliance/#)
-<br> &nbsp;[View Details](https://lora-alliance.org/alliance_member/rakwireless-technology-co/)
+- [<b>RAKwireless LoRa Alliance Member Page</b>](https://lora-alliance.org/alliance_member/rakwireless-technology-co/)
 
+<br>
 
 <rk-certification-newsletter/>

@@ -3,69 +3,24 @@
       class="col flex flex-col relative-position overflow-hidden"
       id="category-container"
       @click="goToLink(path)"
-      >
+  >
     <div class="product">
       <h1 style="margin-top: 0">Product Compliance</h1>
       <div class="flex flex-center">
-      <div class="row justify-center" >
-        <div class="cursor-pointer q-pa-lg " v-for="qs in response" :key="qs.path">
-            <rk-category
-              :img="qs.img"
-              :path="qs.path"
-              :label="qs.title"
-              :desc="qs.desc"
-              style="height: 12rem; width: 20rem; margin: auto;">
-            </rk-category>
-        </div>
-      </div>
-      </div>
-      <br>
-      <div class="data" style="">
-        <h1>Data Information and Security</h1>
-          <div class="flex flex-center">
-          <div class="row justify-center" >
-                <div class="container">
-                  <h6 style="margin: 20px 10px 0;"> GDPR </h6>
-                  <hr style="width: 85%; margin: 10px 0; color : #007ACC"/>
-                  <div class="actions">
-                    <button type="button" class="button">
-                      <a href="https://gdpr.eu/" target="_blank" class="text">Europe Data Protection and Privacy Rules</a>
-                    </button>
-                    <button type="button" class="button">
-                      <a href="https://www.rakwireless.com/en-us/legal/privacy-notice" target="_blank" class="text">How We Protect Your Privacy</a>
-                    </button>
-                  </div>
-                </div>
-
-                <div class="container">
-                  <h6 style="margin: 20px 10px 0;"> ISO27001 Certification </h6>
-                  <hr style="width: 85%; margin: 10px 0; color : #007ACC"/>
-                  <div class="actions">
-                    <button type="button" class="button">
-                      <a href="https://www.iso.org/isoiec-27001-information-security.html" target="_blank" class="text">International Information Security Management System Standard</a>
-                    </button>
-                  </div>
-                </div>
-
-                <div class="container">
-                  <h6 style="margin: 20px 10px 0;"> LoRaWAN Certification </h6>
-                  <hr style="width: 85%; margin: 10px 0; color : #007ACC"/>
-                  <div class="actions">
-                    <button type="button" class="button">
-                      <a href="https://lora-alliance.org/about-lora-alliance/#" target="_blank" class="text">International Technology Alliance about LoRaWAN Standard</a>
-                    </button>
-                    <button type="button" class="button">
-                      <a href="https://lora-alliance.org/alliance_member/rakwireless-technology-co/" target="_blank" class="text">RAKwireless LoRa Alliance Membership</a>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="row justify-center" >
+          <div class="cursor-pointer q-pa-lg " v-for="qs in response" :key="qs.path">
+              <rk-category
+                :img="qs.img"
+                :path="qs.path"
+                :label="qs.title"
+                :desc="qs.desc"
+                style="height: 12rem; width: 20rem; margin: auto;">
+              </rk-category>
           </div>
         </div>
-        <hr style="width:100%; margin: 10px 0; color : #F1F5FB;"/>
-        <br>
       </div>
+    </div>
+  </div>
 
 
 </template>
