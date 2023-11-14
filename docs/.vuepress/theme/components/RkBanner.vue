@@ -1,10 +1,10 @@
 <template>
 
 <div class="popup-container" v-show="!closeBanner">
-                
-  <a href="https://twitter.com/RAKwireless/status/1621162148683448323?s=20&t=f-cV321R5nxuKPDx0PdBRQ" >
-    <img src="https://res.rakwireless.com/tracked/embedded-world-event/embedded_world_event.png" alt="Lunar New Year" class="popup-image"  style="user-select: auto;">  
-  </a>       
+
+  <a href="http://store.rakwireless.com/?utm_source=Docs+Center+Banner&utm_medium=Organic&utm_id=black+friday%2Fcyber+monday+campaign" >
+    <img :src="isMobile?'https://res.rakwireless.com/tracked/misc/others/sm5-mobile-banner.jpg':'https://res.rakwireless.com/tracked/misc/others/sm5-desktop-banner.jpg'" alt="Black Friday and Cyber Monday Sale" class="popup-image" style="user-select: auto;">
+  </a>
 
     <span class="">
       <svg class="fa fa-times popup-close-btn" id="close-popup" @click="closePopUpBanner()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 82" style="user-select: auto;">
@@ -20,22 +20,36 @@
           </g>
       </svg>
     </span>
-</div>            
+</div>
 </template>
 
 <script>
 
 export default {
   data: ()=>({
-    closeBanner : false
+    closeBanner : false,
+    isMobile: false,
+    smBreakpoint: 640,
+    mdBreakpoint: 1024,
   }),
+
   methods : {
     closePopUpBanner(){
       this.closeBanner = true;
-      console.log("closePopUpBanner", this.closeBanner)
-
+    },
+    onSetWidth(){
+      this.isMobile = window.innerWidth < this.smBreakpoint ? true: false
     }
-  }
+  },
+  created() {
+    window.addEventListener("resize", this.onSetWidth);
+  },
+  destroyed() {
+    window.removeEventListener("resize", this.onSetWidth);
+  },
+  mounted(){
+    this.onSetWidth()
+  },
 }
 
 
@@ -50,7 +64,7 @@ export default {
       bottom: 0;
       left:0;
       display: block;
-      
+
   }
 
   .popup-close {
@@ -58,7 +72,8 @@ export default {
     transition: .5s;
   }
   .popup-image {
-      height: 15rem;
+      width: 100%;
+      max-height: 240px;
       outline: none;
       box-shadow: rgb(0, 0, 0) 0px 0px 8px 2px;
       user-select: auto;
@@ -70,9 +85,9 @@ export default {
       position: absolute;
       z-index: 30;
       color: #333333;
-      height: 1.75rem;
+      height: 1.9rem;
       top: -10px;
-      right: -15px;
+      right: -10px;
       opacity: .9;
   }
   .popup-close-btn:hover {

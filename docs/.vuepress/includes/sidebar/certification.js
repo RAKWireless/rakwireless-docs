@@ -366,7 +366,7 @@ module.exports = {
       {
         title: 'Data Protection and Information Security',
         nested: true,
-        collapsable: true,
+        collapsable: false,
         children: [
           { title: 'GDPR Compliant', path: '/Certification/#gdpr-compliant' },
           { title: 'ISO27001 Certification', path: '/Certification/#iso27001-certification' },
