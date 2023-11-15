@@ -277,6 +277,10 @@ You can carry the equipment with both hands. If the equipment is lifted with one
 The diameter of the pole that is supported by the brackets is 50-75mm. If the pole diameter is more than this value, larger hose clamps can be used. The standard mounting kit does not include larger hose clamps. If needed, they should be purchased separately.
 :::
 
+:::tip 📝 NOTE
+While smaller hose clamps can be used if the pole diameter is less than 50mm, we do not recommend doing so due to potential safety risks associated with wind resistance.
+:::
+
 1. Fix the mounting bracket on the pole with three hose clamps.
 
 <rk-img
