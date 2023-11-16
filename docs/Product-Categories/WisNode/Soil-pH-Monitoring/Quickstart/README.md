@@ -8,14 +8,14 @@ tags:
     - Soil pH
     - Sensor Hub Solutions
     - Installation
-    - Power Supply
+
 ---
 
-# Soil pH Monitoring Sensor Quick Start Guide
+# Soil pH Monitoring Solution Quick Start Guide
 
 ## Prerequisites
 
-Before proceeding with each step for using the RAK2560 WisNode Sensor Hub module, ensure that you have the necessary items listed below:
+Before proceeding with each step for using the Soil pH Solution, make sure to have all the necessary items listed below:
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/datasheet/f1pHSolution_accesories.png"
@@ -23,17 +23,18 @@ Before proceeding with each step for using the RAK2560 WisNode Sensor Hub module
   caption="Sensor Hub Soil pH Solution Accesories"
 />
 
-#### Hardware Tools
+### Hardware Tools
 
-- [Sensor Hub Soil pH Monitoring Solution](https://store.rakwireless.com/products/soil-ph-monitoring?variant=42505216786630)
-- [Solar Battery Lite for Sensor Hub](https://store.rakwireless.com/products/rak-battery-lite-solar-power-solution-rak9154?m=9&h=power-supplies-accessories) (Optional)
+
+- <a href="https://store.rakwireless.com/products/soil-ph-monitoring?m=3&h=sensor-hub&variant=42505216786630?utm_source=SoilpH&utm_medium=Document&utm_campaign=BuyFromStore" target="_blank">Soil pH Monitoring Solution</a>
+- <a href="https://store.rakwireless.com/products/rak-battery-lite-solar-power-solution-rak9154?utm_source=RAK9154SolarBattery&utm_medium=Document&utm_campaign=BuyFromStore" target="_blank">Solar Battery Lite for Sensor Hub</a> (optional)
 - Additional accessories: Probe Cable, Probe Splitter, power supply, and others (numbers and variations depending on the use case)
-- An Android or iOS mobile device with Bluetooth and NFC
+- An Android or iOS mobile device with Bluetooth and NFC 
 
 
-#### Software
+### Software
 
-- [WisToolBox](https://docs.rakwireless.com/Product-Categories/Software-Tools/WisToolBox/WisToolBoxMobile/)
+<a href="https://docs.rakwireless.com/Product-Categories/Software-Tools/WisToolBox/WisToolBoxMobile/" target="_blank">WisToolBox</a>
 
 
 ## Solution Configuration
@@ -69,7 +70,7 @@ If the selected solution utilizes the NB-IoT/LTE CAT-M wireless communication mo
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/quickstart/f4pHSolution_wallMount1.png"
   width="50%"
-  caption="Installation Preparation"
+  caption="Installation preparation"
 />
 
 2. Secure the mounting bracket to the wall by using self-tapping screws.
@@ -99,11 +100,11 @@ If the selected solution utilizes the NB-IoT/LTE CAT-M wireless communication mo
   caption="Fix the Mounting Bracket"
 />
 
-:::tip 📝 NOTE:
+:::tip 📝 NOTE
 Mount the bracket on a pole with a 50-80&nbsp;mm diameter. For larger poles, use a bigger steel strap. The standard kit does not include a larger steel strap. Purchase separately if needed.
 :::
 
-2. Align the hanging tabs of the device with the slots on the bracket, then insert the tabs into the slots. Gently pull the device downwards until it securely snaps into place.
+2. Align the hanging tab of the device with the slots on the bracket, then insert the tab into the slots. Gently pull the device downwards until it securely snaps in place.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/quickstart/f8pHSolution_poleMount2.png"
@@ -149,17 +150,17 @@ The soil pH sensor comes pre-assembled with the Sensor Probe IO by default at th
   caption="Installation complete"
 />
 
-### Power Supply Setup
+## Power Supply Setup
 
 The Sensor Hub relies on the Sensor Probe IO for connectivity to the soil pH combo sensors. Consequently, it cannot be powered by batteries alone and requires a connection to either a solar panel or a 12&nbsp;V<sub>DC</sub> power supply for operation.
 
-#### RAK9154 Solar Battery Installation
+### RAK9154 Solar Battery Installation
 
-:::tip 📝 NOTE:
+:::tip 📝 NOTE
 Mount the bracket on a pole with a 50-80&nbsp;mm diameter. For larger poles, use a bigger steel strap. The standard kit does not include a larger steel strap. Purchase separately if needed.
 :::
 
-1. Secure the mounting bracket to the pole using two steel straps.
+1. Secure the mounting bracket on the pole with two steel straps.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/quickstart/f13pHSolution_Batteryins1.png"
@@ -167,7 +168,7 @@ Mount the bracket on a pole with a 50-80&nbsp;mm diameter. For larger poles, use
   caption="Secure the mounting bracket"
 />
 
-2. Attach the mounting plate to RAK9154 using two M3 screws.
+2. Attach the mounting plate to the RAK9154 with two (2) M3 screws.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/quickstart/f14pHSolution_Batteryins2.png"
@@ -175,7 +176,7 @@ Mount the bracket on a pole with a 50-80&nbsp;mm diameter. For larger poles, use
   caption="Attach the mounting plate"
 />
 
-3. Install the RAK9154 to the back of the solar panel using four (4) screws and nuts.
+3. Install the RAK9154 to the back of the solar panel with four (4) screws and nuts.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/quickstart/f15pHSolution_Batteryins3.png"
@@ -183,7 +184,7 @@ Mount the bracket on a pole with a 50-80&nbsp;mm diameter. For larger poles, use
   caption="Attach the RAK9154 to solar panel"
 />
 
-4. Connect the cable from the solar panel to the PV Input connector of RAK9154. Install two (2) M6 screws on the mounting plate with a clearance of about 3&nbsp;mm.
+4. Connect the cable of the solar panel to the **PV input** connector of RAK9154. Install two (2) M6 screws to the mounting plate with a clearance of about 3&nbsp;mm.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/quickstart/f16pHSolution_Batteryins4.png"
@@ -191,7 +192,7 @@ Mount the bracket on a pole with a 50-80&nbsp;mm diameter. For larger poles, use
   caption="RAK9154 and Solar Panel Connection"
 />
 
-5. Suspend the solar panel on the mounting bracket, adjust its angle and direction, and then secure it by tightening the two (2) M6 screws along with the remaining two screws.
+5. Suspend the solar panel on the mounting bracket, adjust its angle and direction, and then tighten the two (2) M6 screws along with the remaining two screws.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/quickstart/f17pHSolution_Batteryins5.png"
@@ -199,23 +200,23 @@ Mount the bracket on a pole with a 50-80&nbsp;mm diameter. For larger poles, use
   caption="Install the solar panel combination"
 />
 
-6. Connect the Sensor Hub to the RAK9154. Utilize a cable to link the remaining connection ports of the Sensor Hub to the Output 1 SP11 connection port of the RAK9154.
+6. Connect Sensor Hub and RAK9154. Use a cable to link the remaining connection port of the Sensor Hub to the lithium battery Output 1 SP11 connection port of RAK9154.
 
-:::tip 📝 NOTE:
+:::tip 📝 NOTE
 When connecting to RAK9154, ensure that the Sensor Hub is connected to the Output 1 connection port.
 :::
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/quickstart/f18pHSolution_Batteryins6.png"
   width="45%"
-  caption="Connect Sensor Hub and RAK9154"
+  caption="Connect the Sensor Hub and RAK9154"
 />
 
 7. Once the connection is complete, the Sensor Hub is ready to be powered up.
 
-#### 12&nbsp;V<sub>DC</sub> Power Supply Installation
+### 12&nbsp;V<sub>DC</sub> Power Supply Installation
 
-1. Connect the power adapter and the external power cable of the Sensor Hub through the circular DC interface.
+1. Connect the power adapter to the external power cable of Sensor Hub using a circular DC connector.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/quickstart/f19pHSolution_powersupply.png"
@@ -223,9 +224,9 @@ When connecting to RAK9154, ensure that the Sensor Hub is connected to the Outpu
   caption="Power adapter connection"
 />
 
-2. Connect the external power cable to the Sensor Hub through the SP11 connector.  
-3. Align the white dot mark on the SP11 connector plug of the external power cable with the white dot mark on the Sensor Hub SP11 connector socket, and push the plug in firmly into the socket. 
-4. After the plug and socket are connected, tighten the locking nut to secure the SP11 connector. The external power cable can connect to any Sensor Hub connection port.
+2. Connect the external power cable to the Sensor Hub using the SP11 connector.
+3. Align the white dot mark on the SP11 connector plug of the external power cable with the white dot mark on the Sensor Hub SP11 connector socket, and push the plug firmly into the socket.
+4. After the plug and socket are connected, tighten the locking nut to secure the connection of the SP11 connector. The external power cable can connect to any Sensor Hub connection port.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/quickstart/f20pHSolution_ProbeInstall1.png"
@@ -281,7 +282,7 @@ To prevent damage to the device, refrain from powering up the Sensor Hub before 
   caption="Click on the CONNECT button"
 />
 
-6. Hold your mobile device close to the **N** symbol on the SensorHub device.
+6. Hold your mobile device close to the **N** symbol on the Sensor Hub device.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/quickstart/f25pHSolution_WTB_Scandevices.png"
@@ -289,7 +290,7 @@ To prevent damage to the device, refrain from powering up the Sensor Hub before 
   caption="Scanning in progress"
 />
 
-:::tip 📝 NOTE:
+:::tip 📝 NOTE
 The detection of the Sensor Hub device indicates that the device has been successfully powered up.
 :::
 
@@ -307,7 +308,7 @@ The detection of the Sensor Hub device indicates that the device has been succes
   caption="Sync Device"
 />
 
-:::tip 📝 NOTE:
+:::tip 📝 NOTE
 - By default, if no connection is established within 30 seconds, the BLE broadcast of the Sensor Hub will automatically shut down. To establish a connection, connect the RAK device immediately after turning on the power or restart the power.
 - Certain Android smartphones may necessitate enabling GPS to connect to BLE. Enabling GPS does not involve the use or sharing of sensitive information with the app.
 
@@ -329,7 +330,7 @@ The detection of the Sensor Hub device indicates that the device has been succes
   caption="Uplink Settings option"
 />
 
-10. Once configured, click **SAVE SELECTION** and then the **APPLY** button to implement the configuration options.
+10. Once configured, click **SAVE SELECTION**, and then the **APPLY** button to implement the configuration options.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/quickstart/f30pHSolution_WTB_queue.png"
@@ -345,17 +346,17 @@ After a few seconds, the synchronization progress will be completed, concluding 
   caption="Commands applied successfully"
 />
 
-#### Sensor Hub Network Configuration
+### Sensor Hub Network Configuration
 
-##### LoRaWAN Configuration
+#### LoRaWAN Configuration
 
-This section focuses on configuring LoRaWAN parameters and joining the network. Before proceeding with the following steps, ensure that both the gateway and Sensor Hub are successfully connected to the server.
+This section focuses on configuring the LoRaWAN parameters and joining the network. Before proceeding with the following steps, ensure that the gateway and Sensor Hub are connected to the server.
 
 Refer to the **Connect the Gateway to the Server** and **Connect Sensor Hub to the Server** sections for detailed instructions.
 
-1. Click on the **LORA & LORAWAN PARAMETERS** tab. Configure the following parameters:
+1. Click the **LORA & LORAWAN PARAMETERS** tab. Configure the following parameters:
 
-**Global Settings**
+- <b>Global settings</b>
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/quickstart/f32pHSolution_WTB_LoRaconf1.png"
@@ -363,27 +364,25 @@ Refer to the **Connect the Gateway to the Server** and **Connect Sensor Hub to t
   caption="Global Settings"
 />
 
-- **Join Mode:** Configure the Join mode based on the device's network access mode: **Over-The-Air Activation (OTAA)** or **Activation By Personalization (ABP)**. Make sure it matches the join mode registered on the network server.
-- **Active Region:** Set the Active region to the device's frequency plan. Ensure that it is consistent with the gateway and device frequency plan registered on the network server.
-
+- **Join mode**: Configure the Join mode based on the device's network access mode: **Over-The-Air Activation (OTAA)** or **Activation By Personalization (ABP)**. Make sure it matches the join mode registered on the network server.
+- **Active region**: Set the Active region to the device's frequency plan. Ensure that it is consistent with the gateway and device frequency plan registered on the network server.
 Supported frequency bands include CN470, RU864, IN865, EU868, US915, AU915, KR920, AS923-1/2/3/4.
 
-**LoRaWAN keys, ID, EUI**
-* For the **OTAA join mode**, configure the following parameters: **Application EUI**, **Application key**, and **Device EUI**.
+<b>LoRaWAN keys, ID, EUI</b>
+
+- For the **OTAA join mode**, configure the following parameters: **Application EUI**, **Application key**, and **Device EUI**.
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/quickstart/f33pHSolution_WTB_LoRaconf2.png"
   width="25%"
   caption="LoRaWAN parameters"
 />  
 
-
-
    * **Application EUI**: Confirm that it matches the device's Application EUI as registered in the network server.
    * **Application key**: Verify its alignment with the device's Application key registered in the network server. Click **GENERATE KEY** to create a new key if needed.
    * **Device EUI**: Confirm that it matches the device's EUI as registered in the network server. 
 
 **Data on LoRa® Network**
-* For the ABP join mode, configure the following parameters: Application session key, Device address, Network session key.
+* For the ABP join mode, configure the following parameters: **Application session key**, **Device address**, and **Network session key**.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/quickstart/f34pHSolution_WTB_LoRaconf3.png"
@@ -391,11 +390,11 @@ Supported frequency bands include CN470, RU864, IN865, EU868, US915, AU915, KR92
   caption="Data on LoRa® Network"
 />
 
-* **Confirm mode**: Message confirmation mode.
-* **Enable auto join**: Determine whether to activate automatic network access. When enabled, the device will join the network automatically upon powering up.
-* **Network status**: Indicates the status of the network connection. It will be activated automatically once successfully connected to the network.
-* **ADR**: The Adaptive Data Rate optimizes data rates in the network. Toggle the button to enable or disable it.
-* **JOIN NETWORK**: After completing the network parameter, click the **JOIN NETWORK** button to run the join network command.
+  * **Confirm mode**: Message confirmation mode.
+  * **Enable auto join**: Determine whether to activate automatic network access. When enabled, the device will join the network automatically upon powering up.
+  * **Network status**: Indicates the status of the network connection. It will be activated automatically once successfully connected to the network.
+  * **ADR**: The Adaptive Data Rate optimizes data rates in the network. Toggle the button to enable or disable it.
+  * **JOIN NETWORK**: After completing the network parameter, click the **JOIN NETWORK** button to run the join network command.
 
 1. After clicking **JOIN NETWORK**, a message **Message sent** will appear, indicating that the join network command has been sent.
 
@@ -405,11 +404,11 @@ Supported frequency bands include CN470, RU864, IN865, EU868, US915, AU915, KR92
   caption="Join the network"
 />
 
-##### NB-IoT/LTE CAT-M1 Configuration
+#### NB-IoT/LTE CAT-M1 Configuration
 
 This section primarily introduces the configuration of LTE-M network parameters. If you are using the NB-IoT/LTE CAT-M1 network, after connecting the device, select **LTE-M** in the **Uplink Settings** options on the **SENSOR HUB INFO** interface to display the **LTE-M PARAMETERS** configuration tab.
 
-1. Click the **LTE-M PARAMETERS** tab. Check the following parameters to ensure the normal use of the network.
+1. Click the **LTE-M PARAMETERS** tab and check the following parameters to ensure that the network is working properly.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/quickstart/f36pHSolution_WTB_NBconf1.png"
@@ -417,16 +416,16 @@ This section primarily introduces the configuration of LTE-M network parameters.
   caption="View the NB-IOT PARAMETERS tab parameters"
 />
 
-**LTE-M PARAMETERS**
+**LTE-M Network**
 
-- **OPERATOR**: shows the Network operator. If the operator's name is displayed, it indicates that the device has recognized the SIM card. 
+- **OPERATOR**: Shows the Network operator. If the operator's name is displayed, it indicates that the device has recognized the SIM card. 
 For example, *T-Mobile*.
 
 **IP Network**
 
 - **STATUS**: If the status is **Activated**, it signifies that the network of the SIM card is functioning normally.
 
-2. Select the **Application** option to set up the cellular network parameters.
+2. Select the **Application** option to configure the cellular network parameters.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/quickstart/f37pHSolution_WTB_NBconf2.png"
@@ -434,12 +433,12 @@ For example, *T-Mobile*.
   caption="Configure the cellular network parameters"
 />
 
-- **Service**: choose a service, either AWS IoT Core or Generic MQTT. Let's take Generic MQTT as an example.
-- **Server address**: input the server address. Using the external MQTT broker as an example, enter `broker.hivemq.com`. Enter the address based on your specific use case.
-- **Server Port**: specify the server port according to your configuration.
-- **Client ID**: set the client ID for your device.
-- **Enable user auth**: decide whether to activate user authentication for your device.
-- **Enable SSL**: decide whether to activate SSL (Secure Sockets Layer) for secure communication.
+- **Service**: Choose a service, either AWS IoT Core or Generic MQTT. For this guide, use Generic MQTT as an example.
+- **Server address**: Input the server address. Using the external MQTT broker as an example, enter `broker.hivemq.com`. Enter the address based on your specific use case.
+- **Server Port**: Specify the server port according to your configuration.
+- **Client ID**: Set the client ID for your device.
+- **Enable user auth**: Decide whether to activate user authentication for your device.
+- **Enable SSL**: Decide whether to activate SSL (Secure Sockets Layer) for secure communication.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/quickstart/f38pHSolution_WTB_NBconf3.png"
@@ -447,9 +446,9 @@ For example, *T-Mobile*.
   caption="Configure the Subscription Topics"
 />
 
-- **Publish Topic**: specify the topic for publishing messages.
-- **Data Format**: select **JSON** as the preferred format for data transmission.
-- **Subscribe Topic**: subscribe to the topic for receiving incoming messages, as illustrated in this example.
+- **Publish Topic**: Specify the topic for publishing messages.
+- **Data Format**: Select **JSON** as the preferred format for data transmission.
+- **Subscribe Topic**: Subscribe to the topic for receiving incoming messages, as illustrated in this example.
 
 3. Following the configuration, click **APPLY** in the command list at the bottom of the interface to implement the changes. If the message **All commands applied successfully** appears, it indicates a successful configuration modification.
 
@@ -459,7 +458,7 @@ For example, *T-Mobile*.
   caption="Apply the modified configuration"
 />
 
-4. When the configuration is accurate and the connection to the server is successful, the **Connection Status** will display as **connected**.
+4. When configured correctly and successfully connected to the server, the **Connection Status** will display as **connected**.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/quickstart/f40pHSolution_WTB_NBconf5.png"
@@ -467,11 +466,11 @@ For example, *T-Mobile*.
   caption="Successfully connected to the server"
 />
 
-#### Sensor Configuration
+### Sensor Configuration
 
-This section details the configuration processs of the soil pH sensor. It shows how to access the monitoring data and device details of the soil pH sensor. Additionally, there’s an option to configure other information for each monitoring parameter, such as the uplink data sending period and threshold.
+This section details the configuration process of the soil pH sensor. It shows how to access the monitoring data and device details of the soil pH sensor. Additionally, there’s an option to configure other information for each monitoring parameter, such as the uplink data sending period and threshold.
 
-1. To start with, click the **SENSOR PROBE** tab to display the connected soil pH sensor. 
+1. To start with, click the **SENSOR PROBE** tab to display the connected soil pH sensor on the interface. 
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/quickstart/f41pHSolution_WTB_SHconf1.png"
@@ -489,7 +488,7 @@ This section details the configuration processs of the soil pH sensor. It shows 
 
 - **pH**: Soil pH value.
 - **FETCH DATA**: Update the monitoring data from the sensor.
-- **Device details**: Device details of the soil pH sensor.
+- **Device details**
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/quickstart/f43pHSolution_WTB_SHconf3.png"
@@ -497,7 +496,7 @@ This section details the configuration processs of the soil pH sensor. It shows 
   caption="Sensor Details"
 />
 
-3. Configure the periodic uplink data sending, threshold, and other pertinent information of the sensor.
+3. Configure the periodic uplink data sending, thresholds, and other relevant information for the sensor.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/quickstart/f44pHSolution_WTB_SHconf4.png"
@@ -505,7 +504,7 @@ This section details the configuration processs of the soil pH sensor. It shows 
   caption="Sensor details"
 />
 
-- **Sensor data**: Information provided by the sensor.
+- **Sensor data**: Data provided by the sensor.
 - **FETCH DATA**: Update the latest sensor data.
 - **Send uplink if value changes**: Send uplink data if the sensor data changes.
 - **Sensor interval(s)**: The payload sending interval in seconds. It determines how often the sensor sends uplink data to the server, with a range interval from 60~86,400 seconds. Set this parameter when the Send periodic uplink is enabled.

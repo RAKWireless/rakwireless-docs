@@ -142,17 +142,27 @@ export default {
     store: 'https://store.rakwireless.com/products/rak7204-lpwan-environmental-node?utm_source=RAK7204WisNodeSense&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
-  // Sensor Hub
+  // Sensor Hub & Solutions
 
   '/Product-Categories/WisNode/RAK2560/': {
     label: 'RAK2560 WisNode Sensor Hub',
     img: '/assets/images/wisnode/rak2560/RAK2560.jpg',
     store: 'https://store.rakwireless.com/products/sensor-hub?utm_source=RAK2560WisNodeSense&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-  '/Product-Categories/WisNode/Soil-pH-Monitoring/': {
+    '/Product-Categories/WisNode/Soil-Monitoring/': {
+    label: 'Soil Moisture, Temperature, and Electrical Conductivity Solution',
+    img: '/assets/images/wisnode/soil-monitoring/soil-moisture.png',
+    store: 'https://store.rakwireless.com/products/soil-monitoring?m=3&h=sensorhub-solution?m=3&h=sensor-hub&variant=42505216786630?utm_source=SoilMoisture&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+    '/Product-Categories/WisNode/Soil-pH-Monitoring/': {
     label: 'Soil pH Monitoring Sensor Hub Solutions',
     img: '/assets/images/wisnode/soil-ph-monitoring/SoilpHSol.png',
     store: 'https://store.rakwireless.com/products/soil-ph-monitoring?m=3&h=sensor-hub&variant=42505216786630?utm_source=SoilpH&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisNode/Weather-Station/': {
+    label: 'Weather Station Solution',
+    img: '/assets/images/wisnode/weather-station/weather-station-solution.png',
+    store: 'https://store.rakwireless.com/products/weather-station-monitoring?variant=42505214427334?utm_source=W&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
 

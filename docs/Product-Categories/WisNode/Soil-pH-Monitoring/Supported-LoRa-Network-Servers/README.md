@@ -1,6 +1,6 @@
 ---
 rak_img: /assets/images/wisnode/soil-ph-monitoring/SoilpHSol.png
-rak_desc: This section furnishes information on connecting the Soil pH Sensor to the cloud through LoRaWAN and NB-IoT/Cat1 communication protocols. The data is showcased using Datacake.
+rak_desc: Contains a comprehensive guide in setting up both your Weather Station Monitoring device to the LoRaWAN and the NB-IoT platforms. It also includes instructions on connecting and configuring your LoRaWAN Gateway TTN and Datacake.
 prev: ../Quickstart/
 next: ../Datasheet/
 tags:
@@ -12,7 +12,7 @@ tags:
     - LoRaWAN
 ---
 
-# Soil pH Monitoring  Sensor Supported LoRa Network Servers
+# Soil pH Monitoring Solution Supported LoRa Network Servers
 
 ## Network Server and Visualization Configuration
 
@@ -28,7 +28,7 @@ This section outlines the operational steps for connecting the device to the net
 
 #### Cloud Network Server Setup
 
-The cloud network server deployment scenario involves connecting the gateway and devices to third-party cloud network servers. This setup integrates visualization applications to manage real-time soil pH data.
+The cloud network server deployment scenario involves connecting the gateway and devices to third-party cloud network servers. This server integrates visualization applications to manage real-time soil pH data.
 
 This section provides instructions on creating a Datacake visualization application using the TTN v3 cloud network server.
 
@@ -40,11 +40,11 @@ This section provides instructions on creating a Datacake visualization applicat
 
 ##### Connect Gateway to TTN
 
-For this example, you will use the TTNv3 cloud server and RAK7289 V2 WisGate Edge Lite 2 to demonstrate how to connect the RAK business gateway to a cloud server
+For this example, you will use the TTNv3 cloud server and RAK7289 V2 WisGate Edge Lite 2 to demonstrate how to connect the RAK business gateway to a cloud server.
 
 - **Register the Gateway**
 
-1. Register an account and log in to the [TTN website.](https://eu1.cloud.thethings.network/console/) If you already have a TTN account, you can log in with your **The Things ID** credentials.
+1. Register an account and log in to the <a href="https://eu1.cloud.thethings.network/console/" target="_blank">TTN v3 website</a>. If you already have a TTN account, you can log in using your **The Things ID** credentials.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f3pHSolution_LNS_TTN1.png"
@@ -52,7 +52,7 @@ For this example, you will use the TTNv3 cloud server and RAK7289 V2 WisGate Edg
   caption="Log in to the TTN website"
 />
 
-2. Once logged into the site, click on **Register a gateway** to begin the registration process for a new gateway. 
+2. Once logged into the site, click on **Register a gateway** to begin the registration process for a new gateway.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f4pHSolution_LNS_TTN2.png"
@@ -60,9 +60,9 @@ For this example, you will use the TTNv3 cloud server and RAK7289 V2 WisGate Edg
   caption="TTN home page"
 />
 
-3. Input the Gateway EUI and then click on **Confirm** to proceed  
+3. Input the Gateway EUI and then click on **Confirm** to proceed.
 
-The Gateway EUI serves as a distinct 64-bit extended identifier for the gateway, accessible from the Overview page of the gateway management platform or from the label situated behind the gateway.
+The Gateway EUI serves as a distinct 64-bit extended identifier for the gateway. It is accessible from the Overview page of the gateway management platform or the label situated behind the gateway.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f5pHSolution_LNS_TTN3.png"
@@ -70,7 +70,7 @@ The Gateway EUI serves as a distinct 64-bit extended identifier for the gateway,
   caption="Enter the Gateway EUI"
 />
 
-4. Choose the frequency plan utilized by the gateway and click **Register gateway** to complete the registration process of the gateway.
+4. Choose the appropriate frequency plan used by the gateway, and click **Register gateway** to complete the registration process of the gateway.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f6pHSolution_LNS_TTN4.png"
@@ -86,11 +86,11 @@ Your gateway dashboard should look the same with **Figure 7**.
   caption="Successfully registered the gateway"
 />
 
-**Generate Token**
+**Generate a Token**
 
 TTNv3 supports TLS server authentication and client tokens, which require trust files and keys to configure the gateway and successfully connect to the network. 
 
-1. To generate a key file, navigate to **API keys** from the **Overview** page of the registered gateway, then click on **Add API key**.
+1. To generate a key file, navigate to **API keys** from the **Overview** page of the registered gateway, then click **Add API key**.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f8pHSolution_LNS_TTN6.png"
@@ -98,7 +98,7 @@ TTNv3 supports TLS server authentication and client tokens, which require trust 
   caption="Add API keys"
 />
 
-2. In the **Add API key** page, set the **Name** field, tick of the checkboxes, then click **Create API key**. 
+2. In the **Add API key** page, set the **Name** field, tick off the checkboxes, then click **Create API key**.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f9pHSolution_LNS_TTN7.png"
@@ -106,7 +106,7 @@ TTNv3 supports TLS server authentication and client tokens, which require trust 
   caption="Configure the API Key"
 />
 
-3. A new window pops up with the generated key. Copy the new API key by clicking the icon and then the **I have copied** the key button.
+3. A new window pops up with the generated key. Copy the new API key by clicking the icon and then the **I have copied the key** button.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f10pHSolution_LNS_TTN8.png"
@@ -114,15 +114,15 @@ TTNv3 supports TLS server authentication and client tokens, which require trust 
   caption="Copy and save the API Key"
 />
 
-**Register the Gateway**
+**Configure the Gateway**
 
 1. Navigate back to the gateway management platform Web UI. Click on the left navigation bar to access the **LoRa > Configuration** tab. Complete the following settings and save them.
 
 - **Basics Station Server Type**: LNS Server
 - **Server URL**: `wss://eu1.cloud.thethings.network`
 - **Server Port**: `8887`
-- **Authentication Mode**: TLS server & Client Token Authentication
-- **Trust (CA Certificate)**: Download the [certificate](https://letsencrypt.org/certs/isrgrootx1.pem)
+- **Authentication Mode**: TLS server & Client Token - Authentication
+- **Trust (CA Certificate)**: Click the <a href="https://letsencrypt.org/certs/isrgrootx1.pem" target="_blank">link</a> to download.
 - **Client Token**: Copied API Keys
 
 <rk-img
@@ -165,7 +165,7 @@ TTNv3 supports TLS server authentication and client tokens, which require trust 
   width="100%"
   caption="Enter the application ID"
 />
-4. Click on the **+Register end device** button to add a new end device to the application.
+4. Click on the **+ Register end device** button to add a new end device to the application.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f16pHSolution_LNS_TTN14.png"
@@ -183,11 +183,11 @@ TTNv3 supports TLS server authentication and client tokens, which require trust 
 
 - **JoinEUI**, **DevEUI**, and **AppKey** can be automatically generated by clicking **Generate** on the TTN web page or customized by the user.
 
-:::tip 📝 NOTE:
-Ensure that the three parameters - JoinEUI, DevEUI, and AppKey - are consistent with the parameters set in the WisToolBox application.
+:::tip 📝 NOTE
+Ensure that the three parameters - **JoinEUI**, **DevEUI**, and **AppKey** - are consistent with the parameters set in the WisToolBox application.
 :::
 
-6. After completing the settings, return to the WisToolBox app, and click **JOIN NETWORK** to send the end device network access request.
+6. After completing the settings, return to the WisToolBox app, and click **JOIN NETWORK** to send the end device network join request.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f18pHSolution_LNS_TTN16.png"
@@ -209,7 +209,7 @@ Datacake is a versatile IoT platform. It offers a range of features tailored for
 
 **Create Datacake Integration**
 
-1. In the TTN console, navigate to **Integrations** on the sidebar, proceed to the **Webhooks** section, and then click **+Add Webhooks** to set up an integration.
+1. In the TTN console, navigate to **Integrations** on the sidebar, proceed to the **Webhooks** section, and then click **+Add webhooks** to set up an integration.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f20pHSolution_LNS_TTN18.png"
@@ -225,7 +225,7 @@ Datacake is a versatile IoT platform. It offers a range of features tailored for
   caption="Select the Datacake template"
 />
 
-3. Generate an API key for webhook authentication on Datacake. To get started, register a [Datacake](https://datacake.co/) account, and then log in.
+3. Generate an API key on Datacake to enable webhook authentication. To get started, register a <a href="https://datacake.co/" target="_blank">Datacake</a> account, and then log in.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f22pHSolution_LNS_DC1.png"
@@ -233,7 +233,7 @@ Datacake is a versatile IoT platform. It offers a range of features tailored for
   caption="Log in to the Datacake IoT platform"
 />
 
-4. Navigate to the Datacake workspace. Select **Members** on the sidebar, switch to the **API Users** tab, and then click the Add **API User** button.
+4. Navigate to the Datacake workspace. Select **Members** on the sidebar, switch to the **API Users** tab, then click the **Add API User** button.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f23pHSolution_LNS_DC2.png"
@@ -241,7 +241,7 @@ Datacake is a versatile IoT platform. It offers a range of features tailored for
   caption="Add API User"
 />
 
-5. Enter the name of the API User, for instance, **TTS API**. Set the relevant parameters accordingly and click **Save** to finalize the creation process.
+5. Enter the name of the API User, for instance, **TTS API**. Set the relevant parameters accordingly and click  **Save** to finalize the creation process.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f24pHSolution_LNS_DC3.png"
@@ -299,7 +299,7 @@ Datacake is a versatile IoT platform. It offers a range of features tailored for
   caption="Select the Things Stack V3"
 />
 
-5. In the **Step 3 Devices** tab, enter the device **DEVEUI** and **NAME** fields, and click **Next** to continue.
+5. In the **STEP 3 Devices** tab, enter the device **DEVEUI** and **NAME** fields, and click **Next** to continue.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f31pHSolution_LNS_DC10.png"
@@ -315,7 +315,7 @@ Datacake is a versatile IoT platform. It offers a range of features tailored for
   caption="Select a subscription plan"
 />
 
-7. The registered devices can now be viewed on the **Devices** tab.
+7. The registered device can now be viewed on the **Devices** tab.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f33pHSolution_LNS_DC12.png"
@@ -323,7 +323,7 @@ Datacake is a versatile IoT platform. It offers a range of features tailored for
   caption="Registered device"
 />
 
-**Create a Payloader**
+**Create a Payload Decoder**
 
 1. Click the successfully registered device and go to the **Configuration** tab. Scroll down to the **Payload Decoder** field, then copy and save the decoder code.
 
@@ -396,7 +396,7 @@ var n = parseInt (str, base);
 :::
 
 
-2. Displace the menu bar to the **+Add Field** section and click **+Add Field**.
+2. Displace the menu bar to the **+Add Field** section, and click **+Add Field**.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f36pHSolution_LNS_DC15.png"
@@ -412,9 +412,9 @@ var n = parseInt (str, base);
   caption="Configuration fields"
 />
 
-:::tip 📝 NOTE:
+:::tip 📝 NOTE
 - Enter a suitable name in the **Name** field.
-- The **Identifier** field will be automatically filled based on the name.
+- The **Identifier** field will be automatically filled in based on the name.
 - When an uplink is received, refresh the page, and the **CURRENT VALUE** field will be updated.
 - Leave everything else as default, and click **Add Field** to complete the setup.
 :::
@@ -429,7 +429,7 @@ var n = parseInt (str, base);
 
 **Create a Dashboard**
 
-1. To create a dashboard, toggle the **edit mode** switch on the **Dashboard** tab of the device in Datacake.
+1. To create a dashboard, toggle the **edit mode** switch on the device **Dashboard** tab.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f39pHSolution_LNS_DC18.png"
@@ -437,7 +437,7 @@ var n = parseInt (str, base);
   caption="Turn on the edit mode switch"
 />
 
-2. Click **+Add Widget** to include a visualization widget.
+2. Click **+Add Widget** to add a visualization widget.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f40pHSolution_LNS_DC19.png"
@@ -453,8 +453,8 @@ var n = parseInt (str, base);
   caption="Select Value to create a new dashboard"
 />
 
-:::tip 📝 NOTE:
-You can select various types of widgets to accommodate different data formats.
+:::tip 📝 NOTE
+You can select different types of widgets to accommodate various data formats.
 :::
 
 4. In the **Title** field under the **Basics** tab, name the widget as **pH**.
@@ -465,7 +465,7 @@ You can select various types of widgets to accommodate different data formats.
   caption="Name the Widget"
 />
 
-5. Under the **Data** tab, choose the **PH** field and set the unit to **pH**.
+5. Under the **Data** tab, click the **PH** field and set the unit to **pH**.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f42pHSolution_LNS_DC21.png"
@@ -505,7 +505,7 @@ This section will use the public MQTT broker integration as an example to demons
 
 ##### Configure ThingsBoard
 
-1. Log in to [ThingsBoard.](https://thingsboard.cloud/login) If you don't have an account yet, [create one](https://thingsboard.cloud/signup) before proceeding.
+1. Log in to <a href="https://thingsboard.cloud/login" target="_blank">ThingsBoard</a>. If you don't have an account, <a href="https://thingsboard.cloud/signup" target="_blank">create one</a> before proceeding.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f47pHSolution_BINS_TB1.png"
@@ -521,7 +521,7 @@ This section will use the public MQTT broker integration as an example to demons
   caption="ThingsBoard Homepage"
 />
 
-3. Click **Integration > Data converter** in the left navigation tree to create a data converter for the uplink.
+3. Navigate through **Integration center > Integrations > Data converters** in the left navigation tree to create a data converter for the uplink.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f49pHSolution_BINS_TB3.png"
@@ -529,7 +529,7 @@ This section will use the public MQTT broker integration as an example to demons
   caption="Create a Data Converter"
 />
 
-4. Click on the **Add Data Converter** icon and choose the **Create new converter** option.
+4. Click the **Add Data Converter** icon and choose the **Create new converter** option.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f50pHSolution_BINS_TB4.png"
@@ -544,7 +544,7 @@ This section will use the public MQTT broker integration as an example to demons
   caption="Add the decoder code"
 />
 
-6. Edit the decoder code by copying the following code into the edit box. Then, click **Add** to include the uplink decoder.
+6. Edit the decoder code by copying the following code into the edit box, then click **Add** to include the uplink decoder.
 
 ::: details Click to view the decoder code
 ```js
@@ -626,7 +626,7 @@ return result;
 11. Configure connection options. **Host** is the MQTT broker address used for messages. The Host of the external MQTT broker used in this example is `broker.hivemq.com`. You can choose to use other brokers with a different Host.
 
 
-12. Enter the address `broker.hivemq.com` in the **Host** field, with the port number `1883`. Click the **Add topic filter** button to configure the subscription topic:
+12. Enter the address `broker.hivemq.com` in the **Host** field, with the port number `1883`. Click the **Add topic filter** button to configure the subscription topic.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f56pHSolution_BINS_TB10.png"
@@ -638,35 +638,34 @@ return result;
 **Configure the subscription topic**
 
 ````
-application/{{ application_name }}/device/{{ device_EUI }}/join
-application/{{ application_name }}/device/{{ device_EUI }}/ rx
-application/{{ application_name }}/device/{{ device_EUI }}/ tx
-application/{{ application_name }}/device/{{ device_EUI }}/ack
-application/{{ application_name }}/device/{{ device_EUI }}/status
+application/{{application_name}}/device/{{ device_EUI }}/join
+application/{{application_name}}/device/{{ device_EUI }}/ rx
+application/{{application_name}}/device/{{ device_EUI }}/ tx
+application/{{application_name}}/device/{{ device_EUI }}/ack
+application/{{application_name}}/device/{{ device_EUI }}/status
 ````
 
-   - **application_name**: the aapplication ID created in the gateway.
-   - **device_EUI**: the device EUI of the end device.
+   - **application_name**: The application ID created in the gateway.
+   - **device_EUI**: The device EUI of the end device.
 
-Modify the parameter values corresponding to the topics based on the actual application created and the device used.
+13. Modify the parameter values corresponding to the topics based on the actual application created and the device used. After configuring the details, click the **Add** button to save and complete the settings.
 
-:::tip 📝 NOTE:
+:::tip 📝 NOTE
 The values in the subscription topic must be all lowercase. For example, `application/1/device/0123456789abcdef/join`. 
 :::
 
-13.  After configuring the details, click on Add to save and complete the settings.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f56-1pHSolution_BINS_TB10-1.png"
   width="100%"
-  caption="WisGate OS Web Management Platform"
+  caption="Configure and add the subscription topics"
 />
 
-##### Configure Gateway
+##### Configure the Gateway
 
-This section will use [RAK7268 V2 WisGate Edge Lite 2](https://store.rakwireless.com/products/rak7268-8-channel-indoor-lorawan-gateway?variant=42316475924678) as an example.
+This section will use the <a href="https://store.rakwireless.com/products/rak7268-8-channel-indoor-lorawan-gateway?variant=42316475924678" target="_blank">RAK7268 V2 WisGate Edge Lite 2</a> as an example.
 
-1. To access the gateway web management platform, refer to the [WisGateOS V2 User Manual](https://docs.rakwireless.com.cn/Product-Categories/Software-APIs-and-Libraries/WisGateOS-2/Overview/) for details.
+1. To access the gateway web management platform, refer to the <a href="https://docs.rakwireless.com/Product-Categories/Software-APIs-and-Libraries/WisGateOS-2/Overview/#overview" target="_blank">WisGateOS V2 user manual</a> for details.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f57pHSolution_BINS_TB11.png"
@@ -674,7 +673,7 @@ This section will use [RAK7268 V2 WisGate Edge Lite 2](https://store.rakwireless
   caption="WisGate OS Web Management Platform"
 />
 
-2. After successfully logging in, navigate to the **LoRa®** menu in the left navigation tree and set the **Work mode** of the gateway to **Built-in network server**.
+2. After successfully logging in, navigate to the **LoRa®** menu in the left navigation tree and set the **Work mode** of the gateway to the **Built-in network server**.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f58pHSolution_BINS_TB12.png"
@@ -690,7 +689,7 @@ This section will use [RAK7268 V2 WisGate Edge Lite 2](https://store.rakwireless
   caption="Applications Tab"
 />
 
-4. Configure the following information: **Application name**, **Application Description**, and **Application Type**.
+4. Configure the following information: **Application name**, **Application description**, and **Application Type**.
 
 - **Unified Application key**: Choose this option if all devices will use the same application key. Once selected, a field for the application key appears, where you can manually type in an application key or click the **Autogenerate** button to generate one.
 
@@ -698,10 +697,10 @@ This section will use [RAK7268 V2 WisGate Edge Lite 2](https://store.rakwireless
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f60pHSolution_BINS_TB14.png"
   width="50%"
-  caption="Unified Application Key"
+  caption="Configure the Application key"
 />
 
-- After enabling the Auto Add Device option, configure the **Application EUI option**. The value needs to be consistent with the node value. Once you have verified the application EUI and key, the device will be added automatically to the application.
+- After enabling the **Auto Add Device** option, configure the **Application EUI option**. The value needs to be consistent with the node value. Once you have verified the application EUI and key, the device will be added automatically to the application.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f61pHSolution_BINS_TB15.png"
@@ -709,7 +708,7 @@ This section will use [RAK7268 V2 WisGate Edge Lite 2](https://store.rakwireless
   caption="Auto Add Device"
 />
 
-:::tip 📝 NOTE:
+:::tip 📝 NOTE
 You can obtain the values by either querying the end device or generating it automatically and modifying the corresponding value of the device synchronously.  
 :::
 
@@ -733,14 +732,14 @@ You can obtain the values by either querying the end device or generating it aut
 
 7. Click the **Add end device** button. In the **End device information** interface, fill in the following information:
 
-- **Activation Mode:** Select the activation mode of the device: OTAA or ABP. 
+- **Activation Mode**: Select the activation mode of the device: OTAA or ABP. 
   - Choosing ABP mode creates two additional fields: **Application Session Key** and **Network Session Key**. 
-  In this example, you’re using OTAA activation mode.
+  - In this example, use OTAA activation mode.
 - **End device (group) name**: Enter the name of the end device or the group it belongs to.
 - **End device description (optional)**: Optionally provide a description for the end device.
-- **Class:** Select **Class A** for the device's operating mode.
-- **Frame Counter Width:** Keep the default value.
-- **LoRaWAN MAC Version:** The protocol version (V1.0.3) of the node.
+- **Class**: Select **Class A** for device’s operating mode.
+- **Frame Counter Width**: Keep the default value.
+- **LoRaWAN MAC Version**: The protocol version (v1.0.3) of the end device.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f64pHSolution_BINS_TB18.png"
@@ -756,9 +755,9 @@ You can obtain the values by either querying the end device or generating it aut
   caption="Add the device to the device list"
 />
 
-9. In the **Adding end devices** interface, enter the device EUI in the **End Device EUI (main)** field and select the **Add to End Devices list** button. Then click **Add end devices** to complete adding the end device.
+9. In the **Adding end devices** interface, enter the device EUI in the **End Device EUI (Main)** field and select the **Add to End Devices list** button. Then click **Add end devices** to complete adding the end device.
 
-:::tip 📝 NOTE:
+:::tip 📝 NOTE
 - The device EUI configured here must match the end device. You can either obtain it by querying the end device or entering one (1) EUI and synchronously updating the corresponding value of the end device.
 - If the EUI is correct, the device will be displayed in the **End devices list**.
 - If the EUI is incorrect, the device will be displayed in the **End devices with an error**.
@@ -770,7 +769,7 @@ You can obtain the values by either querying the end device or generating it aut
   caption="Complete the end device addition"
 />
 
-10. Click the Add button to confirm adding the device.
+10. Click the **Add** button to confirm adding the device.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f66pHSolution_BINS_TB20.png"
@@ -778,13 +777,13 @@ You can obtain the values by either querying the end device or generating it aut
   caption="Confirm to add the end device"
 />
 
-11. When finished, you need to enter the **End devices interface**, where you can see the created end device.
+11. When finished, enter the **End devices** interface, where you can see the created end device.
 
-##### Connect Sensor Hub to Built-In Network Server
+##### Connect the Sensor Hub to the Built-In Network Server
 
-For specific configuration on how to connect SensorHub to the server, please refer to **SensorHub Network Configuration > LoRaWAN Application Scenario**.
+For specific configuration on how to connect SensorHub to the server, refer to **SensorHub Network Configuration > LoRaWAN Application Scenario**.
 
-Once completed, the device will join the network. As depicted in **Figure 69**, the end device **SensorHub** has successfully connected to the gateway's built-in server.
+Once completed, the device will join the network. As shown in **Figure 69**, the end device **SensorHub** has successfully connected to the gateway's built-in server.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f67pHSolution_BINS_TB21.png"
@@ -792,9 +791,9 @@ Once completed, the device will join the network. As depicted in **Figure 69**, 
   caption="End device  SensoHub has been connected"
 />
 
-##### Configure MQTT Integration
+##### Configure the MQTT Integration
 
-1. Navigate to the **LoRa® > Configuration > Integration Interface Parameters** section.
+1. Go to the **LoRa® > Configuration > Integration Interface Parameters** section.
 
 2. Toggle the **Enable Integration Interface** option and select **Generic MQTT** as the **Integration mode**.
 
@@ -816,7 +815,7 @@ Once completed, the device will join the network. As depicted in **Figure 69**, 
 
 ##### Visualize Data Through ThingsBoard
 
-1. After creating the data converter, integrating, and obtaining some data in the **Event** tab, check the automatically created devices based on the decoder in the **Entities > Devices > Groups** tab.
+1. After creating the data converter, integrating, and obtaining some data in the **Event** tab, check the automatically created devices based on the decoder in the **Entities** > **Devices** > **Groups** tab.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f70pHSolution_BINS_TB24.png"
@@ -850,7 +849,7 @@ Once completed, the device will join the network. As depicted in **Figure 69**, 
   caption="Select Widget"
 />
 
-6. After selecting the widget, click **Add to dashboard**.
+6. After selecting the widget, click **Add to dashboard** to proceed.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f75pHSolution_BINS_TB29.png"
@@ -870,8 +869,8 @@ Once completed, the device will join the network. As depicted in **Figure 69**, 
 
 8. After setting the dashboard name, click the **Add** button to add more widgets. Alternatively, check the **Open dashboard** option to automatically open the created dashboard after adding the widget.
 
-:::tip 📝 NOTE:
-If the **Open** dashboard option is not selected, users can still easily view the added widgets via **Dashboard groups > All > [Group Name]**.
+:::tip 📝 NOTE
+If the **Open** dashboard option is not selected, you can still easily view the added widgets via **Dashboard groups** > **All** > [**Group Name**].
 :::
 
 <rk-img
@@ -885,7 +884,8 @@ If the **Open** dashboard option is not selected, users can still easily view th
 #### Connect Sensor Hub to MQTT Server
 
 
-In the **Network Server and Visualization Configuration** section, the server in the example has been set as a public MQTT broker: `broker.hivemq.com`. Refer to the corresponding section for details. You can also choose other brokers or servers, such as AWS IoT Core (optional), according to actual usage scenarios.
+In the **Network Server and Visualization Configuration** section, the server has been set as a public MQTT broker: `broker.hivemq.com`. You can also choose other brokers or servers, such as AWS IoT Core (optional), according to the actual usage scenario. 
+
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f79NB-IoTLTE-CAT-M1-Application-Scenari.png"
@@ -897,7 +897,7 @@ In the **Network Server and Visualization Configuration** section, the server in
 
 In this example, you will use Datacake as the visualization platform. Datacake is a versatile IoT platform designed to visualize data from nodes in a user-friendly manner.
 
-To get started, create an account on the [official website](https://datacake.co/) and log in.
+To get started, create an account on the <a href="https://datacake.co/" target="_blank">official website</a> and log in.
 
 ##### Add Sensor Hub to Datacake
 
@@ -968,7 +968,8 @@ To get started, create an account on the [official website](https://datacake.co/
 />
 
 3. Continue scrolling down to the **MQTT Configuration** option and configure the external MQTT Broker.
-4. Click **+Add new MQTT server** and configure the relevant parameters. 
+
+4. Click **+Add new MQTT server** and configure the relevant parameters.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f90pHSolution_NBI11.png"
@@ -984,11 +985,11 @@ To get started, create an account on the [official website](https://datacake.co/
   caption="Configure the relevant parameters"
 />
 
-:::tip 📝 NOTE:
+:::tip 📝 NOTE
 If SSL/TLS encryption and authentication are set for more secure communication, ensure to configure them accordingly in this section. However, for this example, you can skip this option.
 :::
 
- 6. If the connection is successful, you will see the message **Connection successful**. Click **Add MQTT Server** to complete the addition of the MQTT server.
+6. If the connection is successful, you will see the message **Connection successful**. Click **Add MQTT Server** to complete the addition of the MQTT server.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f92pHSolution_NBI13.png"
@@ -1036,7 +1037,7 @@ In the above code, make sure that the parameter **serial_number** (device: `cfda
 :::
 
 9. Once completed, click **Add uplink decoder**.
-10. In the **Fields** option, click **+Add Field** to show the monitoring values of the devices. Each device can create a certain number of fields, also known as a **_data points_**.
+10. In the **Fields** option, click **+ Add Field** to show the monitoring values of the devices. Each device can create a certain number of fields, also known as a **_data points_**.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f95pHSolution_NBI16.png"
@@ -1044,7 +1045,7 @@ In the above code, make sure that the parameter **serial_number** (device: `cfda
   caption="Add Field"
 />
 
-11. Set the necessary parameters of the Fields. For **Fields** with multiple data points, add them one by one. Once done, click **Add Field**.
+11. Set the necessary parameters of the **Field**. For **Fields** with multiple data points, add them one by one. Once done, click **Add Field**.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f95pHSolution_NBI17.png"
@@ -1052,7 +1053,7 @@ In the above code, make sure that the parameter **serial_number** (device: `cfda
   caption="Set the related parameters of the field"
 />
 
-:::tip 📝 NOTE:
+:::tip 📝 NOTE
 The **Identifier** field will be automatically filled based on the name.
 :::
 
@@ -1064,7 +1065,7 @@ The **Identifier** field will be automatically filled based on the name.
   caption="Added sensor monitoring values"
 />
 
-##### **Create a Dashboard to Visualize Data**
+##### Create a Dashboard to Visualize Data
 
 **Dashboards** can be customized depending on the specific needs and preferences of a project. Follow the steps below to add widgets and visualize the data.
 
@@ -1093,9 +1094,9 @@ The **Identifier** field will be automatically filled based on the name.
   caption="Select the visualization data field"
 />
 
-5. After configuring the widget, click **Save**. You should now see the successfully created pH widget on the Dashboard interface.
+5. After configuring the widget, click **Save**. You should now see the successfully created **pH** widget on the Dashboard interface.
 
-6. Once done with the dashboard configuration, turn off the **edit mode** switch  to save the settings.
+6. Once done with the dashboard configuration, turn off the **edit mode** switch to save the settings.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f100pHSolution_NBI22.png"

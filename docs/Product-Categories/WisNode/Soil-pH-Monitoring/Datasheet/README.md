@@ -6,9 +6,10 @@ tags:
     - Sensor Hub
     - Soil pH
     - Sensor Hub Solutions
+    - datasheet
 ---
 
-# Soil pH Monitoring Sensor Datasheet
+# Soil pH Monitoring Solution Datasheet
 
 ## Solution Overview
 
@@ -22,8 +23,8 @@ In addition, the sensor features three isolated components: input power supply, 
 
 ### Features
 
-- Support LoRaWAN and NB-IoT/LTE CAT-M wireless communication modes
-- Support LoRa frequency band: CN470, EU868, IN865, RU864, US915, AU915, KR920, AS923-1/2/3/4
+- Support LoRa and NB-IoT/LTE CAT-M wireless communication modes
+- Support LoRaWAN frequency bands: CN470, EU868, IN865, RU864, US915, AU915, KR920, and AS923-1/2/3/4
 - Wide measurement range: 0~1999&nbsp;mg/kg
 - Resolution: 1&nbsp;mg/kg (mg/l)
 - Easy to install and configure
@@ -32,22 +33,22 @@ In addition, the sensor features three isolated components: input power supply, 
 - Stable signal
 - Good linearity
 
-## Hardware Specifications
+## Specifications
 
 ### Sensor Hub Specifications
 
-If you need detailed information about the Sensor Hub, including technical specifications and features, refer to the [Sensor Hub Datasheet](https://docs.rakwireless.com/Product-Categories/WisNode/RAK2560/Hub-Datasheet/#overview) page.
+For details, refer to the <a href="https://docs.rakwireless.com/Product-Categories/WisNode/RAK2560/Hub-Datasheet/#description" target="_blank">RAK2560 WisNode Sensor Hub Datasheet</a>.
 
 
 ### Sensor Probe IO + Soil pH Sensor Specifications
 
 **Sensor Probe IO Datasheet** 
 
-- For details, refer to the [Probe IO Datasheet](https://docs.rakwireless.com/Product-Categories/WisNode/RAK2560/IO-Datasheet/#overview).
+- For details, refer to the <a href="https://docs.rakwireless.com/Product-Categories/WisNode/RAK2560/IO-Datasheet/#overview" target="_blank">Probe IO Datasheet</a>.
 
 **Model 485 Soil pH Sensor Datasheet**
 
-| Parameter Name            | Parameter Content                                |
+| Parameter                 | Technical Specifications                         |
 | ------------------------- | ------------------------------------------------ |
 | DC Power Supply (default) | 12&nbsp;V<sub>DC</sub> to 24&nbsp;V<sub>DC</sub> |
 | Power Consumption         | ≤0.15&nbsp;W                                     |
@@ -58,7 +59,7 @@ If you need detailed information about the Sensor Hub, including technical speci
 | Responding Speed          | ≤1 5&nbsp;s                                      |
 
 
-### Solar Cell System Specifications
+### Solar Cell System Datasheet
 
 #### Definition of Terms
 
@@ -97,7 +98,7 @@ If you need detailed information about the Sensor Hub, including technical speci
 | Parameter                              | Specifications                                                                                | Remark                                                                           |
 | -------------------------------------- | --------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
 | Battery Model                          | RAK9154                                                                                       |                                                                                  |
-| Battery Cell Model                     | Rechargeable cylindrical lithium-ion battery H18650CH                                         | H18650CH or equivalent product.                                                  |
+| Battery Cell Model                     | Rechargeable cylindrical lithium-ion battery H18650CH                                         | H18650CH or equivalent product                                                   |
 | Rated Capacity                         | 5200&nbsp;mAh                                                                                 |                                                                                  |
 | Rated Voltage                          | 10.8&nbsp;V                                                                                   | Single battery voltage 3.6&nbsp;V                                                |
 | Operating Voltage Range                | 9&nbsp;V~12.6&nbsp;V                                                                          |                                                                                  |
@@ -112,13 +113,13 @@ If you need detailed information about the Sensor Hub, including technical speci
 | Maximum Continuous Discharging current | 0.4&nbsp;C (2.0&nbsp;A)                                                                       |                                                                                  |
 | ∆ Voltage                              | ≤20&nbsp;mV                                                                                   | SOC 30&nbsp;%~60&nbsp;%; rest for at least 2 hours after charging or discharging |
 | Weight                                 | 0.85&nbsp;Kg                                                                                  |                                                                                  |
-| Size                                   | Length: 180&nbsp;(±3)&nbsp;mm<br>Width: 130&nbsp;(±3)&nbsp;mm<br>Height: 60&nbsp;(±3)&nbsp;mm |                                                                                  |
+| Dimension                              | Length: 180&nbsp;(±3)&nbsp;mm<br>Width: 130&nbsp;(±3)&nbsp;mm<br>Height: 60&nbsp;(±3)&nbsp;mm |                                                                                  |
 
 #### Interfaces
 
 ##### Battery System Structure
 
-As shown in **Figure 2**, the RAK9154 battery system comprises two sets of three 2600&nbsp;mAh battery units connected in series. The system also incorporates one (1) BMS board integrated with an 18&nbsp;V input solar charger.
+As shown in **Figure 1**, the RAK9154 battery system comprises two sets of three 2600&nbsp;mAh battery units connected in series. The system also incorporates one (1) BMS board integrated with an 18&nbsp;V input solar charger.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/datasheet/f2pHSolution_dimensions.png"
@@ -150,16 +151,16 @@ As shown in **Figure 2**, the RAK9154 battery system comprises two sets of three
 
 #### Sensor Characteristics
 
-The following table shows the sensor data definition and the data format of the Soil pH Solutions. 
+The following tables show the sensor data definition and the data format of the Soil pH Monitoring Solution. 
 
-- **Sensor Data Definitions**
+- <b>Register Summary</b>
   
 |      Register Name      | Function Code | Register Address | Data Length | Sensor Code | Ratio | Unit  | Resolution | Range | Precision |
 | :---------------------: | :-----------: | :--------------: | :---------: | :---------: | :---: | :---: | :--------: | :---: | :-------: |
 | High Precision pH Value |     0x03      |      0x0006      |      2      |    0xC1     | 0.01  |  pH   |  ± 0.3pH   | 3~9pH |  ± 0.3pH  |
 | Low Precision pH Value  |     0x03      |      0x000d      |      2      |    0xC2     |  0.1  |  pH   |  ± 0.3pH   | 3~9pH |  ± 0.3pH  |
 
-- **Data Format**
+- <b>Data Interpretation</b>
 
 | ID (Channel) |  Type  |  Data   |
 | :----------: | :----: | :-----: |
@@ -175,9 +176,10 @@ Payload (hex) received data: `01C1 0320`
 | :----------: | :---: | :---: |
 |      01      |  C1   | 0320  |
 
-`01C1` (pH) - `0320` (data)
-
 Convert the value to decimal:
+
+- **pH**: `01C1`
+- **Data**: `0320`
 
 ```
 0320 (hex) = 800 (dec)
@@ -192,9 +194,10 @@ Payload (hex) received data: `01C2 002d`
 | :----------: | :---: | :---: |
 |      01      |  C2   | 002d  |
 
-`01C2` (pH) - `002d` (data)
-
 Convert the value to decimal:
+
+- **pH**: `01C2`
+- **Data**: `002d`
 
 ```
 002d (hex) = 45 (dec)
@@ -215,12 +218,33 @@ Convert the value to decimal:
 
 Store the module in a partially charged state, typically around 40&nbsp;% state of charge (SOC). Ensure the storage environment meets the following requirements:
 
-**Temperature and Humidity**
+<b>Temperature and Humidity</b>
 
-| Parameter   | Description                                             | Remark                                             |
-| ----------- | ------------------------------------------------------- | -------------------------------------------------- |
-| Temperature | -30°&nbsp;C to 50°&nbsp;C  <br> 0°&nbsp;C to 25°&nbsp;C | Time period < 3 months <br> Time period > 3 months |
-| Humidity    | 2&nbsp;%RH to 90&nbsp;%RH                               | <85&nbsp;% Recommended                             |
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+      <th>Remark</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan = "2">Temperature</td>
+      <td>-30°&nbsp;C to 50°&nbsp;C, 40% SOC</td>
+      <td>Storage time < 3&nbsp;months</td>
+    </tr>
+    <tr>
+      <td>0°&nbsp;C to 25°&nbsp;C, 40% SOC</td>
+      <td>Storage time > 3&nbsp;months</td>
+    </tr>
+    <tr>
+      <td>Humidity</td>
+      <td>2%RH to 90%RH</td>
+      <td> < 85% Recommended </td>
+    </tr>
+  </tbody>
+</table>
 
 - **Storage Environment**: 
     - Store the product in a clean, ventilated, and cool environment.
@@ -230,7 +254,7 @@ Store the module in a partially charged state, typically around 40&nbsp;% state 
 - **Maintenance**: 
     - Charge and discharge the device once a month while storing it at room temperature or in a dry and ventilated environment. 
     - If storing the device takes more than 30 days, adjust the SOC to 40&nbsp;% after charging. 
-    - If the module is expected to be stored for more than 30 days, adjust the State of Charge (SOC) to 40&nbsp;% after charging is completed.
+    - If the module is expected to be stored for more than 30 days, adjust the State of Charge (SOC) to 40% after charging is completed.
 
 The operation of the product must adhere to the provided operating instructions. Installation, maintenance, and usage of this product must strictly comply with relevant safety regulations.
 

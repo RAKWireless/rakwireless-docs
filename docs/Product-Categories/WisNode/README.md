@@ -58,6 +58,19 @@ Connect your sensor network with the plug-and-play setup of Sensor Hub. It is a 
 
 <rk-products :tags="['wisnode', 'sensorhub']" />
 
+### Sensor Hub Solutions
+
+<rk-head img="/assets/rakwireless/product-categories/sensorhub-solutions.png">
+
+Sensor Hub Solutions is a ready-to-use modular sensor ecosystem that includes a weather station, atmospheric monitoring, motion detection, and a customized solution that makes use of third-party sensors. Each solution is ready for field deployment using LoRaWAN/NB-IoT communication, making it a suitable and versatile solution platform for a wide range of IoT applications.
+
+</rk-head>
+
+
+<rk-products :tags="['wisnode', 'solutions']" />
+
+
+
 ## WisNode Button
 
 <rk-head img="/assets/rakwireless/product-categories/WisNode-Button.svg">
