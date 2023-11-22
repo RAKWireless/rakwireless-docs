@@ -37,7 +37,7 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the o
 :::
 
 - Add [RAK11720 as a supported board in Arduino IDE](/Product-Categories/wisduo/rak11720-module/Quickstart/#-board-support-package-in-arduino-ide) by updating Board Manager URLs in **Preferences** settings of Arduino IDE with this JSON URL `https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main/package_rakwireless.com_rui_index.json`. After that, you can then add **RAKwireless RUI Apollo3 Boards** via Arduino board manager.
-- [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools)
+- [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools)
 
 ## Product Configuration
 
@@ -81,7 +81,7 @@ RAK11720 has a label on its sticker indicating where to connect the antennas, as
 />
 
 :::tip 📝 NOTE
-- Detailed information about the RAK11720 BLE and LoRa IPEX MHF4 antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/).
+- Detailed information about the RAK11720 BLE and LoRa IPEX MHF4 antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/#LoRa/WisBlock/Accessories/).
 
 - If the RAK11720 is not an IPEX MHF4 variant, the connection to the antenna is done via the RF pins. RAKwireless offers [RF Antenna Design Service](https://store.rakwireless.com/products/antenna-rf-design-service-including-pcb-design-tuning-matching-and-rf-test) for custom PCB designs.
 :::

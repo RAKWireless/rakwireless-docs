@@ -18,7 +18,7 @@ For the RAK7201 to work properly, the latest firmware must be installed.
 To upgrade the firmware of the RAK7431 WisNode Bridge Serial the following will be needed:
 
 - [RAK7431 WisNode Bridge Serial](https://store.rakwireless.com/products/rak7431?utm_source=RAK7431WisNodeBridge&utm_medium=Document&utm_campaign=BuyFromStore)
-- [RAK DFU (Device Firmware Upgrade)](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
+- [RAK DFU (Device Firmware Upgrade)](https://downloads.rakwireless.com/#LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
 - Micro USB cable
 - [Latest firmware](https://downloads.rakwireless.com/LoRa/RAK7431/Firmware/RAK7431_Latest_Firmware.zip)
 

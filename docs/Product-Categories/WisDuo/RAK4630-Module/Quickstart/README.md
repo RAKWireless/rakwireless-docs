@@ -35,7 +35,7 @@ _**If you are using Windows 10**_.
 Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the original Arduino IDE from the Arduino official website! The Arduino app from the Microsoft App Store has problems using third-party Board Support Packages.
 :::
 - Add [RAK4630 as a supported board in Arduino IDE](/Product-Categories/wisduo/rak4630-module/Quickstart/#-board-support-package-in-arduino-ide) by updating Board Manager URLs in **Preferences** settings of Arduino IDE with this JSON URL `https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main/package_rakwireless.com_rui_index.json`. After that, you can then add **RAKwireless RUI nRF Boards** via Arduino board manager.
-- [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools)
+- [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools)
 
 ## Product Configuration
 
@@ -80,7 +80,7 @@ RAK4630 has a label on its sticker on where to connect the antennas, as shown in
 
 
 :::tip 📝 NOTE
-Detailed information about the RAK4630 BLE and LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/).
+Detailed information about the RAK4630 BLE and LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/#LoRa/WisBlock/Accessories/).
 :::
 
 :::warning ⚠️ WARNING
@@ -652,7 +652,7 @@ This section covers the guide on how to use RAK4630 as a LoRa/LoRaWAN modem via 
 
 #### AT Command via UART1
 
-RAK4630 module can be configured using AT commands via the UART1 interface. You need a USB to UART TTL adapter to connect the RAK4630 to your computer's USB port and a serial terminal tool. It is highly recommended to use the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools) so you can easily send AT commands and view the replies from the console output. You can configure the RAK4630 in two ways:
+RAK4630 module can be configured using AT commands via the UART1 interface. You need a USB to UART TTL adapter to connect the RAK4630 to your computer's USB port and a serial terminal tool. It is highly recommended to use the [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools) so you can easily send AT commands and view the replies from the console output. You can configure the RAK4630 in two ways:
 
 - [LoRaWAN End-Device](/Product-Categories/WisDuo/rak4630-module/quickstart/#configuring-rak4630-as-lorawan-end-device) - RAK4630 as LoRaWAN IoT device.
 - [LoRa P2P](/Product-Categories/WisDuo/rak4630-module/quickstart/#lora-p2p-mode) - Point-to-point communication between two RAK4630 modules.
@@ -671,7 +671,7 @@ RAK4630 module can be configured using AT commands via the UART1 interface. You 
 You can also send AT commands via direct USB connection to the module, as shown in [hardware setup](/Product-Categories/WisDuo/rak4630-module/quickstart/#hardware-setup).
 :::
 
-2. Any serial communication tool can be used, but it is recommended to use the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools).
+2. Any serial communication tool can be used, but it is recommended to use the [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools).
 3. Configure the serial communication tool by selecting the proper port detected by the computer and configure the link as follows:
 
  * Baud Rate: **115200&nbsp;baud**

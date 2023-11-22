@@ -140,7 +140,7 @@ Enter the following code: `minicom -D /dev/ttyACM0`
 
 #### Execute the Firmware Update via USB
 
-1. Download the zip file [DFU Distribution Package](https://downloads.rakwireless.com/RUI/V3/Image/).
+1. Download the zip file [DFU Distribution Package](https://downloads.rakwireless.com/#RUI/V3/Image/).
 
 When you plug in the RAK4630 through the USB to Linux, you will see the related information "**cdc_acm 1-1:1.0:  ttyACM0: USB ACM device**" from the `dmesg` command.
 

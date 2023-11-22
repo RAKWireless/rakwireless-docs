@@ -65,7 +65,7 @@ If this is your first time to connect your RAK612 WisNode Button to your compute
 />
 
 :::tip 📝 NOTE
-In case the driver is still not installed upon doing the previous steps, kindly download the driver manually through this [link](https://downloads.rakwireless.com/LoRa/RAK811/Tools/).
+In case the driver is still not installed upon doing the previous steps, kindly download the driver manually through this [link](https://downloads.rakwireless.com/#LoRa/RAK811/Tools/).
 :::
 
 5. Let us now test if your RAK612 WisNode Button can now communicate with the RAK Serial Port Tool. Connect with the RAK Serial Port Tool using the parameters listed below and click "**Open**".
@@ -396,7 +396,7 @@ After configuring all parameters, you need to reset the RAK612 WisNode Button fo
 This section walks through the step-by-step discussion on how to customize each key functions of the RAK612 WisNode Button. For you to enable the message customization, you must at least have the 2.0.2.1.2 firmware version.
 
 :::tip 📝 NOTE
-If your RAK612 WisNode Button's firmware version is lower than the least version set, please download the latest [RAK612 WisNode Button Firmware](https://downloads.rakwireless.com/LoRa/RAK612-LoRaButton/Firmware/) and proceed to the [Upgrading the Firmware](#upgrading-the-firmware) section.
+If your RAK612 WisNode Button's firmware version is lower than the least version set, please download the latest [RAK612 WisNode Button Firmware](https://downloads.rakwireless.com/#LoRa/RAK612-LoRaButton/Firmware/) and proceed to the [Upgrading the Firmware](#upgrading-the-firmware) section.
 :::
 
 #### Defaults
@@ -445,7 +445,7 @@ at+key_config=2,37,Hello Mark Angelo!
 
 Please use the the latest firmware for the RAK612 WisNode Button in order to avoid potential problems. Installing the firmware for is done as follows:
 
-1. Download the [RAK LoRaButton Upgrade tool](https://downloads.rakwireless.com/LoRa/RAK612-LoRaButton/Tools/) and the latest [firmware](https://downloads.rakwireless.com/LoRa/RAK612-LoRaButton/Firmware/) for the RAK612 WisNode Button.
+1. Download the [RAK LoRaButton Upgrade tool](https://downloads.rakwireless.com/#LoRa/RAK612-LoRaButton/Tools/) and the latest [firmware](https://downloads.rakwireless.com/#LoRa/RAK612-LoRaButton/Firmware/) for the RAK612 WisNode Button.
 
 2. Connect your RAK612 WisNode Button to your PC using the micro-USB cable.
 

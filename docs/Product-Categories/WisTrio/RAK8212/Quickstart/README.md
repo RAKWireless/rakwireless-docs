@@ -183,9 +183,9 @@ An easy and quick way to have a fully functional **RAK8212 WisTrio iTracker Pro*
 #### Burn the latest Firmware
 
 1. If you want to get a pre-compiled firmware instead of compiling the source code by
-yourself, you can find the latest firmware on RAK website **[here](https://downloads.rakwireless.com/en/Cellular/RAK8212/Firmware/)**.
+yourself, you can find the latest firmware on RAK website **[here](https://downloads.rakwireless.com/#Cellular/RAK8212/Firmware/)**.
 
-2. Download and install **J-Link tool** on your Windows PC. You can download it **[here](https://downloads.rakwireless.com/en/Cellular/RAK8212/Tool/)**.
+2. Download and install **J-Link tool** on your Windows PC. You can download it **[here](https://downloads.rakwireless.com/#Cellular/RAK8212/Tool/)**.
 
 3. Connect the RAK8212 WisTrio iTracker Pro with your PC through through your JTAG Emulator Kit as follows:
 

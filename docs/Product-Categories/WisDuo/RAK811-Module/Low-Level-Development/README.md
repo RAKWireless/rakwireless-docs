@@ -23,7 +23,7 @@ Additionally, RAK offers a third alternative for advanced customers who need to 
 
 ### Schematic
 
-One of the essential aspects that allow customers to develop their own version of firmware is the [RAK811 Hardware Schematic](https://downloads.rakwireless.com/LoRa/RAK811/Hardware_Specification/). This allows the customers to understand the module’s pinout and the connections between the internal STM32 MCU and the LoRa transceiver. Other important details can be found on [RAK811 Datasheet](/Product-Categories/WisDuo/RAK811-Module/Datasheet/).
+One of the essential aspects that allow customers to develop their own version of firmware is the [RAK811 Hardware Schematic](https://downloads.rakwireless.com/#LoRa/RAK811/Hardware_Specification/). This allows the customers to understand the module’s pinout and the connections between the internal STM32 MCU and the LoRa transceiver. Other important details can be found on [RAK811 Datasheet](/Product-Categories/WisDuo/RAK811-Module/Datasheet/).
 
 :::tip 📝 NOTE:
 
@@ -45,7 +45,7 @@ Once the porting of the protocol stack is ready, you can focus on the developmen
 
 &nbsp;&nbsp;&nbsp;&nbsp;a. Develop your own bootloader.
 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;b. Use RAK bootloader and the upgrade the custom firmware by using [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/).
+&nbsp;&nbsp;&nbsp;&nbsp;b. Use RAK bootloader and the upgrade the custom firmware by using [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/#LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/).
 
 If you want to fully develop your own, you can refer to the schematic diagram and the datasheet of the MCU to implement the code. But if you want to use the RAK bootloader, continue reading the next section.
 

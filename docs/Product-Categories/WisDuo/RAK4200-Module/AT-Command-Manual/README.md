@@ -36,7 +36,7 @@ For AT commands example usage, you can check these sections of the quick start g
 
 If you don't have a serial port tool yet, it is recommended to download and install the RAK Serial Port Tool. There are some ready-made AT commands in this tool that will be very useful for you.
 
-- [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/)
+- [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools/)
 
 For more detailed information on how to use this tool, refer to the following guide:
 

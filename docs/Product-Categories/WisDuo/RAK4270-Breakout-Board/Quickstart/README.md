@@ -40,9 +40,9 @@ Before going through each and every step in the installation and guide of the RA
 6. A Windows/Mac OS/Linux Computer
 
 #### Software Tools
-1. [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools)
+1. [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools)
 2. [RAK4270 Firmware](/Product-Categories/WisDuo/RAK4270-Module/Datasheet/#firmware)
-3. [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
+3. [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/#LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
 
 
 ::: tip 📝 NOTE
@@ -72,7 +72,7 @@ The bootloader of the RAK4270 Breakout Board is already pre-installed upon manuf
 
 RAK4270 Breakout Board can be configured using AT commands via the UART interface. You need a USB to UART TTL adapter to connect the RAK4270 board to the PC's USB port and a serial terminal tool.
 
-You can use [RAKDAP1](/Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/Overview/#product-description) as the USB to the UART interface device. RAKDAP1 is compatible with other RAK modules and can be used as a debugging tool and firmware uploader. It is also highly recommended to use the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools) so you can easily send AT commands and view the replies from its console output.
+You can use [RAKDAP1](/Product-Categories/Accessories/RAKDAP1-Flash-and-Debug-Tool/Overview/#product-description) as the USB to the UART interface device. RAKDAP1 is compatible with other RAK modules and can be used as a debugging tool and firmware uploader. It is also highly recommended to use the [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools) so you can easily send AT commands and view the replies from its console output.
 
 
 ::: warning ⚠️ WARNING
@@ -1088,7 +1088,7 @@ Before you start working with the RAK4270 Breakout Board, it is recommended to k
 
 :::tip 📝 NOTE:
 
-For RAK4270 modules with firmware version V3.0.0.12 and below, you need to use the [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) to upgrade your firmware and upload the **.hex file** (not the .bin file) of the [latest RAK4270 firmware](https://downloads.rakwireless.com/LoRa/RAK4270/Firmware/). The lower versions of the firmware have a different bootloader code and will not work on the RAK DFU Tool.
+For RAK4270 modules with firmware version V3.0.0.12 and below, you need to use the [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) to upgrade your firmware and upload the **.hex file** (not the .bin file) of the [latest RAK4270 firmware](https://downloads.rakwireless.com/#LoRa/RAK4270/Firmware/). The lower versions of the firmware have a different bootloader code and will not work on the RAK DFU Tool.
 
 :::
 
@@ -1120,7 +1120,7 @@ Execute the following procedure to upgrade the firmware in Device Firmware Upgra
     - [RAK4270 Firmware](/Product-Categories/WisDuo/RAK4270-Module/Datasheet/#software)
 
 2.  Download the RAK Device Firmware Upgrade (DFU) tool.
-    - [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
+    - [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/#LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
 
 3.  Connect the RAK4270 Breakout Board with a computer through a USB to TTL.
 

@@ -3,16 +3,19 @@ rak_img: /assets/images/wisnode/rak2270/RAK2270.png
 rak_desc: RAK2270 is a battery-powered LoRaWAN tracker with a label-like form factor. Simply tear, peel, and stick RAK2270 to any product to virtually track its location in real time by leveraging the location estimator functionality of the Helium network server.
 rak_grp: [wisnode,track]
 prev: ../../
-next: false
+next: ../Quickstart/
 tags:
     - RAK2270
     - wisnode
+    - sticker tracker
 ---
 
 # RAK2270 Sticker Tracker
 
 Thank you for choosing **RAK2270 Sticker Tracker** in your awesome IoT project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
+- [Quick Start Guide](../Quickstart/)
+- [Datasheet](../Datasheet/)
 - [Trackpac Guide](https://docs.trackpac.io/docs/rak-sticker-guide#unpack-your-device)
 - [RAK2270 Open-Source](https://github.com/RAKWireless/RAK2270-Sticker-Tracker)
 

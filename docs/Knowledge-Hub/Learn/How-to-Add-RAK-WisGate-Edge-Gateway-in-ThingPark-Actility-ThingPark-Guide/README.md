@@ -24,7 +24,7 @@ posted: 11/01/2023 8:00 PM
 In this guide, you will learn how to connect a RAK WisGate Edge Gateway to the ThingPark Enterprise platform via **Basics Station**.
 
 :::tip 📝 NOTE:
-To connect the gateway to the ThingPark Admin console, the gateway must be updated to the latest version of WisGateOS. If the WisGateOS version is previous to 1.3.6, update to the [latest firmware](https://downloads.rakwireless.com/LoRa/WisGateOS/). To update the gateway, refer to the [Flash Firmware section of the WisGateOS User Manual](https://docs.rakwireless.com/Product-Categories/Software-APIs-and-Libraries/WisGateOS/Overview/#backup-flash-firmware).
+To connect the gateway to the ThingPark Admin console, the gateway must be updated to the latest version of WisGateOS. If the WisGateOS version is previous to 1.3.6, update to the [latest firmware](https://downloads.rakwireless.com/#LoRa/WisGateOS/). To update the gateway, refer to the [Flash Firmware section of the WisGateOS User Manual](https://docs.rakwireless.com/Product-Categories/Software-APIs-and-Libraries/WisGateOS/Overview/#backup-flash-firmware).
 :::
 
 ## Register the Gateway in ThingPark

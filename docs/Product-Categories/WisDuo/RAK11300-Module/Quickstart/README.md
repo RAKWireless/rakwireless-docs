@@ -36,7 +36,7 @@ Before going through the step in the installation guide of the RAK11300 WisDuo L
 
 
 #### Software Tools
-1. Serial Terminal software like [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools).
+1. Serial Terminal software like [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools).
 
 
 #### List of Acronyms
@@ -61,7 +61,7 @@ Before going through the step in the installation guide of the RAK11300 WisDuo L
 
 ### Interfacing with RAK11300
 
-RAK11300 module can be configured using AT commands via the UART interface. You need a USB to UART TTL adapter to connect the RAK11300 to the PC's USB port and a serial terminal tool. You can use [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools), so you can easily send AT commands and view the replies from the console output.
+RAK11300 module can be configured using AT commands via the UART interface. You need a USB to UART TTL adapter to connect the RAK11300 to the PC's USB port and a serial terminal tool. You can use [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools), so you can easily send AT commands and view the replies from the console output.
 
 You can also use the USB pins of RAK11300 to send AT commands and update the firmware via .uf2 firmware file.
 
@@ -77,7 +77,7 @@ You can also use the USB pins of RAK11300 to send AT commands and update the fir
 
 2. You can also establish a direct USB connection to the USB Data pins (+) and (-) of the RAK11300. However, you still need to power the RAK11300 via external 3.3&nbsp;V on the VDD lines. You cannot use VBUS of the USB port of the PC because it is still at 5V level.
 
-3. Prepare a serial terminal software like the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools).
+3. Prepare a serial terminal software like the [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools).
 
 4. Configure the serial communication tool by selecting the proper port detected by the computer and configure the link as follows:
 

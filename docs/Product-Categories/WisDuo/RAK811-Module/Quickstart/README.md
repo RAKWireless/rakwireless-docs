@@ -38,9 +38,9 @@ Before going through the step in the installation guide of the RAK811 WisDuo LPW
 
 
 #### Software Tools
-1. [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools)
+1. [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools)
 2. [RAK811 Firmware](/Product-Categories/WisDuo/RAK811-Module/Datasheet/#firmware-os)
-3. [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
+3. [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/#LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
 
 
 
@@ -61,7 +61,7 @@ Before going through the step in the installation guide of the RAK811 WisDuo LPW
 
 ### Interfacing with RAK811
 
-RAK811 module can be configured using AT commands via the UART interface. You need a USB to UART TTL adapter to connect the RAK811 to the PC's USB port and a serial terminal tool. It is highly recommended to use [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools) so you can easily send AT commands and view the replies from the console output.
+RAK811 module can be configured using AT commands via the UART interface. You need a USB to UART TTL adapter to connect the RAK811 to the PC's USB port and a serial terminal tool. It is highly recommended to use [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools) so you can easily send AT commands and view the replies from the console output.
 
 #### Connect to the RAK811
 
@@ -73,7 +73,7 @@ RAK811 module can be configured using AT commands via the UART interface. You ne
   caption="RAK811 Module Connection"
 />
 
-2. Any serial communication tool can be used; but, it is recommended to use the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools).
+2. Any serial communication tool can be used; but, it is recommended to use the [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools).
 
 3. Configure the serial communication tool by selecting the proper port detected by the computer and configure the link as follows:
 
@@ -92,7 +92,7 @@ RAK811 module can be configured using AT commands via the UART interface. You ne
 
 ### Configuring RAK811
 
-To connect the RAK811 module to a LoRa P2P connection or a LoRaWAN network, the module must be configured and LoRa parameters must be set by sending AT commands. Connect the RAK811 module to the computer as described in the previous section. Using the serial communication tool, for example, the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools), it is possible to send commands to the RAK811. For example, sending the `at+set_config=device:restart` and `at+version` commands will display the current firmware version as shown in **Figure 3**. For more supported commands, refer to the [AT Commands for RAK811](/Product-Categories/WisDuo/RAK811-Module/AT-Command-Manual/).
+To connect the RAK811 module to a LoRa P2P connection or a LoRaWAN network, the module must be configured and LoRa parameters must be set by sending AT commands. Connect the RAK811 module to the computer as described in the previous section. Using the serial communication tool, for example, the [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools), it is possible to send commands to the RAK811. For example, sending the `at+set_config=device:restart` and `at+version` commands will display the current firmware version as shown in **Figure 3**. For more supported commands, refer to the [AT Commands for RAK811](/Product-Categories/WisDuo/RAK811-Module/AT-Command-Manual/).
 
 
 <rk-img
@@ -1080,7 +1080,7 @@ If you want to upgrade to the latest version firmware of the module, you can fol
 
 :::tip 📝 NOTE:
 
-For RAK811 modules with firmware version V3.0.0.12 and below, you need to use the [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) to upgrade your firmware and upload the **.hex file** (not the .bin file) of the [latest RAK811 firmware](https://downloads.rakwireless.com/LoRa/RAK811/Firmware/). The lower versions of the firmware have a different bootloader code and will not work on the RAK DFU Tool.
+For RAK811 modules with firmware version V3.0.0.12 and below, you need to use the [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) to upgrade your firmware and upload the **.hex file** (not the .bin file) of the [latest RAK811 firmware](https://downloads.rakwireless.com/#LoRa/RAK811/Firmware/). The lower versions of the firmware have a different bootloader code and will not work on the RAK DFU Tool.
 
 :::
 
@@ -1110,7 +1110,7 @@ Execute the following procedure to upgrade the firmware in Device Firmware Upgra
 
 1.  Download the latest application firmware of the RAK811 that can be found on the [RAK811 Datasheet](/Product-Categories/WisDuo/RAK811-Module/Datasheet/#firmware-os).
 
-2.  Download the [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/).
+2.  Download the [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/#LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/).
 
 3.  Connect the RAK811 module with a computer through a USB to TTL. Refer to [**Figure 1**](/Product-Categories/WisDuo/RAK811-Module/Quickstart/#connect-to-the-rak811).
 

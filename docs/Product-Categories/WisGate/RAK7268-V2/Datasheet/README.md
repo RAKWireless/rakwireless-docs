@@ -286,7 +286,7 @@ The casing is IP30 rated and is made of plastic. There are holes for a mounting 
 
 ### Firmware
 
-The firmware sits on OpenWRT. There is a Web UI for easy configuration and management of the device, as well as the possibility for SSH2 management. The WisGateOS V2 supports the feature to install extensions (WireGuard, Custom Logo, Breathing Light, and more to come). The extensions are available in [RAK download center](https://downloads.rakwireless.com/LoRa/WisGateOS2/WisGateOS2-Extensions/).
+The firmware sits on OpenWRT. There is a Web UI for easy configuration and management of the device, as well as the possibility for SSH2 management. The WisGateOS V2 supports the feature to install extensions (WireGuard, Custom Logo, Breathing Light, and more to come). The extensions are available in [RAK download center](https://downloads.rakwireless.com/#LoRa/WisGateOS2/WisGateOS2-Extensions/).
 
 |             Model             | Firmware Version |                                            Source                                            |
 | :---------------------------: | :--------------: | :------------------------------------------------------------------------------------------: |

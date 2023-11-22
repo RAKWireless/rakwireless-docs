@@ -128,7 +128,7 @@ There are three ways that you can check the logs for debugging purposes on your 
 
 2. Open a serial port tool on your PC. If you don't have a serial port tool yet, download and install the RAK Serial Port Tool.
 
-    - **[RAKwireless Downloads](https://downloads.rakwireless.com/en/LoRa/Tools).**
+    - **[RAKwireless Downloads](https://downloads.rakwireless.com/#LoRa/Tools).**
 
 3. After pushing the RST button on RAK5010, you can see the following contents in the serial port tool as shown in **Figure 9**:
 
@@ -568,7 +568,7 @@ An easy and quick way to get started with your RAK5010-BG95 is by using pre-comp
   caption="RAK5010-BG95 and JTAG Hardware Interface"
 />
 
-2. Download the latest pre-compiled firmware from the [RAKwireless Downloads](https://downloads.rakwireless.com/Cellular/RAK5010/Firmware/) and extract it to your PC.
+2. Download the latest pre-compiled firmware from the [RAKwireless Downloads](https://downloads.rakwireless.com/#Cellular/RAK5010/Firmware/) and extract it to your PC.
 
 3. In the J-Flash software Menu Bar, choose **Target** -> **Connect**.
 

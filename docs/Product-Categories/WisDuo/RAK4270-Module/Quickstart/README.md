@@ -39,7 +39,7 @@ Before going through the step in the installation guide of the RAK4270 WisDuo LP
 #### Software Tools
 
 1. [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip)
-2. [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
+2. [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/#LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
 
 
 
@@ -1081,7 +1081,7 @@ Before you start working with the RAK4270, it is recommended to keep the RAK4270
 
 :::tip 📝 NOTE:
 
-For RAK4270 modules with firmware version V3.0.0.12 and below, you need to use the [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) to upgrade your firmware and upload the **.hex file** (not the .bin file) of the [latest RAK4270 firmware](https://downloads.rakwireless.com/LoRa/RAK4270/Firmware/). The lower versions of the firmware have a different bootloader code and will not work on the RAK DFU Tool.
+For RAK4270 modules with firmware version V3.0.0.12 and below, you need to use the [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) to upgrade your firmware and upload the **.hex file** (not the .bin file) of the [latest RAK4270 firmware](https://downloads.rakwireless.com/#LoRa/RAK4270/Firmware/). The lower versions of the firmware have a different bootloader code and will not work on the RAK DFU Tool.
 
 :::
 
@@ -1113,7 +1113,7 @@ Execute the following procedure to upgrade the firmware in Device Firmware Upgra
     - [RAK4270 Module Datasheet](/Product-Categories/WisDuo/RAK4270-Module/Datasheet/#software)
 
 2. Download the RAK Device Firmware Upgrade (DFU) tool.
-    - [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
+    - [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/#LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
 
 3. Connect the RAK4270 Module with a computer through a USB to TTL. Refer to [**Figure 1**](/Product-Categories/WisDuo/RAK4270-Module/Quickstart/#connect-to-the-rak4270)
 

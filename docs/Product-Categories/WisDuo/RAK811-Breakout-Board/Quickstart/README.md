@@ -40,9 +40,9 @@ Before going through each and every step in the installation and guide of the RA
 6. A Windows/Mac OS/Linux Computer
 
 #### Software Tools
-1. [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools)
+1. [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools)
 2. [RAK811 Breakout Board Firmware](/Product-Categories/WisDuo/RAK811-Breakout-Board/Datasheet/#firmware-os)
-3. [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
+3. [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/#LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
 
 
 ::: tip 📝 NOTE
@@ -58,7 +58,7 @@ The bootloader of the RAK811 Breakout Board is already pre-installed upon manufa
 
 ### Interfacing with RAK811 Breakout Board
 
-RAK811 Breakout Board can be configured using AT commands via UART interface. You need a USB to UART TTL adapter to connect the RAK811 to PC's USB port and a serial terminal tool. It is highly recommended to use [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools) so you can easily send AT commands and view the replies from the console output.
+RAK811 Breakout Board can be configured using AT commands via UART interface. You need a USB to UART TTL adapter to connect the RAK811 to PC's USB port and a serial terminal tool. It is highly recommended to use [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools) so you can easily send AT commands and view the replies from the console output.
 
 
 ::: warning ⚠️ WARNING
@@ -974,7 +974,7 @@ You have successfully finished your RAK811 Breakout Board set up.
 
 :::tip 📝 NOTE:
 
-For RAK811 modules with firmware version V3.0.0.12 and below, you need to use the [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) to upgrade your firmware and upload the **.hex file** (not the .bin file) of the [latest RAK811 firmware](https://downloads.rakwireless.com/LoRa/RAK811/Firmware/). The lower versions of the firmware have a different bootloader code and will not work on the RAK DFU Tool.
+For RAK811 modules with firmware version V3.0.0.12 and below, you need to use the [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) to upgrade your firmware and upload the **.hex file** (not the .bin file) of the [latest RAK811 firmware](https://downloads.rakwireless.com/#LoRa/RAK811/Firmware/). The lower versions of the firmware have a different bootloader code and will not work on the RAK DFU Tool.
 
 :::
 
@@ -984,7 +984,7 @@ Execute the following procedure to upgrade the firmware in Device Firmware Upgra
     - [RAK811 Breakout Board Datasheet](/Product-Categories/WisDuo/RAK811-Breakout-Board/Datasheet/#firmware-os)
 
 2. Download and open the RAK Device Firmware Upgrade (DFU) tool.
-    - [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
+    - [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/#LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
 
 <rk-img
   src="/assets/images/wisduo/rak811-breakout-board/quickstart/upgrading-the-firmware/2.device-firmware.png"

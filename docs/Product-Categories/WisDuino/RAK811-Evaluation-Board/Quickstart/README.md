@@ -75,7 +75,7 @@ Before powering the RAK811 Evaluation Board, install the LoRa antenna first. Not
 If this is your first time connecting your RAK811 Evaluation Board to the computer, it should automatically download the CH340 driver for them to communicate properly. Make sure to have internet access if you want such automatic installation to be successful. If such a process fails, re-plug your Micro-USB cord and proceed to the next step.
 :::
 
-2. Any serial communication tool can be used; but, it is recommended to use the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools).
+2. Any serial communication tool can be used; but, it is recommended to use the [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools).
 
 3. Configure the serial communication tool by selecting the proper port detected by the computer and configure the link as follows:
 
@@ -94,7 +94,7 @@ If this is your first time connecting your RAK811 Evaluation Board to the comput
 
 ### Configuring the RAK811
 
-To connect the RAK811 board to a LoRa P2P connection or a LoRaWAN network, the board must be configured and LoRa parameters must be set by sending AT commands. Connect the RAK811 board to the computer as described in the previous section. Using the serial communication tool, for example, the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools), it is possible to send commands to the RAK811. For example, sending the `at+set_config=device:restart` and `at+version` commands will display the current firmware version, as shown in **Figure 3**. For more supported commands, refer to [AT Commands for RAK811 Evaluation Board](/Product-Categories/WisDuino/RAK811-Evaluation-Board/AT-Command-Manual/).
+To connect the RAK811 board to a LoRa P2P connection or a LoRaWAN network, the board must be configured and LoRa parameters must be set by sending AT commands. Connect the RAK811 board to the computer as described in the previous section. Using the serial communication tool, for example, the [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools), it is possible to send commands to the RAK811. For example, sending the `at+set_config=device:restart` and `at+version` commands will display the current firmware version, as shown in **Figure 3**. For more supported commands, refer to [AT Commands for RAK811 Evaluation Board](/Product-Categories/WisDuino/RAK811-Evaluation-Board/AT-Command-Manual/).
 
 
 <rk-img
@@ -1135,17 +1135,17 @@ at+send=lorap2p:1234567890
 
 :::tip 📝 NOTE:
 
-For the RAK811 Evaluation Board with firmware version V3.0.0.12 and below, you need to use the [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) to upload the HEX file of the [Latest RAK811 Firmware](https://downloads.rakwireless.com/LoRa/RAK811/Firmware/).
+For the RAK811 Evaluation Board with firmware version V3.0.0.12 and below, you need to use the [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) to upload the HEX file of the [Latest RAK811 Firmware](https://downloads.rakwireless.com/#LoRa/RAK811/Firmware/).
 
 :::
 
-If the firmware version of your RAK811 Evaluation Board is V3.0.0.14 and up, you can use the [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/) to update your device and have the latest firmware.
+If the firmware version of your RAK811 Evaluation Board is V3.0.0.14 and up, you can use the [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/#LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/) to update your device and have the latest firmware.
 
 Execute the following procedure to upgrade the firmware in Device Firmware Upgrade (DFU) mode through the UART1 interface.
 
 1.  Download the latest application firmware of the RAK811 that can be found on the [RAK811 Datasheet](/Product-Categories/WisDuo/RAK811-Module/Datasheet/#firmware-os).
 
-2.  Download the [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/).
+2.  Download the [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/#LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/).
 
 3.  Connect the RAK811 Evaluation Board to the computer via USB cable.
 

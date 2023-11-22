@@ -46,7 +46,7 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Instead, inst
 ----
 
 - Add [RAK3172 as a supported board in Arduino IDE](/Product-Categories/wisduo/RAK3172-SiP/Quickstart/#rak3172-sip-board-support-package-in-arduino-ide) by updating Board Manager URLs in **Preferences** settings of Arduino IDE with this JSON URL `https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main/package_rakwireless.com_rui_index.json`. After that, you can then add **RAKwireless RUI STM32 Boards** via Arduino board manager.
-- [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools)
+- [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools)
 
 #### List of Acronyms
 
@@ -105,7 +105,7 @@ You can also use an RP-SMA connector in J2 where you can connect the LoRa [anten
 
 
 :::tip 📝 NOTE
-Detailed information about the RAK3172-SiP LoRa antenna can be found on the [IPEX PCB](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/) and [RP-SMA](https://downloads.rakwireless.com/Accessories/Antenna/SMA-Antenna/) antenna datasheet.
+Detailed information about the RAK3172-SiP LoRa antenna can be found on the [IPEX PCB](https://downloads.rakwireless.com/#LoRa/WisBlock/Accessories/) and [RP-SMA](https://downloads.rakwireless.com/Accessories/Antenna/SMA-Antenna/) antenna datasheet.
 :::
 
 :::warning ⚠️ WARNING
@@ -557,7 +557,7 @@ If your RUI3 project uses SPI, then PA4 to PA7 pins are reserved for RUI3 SPI in
 
 #### AT Command via UART2
 
-RAK3172-SiP module can be configured using AT commands via the UART2 interface. You need a USB to UART TTL adapter to connect the RAK3172-SiP to your computer's USB port and a serial terminal tool. You can use the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools) so you can easily send AT commands and view the replies from the console output. The RAK Serial Port Tool commands still use the RUI V2 AT commands by default. You can modify it to have RUI3 AT commands and then save it.
+RAK3172-SiP module can be configured using AT commands via the UART2 interface. You need a USB to UART TTL adapter to connect the RAK3172-SiP to your computer's USB port and a serial terminal tool. You can use the [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools) so you can easily send AT commands and view the replies from the console output. The RAK Serial Port Tool commands still use the RUI V2 AT commands by default. You can modify it to have RUI3 AT commands and then save it.
 
 :::warning ⚠️ WARNING
 Firmware update and AT command functionality are done via UART2 pins. If you will connect the module to an external host MCU that will send AT commands via UART2, take extra precautions in your board design to ensure you can still perform FW update to it. There should be a way in your board design that can disconnect the host MCU UART to connect to RAK3172 UART2 before connecting the module to the PC (via USB-UART converter) for the FW update process.
@@ -579,7 +579,7 @@ There are other connections needed on the RAK3172-SiP aside from the VDD, GND, a
   caption="RAK3172-SiP UART2 connection"
 />
 
-2. Any serial communication tool can be used. But it is recommended to use the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools).
+2. Any serial communication tool can be used. But it is recommended to use the [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools).
 3. Configure the serial communication tool by selecting the proper port detected by the computer and configure the link as follows:
 
  * Baud Rate: **115200&nbsp;baud**

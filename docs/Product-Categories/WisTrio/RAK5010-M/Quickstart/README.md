@@ -128,7 +128,7 @@ VDD of RAK5010-M-BG95 is rated only to 1.8&nbsp;V. It must **not** be connected 
 
 2. Open a serial port tool on your PC. If you don't have a serial port tool yet, download and install the RAK Serial Port Tool.
 
-    - **[RAKwireless Downloads](https://downloads.rakwireless.com/en/LoRa/Tools).**
+    - **[RAKwireless Downloads](https://downloads.rakwireless.com/#LoRa/Tools).**
 
 3. After pushing the RST button on RAK5010-M, you can see the following contents in the serial port tool as shown in **Figure 9**:
 

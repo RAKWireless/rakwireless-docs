@@ -40,7 +40,7 @@ Before going through each and every step in the installation guide of the RAK426
 
 ### Interfacing with the RAK4260 Evaluation Board
 
-To check if you have successfully flashed the custom firmware provided by RAKwireless correctly, download the [**RAK Serial Port Tool**](https://downloads.rakwireless.com/en/LoRa/Tools).
+To check if you have successfully flashed the custom firmware provided by RAKwireless correctly, download the [**RAK Serial Port Tool**](https://downloads.rakwireless.com/#LoRa/Tools).
 
 :::warning ⚠️ WARNING
 Before powering the RAK4260 Evaluation Board, you should install the LoRa antenna first. Not doing so might damage the board.

@@ -46,7 +46,7 @@ https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main
 ```
 After that, you can then add **RAKwireless RUI STM32 Boards** via Arduino board manager.
 
-- [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools)
+- [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools)
 
 #### List of Acronyms
 
@@ -106,7 +106,7 @@ RAK3172 has a module variant with an IPEX connector where you can connect the Lo
 
 
 :::tip 📝 NOTE
-Detailed information about the RAK3172 LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/).
+Detailed information about the RAK3172 LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/#LoRa/WisBlock/Accessories/).
 :::
 
 :::warning ⚠️ WARNING
@@ -898,7 +898,7 @@ void loop()
 
 #### AT Command via UART2
 
-RAK3172 module can be configured using AT commands via the UART2 interface. You need a USB to UART TTL adapter to connect the RAK3172 to your computer's USB port and a serial terminal tool. You can use the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools) so you can easily send AT commands and view the replies from the console output. The RAK Serial Port Tool commands still uses the RUI V2 AT commands by default. You can modify it to have RUI3 AT commands and then save it.
+RAK3172 module can be configured using AT commands via the UART2 interface. You need a USB to UART TTL adapter to connect the RAK3172 to your computer's USB port and a serial terminal tool. You can use the [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools) so you can easily send AT commands and view the replies from the console output. The RAK Serial Port Tool commands still uses the RUI V2 AT commands by default. You can modify it to have RUI3 AT commands and then save it.
 
 :::warning ⚠️ WARNING
 Firmware update and AT command functionality are done via UART2 pins. If you will connect the module to an external host MCU that will send AT commands via UART2, take extra precautions in your board design to ensure you can still perform FW update to it. There should be a way in your board design that can disconnect the host MCU UART to connect to RAK3172 UART2 before connecting the module to the PC (via USB-UART converter) for the FW update process.
@@ -916,7 +916,7 @@ An alternative option to update firmware aside from UART2 is to use SWD pins (SW
   caption="RAK3172 Module Connection"
 />
 
-2. Any serial communication tool can be used; but, it is recommended to use the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools).
+2. Any serial communication tool can be used; but, it is recommended to use the [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools).
 
 3. Configure the serial communication tool by selecting the proper port detected by the computer and configure the link as follows:
 

@@ -33,7 +33,7 @@ This section covers:
 - nRF Connect Mobile application
    - [iOS App Store](https://apps.apple.com/us/app/nrf-connect-for-mobile/id1054362403)
    - [Android Play Store](https://play.google.com/store/apps/details?id=no.nordicsemi.android.mcp&hl=en&gl=US)
-- [RUI3 firmware for RAK4630 Upgrade](https://downloads.rakwireless.com/RUI/RUI3/Bootloader%20Upgrade/)
+- [RUI3 firmware for RAK4630 Upgrade](https://downloads.rakwireless.com/#RUI/RUI3/Bootloader%20Upgrade/)
 - [Latest RAK4631-R FW DFU Distribution Package](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK4631_latest_dfu_package.zip)
 
 ## Firmware Update via USB
@@ -46,7 +46,7 @@ After connecting your RAK4631-R to WisBlock Base, you can immediately update its
 
 ### For Windows
 
-1. [Check the FW version of your RAK4631-R](/Product-Categories/WisBlock/RAK4631-R/DFU/#how-to-check-firmware-version-using-tera-term). If it is not the latest firmware version (you can check the [FW change logs](https://downloads.rakwireless.com/RUI/RUI3/Image/)), you can update the firmware of your device.
+1. [Check the FW version of your RAK4631-R](/Product-Categories/WisBlock/RAK4631-R/DFU/#how-to-check-firmware-version-using-tera-term). If it is not the latest firmware version (you can check the [FW change logs](https://downloads.rakwireless.com/#RUI/RUI3/Image/)), you can update the firmware of your device.
 2. Create a new folder in your `C:\` drive named `RAK4631-R Update`.
 3. Download the [nRFutil.exe](https://github.com/NordicSemiconductor/pc-nrfutil/releases) and the [latest DFU Package](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK4631_latest_dfu_package.zip). Once you downloaded both files, put them in the `RAK4631-R Update` folder you created as shown in Figure 1.
 
@@ -693,7 +693,7 @@ The -p parameter is RAK4631-R **USB CDC** device name.
 
 #### Firmware Update via USB on Linux
 
-Download the [rui3_rak4631_latest](https://downloads.rakwireless.com/RUI/RUI3/Bootloader%20Upgrade/) firmware.
+Download the [rui3_rak4631_latest](https://downloads.rakwireless.com/#RUI/RUI3/Bootloader%20Upgrade/) firmware.
 
 On the download folder, execute the following command:
 
@@ -964,7 +964,7 @@ ls /dev/cu.*
   caption="Check the port"
 />
 
-5. Download the [RAK4631 to RAK4631-R Conversion](https://downloads.rakwireless.com/RUI/RUI3/Bootloader%20Upgrade/) firmware. Usually, the `rui3_rak4631_latest.zip` file will go to the downloads folder.
+5. Download the [RAK4631 to RAK4631-R Conversion](https://downloads.rakwireless.com/#RUI/RUI3/Bootloader%20Upgrade/) firmware. Usually, the `rui3_rak4631_latest.zip` file will go to the downloads folder.
 
 6. You can now execute the firmware update.
 
@@ -996,7 +996,7 @@ OK
 
 You have the option to convert your RAK4631-R to RAK4631.
 
-1. Download the necessary files needed for conversion. You need to have the [`rak4631_factory_application.zip`, `rak4631_factory_bootloader.zip`, `rak4631_factory_softdevice.zip`](https://downloads.rakwireless.com/RUI/RUI3/Bootloader%20Upgrade/), and [nrfutil.exe](https://github.com/NordicSemiconductor/pc-nrfutil/releases) in a common folder.
+1. Download the necessary files needed for conversion. You need to have the [`rak4631_factory_application.zip`, `rak4631_factory_bootloader.zip`, `rak4631_factory_softdevice.zip`](https://downloads.rakwireless.com/#RUI/RUI3/Bootloader%20Upgrade/), and [nrfutil.exe](https://github.com/NordicSemiconductor/pc-nrfutil/releases) in a common folder.
 
 2. Create a new folder in your `C:\` drive named `RAK4631 Bootloader to RUI v3` and place all the conversion files you downloaded from the previous step.
 

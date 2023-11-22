@@ -45,7 +45,7 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Instead, inst
 
 
 - Add [RAK3172 as a supported board in Arduino IDE](/Product-Categories/wisduo/RAK3172-Evaluation-Board/Quickstart/#rak3172-rui3-board-support-package-in-arduino-ide) by updating Board Manager URLs in **Preferences** settings of Arduino IDE with this JSON URL `https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main/package_rakwireless.com_rui_index.json`. After that, you can then add **RAKwireless RUI STM32 Boards** via Arduino board manager.
-- [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools)
+- [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools)
 
 :::tip 📝 NOTE:
 
@@ -78,7 +78,7 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Instead, inst
 
 #### Hardware Setup
 
-The RAK3172-E requires a general-purpose computer USB port via a micro USB cable. You can use any serial communication tool, but it is recommended to use the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools).
+The RAK3172-E requires a general-purpose computer USB port via a micro USB cable. You can use any serial communication tool, but it is recommended to use the [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools).
 
 :::warning ⚠️ WARNING
 Firmware update is done via USB port. If you will connect the module to an external device that will be interfacing with USB, take extra precautions in your board design to ensure you can still perform FW update to it. There should be a way in your board design that can disconnect the external device to RAK3172-E USB before connecting the module to the PC via USB for the FW update process.
@@ -111,7 +111,7 @@ RAK3172-E has an IPEX connector where you can connect the LoRa antenna, as shown
 
 
 :::tip 📝 NOTE
-Detailed information about the RAK3172 LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/).
+Detailed information about the RAK3172 LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/#LoRa/WisBlock/Accessories/).
 :::
 
 :::warning ⚠️ WARNING
@@ -282,7 +282,7 @@ If BOOT mode is not initiated, you can manually send `AT+BOOT` command to start 
 
 #### AT Command via the USB
 
-RAK3172 evaluation board can be configured using AT commands via the USB interface. Connect the RAK3172 evaluation board to your computer's USB port and a serial terminal tool. You can use the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools), so you can easily send AT commands and view the replies from the console output. The RAK Serial Port Tool commands still uses the RUI V2 AT commands by default. You can modify it to have RUI3 AT commands and then save it.
+RAK3172 evaluation board can be configured using AT commands via the USB interface. Connect the RAK3172 evaluation board to your computer's USB port and a serial terminal tool. You can use the [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools), so you can easily send AT commands and view the replies from the console output. The RAK Serial Port Tool commands still uses the RUI V2 AT commands by default. You can modify it to have RUI3 AT commands and then save it.
 
 :::warning ⚠️ WARNING
 Firmware update and AT command functionality are done via USB pins. If you will connect the module to an external host MCU that will send AT commands via USB, take extra precautions in your board design to ensure you can still perform FW update to it. There should be a way in your board design that can disconnect the host MCU UART to connect to RAK3172-E USB before connecting the module to the PC via USB for the FW update process.
@@ -300,7 +300,7 @@ An alternative option to update firmware aside from USB is to use SWD pins (SWCL
   caption="RAK3172 EVB Connection"
 />
 
-2. Any serial communication tool can be used; but, it is recommended to use the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools).
+2. Any serial communication tool can be used; but, it is recommended to use the [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools).
 
 3. Configure the serial communication tool by selecting the proper port detected by the computer and configure the link as follows:
 

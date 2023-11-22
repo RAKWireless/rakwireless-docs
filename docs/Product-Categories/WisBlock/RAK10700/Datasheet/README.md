@@ -83,7 +83,7 @@ The RAK10700 GNSS Tracker is built using the RAK5005-O Base Board. Available IO 
 The RAK4631 module used in the GNSS Tracker supports the LoRaWAN bands shown in the table below. When buying a RAK4631 module, pay attention to specify the correct core module RAK4630 H/L for your region. H stands for high-frequency regions and L for low-frequency regions.
 
 :::tip 📝 NOTE
-Detailed information about the RAK4631 BLE and LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/).
+Detailed information about the RAK4631 BLE and LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/#LoRa/WisBlock/Accessories/).
 :::
 
 | Region        | Frequency (MHz) | GNSS Tracker Solution                      |

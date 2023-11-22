@@ -44,7 +44,7 @@ This device released by RAKwireless is already pre-loaded with its latest firmwa
 
 ## Interfacing with RAK4200 Evaluation Board
 
-To interface with the RAK4200 Evaluation Board with your Windows PC, you need to download the [**RAK Serial Port Tool**](https://downloads.rakwireless.com/en/LoRa/Tools/).
+To interface with the RAK4200 Evaluation Board with your Windows PC, you need to download the [**RAK Serial Port Tool**](https://downloads.rakwireless.com/#LoRa/Tools/).
 
 ::: warning ⚠️ WARNING
 Before powering the RAK4200 Evaluation Board, you should install the LoRa antenna first. Not doing so might damage the board
@@ -885,7 +885,7 @@ The following steps show you how to update the firmware for the RAK4200 WisDuo L
 
 - [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip)
 - [RAK4200 Firmware](https://downloads.rakwireless.com/LoRa/RAK4200/Firmware/RAK4200_Latest_Firmware.zip)
-- [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
+- [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/#LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
 
 2. Connect your RAK4200 Evaluation Board in your Windows PC as instructed in the [Interfacing with RAK4200 Evaluation Board](#interfacing-with-rak4200-evaluation-board) section.
 

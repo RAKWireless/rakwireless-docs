@@ -67,7 +67,7 @@ Once you have installed AWS CLI, configure it as per the instructions in this [o
 
 ## Build a Linux Image with Greengrass Prerequisites
 
-You can download the RAK7246 latest firmware with [AWS Greengrass V2](https://downloads.rakwireless.com/LoRa/AWS_GreengrassV2/), or build it by yourself.
+You can download the RAK7246 latest firmware with [AWS Greengrass V2](https://downloads.rakwireless.com/#LoRa/AWS_GreengrassV2/), or build it by yourself.
 
 ::: tip 📝 NOTE
 If you don’t need to build an image with Greengrass prerequisites, you can download and install the [RAK7246 latest firmware](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7246G/Datasheet/#firmware), and proceed to [Install and Configure](#install-and-configure) section.

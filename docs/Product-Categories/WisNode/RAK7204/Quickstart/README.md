@@ -1482,7 +1482,7 @@ You can burn the bootloader in your RAK7204 WisNode Sense Home by following the 
 
 Now that you have successfully connected your RAK7204 WisNode Sense Home to the STM32CubeProgrammer Tool, let's burn the Bootloader into the RAK7204 WisNode Sense Home.
 
-6. Download the bootloader for the [RAK7204 WisNode Sense Home](https://downloads.rakwireless.com/en/LoRa/RAK7204/Firmware/).
+6. Download the bootloader for the [RAK7204 WisNode Sense Home](https://downloads.rakwireless.com/#LoRa/RAK7204/Firmware/).
 
 7. In the STM32CubeProgrammer, Click the "Erase Chip" button to erase all the data on RAK7204 WisNode Sense Home:
 
@@ -1543,7 +1543,7 @@ at+set_config=device:boot
   caption="Entering Boot Mode"
 />
 
-- Download the [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/) from the RAKwireless website.
+- Download the [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/#LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/) from the RAKwireless website.
 
 <rk-img
   src="/assets/images/wisnode/rak7204/quickstart/10.burning-firmware/rak-upgrade-tool.png"
@@ -1551,7 +1551,7 @@ at+set_config=device:boot
   caption="Device Firmware Upgrade Tool"
 />
 
-- Download the latest firmware [here](https://downloads.rakwireless.com/en/LoRa/RAK7204/Firmware/) for the RAK7204 WisNode Sense Home
+- Download the [latest firmware](https://downloads.rakwireless.com/#LoRa/RAK7204/Firmware/) for the RAK7204 WisNode Sense Home
 
 :::tip 📝 NOTE:
  Make sure to pick the appropriate bin file depending on the region you are in.

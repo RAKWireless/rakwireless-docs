@@ -38,7 +38,7 @@ Before going through each and every step in the installation guide of the RAK520
 
 ### Interfacing with the RAK5205 WisTrio LPWAN Tracker
 
-To interface with the RAK5205 WisTrio LPWAN Tracker with your Windows PC, you need to download the **[RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/)**.
+To interface with the RAK5205 WisTrio LPWAN Tracker with your Windows PC, you need to download the **[RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools/)**.
 
 ::: warning ⚠️ WARNING
 Before powering the RAK5205, you should install the LoRa and GPS antenna first. Not doing so might damage the board.
@@ -990,7 +990,7 @@ This firmware update process is for devices with current firmware **V3.0.0.14 an
     - [RAK7205/RAK5205 Latest Firmware](/Product-Categories/WisTrio/RAK7205-5205/Datasheet/#firmware)
 
 2.	Download the RAK Device Firmware Upgrade (DFU) tool.
-    - [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
+    - [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/#LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
 
 3.	Connect the RAK7205/RAK5205 to a computer via USB.
 
@@ -1037,7 +1037,7 @@ If you already have a deployed IoT project that uses RAK7205/RAK5205 with firmwa
 
     - [RAK7205/RAK5205 Latest Firmware](/Product-Categories/WisTrio/RAK7205-5205/Datasheet/#firmware)
 
-2. Download and install the [**STM32CubeProgrammer**](https://www.st.com/en/development-tools/stm32cubeprog.html) tool in your PC. You can also get it in the [RAK directory](https://downloads.rakwireless.com/LoRa/RAK811/Tools/).
+2. Download and install the [**STM32CubeProgrammer**](https://www.st.com/en/development-tools/stm32cubeprog.html) tool in your PC. You can also get it in the [RAK directory](https://downloads.rakwireless.com/#LoRa/RAK811/Tools/).
 
 3. Then, configure your RAK5205 by jumping the “**BOOT**” pin and “**VCC**” pin for boot mode. Refer to Figures 67 and 68.
 
@@ -1166,7 +1166,7 @@ If you still need to use V3.0.0.12, this is the guide you should follow. The fir
 
     - [RAK7205/RAK5205 Bootloader FW](https://downloads.rakwireless.com/LoRa/RAK7205-Tracker/Firmware/RUI_RAK5205_BOOT_Version3_0_2.rar)
 
-2. Download and install the [**STM32CubeProgrammer**](https://www.st.com/en/development-tools/stm32cubeprog.html) tool in your PC. You can also get it in the [RAK directory](https://downloads.rakwireless.com/LoRa/RAK811/Tools/).
+2. Download and install the [**STM32CubeProgrammer**](https://www.st.com/en/development-tools/stm32cubeprog.html) tool in your PC. You can also get it in the [RAK directory](https://downloads.rakwireless.com/#LoRa/RAK811/Tools/).
 
 3. Then, configure your RAK5205 by jumping the “**BOOT**” pin and “**VCC**” pin for boot mode. Refer to Figures 81 and 82.
 
@@ -1289,7 +1289,7 @@ If there are some errors in the Log box or it can’t connect, close the STM32Cu
 
 16. You can now on the second step which is burning the V3.0.0.12 firmware into RAK7205/RAK5205 using the LoRa Button Upgrade Tool.
 
-17. Download the [**RAK Upgrade Tool V1.0**](https://downloads.rakwireless.com/en/LoRa/RAK612-LoRaButton/Tools/). Then, extract and open the tool.
+17. Download the [**RAK Upgrade Tool V1.0**](https://downloads.rakwireless.com/#LoRa/RAK612-LoRaButton/Tools/). Then, extract and open the tool.
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/lora-button-choose.png"
@@ -1297,7 +1297,7 @@ If there are some errors in the Log box or it can’t connect, close the STM32Cu
   caption="RAK Upgrade Tool"
 />
 
-18. Get the [RAK5205 V3.0.0.12 Firmware](https://downloads.rakwireless.com/LoRa/WisTrio-LoRa-RAK5205/Firmware/History-Release-Version/) from RAKwireless download site and click “**Choose File**” button to select the firmware file.
+18. Get the [RAK5205 V3.0.0.12 Firmware](https://downloads.rakwireless.com/#LoRa/WisTrio-LoRa-RAK5205/Firmware/History-Release-Version/) from RAKwireless download site and click “**Choose File**” button to select the firmware file.
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/lora-button-file.png"
@@ -1321,7 +1321,7 @@ If there are some errors in the Log box or it can’t connect, close the STM32Cu
 
 20. Now, close the upgrade tool and open a serial port tool to configure your RAK5205.
 
-- It is recommended to use the **RAK Serial Port Tool** because there are some ready AT commands in this tool which very useful for you. You can get it from the [**RAK directory**](https://downloads.rakwireless.com/en/LoRa/RAK811/Tools/) for free.
+- It is recommended to use the **RAK Serial Port Tool** because there are some ready AT commands in this tool which very useful for you. You can get it from the [**RAK directory**](https://downloads.rakwireless.com/#LoRa/RAK811/Tools/) for free.
 - Choose the correct **COM port** and set the baud rate to **115200**. Then open the serial port and check the firmware version.
 
 <rk-img

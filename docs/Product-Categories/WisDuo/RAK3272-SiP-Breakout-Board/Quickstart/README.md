@@ -44,8 +44,8 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Instead, inst
 ----
 
 - Add [RAK3272-SiP as a supported board in Arduino IDE](/Product-Categories/wisduo/RAK3272-SiP-Breakout-Board/Quickstart/#rak3272-sip-rui3-board-support-package-in-arduino-ide) by updating Board Manager URLs in **Preferences** settings of Arduino IDE with this JSON URL `https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main/package_rakwireless.com_rui_index.json`. After that, you can then add **RAKwireless RUI STM32 Boards** via Arduino board manager.
-- [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools)
-- [RAK DFU Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
+- [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools)
+- [RAK DFU Tool](https://downloads.rakwireless.com/#LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
 - [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) (optional)
 
 #### List of Acronyms
@@ -105,7 +105,7 @@ RAK3272-SiP breakout board has an RP-SMA connector compatible with the included 
 
 
 :::tip 📝 NOTE
-Detailed information about the RAK3272-SiP LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/Accessories/Antenna/SMA-Antenna/).
+Detailed information about the RAK3272-SiP LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/#Accessories/Antenna/SMA-Antenna/).
 :::
 
 :::warning ⚠️ WARNING
@@ -557,7 +557,7 @@ If your RUI3 project uses SPI, then J4 pins 1 to 4 are reserved for the RUI3 SPI
 
 #### AT Command via UART2
 
-RAK3272-SiP Breakout Board can be configured using AT commands via the UART2 interface. You need a USB to UART TTL adapter to connect the RAK3272-SiP to your computer's USB port and a serial terminal tool. You can use the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools) so you can easily send AT commands and view the replies from the console output. The RAK Serial Port Tool commands still use the RUI V2 AT commands by default, you can modify it to have RUI3 AT commands and save.
+RAK3272-SiP Breakout Board can be configured using AT commands via the UART2 interface. You need a USB to UART TTL adapter to connect the RAK3272-SiP to your computer's USB port and a serial terminal tool. You can use the [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools) so you can easily send AT commands and view the replies from the console output. The RAK Serial Port Tool commands still use the RUI V2 AT commands by default, you can modify it to have RUI3 AT commands and save.
 
 :::warning ⚠️ WARNING
 Firmware update and AT command functionality are done via UART2 pins. If you will connect the module to an external host MCU that will send AT commands via UART2, take extra precaution in your board design to ensure you can still perform FW update to it. There should be a way in your board design that can disconnect the host MCU UART to connect to RAK3272-SiP UART2 before connecting the module to the PC (via USB-UART converter) for the FW update process.
@@ -575,7 +575,7 @@ An alternative option to update firmware aside from UART2 is to use SWD pins (SW
   caption="RAK3272-SiP Breakout Board to USB-Serial connection"
 />
 
-2. Any serial communication tool can be used; but, it is recommended to use the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools).
+2. Any serial communication tool can be used; but, it is recommended to use the [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools).
 
 3. Configure the serial communication tool by selecting the proper port detected by the computer and configure the link as follows:
 
@@ -2659,7 +2659,7 @@ Execute the following procedure to upgrade the firmware in Device Firmware Upgra
     - [RAK3272-SiP Firmware](/Product-Categories/WisDuo/RAK3272-SiP-Breakout-Board/Datasheet/#firmware-os)
 
 2.  Download the RAK Device Firmware Upgrade (DFU) tool.
-    - [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
+    - [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/#LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
 
 3.  Connect the RAK3272-SiP Breakout Board to the computer via a USB-Serial adapter. Refer to **[Figure 27](/Product-Categories/WisDuo/RAK3272-SiP-Breakout-Board/Quickstart/#connect-to-the-rak3272-sip-breakout-board)**.
 

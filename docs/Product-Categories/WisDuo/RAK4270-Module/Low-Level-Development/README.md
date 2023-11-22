@@ -23,7 +23,7 @@ Additionally, RAK offers a third alternative for advanced customers who need to 
 
 ### Schematic
 
-One of the essential aspects that allows you to develop your own version of firmware is the [RAK4270 Hardware Schematic](https://downloads.rakwireless.com/LoRa/RAK4270/Hardware-Specification/). This allows you to understand the module’s pinout and the connections between the internal STM32 MCU and the LoRa transceiver. Other important details can be found on [RAK4270 Datasheet](/Product-Categories/WisDuo/RAK4270-Module/Datasheet/).
+One of the essential aspects that allows you to develop your own version of firmware is the [RAK4270 Hardware Schematic](https://downloads.rakwireless.com/#LoRa/RAK4270/Hardware-Specification/). This allows you to understand the module’s pinout and the connections between the internal STM32 MCU and the LoRa transceiver. Other important details can be found on [RAK4270 Datasheet](/Product-Categories/WisDuo/RAK4270-Module/Datasheet/).
 
 :::tip 📝 NOTE:
 

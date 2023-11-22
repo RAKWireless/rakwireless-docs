@@ -114,7 +114,7 @@ However, if you haven’t used PlatformIO with WisBlock before and want to explo
 
 ### Using a Ready-to-Use Package
 
-You can also download the package at [RAK Downloads Center](https://downloads.rakwireless.com/LoRa/WisBlock/RAK4631/Solutions/Helium-Mapper/).
+You can also download the package at [RAK Downloads Center](https://downloads.rakwireless.com/#LoRa/WisBlock/RAK4631/Solutions/Helium-Mapper/).
 
 Follow the step-by-step instructions provided in this [post](https://forum.rakwireless.com/t/bootloader-fails-to-upgrade-via-ble/4193/5) to check if the RAK4631 has the latest bootloader. Then you can use the following adafruit-nrfutil command to upload the firmware file you downloaded previously. Remember to set the `<version>` and specify the serial `<port>` of the WisBlock that is connected.
 

@@ -90,7 +90,7 @@ The hardware specification is categorized into three parts. It covers the RF, el
 The RAK4631-R module supports the LoRaWAN bands shown in the table below. When buying a RAK4631-R module, pay attention to specifying the correct core module RAK4630 H/L for your region, in which H stands for high-frequency regions and L for low-frequency regions.
 
 :::tip 📝 NOTE
-Detailed information about the RAK4631-R BLE and LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/).
+Detailed information about the RAK4631-R BLE and LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/#LoRa/WisBlock/Accessories/).
 :::
 
 | Region        | Frequency (MHz)  | Core Module |

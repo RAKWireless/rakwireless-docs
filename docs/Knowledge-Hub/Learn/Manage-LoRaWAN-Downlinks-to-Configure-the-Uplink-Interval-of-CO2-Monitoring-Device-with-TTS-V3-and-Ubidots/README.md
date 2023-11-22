@@ -111,7 +111,7 @@ The RAK4631-R has a label on its sticker on where to connect the antennas.
 />
 
 :::tip 📝 NOTE
-Detailed information about the RAK4631-R BLE and LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/).
+Detailed information about the RAK4631-R BLE and LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/#LoRa/WisBlock/Accessories/).
 :::
 
 :::warning ⚠️ WARNING

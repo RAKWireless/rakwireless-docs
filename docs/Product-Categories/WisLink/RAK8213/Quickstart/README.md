@@ -30,7 +30,7 @@ The following two sections will provide a list of the components and tools you n
 
 - [Balena Etcher](https://www.balena.io/etcher/) (a tool for burning the firmware on the SD card)
 - [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) (a Windows tool for SSH, required to connect to the Gateway)
-- Latest [RAK8213 Firmware](https://downloads.rakwireless.com/Cellular/RAK8213/Firmware/)
+- Latest [RAK8213 Firmware](https://downloads.rakwireless.com/#Cellular/RAK8213/Firmware/)
 
 
 

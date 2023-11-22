@@ -43,8 +43,8 @@ Before going through each and every step in the installation guide of the RAK460
 
 #### Software Tools
 
-- [RAK Serial Port Tool](https://downloads.rakwireless.com/LoRa/Tools/)
-- [CH340 Drivers](https://downloads.rakwireless.com/LoRa/Tools/)
+- [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools/)
+- [CH340 Drivers](https://downloads.rakwireless.com/#LoRa/Tools/)
 - [The Things Network](https://account.thethingsnetwork.org/register) account
 
 
@@ -104,7 +104,7 @@ Before going through each and every step in the installation guide of the RAK460
 
 ### Interfacing with RAK4600 Breakout Board
 
-To interface with the RAK4600 Breakout Board with your Windows PC, it is recommended to download and install the [**RAK Serial Port Tool**](https://downloads.rakwireless.com/en/LoRa/Tools/).
+To interface with the RAK4600 Breakout Board with your Windows PC, it is recommended to download and install the [**RAK Serial Port Tool**](https://downloads.rakwireless.com/#LoRa/Tools/).
 
 ::: warning ⚠️ WARNING
 Before powering the RAK4600 Breakout Module, make sure you have installed the included LoRa and BLE antennas. Not doing so might damage the board.
@@ -1178,7 +1178,7 @@ Refer to the [RAKDAP1 Flash and Debug Tool](/Product-Categories/Accessories/RAKD
 
 2. Download the **DFU package** for the RAK4600 Breakout Board and save it on your mobile phone.
 
-    - [**DFU package**](https://downloads.rakwireless.com/LoRa/RAK4600/Firmware/History-Release-Version/DFU-Package/)
+    - [**DFU package**](https://downloads.rakwireless.com/#LoRa/RAK4600/Firmware/History-Release-Version/DFU-Package/)
 
 3. Make sure the Bluetooth on your mobile is turned on. Open the “**nRF Connect for Mobile**” application, and you will see all BLE devices in range in the scan list:
 

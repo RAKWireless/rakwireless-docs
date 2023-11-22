@@ -40,9 +40,9 @@ Before going through the step in the installation guide of the RAK4600 WisDuo LP
 
 #### Software Tools
 
-1. [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/)
-2. [RAK4600 Firmware](https://downloads.rakwireless.com/LoRa/RAK4600/Firmware/)
-3. [RAK Firmware Upgrade Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
+1. [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools/)
+2. [RAK4600 Firmware](https://downloads.rakwireless.com/#LoRa/RAK4600/Firmware/)
+3. [RAK Firmware Upgrade Tool](https://downloads.rakwireless.com/#LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
 
 
 #### Definition of Terms
@@ -121,7 +121,7 @@ In general, the pin marked as TX of the adapter must be connected to the USART1_
 
 2. Open RAK Serial Port Tool. Any serial communication tool will work, but it is recommended to use the RAK Serial Port Tool.
 
-    * [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools)
+    * [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools)
 
 3.  Configure the serial communication tool by selecting the proper port of the computer UART port and configure the link as **115200 baud, 8 bits, no parity bit, and 1 stop bit**.
 

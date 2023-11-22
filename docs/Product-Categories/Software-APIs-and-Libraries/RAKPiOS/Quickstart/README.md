@@ -13,7 +13,7 @@ tags:
 
 ## Get the OS
 
-The latest version of RAKPiOS is available for download from the [RAK downloads center](https://downloads.rakwireless.com/LoRa/WisGate-Connect/RAK7391) or the [RAKPiOS repository](https://github.com/RAKWireless/rakpios/releases).
+The latest version of RAKPiOS is available for download from the [RAK downloads center](https://downloads.rakwireless.com/#LoRa/WisGate-Connect/RAK7391) or the [RAKPiOS repository](https://github.com/RAKWireless/rakpios/releases).
 
 To flash the image, you can use either Windows, Mac OS, or Linux; however, it is recommended that you use [balenaEtcher], a cross-platform tool that works with all three.
 

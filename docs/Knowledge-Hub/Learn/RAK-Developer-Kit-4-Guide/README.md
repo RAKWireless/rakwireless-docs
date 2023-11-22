@@ -515,7 +515,7 @@ RAK4631 has a label on its sticker where to connect the antennas, as shown in **
 />
 
 :::tip 📝 NOTE
-Detailed information about the RAK4631 BLE and LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/).
+Detailed information about the RAK4631 BLE and LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/#LoRa/WisBlock/Accessories/).
 :::
 
 After all this setup, you can now connect the battery (optional) and USB cable to start programming the RAK1906.

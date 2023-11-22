@@ -28,7 +28,7 @@ Before going through the quick start guide of the RAK4260 WisDuo LPWAN Module, m
 #### Software Tools
 
 1. [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip)
-2. [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
+2. [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/#LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
 3. [Atmel Studio](https://www.microchip.com/mplab/microchip-studio)
 4. [Sample Code](https://github.com/RAKWireless/RAK4260-LoRaNode-demo)
 

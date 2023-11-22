@@ -99,7 +99,7 @@ If this is your first time to connect your RAK7200 WisNode Track Lite to your co
 />
 
 ::: tip 📝 NOTE
-In case the driver is still not installed upon doing the previous steps, download the driver manually at [RAK downloads center](https://downloads.rakwireless.com/en/LoRa/RAK811/Tools/).
+In case the driver is still not installed upon doing the previous steps, download the driver manually at [RAK downloads center](https://downloads.rakwireless.com/#LoRa/RAK811/Tools/).
 :::
 
 5. Test if your RAK7200 WisNode Track Lite can now communicate with the RAK Serial Port Tool. Configure the serial communication tool by selecting the proper port and configure the link as listed below and then click "**Open**".

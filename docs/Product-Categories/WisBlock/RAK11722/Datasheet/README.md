@@ -71,7 +71,7 @@ The hardware specification is categorized into three parts. It covers the RF, el
 The RAK11722 module supports the LoRaWAN bands shown in the table below. When buying a RAK11722 module, pay attention to specifying the correct core module RAK11720 H/L for your region, in which H stands for high-frequency regions and L for low-frequency regions.
 
 :::tip 📝 NOTE
-Detailed information about the RAK11722 BLE and LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/).
+Detailed information about the RAK11722 BLE and LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/#LoRa/WisBlock/Accessories/).
 :::
 
 | Module    | Core Module | Region        | Frequency     |

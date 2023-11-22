@@ -18,7 +18,7 @@ Thank you for choosing **RAKBox-UO180x130x60** for your awesome IoT project! ðŸŽ
 
 - [Installation Guide](../Installation/)
 - [Datasheet](../Datasheet/)
-- [RAKBox-UO180x130x60 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/Unify%20Enclosure/RAKBox-UO180x130x60/)
+- [RAKBox-UO180x130x60 3D Model](https://downloads.rakwireless.com/#3D_File/WisBlock/Unify%20Enclosure/RAKBox-UO180x130x60/)
 
 
 ## Product Description

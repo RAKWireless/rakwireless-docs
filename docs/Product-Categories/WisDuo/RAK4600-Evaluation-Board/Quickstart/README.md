@@ -41,7 +41,7 @@ This device released by RAKWireless is already pre-loaded with its latest firmwa
 
 ## Interfacing with RAK4600
 
-To interface with the Evaluation Board, using a Windows PC, you need to install the **[RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/)**.
+To interface with the Evaluation Board, using a Windows PC, you need to install the **[RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools/)**.
 
 :::warning ⚠️ WARNING
 Before powering the RAK4600 Evaluation Board, you should install the LoRa and BLE Antenna first. Not doing so might damage the board.
@@ -318,7 +318,7 @@ If you set the RAK4600 to work in Central Mode, the RAK4600 will work first on P
 
 ### Burning the Firmware
 
-If you want to get a pre-compiled firmware instead of compiling the source code by yourself, you can find the latest firmware on the **[RAK downloads](https://downloads.rakwireless.com/en/LoRa/RAK4600/Firmware/)**.
+If you want to get a pre-compiled firmware instead of compiling the source code by yourself, you can find the latest firmware on the **[RAK downloads](https://downloads.rakwireless.com/#LoRa/RAK4600/Firmware/)**.
 
 
 #### Flash the firmware using DAPLink and RAKDAP
@@ -327,7 +327,7 @@ Refer to <a href="../../../../../Product-Categories/Accessories/RAKDAP1-Flash-an
 
 ### Upgrading Firmware through DFU using BLE
 
-1. Download the DFU package of the [**RAK4600 Evaluation Board**](https://downloads.rakwireless.com/LoRa/RAK4600/Firmware/History-Release-Version/DFU-Package/), and save it on your mobile phone.
+1. Download the DFU package of the [**RAK4600 Evaluation Board**](https://downloads.rakwireless.com/#LoRa/RAK4600/Firmware/History-Release-Version/DFU-Package/), and save it on your mobile phone.
 
 2. Make sure the Bluetooth on your mobile is turned on. Open the **nRF Connect** Mobile application, and you will see all BLE devices in range in the scan list.
 

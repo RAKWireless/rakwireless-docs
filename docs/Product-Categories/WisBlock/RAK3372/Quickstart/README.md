@@ -156,7 +156,7 @@ You need to ensure that it is properly connected to have a good LoRa signal. Als
 />
 
 :::tip 📝 NOTE
-Detailed information about the RAK3372 LoRa PCB antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/). Keep in mind that the PCB antenna is intended ideally only for prototyping and device evaluation. For enterprise deployments, it is advisable to consider a better antenna for reliable performance.
+Detailed information about the RAK3372 LoRa PCB antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/#LoRa/WisBlock/Accessories/). Keep in mind that the PCB antenna is intended ideally only for prototyping and device evaluation. For enterprise deployments, it is advisable to consider a better antenna for reliable performance.
 :::
 
 :::warning ⚠️ WARNING
@@ -696,7 +696,7 @@ RAK3172 should automatically go to BOOT mode when the firmware is uploaded via R
     - [RAK3172 Firmware](/Product-Categories/WisDuo/RAK3172-Module/Datasheet/#firmware-os)
 
 2.  Download the RAK Device Firmware Upgrade (DFU) tool.
-    - [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
+    - [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/#LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
 
 3.  Connect the RAK3372 module with a computer through a USB to TTL.
 

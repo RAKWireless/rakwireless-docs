@@ -48,7 +48,7 @@ This device released by RAKwireless is already pre-loaded with its latest firmwa
 
 ### Interfacing with RAK815 WisTrio LPWAN Tracker
 
-To interface with the RAK815 WisTrio LPWAN Tracker with your Windows Machine, you need to download the [**RAK Serial Port Tool**](https://downloads.rakwireless.com/en/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip).
+To interface with the RAK815 WisTrio LPWAN Tracker with your Windows Machine, you need to download the [**RAK Serial Port Tool**](https://downloads.rakwireless.com/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip).
 
 :::warning ⚠️ WARNING
 Before powering the RAK815 WisTrio LPWAN Tracker, you should install the LoRa antenna first. Not doing so might damage the board.
@@ -368,7 +368,7 @@ This open-source project is based on the official code LoRaWAN 1.0.2 and Nordic 
 
 To enable the Bluetooth functionality of our device, you must first write the Bluetooth protocol stack using the official nRFgo Studio Tool.
 
-* Download and install the nRFgo Studio Tool through the **[Nordic Official Site](http://www.nordicsemi.com/Products/Low-power-short-range-wireless/nRF52832)** or the **[RAKwireless Downloads](https://downloads.rakwireless.com/en/LoRa/RAK815/Tools/)**.
+* Download and install the nRFgo Studio Tool through the **[Nordic Official Site](http://www.nordicsemi.com/Products/Low-power-short-range-wireless/nRF52832)** or the **[RAKwireless Downloads](https://downloads.rakwireless.com/#LoRa/RAK815/Tools/)**.
 
 <rk-img
   src="/assets/images/wistrio/rak815/quickstart/6device-firmware-setup/nrfgo-studio-tool-installer.jpg"

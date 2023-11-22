@@ -36,7 +36,7 @@
             <q-item-label caption>Management</q-item-label>
           </q-item-section>
         </q-item>
-        
+
         <q-expansion-item
           label="WisGate"
           caption="Operating System for WisGate Edge System"
@@ -48,7 +48,7 @@
                 <q-item-label overline>WisGateOS</q-item-label>
               </q-item-section>
           </q-item>
-          <q-item 
+          <q-item
             class="full-width q-py-md" :to="`/Product-Categories/Software-APIs-and-Libraries/WisGateOS-2`">
               <q-item-section>
                 <q-item-label overline>WisGate OS2</q-item-label>
@@ -67,25 +67,25 @@
                 <q-item-label overline>RUI</q-item-label>
               </q-item-section>
           </q-item> -->
-          <q-item 
+          <q-item
             class="full-width q-py-md" :to="`/RUI3`">
             <q-item-section>
               <q-item-label overline>RUI3</q-item-label>
             </q-item-section>
           </q-item>
-          <q-item 
+          <q-item
             class="full-width q-py-md" :to="`/Product-Categories/Software-Tools/WisToolBox/Overview/`">
             <q-item-section>
               <q-item-label overline>WisToolBox</q-item-label>
             </q-item-section>
           </q-item>
-          <q-item 
-            class="full-width q-py-md" :to="`https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/`">
+          <q-item
+            class="full-width q-py-md" :to="`https://downloads.rakwireless.com/#LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/`">
             <q-item-section>
               <q-item-label overline>DFU Tool</q-item-label>
             </q-item-section>
           </q-item>
-          <q-item 
+          <q-item
             class="full-width q-py-md" :to="`https://downloads.rakwireless.com/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip`">
             <q-item-section>
               <q-item-label overline>Serial Port Tool</q-item-label>
@@ -94,8 +94,8 @@
         </q-expansion-item>
       </q-list>
     </rk-dropdown>
-    
-    <div 
+
+    <div
       v-if="!computedMobileScreen"
       no-wrap>
       <q-btn
@@ -124,7 +124,7 @@
                 <q-list>
                   <q-item class="item-align">
                     <q-item-label>
-                      <a href="/Product-Categories/Software-APIs-and-Libraries/WisDM" class="text-grey-10 text-weight-regular text-subtitle2">WisDM</a> 
+                      <a href="/Product-Categories/Software-APIs-and-Libraries/WisDM" class="text-grey-10 text-weight-regular text-subtitle2">WisDM</a>
                     </q-item-label>
                   </q-item>
                 </q-list>
@@ -143,7 +143,7 @@
                         <a href="/Product-Categories/Software-Tools/WisToolBox/Overview/" class="text-grey-10 text-weight-regular text-subtitle2">WisToolBox</a>
                       </q-item-label>
                       <q-item-label>
-                        <a href="https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/"
+                        <a href="https://downloads.rakwireless.com/#LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/"
                           class="text-grey-10 text-weight-regular text-subtitle2">DFU Tool</a>
                       </q-item-label>
                       <q-item-label>
@@ -168,7 +168,7 @@
                     </q-item-label>
                   </q-item> -->
                 </q-list>
-                  
+
               </q-item-section>
             </q-item>
             <q-item class="list-shrink">
@@ -181,13 +181,13 @@
                         <a href="/Product-Categories/Software-APIs-and-Libraries/WisGateOS-2/Overview/" class="text-grey-10 text-weight-regular text-subtitle2">WisGate OS2</a>
                       </q-item-label>
                       <q-item-label>
-                        <a href="/Product-Categories/Software-APIs-and-Libraries/WisGateOS/Overview/" 
+                        <a href="/Product-Categories/Software-APIs-and-Libraries/WisGateOS/Overview/"
                           class="text-grey-10 text-weight-regular text-subtitle2"
                           >WisGate OS</a>
                       </q-item-label>
                       <!-- <q-list dense >
                         <q-item dense>
-                          <a href="/Product-Categories/Software-APIs-and-Libraries/WisGateOS/Overview/" 
+                          <a href="/Product-Categories/Software-APIs-and-Libraries/WisGateOS/Overview/"
                           class="text-weight-light text-grey-7 text-caption"
                           >WisGate OS</a>
                         </q-item>
@@ -223,7 +223,7 @@
         </q-item>
       </q-list>
     </rk-dropdown>
-    
+
     <q-btn
       label="Community"
       class="full-height"
@@ -325,7 +325,7 @@ export default {
   flex-direction: row;
   align-items: flex-start;
   text-align:left;
-  
+
   /* justify-content: flex-start; */
 }
 </style>

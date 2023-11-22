@@ -26,8 +26,8 @@ It is always best for your RAK LPWAN Node to upgrade to its latest firmware to h
 Download or install the requisites listed below:
 
 - [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip)
-- [RAK Firmware Upgrade Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
-- [LPWAN Firmware](https://downloads.rakwireless.com/en/LoRa/)
+- [RAK Firmware Upgrade Tool](https://downloads.rakwireless.com/#LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
+- [LPWAN Firmware](https://downloads.rakwireless.com/#LoRa/)
 
 :::tip 📝 NOTE
 For this sample demonstration, we will be using the RAK4200 LPWAN Node.

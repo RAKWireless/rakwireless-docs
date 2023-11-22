@@ -148,7 +148,7 @@ Refer to the [hardware setup guide of RAK1901](https://docs.rakwireless.com/Prod
 Just follow the hardware setup and do not proceed with the software configurations on the quick start guides of RAK1901 and RAK1902. The LoRaWAN application example in this guide requires different libraries to the modules' quick start guides.
 :::
 
-After you connect the modules to the WisBlock Base, you need to add the required compatible libraries for RAK1901 and RAK1902. You need to download both the [RAK1901 library](https://downloads.rakwireless.com/RUI/RUI3/Library/RAKwireless_RAK1901_Temperature_and_Humidity_SHTC3.zip) and [RAK1902 library](https://downloads.rakwireless.com/RUI/RUI3/Library/RAKwireless_RAK1902_Pressure_LPS22HB.zip). Other RAK developed libraries compatible with RAK4631-R can also be found in the [RAK download site](https://downloads.rakwireless.com/RUI/RUI3/Library/).
+After you connect the modules to the WisBlock Base, you need to add the required compatible libraries for RAK1901 and RAK1902. You need to download both the [RAK1901 library](https://downloads.rakwireless.com/RUI/RUI3/Library/RAKwireless_RAK1901_Temperature_and_Humidity_SHTC3.zip) and [RAK1902 library](https://downloads.rakwireless.com/RUI/RUI3/Library/RAKwireless_RAK1902_Pressure_LPS22HB.zip). Other RAK developed libraries compatible with RAK4631-R can also be found in the [RAK download site](https://downloads.rakwireless.com/#RUI/RUI3/Library/).
 
 To add the needed libraries, you need to open Arduino IDE and click **Sketch**, **Include Library**, then **Add .ZIP Library**.
 
