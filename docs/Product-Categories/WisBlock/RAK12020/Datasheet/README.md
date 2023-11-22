@@ -44,7 +44,7 @@ The ambient light intensity data is interfaced via I2C. Additionally, RAK12020 c
 
 #### Mounting
 
-**Figure 2** shows the mounting mechanism of the RAK12020 module on a [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. The RAK12020 module can be mounted on the slots: **A, C, & D**.
+**Figure 2** shows the mounting mechanism of the RAK12020 module on a [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. The RAK12020 module can be mounted on the slots: **A, C, D, E & F**.
 
 <rk-img
   src="/assets/images/wisblock/rak12020/datasheet/RAK19xx_mounting.png"
@@ -73,8 +73,18 @@ The RAK12020 WisBlock Light Sensor comprises a standard WisBlock connector. The 
 />
 
 :::tip 📝 NOTE:
+
 Only the **I2C**-related pins, **VDD**, and **GND** are connected to this module. **INT** pin is the interrupt output.
+
 :::
+
+**INT** pin at **Pin 12/13** will depend on where sensor slot the module is plugged in. The table shows the compatible pins used by different sensor slots:
+
+**INT (Interrupt Output Pin)**
+
+| Slot A | Slot C | Slot D | Slot E | Slot F | 
+| ------ | ------ | ------ | ------ | ------ |
+| IO1    | IO3    | IO5    | IO4    | IO6    | 
 
 #### Electrical Characteristics
 

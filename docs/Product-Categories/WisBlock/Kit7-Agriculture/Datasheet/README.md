@@ -1,7 +1,7 @@
 ---
 rak_desc: Contains a list of the modules and sensors included in this fully customizable WisBlock IoT Kit for monitoring and controlling agricultural applications.
 rak_img: /assets/images/wisblock/kits/7_agriculture_kit_1.png
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 tags:
   - datasheet

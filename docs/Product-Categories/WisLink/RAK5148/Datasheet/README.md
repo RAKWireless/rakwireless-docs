@@ -260,21 +260,15 @@ RAK5148 Concentrator Module refers to the Semtech reference design for SX1280. *
 
 ## Models/Bundles
 
-In general, the RAK5148's variation is the defined as **RAK5148 - XY**, where **X, Y, Z is the model variant**. Refer to the following tables to know the variants and their specification.
+In general, the RAK5148's variation is the defined as **RAK5148 - XYZ**, where **X, Y, Z is the model variant**. Refer to the following tables to know the variants and their specification.
 
 | Symbol                        | Description                                   |
 | ----------------------------- | --------------------------------------------- |
-| X - Interface type            | 1 - SPI <br> 2 - USB                          |
+| X - Interface type            | 2 - USB                                       |
 | Y - Additional features       | 1 - No additional features <br> 2 - GPS       |
 | Z - MCU RESET with or without | 1 - With MCU RESET <br> 2 - Without MCU RESET |
 
-|    Model    |  USB  |  SPI  |  GPS  | MCU_RESET |
-| :---------: | :---: | :---: | :---: | :-------: |
-| RAK5148-111 |       |   √   |       |     √     |
-| RAK5148-112 |       |   √   |       |           |
-| RAK5148-121 |       |   √   |   √   |     √     |
-| RAK5148-122 |       |   √   |   √   |           |
-| RAK5148-211 |   √   |       |       |     √     |
-| RAK5148-212 |   √   |       |       |     √     |
-| RAK5148-221 |   √   |       |   √   |           |
-| RAK5148-222 |   √   |       |   √   |           |
+|    Model    |  USB  |  GPS  | MCU_RESET |
+| :---------: | :---: | :---: | :-------: |
+| RAK5148-211 |   √   |       |     √     |
+| RAK5148-221 |   √   |   √   |     √     |

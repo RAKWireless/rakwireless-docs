@@ -4,7 +4,7 @@ rak_desc: The WisBlock Agriculture Kit is an IoT kit optimized for agricultural 
 rak_grp: [wisblock,wiskit]
 rak_model: Agriculture
 prev: ../../
-next: ../Datasheet/
+next: ../Quickstart/
 tags:
     - WisBlock Kit
     - WisBlock Agriculture Kit
@@ -16,6 +16,7 @@ tags:
 
 Thank you for choosing **WisBlock Agriculture Kit** in your awesome IoT project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
+* [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 
 ## Product Description

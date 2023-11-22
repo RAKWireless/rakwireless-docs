@@ -45,7 +45,7 @@ RAK12032 is a WisBlock 3-axis Accelerometer Sensor Module that extends the WisBl
 
 #### Mounting
 
-**Figure 2** shows the mounting mechanism of the RAK12032 module on a [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. The RAK12032 module can be mounted on the slots: **A, B, C, D, E, & F**.
+**Figure 2** shows the mounting mechanism of the RAK12032 module on a [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. The RAK12032 module can be mounted on the slots: **C, D, E, & F**.
 
 <rk-img
   src="/assets/images/wisblock/rak12032/datasheet/RAK19xx_mounting.png"
@@ -78,13 +78,29 @@ The RAK12032 WisBlock 3-Axis Sensor comprises a standard WisBlock connector. The
 />
 
 :::tip 📝 NOTE:
+
 The following are connected to WisBlock connector:
   - **I2C**-related pins
   - **INT1**
   - **INT2**
   - **VDD**
   - **GND**
+
 :::
+
+**INT2** pin at **Pin 10** and **INT1** pin at **Pin 12**  will depend on where sensor slot the module is plugged in. The table shows the compatible pins used by different sensor slots:
+
+**INT2 (Interrupt 2 Output Pin)**
+
+| Slot C | Slot D | Slot E | Slot F | 
+| ------ | ------ | ------ | ------ |
+| IO4    | IO6    | IO3    | IO5    | 
+
+**INT1 (Interrupt 1 Output Pin)**
+
+| Slot C | Slot D | Slot E | Slot F | 
+| ------ | ------ | ------ | ------ |
+| IO3    | IO5    | IO4    | IO6    | 
 
 #### Electrical Characteristics
 

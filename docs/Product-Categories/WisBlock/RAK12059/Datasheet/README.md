@@ -40,7 +40,7 @@ RAK12059 is a WisBlock Liquid Level Sensor module that extends the WisBlock syst
 
 #### Mounting
 
-**Figure 2** shows the mounting mechanism of the RAK12059 module on a [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. The RAK12059 module can be mounted on the slots: **A, B, C, D, E, & F**.
+**Figure 2** shows the mounting mechanism of the RAK12059 module on a [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. The RAK12059 module can be mounted on the slots: **A, C, D, E, & F**.
 
 <rk-img
   src="/assets/images/wisblock/rak12059/datasheet/RAK19xx_mounting.png"
@@ -69,8 +69,19 @@ The RAK12059 WisBlock Liquid Level Sensor comprises a standard WisBlock connecto
 />
 
 :::tip 📝 NOTE:
-**I2C**-related pins, **ALERT**, **3V3_S**, and **GND** are connected to the WisBlock connector.
+
+- **I2C**-related pins, **ALERT**, **3V3_S**, and **GND** are connected to the WisBlock connector.
+- **RAK12059** should not be plugged in **Slot B** as it is dedicated for **IO2 (WisBlock IO2 pin)** that controls the **3V3_S** voltage output.
+
 :::
+
+The **WisBlock Sensor** connector is used to this module and the IO used for **ALERT** pin at **Pin 12** will depend on where sensor slot the module is plugged in. The table shows the compatible pins used by different sensor slots:
+
+**ALERT Pin**
+
+| Slot A | Slot C | Slot D | Slot E | Slot F | 
+| ------ | ------ | ------ | ------ | ------ | 
+| IO1    | IO3    | IO5    | IO4    | IO6    | 
 
 #### Electrical Characteristics
 

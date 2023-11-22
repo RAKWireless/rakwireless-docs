@@ -48,7 +48,7 @@ RAK15006 is a WisBlock 512kByte FRAM module that extends the WisBlock system wit
 
 #### Mounting
 
-**Figure 2** shows the mounting mechanism of the RAK15006 module on a [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. The RAK15006 module can be mounted on the slots: **A, C, & D**.
+**Figure 2** shows the mounting mechanism of the RAK15006 module on a [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. The RAK15006 module can be mounted on the slots: **A, C, D, E & F**.
 
 <rk-img
   src="/assets/images/wisblock/rak15006/datasheet/RAK19xx_mounting.png"
@@ -75,6 +75,20 @@ The RAK15006 WisBlock 512kByte FRAM Module comprises a standard WisBlock connect
   width="40%"
   caption="RAK15006 WisBlock FRAM Module Pinout Diagram"
 />
+
+The **WisBlock Sensor** connector is used to this module and the IO used for **WP** pin at **Pin 12** will depend on where sensor slot the module is plugged in. The table shows the compatible pins used by different sensor slots:
+
+**WP (Write Protect Pin)**
+
+| Slot A | Slot C | Slot D | Slot E | Slot F | 
+| ------ | ------ | ------ | ------ | ------ | 
+| IO1    | IO3    | IO5    | IO4    | IO6    | 
+
+::: tip 📝 NOTE
+
+**RAK15006** should not be plugged in **Slot B** as it is dedicated for **IO2 (WisBlock IO2 pin)** that controls the **3V3_S** voltage output. 
+
+:::
 
 #### Electrical Characteristics
 

@@ -42,7 +42,7 @@ RAK12044 is a WisBlock Hall Effect Sensor module that extends the WisBlock syste
 
 #### Mounting
 
-**Figure 2** shows the mounting mechanism of the RAK12044 module on a [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. The RAK12044 module can be mounted on the slots: **A, B, C, D, E, & F**.
+**Figure 2** shows the mounting mechanism of the RAK12044 module on a [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) board. The RAK12044 module can be mounted on the slots: **A, C, D, E, & F**.
 
 <rk-img
   src="/assets/images/wisblock/rak12044/datasheet/RAK19xx_mounting.png"
@@ -70,8 +70,18 @@ The RAK12044 WisBlock Hall Effect Sensor comprises a standard WisBlock connector
 />
 
 :::tip 📝 NOTE:
+
 When the RAK12044 is used with other sensor modules powered by **3V3_S** together, it can not be mounted on slot **B**.
+
 :::
+
+The **WisBlock Sensor** connector is used to this module and the IO used for **ALERT** pin at **Pin 12** will depend on where sensor slot the module is plugged in. The table shows the compatible pins used by different sensor slots:
+
+**ALERT Pin**
+
+| Slot A | Slot C | Slot D | Slot E | Slot F | 
+| ------ | ------ | ------ | ------ | ------ | 
+| IO1    | IO3    | IO5    | IO4    | IO6    | 
 
 #### Electrical Characteristics
 

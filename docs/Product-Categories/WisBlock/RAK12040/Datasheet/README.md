@@ -71,7 +71,9 @@ The RAK12040 WisBlock 8x8 IR Sensor comprises a standard WisBlock connector. The
 />
 
 :::tip 📝 NOTE:
+
 When the RAK12040 is used with other sensor modules powered by **3V3_S** together, it can not be mounted on slot **A**.
+
 :::
 
 #### Electrical Characteristics
