@@ -8,7 +8,7 @@ tags:
   - Accessories
   - Power Supply
 rak_desc: In this guide, the process of assembling and mounting the RAK9154 Solar Battery will be shown step by step. Strict adherence to the steps guarantees a secured and durable solar battery.
-rak_img: /assets/images/accessories/rak9154/rak9154.png
+rak_img: /assets/images/accessories/rak9154/datasheet/RAK9154.png
 ---
 
 # RAK9154 Solar Battery Installation Guide
@@ -49,7 +49,7 @@ src="/assets/images/accessories/rak9154/installation/4.connecting-the-solar-pane
   caption="Connecting the solar panel to the battery"
 />
 
-5. Hang the solar panel on the mounting bracket and adjust the solar panel's angle direction. Then tighten the two screws and secure it with the other two screws. 
+5. Hang the solar panel on the mounting bracket and adjust the solar panel's angle direction. Then tighten the two screws and secure it with the other two screws.
 
 <rk-img
 src="/assets/images/accessories/rak9154/installation/5.hanging.png"
@@ -57,7 +57,7 @@ src="/assets/images/accessories/rak9154/installation/5.hanging.png"
   caption="Hanging the panel to the mounting bracket"
 />
 
-6. The RAK9154 Solar Battery can be used to power the RAK2560 Sensor Hub or the RAK7240/RAK7289 outdoor WisGate Edge gateways. Connect the desired device to the corresponding connector via the cable, with consideration of the output voltage. 
+6. The RAK9154 Solar Battery can be used to power the RAK2560 Sensor Hub or the RAK7240/RAK7289 outdoor WisGate Edge gateways. Connect the desired device to the corresponding connector via the cable, with consideration of the output voltage.
 
 <rk-img
 src="/assets/images/accessories/rak9154/installation/6.connecting-a-device.png"

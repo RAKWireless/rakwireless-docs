@@ -8,7 +8,7 @@ tags:
   - Accessories
   - Power Supply
 rak_desc: Provides comprehensive information about your RAK9154 Solar Battery to help you in using it. This information includes technical specifications, characteristics, and requirements.
-rak_img: /assets/images/accessories/rak9154/rak9154.png
+rak_img: /assets/images/accessories/rak9154/datasheet/RAK9154.png
 ---
 
 # RAK9154 Solar Battery Datasheet
@@ -17,7 +17,7 @@ rak_img: /assets/images/accessories/rak9154/rak9154.png
 
 ### Description
 
-The RAK9154 Solar Battery is created especially to power RAK Sensor Hub or provide backup power for the WisGate Edge Pro V2 and Prime V2. Designed to provide an eco-friendly and sustainable power solution, this innovative device utilizes a small but powerful solar panel and integrates a 5.2&nbsp;Ah battery, and a solar charge controller in one compact unit. 
+The RAK9154 Solar Battery is created especially to power RAK Sensor Hub or provide backup power for the WisGate Edge Pro V2 and Prime V2. Designed to provide an eco-friendly and sustainable power solution, this innovative device utilizes a small but powerful solar panel and integrates a 5.2&nbsp;Ah battery, and a solar charge controller in one compact unit.
 
 ### Features
 
@@ -33,9 +33,9 @@ The RAK9154 Solar Battery is created especially to power RAK Sensor Hub or provi
 ### Overview
 
 <rk-img
-src="/assets/images/accessories/rak9154/datasheet/1.rak9154.png"
-  width="45%"
-  caption="RAK9154 Solar Battery Overview"
+    src="/assets/images/accessories/rak9154/datasheet/RAK9154.png"
+    width="45%"
+    caption="RAK9154 Solar Battery Overview"
 />
 
 | Parameter                        | Value                                                                         | Notes                                  |
@@ -102,7 +102,7 @@ src="/assets/images/accessories/rak9154/datasheet/4.wiring-diagram.png"
 Unless otherwise stated, all specifications are performed under the following environmental conditions:
 
 - Temperature: 25±3°&nbsp;C
-- Humidity: 65±20%&nbsp;RH 
+- Humidity: 65±20%&nbsp;RH
 
 #### Transportation and Storage
 

@@ -1570,7 +1570,7 @@ export default {
   },
   '/Product-Categories/Accessories/RAK9154/': {
     label: 'RAK9154 Solar Battery',
-    img: '/assets/images/accessories/rak9154/rak9154.png',
+    img: '/assets/images/accessories/rak9154/datasheet/RAK9154.png',
     store: 'https://store.rakwireless.com/products/rak-battery-lite-solar-power-solution-rak9154?utm_source=RAK9154SolarBattery&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/Accessories/Solar-Panel/': {

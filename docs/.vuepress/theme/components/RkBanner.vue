@@ -3,7 +3,7 @@
 <div class="popup-container" v-show="!closeBanner">
 
   <a href="http://store.rakwireless.com/?utm_source=Docs+Center+Banner&utm_medium=Organic&utm_id=black+friday%2Fcyber+monday+campaign" >
-    <img :src="isMobile?'https://res.rakwireless.com/tracked/misc/others/sm5-mobile-banner.jpg':'https://res.rakwireless.com/tracked/misc/others/sm5-desktop-banner.jpg'" alt="Black Friday and Cyber Monday Sale" class="popup-image" style="user-select: auto;">
+    <img :src="isMobile?'/assets/images/banner/sm5-mobile-banner.jpg':'/assets/images/banner/sm5-desktop-banner.jpg'" alt="Black Friday and Cyber Monday Sale" class="popup-image" style="user-select: auto;">
   </a>
 
     <span class="">

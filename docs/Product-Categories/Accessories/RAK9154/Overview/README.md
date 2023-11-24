@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/accessories/rak9154/rak9154.png
+rak_img: /assets/images/accessories/rak9154/datasheet/RAK9154.png
 rak_desc: The RAK9154 Solar Battery is created especially to power the RAK Sensor Hub or to provide backup power for the WisGate Edge Pro V2 and Prime V2.
 rak_grp: [accessories, power-supplies]
 prev: ../../
@@ -20,7 +20,7 @@ Thank you for choosing the **RAK9154 Solar Battery** in your awesome IoT project
 
 ## Product Description
 
-The RAK9154 Solar Battery is created especially to power RAK Sensor Hub or provide backup power for the WisGate Edge Pro V2 and Prime V2. Designed to provide an eco-friendly and sustainable power solution, this innovative device utilizes a small but powerful solar panel and integrates a 5.2&nbsp;Ah battery, and a solar charge controller in one compact unit. 
+The RAK9154 Solar Battery is created especially to power RAK Sensor Hub or provide backup power for the WisGate Edge Pro V2 and Prime V2. Designed to provide an eco-friendly and sustainable power solution, this innovative device utilizes a small but powerful solar panel and integrates a 5.2&nbsp;Ah battery, and a solar charge controller in one compact unit.
 
 ## Product Features
 

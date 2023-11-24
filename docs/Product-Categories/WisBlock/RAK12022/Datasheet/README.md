@@ -5,7 +5,7 @@ tags:
   - datasheet
   - wisblock
   - RAK12022
-  - Maxim Integrated
+  - Analog Devices
   - MAX31865
 prev: ../Quickstart/
 next: false
@@ -68,7 +68,7 @@ The hardware specification is categorized into five (5) parts. It shows the chip
 
 | Vendor           | Part Number                                                           |
 | ---------------- | --------------------------------------------------------------------- |
-| Maxim Integrated | [MAX31865](https://datasheets.maximintegrated.com/en/ds/MAX31865.pdf) |
+| Analog Devices | [MAX31865](https://datasheets.maximintegrated.com/en/ds/MAX31865.pdf) |
 
 #### Pin Definition
 

@@ -33,7 +33,7 @@ Thus, the RAK7240V2 WisGate Edge Prime is suited for any use-case scenario, be i
 
 - IP65 industrial-grade enclosure with cable glands
 - PoE + Surge Protection
-- Supports 9~24&nbsp;V<sub>DC</sub> power supply
+- Supports 9~24&nbsp;V<sub>DC</sub> power supply (optional) and RAK Battery Plus
 - Up to two (2) LoRa concentrators for 8 or 16-channel options
 - Backhaul: Wi-Fi, LTE (optional, available with RAK7240CV2), and Ethernet
 - GPS

@@ -39,7 +39,7 @@ Before going through each and every step on using RAK12012 WisBlock module, make
 
 ### Hardware Setup
 
-The RAK12012, a part of WisBlock Sensor, is an integrated pulse oximetry and heart-rate monitor module used for measuring person's heart rate and oxygen saturation. The sensor attached to this module is MAX30102 from Maxim Integrated. For more information about RAK12012, refer to the [Datasheet](../Datasheet/).
+The RAK12012, a part of WisBlock Sensor, is an integrated pulse oximetry and heart-rate monitor module used for measuring person's heart rate and oxygen saturation. The sensor attached to this module is MAX30102 from Analog Devices. For more information about RAK12012, refer to the [Datasheet](../Datasheet/).
 
 The RAK12012 WisBlock IO Module can be mounted on the IO slot of the WisBlock Base board, as shown in **Figure 1**. Also, always secure the connection of the WisBlock module by using the compatible screws.
 

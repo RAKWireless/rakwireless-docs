@@ -7,7 +7,7 @@ next: ../Quickstart/
 tags:
     - wisblock
     - RAK12022
-    - Maxim Integrated
+    - Analog Devices
     - MAX31865
 ---
 

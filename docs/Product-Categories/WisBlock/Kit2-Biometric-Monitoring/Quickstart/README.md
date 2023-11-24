@@ -67,7 +67,7 @@ This kit incorporates the WisBlock Medical modules listed below. Refer to the li
 
 ##### Biometric Monitoring LoRaWAN Application
 
-The **Biometric Monitoring LoRaWAN Application** monitors an individual's temperature and heart rate. It employs the **RAK12003** temperature sensor based on **MLX90632** from Melexis. Also, it uses the **RAK12012** heart rate sensor based on the **MAX30102** chip from Maxim Integrated.
+The **Biometric Monitoring LoRaWAN Application** monitors an individual's temperature and heart rate. It employs the **RAK12003** temperature sensor based on **MLX90632** from Melexis. Also, it uses the **RAK12012** heart rate sensor based on the **MAX30102** chip from Analog Devices.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit2_quickstart/med_2.png"

@@ -112,7 +112,7 @@ After all this setup, you can now connect the battery (optional) and USB cable t
 
 ### Software Configuration and Example
 
-The RAK12022 design is based on **MAX31865** from Maxim Integrated. The RAK12022 is a PT100 IO module, an easy-to-use resistance-to-digital converter optimized for platinum resistance temperature detectors (RTDs). An external resistor sets the sensitivity for the RTD being used, and a precision delta-sigma ADC converts the ratio of the RTD resistance to the reference resistance into digital form. For this example, you will be using the **RAK4631** as your WisBlock Core.
+The RAK12022 design is based on **MAX31865** from Analog Devices. The RAK12022 is a PT100 IO module, an easy-to-use resistance-to-digital converter optimized for platinum resistance temperature detectors (RTDs). An external resistor sets the sensitivity for the RTD being used, and a precision delta-sigma ADC converts the ratio of the RTD resistance to the reference resistance into digital form. For this example, you will be using the **RAK4631** as your WisBlock Core.
 
 #### Initial Test of the RAK12022 WisBlock Module
 

@@ -78,7 +78,7 @@ Check individual modules for their specific requirements like needed battery, co
 | RAK Model                                         | Function                         | Chip                   | Manufacturer     |
 | ------------------------------------------------- | -------------------------------- | ---------------------- | ---------------- |
 | [RAK12003](/Product-Categories/WisBlock/RAK12003) | Infrared Temperature Sensor      | MLX90632SLD-DCB-000-RE | Melexis          |
-| [RAK12012](/Product-Categories/WisBlock/RAK12012) | Heart Rate Pulse Oximetry Sensor | MAX30102               | Maxim Integrated |
+| [RAK12012](/Product-Categories/WisBlock/RAK12012) | Heart Rate Pulse Oximetry Sensor | MAX30102               | Analog Devices |
 
 #### WisBlock Cellular Modules
 
