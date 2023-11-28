@@ -57,7 +57,6 @@ enum RAK_CHARS_SECURITY_REQ
 
 ### RAK\_CHARS\_PROPERTIES
 
-
 ```c
 enum RAK_CHARS_PROPERTIES
 ```
@@ -79,11 +78,69 @@ enum RAK_CHARS_PROPERTIES
 </tbody>
 </table>
 
+### BLE\_HANDLER
+
+```c
+typedef void(* BLE_HANDLER) (void)
+```
+
+### Event
+
+```c
+enum Event
+```
+<table>
+<thead>
+  <tr>
+    <th colspan="2">Enumerator</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>BLE_CONNECTED </td>
+    <td>Set callback for connection event.</td>
+  </tr>
+  <tr>
+    <td>BLE_DISCONNECTED  </td>
+    <td>Set callback for disconnect event.</td>
+  </tr>
+</tbody>
+</table>
+
+
+## BLE
+
+The following commands are the generic BLE commands:
+
+### stop()
+
+Disconnect an existing BLE connection.
+
+```c
+api.ble.stop()
+```
+
+| **Function** | `void stop(void)` |
+| ------------ | ------------------ |
+| **Returns**  | void               |
+
+### registerCallback
+
+Set a callback function when a bluetooth connection is established or disconnected.
+
+```c
+api.ble.registerCallback()
+```
+
+| **Function**   | `void registerCallback (Event event, BLE_HANDLER callback)`                       |
+| -------------- | --------------------------------------------------------------------------------- |
+| **Parameters** | **event** - set connect or disconnect event <br> **callback** - callback function |
+| **Returns**    | void                                                                              |
 
 ## BLE UART
 
 ::: tip 📝 NOTE
-Serial6 is the UART interface for BLE. To enable AT commands via BLE, you can use `Serial6.begin(115200, RAK_AT_MODE);`. 
+Serial6 is the UART interface for BLE. To enable AT commands via BLE, you can use `Serial6.begin(115200, RAK_AT_MODE);`.
 :::
 
 ### start()
@@ -91,13 +148,14 @@ Serial6 is the UART interface for BLE. To enable AT commands via BLE, you can us
 This API is used to start the BLE UART Service.
 
 ```c
-api.ble.uart.start()	
+api.ble.uart.start()
 ```
 
 
-| **Function** | `void start(void)` |
-| ------------ | ------------------ |
-| **Returns**  | void               |
+| **Function** | `void start(uint8_t adv_time)`                                                      |
+| ------------ | ----------------------------------------------------------------------------------- |
+| **Parameters** | **adv_time** - advertising timeout in seconds. If x = 0, advertising never stops  |
+| **Returns**  | void                                                                                |
 
 
 ### stop()
@@ -132,7 +190,7 @@ void loop()
 This API is used to check if there is any incoming Byte from BLE UART Service.
 
 ```c
-api.ble.uart.available()	
+api.ble.uart.available()
 ```
 
 
@@ -243,7 +301,7 @@ api.ble.settings.txPower.set(txpwr)
 This API is used to get the current transmit power level (in dBm).
 
 ```c
-api.ble.settings.txPower.get()	
+api.ble.settings.txPower.get()
 ```
 
 
@@ -323,7 +381,7 @@ api.ble.settings.broadcastName.get()
 This API is used to start advertising after configuring the BLE settings.
 
 ```c
-api.ble.advertise.start(adv_time)	
+api.ble.advertise.start(adv_time)
 ```
 
 
@@ -336,10 +394,10 @@ api.ble.advertise.start(adv_time)
 
 #### stop()
 
-This API is used to stop advertising. 
+This API is used to stop advertising.
 
 ```c
-api.ble.advertise.stop()	
+api.ble.advertise.stop()
 ```
 
 | **Function**       | `bool stop()`                                                                     |
@@ -357,7 +415,7 @@ void setup()
 
 void loop()
 {
-} 
+}
 ```
 :::
 
@@ -365,7 +423,7 @@ void loop()
 #### status()
 
 ```c
-api.ble.advertise.status()	
+api.ble.advertise.status()
 ```
 
 
@@ -436,7 +494,7 @@ api.ble.beacon.ibeacon.major.set(major_value)
 This API allows further subdivision of region or use case specified by the application developer.
 
 ```c
-api.ble.beacon.ibeacon.minor.set(minor_value)	
+api.ble.beacon.ibeacon.minor.set(minor_value)
 ```
 
 | **Function**      | `bool set(uint16_t minor_value)`                     |
@@ -482,7 +540,7 @@ api.ble.beacon.custom.payload.set(cus_adv_data[], cus_adv_len)
 This API starts scanning for BLE peripherals in range and parsing the advertising data that is being sent out by the peripherals.
 
 ```c
-api.ble.scanner.start(timeout_sec)	
+api.ble.scanner.start(timeout_sec)
 ```
 
 | **Function**   | `void start(uint16_t timeout_sec)`                                                                |
@@ -530,7 +588,7 @@ void setScannerCallback	(void(*)(int8_t, uint8_t *, uint8_t *, uint16_t) userFun
 This API provides developers to create a new BLE service and construct an instance of BLEService.
 
 ```c
-RAKBleService hrms = RAKBleService(service_uuid[])	
+RAKBleService hrms = RAKBleService(service_uuid[])
 ```
 | **Function**   | `RAKBleService(uint8_t service_uuid[])`                                                             |
 | -------------- | --------------------------------------------------------------------------------------------------- |
@@ -1034,11 +1092,11 @@ void loop()
 
 
 #### begin()
-    
+
 After adding the characteristic, must call .begin() to complete the configuration action
 
 ```c
-bslc.begin()	
+bslc.begin()
 ```
 
 ::: tip 📝 NOTE
@@ -1511,7 +1569,7 @@ void loop()
 This API is used to register a callback function, so that application can be notified on BLE notify data to peer connector.
 
 ```c
-bslc.setCccdWriteCallback(userFunc)	
+bslc.setCccdWriteCallback(userFunc)
 ```
 
 ::: tip 📝 NOTE

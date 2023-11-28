@@ -158,6 +158,7 @@ enum _RAK_LORA_BAND
 | RAK_REGION_AS923-2 | AS923-2     |
 | RAK_REGION_AS923-3 | AS923-3     |
 | RAK_REGION_AS923-4 | AS923-4     |
+| RAK_REGION_LA915   | LA915       |
 
 ```c
 typedef enum
@@ -170,10 +171,11 @@ typedef enum
   RAK_REGION_US915 = 5, ///< US902 ~ 928
   RAK_REGION_AU915 = 6, ///< AU915 ~ 928
   RAK_REGION_KR920 = 7, ///< KR920 ~ 923
-  RAK_REGION_AS923-1 = 8, ///< AS923-1
-  RAK_REGION_AS923-2 = 9, ///< AS923-2
-  RAK_REGION_AS923-3 = 10, ///< AS923-3
-  RAK_REGION_AS923-4 = 11, ///< AS923-4
+  RAK_REGION_AS923_1 = 8, ///< AS923-1
+  RAK_REGION_AS923_2 = 9, ///< AS923-2
+  RAK_REGION_AS923_3 = 10, ///< AS923-3
+  RAK_REGION_AS923_4 = 11, ///< AS923-4
+  RAK_REGION_LA915 = 12, ///< LA915
 } RAK_LORA_BAND;"
 
 ```
@@ -284,6 +286,53 @@ The LoRaWAN receive frame control structure
         int8_t Snr;
         uint32_t DownLinkCounter;
     } SERVICE_LORA_RECEIVE_T;
+
+```
+
+### RAKLoRaMacEventInfoStatus
+
+The Mac event results can be received in RX, TX, and Join callbacks.
+
+| Enumerator                                         | Description                                                                                                                                               |
+| -------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `RAK_LORAMAC_STATUS_OK`                            | Service performed successfully                                                                                                                            |
+| `RAK_LORAMAC_STATUS_ERROR`                         | An error occurred during the execution of the service                                                                                                     |
+| `RAK_LORAMAC_STATUS_TX_TIMEOUT`                    | A Tx timeout occurred                                                                                                                                     |
+| `RAK_LORAMAC_STATUS_RX1_TIMEOUT`                   | An Rx timeout occurred on receive window 1                                                                                                                |
+| `RAK_LORAMAC_STATUS_RX2_TIMEOUT`                   | An Rx timeout occurred on receive window 2                                                                                                                |
+| `RAK_LORAMAC_STATUS_RX1_ERROR`                     | An Rx error occurred on receive window 1                                                                                                                  |
+| `RAK_LORAMAC_STATUS_RX2_ERROR`                     | An Rx error occurred on receive window 2                                                                                                                  |
+| `RAK_LORAMAC_STATUS_JOIN_FAIL`                     | An error occurred in the join procedure                                                                                                                   |
+| `RAK_LORAMAC_STATUS_DOWNLINK_REPEATED`             | A frame with an invalid downlink counter was received. The downlink counter of the frame was equal to the local copy of the downlink counter of the node. |
+| `RAK_LORAMAC_STATUS_TX_DR_PAYLOAD_SIZE_ERROR`      | The MAC could not retransmit a frame since the MAC decreased the data rate. The payload size does not apply to the data rate.                             |
+| `RAK_LORAMAC_STATUS_DOWNLINK_TOO_MANY_FRAMES_LOSS` | The node has lost `MAX_FCNT_GAP` or more frames.                                                                                                          |
+| `RAK_LORAMAC_STATUS_ADDRESS_FAIL`                  | An address error occurred                                                                                                                                 |
+| `RAK_LORAMAC_STATUS_MIC_FAIL`                      | Message integrity check failure                                                                                                                           |
+| `RAK_LORAMAC_STATUS_MULTICAST_FAIL`                | Multicast error occurred                                                                                                                                  |
+| `RAK_LORAMAC_STATUS_BEACON_LOCKED`                 | Beacon locked                                                                                                                                             |
+| `RAK_LORAMAC_STATUS_BEACON_LOST`                   | Beacon lost                                                                                                                                               |
+| `RAK_LORAMAC_STATUS_BEACON_NOT_FOUND`              | Beacon not found                                                                                                                                          |
+
+```c
+   typedef enum RAKLoRaMacEventInfoStatus {
+  RAK_LORAMAC_STATUS_OK = 0,
+  RAK_LORAMAC_STATUS_ERROR,
+  RAK_LORAMAC_STATUS_TX_TIMEOUT,
+  RAK_LORAMAC_STATUS_RX1_TIMEOUT,
+  RAK_LORAMAC_STATUS_RX2_TIMEOUT,
+  RAK_LORAMAC_STATUS_RX1_ERROR,
+  RAK_LORAMAC_STATUS_RX2_ERROR,
+  RAK_LORAMAC_STATUS_JOIN_FAIL,
+  RAK_LORAMAC_STATUS_DOWNLINK_REPEATED,
+  RAK_LORAMAC_STATUS_TX_DR_PAYLOAD_SIZE_ERROR,
+  RAK_LORAMAC_STATUS_DOWNLINK_TOO_MANY_FRAMES_LOSS,
+  RAK_LORAMAC_STATUS_ADDRESS_FAIL,
+  RAK_LORAMAC_STATUS_MIC_FAIL,
+  RAK_LORAMAC_STATUS_MULTICAST_FAIL,
+  RAK_LORAMAC_STATUS_BEACON_LOCKED,
+  RAK_LORAMAC_STATUS_BEACON_LOST,
+  RAK_LORAMAC_STATUS_BEACON_NOT_FOUND
+};
 
 ```
 
@@ -634,7 +683,7 @@ This API allows the user to get the application session key.
 bool get(uint8_t* buf, uint32_t len)
 ```
 
-| **Function**      | `RAKLorawan::appskey`                                                                         |
+| **Function**      | `bool get(uint8_t* buf, uint32_t len)`                                                        |
 | ----------------- | --------------------------------------------------------------------------------------------- |
 | **Parameters**    | **`buf`**: the buffer to get AppSKey <br> **`len`**: the length of AppSKey (must be 16 bytes) |
 | **Returns**       | bool                                                                                          |
@@ -3555,7 +3604,7 @@ void loop()
 
 
 
-## Supplement
+## LoRaWAN Regional Commands
 
 ### mask
 
@@ -3672,6 +3721,7 @@ RAKLorawan::band
 9: AS923-2
 10: AS923-3
 11: AS923-4
+12: LA915
 
 :::
 
@@ -3694,10 +3744,10 @@ api.lorawan.band.get();
 ```
 
 
-| **Function**      | `int32_t get()`                                                                                                                                                                                                                            |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Returns**       | the active region                                                                                                                                                                                                                          |
-| **Return Values** | **0** - EU433  <br>  **1** - CN470 <br> **2** - RU864 <br> **3**	- IN865 <br> **4** - EU868 <br> **5**	- US915 <br> **6** - AU915 <br> **7** - KR920 <br> **8** - AS923-1 <br> **9** - AS923-2 <br> **10** - AS923-3 <br> **11** - AS923-4 |
+| **Function**      | `int32_t get()`                                                                                                                                                                                                                                                |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Returns**       | the active region                                                                                                                                                                                                                                              |
+| **Return Values** | **0** - EU433  <br>  **1** - CN470 <br> **2** - RU864 <br> **3**	- IN865 <br> **4** - EU868 <br> **5**	- US915 <br> **6** - AU915 <br> **7** - KR920 <br> **8** - AS923-1 <br> **9** - AS923-2 <br> **10** - AS923-3 <br> **11** - AS923-4 <br> **12** - LA915 |
 
 
 ::: details Click to View Example
@@ -3755,6 +3805,304 @@ void loop()
 ```
 :::
 
+
+
+## Multicast Group Command
+
+### addmulc()
+
+This API adds a new multicast group configure multicast parameters.
+
+```c
+api.lorawan.addmulc(session);
+```
+
+
+| **Function**      | `bool addmulc(RAK_LORA_McSession session)`                                                     |
+| ----------------- | ---------------------------------------------------------------------------------------------- |
+| **Parameters**    | **session** - The structure of session                                                         |
+| **Returns**       | bool                                                                                           |
+| **Return Values** | **TRUE**  for adding multicast group success <br> **FALSE** for adding multicast group failure |
+
+
+
+::: details Click to View Example
+```c{54}
+void setup()
+{
+  Serial.begin(115200);
+
+// OTAA Device EUI MSB
+uint8_t node_device_eui[8] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x88};
+// OTAA Application EUI MSB
+uint8_t node_app_eui[8] = {0x0E, 0x0D, 0x0D, 0x01, 0x0E, 0x01, 0x02, 0x0E};
+// OTAA Application Key MSB
+uint8_t node_app_key[16] = {0x2B, 0x7E, 0x15, 0x16, 0x28, 0xAE, 0xD2, 0xA6, 0xAB, 0xF7, 0x15, 0x88, 0x09, 0xCF, 0x4F, 0x3E};
+
+
+
+//LoRaWan Multicast Session
+
+uint8_t node_mc_address[4] = {0x01, 0x02, 0x03, 0x04};
+uint8_t node_mc_AppSKey[16] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
+uint8_t node_mc_NwkSKey[16] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
+
+RAK_LORA_McSession session = {
+    .McDevclass = 2,
+    .McAddress = node_mc_address[0]<<24 | node_mc_address[1]<<16 | node_mc_address[2]<<8 | node_mc_address[3],
+    .McFrequency = 869525000,
+    .McDatarate = 0,
+    .McPeriodicity = 0,
+    .McGroupID = 2,
+    .entry = 0,
+};
+  memcpy(session.McAppSKey, node_mc_AppSKey, 16);
+  memcpy(session.McNwkSKey, node_mc_NwkSKey, 16);
+
+  api.lorawan.appeui.set(node_app_eui, 8);
+  api.lorawan.appkey.set(node_app_key, 16);
+  api.lorawan.deui.set(node_device_eui, 8);
+
+  api.lorawan.band.set(4);
+  api.lorawan.njm.set(1);
+  api.lorawan.deviceClass.set(2);
+  api.lorawan.join();
+
+  //Wait for Join success
+  while (api.lorawan.njs.get() == 0)
+  {
+    Serial.print("Waiting for Lorawan join...");
+    api.lorawan.join();
+    delay(10000);
+  }
+
+  api.lorawan.adr.set(true);
+  api.lorawan.rety.set(1);
+  api.lorawan.cfm.set(1);
+
+  //LoRaWAN Multicast Setting
+  if(api.lorawan.addmulc(session) == true) {
+    Serial.println("Add Multicast Success");
+  } else {
+    Serial.println("Add Multicast Fail");
+  }
+
+}
+
+void loop()
+{
+
+}
+
+```
+:::
+
+
+### rmvmulc()
+
+This API allows the removal of a configured multicast group.
+
+```c
+api.lorawan.rmvmulc(devAddr);
+```
+
+
+| **Function**      | `bool rmvmulc(uint32_t devAddr)`                                  |
+| ----------------- | ----------------------------------------------------------------- |
+| **Parameters**    | **devAddr** - the address to remove a multicast group             |
+| **Returns**       | bool                                                              |
+| **Return Values** | **TRUE** for removing success <br> **FALSE** for removing failure |
+
+
+::: details Click to View Example
+```c{64}
+
+// OTAA Device EUI MSB
+uint8_t node_device_eui[8] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x88};
+// OTAA Application EUI MSB
+uint8_t node_app_eui[8] = {0x0E, 0x0D, 0x0D, 0x01, 0x0E, 0x01, 0x02, 0x0E};
+// OTAA Application Key MSB
+uint8_t node_app_key[16] = {0x2B, 0x7E, 0x15, 0x16, 0x28, 0xAE, 0xD2, 0xA6, 0xAB, 0xF7, 0x15, 0x88, 0x09, 0xCF, 0x4F, 0x3E};
+
+//LoRaWan Multicast Session
+uint8_t node_mc_address[4] = {0x01, 0x02, 0x03, 0x04};
+uint8_t node_mc_AppSKey[16] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
+uint8_t node_mc_NwkSKey[16] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
+
+
+void setup()
+{
+  Serial.begin(115200);
+
+  RAK_LORA_McSession session = {
+      .McDevclass = 2,
+      .McAddress = node_mc_address[0]<<24 | node_mc_address[1]<<16 | node_mc_address[2]<<8 | node_mc_address[3],
+      .McFrequency = 869525000,
+      .McDatarate = 0,
+      .McPeriodicity = 0,
+      .McGroupID = 2,
+      .entry = 0,
+  };
+  memcpy(session.McAppSKey, node_mc_AppSKey, 16);
+  memcpy(session.McNwkSKey, node_mc_NwkSKey, 16);
+
+  api.lorawan.appeui.set(node_app_eui, 8);
+  api.lorawan.appkey.set(node_app_key, 16);
+  api.lorawan.deui.set(node_device_eui, 8);
+
+  api.lorawan.band.set(4);
+  api.lorawan.njm.set(1);
+  api.lorawan.deviceClass.set(2);
+  api.lorawan.join();
+
+  //Wait for Join success
+  while (api.lorawan.njs.get() == 0)
+  {
+    Serial.print("Waiting for Lorawan join...");
+    api.lorawan.join();
+    delay(10000);
+  }
+
+  api.lorawan.adr.set(true);
+  api.lorawan.rety.set(1);
+  api.lorawan.cfm.set(1);
+
+  //LoRaWAN Multicast Setting
+  if(api.lorawan.addmulc(session) == true) {
+    Serial.println("Add Multicast Success");
+  } else {
+    Serial.println("Add Multicast Fail");
+  }
+
+}
+
+void loop()
+{
+  if(millis() > 100000) {
+     Serial.printf("Remove a multicast group %s\r\n", api.lorawan.rmvmulc(node_mc_address[0]<<24 | node_mc_address[1]<<16 | node_mc_address[2]<<8 | node_mc_address[3]));
+   }
+}
+
+```
+:::
+
+
+### lstmulc()
+
+
+This command can view current configured multicast group information.
+
+```c
+api.lorawan.lstmulc(&multicast_list);
+```
+
+| **Function**      | `bool lstmulc(RAK_LORA_McSession * iterator)`                                            |
+| ----------------- | ---------------------------------------------------------------------------------------- |
+| **Parameters**    | **multicast_list** - a RAK_LORA_McSession variable                                       |
+| **Returns**       | bool                                                                                     |
+| **Return Values** | **TRUE** for getting multicast list success <br> **FALSE** for getting multicast failure |
+
+
+::: details Click to View Example
+```c{67}
+void setup()
+{
+  Serial.begin(115200);
+
+// OTAA Device EUI MSB
+uint8_t node_device_eui[8] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x88};
+// OTAA Application EUI MSB
+uint8_t node_app_eui[8] = {0x0E, 0x0D, 0x0D, 0x01, 0x0E, 0x01, 0x02, 0x0E};
+// OTAA Application Key MSB
+uint8_t node_app_key[16] = {0x2B, 0x7E, 0x15, 0x16, 0x28, 0xAE, 0xD2, 0xA6, 0xAB, 0xF7, 0x15, 0x88, 0x09, 0xCF, 0x4F, 0x3E};
+
+
+
+//LoRaWan Multicast Session
+
+uint8_t node_mc_address[4] = {0x01, 0x02, 0x03, 0x04};
+uint8_t node_mc_AppSKey[16] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
+uint8_t node_mc_NwkSKey[16] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
+
+RAK_LORA_McSession session = {
+    .McDevclass = 2,
+    .McAddress = node_mc_address[0]<<24 | node_mc_address[1]<<16 | node_mc_address[2]<<8 | node_mc_address[3],
+    .McFrequency = 869525000,
+    .McDatarate = 0,
+    .McPeriodicity = 0,
+    .McGroupID = 2,
+    .entry = 0,
+};
+  memcpy(session.McAppSKey, node_mc_AppSKey, 16);
+  memcpy(session.McNwkSKey, node_mc_NwkSKey, 16);
+
+  api.lorawan.appeui.set(node_app_eui, 8);
+  api.lorawan.appkey.set(node_app_key, 16);
+  api.lorawan.deui.set(node_device_eui, 8);
+
+  api.lorawan.band.set(4);
+  api.lorawan.njm.set(1);
+  api.lorawan.deviceClass.set(2);
+  api.lorawan.join();
+
+  //Wait for Join success
+  while (api.lorawan.njs.get() == 0)
+  {
+    Serial.print("Waiting for Lorawan join...");
+    api.lorawan.join();
+    delay(10000);
+  }
+
+  api.lorawan.adr.set(true);
+  api.lorawan.rety.set(1);
+  api.lorawan.cfm.set(1);
+
+  //LoRaWAN Multicast Setting
+  if(api.lorawan.addmulc(session) == true) {
+    Serial.println("Add Multicast Success");
+  } else {
+    Serial.println("Add Multicast Fail");
+  }
+
+}
+
+void loop()
+{
+  RAK_LORA_McSession multicast_list;
+
+  Serial.println("Get all multicast groups");
+  while (api.lorawan.lstmulc(&multicast_list) == true) {
+    if (multicast_list.McDevclass != 0) {
+      Serial.printf("Device class = %d\r\n", multicast_list.McDevclass);
+      Serial.printf("Device address = %08X\r\n", multicast_list.McAddress);
+
+      Serial.print("Multicast AppSKey = 0x");
+      for (int i=0; i<16; i++) {
+        Serial.printf("%02X", multicast_list.McAppSKey[i]);
+      }
+      Serial.println("");
+
+      Serial.print("Multicast NwkSKey = 0x");
+      for (int i=0; i<16; i++) {
+        Serial.printf("%02X", multicast_list.McNwkSKey[i]);
+      }
+      Serial.println("");
+
+      Serial.printf("Frequency = %d\r\n", multicast_list.McFrequency);
+      Serial.printf("Data rate = %d\r\n", multicast_list.McDatarate);
+      Serial.printf("Periodicity = %d\r\n", multicast_list.McPeriodicity);
+      Serial.printf("Group ID = %d\r\n", multicast_list.McGroupID);
+      Serial.printf("Entry = %d\r\n", multicast_list.entry);
+    }
+  }
+
+  delay(5000);
+
+}
+
+
+```
+:::
 
 
 ## P2P Instructions
@@ -4471,11 +4819,11 @@ api.lorawan.enckey.get(buff, len);
 ```
 
 
-| **Function**      | `bool get(uint8_t * buff, uint32_t len)`                                                                         |
-| ----------------- | ---------------------------------------------------------------------------------------------------------------- |
+| **Function**      | `bool get(uint8_t * buff, uint32_t len)`                                                                          |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------- |
 | **Parameters**    | **buff**	- the buffer to store encryption key <br> **len** - the length of encryption key (must be 16&nbsp;bytes) |
-| **Returns**       | bool                                                                                                             |
-| **Return Values** | **TRUE** for getting encryption key success <br> **FALSE** for getting encryption key failure                    |
+| **Returns**       | bool                                                                                                              |
+| **Return Values** | **TRUE** for getting encryption key success <br> **FALSE** for getting encryption key failure                     |
 
 
 ::: details Click to View Example
@@ -4546,11 +4894,11 @@ This API allows to set the key of P2P mode encryption.
 api.lorawan.enckey.set(buff, len);
 ```
 
-| **Function**      | `bool set(uint8_t * buff, uint32_t len)`                                                                       |
-| ----------------- | -------------------------------------------------------------------------------------------------------------- |
+| **Function**      | `bool set(uint8_t * buff, uint32_t len)`                                                                        |
+| ----------------- | --------------------------------------------------------------------------------------------------------------- |
 | **Parameters**    | **buff** - the buffer to set encryption key <br> **len** - the length of encryption key (must be 16&nbsp;bytes) |
-| **Returns**       | bool                                                                                                           |
-| **Return Values** | **TRUE** for setting encryption key success <br> **FALSE** for setting encryption failure                      |
+| **Returns**       | bool                                                                                                            |
+| **Return Values** | **TRUE** for setting encryption key success <br> **FALSE** for setting encryption failure                       |
 
 
 
@@ -4838,19 +5186,20 @@ void loop()
 This API provides the way to P2P send data.
 
 :::tip 📝 NOTE
-P2P TX mode can be blocked by certain settings in P2P RX mode. You can disable P2P RX mode and switch to P2P TX mode via `api.lorawan.precv(0)` to ensure that P2P RX mode is not blocking the `psend()` API.
+- P2P TX mode can be blocked by certain settings in P2P RX mode. To ensure that P2P RX mode is not blocking the `psend()` API, you can disable P2P RX mode and switch to P2P TX mode via `api.lorawan.precv(0)`.
+- By default, CAD is disabled. If CAD is enabled, the LoRa transceiver will first test the frequency for any activity before sending the packet. If an activity is detected, the packet is not sent, and the call returns FALSE.
 :::
 
 
 ```c
-api.lorawan.psend(length, payload);
+api.lorawan.psend(length, payload, ena_cad);
 ```
 
-| **Function**      | `bool psend(uint8_t length, uint8_t * payload)`                                             |
-| ----------------- | ------------------------------------------------------------------------------------------- |
-| **Parameters**    | **length** - the length of the payload <br> **payload** - the data send to the other device |
-| **Returns**       | bool                                                                                        |
-| **Return Values** | **TRUE**  for sending data success <br> **FALSE** for sending data failure                  |
+| **Function**      | `bool psend(uint8_t length, uint8_t * payload, bool ena_cad)`                                                                                                      |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Parameters**    | **length** - the length of the payload <br> **payload** - the data send to the other device <br> **ena_cad** - enable (TRUE) or disable (FALSE) CAD before sending |
+| **Returns**       | bool                                                                                                                                                               |
+| **Return Values** | **TRUE**  for sending data success <br> **FALSE** for sending data failure                                                                                         |
 
 
 ::: details Click to View Example
@@ -4873,7 +5222,8 @@ void setup()
 void loop()
 {
     uint8_t payload[] = "payload";
-    Serial.printf("P2P send %s\r\n", api.lorawan.psend(sizeof(payload), payload)? "Success" : "Fail");
+	// Send packet with CAD enabled
+    Serial.printf("P2P send %s\r\n", api.lorawan.psend(sizeof(payload), payload, TRUE)? "Success" : "Fail");
 
     delay(5000);
 }
@@ -4923,304 +5273,5 @@ void setup()
 
 ```
 :::
-
-
-## Multicast Group Command
-
-### addmulc()
-
-This API adds a new multicast group configure multicast parameters.
-
-```c
-api.lorawan.addmulc(session);
-```
-
-
-| **Function**      | `bool addmulc(RAK_LORA_McSession session)`                                                     |
-| ----------------- | ---------------------------------------------------------------------------------------------- |
-| **Parameters**    | **session** - The structure of session                                                         |
-| **Returns**       | bool                                                                                           |
-| **Return Values** | **TRUE**  for adding multicast group success <br> **FALSE** for adding multicast group failure |
-
-
-
-::: details Click to View Example
-```c{54}
-void setup()
-{
-  Serial.begin(115200);
-
-// OTAA Device EUI MSB
-uint8_t node_device_eui[8] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x88};
-// OTAA Application EUI MSB
-uint8_t node_app_eui[8] = {0x0E, 0x0D, 0x0D, 0x01, 0x0E, 0x01, 0x02, 0x0E};
-// OTAA Application Key MSB
-uint8_t node_app_key[16] = {0x2B, 0x7E, 0x15, 0x16, 0x28, 0xAE, 0xD2, 0xA6, 0xAB, 0xF7, 0x15, 0x88, 0x09, 0xCF, 0x4F, 0x3E};
-
-
-
-//LoRaWan Multicast Session
-
-uint8_t node_mc_address[4] = {0x01, 0x02, 0x03, 0x04};
-uint8_t node_mc_AppSKey[16] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
-uint8_t node_mc_NwkSKey[16] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
-
-RAK_LORA_McSession session = {
-    .McDevclass = 2,
-    .McAddress = node_mc_address[0]<<24 | node_mc_address[1]<<16 | node_mc_address[2]<<8 | node_mc_address[3],
-    .McFrequency = 869525000,
-    .McDatarate = 0,
-    .McPeriodicity = 0,
-    .McGroupID = 2,
-    .entry = 0,
-};
-  memcpy(session.McAppSKey, node_mc_AppSKey, 16);
-  memcpy(session.McNwkSKey, node_mc_NwkSKey, 16);
-
-  api.lorawan.appeui.set(node_app_eui, 8);
-  api.lorawan.appkey.set(node_app_key, 16);
-  api.lorawan.deui.set(node_device_eui, 8);
-
-  api.lorawan.band.set(4);
-  api.lorawan.njm.set(1);
-  api.lorawan.deviceClass.set(2);
-  api.lorawan.join();
-
-  //Wait for Join success
-  while (api.lorawan.njs.get() == 0)
-  {
-    Serial.print("Waiting for Lorawan join...");
-    api.lorawan.join();
-    delay(10000);
-  }
-
-  api.lorawan.adr.set(true);
-  api.lorawan.rety.set(1);
-  api.lorawan.cfm.set(1);
-
-  //LoRaWAN Multicast Setting
-  if(api.lorawan.addmulc(session) == true) {
-    Serial.println("Add Multicast Success");
-  } else {
-    Serial.println("Add Multicast Fail");
-  }
-
-}
-
-void loop()
-{
-
-}
-
-```
-:::
-
-
-### rmvmulc()
-
-This API allows the removal of a configured multicast group.
-
-```c
-api.lorawan.rmvmulc(devAddr);
-```
-
-
-| **Function**      | `bool rmvmulc(uint32_t devAddr)`                                  |
-| ----------------- | ----------------------------------------------------------------- |
-| **Parameters**    | **devAddr** - the address to remove a multicast group             |
-| **Returns**       | bool                                                              |
-| **Return Values** | **TRUE** for removing success <br> **FALSE** for removing failure |
-
-
-::: details Click to View Example
-```c{64}
-
-// OTAA Device EUI MSB
-uint8_t node_device_eui[8] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x88};
-// OTAA Application EUI MSB
-uint8_t node_app_eui[8] = {0x0E, 0x0D, 0x0D, 0x01, 0x0E, 0x01, 0x02, 0x0E};
-// OTAA Application Key MSB
-uint8_t node_app_key[16] = {0x2B, 0x7E, 0x15, 0x16, 0x28, 0xAE, 0xD2, 0xA6, 0xAB, 0xF7, 0x15, 0x88, 0x09, 0xCF, 0x4F, 0x3E};
-
-//LoRaWan Multicast Session
-uint8_t node_mc_address[4] = {0x01, 0x02, 0x03, 0x04};
-uint8_t node_mc_AppSKey[16] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
-uint8_t node_mc_NwkSKey[16] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
-
-
-void setup()
-{
-  Serial.begin(115200);
-
-  RAK_LORA_McSession session = {
-      .McDevclass = 2,
-      .McAddress = node_mc_address[0]<<24 | node_mc_address[1]<<16 | node_mc_address[2]<<8 | node_mc_address[3],
-      .McFrequency = 869525000,
-      .McDatarate = 0,
-      .McPeriodicity = 0,
-      .McGroupID = 2,
-      .entry = 0,
-  };
-  memcpy(session.McAppSKey, node_mc_AppSKey, 16);
-  memcpy(session.McNwkSKey, node_mc_NwkSKey, 16);
-
-  api.lorawan.appeui.set(node_app_eui, 8);
-  api.lorawan.appkey.set(node_app_key, 16);
-  api.lorawan.deui.set(node_device_eui, 8);
-
-  api.lorawan.band.set(4);
-  api.lorawan.njm.set(1);
-  api.lorawan.deviceClass.set(2);
-  api.lorawan.join();
-
-  //Wait for Join success
-  while (api.lorawan.njs.get() == 0)
-  {
-    Serial.print("Waiting for Lorawan join...");
-    api.lorawan.join();
-    delay(10000);
-  }
-
-  api.lorawan.adr.set(true);
-  api.lorawan.rety.set(1);
-  api.lorawan.cfm.set(1);
-
-  //LoRaWAN Multicast Setting
-  if(api.lorawan.addmulc(session) == true) {
-    Serial.println("Add Multicast Success");
-  } else {
-    Serial.println("Add Multicast Fail");
-  }
-
-}
-
-void loop()
-{
-  if(millis() > 100000) {
-     Serial.printf("Remove a multicast group %s\r\n", api.lorawan.rmvmulc(node_mc_address[0]<<24 | node_mc_address[1]<<16 | node_mc_address[2]<<8 | node_mc_address[3]));
-   }
-}
-
-```
-:::
-
-
-### lstmulc()
-
-
-This command can view current configured multicast group information.
-
-```c
-api.lorawan.lstmulc(&multicast_list);
-```
-
-| **Function**      | `bool lstmulc(RAK_LORA_McSession * iterator)`                                            |
-| ----------------- | ---------------------------------------------------------------------------------------- |
-| **Parameters**    | **multicast_list** - a RAK_LORA_McSession variable                                       |
-| **Returns**       | bool                                                                                     |
-| **Return Values** | **TRUE** for getting multicast list success <br> **FALSE** for getting multicast failure |
-
-
-::: details Click to View Example
-```c{67}
-void setup()
-{
-  Serial.begin(115200);
-
-// OTAA Device EUI MSB
-uint8_t node_device_eui[8] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x88};
-// OTAA Application EUI MSB
-uint8_t node_app_eui[8] = {0x0E, 0x0D, 0x0D, 0x01, 0x0E, 0x01, 0x02, 0x0E};
-// OTAA Application Key MSB
-uint8_t node_app_key[16] = {0x2B, 0x7E, 0x15, 0x16, 0x28, 0xAE, 0xD2, 0xA6, 0xAB, 0xF7, 0x15, 0x88, 0x09, 0xCF, 0x4F, 0x3E};
-
-
-
-//LoRaWan Multicast Session
-
-uint8_t node_mc_address[4] = {0x01, 0x02, 0x03, 0x04};
-uint8_t node_mc_AppSKey[16] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
-uint8_t node_mc_NwkSKey[16] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
-
-RAK_LORA_McSession session = {
-    .McDevclass = 2,
-    .McAddress = node_mc_address[0]<<24 | node_mc_address[1]<<16 | node_mc_address[2]<<8 | node_mc_address[3],
-    .McFrequency = 869525000,
-    .McDatarate = 0,
-    .McPeriodicity = 0,
-    .McGroupID = 2,
-    .entry = 0,
-};
-  memcpy(session.McAppSKey, node_mc_AppSKey, 16);
-  memcpy(session.McNwkSKey, node_mc_NwkSKey, 16);
-
-  api.lorawan.appeui.set(node_app_eui, 8);
-  api.lorawan.appkey.set(node_app_key, 16);
-  api.lorawan.deui.set(node_device_eui, 8);
-
-  api.lorawan.band.set(4);
-  api.lorawan.njm.set(1);
-  api.lorawan.deviceClass.set(2);
-  api.lorawan.join();
-
-  //Wait for Join success
-  while (api.lorawan.njs.get() == 0)
-  {
-    Serial.print("Waiting for Lorawan join...");
-    api.lorawan.join();
-    delay(10000);
-  }
-
-  api.lorawan.adr.set(true);
-  api.lorawan.rety.set(1);
-  api.lorawan.cfm.set(1);
-
-  //LoRaWAN Multicast Setting
-  if(api.lorawan.addmulc(session) == true) {
-    Serial.println("Add Multicast Success");
-  } else {
-    Serial.println("Add Multicast Fail");
-  }
-
-}
-
-void loop()
-{
-  RAK_LORA_McSession multicast_list;
-
-  Serial.println("Get all multicast groups");
-  while (api.lorawan.lstmulc(&multicast_list) == true) {
-    if (multicast_list.McDevclass != 0) {
-      Serial.printf("Device class = %d\r\n", multicast_list.McDevclass);
-      Serial.printf("Device address = %08X\r\n", multicast_list.McAddress);
-
-      Serial.print("Multicast AppSKey = 0x");
-      for (int i=0; i<16; i++) {
-        Serial.printf("%02X", multicast_list.McAppSKey[i]);
-      }
-      Serial.println("");
-
-      Serial.print("Multicast NwkSKey = 0x");
-      for (int i=0; i<16; i++) {
-        Serial.printf("%02X", multicast_list.McNwkSKey[i]);
-      }
-      Serial.println("");
-
-      Serial.printf("Frequency = %d\r\n", multicast_list.McFrequency);
-      Serial.printf("Data rate = %d\r\n", multicast_list.McDatarate);
-      Serial.printf("Periodicity = %d\r\n", multicast_list.McPeriodicity);
-      Serial.printf("Group ID = %d\r\n", multicast_list.McGroupID);
-      Serial.printf("Entry = %d\r\n", multicast_list.entry);
-    }
-  }
-
-  delay(5000);
-
-}
-
-
-```
-:::
-
 
 

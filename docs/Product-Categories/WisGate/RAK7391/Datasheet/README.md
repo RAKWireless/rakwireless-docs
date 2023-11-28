@@ -362,6 +362,33 @@ The RAK7391 has three (3) mPCIe interfaces, which can connect different products
 | mPCIe #2 | LoRaWAN     | Zigbee, 4G                                                      | RAK2247-USB/SPI, RAK2287-USB/SPI, RAK5146-USB/SPI, RAK8213-USB<br  />Quectel LTE EC25<br />USB-based Zigbee module (TBD)                                    |
 | mPCIe #3 | 4G          | WiFi6, GbE, IA, SATA (via PCIe)<br />Adapters to M.2 A+E boards | RAK8213-USB<br />Hailo-8, Google Coral TPU<br />IO Crest 4  SATA<br />I210AT GbE<br />MiniPCIe to M.2 Key-E adapters<br  />AX210 and AX211 (via an adapter) |
 
+The mPCIe interfaces schematic:
+
+<rk-img
+  src="/assets/images/wisgate/rak7391/datasheet/3.schematic-mpcie.png"
+  width="70%"
+  caption="mPCIe Schematic"
+/>
+
+Note:
+
+  * SPI0.0 (`/dev/spidev0.0`) is available on slot #1
+  * SPI0.1 (`/dev/spidev0.1`) is available on slot #2
+  * UART0 (GPIO 14/15) is available on slot #1
+  * GPIO6 is reset signal on slot #2 (SX130X_RESET)
+  * GPIO17 is reset signal on slot #1 (SX130X_RESET)
+  * GPIO25 is connected to slot#1 pin 23 (RESET_GPS on some LoRaWAN concentrators)
+  * GPIO26 is connected to slot#1 pin 19 (PPS on some LoRaWAN concentrators)
+  * IO0.0 is connected to !WAKE on slot #3
+  * IO0.1 is connected to COEX1 on slot #3
+  * IO0.2 is connected to COEX2 on slot #3
+  * IO0.3 is connected to !DISABLE on slot #3
+  * IO0.4 is connected to !WAKE on slot #2
+  * IO0.5 is connected to !DISABLE on slot #2
+  * USB2.0 is available on slots #1 and #2
+  * USB3.0 is available on slot #3
+  * 1x PCIe lane is available on slot #3
+
 ##### M.2 Interface
 
 RAK7391 has an M.2 B-key interface, which provides PCIe and USB3.0 signals. Currently, it supports the following products for the M.2 interface:

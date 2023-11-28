@@ -17,6 +17,48 @@ enum RAK_AT_PERMISSION
 | RAK_ATCMD_PERM_WRITEONCEREAD | Special functionality that allows for setting variable once and only allows for reading after. |
 | RAK_ATCMD_PERM_DISABLE       | Disables the AT command from being used.                                                       |
 
+### RAK\_TIMER\_ID
+
+The RAK timer ID's
+
+```c
+enum RAK_TIMER_ID
+```
+
+| Enumerator  |            |
+| ----------- | ---------- |
+| RAK_TIMER_0 | Timer # 0. |
+| RAK_TIMER_1 | Timer # 1. |
+| RAK_TIMER_2 | Timer # 2. |
+| RAK_TIMER_3 | Timer # 3. |
+| RAK_TIMER_4 | Timer # 4. |
+
+### RAK\_TIMER\_MODE
+
+The RAK timer modes
+
+```c
+enum RAK_TIMER_MODE
+```
+
+| Enumerator         |                                         |
+| ------------------ | --------------------------------------- |
+| RAK_TIMER_ONESHOT  | One shot timer, does trigger only once. |
+| RAK_TIMER_PERIODIC | Repeating timer                        |
+
+### RUI\_WAKEUP\_TRIGGER\_MODE
+
+The RAK timer modes
+
+```c
+enum RUI_WAKEUP_TRIGGER_MODE
+```
+
+| Enumerator              |                                     |
+| ----------------------- | ----------------------------------- |
+| RUI_WAKEUP_RISING_EDGE  | RUI wakeup on rising edge of GPIO  |
+| RUI_WAKEUP_FALLING_EDGE | RUI wakeup on falling edge of GPIO |
+
 ## Device Information
 ### Firmware Version
 
@@ -263,7 +305,7 @@ void loop()
 
 ### set()
 
-Writes a range of data from user flash partition.
+Writes a range of data to user flash partition.
 
 ```c
 api.system.flash.set(offset, buf, len)
@@ -418,7 +460,6 @@ void loop()
 ```
 :::
 
-
 ### lora()
 
 Sleeps lora with default no timeout.
@@ -473,12 +514,51 @@ void loop()
 ```
 :::
 
+### registerWakeupCallback()
+
+This registers a wakeup callback function. The wakeup is triggered by an GPIO pin that is setup with `api.system.sleep.setup`.
+
+```c
+api.system.sleep.registerWakeupCallback(POWER_SAVE_HANDLER callback);
+```
+
+| **Function**   | `api.system.sleep.registerWakeupCallback(POWER_SAVE_HANDLER callback);`                          |
+| -------------- | ----------------------------------------------------------------------- |
+| **Parameters** | **callback** - Pointer to the function to be called                     |
+| **Returns**    | bool - TRUE = add callback function success, FALSE = add callback function fail                                                                    |
+
+
+:::details Click to View Example
+```c{7}
+void WakeupCallback()
+  {
+      Serial.printf("This is Wakeup Callback\r\n");
+  }
+
+  void setup()
+  {
+      Serial.begin(115200);
+	  api.system.sleep.setup(RUI_WAKEUP_FALLING_EDGE, 12);
+      if ( api.system.sleep.registerWakeupCallback(WakeupCallback) == false )
+      {
+          Serial.println("Create Wakeup Callback failed.");
+      }
+  }
+
+  void loop()
+  {
+    api.system.sleep.cpu(1000);
+  }
+```
+:::
+
+
 ### setup()
 
 Sets up the sleep function.
 
 ```c
-api.system.sleep.setup(mode);
+api.system.sleep.setup(mode, pin);
 ```
 
 On sleep mode, the device wake up trigger can be configured.
@@ -498,7 +578,7 @@ On sleep mode, the device wake up trigger can be configured.
 ```c{3}
 void setup()
 {
-  api.system.sleep.setup(RUI_WAKEUP_FALLING_EDGE);
+  api.system.sleep.setup(RUI_WAKEUP_FALLING_EDGE, 32);
 }
 
 void loop()

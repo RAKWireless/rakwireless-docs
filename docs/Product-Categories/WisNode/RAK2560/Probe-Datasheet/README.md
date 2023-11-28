@@ -153,7 +153,7 @@ If you want to add a Probe IO to your setup, the Sensor Hub must be supplied by 
 :::
 
 <rk-img
-  src="/assets/images/wisnode/rak2560/probe-datasheet/connection-schematics.jpg"
+  src="/assets/images/wisnode/rak2560/probe-datasheet/connection-schematics.png"
   width="90%"
   caption="RAK2560 WisNode Sensor connection schematics"
 />

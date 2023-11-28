@@ -49,6 +49,12 @@ module.exports = {
           path: '/RUI3/BLE/',
           nested: true,
           download: true
+        },
+        {
+          title: 'One Wire Serial',
+          path: '/RUI3/One-Wire-Serial/',
+          nested: true,
+          download: true
         }
         /*
         {

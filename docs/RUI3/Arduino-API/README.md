@@ -14,7 +14,6 @@ enum RAK_SERIAL_MODE
 | Enumerator       |                                        |
 | ---------------- | -------------------------------------- |
 | RAK_AT_MODE      | AT command mode.                       |
-| RAK_API_MODE     | API mode                               |
 | RAK_CUSTOM_MODE  | Custom mode                            |
 | RAK_DEFAULT_MODE | Default mode which depends on platform |
 
@@ -67,7 +66,7 @@ enum RAK_PWM_RESOLUTION
 
 ### begin()
 
-Sets the data rate in bits per second (baud) for serial data transmission
+Sets the data rate in bits per second (baud) for serial data transmission.
 
 ```c
 Serial.begin(baud);
@@ -119,6 +118,32 @@ void loop() {
 }
 ```
 :::
+
+### getBaudrate()
+
+Gets the data rate in bits per second (baud) for serial data transmission.
+
+```c
+Serial.getBaudrate(void);
+```
+
+
+| **Function** | `uint32_t getBaudrate(void)` |
+| ------------ | ---------------------------- |
+| **Returns**  | Baud rate in bits per second |
+
+::: details Click to View Example
+```c{2,3}
+void setup() {
+  uint32_t baudrate = Serial.getBaudrate();
+  Serial.begin(baudrate);
+}
+
+void loop() {
+}```
+:::
+
+
 ### lock()
 
 To lock the Serial port of the device.
@@ -160,7 +185,7 @@ void loop() {
 Set up the password to unlock the device when locked.
 
 ```c
-Serial.password(str);	
+Serial.password(str);
 ```
 
 ```c
@@ -195,7 +220,7 @@ void loop() {
 Writes a byte sequence to a specified serial port.
 
 ```c
-Serial.write(val);	
+Serial.write(val);
 ```
 ```c
 Serial.write(buf, size);
@@ -252,11 +277,12 @@ void loop() {
   //print if you receive data
   if (Serial.available() > 0) {
     Serial.print("Return Byte = ");
-    Serial.println(Serial.read());   
+    Serial.println(Serial.read());
   }
 }
 ```
 :::
+
 ### read()
 
 Reads incoming serial data.
@@ -323,12 +349,13 @@ void loop() {
 }
 ```
 :::
+
 ### flush()
 
 Waits for the transmission of outgoing serial data to complete.
 
 ```c
-Serial.flush();	
+Serial.flush();
 ```
 
 | **Function** | `virtual void flush(void)` |
@@ -348,12 +375,13 @@ void loop() {
 }
 ```
 :::
+
 ### print()
 
 Prints data to the serial port as human-readable ASCII text. This command can take many forms. Numbers are printed using an ASCII character for each digit. Floats are similarly printed as ASCII digits, defaulting to two decimal places. Bytes are sent as a single character. Characters and strings are sent as is.
 
 ```c
-Serial.print(val);		
+Serial.print(val);
 ```
 
 ```c
@@ -407,7 +435,7 @@ void loop() {
     delay(200);            // delay 200 milliseconds
   }
   Serial.println();        // prints another carriage return
-} 
+}
 ```
 :::
 
@@ -416,7 +444,7 @@ void loop() {
 Prints data to the serial port as human-readable ASCII text followed by a carriage return character (ASCII 13, or '') and a newline character (ASCII 10, or ''). This command takes the same form as `Serial.print()`.
 
 ```c
-Serial.print(val);		
+Serial.print(val);
 ```
 
 ```c
@@ -458,7 +486,7 @@ void loop() {
 To output formatted text over Serial without the need to create a char array first, fill it with snprintf() and then send it with `Serial.println`.
 
 ```c
-Serial.printf(val);	
+Serial.printf(val);
 ```
 
 | **Function**   | `size_t printf(const char * val,	...)`                                                     |
@@ -488,7 +516,7 @@ void loop()
 This API is used to set the timeout value for read/write/flush API.
 
 ```c
-Serial.setTimeout(timeout);	
+Serial.setTimeout(timeout);
 ```
 
 | **Function**   | `void setTimeout(unsigned long timeout)` |
@@ -517,7 +545,7 @@ void loop() {
 This API is used to get the timeout value for read/write/flush API.
 
 ```c
-Serial.getTimeout(timeout);	
+Serial.getTimeout(timeout);
 ```
 
 | **Function** | `unsigned long getTimeout(void)`           |
@@ -545,7 +573,7 @@ void loop() {
 Read characters from Stream into buffer terminates if length characters have been read, or timeout (see [setTimeout](#settimeout)).
 
 ```c
-Serial.readBytes(buffer, length);		
+Serial.readBytes(buffer, length);
 ```
 
 ::: tip 📝 NOTE
@@ -638,7 +666,7 @@ void loop() {
 
 ### readString
 
-Reads characters from a Stream into a String The function terminates if it times out (see [setTimeout()](#settimeout)).
+Reads characters from a Stream into a String. The function terminates if it times out (see [setTimeout()](#settimeout)).
 
 
 ```c
@@ -682,10 +710,10 @@ void loop() {
 
 ### readStringUntil()
 
-Reads characters from the serial buffer into a String. The function terminates if it times out (see [setTimeout()](#settimeout)).
+Reads characters from the serial buffer into a String until the terminator is found or a timeout occurs (see [setTimeout()](#settimeout)).
 
 ```c
-Serial.readStringUntil(terminator);	
+Serial.readStringUntil(terminator);
 ```
 
 ::: tip 📝 NOTE
@@ -754,7 +782,7 @@ void loop() {
 
 End the I2C bus
 ```c
-Wire.end();	
+Wire.end();
 ```
 
 | **Function** | `void end(void)` |
@@ -830,7 +858,7 @@ void loop() {
 Ends a transmission to a slave device that was begun by [beginTransmission()](#begintransmission) and transmits the bytes that were queued by `write()`.
 
 ```c
-Wire.endTransmission();	
+Wire.endTransmission();
 ```
 
 ```c
@@ -932,7 +960,7 @@ In-between calls to [beginTransmission()](#begintransmission) and [endTransmissi
     Wire.requestFrom(0b1110000, 6);
 
     while(Wire.available()) {
-      char c = Wire.read();   
+      char c = Wire.read();
       Serial.print(c);
     }
     delay(5000);
@@ -1036,7 +1064,7 @@ SPI.begin()
 Disables the SPI bus.
 
 ```c
-SPI.end()	
+SPI.end()
 ```
 
 | **Function** | `void end()` |
@@ -1048,7 +1076,7 @@ SPI.end()
 SPI transfer is based on a simultaneous send and receive: the received data is returned in receivedVal16.
 
 ```c
-receivedVal16 = SPI.transfer16(val16)	
+receivedVal16 = SPI.transfer16(val16)
 ```
 
 | **Function**   | `uint16_t transfer16	(uint16_t data)`                       |
@@ -1080,7 +1108,7 @@ SPI.transfer(buffer, size)
 Initializes the SPI bus using the defined SPISettings.
 
 ```c
-SPI.beginTransactions(mySetting)	
+SPI.beginTransactions(mySetting)
 ```
 
 | **Function**   | `void beginTransaction(SPISettings settings)`                |
@@ -1105,7 +1133,7 @@ SPI.endTransaction()
 Sets the order of the bits shifted out of and into the SPI bus, either LSBFIRST (least-significant bit first) or MSBFIRST (most-significant bit first).
 
 ```c
-SPI.setBitOrder(order)	
+SPI.setBitOrder(order)
 ```
 
 | **Function**   | `void setBitOrder(BitOrder order)`      |
@@ -1131,7 +1159,7 @@ SPI.setDataMode(mode)
 Sets the SPI clock divider relative to the system clock.
 
 ```c
-SPI.setClockDivider(divider)	
+SPI.setClockDivider(divider)
 ```
 
 | **Function**   | `void setClockDivider(uint32_t uc_div)`                                                                                                                                    |
@@ -1141,7 +1169,7 @@ SPI.setClockDivider(divider)
 
 ## Time
 
-### delay 
+### delay
 
 Pauses the program for the amount of time (in milliseconds) specified as parameter. (There are 1000 milliseconds in a second.)
 
@@ -1149,7 +1177,7 @@ Pauses the program for the amount of time (in milliseconds) specified as paramet
 delay(ms);
 ```
 
-| **Function**   | `#define delay  udrv_app_delay_ms`           |
+| **Function**   | `void delay(uint32_t ms)`                    |
 | -------------- | -------------------------------------------- |
 | **Parameters** | **ms** - The number of milliseconds to pause |
 
@@ -1178,9 +1206,9 @@ Pauses the program for the amount of time (in microseconds) specified by the par
 delayMicroSeconds(us);
 ```
 
-| **Function**   | `#define delayMicroseconds udrv_app_delay_us` |
-| -------------- | --------------------------------------------- |
-| **Parameters** | **us** - The number of microseconds to pause  |
+| **Function**   | `void delayMicroseconds(uint32_t us)`        |
+| -------------- | -------------------------------------------- |
+| **Parameters** | **us** - The number of microseconds to pause |
 
 
 ::: details Click to View Example
@@ -1234,7 +1262,7 @@ void loop() {
 Returns the number of microseconds since the device began running the current program.
 
 ```c
-unsigned long micros()	
+unsigned long micros()
 ```
 
 | **Function** | `micros();`                                                                                     |
@@ -1279,7 +1307,7 @@ tone(pin, frequency, duration);
 
 ::: details Click to View Example
 ```c{20,22}
-uint8_t ledPin = 36; 
+uint8_t ledPin = 36;
 uint8_t pulsePin = 13;
 unsigned long duration;
 
@@ -1311,7 +1339,7 @@ Stops the generation of a square wave triggered by [tone()](#tone).
 
 ```c
 noTone(pin);
-```	
+```
 
 | **Function**   | `void noTone(uint8_t pin)`                                    |
 | -------------- | ------------------------------------------------------------- |
@@ -1364,7 +1392,7 @@ shiftOut(dataPin, clockPin, bitOrder, val);
 Shifts in a byte of data one bit at a time. Starts from either the most (i.e. the leftmost) or least (rightmost) significant bit. For each bit, the clock pin is pulled high, the next bit is read from the data line, and then the clock pin is taken low.
 
 ```c
-byte incoming = shiftIn(dataPin, clockPin, bitOrder);	
+byte incoming = shiftIn(dataPin, clockPin, bitOrder);
 ```
 
 | **Function**   | `uint32_t shiftIn(uint8_t dataPin, uint8_t clockPin, uint8_t bitOrder)`                                                                                                                                                               |
@@ -1442,7 +1470,7 @@ pulseInLong(pin, state, timeout);
 Analyze if a char is alphanumeric (that is a letter or a numbers). Returns true if thisChar contains either a number or a letter.
 
 ```c
-isAlphaNumeric(thisChar);	
+isAlphaNumeric(thisChar);
 ```
 
 | **Function**   | `boolean isAlphaNumeric(int thisChar)`                                                   |
@@ -1509,7 +1537,7 @@ void loop() {
 Analyze if a char is Ascii. Returns true if thisChar contains an Ascii character.
 
 ```c
-isAscii(thisChar);	
+isAscii(thisChar);
 ```
 
 | **Function**   | `boolean isAscii(int thisChar)`                                              |
@@ -1543,7 +1571,7 @@ void loop() {
 Analyze if a char is a space character. Returns true if the argument is a space or horizontal tab ('').
 
 ```c
-isWhitespace(thisChar);	
+isWhitespace(thisChar);
 ```
 
 | **Function**   | `boolean isWhitespace(int thisChar)`                                                         |
@@ -1577,7 +1605,7 @@ void loop() {
 Analyze if a char is a control character. Returns true if thisChar is a control character.
 
 ```c
-isControl(thisChar);	
+isControl(thisChar);
 ```
 
 | **Function**   | `boolean isControl(int thisChar)`                                                                       |
@@ -1611,7 +1639,7 @@ void loop() {
 Analyze if a char is a digit (that is a number). Returns true if thisChar is a number.
 
 ```c
-isDigit(thisChar);	
+isDigit(thisChar);
 ```
 
 | **Function**   | `boolean isDigit(int thisChar)`                                                   |
@@ -1632,7 +1660,7 @@ void setup() {
   else {
     Serial.println("The character is not a number");
   }
-}  
+}
 
 void loop() {
 }
@@ -1644,7 +1672,7 @@ void loop() {
 Analyze if a char is printable with some content (space is printable but has no content). Returns true if thisChar is printable.
 
 ```c
-isGraph(thisChar);	
+isGraph(thisChar);
 ```
 
 | **Function**   | `boolean isGraph(int thisChar)`                                                     |
@@ -1677,7 +1705,7 @@ void loop() {
 Analyze if a char is lower case (that is a letter in lower case). Returns true if thisChar contains a letter in lower case.
 
 ```c
-isLowerCase(thisChar);	
+isLowerCase(thisChar);
 ```
 
 | **Function**   | `boolean isLowerCase(int thisChar)`                                                   |
@@ -1711,7 +1739,7 @@ void loop() {
 Analyze if a char is printable (that is any character that produces an output, even a blank space). Returns true if thisChar is printable
 
 ```c
-isPrintable(thisChar);	
+isPrintable(thisChar);
 ```
 
 | **Function**   | `boolean isPrintable(int thisChar)`                                                 |
@@ -1744,7 +1772,7 @@ void loop() {
 Analyze if a char is punctuation (that is a comma, a semicolon, an exclamation mark and so on). Returns true if thisChar is punctuation.
 
 ```c
-isPunct(thisChar);	
+isPunct(thisChar);
 ```
 
 | **Function**   | `boolean isPunct(int thisChar)`                                                            |
@@ -1765,7 +1793,7 @@ void setup() {
   else {
     Serial.println("The character is not a punctuation");
   }
-}  
+}
 
 void loop() {
 }
@@ -1777,7 +1805,7 @@ void loop() {
 Analyze if a char is a white-space character. Returns true if the argument is a space, form **feed ('')**, **newline ('')**, **carriage return ('')**, **horizontal tab ('')**, or **vertical tab ('')**.
 
 ```c
-isSpace(thisChar);	
+isSpace(thisChar);
 ```
 
 | **Function**   | `boolean isSpace(int thisChar)`                                                         |
@@ -1799,7 +1827,7 @@ void setup() {
     Serial.println("The character is not white-space");
   }
 }
-  
+
 void loop() {
 }
 ```
@@ -1810,7 +1838,7 @@ void loop() {
 Analyze if a char is upper case (that is, a letter in upper case). Returns true if thisChar is upper case.
 
 ```c
-isUpperCase(thisChar);	
+isUpperCase(thisChar);
 ```
 
 | **Function**   | `boolean isUpperCase(int thisChar)`                                                   |
@@ -1843,7 +1871,7 @@ void loop() {
 Analyze if a char is an hexadecimal digit (A-F, 0-9). Returns true if thisChar contains an hexadecimal digit.
 
 ```c
-isHexadecimalDigit(thisChar);	
+isHexadecimalDigit(thisChar);
 ```
 
 | **Function**   | `boolean isHexadecimalDigit(int thisChar)`                                                                |
@@ -1864,7 +1892,7 @@ void setup() {
   else {
     Serial.println("The character is not an hexadecimal digit");
   }
-}   
+}
 
 void loop() {
 }
@@ -1882,7 +1910,7 @@ Reads a bit of a number.
 bitRead(value, bit);
 ```
 
-| **Function**   | `#define bitRead(value, bit)(((value) >> (bit)) & 0x01)`                                                                            |
+| **Function**   | `uint8_t bitRead(value, bit)`                                                                                                       |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | **Parameters** | **value** - The number from which to read <br> **bit** - Which bit to read, starting at 0 for the least-significant (rightmost) bit |
 | **Returns**    | The value of the bit (0 or 1)                                                                                                       |
@@ -1919,7 +1947,7 @@ Sets (writes a 1 to) a bit of a numeric variable.
 bitSet(value, bit);
 ```
 
-| **Function**   | `#define bitSet(value, bit)((value)                                                                                                        | = (1UL << (bit)))` |
+| **Function**   | `void bitSet(value, bit)`                                                                                                                  |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Parameters** | **value** - The numeric variable whose bit to set <br> **bit** - Which bit to set, starting at 0 for the least-significant (rightmost) bit |
 | **Returns**    | void                                                                                                                                       |
@@ -1951,7 +1979,7 @@ Clears (writes a 0 to) a bit of a numeric variable.
 bitClear(value, bit);
 ```
 
-| **Function**   | `#define bitClear(value,	bit)((value) &= ~(1UL << (bit)))`                                                                                     |
+| **Function**   | `void bitClear(value, bit)`                                                                                                                    |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Parameters** | **value** - The numeric variable whose bit to clear <br> **bit** - Which bit to clear, starting at 0 for the least-significant (rightmost) bit |
 | **Returns**    | The value of the numeric variable after the bit at position n is cleared                                                                       |
@@ -1983,7 +2011,7 @@ Writes a bit of a numeric variable.
 bitWrite(value, bit, bitvalue);
 ```
 
-| **Function**   | `#define bitWrite(value,	bit, bitvalue) ((bitvalue) ? bitSet(value, bit) : bitClear(value, bit))`                                                                                                                      |
+| **Function**   | `void bitWrite(value, bit, bitvalue)`                                                                                                                                                                                  |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Parameters** | **value** - The numeric variable to which to write <br> **bit** - Which bit of the number to write, starting at 0 for the least-significant (rightmost) bit <br> **bitvalue** - The value to write to the bit (0 or 1) |
 | **Returns**    | void                                                                                                                                                                                                                   |
@@ -1998,7 +2026,7 @@ void setup() {
   Serial.println(target, BIN);
 
   Serial.print("After bitWrite(target, 0, 1) => ");  // Set the first bit of target to 1
-  Serial.println(bitWrite(target, 0,1), BIN);      
+  Serial.println(bitWrite(target, 0,1), BIN);
 
   Serial.print("After bitWrite(target, 1, 0) => ");  // Set the second bit of target to 0
   Serial.println(bitWrite(target, 1,0), BIN);
@@ -2029,7 +2057,7 @@ Computes the value of the specified bit. (bit 0 is 1, bit 1 is 2, bit 2 is 4, et
 bit(b);
 ```
 
-| **Function**   | `#define bit(b)(1UL << (b))`           |
+| **Function**   | `uint8_t bit(b)`                       |
 | -------------- | -------------------------------------- |
 | **Parameters** | **b** - The bit whose value to compute |
 | **Returns**    | The value of the bit                   |
@@ -2059,10 +2087,10 @@ Extracts the low-order (rightmost) byte of a variable (e.g. a word).
 lowByte(w);
 ```
 
-| **Function**   | `#define lowByte(w)((uint8_t) ((w) & 0xff))` |
-| -------------- | -------------------------------------------- |
-| **Parameters** | **w** - A value of any type                  |
-| **Returns**    | byte                                         |
+| **Function**   | `uint8_t lowByte(w)`        |
+| -------------- | --------------------------- |
+| **Parameters** | **w** - A value of any type |
+| **Returns**    | byte                        |
 
 ::: details Click to View Example
 ```c{6,9}
@@ -2090,10 +2118,10 @@ Extracts the high-order (leftmost) byte of a word (or the second lowest byte of 
 highByte(w);
 ```
 
-| **Function**   | `#define highByte(w)((uint8_t)((w) >> 8))` |
-| -------------- | ------------------------------------------ |
-| **Parameters** | **w** - A value of any type                |
-| **Returns**    | byte                                       |
+| **Function**   | `uint8_t highByte(w)`       |
+| -------------- | --------------------------- |
+| **Parameters** | **w** - A value of any type |
+| **Returns**    | byte                        |
 
 ::: details Click to View Example
 ```c{6,9}
@@ -2132,22 +2160,22 @@ pinMode(pin, mode);
 ::: details Click to View Example
 ```c{6,7}
 uint8_t ledPin = 36;   // LED connected to digital pin 36
-uint8_t inputPin = 13; // input connected to digital pin 13 
+uint8_t inputPin = 13; // input connected to digital pin 13
 
 void setup()
 {
-    pinMode(ledPin, OUTPUT);         // sets the digital pin 36 as output  
+    pinMode(ledPin, OUTPUT);         // sets the digital pin 36 as output
     pinMode(inputPin, INPUT_PULLUP); // sets the digital pin 13 as input
 }
 
 void loop()
 {
     int val = digitalRead(inputPin); // read the input pin
-    if (val == LOW) 
+    if (val == LOW)
         digitalWrite(ledPin, HIGH); // enable led if input is LOW
-    else 
+    else
         digitalWrite(ledPin, LOW); // disable led if input is HIGH
-} 
+}
 ```
 :::
 
@@ -2246,13 +2274,13 @@ analogRead(pin);
 Configures the reference voltage used for analog input.
 
 ```c
-analogReference(type);	
+analogReference(type);
 ```
 
-| **Function**   | `void analogReference(uint8_t type)`                                                                                                                                               |
-| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Parameters (Interval Vref RAK4630)** | **type** - Which type of reference to use: <br> `UDRV_ADC_MODE_DEFAULT`<br> `UDRV_ADC_MODE_3_3`<br> `UDRV_ADC_MODE_3_0`  <br>`UDRV_ADC_MODE_2_4` <br> `UDRV_ADC_MODE_1_8` <br>`UDRV_ADC_MODE_1_2` |
-| **Returns**    | void                                                                                                                                                                               |
+| **Function**                           | `void analogReference(uint8_t type)`                                                                                                                                               |
+| -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Parameters (Interval Vref RAK4630)** | **type** - Which type of reference to use: <br> `RAK_ADC_MODE_DEFAULT` (3.3&nbsp;V) <br> `RAK_ADC_MODE_3_0`  <br>`RAK_ADC_MODE_2_4` <br> `RAK_ADC_MODE_1_8` <br>`RAK_ADC_MODE_1_2` |
+| **Returns**                            | void                                                                                                                                                                               |
 
 :::warning ⚠️ WARNING
 ADC voltage reference for RAK3172 and RAK3172-SiP is fixed to VDD voltage.
@@ -2263,7 +2291,7 @@ ADC voltage reference for RAK3172 and RAK3172-SiP is fixed to VDD voltage.
 Writes an analog value (PWM wave) to a pin. Can be used to light a LED at varying brightnesses or drive a motor at various speeds. After a call to `analogWrite()`, the pin will generate a steady rectangular wave of the specified duty cycle until the next call to `analogWrite()`.
 
 ```c
-analogWrite(pin, value);	
+analogWrite(pin, value);
 ```
 
 | **Function**   | `void analogWrite(uint8_t pin, int value)`                                                                           |
@@ -2319,7 +2347,7 @@ Sets the size (in bits) of the value returned by `analogRead()`. It defaults to 
 
 
 ```c
-analogReadResolution(bits);	
+analogReadResolution(bits);
 ```
 
 | **Function**   | `void analogReadResolution(uint8_t bits)`                                                                                                                                                                                                                                          |
@@ -2332,7 +2360,7 @@ analogReadResolution(bits);
 analogWriteResolution() is an extension of the Analog API for the Arduino Due. It sets the resolution of the `analogWrite()` function. It defaults to 8 bits (values between 0-255) for backward compatibility with AVR based boards.
 
 ```c
-analogWriteResolution(bits);	
+analogWriteResolution(bits);
 ```
 
 | **Function**   | `void analogWriteResolution(uint8_t bits)`                                                                                                                                                                                                                                                                                                 |
@@ -2375,7 +2403,7 @@ void loop() {
 Disables interrupts. You can re-enable them with `interrupts()`.
 
 ```c
-noInterrupts();	
+noInterrupts();
 ```
 
 | **Function** | `void noInterrupts(void)` |
@@ -2402,7 +2430,7 @@ Digital Pins With Interrupts. See also [AttachInterrupt](https://www.arduino.cc/
 
 ```c
 attachInterrupt(pin, ISR, mode);
-```	
+```
 
 | **Function**   | `void attachInterrupt(uint32_t pin, void(*)(void) userFunc, int mode)`                                                                                                                                                                                                                                                            |
 | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -2434,7 +2462,7 @@ void loop()
     //After 20sec will disable ISR for pin13
     if(millis() - startTime >= 20*1000)
         detachInterrupt(13);
-   
+
     digitalWrite(ledPin, state);
 }
 ```
@@ -2445,7 +2473,7 @@ void loop()
 Turns off the given interrupt.
 
 ```c
-detachInterrupt(pin);	
+detachInterrupt(pin);
 ```
 
 
@@ -2479,7 +2507,7 @@ void loop()
     //After 20sec will disable ISR for pin13
     if(millis() - startTime >= 20*1000)
         detachInterrupt(13);
-   
+
     digitalWrite(ledPin, state);
 }
 ```
@@ -2492,7 +2520,7 @@ void loop()
 The random function generates pseudo-random numbers.
 
 ```c
-random(max);	
+random(max);
 ```
 
 ```c
@@ -2530,7 +2558,7 @@ void loop()
     //After 20sec will disable ISR for pin13
     if(millis() - startTime >= 20*1000)
         detachInterrupt(13);
-   
+
     digitalWrite(ledPin, state);
 }
 ```
