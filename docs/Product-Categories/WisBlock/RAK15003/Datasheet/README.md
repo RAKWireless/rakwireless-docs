@@ -5,7 +5,7 @@ tags:
   - datasheet
   - wisblock
   - RAK15003
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 ---
 
@@ -21,7 +21,7 @@ next: false
 
 ### Description
 
-RAK15003 is a WisBlock FRAM module that extends the WisBlock system with an MB85RC256VPNF-G-JNERE1 memory module from Fujitsu. This module is interfaced via I2C. Additionally, it can be mounted to the sensor slot of the WisBlock Base board.
+RAK15003 is a WisBlock 32kByte FRAM module that extends the WisBlock system with an MB85RC256VPNF-G-JNERE1 memory module from Fujitsu. This module is interfaced via I2C. Additionally, it can be mounted to the sensor slot of the WisBlock Base board.
 
 ### Product Features
 
@@ -75,17 +75,17 @@ The RAK15003 WisBlock 32kByte FRAM Module comprises a standard WisBlock connecto
   caption="RAK15003 WisBlock 32kByte FRAM Module Pinout Diagram"
 />
 
-The **WisBlock Sensor** connector is used to this module and the IO used for **WP** pin at **Pin 12** will depend on where sensor slot the module is plugged in. The table shows the compatible pins used by different sensor slots:
+The **WisBlock Sensor** connector is also compatible for this module. IO used for **WP** pin at **Pin 12** will depend on what sensor slot the module is plugged in. The table below shows the compatible pins used by different sensor slots:
 
 **WP (Write Protect Pin)**
 
-| Slot A | Slot C | Slot D | Slot E | Slot F | 
-| ------ | ------ | ------ | ------ | ------ | 
-| IO1    | IO3    | IO5    | IO4    | IO6    | 
+| Slot A | Slot C | Slot D | Slot E | Slot F |
+| ------ | ------ | ------ | ------ | ------ |
+| IO1    | IO3    | IO5    | IO4    | IO6    |
 
 ::: tip 📝 NOTE
 
-**RAK15003** should not be plugged in **Slot B** as it is dedicated for **IO2 (WisBlock IO2 pin)** that controls the **3V3_S** voltage output. 
+**RAK15003** should not be plugged in **Slot B**. It is a dedicated slot for **IO2 (WisBlock IO2 pin)** that controls the **3V3_S** voltage output.
 
 :::
 

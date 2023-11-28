@@ -3,7 +3,7 @@ rak_desc: RAK17001 is a WisBlock H-Bridge module that extends the WisBlock syste
 rak_img: /assets/images/wisblock/rak17001/RAK17001.png
 rak_grp: [wisblock, wismotor]
 prev: ../../
-next: ../Datasheet/
+next: ../Quickstart/
 tags:
     - wisblock
     - RAK17001
@@ -15,6 +15,7 @@ tags:
 
 Thank you for choosing **RAK17001 WisBlock H-Bridge Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
+* [RAK17001 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
@@ -24,9 +25,14 @@ Thank you for choosing **RAK17001 WisBlock H-Bridge Module** in your awesome IoT
 
 **Examples**
 
-- For RAK4630 WisBlock Core Module - [Sample Codes:](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/IO/RAK17001_HBridge_STSPIN250)
-- For RAK11200 WisBlock Core Module - [Sample Codes:](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11200/IO/RAK17001_HBridge_STSPIN250)
-- For RAK11300 WisBlock Core Module - [Sample Codes:](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11300/IO/RAK17001_HBridge_STSPIN250)
+For RAK4630 WisBlock Core Module:
+  - [Sample Codes](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK4630/IO/RAK17001_HBridge_STSPIN250)
+
+For RAK11200 WisBlock Core Module:
+  - [Sample Codes](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11200/IO/RAK17001_HBridge_STSPIN250)
+
+For RAK11300 WisBlock Core Module:
+  - [Sample Codes](https://github.com/RAKWireless/WisBlock/tree/master/examples/RAK11300/IO/RAK17001_HBridge_STSPIN250)
 
 ## Product Description
 

@@ -3,7 +3,7 @@ rak_desc: RAK15003 is a WisBlock FRAM module that extends the WisBlock system wi
 rak_img: /assets/images/wisblock/rak15003/RAK15003.png
 rak_grp: [wisblock, wisstorage]
 prev: ../../
-next: ../Datasheet/
+next: ../Quickstart/
 tags:
     - wisblock
     - RAK15003
@@ -15,6 +15,7 @@ tags:
 
 Thank you for choosing **RAK15003 WisBlock 32kByte FRAM Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
+* [RAK15003 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
@@ -24,7 +25,8 @@ Thank you for choosing **RAK15003 WisBlock 32kByte FRAM Module** in your awesome
 
 **Examples**
 
-- For All WisBlock Core Modules - [Sample Codes:](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK15003_04_05_FRAM_Read_Write_MB85RC)
+For All WisBlock Core Modules:
+  - [Sample Codes](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK15003_04_05_FRAM_Read_Write_MB85RC)
 
 ## Product Description
 
@@ -41,8 +43,8 @@ RAK15003 is a WisBlock FRAM module that extends the WisBlock system with an MB85
     *  High Reliability：
        - Read/write endurance：1,000,000,000,000/byte
        - Data retention：
-           - 10 years（+85&nbsp;°C
-           - 95 years（+55&nbsp;°C
+           - 10 years（+85&nbsp;°C）
+           - 95 years（+55&nbsp;°C）
            - Over 200 years（+35&nbsp;°C）
 
 * **Size**

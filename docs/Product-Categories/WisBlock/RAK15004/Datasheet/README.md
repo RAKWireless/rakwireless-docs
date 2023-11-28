@@ -7,7 +7,7 @@ tags:
   - RAK15004
   - MB85RC512T
   - FUJITSU
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 ---
 
@@ -57,7 +57,7 @@ RAK15004 is a WisBlock FRAM Storage Module based on MB85RC512T 512&nbsp;kbit (64
 
 ### Hardware
 
-The hardware specification is categorized into five (5) parts. It shows the chipset of the module and discusses the pinouts, and their corresponding functions and diagrams. It also covers the electrical and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK15004 WisBlock FRAM Module.
+The hardware specification is categorized into five parts. It shows the chipset of the module and discusses the pinouts, and their corresponding functions and diagrams. It also covers the electrical and mechanical parameters, including the tabular data of the functionalities and standard values of the RAK15004 WisBlock FRAM Module.
 
 #### Chipset
 
@@ -87,7 +87,7 @@ The RAK15004 WisBlock FRAM Module comprises a standard WisBlock connector. The W
 
 :::tip 📝 NOTE:
 - Only **I2C** related pin, **3V3_S**, and **GND** are connected to WisBlock connector.
-- **3V3_S** voltage output from the WisBlock Base that powers the RAK15004 module can be controlled by the WisBlock Core via `WB_IO2 (WisBlock IO2 pin)`. This makes the module ideal for low-power IoT projects since the WisBlock Core can totally disconnect the power of the RAK15004 module.
+- **3V3_S** voltage output from the WisBlock Base that powers the RAK15004 module can be controlled by the WisBlock Core via `WB_IO2 (WisBlock IO2 pin)`. This makes the module ideal for low-power IoT projects since the WisBlock Core can be disconnected from the RAK15004 module power.
 :::
 
 #### Electrical Characteristics

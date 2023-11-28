@@ -5,7 +5,7 @@ tags:
   - datasheet
   - wisblock
   - RAK15005
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 ---
 
@@ -77,17 +77,17 @@ The RAK15005 WisBlock 128kByte FRAM Module comprises a standard WisBlock connect
   caption="RAK15005 WisBlock 128kByte FRAM Module Pinout Diagram"
 />
 
-The **WisBlock Sensor** connector is used to this module and the IO used for **WP** pin at **Pin 12** will depend on where sensor slot the module is plugged in. The table shows the compatible pins used by different sensor slots:
+The **WisBlock Sensor** connector is also compatible for this module. IO used for **WP** pin at **Pin 12** will depend on what sensor slot the module is plugged in. The table below shows the compatible pins used by different sensor slots:
 
 **WP (Write Protect Pin)**
 
-| Slot A | Slot C | Slot D | Slot E | Slot F | 
-| ------ | ------ | ------ | ------ | ------ | 
-| IO1    | IO3    | IO5    | IO4    | IO6    | 
+| Slot A | Slot C | Slot D | Slot E | Slot F |
+| ------ | ------ | ------ | ------ | ------ |
+| IO1    | IO3    | IO5    | IO4    | IO6    |
 
 ::: tip 📝 NOTE
 
-**RAK15005** should not be plugged in **Slot B** as it is dedicated for **IO2 (WisBlock IO2 pin)** that controls the **3V3_S** voltage output. 
+**RAK15005** should not be plugged in **Slot B** as it is dedicated for **IO2 (WisBlock IO2 pin)** that controls the **3V3_S** voltage output.
 
 :::
 

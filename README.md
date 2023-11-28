@@ -15,11 +15,6 @@ The files are sorted per device for a more convenient experience:
 - **Knowledge Hub**: a catalog of supplemental articles and tutorials, and a compilation of pre-answered questions about the device and the technology utilized to narrow the common knowledge gaps for a more thorough understanding
 
 
-For further details, check our [RAK Documentation Center](https://staging.docs.rakwireless.com/) and contact the person in charge for the credentials.
-
-- Phoenix Aspacio *phoenix.aspacio@rakwireless.com*
-- Caryl Keen Enanor *caryl.enanor@rakwireless.com*
-
 ### Open-Source
 RAK decided to make its documentation center open-source to extend its scope where experts and enthusiasts collaborate and operate at their full potential. Also, anyone can inspect for errors and inconsistencies that are beneficial to the documentation center and to the other users as well. Hence, the decision is made with these three in mind:
 

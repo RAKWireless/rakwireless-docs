@@ -1,5 +1,5 @@
 export const FIVEG_HEADER = {
-  product: '5g',
+  product: '5G',
   headers:[
     'USA'
   ]

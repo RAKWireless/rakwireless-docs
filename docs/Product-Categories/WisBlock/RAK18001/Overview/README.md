@@ -33,25 +33,29 @@ For WisBlock Core RAK11200:
 
 ## Product Description
 
-The **RAK18001** is a WisBlock Extra module that uses a **MLT-5020** as its built-in buzzer. It produces an audible high-pitched sound which can be used in various alarm and notifier applications. The sound and loudness can be controlled through PWM (Pulse-Width Modulation) signal from a WisBlock Core. The output sounds and pitch level can be customized to the point that it is even possible to play a small melody! Please see sample code: [RAK18001 Play a melody](https://github.com/RAKWireless/WisBlock/tree/master/examples)
+The **RAK18001** is a WisBlock Extra module that uses a **MLT-5020** as its built-in buzzer. It produces an audible high-pitched sound which can be used in various alarm and notifier applications. The sound and loudness can be controlled through PWM (Pulse-Width Modulation) signal from a WisBlock Core. The output sounds and pitch level is customizable to the point that it is even possible to play a melody.
+
+Refer to the sample code: [RAK18001 Play a melody](https://github.com/RAKWireless/WisBlock/tree/master/examples).
 
 ## Product Features
 
 * **Module Specification**
-    * 3.3V Input Voltage, On/Off Control by the WisBlock Core
-    * 75dB Sound Output at 10cm distance. Very Audible!
-    * PWM Controlled: Loudness and Pitch Level can be customized using your code
-    * Uses MLT-5020 Buzzer. Small and Compact, but Loud!
+    * 3.3&nbsp;V Input Voltage: On/Off Control by the WisBlock Core
+    * Operating Voltage: 2.0&nbsp;V - 5.0&nbsp;V
+    * 75&nbsp;dB sound output at 10&nbsp;cm distance
+    * Resonant Frequency: 4000&nbsp;Hz
+    * PWM Controlled: Loudness and pitch level can be customized using your code
+    * Uses MLT-5020 Buzzer - small and compact
     * Chipset: Jiangsu Huaneng Electronics MLT-5020
 
 * **Size**
-    * Module Size: 10mm x 10mm
-    * Built-in Buzzer Size: 5mm x 5mm x 2mm
+    * Module Size: 10&nbsp;mm x 10&nbsp;mm
+    * Built-in Buzzer Size: 5&nbsp;mm x 5&nbsp;mm x 2&nbsp;mm
 
 ## Prerequisites
 
-To use the **RAK18001 Buzzer Module**, you need a **WisBlock Base** to plug the module in. The Wisblock Base acts as a power supply for the RAK18001 Buzzer Module. It also consist of several module ports which allows you to plug multiple Buzzer Module or other modules of your choice! Also, you need a **WisBlock Core** to control your module.
+To use the **RAK18001 Buzzer Module**, you need a **WisBlock Base** to plug the module in. The Wisblock Base acts as a power supply for the RAK18001 Buzzer Module. It also consist of several module ports, allowing multiple plugs of Buzzer Module or other modules of your choice. Also, you need a **WisBlock Core** to control your module.
 
 :::warning ⚠️ WARNING
-Make sure to fix the module with the matching screws to ensure intact placement and connection!
+Make sure to fix the module with the matching screws to ensure intact placement and connection.
 :::

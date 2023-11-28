@@ -3,7 +3,7 @@ rak_desc: RAK15005 is a WisBlock 128kByte FRAM module that extends the WisBlock 
 rak_img: /assets/images/wisblock/rak15005/RAK15005.png
 rak_grp: [wisblock, wisstorage]
 prev: ../../
-next: ../Datasheet/
+next: ../Quickstart/
 tags:
     - wisblock
     - RAK15005
@@ -15,6 +15,7 @@ tags:
 
 Thank you for choosing **RAK15005 WisBlock 128kByte FRAM Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
+* [RAK15005 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)

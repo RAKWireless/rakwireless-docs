@@ -36,29 +36,6 @@
         </table>
       </div>
     </div>
-
-    <div>
-      <h2>Data and Information Security</h2>
-      <h3>GDPR Compliant</h3>
-      <ul>
-        <li><a href="https://gdpr.eu/" target="_blank">Europe Data Protection and Privacy Rules</a></li>
-        <li><a href="https://www.iso.org/isoiec-27001-information-security.html" target="_blank">International Information Security Management System Standard</a></li>
-      </ul>
-
-      <h3>ISO27001 Certification</h3>
-      <ul>
-        <li><a href="https://www.iso.org/isoiec-27001-information-security.html" target="_blank">International Information Security Management System Standard</a></li>
-
-      </ul>
-
-      <h3>LoRaWAN Certification</h3>
-      <ul>
-        <li><a href="https://lora-alliance.org/about-lora-alliance/#" target="_blank">International Technology Alliance about LoRaWAN Standard</a><br>
-        <a href="https://lora-alliance.org/alliance_member/rakwireless-technology-co/" target="_blank">View Details</a>
-        </li>
-
-      </ul>
-    </div>
  </div>
 </template>
 
@@ -111,7 +88,6 @@ export default {
 
 </script>
 
-
 <style>
 
 /* quasar styling override */
@@ -131,16 +107,6 @@ export default {
   z-index:11;
   border : 1px solid #CECECE !important;
 }
-
-/* .table-container .q-table .sticky-row {
-  position: sticky;
-  top: 0;
-  background-color: #FFFFFF;
-  z-index:11;
-  border : 1px solid #CECECE !important;
-} */
-
-
 
 .table-container > table {
   border-collapse: collapse;
@@ -177,47 +143,6 @@ export default {
   justify-content: center;
   align-items: start;
 }
-.certification--dropdown {
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  color: #CECECE;
-}
-
-
-
-.label {
-  color: #605e5e;
-  font-size: 1.15em;
-  font-weight: 450;
-  letter-spacing: 0.5px;
-}
-
-.dropdown {
-  border: 2px solid #007ACC;
-  color: #007ACC;
-  border-radius: 0.5rem;
-  background-color: white;
-  margin-left: 15px;
-  height: 35px;
-  width: 280px;
-  transition: background-color 0.3s;
-  overflow: auto;
-}
-
-.dropdown:hover .text {
-  color: #007ACC;
-  font-weight: bold;
-}
-
-
-/* .sticky-col {
-  position: sticky;
-  left: 0;
-  background-color: #FFFFFF;
-  z-index:9;
-  border : 1px solid #CECECE !important;
-} */
 
 .sticky-row {
   position: sticky;
@@ -249,4 +174,3 @@ export default {
   }
 }
 </style>
-

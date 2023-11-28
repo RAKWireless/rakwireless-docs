@@ -17,12 +17,14 @@ Amazon Sidewalk is a free-to-connect community network that provides secure and 
 
 The WisBlock modules in the kit eliminate the need for a prototype board. Just plug the modules together and power them via a USB port or another power source.
 
-:::warning ⚠️ WARNING
-Amazon Sidewalk is only available in selected areas in the USA, including the testing or use of a Sidewalk device. Check out the coverage map at [Amazon Sidewalk Coverage.](https://coverage.sidewalk.amazon/)
+:::warning ⚠️ NOTE
+Amazon Sidewalk is only available in selected areas in the USA, including the testing or use of a Sidewalk device. Check out the coverage map at [Amazon Sidewalk Coverage.](https://coverage.sidewalk.amazon/)     
+    
+For development, any Sidewalk gateway functionality might be used outside of the US, but it should be used **ONLY** for Amazon Sidewalk endpoint development purposes. Developers are solely responsible for ensuring compliance with local regulations. Please consult with your local regulatory bodies and check if the gateway is allowed to operate its radio in your locale, as US license-free band devices, only for development. Developers will also need to use a VPN router that supports OpenVPN Client functionality in conjunction with a cloud VPN service provider, to enable operation outside of the US for your development.   
 :::
 
 ::: tip 📝 NOTE
-To connect the device to the Sidewalk network, an Amazon Sidewalk compatible device is required. Check the [Amazon Sidewalk Documentation](https://docs.sidewalk.amazon/introduction/sidewalk-gateways.html) for more information.
+To connect the device to the Sidewalk network, an Amazon Sidewalk compatible device is required. Check the [Amazon Sidewalk Documentation](https://docs.sidewalk.amazon/introduction/sidewalk-gateways.html) for more information.    
 :::
 
 # Quick Start Guide
@@ -30,7 +32,7 @@ To connect the device to the Sidewalk network, an Amazon Sidewalk compatible dev
 
 This guide will help you test a RAK4630-based device with Amazon Sidewalk, including sensor data visualization in AWS. It offers fast access to connect the RAK4630 to Amazon Sidewalk. Also, it comes with pre-compiled firmware that you can flash on our WisBlock Core module.
 
-The application used in this guide is based on the Nordics Sidewalk Sensor Monitoring example code and changed to work with the WisBlock RAK4631 Core module (nRF52840 + SX1262 LoRa transceiver) and the RAK1901 temperature and humidity sensor.
+The application used in this guide is based on the Nordics Sidewalk Sensor Monitoring example code. Later on, it was changed to work with the WisBlock RAK4631 Core module (nRF52840 + SX1262 LoRa transceiver) and the RAK1901 temperature and humidity sensor.
 
 For details about the Sidewalk application for RAK4630, refer to [RAK4630-Amazon-Sidewalk-Example repo.](https://github.com/RAKWireless/RAK4630-Amazon-Sidewalk-Example)
 
@@ -38,7 +40,7 @@ For details about the Sidewalk application for RAK4630, refer to [RAK4630-Amazon
 
 ### What Do You Need?
 
-Before going through each and every step of using the RAK4631 Amazon Sidewalk Starter Kit, make sure to prepare the necessary items listed below:
+Before going through each and every step of using the RAK4631 Amazon Sidewalk Starter Kit, prepare the necessary items listed below:
 
 #### Hardware
 
@@ -55,11 +57,11 @@ Before going through each and every step of using the RAK4631 Amazon Sidewalk St
 To test the Sidewalk Starter Kit, the following environment is required:
 
 1. AWS Account
-2. The location is in the coverage area of Amazon Sidewalk in the US. Check the coverage map in the [Amazon Sidewalk Coverage](https://coverage.sidewalk.amazon/)
-3. An Amazon Sidewalk-compatible device is required. You can find a list of compatible devices in the [Amazon Sidewalk Documentation](https://docs.sidewalk.amazon/introduction/sidewalk-gateways.html)
-4. The Amazon Sidewalk compatible device connected to the internet and within the coverage of Sidewalk
-6. Mobile phone with the Alexa app, to set up the Echo
-   - Should be a US Amazon account with a US internet connection
+2. The location is in the coverage area of Amazon Sidewalk in the US. Check the coverage map in the [Amazon Sidewalk Coverage](https://coverage.sidewalk.amazon/).
+3. An Amazon Sidewalk-compatible device is required. You can find a list of compatible devices in the [Amazon Sidewalk Documentation](https://docs.sidewalk.amazon/introduction/sidewalk-gateways.html).
+4. The Amazon Sidewalk-compatible device connected to the internet and within the coverage of Sidewalk.
+6. Mobile phone with the Alexa app, to set up the Echo.
+   - Should be a US Amazon account with a US internet connection.
 
 ## Product Configuration
 
@@ -85,7 +87,7 @@ You can sign in to your new account by using the email address and password you 
 :::
 
 9. Enter your payment method and click  **Verify and Continue**. If you wish to use a different billing address, select **Use a new address**. You can't proceed with the sign-up process until you add a valid payment method.
-10. Choose your country or region code from the list and enter your phone number, which should be reachable in the next few minutes.
+10. Choose your country or region code from the list and enter your phone number. Make sure that it stays reachable in the next few minutes.
 11. Enter the code displayed in the CAPTCHA and submit it.
 12. Once the automated system contacts you, enter the PIN you receive and submit it.
 13. Choose one of the available AWS Support plans. For a detailed description of the plans and their benefits, refer to [Compare AWS Support plans](https://aws.amazon.com/premiumsupport/features).
@@ -413,7 +415,7 @@ RAKDAP1 requires a Python 3 installation before it can be used. Download the lat
   caption="Python Installation"
 />
 
-5. After the installation is complete, open the command prompt window and use the following command to verify the versions of Python and pip3:
+5. After the installation is complete, open the command prompt window. Use the following command to verify the versions of Python and pip3:
 
 ```py
 python --version
@@ -447,7 +449,7 @@ python --version
 brew install libusb
 ```
 
-After the installation has finished, open a command prompt window and check the versions of Python and pip3 using the following command listed below.
+After the installation has finished, open a command prompt window. Check the versions of Python and pip3 using the following command listed below.
 
 ```py
 python --version
@@ -459,7 +461,7 @@ pip --version
 Open the terminal on your Linux machine and type the following command:
 `sudo apt-get install python3`
 
-After the installation has finished, open a command prompt window and check the versions of Python and pip3 using the following command listed below:
+After the installation has finished, open a command prompt window. Check the versions of Python and pip3 using the following command listed below:
 
 ```py
 python --version
@@ -530,7 +532,7 @@ pyocd flash -t nrf52840 YOUR_PROVISIONING_KEY.hex
 
 2. Disconnect the RAKDAP1 adapter, connect a terminal application, and reset the starter kit to check if the application is starting normally.
 
-3. If you have erased the original firmware of the RAK4630 and flashed your own custom firmware, you have to flash the provisioning key every time **AFTER** you have flashed your custom firmware.
+3. If you have replaced the original firmware of the RAK4630 with a custom firmware, you have to flash the provisioning key every time **AFTER** you flash a custom firmware.
 
 ```py
 pyocd flash -t nrf52840 YOUR_CUSTOM_FIRMWARE.hex
@@ -540,7 +542,7 @@ pyocd flash -t nrf52840 YOUR_PROVISIONING_KEY.hex
 4. After flashing the Sidewalk Starter Kit, disconnect both the kit and the RAKDAP1 tool from power and from each other.
 5. Then power up the Sidewalk Starter Kit through its USB connector.
 
-If the device is in range of an Amazon ECHO Gen4 (or another Sidewalk compatible Amazon device), it will automatically connect to Sidewalk and send the measured data of its sensor to AWS.
+If the device is in range of an Amazon ECHO Gen4 (or another Sidewalk compatible Amazon device), it will automatically connect to Sidewalk and send the sensor's measured data to AWS.
 
 :::warning ⚠️ IMPORTANT
 - A device profile created for prototyping through the AWS console can only be used with one device.
@@ -548,7 +550,10 @@ If the device is in range of an Amazon ECHO Gen4 (or another Sidewalk compatible
 -	A provisioning key is for a single device, and each device needs its own unique key.
 :::
 
-After flashing the firmware, the device should be powered up. You can view the device log output by opening a Serial Terminal application on your computer. If you encounter error messages, it is likely due to one of the following reasons: missing provisioning key, incorrect provisioning key or device profile, or no Sidewalk device in range.
+After flashing the firmware, the device should be powered up. You can view the device log output by opening a Serial Terminal application on your computer. If you encounter error messages, it is likely due to one of the following reasons: 
+ - missing provisioning key
+ - incorrect provisioning key or device profile
+ - no Sidewalk device in range
 
 # Firmware Source Code
 
