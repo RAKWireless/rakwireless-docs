@@ -5,7 +5,7 @@ tags:
   - datasheet
   - wisblock
   - RAK12032
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 ---
 
@@ -30,7 +30,7 @@ RAK12032 is a WisBlock 3-axis Accelerometer Sensor Module that extends the WisBl
     *  Measurement range：+/-0.5g, +/-1g, +/-2g, +/-4g
     *  High resolution (up to 13-bit)
     *  Ultra-low power (scales automatically with data rate), as low as 30&nbsp;uA in measurement mode
-    *  Low noise performance: 150&nbsp;ug/Hz typical for X- and Y-axes
+    *  Low noise performance: 150&nbsp;ug/Hz typical for X-Y axes
     *  Built-in motion detection functions for activity/inactivity monitoring
     *  I2C digital interfaces
     *  3.3&nbsp;V power supply
@@ -92,15 +92,15 @@ The following are connected to WisBlock connector:
 
 **INT2 (Interrupt 2 Output Pin)**
 
-| Slot C | Slot D | Slot E | Slot F | 
+| Slot C | Slot D | Slot E | Slot F |
 | ------ | ------ | ------ | ------ |
-| IO4    | IO6    | IO3    | IO5    | 
+| IO4    | IO6    | IO3    | IO5    |
 
 **INT1 (Interrupt 1 Output Pin)**
 
-| Slot C | Slot D | Slot E | Slot F | 
+| Slot C | Slot D | Slot E | Slot F |
 | ------ | ------ | ------ | ------ |
-| IO3    | IO5    | IO4    | IO6    | 
+| IO3    | IO5    | IO4    | IO6    |
 
 #### Electrical Characteristics
 

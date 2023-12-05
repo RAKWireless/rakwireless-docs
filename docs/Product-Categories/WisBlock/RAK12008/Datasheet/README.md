@@ -5,7 +5,7 @@ tags:
   - datasheet
   - wisblock
   - RAK12008
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 ---
 
@@ -21,14 +21,14 @@ next: false
 
 ### Description
 
-RAK12008 is a WisBlock CO2 Sensor Module that extends the WisBlock system with a Sensirion STC31 CO2 Sensor. The CO2 concentration data is interfaced via I2C. The STC31 sensor from Sensirion is based on thermal conductivity.
+RAK12008 is a WisBlock CO<sub>2</sub> Sensor Module that extends the WisBlock system with a Sensirion STC31 CO2 Sensor. The CO<sub>2</sub> concentration data is interfaced via I2C. The STC31 sensor from Sensirion is based on thermal conductivity.
 
-A ready-to-use software library and tutorial is included, making it simple to build a CO2 gas data acquisition system for high CO2 concentrations. Additionally, it can be mounted to the sensor slot of the WisBlock Base board.
+A ready-to-use software library and tutorial is included, making it simple to build a CO<sub>2</sub> gas data acquisition system for high CO<sub>2</sub> concentrations. Additionally, it can be mounted to the sensor slot of the WisBlock Base board.
 
 ### Product Features
 
 * **Sensor specifications**
-    *  CO2 sensor module
+    *  CO<sub>2</sub> sensor module
     *  Based on thermal conductivity
     *  I2C interface
     *  Measurement range：0 to 100 vol%
@@ -65,7 +65,7 @@ The hardware specification is categorized into six parts. It shows the chipset o
 
 #### Pin Definition
 
-The RAK12008 WisBlock CO2 Sensor comprises a standard WisBlock connector. The WisBlock connector allows the RAK12008 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition are shown in **Figure 2**.
+The RAK12008 WisBlock CO<sub>2</sub> Sensor comprises a standard WisBlock connector. The WisBlock connector allows the RAK12008 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition are shown in **Figure 2**.
 
 <rk-img
   src="/assets/images/wisblock/rak12008/datasheet/RAK12008_pinout.png"
@@ -83,7 +83,7 @@ Only the **I2C** related pins, **VDD** and **GND** are connected to this module.
 
 | Parameter                            | Values                                                |
 | ------------------------------------ | ----------------------------------------------------- |
-| Calibrated for                       | CO2 in N2 and CO2 in Air                              |
+| Calibrated for                       | CO2 in N<sub>2</sub> and CO<sub>2</sub> in Air        |
 | Accuracy (based on *Measured Range*) | 0.5 vol% + 3% of measured value (*from 0 to 25 vol%*) |
 |                                      | 1 vol% + 3% of measured value (*from 0 to 100 vol%*)  |
 | Repeatability                        | 0.2 vol%                                              |

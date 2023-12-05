@@ -3,7 +3,7 @@ rak_desc: RAK12032 is a WisBlock 3-axis Accelerometer Sensor Module that extends
 rak_img: /assets/images/wisblock/rak12032/RAK12032.png
 rak_grp: [wisblock, wissensor]
 prev: ../../
-next: ../Datasheet/
+next: ../Quickstart/
 tags:
     - wisblock
     - RAK12032
@@ -15,6 +15,7 @@ tags:
 
 Thank you for choosing **RAK12032 WisBlock 3-Axis Accelerometer Sensor** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
+* [RAK12032 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
@@ -24,7 +25,8 @@ Thank you for choosing **RAK12032 WisBlock 3-Axis Accelerometer Sensor** in your
 
 **Examples**
 
-- For All WisBlock Core Modules - [Sample Codes:](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK12032_3_Axis_ADXL313)
+- For All WisBlock Core Modules
+    - [Sample Codes](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK12032_3_Axis_ADXL313)
 
 ## Product Description
 
@@ -37,7 +39,7 @@ RAK12032 is a WisBlock 3-axis Accelerometer Sensor Module that extends the WisBl
     *  Measurement range：+/-0.5g, +/-1g, +/-2g, +/-4g
     *  High resolution (up to 13-bit)
     *  Ultra-low power (scales automatically with data rate), as low as 30&nbsp;uA in measurement mode
-    *  Low noise performance: 150&nbsp;ug/Hz typical for X- and Y-axes
+    *  Low noise performance: 150&nbsp;ug/Hz typical for X-Y axes
     *  Built-in motion detection functions for activity/inactivity monitoring
     *  I2C digital interfaces
     *  3.3&nbsp;V power supply

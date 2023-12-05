@@ -3,7 +3,7 @@ rak_desc: RAK12008 is a WisBlock CO2 Sensor Module that extends the WisBlock sys
 rak_img: /assets/images/wisblock/rak12008/RAK12008.png
 rak_grp: [wisblock, wissensor]
 prev: ../../
-next: ../Datasheet/
+next: ../Quickstart/
 tags:
     - wisblock
     - RAK12008
@@ -15,6 +15,7 @@ tags:
 
 Thank you for choosing **RAK12008 WisBlock CO2 Sensor** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
+* [RA12008 Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
 * [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
@@ -24,7 +25,8 @@ Thank you for choosing **RAK12008 WisBlock CO2 Sensor** in your awesome IoT Proj
 
 **Examples**
 
-- For All WisBlock Core Modules - [Sample Codes:](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK12008)
+- For all WisBlock Core Modules:
+    - [Sample Codes](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK12008)
 
 ## Product Description
 

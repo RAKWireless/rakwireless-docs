@@ -18,13 +18,13 @@ Amazon Sidewalk is a free-to-connect community network that provides secure and 
 The WisBlock modules in the kit eliminate the need for a prototype board. Just plug the modules together and power them via a USB port or another power source.
 
 :::warning ⚠️ NOTE
-Amazon Sidewalk is only available in selected areas in the USA, including the testing or use of a Sidewalk device. Check out the coverage map at [Amazon Sidewalk Coverage.](https://coverage.sidewalk.amazon/)     
-    
-For development, any Sidewalk gateway functionality might be used outside of the US, but it should be used **ONLY** for Amazon Sidewalk endpoint development purposes. Developers are solely responsible for ensuring compliance with local regulations. Please consult with your local regulatory bodies and check if the gateway is allowed to operate its radio in your locale, as US license-free band devices, only for development. Developers will also need to use a VPN router that supports OpenVPN Client functionality in conjunction with a cloud VPN service provider, to enable operation outside of the US for your development.   
+Amazon Sidewalk is only available in selected areas in the USA, including the testing or use of a Sidewalk device. Check out the coverage map at [Amazon Sidewalk Coverage.](https://coverage.sidewalk.amazon/)
+
+For development, any Sidewalk gateway functionality might be used outside of the US, but it should be used **ONLY** for Amazon Sidewalk endpoint development purposes. Developers are solely responsible for ensuring compliance with local regulations. Please consult with your local regulatory bodies and check if the gateway is allowed to operate its radio in your locale, as US license-free band devices, only for development. Developers will also need to use a VPN router that supports OpenVPN Client functionality in conjunction with a cloud VPN service provider, to enable operation outside of the US for your development.
 :::
 
 ::: tip 📝 NOTE
-To connect the device to the Sidewalk network, an Amazon Sidewalk compatible device is required. Check the [Amazon Sidewalk Documentation](https://docs.sidewalk.amazon/introduction/sidewalk-gateways.html) for more information.    
+To connect the device to the Sidewalk network, an Amazon Sidewalk compatible device is required. Check the [Amazon Sidewalk Documentation](https://docs.sidewalk.amazon/introduction/sidewalk-gateways.html) for more information.
 :::
 
 # Quick Start Guide
@@ -32,7 +32,7 @@ To connect the device to the Sidewalk network, an Amazon Sidewalk compatible dev
 
 This guide will help you test a RAK4630-based device with Amazon Sidewalk, including sensor data visualization in AWS. It offers fast access to connect the RAK4630 to Amazon Sidewalk. Also, it comes with pre-compiled firmware that you can flash on our WisBlock Core module.
 
-The application used in this guide is based on the Nordics Sidewalk Sensor Monitoring example code. Later on, it was changed to work with the WisBlock RAK4631 Core module (nRF52840 + SX1262 LoRa transceiver) and the RAK1901 temperature and humidity sensor.
+The application used in this guide is based on the Nordics Sidewalk Sensor Monitoring example code. Then, the code was modified to work with the WisBlock Core module (nRF52840 + SX1262 LoRa transceiver) and the RAK1901 temperature and humidity sensor.
 
 For details about the Sidewalk application for RAK4630, refer to [RAK4630-Amazon-Sidewalk-Example repo.](https://github.com/RAKWireless/RAK4630-Amazon-Sidewalk-Example)
 
@@ -40,7 +40,7 @@ For details about the Sidewalk application for RAK4630, refer to [RAK4630-Amazon
 
 ### What Do You Need?
 
-Before going through each and every step of using the RAK4631 Amazon Sidewalk Starter Kit, prepare the necessary items listed below:
+Before going through each and every step of using the RAK4631 Amazon Sidewalk Starter Kit, make sure to prepare the necessary items listed below:
 
 #### Hardware
 
@@ -550,7 +550,7 @@ If the device is in range of an Amazon ECHO Gen4 (or another Sidewalk compatible
 -	A provisioning key is for a single device, and each device needs its own unique key.
 :::
 
-After flashing the firmware, the device should be powered up. You can view the device log output by opening a Serial Terminal application on your computer. If you encounter error messages, it is likely due to one of the following reasons: 
+After flashing the firmware, the device should be powered up. You can view the device log output by opening a Serial Terminal application on your computer. If you encounter error messages, it is likely due to one of the following reasons:
  - missing provisioning key
  - incorrect provisioning key or device profile
  - no Sidewalk device in range

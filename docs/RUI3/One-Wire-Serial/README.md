@@ -33,10 +33,40 @@ This API chooses the pin number for one wire serial and prepare the callback fun
 OneWireSerial(pin, callback)
 ```
 
-| **Function**   | `RAKOneWireSerial(uint32_t pin, rak_onewire_serial_recv_cb callback)` |
-| -------------- | --------------------------------------------------------------------- |
-| **Parameters** | pin - the pin number <br> callback - the callback for receiving data  |
-| **Returns**    | void                                                                  |
+| **Function**   | `RAKOneWireSerial(uint32_t pin, rak_onewire_serial_recv_cb callback)`                                                                                                                                                                                   |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Parameters** | **pin** - the pin number <br> ONLY UART1_RXD_PIN and UART1_TXD_PIN are supported <br> **callback** - the callback for receiving data <br> _**not functional in RUI3 V4.1.0**_ |
+| **Returns**    | void                                                                                                                                                                                |
+
+:::warning ⚠️ WARNING
+The callback function is not functional in RUI3 V4.1.0. Use NULL while declaring the instance!
+:::
+
+:::warning ⚠️ WARNING
+Available pins for OneWire are only UART1_RXD_PIN and UART1_TXD_PIN!
+:::
+
+::: details Click to View Example
+```c{21}
+       RAKOneWireSerial onewire(UART1_RXD_PIN,NULL);
+
+       void setup()
+       {
+           Serial.begin(115200);
+           onewire.begin(115200, RAK_CUSTOM_MODE);
+       }
+
+       void loop()
+       {
+            onewire.write("data\r\n");
+            while(onewire.available())
+            {
+                char a = onewire.read();
+                Serial.printf("%c",a);
+            }
+       }
+```
+:::
 
 ## begin
 
@@ -51,6 +81,27 @@ begin(baud, mode)
 | **Parameters** | baud - the baud rate <br> mode - option, should be RAK_DEFAULT_MODE   |
 | **Returns**    | void                                                                  |
 
+::: details Click to View Example
+```c{21}
+       RAKOneWireSerial onewire(UART1_RXD_PIN,NULL);
+       void setup()
+       {
+           Serial.begin(115200);
+           onewire.begin(115200, RAK_CUSTOM_MODE);
+       }
+
+       void loop()
+       {
+            onewire.write("data\r\n");
+            while(onewire.available())
+            {
+                char a = onewire.read();
+                Serial.printf("%c",a);
+            }
+       }
+```
+:::
+
 ## write
 
 This API writes a byte sequence to a specified one wire serial port.
@@ -64,6 +115,27 @@ write(buf, size)
 | **Parameters** | buf - pointer to data buffer <br> size - number of bytes to send   |
 | **Returns**    | size_t - the number of bytes sent successfully                     |
 
+::: details Click to View Example
+```c{21}
+       RAKOneWireSerial onewire(UART1_RXD_PIN,NULL);
+       void setup()
+       {
+           Serial.begin(115200);
+           onewire.begin(115200, RAK_CUSTOM_MODE);
+       }
+
+       void loop()
+       {
+            onewire.write("data\r\n");
+            while(onewire.available())
+            {
+                char a = onewire.read();
+                Serial.printf("%c",a);
+            }
+       }
+```
+:::
+
 ## available
 
 This API gets the number of bytes available for reading from the specified one wire serial port.
@@ -76,6 +148,27 @@ available()
 | -------------- | ------------------------------------------------------------------ |
 | **Returns**    | int - the number of bytes available for reading                    |
 
+::: details Click to View Example
+```c{21}
+       RAKOneWireSerial onewire(UART1_RXD_PIN,NULL);
+       void setup()
+       {
+           Serial.begin(115200);
+           onewire.begin(115200, RAK_CUSTOM_MODE);
+       }
+
+       void loop()
+       {
+            onewire.write("data\r\n");
+            while(onewire.available())
+            {
+                char a = onewire.read();
+                Serial.printf("%c",a);
+            }
+       }
+```
+:::
+
 ## read
 
 This API gets the number of bytes available for reading from the specified one wire serial port.
@@ -87,6 +180,27 @@ read()
 | **Function**   | `int read(void)`                       |
 | -------------- | -------------------------------------- |
 | **Returns**    | int - the byte read or -1 on read fail |
+
+::: details Click to View Example
+```c{21}
+       RAKOneWireSerial onewire(UART1_RXD_PIN,NULL);
+       void setup()
+       {
+           Serial.begin(115200);
+           onewire.begin(115200, RAK_CUSTOM_MODE);
+       }
+
+       void loop()
+       {
+            onewire.write("data\r\n");
+            while(onewire.available())
+            {
+                char a = onewire.read();
+                Serial.printf("%c",a);
+            }
+       }
+```
+:::
 
 ## end
 

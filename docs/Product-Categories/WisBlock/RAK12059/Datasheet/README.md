@@ -5,7 +5,7 @@ tags:
   - datasheet
   - wisblock
   - RAK12059
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 ---
 
@@ -26,10 +26,13 @@ RAK12059 is a WisBlock Liquid Level Sensor module that extends the WisBlock syst
 ### Product Features
 
 * **Sensor specifications**
-    *  Active sensor length：213&nbsp;mm x 315&nbsp;mm x 618&nbsp;mm
+    *  Active sensor length of MILONE eTape:
+        * 213&nbsp;mm (12110215TC-8TJ)
+        * 315&nbsp;mm (12110215TC-12TJ)
+        * 618&nbsp;mm (12110215TC-24TJ)
     *  I2C interface
     *  3.3&nbsp;V power supply
-    *  Operating temperature range：-9&nbsp;°C to +65&nbsp;°C
+    *  eTape operating temperature range：-9&nbsp;°C to +65&nbsp;°C
 
 * **Size**
     * 10 x 23&nbsp;mm

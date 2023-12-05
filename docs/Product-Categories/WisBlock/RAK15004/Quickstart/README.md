@@ -74,7 +74,7 @@ The procedure in disassembling any type of WisBlock modules is the same.
   caption="Detaching silkscreen on the WisBlock module"
 />
 
-3. Detach the module from the baseboard by applying force to the module at the position of the connector. As shown in **Figure 4**.
+3. Detach the module from the baseboard by applying force to the module at the position of the connector, as shown in **Figure 4**.
 
 <rk-img
   src="/assets/images/wisblock/rak15004/quickstart/detaching-module.png"
