@@ -2646,7 +2646,7 @@ If BOOT mode is not initiated, you can manually send `AT+BOOT` command to start 
     - [RAK3272S Firmware](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/Datasheet/#firmware-os)
 
 2.  Download the RAK Device Firmware Upgrade (DFU) tool.
-    - [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
+    - [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/#LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
 
 3.  Connect the RAK3272S Breakout Board to the computer via a USB-Serial adapter. Refer to [**Figure 21**](#connect-to-the-rak3272s-breakout-board).
 

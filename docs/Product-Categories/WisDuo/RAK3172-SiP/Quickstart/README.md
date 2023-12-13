@@ -105,7 +105,7 @@ You can also use an RP-SMA connector in J2 where you can connect the LoRa [anten
 
 
 :::tip 📝 NOTE
-Detailed information about the RAK3172-SiP LoRa antenna can be found on the [IPEX PCB](https://downloads.rakwireless.com/#LoRa/WisBlock/Accessories/) and [RP-SMA](https://downloads.rakwireless.com/Accessories/Antenna/SMA-Antenna/) antenna datasheet.
+Detailed information about the RAK3172-SiP LoRa antenna can be found on the [IPEX PCB](https://downloads.rakwireless.com/#LoRa/WisBlock/Accessories/) and [RP-SMA](https://downloads.rakwireless.com/#Accessories/Antenna/SMA-Antenna/) antenna datasheet.
 :::
 
 :::warning ⚠️ WARNING
@@ -2645,7 +2645,7 @@ Execute the following procedure to upgrade the firmware in Device Firmware Upgra
     - [RAK3172-SiP Firmware](/Product-Categories/WisDuo/RAK3172-SiP/Datasheet/#firmware-os)
 
 2.  Download the RAK Device Firmware Upgrade (DFU) tool.
-    - [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
+    - [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/#LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
 
 3.  Connect the RAK3172-SiP with a computer through a USB to a Serial converter. Refer to [**Figure 26**](/Product-Categories/WisDuo/RAK3172-SiP/Quickstart/#connect-to-the-rak3172-sip).
 

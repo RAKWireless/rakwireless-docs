@@ -630,7 +630,7 @@ adafruit-nrfutil.exe --verbose dfu serial --package rui3_nrf52840_bootloader_lat
   caption="COM Port Change"
 />
 
-2. Download [nrfutil.exe](https://github.com/NordicSemiconductor/pc-nrfutil/releases) and the [rui3_rak4631_latest](https://downloads.rakwireless.com/RUI/RUI3/Bootloader%20Upgrade/)RUI3 FW which is specifically designed for the RAK4631's conversion to RAK4631-R. Then place the two files on `RAK4631 Bootloader to RUI v3` folder.
+2. Download [nrfutil.exe](https://github.com/NordicSemiconductor/pc-nrfutil/releases) and the [rui3_rak4631_latest](https://downloads.rakwireless.com/#RUI/RUI3/Bootloader%20Upgrade/)RUI3 FW which is specifically designed for the RAK4631's conversion to RAK4631-R. Then place the two files on `RAK4631 Bootloader to RUI v3` folder.
 
 <rk-img
   src="/assets/images/wisblock/rak4631-r/dfu/5_nrfutil_rui3_fw.png"

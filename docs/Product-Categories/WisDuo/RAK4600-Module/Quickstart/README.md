@@ -1275,7 +1275,7 @@ The table shows the minimum hardware and software required to perform the firmwa
         </tr>
         <tr>
             <td>DFU Package</td>
-            <td><a href="https://downloads.rakwireless.com/LoRa/RAK4600/Firmware/DFU-Package/">https://downloads.rakwireless.com/LoRa/RAK4600/Firmware/DFU-Package/</a></td>
+            <td><a href="https://downloads.rakwireless.com/#LoRa/RAK4600/Firmware/DFU-Package/">https://downloads.rakwireless.com/#LoRa/RAK4600/Firmware/DFU-Package/</a></td>
         </tr>
         <tr>
             <td>nRF connect app</td>

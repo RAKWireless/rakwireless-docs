@@ -32,7 +32,7 @@ Before going through each and every step in the installation guide of the RAK720
 
 ### Interfacing with the RAK7201 WisNode Button 4K
 
-For you to be able to interface with the RAK7201 WisNode Button 4K with your Windows Machine, you need to download the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip).
+For you to be able to interface with the RAK7201 WisNode Button 4K with your Windows Machine, you need to download the [RAK Serial Port Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip).
 
 1. Connect your RAK7201 WisNode Button 4K to your Windows Machine using the provided Micro USB cable.
 
@@ -128,7 +128,7 @@ Fill in a name of your choosing. The **Dev EUI**, **App EUI**, and **App Key** w
   caption="Helium devices"
 />
 
-Now, your RAK7201 is registered and is awaiting activation. For this to happen we need to import the Dev EUI, App EUI and App Key in the RAK7201 using the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip).
+Now, your RAK7201 is registered and is awaiting activation. For this to happen we need to import the Dev EUI, App EUI and App Key in the RAK7201 using the [RAK Serial Port Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip).
 
 Open the tool, select the desired port (default baud rate) and open it. Hold Button 1 for 3 seconds to enter configuration mode and start importing your settings.
 

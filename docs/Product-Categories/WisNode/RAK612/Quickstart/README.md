@@ -413,7 +413,7 @@ Listed below are the default messages send by the RAK612 WisNode Button whenever
 
 #### Customizing
 
-To fully customize the messages sent by the RAK612 WisNode Button in each key pressed, we must configure it using the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip) with the AT Command below:
+To fully customize the messages sent by the RAK612 WisNode Button in each key pressed, we must configure it using the [RAK Serial Port Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip) with the AT Command below:
 
 ```sh
 at+key_config=<key>,<frame_port>,<message>

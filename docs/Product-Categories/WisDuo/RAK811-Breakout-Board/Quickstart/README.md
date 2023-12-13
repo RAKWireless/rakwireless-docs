@@ -1018,7 +1018,7 @@ Execute the following procedure to upgrade the firmware in Device Firmware Upgra
 
 6. Now, **CLOSE** the upgrade tool and **OPEN** the serial port too, again.
 
-- It is recommended to use the RAK serial port tool since there are some ready AT commands in this tool that are very useful for you. You can get it from RAK website available for free at this **[RAK directory](https://downloads.rakwireless.com/en/LoRa/RAK811/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip)**.
+- It is recommended to use the RAK serial port tool since there are some ready AT commands in this tool that are very useful for you. You can get it from RAK website available for free at this **[RAK directory](https://downloads.rakwireless.com/LoRa/RAK811/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip)**.
 
 7. Choose the correct **COM port** and set the baud rate to **115200**. Then, open the serial port and enter the AT command shown below to restart. Another option is to press the **RST** button on the RAK811 Breakout Board.
 

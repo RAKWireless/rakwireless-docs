@@ -32,7 +32,7 @@ Before going through each and every step in the installation guide of the RAK720
 
 ### Interfacing With the RAK7201V2 WisNode Button 4K
 
-For you to be able to interface with the RAK7201V2 WisNode Button 4K with your Windows machine, you need to download the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip).
+For you to be able to interface with the RAK7201V2 WisNode Button 4K with your Windows machine, you need to download the [RAK Serial Port Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip).
 
 1. Connect your RAK7201V2 WisNode Button 4K to your Windows machine using the provided Micro USB cable.
 
