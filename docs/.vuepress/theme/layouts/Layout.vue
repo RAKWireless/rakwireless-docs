@@ -3,6 +3,8 @@
     <q-layout view="hHh LpR lfr">
       <div id="lt-md-div" class="lt-md"></div>
       <q-header class="bg-primary text-white">
+        <rk-banner-text :bgColor="'#31B468'"/>
+
         <q-toolbar style="height: 70px">
           <q-btn
             flat
@@ -12,7 +14,9 @@
             :icon="showDrawer ? 'menu_open' : 'menu'"
             class="lt-md"
           />
+
           <div class="full-height flex flex-center">
+
             <q-item :to="`/`" class="q-pa-none full-height text-white">
               <q-item-section class="q-pa-none" side>
                 <!-- <a href="/"> -->
@@ -124,6 +128,7 @@ import { Screen } from 'quasar'
 import debounce from 'lodash.debounce'
 import RkFaqFooter from '../../components/RkFaqFooter.vue'
 import RkBanner from '@theme/components/RkBanner.vue'
+import RkBannerText from '@theme/components/RkBannerText.vue'
 
 function findPos(obj) {
     var curtop = 0;
@@ -150,7 +155,8 @@ export default {
     RkHeader,
     RkZoom,
     RkSearchBox,
-    RkBanner
+    RkBanner,
+    RkBannerText
   },
   mixins:
     [ScrollMixin, TagsMixin, CommonMixin],
