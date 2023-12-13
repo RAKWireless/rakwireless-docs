@@ -137,6 +137,11 @@ module.exports = {
           collapsed: true,
           children : [
             {
+              title : 'December 4',
+              path : '/Release-Notes/WisDM/2023/December-4',
+              collapsable: false
+            },
+            {
               title : 'November 1',
               path : '/Release-Notes/WisDM/2023/November-1',
               collapsable: false
