@@ -15,7 +15,9 @@ logo: /assets/rakwireless/product-categories/WisDM.png
 
 | No. | Feature                           | Description                                                                                                                                                                             |
 | --- | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | ChirpStack V4 MQTT Bridge Support | For customer who uses packet forwarder mode with LoRa Gateway MQTT Bridge Parameters, in the the MQTT protocol of the MQTT bridge, the support on ChirpStack V4 (MQTT Bridge) is added. |
+| 1   | ChirpStack V4 MQTT Bridge Support | For customers using the latest ChirpStack V4 LoRa Network Server, we added MQTT Bridge support, which will allow the utilization of the multi-region prefix for the ChirpStack V4. <br> 📝 <b> NOTE</b>: The MQTT for ChirpStack V4 is available for version 2 RAK gateways running WisGateOS2 2.2.x. |
+
+
 
 ##### Changed
 
@@ -23,7 +25,7 @@ logo: /assets/rakwireless/product-categories/WisDM.png
 | --- | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1   | Billing Permissions Identification | Customers within an organization can easily identify members with billing permissions in the organization member list.                                              |
 | 2   | Default Shipping Address           | The shipping address now defaults to the billing address on the Billing Information page for ease of use.                                                           |
-| 3   | Tooltip for Tax ID Types           | A tooltip has been added to guide users through the supported Tax ID types on the Billing Information page.                                                         |
-| 4   | Enhanced Navigation                | Customers can now return to their location after navigating to a gateway instead of being forwarded to the gateway list for a smoother experience.                  |
-| 5   | Infobox for APN Acquisition        | An infobox now provides guidance on obtaining APN for improved connectivity.                                                                                        |
-| 6   | Upgrade & Downgrade Options        | Enhance the UI on the button for subscriptions to make it easier to understand, whether it's for the Upgrade Subscription option or access the See All Plans option.|
+| 3   | Tooltip for Tax ID Types           | A tooltip has been added to guide users on the supported Tax ID types on the Billing Information page.                                                         |
+| 4   | Enhanced Navigation                | Users will be returned to their location after navigating to a gateway instead of being forwarded to the gateway list for a smoother experience.                 |
+| 5   | Infobox for APN Acquisition        | An infobox now provides guidance on obtaining an APN for improved connectivity.                                                                                    |
+| 6   | Upgrade & Downgrade Options        | Enhance the UI on the button for subscriptions to make it easier to understand, whether it's for the Upgrade Subscription option or Access the See All Plans option.|
