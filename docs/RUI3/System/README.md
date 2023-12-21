@@ -60,11 +60,12 @@ enum RUI_WAKEUP_TRIGGER_MODE
 | RUI_WAKEUP_FALLING_EDGE | RUI wakeup on falling edge of GPIO |
 
 ## Device Information
+
 ### Firmware Version
 
 #### get()
 
-This api allows user to get the firmware version.
+This API allows user to get the firmware version.
 
 ```c
 api.system.firmwareVersion.get()
@@ -95,7 +96,7 @@ void loop()
 
 #### get()
 
-This api allows user to get the cli version.
+This API allows user to get the cli version.
 
 ```c
 api.system.cliVersion.get()
@@ -127,7 +128,7 @@ void loop()
 
 #### get()
 
-This api allows user to get the api version.
+This API allows user to get the API version.
 
 ```c
 api.system.apiVersion.get()
@@ -136,7 +137,7 @@ api.system.apiVersion.get()
 
 | **Function** | `const string get()`      |
 | ------------ | ------------------------- |
-| **Returns**  | api version(Type: string) |
+| **Returns**  | API version(Type: string) |
 
 
 ::: details Click to View Example
@@ -158,7 +159,7 @@ void loop()
 
 #### get()
 
-This api allows user to get the mode ID.
+This API allows user to get the mode ID.
 
 ```c
 api.system.modelId.get()
@@ -189,7 +190,7 @@ void loop()
 
 #### get()
 
-This api allows user to get the chip ID.
+This API allows user to get the chip ID.
 
 ```c
 api.system.chipId.get()
@@ -215,7 +216,6 @@ void loop()
 }
 ```
 :::
-
 
 ### Battery
 
@@ -261,7 +261,7 @@ api.system.flash.get(offset, buf, len)
 
 | **Function**   | `bool get(uint32_t offset, uint8_t * buf, uint32_t len)`                                                                                                                                                                                                                                                                                                                                    |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Parameters** | **offset** the offset to the start of user flash partition (The sum of offset and length can't exceed 0x7800. If the chip is nRF52840(e.g. RAK4631), this limitation becomes 0x20000) <br> **buf** the buffer for reading the data <br>**len**the length of data (The sum of offset and length can't exceed 0x7800. If the chip is nRF52840(e.g. RAK4631), this limitation becomes 0x20000) |
+| **Parameters** | **offset** - the offset to the start of user flash partition (The sum of offset and length can't exceed 0x7800. If the chip is nRF52840(e.g. RAK4631), this limitation becomes 0x20000) <br> **buf** - the buffer for reading the data <br>**len** - the length of data (The sum of offset and length can't exceed 0x7800. If the chip is nRF52840(e.g. RAK4631), this limitation becomes 0x20000) |
 | **Returns**    | **TRUE**	for reading data successfully <br> **FALSE** for reading data failure                                                                                                                                                                                                                                                                                                              |
 ::: details Click to View Example
 ```c{8}
@@ -314,7 +314,7 @@ api.system.flash.set(offset, buf, len)
 
 | **Function**   | `bool set(uint32_t offset, uint8_t * buf, uint32_t len)`                                                                                                                                                                                                                                                                                                                                    |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Parameters** | **offset** the offset to the start of user flash partition (The sum of offset and length can't exceed 0x7800. If the chip is nRF52840(e.g. RAK4631), this limitation becomes 0x20000) <br> **buf** the buffer for writing the data <br>**len**the length of data (The sum of offset and length can't exceed 0x7800. If the chip is nRF52840(e.g. RAK4631), this limitation becomes 0x20000) |
+| **Parameters** | **offset** - the offset to the start of user flash partition (The sum of offset and length can't exceed 0x7800. If the chip is nRF52840(e.g. RAK4631), this limitation becomes 0x20000) <br> **buf** - the buffer for writing the data <br>**len** - the length of data (The sum of offset and length can't exceed 0x7800. If the chip is nRF52840(e.g. RAK4631), this limitation becomes 0x20000) |
 | **Returns**    | **TRUE**	for writing data successfully <br> **FALSE** for writing data failure                                                                                                                                                                                                                                                                                                              |
 ::: details Click to View Example
 ```c{8}
@@ -385,7 +385,7 @@ api.system.timer.create()
 
 | **Function**   | `bool api.system.timer.create(id, handler, mode)`                                                                                                               |
 | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Parameters** | **id** is the Timer ID<br>**handler** the handler function for this Timer<br>**mode** the mode of this Timer (**RAK_TIMER_ONESHOT** or **RAK_TIMER_PERIODIC** ) |
+| **Parameters** | **id** - is the Timer ID<br>**handler** - the handler function for this Timer<br>**mode** - the mode of this Timer (**RAK_TIMER_ONESHOT** or **RAK_TIMER_PERIODIC** ) |
 | **Returns**    | **TRUE**	for creating Timer successfully <br> **FALSE** for creating Timer failure                                                                              |
 
 :::details Click to View Example
@@ -417,7 +417,7 @@ api.system.timer.start()
 ```
 | **Function**   | `bool api.system.timer.start(id, ms, data)`                                                                                    |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| **Parameters** | **id**  is the Timer ID<br>**ms** is the period of Timer (milliseconds)<br> **data** the data passed to Timer handler function |
+| **Parameters** | **id** - is the Timer ID<br>**ms** - is the period of Timer (milliseconds)<br> **data** - the data passed to Timer handler function |
 | **Returns**    | **TRUE**	for starting  Timer successfully <br> **FALSE** for starting Timer failure                                            |
 
 ### stop()
@@ -427,7 +427,7 @@ api.system.timer.stop()
 ```
 | **Function**   | `bool api.system.timer.stop(id)`                                                 |
 | -------------- | -------------------------------------------------------------------------------- |
-| **Parameters** | **id**  is the Timer ID                                                          |
+| **Parameters** | **id** - is the Timer ID                                                          |
 | **Returns**    | **TRUE**	for stoping Timer successfully <br> **FALSE** for stoping Timer failure |
 
 
@@ -589,12 +589,81 @@ void loop()
 :::
 
 
+### lpm
+
+This API allows to set and get the low power mode of the device.
+
+### get()
+
+Gets up the low power mode status.
+
+```c
+uint8_t api.system.lpm.get(void);
+```
+
+| **Function**   | `uint8_t get(void)`                                                                         |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| **Returns**    | **uint8_t** - Low Power Mode 0 == off, 1 == on                                                                                   |
+
+
+:::details Click to View Example
+```c{3}
+void setup()
+{
+	Serial.begin(115200);
+
+	Serial.printf("Set the low power mode %s\n\r", api.system.lpm.set(1) ? "Success" : "Fail");
+}
+
+void loop()
+{
+	Serial.printf("The low power mode = %d\n\r", api.system.lpm.get());
+
+	delay(1000);
+}
+```
+:::
+
+### set()
+
+Set up the low power mode.
+
+```c
+bool api.system.lpm.set(uint8_t value);
+```
+
+| **Function**   | `uint8_t get(void)`                                                                              |
+| -------------- | ------------------------------------------------------------------------------------------------ |
+| **Parameters** | **value** - Low Power Mode 0 == off, 1 == on                                                     |
+| **Returns**    | **bool** - TRUE if low power mode could be enabled or disabled, FALSE if failure (not supported) |
+
+
+:::details Click to View Example
+```c{3}
+void setup()
+{
+	Serial.begin(115200);
+
+	Serial.printf("Set the low power mode %s\n\r", api.system.lpm.set(1) ? "Success" : "Fail");
+}
+
+void loop()
+{
+	Serial.printf("The low power mode = %d\n\r", api.system.lpm.get());
+
+	delay(1000);
+}
+```
+:::
+
+
 ## Serial
 
 ### pword
+
 #### set()
 
-This api allows user to set a 1~8 digits password to lock the default serial.
+This API allows user to set a 1~8 digits password to lock the default serial.
 
 ```c
 api.system.pword.set(passwd_Str)
@@ -636,7 +705,7 @@ void loop()
 
 #### lock()
 
-This api allows user to lock the default serial with the pass set in `api.system.pword.set()`.
+This API allows user to lock the default serial with the pass set in `api.system.pword.set()`.
 
 ::: tip 📝 NOTE
 If you never set a password successfully, the default password will be **00000000**.
@@ -676,7 +745,7 @@ void loop()
 
 
 #### unlock()
-This api allows user to unlock the default serial without password when its locked.
+This API allows user to unlock the default serial without password when its locked.
 
 ```c
 api.system.pword.unlock()
@@ -788,7 +857,7 @@ api.system.atMode.add(cmd, usage, title, handle, perm)
 
 | **Function**   | `bool add(char *cmd, char *usage, char *title, PF_handle handle,unsigned int perm = RAK_ATCMD_PERM_WRITE                                                                                                  | RAK_ATCMD_PERM_READ);` |
 | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Parameters** | **cmd** - the cmd to define cmd name <br> **usage** - the cmd usage <br> **title** - the cmd title <br> **handle** - the handler that this command will execute <br>**perm**	the cmd execution permission |
+| **Parameters** | **cmd** - the cmd to define cmd name <br> **usage** - the cmd usage <br> **title** - the cmd title <br> **handle** - the handler that this command will execute <br>**perm**	- the cmd execution permission |
 
 
 :::details Click to View Example

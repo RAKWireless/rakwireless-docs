@@ -50,11 +50,12 @@ This section provides the instructions on mounting and securing the mounting kit
 
 1. Fix the bracket included in the mounting kit on the bottom of the enclosure with four M6*12 screws.
 
+
 <rk-img
   src="/assets/images/wisgate/rak7289-v2/quickstart/2.mounting.png"
   width="50%"
   caption="Mounting the bracket to the enclosure"
-
+/>
 
 
 2. Position and tighten the pole clamps together around the pole with bolts, washers, and nuts. 
@@ -67,16 +68,17 @@ This section provides the instructions on mounting and securing the mounting kit
 
 :::tip 📝 NOTE
 
-The diameter of the pole that is supported by the brackets is 50-100&nbsp;mm. If the pole diameter is more than this value, hose clamps can be used. The standard mounting kit does not include hose clamps. If needed, they should be purchased separately. 
-
-:::
+The diameter of the pole that is supported by the brackets is 50-100&nbsp;mm. If the pole diameter is more than this value, hose clamps can be used. The standard mounting kit does not include hose clamps. If needed, they should be purchased separately.
 
 The clamp's back also has openings for hose clamps that are not included in the mounting kit.
+
+:::
 
 <rk-img
   src="/assets/images/wisgate/rak7289-v2/quickstart/4.hose-clamps.png"
   width="35%"
   caption="Mounting using hose clamps"
+/>
 
 3. Hang up the enclosure and fasten it with two M6*12 screws.
 
@@ -97,7 +99,6 @@ The clamp's back also has openings for hose clamps that are not included in the 
   width="50%"
   caption="Connecting the PoE adapter"
 />
-
 
 #### Weather Protection
 
@@ -129,7 +130,8 @@ To better protect the Ethernet cable gland and the antenna connector from the we
 
 
 #### Lightning Protection
-In this section, how to set up lightning surge protection system, whether your RAK7289 V2 WisGate Edge Pro V2 is situated outdoor or indoor, will be discussed. Such a protection system must be taken into consideration to ensure a fully functional gateway without interruption or damage from the lighting.               
+
+This section covers the installation of the lightning surge protection system, addressing both indoor and outdoor placements of your RAK7289 V2 WisGate Edge Pro V2. Such a protection system must be taken into consideration to make sure of a fully functional gateway without interruption or damage from the lighting.               
 
 <rk-img
   src="/assets/images/wisgate/rak7289-v2/quickstart/10.lightning-protection.jpg"
@@ -139,7 +141,7 @@ In this section, how to set up lightning surge protection system, whether your R
 
 ##### Outdoor Surge Protection System
 
-- **Antenna Grounding** - RAKwireless recommends a lightning arrestor to be installed on all the antenna N-type terminals. The arrestors have to be N-type Female to Male in order to fit the antenna and enclosure connectors. Make sure you use a 10 AWG or better wire to connect the screw terminals of the arrestors to the grounding rail mounted on the building wall (grounding bar in case of field deployment).
+- **Antenna Grounding** - RAKwireless recommends a lightning arrestor to be installed on all the antenna N-type terminals. The arrestors have to be N-type Female to Male to fit the antenna and enclosure connectors. Make sure you use a 10 AWG or better wire to connect the screw terminals of the arrestors to the grounding rail mounted on the building wall (grounding bar in case of field deployment).
 - **Gateway Grounding** - Additionally, it is recommended to use another 10 AWG or better grounding wire to connect the screw terminal on the bottom left side of the gateway casing to the grounding rail (bar).
 
 :::tip 📝 NOTE
@@ -203,7 +205,7 @@ Do not power the device if the LoRa antenna port has been left open to avoid pot
 
 By default, the gateway will work in Wi-Fi AP Mode, which means that you can find an SSID, named **"RAK7289_XXXX"** on your PC's Wi-Fi Network List. **"XXXX"** is the last two bytes of the Gateway MAC address. 
 
-To access the Web Management Platform, input the IP Address **192.168.230.1** in your Web browser.
+1. To access the Web Management Platform, input the following IP Address in your Web browser: `192.168.230.1`.
 
 
 <rk-img
@@ -255,7 +257,7 @@ No password is required to connect via Wi-Fi.
 
 In this example, you can access the gateway on the `169.254.15.1` address.
 
-####  3.3 Set Login Password
+####  Set Login Password
 
 1. For security reasons, upon the first login, you must set a login password. This is done by filling in the desired password and confirming it in the provided fields. The password needs to comply with the following rules:
 
@@ -297,7 +299,7 @@ In this example, you can access the gateway on the `169.254.15.1` address.
 
 <rk-img
   src="/assets/images/wisgate/rak7289-v2/quickstart/20.access-using-wifi.jpg"
-  width="50%"
+  width="70%"
   caption="Accessing the Internet using Wi-Fi"
 />
 
@@ -324,7 +326,7 @@ Assuming you have entered the correct parameter values, you should get an IP add
 
 <rk-img
   src="/assets/images/wisgate/rak7289-v2/quickstart/22.access-thru-ethernet.jpg"
-  width="50%"
+  width="70%"
   caption="Accessing the Internet through Ethernet"
 />
 

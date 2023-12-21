@@ -211,10 +211,10 @@ For the reference application schematic of RAK3172 with minimum components requi
 
 ##### Operating Temperature
 
-| Module               | Minimum | Typical | Maximum | Unit |
-| --------------------- | ------- | ------- | ------- | ---- |
-| RAK3172               | -20     | 25      | 85      | °C   |
-| RAK3172-T             | -40     | 25      | 85      | °C   |
+| Module    | Minimum | Typical | Maximum | Unit |
+| --------- | ------- | ------- | ------- | ---- |
+| RAK3172   | -20     | 25      | 85      | °C   |
+| RAK3172-T | -40     | 25      | 85      | °C   |
 
 ##### Storage Temperature
 
@@ -259,7 +259,7 @@ RAK3172 should automatically go to BOOT mode when the firmware is uploaded via R
 If BOOT mode is not initiated, you can manually send `AT+BOOT` command to start bootloader mode.
 :::
 
-#### Firmware / OS
+### Firmware
 
 | Model            | Version                                                          | Source                                                                                          |
 | ---------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
@@ -274,6 +274,32 @@ There are RAK3172 devices loaded with old firmware versions which are not based 
 
 If the host microcontroller code is based on this old firmware, we have a [RAK3172 AT Command migration guide](https://docs.rakwireless.com/Knowledge-Hub/Learn/AT-Migration-Guide/) that explain in detail the few differences between the two AT commands set.
 :::
+
+## Models and Bundles
+
+### Ordering Information
+
+| P/N                | Model     | TXCO         | Antenna Interface | Frequency                           | SKU    |
+| ------------------ | --------- | ------------ | ----------------- | ----------------------------------- | ------ |
+| RAK3172-8-SM-NI    | RAK3172   | Without TCXO | No IPEX           | 8XX MHz for RU864/IN865/EU868       | 305044 |
+| RAK3172-9-SM-NI    | RAK3172   | Without TCXO | No IPEX           | 9XX MHz for US915/AU915/KR920/AS923 | 306041 |
+| RAK3172-43-SM-NI   | RAK3172   | Without TCXO | No IPEX           | EU433                               | 301026 |
+| RAK3172-47-SM-NI   | RAK3172   | Without TCXO | No IPEX           | CN470                               | 302033 |
+| RAK3172-T-8-SM-NI  | RAK3172-T | With TCXO    | No IPEX           | 8XX MHz for RU864/IN865/EU868       | 305054 |
+| RAK3172-T-8-SM-NI  | RAK3172-T | With TCXO    | No IPEX           | 8XX MHz for RU864/IN865/EU868       | 305054 |
+| RAK3172-T-8-SM-NI  | RAK3172-T | With TCXO    | No IPEX           | 8XX MHz for RU864/IN865/EU868       | 305054 |
+| RAK3172-T-9-SM-NI  | RAK3172-T | With TCXO    | No IPEX           | 9XX MHz for US915/AU915/KR920/AS923 | 306051 |
+| RAK3172-T-43-SM-NI | RAK3172-T | With TCXO    | No IPEX           | EU433                               | 301029 |
+| RAK3172-T-47-SM-NI | RAK3172-T | With TCXO    | No IPEX           | CN470                               | 302037 |
+| RAK3172-8-SM-I     | RAK3172   | Without TCXO | With IPEX         | 8XX MHz for RU864/IN865/EU868       | 305045 |
+| RAK3172-9-SM-I     | RAK3172   | Without TCXO | With IPEX         | 9XX MHz for US915/AU915/KR920/AS923 | 306042 |
+| RAK3172-43-SM-I    | RAK3172   | Without TCXO | With IPEX         | EU433                               | 301025 |
+| RAK3172-47-SM-I    | RAK3172   | Without TCXO | With IPEX         | CN470                               | 302032 |
+| RAK3172-T-8-SM-I   | RAK3172-T | With TCXO    | With IPEX         | 8XX MHz for RU864/IN865/EU868       | 305055 |
+| RAK3172-T-9-SM-I   | RAK3172-T | With TCXO    | With IPEX         | 9XX MHz for US915/AU915/KR920/AS923 | 306052 |
+| RAK3172-T-43-SM-I  | RAK3172-T | With TCXO    | With IPEX         | EU433                               | 301030 |
+| RAK3172-T-47-SM-I  | RAK3172-T | With TCXO    | With IPEX         | CN470                               | 302038 |
+
 
 ## Certification
 

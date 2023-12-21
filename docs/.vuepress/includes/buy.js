@@ -855,6 +855,11 @@ export default {
     img: '/assets/images/wisblock/rak15006/RAK15006.png',
     store: 'https://store.rakwireless.com/products/wisblock-512kbyte-fram-nvram-module-rak15006?utm_source=RAK15006&utm_medium=Document&utm_campaign=BuyFromStore'
   },
+  '/Product-Categories/WisBlock/RAK15007/': {
+    label: 'RAK15007 WisBlock 1MByte FRAM Module',
+    img: '/assets/images/wisblock/rak15007/RAK15007.png',
+    store: 'https://store.rakwireless.com/products/wisblock-1mbyte-fram-nvram-module-rak15007?utm_source=RAK15007&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
   '/Product-Categories/WisBlock/RAK16000/': {
     label: 'RAK16000 WisBlock DC Current Module',
     img: '/assets/images/wisblock/rak16000/RAK16000.png',

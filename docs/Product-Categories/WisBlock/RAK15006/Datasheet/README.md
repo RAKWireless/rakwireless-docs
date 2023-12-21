@@ -5,7 +5,7 @@ tags:
   - datasheet
   - wisblock
   - RAK15006
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 ---
 
@@ -85,9 +85,7 @@ The **WisBlock Sensor** connector is used to this module and the IO used for **W
 | IO1    | IO3    | IO5    | IO4    | IO6    | 
 
 ::: tip 📝 NOTE
-
 **RAK15006** should not be plugged in **Slot B** as it is dedicated for **IO2 (WisBlock IO2 pin)** that controls the **3V3_S** voltage output. 
-
 :::
 
 #### Electrical Characteristics

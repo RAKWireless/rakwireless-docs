@@ -11,6 +11,7 @@ rak_img: /assets/images/certifications/certification-banner.jpg
 ### GDPR Compliant
 
 - [<b>Europe Data Protection and Privacy Rules</b>](https://gdpr.eu/)
+- [<b>When and How We Conduct GDPR Compliance Program</b>](https://downloads.rakwireless.com/misc/RAK%20Certificate/RAKwireless%20Attestation%20Letter%20GDPR.pdf)
 - [<b>How We Protect Your Privacy</b>](https://www.rakwireless.com/en-us/legal/privacy-notice)
 
 

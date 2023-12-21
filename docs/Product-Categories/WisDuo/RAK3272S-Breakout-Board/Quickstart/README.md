@@ -1902,7 +1902,7 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3272s-breakout-board/quickstart/ABPConWis_RAK3172_New_31A.png"
+  src="/assets/images/wisduo/rak3272s-breakout-board/quickstart/ABPConWis_RAK3172_New_31.png"
   width="90%"
   caption="Global settings and LoRaWAN keys, ID, EUI"
 />

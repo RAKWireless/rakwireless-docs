@@ -186,23 +186,23 @@ The RAK3172-SiP supports the frequency of operation from 863 to 930&nbsp;Mhz.
 
 | Parameter    | Minimum     | Typical | Maximum | Unit      |
 | ------------ | ----------- | ------- | ------- | --------- |
-| VDD and GPIO | -0.3&nbsp;V |    -    | 3.9     | Volts (V) |
+| VDD and GPIO | -0.3&nbsp;V | -       | 3.9     | Volts (V) |
 
 
 ##### Operating Voltage
 
 | Parameter                             | Minimum | Typical | Maximum | Unit      |
 | ------------------------------------- | ------- | ------- | ------- | --------- |
-| VCC                                   | 1.8     |    -    | 3.6     | Volts (V) |
-| VDDA (ADC or COMP used)               | 1.71    |    -    | 3.6     | Volts (V) |
-| VDDA (VREFBUF used)                   | 2.4     |    -    | 3.6     | Volts (V) |
-| VDDA (ADC, COMP, or VREFBUF not used) | 0       |    -    | 3.6     | Volts (V) |
-| VBAT                                  | 1.55    |    -    | 3.6     | Volts (V) |
-| VDDSMPS                               | 1.8     |    -    | 3.6     | Volts (V) |
-| VDDRF                                 | 1.8     |    -    | 3.6     | Volts (V) |
-| VDDPA                                 | 1.8     |    -    | 3.6     | Volts (V) |
-| VREF+                                 | 2.0     |    -    | VDDA    | Volts (V) |
-| VREF+ (VDDA < 2&nbsp;V)               | VDDA    |    -    | VDDA    | Volts (V) |
+| VCC                                   | 1.8     | -       | 3.6     | Volts (V) |
+| VDDA (ADC or COMP used)               | 1.71    | -       | 3.6     | Volts (V) |
+| VDDA (VREFBUF used)                   | 2.4     | -       | 3.6     | Volts (V) |
+| VDDA (ADC, COMP, or VREFBUF not used) | 0       | -       | 3.6     | Volts (V) |
+| VBAT                                  | 1.55    | -       | 3.6     | Volts (V) |
+| VDDSMPS                               | 1.8     | -       | 3.6     | Volts (V) |
+| VDDRF                                 | 1.8     | -       | 3.6     | Volts (V) |
+| VDDPA                                 | 1.8     | -       | 3.6     | Volts (V) |
+| VREF+                                 | 2.0     | -       | VDDA    | Volts (V) |
+| VREF+ (VDDA < 2&nbsp;V)               | VDDA    | -       | VDDA    | Volts (V) |
 
 
 ##### Operating Current
@@ -325,6 +325,16 @@ Download the latest RAK3172-SiP and RAK3172LP-SiP Breakout Board firmware provid
 | RAK3272-SiP (.hex)   | RUI3 (Bootloader and App) | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3272-SiP_latest_final.hex)   |
 | RAK3272LP-SiP (.bin) | RUI3 (App only)           | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3272LP-SiP_latest.bin)       |
 | RAK3272LP-SiP (.hex) | RUI3 (Bootloader and App) | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3272LP-SiP_latest_final.hex) |
+
+
+## Models and Bundles
+
+### Ordering Information
+
+| P/N                 | Model       | Frequency                           | SKU    |
+| ------------------- | ----------- | ----------------------------------- | ------ |
+| RAK3172-SIP-8-SM-NI | RAK3172-SiP | 8XX MHz for RU864/IN865/EU868       | 305041 |
+| RAK3172-SIP-9-SM-NI | RAK3172-SiP | 9XX MHz for US915/AU915/KR920/AS923 | 306039 |
 
 
 ## Certification
