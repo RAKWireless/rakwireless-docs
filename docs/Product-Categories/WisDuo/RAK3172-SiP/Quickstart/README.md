@@ -19,6 +19,9 @@ This guide covers the following topics:
 - [Connecting with Chirpstack](#connecting-with-chirpstack)
 - [LoRa P2P Mode](#lora-p2p-mode)
 
+::: warning ⚠️ WARNING
+The RAK3172-SiP does not have pre-flashed LoRaWAN credentials and you have to define and setup your own unique credentials for the SiP's.
+:::
 
 ## Prerequisites
 

@@ -3,7 +3,17 @@
     backgroundColor: bgColor
   }">
     <div class="event-banner-content">
-      <a href="https://docs.rakwireless.com/Release-Notes/WisDM/2023/December-4/" class="event-banner-link ">WisDM v1.6.1 is out now. See what's new!</a>
+      <div id="banner-flip">
+        <div>
+          <a href="https://docs.rakwireless.com/Release-Notes/RUI/2023/December-14/" class="event-banner-link ">Check the latest updates of RUI3 v4.1.0!</a>
+        </div>
+        <div>
+          <a href="https://docs.rakwireless.com/Release-Notes/WisDM/2023/December-4/" class="event-banner-link ">WisDM v1.6.2 is out now. See what's new!</a>
+        </div>
+        <div>
+          <a href="https://docs.rakwireless.com/Release-Notes/RUI/2023/December-14/" class="event-banner-link ">Check the latest updates of RUI3 v4.1.0!</a>
+        </div>
+      </div>
       <span @click="closePopUpBanner" class="close-event-banner-btn">
         X
       </span>
@@ -28,7 +38,7 @@
 
 <style scoped>
   .event-banner-text-container {
-    min-height: 50px;
+    height: 50px;
     position: sticky;
     top: 0;
     display: flex;
@@ -64,6 +74,42 @@
     color: #ffffff;
     margin-right: 0.75rem;
     height: 1.75rem;
+  }
+
+  #banner-flip {
+    overflow: hidden;
+    height: 50px;
+  }
+
+  #banner-flip > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #banner-flip > div > a {
+    display: flex;
+    margin-bottom:45px;
+    height:45px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #banner-flip div:first-child {
+    animation: show 10s linear infinite;
+  }
+
+  @keyframes show {
+    0% {margin-top:-270px;}
+    5% {margin-top:-180px;}
+    33% {margin-top:-180px;}
+    38% {margin-top:-90px;}
+    66% {margin-top:-90px;}
+    71% {margin-top:0px;}
+    99.99% {margin-top:0px;}
+    100% {margin-top:-270px;}
   }
 
   @media screen and (max-width: 599px){

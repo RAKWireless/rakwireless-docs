@@ -48,7 +48,7 @@ After connecting your RAK4631-R to WisBlock Base, you can immediately update its
 
 1. [Check the FW version of your RAK4631-R](/Product-Categories/WisBlock/RAK4631-R/DFU/#how-to-check-firmware-version-using-tera-term). If it is not the latest firmware version (you can check the [FW change logs](https://downloads.rakwireless.com/#RUI/RUI3/Image/)), you can update the firmware of your device.
 2. Create a new folder in your `C:\` drive named `RAK4631-R Update`.
-3. Download the [nRFutil.exe](https://github.com/NordicSemiconductor/pc-nrfutil/releases) and the [latest DFU Package](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK4631_latest_dfu_package.zip). Once you downloaded both files, put them in the `RAK4631-R Update` folder you created as shown in Figure 1.
+3. Download the [nRFutil.exe](https://github.com/NordicSemiconductor/pc-nrfutil/releases) and the [latest DFU Package](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK4631_latest_dfu_package.zip). Once you downloaded both files, put them in the `RAK4631-R Update` folder you created as shown in **Figure 1**.
 
 <rk-img
   src="/assets/images/wisblock/rak4631-r/dfu/x2_files_needed.png"
@@ -76,7 +76,13 @@ You have to disconnect the device connection to Tera Term or close it so that th
   caption="AT+BOOT to Initialize Boot Mode"
 />
 
-6. After initiating Boot mode, you can now execute the firmware update. You need to open command prompt and must be in `RAK4631-R Update` folder directory to do the firmware update. This is folder where you place the nRFutil and the latest firmware. You need to input `cd C:/RAK4631-R Update/` followed  by `nrfutil.exe dfu serial -pkg RAK4631_latest_dfu_package.zip -p COM32`. You have to ensure that you have the right `.zip` file name and `COM port number` to avoid errors.
+6. Next to initiating Boot mode, you can now execute the firmware update. To update the firmware, open the command prompt and ensure you're in the folder where you place the nRFutil and the latest firmware.
+
+For this guide, it is in the `RAK4631-R Update` folder directory. Then, input the following:
+   - `cd C:/RAK4631-R Update/`
+   - `nrfutil.exe dfu serial -pkg RAK4631_latest_dfu_package.zip -p COM32`
+
+Make sure that you have the right `.zip` file name and `COM port number` to avoid errors.
 
 <rk-img
   src="/assets/images/wisblock/rak4631-r/dfu/x5_sucesss_nrfutil.png"
@@ -84,14 +90,13 @@ You have to disconnect the device connection to Tera Term or close it so that th
   caption="FW Update Using nRFutil"
 />
 
-7. Congrats on the 100% firmware upload, you can now check if the firmware is successful updated by using `AT+VER=?` command. You can follow the [guide on Tera Term](/Product-Categories/WisBlock/RAK4631-R/DFU/#how-to-check-firmware-version-using-tera-term) to check the firmware version and to confirm if the device is now updated.
+7. You can now check if the firmware is successful updated by using `AT+VER=?` command. To check the firmware version and confirm if the device is updated, follow the [guide on Tera Term.](/Product-Categories/WisBlock/RAK4631-R/DFU/#how-to-check-firmware-version-using-tera-term)
 
 <rk-img
   src="/assets/images/wisblock/rak4631-r/dfu/x6_version_check_ok.png"
   width="70%"
   caption="RAK4631-R Latest Firmware Version Check"
 />
-
 
 
 ### For Linux
@@ -372,7 +377,6 @@ You can upload the Distribution packet (ZIP) file to [iCloud Services](https://w
 Make sure the Bluetooth on your mobile is on.
 
 2. Press the reset button and wait for a couple of seconds.
-
 3. Open the nRF Connect mobile application. You will see all the BLE devices in range in the Scanner list.
 
 <rk-img
@@ -487,7 +491,6 @@ You can upload the Distribution packet (ZIP) file to Google Drive and download i
 Make sure the Bluetooth on your mobile is on.
 
 2. Press the reset button and wait for a couple of seconds.
-
 3. Open the nRF Connect mobile application. You will see all the BLE devices in range in the Scanner list.
 
 <rk-img
@@ -622,7 +625,7 @@ adafruit-nrfutil.exe --verbose dfu serial --package rui3_nrf52840_bootloader_lat
 
 #### Firmware Update via USB
 
-1. After completing the bootloader upgrade, it will change to a new COM port number. It this guide it changed to `COM32` from `COM31`.
+1. After completing the bootloader upgrade, it will change to a new COM port number. It this guide it changed from `COM31` to `COM32`.
 
 <rk-img
   src="/assets/images/wisblock/rak4631-r/dfu/4_comport_change.png"
@@ -630,7 +633,7 @@ adafruit-nrfutil.exe --verbose dfu serial --package rui3_nrf52840_bootloader_lat
   caption="COM Port Change"
 />
 
-2. Download [nrfutil.exe](https://github.com/NordicSemiconductor/pc-nrfutil/releases) and the [rui3_rak4631_latest](https://downloads.rakwireless.com/#RUI/RUI3/Bootloader%20Upgrade/)RUI3 FW which is specifically designed for the RAK4631's conversion to RAK4631-R. Then place the two files on `RAK4631 Bootloader to RUI v3` folder.
+2. Download [nrfutil.exe](https://github.com/NordicSemiconductor/pc-nrfutil/releases/download/v6.1.7/nrfutil.exe) and the [rui3_rak4631_latest](https://downloads.rakwireless.com/RUI/RUI3/Bootloader%20Upgrade/rui3_rak4631_latest.zip) RUI3 FW which is specifically designed for the RAK4631's conversion to RAK4631-R. Then place the two files on `RAK4631 Bootloader to RUI v3` folder.
 
 <rk-img
   src="/assets/images/wisblock/rak4631-r/dfu/5_nrfutil_rui3_fw.png"
@@ -641,7 +644,7 @@ adafruit-nrfutil.exe --verbose dfu serial --package rui3_nrf52840_bootloader_lat
 3. You are now ready to do the firmware update. Open the command prompt and change directory via `cd C:\RAK4631 Bootloader to RUI v3\`. After that, you can now execute the firmware update using the command below.
 
 ```
-nrfutil.exe dfu serial -pkg rui3_rak4631_latest -p COM32
+nrfutil.exe dfu serial -pkg rui3_rak4631_latest.zip -p COM32
 ```
 
 <rk-img
@@ -693,7 +696,7 @@ The -p parameter is RAK4631-R **USB CDC** device name.
 
 #### Firmware Update via USB on Linux
 
-Download the [rui3_rak4631_latest](https://downloads.rakwireless.com/#RUI/RUI3/Bootloader%20Upgrade/) firmware.
+Download the [rui3_rak4631_latest](https://downloads.rakwireless.com/RUI/RUI3/Bootloader%20Upgrade/rui3_rak4631_latest.zip) firmware.
 
 On the download folder, execute the following command:
 
@@ -996,7 +999,7 @@ OK
 
 You have the option to convert your RAK4631-R to RAK4631.
 
-1. Download the necessary files needed for conversion. You need to have the [`rak4631_factory_application.zip`, `rak4631_factory_bootloader.zip`, `rak4631_factory_softdevice.zip`](https://downloads.rakwireless.com/#RUI/RUI3/Bootloader%20Upgrade/), and [nrfutil.exe](https://github.com/NordicSemiconductor/pc-nrfutil/releases) in a common folder.
+1. Download the necessary files needed for conversion. You need to have the [`rak4631_factory_application.zip`, `rak4631_factory_bootloader.zip`, `rak4631_factory_softdevice.zip`](https://downloads.rakwireless.com/RUI/RUI3/Bootloader%20Upgrade/rak4631_factory_softdevice.zip), and [nrfutil.exe](https://github.com/NordicSemiconductor/pc-nrfutil/releases/download/v6.1.7/nrfutil.exe) in a common folder.
 
 2. Create a new folder in your `C:\` drive named `RAK4631 Bootloader to RUI v3` and place all the conversion files you downloaded from the previous step.
 
@@ -1026,7 +1029,8 @@ You have to disconnect the device connection to Tera Term or close it so that th
   caption="AT+BOOT to Initialize Boot Mode"
 />
 
-5. After initiating Boot mode, you can now execute the firmware conversion. Open the command prompt and change directory via `cd C:\RAK4631 Bootloader to RUI v3\`. After that, you can now execute the conversion using the command below.  You have to ensure that you have the right `.zip` file name and `COM port number` to avoid errors.
+5. Next to initiating Boot mode, you can now execute the firmware conversion. Open the command prompt and change directory via `cd C:\RAK4631 Bootloader to RUI v3\`.
+6. Execute the bootloader conversion using the command `nrfutil.exe dfu serial -pkg rak4631_factory_bootloader.zip -p COM5`. Make sure that you have the right `.zip` file name and `COM port number` to avoid errors.
 
 <rk-img
   src="/assets/images/wisblock/rak4631-r/dfu/13_success_nrfutil.png"
@@ -1034,10 +1038,18 @@ You have to disconnect the device connection to Tera Term or close it so that th
   caption="RAK4631-R to RAK4631 Conversion"
 />
 
-6. After the successful upload, you can now see RAK4631 drive detected. This indicates that the device has now the Arduino BSP bootloader on it and ready to be uploaded with firmware created using the WisBlock Arduino BSP and not RUI3. You also need to check the COM port number since it will changed once you convert to Arduino BSP bootloader.
+7. The previous step updated the bootloader of RAK4631. Another requirement is to ensure that the softdevice is compatible with the expected version by the Arduino BSP. To do this, execute the command `adafruit-nrfutil --verbose dfu serial --package rak4631_factory_softdevice.zip -p COM15`. You also have to make sure that you have the right `.zip` file name and `COM port number` to avoid errors. The COM port will likely be different compared to step 5.
+
+<rk-img
+  src="/assets/images/wisblock/rak4631-r/dfu/13_1_update_softdevice.png"
+  width="100%"
+  caption="Updating softdevice"
+/>
+
+8. After the successful upload, you can now see RAK4631 drive detected. This indicates that the device has now the Arduino BSP bootloader on it and ready to be uploaded with firmware created using the WisBlock Arduino BSP and not RUI3. You also need to check the COM port number since it will changed once you convert to Arduino BSP bootloader.
 
 ::: tip 📝 NOTE
-If there is no RAK4631 drive detected, try to double-click on the reset button on the WisBlock Base.
+If there is no RAK4631 drive detected, try to double-click the reset button on the WisBlock Base.
 :::
 
 <rk-img
@@ -1060,11 +1072,11 @@ If there is no RAK4631 drive detected, try to double-click on the reset button o
   caption="Checking COM port via device manager"
 />
 
-<rk-img
+<!-- <rk-img
   src="/assets/images/wisblock/rak4631-r/dfu/x3_port_zoom.png"
   width="40%"
   caption="COM port list"
-/>
+/> -->
 
 4. Launch **Tera Term** and **New Connection** window will open. Click on `Serial` and select the correct serial port on `Port`. To close the window, click on the **OK** button. You can check the co
 

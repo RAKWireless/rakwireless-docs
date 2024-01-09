@@ -104,6 +104,15 @@ The dimension of the battery should not exceed 65 x 44 x 8&nbsp;mm.
   caption="Attach the Antennas"
 />
 
+::: warning ⚠️ WARNING
+Make sure the voltage polarity of the battery's connector matches with the voltage polarity of the connector on the WisBlock Base Board. The **+** wire from the battery must match with the **+** sign next to the battery connector.
+:::
+
+<rk-img
+  src="/assets/images/accessories/rakbox-b3/installation/battery-polarity.png"
+  width="50%"
+  caption="Battery Polarity"
+/>
 
 **Step 7:** Install the cover.
 
@@ -112,3 +121,4 @@ The dimension of the battery should not exceed 65 x 44 x 8&nbsp;mm.
   width="50%"
   caption="Install the Cover"
 />
+

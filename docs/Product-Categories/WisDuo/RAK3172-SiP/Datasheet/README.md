@@ -26,6 +26,10 @@ WisDuo SiP LoRa modules provide a small-size, easy-to-use, low-power solution fo
 
 You can configure the mode and operation of the RAK3172-SiP/RAK3172LP-SiP using AT commands via UART interface or create custom firmware using RUI3 API. RAK3172-SiP/RAK3172LP-SiP are very small in size and offer low-power features that are very suitable for battery-powered applications.
 
+::: warning ⚠️ WARNING
+The RAK3172-SiP does not have pre-flashed LoRaWAN credentials and you have to define and setup your own unique credentials for the SiP's.
+:::
+
 ### Features
 
 - Based on **STM32WLE5JC**

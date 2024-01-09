@@ -17,6 +17,10 @@ RAK3172-SiP is based on the STM32WLE5 chip and it is designed to simplify LoRaWA
 
 The UART serial communication is exposed on the UART2 (also identified as **LPUART1 port**), through **Pin 29 (TX2)** and **Pin 30 (RX2)**. The default parameters of the UART2 communication are **115200 / 8-N-1**. The firmware upgrade is also possible through this port. To get familiar with the pin distribution of this module and find a schematic circuit of a reference application, refer to the [RAK3172-SiP Datasheet](/Product-Categories/WisDuo/RAK3172-SiP/Datasheet).
 
+::: warning ⚠️ WARNING
+The RAK3172-SiP does not have pre-flashed LoRaWAN credentials. In this case, you have to define and setup your own unique credentials for the SiP's.
+:::
+
 ## RUI3 AT Command List
 
 The RAK3172-SiP default firmware is based on [RUI3 (RAKwireless Unified Interface V3)](/RUI3/#overview). You can access the AT command via UART2 by default.

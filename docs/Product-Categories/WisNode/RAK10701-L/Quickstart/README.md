@@ -121,6 +121,10 @@ You can check each guide on how to use the RAK10701-L Field Tester for LoRaWAN i
 - [The Things Network](/Product-Categories/WisNode/RAK10701-L/Quickstart/#rak10701-l-field-tester-guide-for-the-things-network)
 - [Chirpstack (with Datacake integration used as backend)](/Product-Categories/WisNode/RAK10701-L/Quickstart/#rak10701-l-field-tester-guide-for-chirpstack)
 
+Additional information:
+
+- [Packet Frame Format](/Product-Categories/WisNode/RAK10701-P/Quickstart/#packet-frame-format)
+
 :::tip 📝 NOTE:
 This section will focus on the configuration of each network server. The procedure of [Device Configuration of RAK10701-L via WisToolBox](/Product-Categories/WisNode/RAK10701-L/Quickstart/#configuration-of-rak10701-l-using-wistoolbox) is the same for all network server and will be covered in a separate section of the guide.
 :::
@@ -1208,7 +1212,7 @@ width="50%"
 caption="Access Token Field In Datacake"
 />
 
-You can generate a new access token or use the existing one. 
+You can generate a new access token or use the existing one.
 
 9. If everything is done correctly, you should see a trickle of RAW data in the Debug window of Datacake.
 
@@ -1360,7 +1364,7 @@ function Decoder(bytes, fPort) {
 					gw_lat[idx] = rawPayload.rxInfo[idx].location.latitude;
 					gw_long[idx] = rawPayload.rxInfo[idx].location.longitude;
 					break;
-					
+
 				//LORIOT
 				case 4:
 					gw_lat[idx] = rawPayload.gws[0].lat;
@@ -1397,7 +1401,7 @@ function Decoder(bytes, fPort) {
 
 		decoded.maxMod = 1 + parseInt((Math.round(decoded.maxDistance / 250.0)), 10);
 		decoded.minMod = 1 + parseInt((Math.round(decoded.minDistance / 250.0)), 10);
-		
+
 		return decoded;
 	}
 	return null;
@@ -1603,6 +1607,39 @@ The main page shows the last GPS data captured by the device.
   width="35%"
   caption="GPS data"
 />
+
+#### Packet Frame Format
+
+The Uplink packet format send on Fport 1:
+| Byte  | Usage                                                  |
+| ----- | ------------------------------------------------------ |
+| 0 - 5 | GSP position see here for details. Decoding see below  |
+| 6 - 7 | Altitude in meters + 1000&nbsp;m ( 1100 = 100&nbsp;m ) |
+| 8     | HDOP * 10 (11 = 1.1)                                   |
+| 9     | Sats in view                                           |
+
+When the GPS position is invalid of GPS is disable, the frame is fill with 0's.
+
+The downlink response format send on Fport 2:
+| Byte | Usage                               |
+| ---- | ----------------------------------- |
+| 0    | Sequence ID % 255                   |
+| 1    | Min Rssi + 200 (160 = -40&nbsp;dBm) |
+| 2    | Max Rssi + 200 (160 = -40&nbsp;dBm) |
+| 3    | Min Distance step 250&nbsp;m        |
+| 4    | Max Distance step 250&nbsp;m        |
+| 5    | Seen hotspot                        |
+
+The distance is calculated from the GPS position and the gateways position returned by LoRaWAN server meta-data. Under 250&nbsp;m value is 250&nbsp;m, over 32&nbsp;km value is 32&nbsp;km. 0 is considered as invalid response.
+
+The following integration and payload transformation allows to decode the gps position and report is to mapper.
+
+Dicovery uplink format send on Fport 3 (no ack):
+| Byte  | Usage                                                                                              |
+| ----- | -------------------------------------------------------------------------------------------------- |
+| 0 - 5 | [GPS position](https://www.disk91.com/2015/technology/sigfox/telecom-design-sdk-decode-gps-frame/) |
+
+Discovery is sending 10 messages SF10 on every 40 seconds. All the other information comes from the metadata provided by the network server.
 
 
 #### Upgrading the Firmware

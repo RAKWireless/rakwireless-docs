@@ -18,10 +18,19 @@ STM32WL microcontrollers feature a sub-GHz radio based on Semtech SX126x to meet
 
 While RAK3172 has a built-in default FW with a set of AT commands that can be interfaced to an external host like other microcontrollers, it can also be used by developing custom firmware directly on its chip using the STM32WL SDK from STMicroelectronics. Doing this approach will reduce the overall cost of the device because there will be no need for an external microcontroller but with the extra software development effort.
 
-This guide will illustrate how to generate custom firmware for the STM32WLE5CCU6, which is inside the RAK3172 module. It supports two STM32WL SDK versions - v1.0.0 and v1.2.0.
+This guide will illustrate how to generate custom firmware for the STM32WLE5CCU6, which is inside the RAK3172 module. It supports three STM32WL SDK versions - v1.0.0, v1.2.0 and v1.3.0.
 
 - [STM32CubeIDE guide with STM32WL SDK v1.0.0](/Product-Categories/WisDuo/RAK3172-Module/Low-Level-Development/#rak3172-on-stm32cubeide-with-stm32wl-sdk-v1-0-0)
 - [STM32CubeIDE guide with STM32WL SDK v1.2.0](/Product-Categories/WisDuo/RAK3172-Module/Low-Level-Development/#rak3172-on-stm32cubeide-with-stm32wl-sdk-v1-2-0)
+- [STM32CubeIDE guide with STM32WL SDK v1.3.0](/Product-Categories/WisDuo/RAK3172-Module/Low-Level-Development/#rak3172-on-stm32cubeide-with-stm32wl-sdk-v1-3-0)
+
+
+::: tip 📝 NOTE
+- **STM32WL SDK v1.0.0** was tested on **STM32CubeIDE v1.7.0**.
+- **STM32WL SDK v1.2.0** was tested on **STM32CubeIDE v1.10.0**.
+- **STM32WL SDK v1.3.0** was tested on **STM32CubeIDE v1.10.0 and v1.14.0**.
+:::
+
 
 ## Guide on Using STM32WL SDK Using STM32CubeIDE
 
@@ -289,7 +298,7 @@ If you have an ST-LINK debugging tool, you can also choose **Debug** instead of 
 
 ### RAK3172 on STM32CubeIDE with STM32WL SDK v1.2.0
 
-The previous guide is for STM32WL SDK version 1.0.0. This guide is compatible with STM32WL SDK v1.2.0.
+The previous guide is for STM32WL SDK version 1.0.0. This guide is compatible with STM32WL SDK v1.2.0 and v1.3.0.
 
 #### Getting STM32WL SDK v1.2.0
 
@@ -471,6 +480,12 @@ If you have an ST-LINK debugging tool, you can also choose **Debug** instead of 
   caption="Successful Project Build"
 />
 
+### RAK3172 on STM32CubeIDE with STM32WL SDK v1.3.0
+
+The STM32WL SDK v1.3.0 guide is almost the same as the [guide for v1.2.0](/Product-Categories/WisDuo/RAK3172-Module/Low-Level-Development/#rak3172-on-stm32cubeide-with-stm32wl-sdk-v1-2-0).
+
+Follow the same procedure on changing the radio related source files and startup file. You can also use the same RF source files used on v1.2.0 for v1.3.0. However, you need to work on v1.3.0 of STM32WL SDK package instead of the old one (v1.2.0).
+
 ## Running the LoRaWAN_End_Node Example of STM32WL SDK on RAK3172
 
 ### Configuration to Connect the LoRaWAN Network Server
@@ -480,7 +495,7 @@ Once you have a working project and were able to build with no errors in the STM
 1. First, you need to register the device to the network server. You can follow the guide on how to register a device in TTN V3 or Chirpstack using the procedure discussed in the [RAK3172 TTN V3 OTAA Quick Start Guide](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#ttn-otaa-device-registration) or in the [RAK3172 Chirpstack OTAA Quick Start Guide](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#chirpstack-otaa-device-registration) respectively.
 
 ::: tip 📝 NOTE
-By default, the **LoRaWAN_End_Node** example will work on the EU868 region. This is set in the `lora_app.h` that can be found in this location `/STM32Cube_FW_WL_V1.0.0/Projects/NUCLEO-WL55JC/Applications/LoRaWAN/LoRaWAN_End_Node/LoRaWAN/App/`(for v1.0.0) and `/STM32Cube_FW_WL_V1.2.0/Projects/NUCLEO-WL55JC/Applications/LoRaWAN/LoRaWAN_End_Node/LoRaWAN/App/`(for v1.2.0).
+By default, the **LoRaWAN_End_Node** example will work on the EU868 region. This is set in the `lora_app.h` that can be found in this location `/STM32Cube_FW_WL_V1.0.0/Projects/NUCLEO-WL55JC/Applications/LoRaWAN/LoRaWAN_End_Node/LoRaWAN/App/`(for v1.0.0), `/STM32Cube_FW_WL_V1.2.0/Projects/NUCLEO-WL55JC/Applications/LoRaWAN/LoRaWAN_End_Node/LoRaWAN/App/`(for v1.2.0) and `/STM32Cube_FW_WL_V1.3.0/Projects/NUCLEO-WL55JC/Applications/LoRaWAN/LoRaWAN_End_Node/LoRaWAN/App/`(for v1.3.0).
 :::
 
 2. To activate and connect your device via OTAA, you need to get the following parameters: **DEVEUI**, **APPEUI**, and **APPKEY**.
@@ -493,7 +508,7 @@ Once you successfully register your device to TTN V3, you should see those param
   caption="OTAA device registration in TTN V3"
 />
 
-3. With the device registered to TTN V3, you should edit the `se-identity.h` file to update the needed OTAA parameters. On the STM32CubeIDE, click **File** and select **Open File..**. You should navigate in this directory `\STM32Cube_FW_WL_V1.0.0\Projects\NUCLEO-WL55JC\Applications\LoRaWAN\LoRaWAN_End_Node\LoRaWAN\App`(for v1.0.0) or `\STM32Cube_FW_WL_V1.2.0\Projects\NUCLEO-WL55JC\Applications\LoRaWAN\LoRaWAN_End_Node\LoRaWAN\App`(for v1.0.0) to find the `se-identity.h`, then click Open.
+3. With the device registered to TTN V3, you should edit the `se-identity.h` file to update the needed OTAA parameters. On the STM32CubeIDE, click **File** and select **Open File..**. You should navigate in this directory `\STM32Cube_FW_WL_Vx.y.z\Projects\NUCLEO-WL55JC\Applications\LoRaWAN\LoRaWAN_End_Node\LoRaWAN\App`(Vx.y.z means the version number of the SDK - v1.0.0, v1.2.0 or v1.3.0) to find the `se-identity.h`, then click Open.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/low-level-development/stm32cubeide_select_se_file.png"
@@ -529,6 +544,10 @@ To ensure that your device work on both LoRaWAN versions (**LoRaWAN Specificatio
 
 The macro `STATIC_DEVICE_EUI` is also updated to `1` instead of `0` since a generated DEVEUI in TTN V3 is used in this guide instead of the embedded DEVEUI of the device.
 
+::: tip 📝 NOTE
+STM32WL SDK v1.3.0 has different structure of `se-identity.h` file. It does not have `STATIC_DEVICE_EUI` and is available only on lower versions of the SDK.
+:::
+
 <rk-img
   src="/assets/images/wisduo/rak3172-module/low-level-development/stm32cubeide_modified_se_file.png"
   width="90%"
@@ -551,7 +570,11 @@ With all the needed files modified and edited, you can now generate your `.bin` 
   caption="Clean and Build the STM32CubeIDE Project"
 />
 
-2. After a successful build, you should see in console **Finished building: LoRaWAN_End_Node.bin**. You should be able to see the generated `LoRaWAN_End_Node.bin` firmware file in this folder location `\STM32Cube_FW_WL_V1.0.0\Projects\NUCLEO-WL55JC\Applications\LoRaWAN\LoRaWAN_End_Node\STM32CubeIDE\Release`(for v1.0.0) or `\STM32Cube_FW_WL_V1.2.0\Projects\NUCLEO-WL55JC\Applications\LoRaWAN\LoRaWAN_End_Node\STM32CubeIDE\Release`(for v1.2.0). That bin file is the firmware binary that you need to upload to your RAK3172 module.
+2. After a successful build, you should see in console **Finished building: LoRaWAN_End_Node.bin**. Also, check if there's a generated `LoRaWAN_End_Node.bin` firmware file in the following folder location: `\STM32Cube_FW_WL_Vx.y.z\Projects\NUCLEO-WL55JC\Applications\LoRaWAN\LoRaWAN_End_Node\STM32CubeIDE\Release` (Vx.y.z means the version number of the SDK - v1.0.0, v1.2.0 or v1.3.0). The bin file is the firmware binary that you need to upload to your RAK3172 module.
+
+::: tip 📝 NOTE
+For the generated compiled files, `hex` format is also acceptable.
+:::
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/low-level-development/stm32cubeide_buildok_project.png"
@@ -653,8 +676,14 @@ You can also use an ST-LINK to upload the `.bin` file to RAK3172.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/low-level-development/uart_logs.png"
-  width="35%"
+  width="40%"
   caption="RAK3172 UART2 Logs"
+/>
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/low-level-development/uart_logs2.png"
+  width="55%"
+  caption="RAK3172 UART2 Logs for SDK version 1.3.0"
 />
 
 8. With the device registered to TTN, you should now see a successful join and LoRaWAN device uplink.
