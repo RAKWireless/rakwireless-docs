@@ -109,7 +109,7 @@ There is a built-in ChirpStack in every RAK Developer gateway if you use the lat
 - **Optional** - If ever you disabled the **AP Mode** and you have connected it to your Wifi network **(Client Mode)**, you can search for your gateway’s IP Address via [Advanced IP Scanner](https://www.advanced-ip-scanner.com/).
 
 - There is a **Web-based UI** that comes with the ChirpStack instance. Simply open a browser and enter the following credentials:
-  
+
   - **Browser Address**: `<Gateway IP address>:8080` (Example: `http://192.168.0.100:8080`)
   - **Username**: admin
   - **Password**: admin
@@ -260,13 +260,10 @@ For more information, refer to the [online guide](https://docs.aws.amazon.com/io
 
 ### Set Up the Gateway
 
-- [Set up the gateway hardware](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7248/Quickstart/#power-on-the-gateway)
+- [Set Up the Gateway Hardware](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7248/Quickstart/#power-on-the-gateway)
+- [Set Up the Gateway Software](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7248/Quickstart/#access-the-gateway)
 
-- [Set up the gateway software](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7248/Quickstart/#access-the-gateway)
-
-For additional software references, check the following links:
-
-- [FAQ](https://docs.rakwireless.com/Knowledge-Hub/FAQs/)
+For additional software references, check the following link:
 
 - [Community forum](https://forum.rakwireless.com/?utm_source=Docs&utm_medium=Docsheader&utm_campaign=RAKDocs)
 
@@ -300,7 +297,7 @@ You can also run the following command:
 ```
 pi@rak-gateway:~ $ sudo gateway-version
 Raspberry Pi 4 Model B Rev 1.1, OS "10 (buster)", 5.4.79-v7l+.
-RAKwireless gateway RAK7248 no LTE version 4.2.7R install from firmware 
+RAKwireless gateway RAK7248 no LTE version 4.2.7R install from firmware
 Gateway ID: DCA632FFFE366417
 ```
 
@@ -501,14 +498,14 @@ Create the lambda function to process device messages processed by the destinati
 ```
 
   import base64 import json import logging import ctypes import boto3
-  
+
   # define function name FUNCTION_NAME = 'RAK-HelloWorld'
   # Second Byte in Payload represents Data Types
   # Low Power Payload Reference: https://developers.mydevices.com/cayenne/docs/lora/ DATA_TYPES = 1
   # Type Temperature TYPE_TEMP = 0x67
   # setup iot-data client for boto3 client = boto3.client('iot-data') # setup logger
   logger = logging.getLogger(FUNCTION_NAME) logger.setLevel(logging.INFO)
-  
+
   def decode(event):
   data_base64 = event.get('PayloadData') data_decoded = base64.b64decode(data_base64) result = {
   'devEui': event.get('WirelessMetadata').get('LoRaWAN'
@@ -520,14 +517,14 @@ Create the lambda function to process device messages processed by the destinati
   'timestamp': event.get('WirelessMetadata').get('LoRaWAN'
   ).get('Timestamp'),
   }
-  
+
   if data_decoded[DATA_TYPES] == TYPE_TEMP: temp = data_decoded[DATA_TYPES + 1] << 8 \
   | data_decoded[DATA_TYPES + 2] temp = ctypes.c_int16(temp).value result['temperature'] = temp / 10
-  
+
   return result
-  
-  
-  
+
+
+
   def lambda_handler(event, context): data = decode(event)
   logger.info('Data: %s' % json.dumps(data))
   response = client.publish(topic=event.get('WirelessMetadata'
@@ -540,7 +537,7 @@ Create the lambda function to process device messages processed by the destinati
 7. Once the code has been pasted, choose to **Deploy** to deploy the lambda code.
 8. Click on the **Configuration** tab and choose **Permissions** menu of the lambda function.
 9. Change the **Lambda Role Policy** permission.
-  - Under **Execution role**, click on the hyperlink under **Role name**. 
+  - Under **Execution role**, click on the hyperlink under **Role name**.
   - On the **Permissions tab**, find the **Policy name** and select it.
   - Choose **Edit policy**, and choose the **JSON** tab.
   - Append the following to the Statement section of the policy to allow publishing to AWS IoT.
@@ -551,7 +548,7 @@ Create the lambda function to process device messages processed by the destinati
   "Action":[
     "iot:Publish"
   ],
-  "Resource":[ 
+  "Resource":[
     "*"
   ]
 }
@@ -639,7 +636,7 @@ You can now check that the decoded data is received and republished by AWS by tr
 
 - Go to the AWS IoT console. In the navigation pane, select **Test**, and choose **MQTT test client**.
 - Subscribe to the wildcard topic **#** to receive messages from all topics.
-- Wait for an uplink from the end device. 
+- Wait for an uplink from the end device.
 - You should see the traffic similar as shown below:
 
     ```json
@@ -794,7 +791,7 @@ src="/assets/images/wisgate/rak7394/supported-lora-network-servers/20.cmd.png"
 3. You should see traffic on your console of the end device similar to what is shown below:
 
 ```
-SYSLOG:4:LoRa rX : 41 - 14 
+SYSLOG:4:LoRa rX : 41 - 14
 SYSLOG:4:LoRa Tx :
 ```
 

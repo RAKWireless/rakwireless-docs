@@ -93,9 +93,8 @@ For more information, refer to the [online guide](https://docs.aws.amazon.com/io
 - [**Set up the Gateway Hardware**](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7289/Quickstart/#power-on-the-gateway)
 - [**Set up the Gateway Software**](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7289/Quickstart/#access-the-gateway)
 
-For Additional Software References, check the following links:
+For Additional Software References, check the following link:
 
-- [**FAQ**](https://docs.rakwireless.com/Knowledge-Hub/FAQs/)
 - [**Community Forum**](https://forum.rakwireless.com/?utm_source=Docs&utm_medium=Docsheader&utm_campaign=RAKDocs)
 
 

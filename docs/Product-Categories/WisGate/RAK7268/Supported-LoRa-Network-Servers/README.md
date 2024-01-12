@@ -70,12 +70,11 @@ Because most LoRaWAN devices don't send data to AWS IoT Core for LoRaWAN in a fo
 
 For more information, refer to the [online guide](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan-create-destinations.html) (sections titled Add a destination using the console and Create an IAM role for your destinations).  Also refer to Create rules to process LoRaWAN device messages in the [online guide](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan-destination-rules.html).
 
-### Set up the Gateway
+### Set Up the Gateway
 
 * Set up Gateway Hardware: Refer to the product configuration to learn more about [RAK7268 Product Configuration](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7268/Quickstart/#power-on-the-gateway).
 * Set up Gateway Software: Refer to the product configuration to learn more about [RAK7268 Product Configuration](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7268/Quickstart/#access-the-gateway).
-* Additional Software References:
-  * [FAQ](https://docs.rakwireless.com/Knowledge-Hub/FAQs/)
+* Additional Software Reference:
   * [Forum](https://forum.rakwireless.com/?utm_source=Docs&utm_medium=Docsheader&utm_campaign=RAKDocs)
 
 

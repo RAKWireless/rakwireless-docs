@@ -91,9 +91,8 @@ For more information, refer to the [online guide](https://docs.aws.amazon.com/io
 - [**Set Up the Gateway Hardware**](/Product-Categories/WisGate/RAK7248/Quickstart/#power-on-the-gateway)
 - [**Set Up the Gateway Software**](/Product-Categories/WisGate/RAK7248/Quickstart/#access-the-gateway)
 
-For additional software references, check the following links:
+For additional software references, check the following link:
 
-- [**FAQ**](https://docs.rakwireless.com/Knowledge-Hub/FAQs/)
 - [**Community Forum**](https://forum.rakwireless.com/?utm_source=Docs&utm_medium=Docsheader&utm_campaign=RAKDocs)
 
 #### Configure the Gateway Device

@@ -23,8 +23,7 @@ To learn more about AWS IoT GreengrassV2, see [how it works](https://docs.aws.am
 
 ### Additional Software References
 
-- Our [FAQ page](https://docs.rakwireless.com/Knowledge-Hub/FAQs/)
-- Our [Community Forum](https://forum.rakwireless.com/?utm_source=Docs&utm_medium=Docsheader&utm_campaign=RAKDocs)
+- [Community Forum](https://forum.rakwireless.com/?utm_source=Docs&utm_medium=Docsheader&utm_campaign=RAKDocs)
 
 ## Set Up Your Hardware
 

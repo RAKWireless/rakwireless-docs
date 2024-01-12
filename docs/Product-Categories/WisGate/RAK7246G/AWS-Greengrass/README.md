@@ -25,9 +25,7 @@ To learn more about AWS IoT GreengrassV2, refer to AWS documentation to see [how
 - If you want to compile the code that runs the gateway by yourself, you can find it in [GitHub - RAKWireless/rak_common_for_gateway](https://github.com/RAKWireless/rak_common_for_gateway).
 - The main service is the [LoRa packet forwarder](https://github.com/Lora-net/packet_forwarder).
 
-For additional references, you can refer to the following RAK links:
-
-- [**FAQ page**](https://docs.rakwireless.com/Knowledge-Hub/FAQs/)
+For additional references, you can refer to the following:
 - [**Community Forum**](https://forum.rakwireless.com/?utm_source=Docs&utm_medium=Docsheader&utm_campaign=RAKDocs)
 
 

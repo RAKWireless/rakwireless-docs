@@ -11,23 +11,6 @@
       flat
       no-caps
     />
-    <!-- <rk-search-box v-if="!vertical" class="gt-md" /> -->
-    <!-- <rk-dropdown label="RAK Services" :v2="vertical">
-      <q-list style="min-width: 100px">
-        <q-item class="full-width q-py-md" :to="`/RUI`">
-          <q-item-section>
-            <q-item-label>RUI</q-item-label>
-            <q-item-label caption>RAKwireless Unified Interface</q-item-label>
-          </q-item-section>
-        </q-item>
-         <q-item class="full-width q-py-md" :to="`/RUI3/`">
-          <q-item-section>
-            <q-item-label>RUI3</q-item-label>
-            <q-item-label caption>RAKwireless Unified Interface 3</q-item-label>
-          </q-item-section>
-        </q-item>
-      </q-list>
-    </rk-dropdown> -->
     <rk-dropdown label="Tools" :v2="vertical" :autoClose=false  v-if="computedMobileScreen">
       <q-list style="min-width: 100px;" >
         <q-item class="full-width q-py-md" :to="`/Product-Categories/Software-APIs-and-Libraries/WisDM`">
@@ -61,12 +44,6 @@
           caption="Firmware Development Platform"
           expand-separator
         >
-          <!-- <q-item
-            class="full-width q-py-md" :to="`/RUI`">
-              <q-item-section>
-                <q-item-label overline>RUI</q-item-label>
-              </q-item-section>
-          </q-item> -->
           <q-item
             class="full-width q-py-md" :to="`/RUI3`">
             <q-item-section>
@@ -150,23 +127,8 @@
                         <a href="https://downloads.rakwireless.com/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip"
                           class="text-grey-10 text-weight-regular text-subtitle2">Serial Port Tool</a>
                       </q-item-label>
-                      <!-- <q-list dense >
-                        <q-item dense class="list-height">
-                          <a href="https://downloads.rakwireless.com/LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/"
-                          class="text-weight-light text-grey-7 text-caption">DFU Tool</a>
-                        </q-item>
-                        <q-item dense class="list-height">
-                          <a href="https://downloads.rakwireless.com/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip"
-                          class="text-weight-light text-grey-7 text-caption">Serial Port Tool</a>
-                        </q-item>
-                      </q-list> -->
                     </q-item-section>
                   </q-item>
-                  <!-- <q-item dense class="list-height item-align">
-                    <q-item-label>
-                      <a href="/Product-Categories/Software-Tools/WisToolBox/Overview/" class="text-grey-10 text-weight-regular text-subtitle2">WisToolBox</a>
-                    </q-item-label>
-                  </q-item> -->
                 </q-list>
 
               </q-item-section>
@@ -185,13 +147,6 @@
                           class="text-grey-10 text-weight-regular text-subtitle2"
                           >WisGate OS</a>
                       </q-item-label>
-                      <!-- <q-list dense >
-                        <q-item dense>
-                          <a href="/Product-Categories/Software-APIs-and-Libraries/WisGateOS/Overview/"
-                          class="text-weight-light text-grey-7 text-caption"
-                          >WisGate OS</a>
-                        </q-item>
-                      </q-list> -->
                     </q-item-section>
                   </q-item>
                 </q-list>
@@ -207,12 +162,6 @@
           <q-item-section>
             <q-item-label>Learn Section</q-item-label>
             <q-item-label caption>Learning is never boring</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item class="full-width q-py-md" :to="`/Knowledge-Hub/FAQs`">
-          <q-item-section>
-            <q-item-label>FAQs</q-item-label>
-            <q-item-label caption>Frequently Asked Questions</q-item-label>
           </q-item-section>
         </q-item>
         <q-item class="full-width q-py-md" :to="`/Knowledge-Hub/Pin-Mapper`">

@@ -1,28 +1,34 @@
 <template>
   <div class="newsletter--container">
     <div class="text-container">
+      <p class="text-container-header">{{ computedTextHeader }}</p>
       <p>
-        Stay ahead of the game and be the first to know about RAK’s IoT Services and Solutions
+        Stay up to date with the latest <b>software product releases</b>, <b> feature updates</b>, and <b>enhancements</b>.
       </p>
     </div>
     <div class="form-container">
-      <div class="form-container-header">
-        <p>Get 15% off voucher (plus the latest news on products and more) by joining our newsletter.</p>
-      </div>
       <form>
         <input type="email" placeholder="Your email address" v-model="email" />
         <input
           type="submit"
           :disable="email === '' || email.length < 1 ? true : false"
-          value="Sign up"
+          :value="buttonText"
           @click="subscribeToList($event, email)"
         />
-        <p>{{ message }}</p>
       </form>
+
       <div class="form-checkbox">
-        <input type="checkbox" required>
-        <span>By continuing, you agree to our Privacy Notice and consent to receive marketing emails from RAKwireless regarding its and its affiliates’ products and services.</span>
+        <div>
+          <input type="checkbox" required>
+          <span>By continuing, you acknowledge that you have read and agree to our <a href="https://www.rakwireless.com/en-us/legal/privacy-notice" style="color:#FFFFFF;text-decoration: underline;">Privacy Notice.</a></span>
+        </div>
+        <div>
+          <input type="checkbox" required>
+          <span>By continuing, you consent to receive marketing emails from RAKwireless.</span>
+        </div>
       </div>
+      <p v-if="isShowMessage" :class="textColor">{{ message }}</p>
+
     </div>
   </div>
 </template>
@@ -31,22 +37,38 @@
 import axios from "axios";
 export default {
   name: "RkCertificationNewsletter",
+  props: {
+    propListId: { type: String },
+    textHeader : { type: String }
+  },
   // mixins: [CommonMixin],
+  // 48 old id
   data: () => ({
     listId: 48,
     email: "",
     message: "",
+    buttonText: 'Sign up',
+    isShowMessage: false,
+    textColor: 'text-white'
   }),
   computed: {
     computedApi() {
-      let endpoint = `https://form-api.rakwireless.com/newsletter/api/contacts/${this.listId}`;
+
+      let currentId = this.propListId ? this.propListId: this.listId
+      let endpoint = `https://form-api.rakwireless.com/newsletter/api/contacts/${currentId}`;
       return endpoint;
     },
+    computedTextHeader() {
+      
+      return this.textHeader ? this.textHeader : 'Newsletter'
+    }
   },
   methods: {
     subscribeToList(event, email) {
       event.preventDefault();
       let $this = this;
+
+      $this.buttonText = 'Loading'
       axios({
         method: "post",
         url: this.computedApi,
@@ -54,10 +76,39 @@ export default {
           email: email,
         },
       }).then(function (response) {
-        console.log("CERTIOFICATION RESPONSE: ",response)
-        if (response.status == 200) {
-          $this.message = "Subscription success!";
-        }
+        console.log("CERTIFICATION RESPONSE: ",response)
+
+        let statusCodesResponse = [
+          {
+            statusCode : 400,
+            message: 'Email already subscribed!',
+            textColor: 'bg-red',
+          },
+          {
+            statusCode : 200,
+            message: 'Successfully subscribed!',
+            textColor: 'bg-green'
+
+          },
+        ]
+
+          if(response.data?.status === 400) {
+            $this.isShowMessage = true
+            $this.textColor = statusCodesResponse[0].textColor
+            $this.message = statusCodesResponse[0].message
+            $this.email = ""
+            $this.buttonText = 'Sign up'
+
+          }
+
+          if(response.data.contacts.success) {
+            $this.isShowMessage = true
+            $this.textColor = statusCodesResponse[1].textColor
+            $this.message = statusCodesResponse[1].message
+            $this.email = ""
+            $this.buttonText = 'Sign up'
+
+          }
       });
     },
   },
@@ -73,31 +124,107 @@ export default {
   --line-height-base: 16px;
 }
 
+@font-face {
+  font-family: 'NeueHaasGroteskDsPro55Reg';
+  src: url("./../public/assets/fonts/n-haas-grotesk-ds-pro-55-reg.woff2") format('woff2');
+  font-display: swap;
+}
+
 .newsletter--container {
+  font-family: 'NeueHaasGroteskDsPro55Reg' !important;
+  position:relative;
   background-color:#0c6bc4;
-  padding: 20px 48px;
+  padding: 0 48px;
   display: grid;
   color: #FFFFFF;
   gap:20px;
 }
 
+.bg-red {
+  color: #FFFFFF;
+  background-color: red;
+  padding: 1px 3px;
+}
+
+.bg-green {
+  color: #FFFFFF;
+  background-color: green;
+  padding: 1px 3px;
+}
+
+/* .newsletter--container::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: -9999px;
+  box-shadow: 1000px 0  #0c6bc4;
+  z-index:0;
+}
+
+.newsletter--container::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -9999px;
+  bottom: 0;
+  left: 0;
+  box-shadow: -1000px 0  #0c6bc4;
+  z-index:0;
+} */
+
 .text-container {
   display:flex;
-  align-items:center;
+  flex-direction: column;
+  align-items:start;
   font-size: 24px;
+  font-family: 'NeueHaasGroteskDsPro55Reg' !important;
+  line-height: 28px;
+}
 
+.text-container > .text-container-header {
+  font-family: 'NeueHaasGroteskDsPro55Reg' !important;
+
+  font-size: 36px;
+  font-weight: 800;
+  padding-bottom: 10px;
+  margin-bottom:0;
+  line-height: 32px;
 }
 
 .text-container > p {
-  line-height: 32px;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.form-container {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .form-container > form {
   display: flex;
-  align-items:center;
+  align-items: center;
 }
 
 .form-checkbox {
   margin-top: 10px;
+  display:flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.form-checkbox > div {
+  display:flex;
+  gap: 10px;
+  padding-bottom: 5px;
+}
+
+.form-checkbox > div >span{
+  margin: 0;
+  font-size: 12px;
+  padding: 0;
 }
 
 .form-checkbox > span {
@@ -118,19 +245,24 @@ input[type="email"]:focus {
 }
 
 input[type="email"] {
-  width: 100%;
 	outline: none;
-	border: none;
+  height:40px;
+  width: 100%;
 	background-color: transparent;
 	color: #FFFFFF;
-	border-bottom: 1px solid #FFFFFF;
-	padding: 12px 0;
-	font-size: 24px;
+	border: 1px solid #FFFFFF;
+  border-radius: 20px;
+	padding: 0 12px;
+	font-size: 16px;
 	line-height: 40px;
 }
 
 input[type="email"]::placeholder {
   color: #FFFFFF;
+  font-size:16px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
 }
 
 input[type="submit"] {
@@ -144,6 +276,8 @@ input[type="submit"] {
 	cursor: pointer;
 	transition-duration: 300ms;
 	transition-timing-function: cubic-bezier(0,0,.2,1);
+  position:absolute;
+  right: 3.75rem;
 }
 
 input[type="submit"]:hover {
@@ -184,6 +318,11 @@ input[type="submit"]:hover {
   input[type="email"]::placeholder {
     font-size: 16px;
   }
+
+  input[type="submit"] {
+    right: 1.45rem;
+
+  }
   .text-container {
     font-size: 16px;
   }
@@ -201,6 +340,10 @@ input[type="submit"]:hover {
     font-size: 12px;
     line-height: 16px;
     color: #A1B6E5;
+  }
+
+  .form-checkbox > div {
+    align-items: start;
   }
 
 }

@@ -10,4 +10,4 @@ rak_img: /assets/images/release-notes/release-notes_banner.png
 
 <rk-categories/>
 
-<rk-certification-newsletter/>
+<rk-certification-newsletter propListId="112" textHeader="Release Notes"/>
