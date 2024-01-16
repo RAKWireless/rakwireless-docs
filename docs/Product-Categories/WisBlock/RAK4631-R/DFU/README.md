@@ -999,7 +999,11 @@ OK
 
 You have the option to convert your RAK4631-R to RAK4631.
 
-1. Download the necessary files needed for conversion. You need to have the [`rak4631_factory_application.zip`, `rak4631_factory_bootloader.zip`, `rak4631_factory_softdevice.zip`](https://downloads.rakwireless.com/RUI/RUI3/Bootloader%20Upgrade/rak4631_factory_softdevice.zip), and [nrfutil.exe](https://github.com/NordicSemiconductor/pc-nrfutil/releases/download/v6.1.7/nrfutil.exe) in a common folder.
+1. Download the necessary files needed for conversion in a common folder.
+   - [`rak4631_factory_application.zip`](https://downloads.rakwireless.com/RUI/RUI3/Bootloader%20Upgrade/rak4631_factory_application.zip)
+   - [`rak4631_factory_bootloader.zip`](https://downloads.rakwireless.com/RUI/RUI3/Bootloader%20Upgrade/rak4631_factory_bootloader.zip)
+   - [`rak4631_factory_softdevice.zip`](https://downloads.rakwireless.com/RUI/RUI3/Bootloader%20Upgrade/rak4631_factory_softdevice.zip)
+   - [nrfutil.exe](https://github.com/NordicSemiconductor/pc-nrfutil/releases/download/v6.1.7/nrfutil.exe)
 
 2. Create a new folder in your `C:\` drive named `RAK4631 Bootloader to RUI v3` and place all the conversion files you downloaded from the previous step.
 
@@ -1060,7 +1064,7 @@ If there is no RAK4631 drive detected, try to double-click the reset button on t
 
 ## Miscellaneous
 
-### How to Check Firmware Version using Tera Term
+### How to Check Firmware Version Using Tera Term
 
 1. Download and install the console UART utility [Tera Term](https://osdn.net/projects/ttssh2/releases/). You can also use other serial terminal tool or even the Arduino Serial Monitor.
 2. Connect the RAK4631-R via USB port of the WisBlock Base board.

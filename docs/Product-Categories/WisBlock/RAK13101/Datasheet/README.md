@@ -25,7 +25,7 @@ next: false
 - Built-in LNA
 - IPEX connectors for the GSM and GNSS antenna
 - Micro-USB debug and log output connector
-- Nano SIM and ESIM options
+- Nano SIM support
 - 3.3&nbsp;V Power supply
 - Small size: 25&nbsp;mm x 45&nbsp;mm
 
@@ -144,7 +144,7 @@ The GSM/GPRS module operates at 2.8&nbsp;V, while the WisBlock Core is at 3.3&nb
 
 ##### SIM Circuit
 
-**Figure 8** shows the schematic of RAK13101 module as a slot for standard SIM card and an optional **ESIM** pcb footprint.
+**Figure 8** shows the schematic of RAK13101 module as a slot for standard SIM card.
 
 <rk-img
   src="/assets/images/wisblock/rak13101/datasheet/sim_circuit.png"

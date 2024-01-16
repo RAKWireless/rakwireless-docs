@@ -36,7 +36,7 @@ Thank you for choosing **RAK13101 WisBlock GSM/GPRS Module** in your awesome IoT
 - Built-in LNA
 - IPEX connectors for the GSM and GNSS antenna
 - Micro-USB debug and log output connector
-- Nano SIM and ESIM options
+- Nano SIM support
 - 3.3&nbsp;V Power supply
 - Small size: 25&nbsp;mm x 45&nbsp;mm
 
