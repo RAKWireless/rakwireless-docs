@@ -13,11 +13,12 @@ next: false
 
 ## Overview
 
+<!-- Temporary
 <rk-img
   src="/assets/images/wisblock/rak19002/datasheet/RAK19002_Back-&-Front-Illustrated.png"
   width="50%"
   caption="RAK19002 WisBlock Boost Module"
-/>
+/> -->
 ### Description
 
 The RAK19002 is a step-up boost regulator module, part of the RAKwireless WisBlock Series. The module can supply 12&nbsp;V/50&nbsp;mA and could be mounted on the WisSensor slot of RAK5005-O. The output voltage of the module is controlled by **WisBlock Core** IO pin.

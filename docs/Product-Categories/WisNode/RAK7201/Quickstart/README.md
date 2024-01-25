@@ -88,7 +88,7 @@ Helium has quickly become the most widespread LPWAN communal network with more t
 
 This section will focus on giving a brief guide on how to connect the RAK7201 to the network console, assuming that there is a Helium Hotspot within range.
 
-Log in or create your [Helium account](https://www.helium.com/console):
+Log in or create your [Helium account](https://console.helium.com):
 
 <rk-img
   src="/assets/images/wisnode/rak7201/quickstart/connecting-to-helium/1.png"

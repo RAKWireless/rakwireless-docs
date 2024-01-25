@@ -156,7 +156,7 @@ BOOT pin is used on startup configuration or sequence of the WisBlock Core conne
 The **WisBlock Core module connector** is a 40-pin board-to-board connector. It is a high-speed and high-density connector, with an easy attaching mechanism.
 
 <rk-img
-  src="/assets/images/wisblock/rak19010/datasheet/12.mcu-module connector.png"
+  src="/assets/images/wisblock/rak19010/datasheet/12.mcu-module-connector.png"
   width="45%"
   caption=" WisBlock Core module connector"
 />
@@ -238,7 +238,7 @@ As for the following table, it shows the definition of each pin of the WisBlock 
 The **WisPower module connector** is a 40-pin board-to-board connector. It is a high-speed and high-density connector, with an easy attaching mechanism.
 
 <rk-img
-  src="/assets/images/wisblock/rak19010/datasheet/12.mcu-module connector.png"
+  src="/assets/images/wisblock/rak19010/datasheet/12.mcu-module-connector.png"
   width="45%"
   caption=" WisBlock Power Slot module connector"
 />
@@ -381,7 +381,7 @@ As for the following table, it shows the pin name and description of each pin in
 The WisBlock Module IO Slot connector, as shown in **Figure 8**, is a 40-pin board-to-board connector.
 
 <rk-img
-  src="/assets/images/wisblock/rak19010/datasheet/12.mcu-module connector.png"
+  src="/assets/images/wisblock/rak19010/datasheet/12.mcu-module-connector.png"
   width="40%"
   caption="WisBlock IO slot connector"
 />

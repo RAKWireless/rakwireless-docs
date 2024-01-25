@@ -19,7 +19,7 @@ This guide covers the following topics:
 - [Chirpstack Guide](/Product-Categories/WisDuo/RAK11300-Module/Quickstart/#connecting-with-chirpstack) - How to create new applications on Chirpstack.
 - [RAK11300 Chirpstack OTAA Guide](/Product-Categories/WisDuo/RAK11300-Module/Quickstart/#chirpstack-otaa-device-registration) - How to add OTAA device to Chirpstack and what AT commands to use on RAK11300 OTAA activation.
 - [RAK11300 Chirpstack ABP Guide](/Product-Categories/WisDuo/RAK11300-Module/Quickstart/#chirpstack-abp-device-registration) - How to add ABP device on Chirpstack and what AT commands to use on RAK11300 ABP activation.
-- [Updating RAK11300-Module FW](/Product-Categories/WisDuo/rak11300-module/Quickstart/#upgrading-the-firmware) - Procedures on how to update RAK11300 module firmware.
+- [Updating RAK11300-Module FW](/Product-Categories/WisDuo/RAK11300-Module/Quickstart/#upgrading-the-firmware) - Procedures on how to update RAK11300 module firmware.
 
 ## Prerequisites
 
@@ -36,7 +36,7 @@ Before going through the step in the installation guide of the RAK11300 WisDuo L
 
 
 #### Software Tools
-1. Serial Terminal software like [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools).
+1. Serial Terminal software like [RAK Serial Port Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip).
 
 
 #### List of Acronyms
@@ -1187,7 +1187,7 @@ Refer to the table for the minimum hardware and software required to perform the
 
 Execute the following procedure to upgrade the firmware via USB using the .uf2 firmware file.
 1.  Download the latest application firmware of the RAK11300.
-    - [RAK11300 Firmware](/Product-Categories/WisDuo/rak11300-module/Datasheet/#firmware-os)
+    - [RAK11300 Firmware](/Product-Categories/WisDuo/RAK11300-Module/Datasheet/#firmware-os)
 
 2.  Connect the RAK11300 module to the computer via USB. If your main board has no USB connection, you won't be able to upload the .uf2 firmware file.
 

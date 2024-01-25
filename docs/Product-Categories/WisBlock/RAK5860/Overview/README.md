@@ -25,7 +25,7 @@ Thank you for choosing **RAK5860 WisBlock NB-IoT Interface Module** in your awes
 
 **Examples**:
 
-* [Sample Code: NB IoT](https://github.com/RAKWireless/WisBlock/tree/master/examples/communications/Cellular)
+* [Sample Code: NB IoT](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/communications/Cellular/RAK5860_BG77_Module)
 
 ## Product Description
 

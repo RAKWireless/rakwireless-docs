@@ -48,8 +48,8 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Instead, inst
 
 ----
 
-- Add [RAK3172 as a supported board in Arduino IDE](/Product-Categories/wisduo/RAK3172-SiP/Quickstart/#rak3172-sip-board-support-package-in-arduino-ide) by updating Board Manager URLs in **Preferences** settings of Arduino IDE with this JSON URL `https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main/package_rakwireless.com_rui_index.json`. After that, you can then add **RAKwireless RUI STM32 Boards** via Arduino board manager.
-- [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools)
+- Add [RAK3172 as a supported board in Arduino IDE](/Product-Categories/WisDuo/RAK3172-SiP/Quickstart/#rak3172-sip-board-support-package-in-arduino-ide) by updating Board Manager URLs in **Preferences** settings of Arduino IDE with this JSON URL `https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main/package_rakwireless.com_rui_index.json`. After that, you can then add **RAKwireless RUI STM32 Boards** via Arduino board manager.
+- [RAK Serial Port Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip)
 
 #### List of Acronyms
 

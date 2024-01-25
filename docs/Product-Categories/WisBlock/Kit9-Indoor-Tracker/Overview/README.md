@@ -38,7 +38,7 @@ In addition to its powerful tracking capabilities, the WisBlock Indoor Location 
     - Two [RAK19001 Dual IO WisBlock Base Board](/Product-Categories/WisBlock/RAK19001/Overview/) with 6 sensor slots and 2 IO slots
     - Two [RAK1904 Acceleration Sensors](/Product-Categories/WisBlock/RAK1904/Quickstart/)
     - Two [RAK1905 9DOF Sensors](/Product-Categories/WisBlock/RAK1905/Quickstart/)
-    - Four [RAK13801 UWB Modules](/Product-Categories/WisBlock/RAK13801/Quickstart/)
+    - Four [RAK13801 UWB Modules](/Product-Categories/WisBlock/RAK13801/Overview/)
     - LoRaWAN supported bands: RU864, IN865, EU868, AU915, US915, KR920, and AS923
     - (Optional) Cellular variant dependent on a country: two (2) [RAK5860](/Product-Categories/WisBlock/RAK5860/Quickstart/) with 5G LTE NB-IoT capability and two (2) [RAK13101](/Product-Categories/WisBlock/RAK13101/Quickstart/) with GSM/GPRS capability
 - GPS built-in on Cellular modules (only works outdoor)

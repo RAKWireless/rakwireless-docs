@@ -299,7 +299,7 @@ Download the latest firmware of the RAK2287 WisLink-LoRa in the table provided b
 
 | Model   | Raspberry Pi Board  | Firmware Version | Source                                                                                                    |
 | ------- | ------------------- | ---------------- | --------------------------------------------------------------------------------------------------------- |
-| RAK2287 | Raspberry Pi 3B+, 4 | V4.2.5_20200909  | [Download](https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Firmware/RAK2287_Latest_Firmware.zip) |
+| RAK2287 | Raspberry Pi 3B+, 4 | V4.2.7R | [Download](https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Firmware/RAK2287_Latest_Firmware.zip) |
 
 ## Models / Bundles
 

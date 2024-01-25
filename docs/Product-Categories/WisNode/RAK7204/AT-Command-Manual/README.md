@@ -564,7 +564,7 @@ This command is used to send data via LoRaWAN.
     </tr>
     <tr>
       <td> data </td>
-      <td> The sending data format is in hexadecimal format. The possible values are between <b>00-FF</b>. The board will internally cast every two characters into a byte before sending it to the LoRa transceiver. The maximum length varies depending on the band frequency and DR (LoRaWAN standard). Refer to <a href="/Product-Categories/WisDuo/RAK7204-Module/AT-Command-Manual/#appendix-iii：maximum-transmission-load-by-region" >Appendix III</a>.
+      <td> The sending data format is in hexadecimal format. The possible values are between <b>00-FF</b>. The board will internally cast every two characters into a byte before sending it to the LoRa transceiver. The maximum length varies depending on the band frequency and DR (LoRaWAN standard). Refer to <a href="/Product-Categories/WisNode/RAK7204/AT-Command-Manual/#appendix-iii-maximum-transmission-load-by-region" >Appendix III</a>.
     </td>
     </tr>
 </table>

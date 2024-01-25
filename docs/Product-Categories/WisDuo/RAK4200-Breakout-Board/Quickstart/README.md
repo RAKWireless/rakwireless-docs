@@ -30,7 +30,7 @@ Before going through each and every step in the installation guide of the RAK420
 
 - RAK Serial Port Tool
 - CH340 Drivers
-- [The Things Network](https://account.thethingsnetwork.org/register) account
+- [The Things Network](https://www.thethingsnetwork.org/get-started) account
 
 ### What's Included in the Package?
 

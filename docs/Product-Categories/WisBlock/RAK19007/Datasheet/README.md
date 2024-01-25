@@ -236,7 +236,7 @@ The Reset Push Button is connected to the WisBlock Core module. When pushed, it 
 The **WisBlock Core module connector** is a 40-pin board-to-board connector. It is a high-speed and high-density connector, with an easy attaching mechanism.
 
 <rk-img
-  src="/assets/images/wisblock/rak19007/datasheet/12.mcu-module connector.png"
+  src="/assets/images/wisblock/rak19007/datasheet/12.mcu-module-connector.png"
   width="45%"
   caption=" WisBlock Core module connector"
 />

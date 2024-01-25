@@ -41,7 +41,7 @@ The RAK12019 is an Ambient Light Sensor (ALS) or Ultraviolet Light Sensor (UVS),
 RAK12019 module can be connected to the sensor's slot of [WisBlock Base](https://docs.rakwireless.com/Product-Categories/WisBlock/#wisblock-base) to communicate with the WisBlock Core, as shown in **Figure 1**. It will work on **SLOT C to F**. Also, always secure the connection of the WisBlock module by using compatible screws.
 
 <rk-img
-  src="/assets/images/wisblock/RAK12019/quickstart/connection.png"
+  src="/assets/images/wisblock/rak12019/quickstart/connection.png"
   width="60%"
   caption="RAK12019 Connection to WisBlock Base"
 />
@@ -53,7 +53,7 @@ RAK12019 module can be connected to the sensor's slot of [WisBlock Base](https:/
 As shown in **Figure 2**, the location for Slot A, B, C, and D are properly marked by silkscreen. Follow carefully the procedure defined in [WisBlock Base board assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with three pieces of M1.2 x 3&nbsp;mm screws.
 
 <rk-img
-  src="/assets/images/wisblock/RAK12019/quickstart/mounting.png"
+  src="/assets/images/wisblock/rak12019/quickstart/mounting.png"
   width="50%"
   caption="RAK12019 assembly to WisBlock Base"
 />
@@ -65,25 +65,25 @@ The procedure in disassembling any type of WisBlock modules is the same.
 1. First, remove the screws.
 
 <rk-img
-  src="/assets/images/wisblock/RAK12019/quickstart/removing_screw.png"
-  width="70%"
-  caption="Removing screws from the WisBlock module"
+  src="/assets/images/wisblock/rak12019/quickstart/removing_screw.png"
+  width="50%"
+  caption="Remove screws from the WisBlock module"
 />
 
 2. Once the screws are removed, check the silkscreen of the module to find the correct location where force can be applied.
 
 <rk-img
-  src="/assets/images/wisblock/RAK12019/quickstart/detach_silkscreen.png"
-  width="70%"
-  caption="Detaching silkscreen on the WisBlock module"
+  src="/assets/images/wisblock/rak12019/quickstart/detach_silkscreen.png"
+  width="50%"
+  caption="Detach silkscreen on the WisBlock module"
 />
 
 3. Apply force to the module at the position of the connector, as shown in **Figure 5**, to detach the module from the baseboard.
 
 <rk-img
-  src="/assets/images/wisblock/RAK12019/quickstart/detach_module.png"
-  width="70%"
-  caption="Applying even forces on the proper location of a WisBlock module"
+  src="/assets/images/wisblock/rak12019/quickstart/detach_module.png"
+  width="50%"
+  caption="Apply even forces on the proper location of a WisBlock module"
 />
 
 ::: tip 📝 NOTE
@@ -109,24 +109,27 @@ In this example, you will be able to see the Lux and ALS or UVS and UVI data via
 2. You need to select first the WisBlock Core you have, as shown in **Figure 6** to **Figure 8**.
 
 **RAK4631 Board**
+
 <rk-img
-  src="/assets/images/wisblock/RAK12019/quickstart/selectboard4631.png"
-  width="100%"
-  caption="Selecting RAK4631 as WisBlock Core"
+  src="/assets/images/wisblock/rak12019/quickstart/selectboard4631.png"
+  width="90%"
+  caption="Select RAK4631 as WisBlock Core"
 />
 
 **RAK11200 Board**
+
 <rk-img
-  src="/assets/images/wisblock/RAK12019/quickstart/selectboard11200.png"
-  width="100%"
-  caption="Selecting RAK11200 as WisBlock Core"
+  src="/assets/images/wisblock/rak12019/quickstart/selectboard11200.png"
+  width="90%"
+  caption="Select RAK11200 as WisBlock Core"
 />
 
 **RAK11310 Board**
+
 <rk-img
-  src="/assets/images/wisblock/RAK12019/quickstart/selectboard11300.png"
-  width="100%"
-  caption="Selecting RAK11300 as WisBlock Core"
+  src="/assets/images/wisblock/rak12019/quickstart/selectboard11300.png"
+  width="90%"
+  caption="Select RAK11300 as WisBlock Core"
 />
 
 3. Copy the example code below:
@@ -281,15 +284,15 @@ If you experience any error in compiling the example sketch, check the updated c
 4. Install the required library, as shown in **Figure 9** and **Figure 10**.
 
 <rk-img
-  src="/assets/images/wisblock/RAK12019/quickstart/get_library.png"
-  width="100%"
-  caption="Getting the Library link"
+  src="/assets/images/wisblock/rak12019/quickstart/get_library.png"
+  width="90%"
+  caption="Get the Library link"
 />
 
 <rk-img
-  src="/assets/images/wisblock/RAK12019/quickstart/install_library.png"
-  width="100%"
-  caption="Installing the Library"
+  src="/assets/images/wisblock/rak12019/quickstart/install_library.png"
+  width="90%"
+  caption="Install the Library"
 />
 
 5. Select the right Serial Port and upload the code, as shown in **Figure 11** and **Figure 12**.
@@ -299,42 +302,42 @@ If you are using the RAK11200 as your WisBlock Core, the RAK11200 requires the *
 :::
 
 <rk-img
-  src="/assets/images/wisblock/RAK12019/quickstart/select_port.png"
-  width="100%"
-  caption="Selecting the correct Serial Port"
+  src="/assets/images/wisblock/rak12019/quickstart/select_port.png"
+  width="90%"
+  caption="Select the correct Serial Port"
 />
 
 <rk-img
-  src="/assets/images/wisblock/RAK12019/quickstart/upload.png"
-  width="100%"
-  caption="Uploading the sample code"
+  src="/assets/images/wisblock/rak12019/quickstart/upload.png"
+  width="90%"
+  caption="Upload the sample code"
 />
 
 6. When you have successfully uploaded the sample code, you may open up your serial monitor as shown in **Figure 13**. You can try to experiment with the data by manipulating the light source.
 
 <rk-img
-  src="/assets/images/wisblock/RAK12019/quickstart/serial_1.png"
+  src="/assets/images/wisblock/rak12019/quickstart/serial_1.png"
   width="60%"
   caption="Serial Monitor reading in ALS mode"
 />
 
 <rk-img
-  src="/assets/images/wisblock/RAK12019/quickstart/light_source.png"
+  src="/assets/images/wisblock/rak12019/quickstart/light_source.png"
   width="60%"
-  caption="Placing the sensor under direct light source"
+  caption="light_source"
 />
 
 7. You can also try to switch to UV mode by changing this line of code as shown in **Figure 15**. And see the sensor reading in Serial Monitor as shown in **Figure 16**
 
 <rk-img
-  src="/assets/images/wisblock/RAK12019/quickstart/changemode.png"
+  src="/assets/images/wisblock/rak12019/quickstart/changemode.png"
   width="100%"
-  caption="Switching LTR390 to UV mode"
+  caption="Switch the LTR390 to UV mode"
 />
 
 <rk-img
-  src="/assets/images/wisblock/RAK12019/quickstart/serial_3.png"
-  width="70%"
+  src="/assets/images/wisblock/rak12019/quickstart/serial_3.png"
+  width="80%"
   caption="Serial Monitor reading in UV mode"
 />
 

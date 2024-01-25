@@ -123,7 +123,7 @@ If a 24-pin WisBlock Sensor connector is used, the IO used for the output pulse 
 ##### WisConnector PCB Layout
 
 <rk-img
-  src="/assets/images/wisblock/rak1902/datasheet/mxxs1003k6m.png"
+  src="/assets/images/wisblock/rak1902/datasheet/MxxS1003K6M.png"
   width="100%"
   caption="WisConnector PCB footprint and recommendations"
 />

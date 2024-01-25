@@ -245,7 +245,7 @@ The Reset Push Button is connected to the MCU module. When pushed, it resets the
 The **MCU module connector** is a 40-pin board-to-board connector. It is a high-speed and high-density connector, with an easy attaching mechanism.
 
 <rk-img
-  src="/assets/images/wisblock/rak5005-o/datasheet/12.mcu-module connector.png"
+  src="/assets/images/wisblock/rak5005-o/datasheet/12.mcu-module-connector.png"
   width="35%"
   caption="MCU module connector"
 />

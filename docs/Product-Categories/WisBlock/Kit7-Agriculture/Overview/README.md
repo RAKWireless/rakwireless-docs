@@ -44,7 +44,7 @@ The kit is designed for easy integration with other WisBlock modules, and it sup
     - Two [RAK12005/RAK12030 Rain Sensors](/Product-Categories/WisBlock/RAK12005/Quickstart/)
     - Two [RAK5802 RS485 Interface Modules](/Product-Categories/WisBlock/RAK5802/Quickstart/)
     - Two [RAK5801 4-20&nbsp;mA Interface Modules](/Product-Categories/WisBlock/RAK5801/Quickstart/)
-    - Two [RAK13010 SDI-12 Interface Modules](/Product-Categories/WisBlock/RAK13010/Quickstart/)
+    - Two [RAK13010 SDI-12 Interface Modules](/Product-Categories/WisBlock/RAK13010/Overview/)
     - LoRaWAN supported bands: RU864, IN865, EU868, AU915, US915, KR920, and AS923
     - (Optional) Cellular variant dependent on a country: two (2) [RAK5860](/Product-Categories/WisBlock/RAK5860/Quickstart/) with 5G LTE NB-IoT capability and two (2) [RAK13101](/Product-Categories/WisBlock/RAK13101/Quickstart/) with GSM/GPRS capability
 - GPS built-in on Cellular modules

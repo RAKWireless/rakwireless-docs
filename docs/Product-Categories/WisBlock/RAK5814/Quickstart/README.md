@@ -62,7 +62,7 @@ As shown in **Figure 2**, the locations for Slots A, B, C, and D are properly ma
 When using the **RAK4631** board, connect the LoRa and BLE antennas to avoid damage to the board.
 
 <rk-img
-  src="/assets/images/wisblock/rak5814/quickstart/RAK4631_Antenna.png"
+  src="/assets/images/wisblock/rak5814/quickstart/RAK4631_Antennas.png"
   width="60%"
   caption="LoRa and BLE antennas of RAK4631"
 />
@@ -118,7 +118,7 @@ The RAK5814 design is based on **ATECC608A** from Microchip. The RAK5814 is a cr
 1. Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) for WisBlock by using the `package_rakwireless_index.json` board installation package. The WisBlock Core should now be available on the Arduino IDE.
 
 <rk-img
-  src="/assets/images/wisblock/rak5814/quickstart/Arduino_Example.png"
+  src="/assets/images/wisblock/rak5814/quickstart/Arduino-Example.png"
   width="90%"
   caption="Arduino IDE"
 />

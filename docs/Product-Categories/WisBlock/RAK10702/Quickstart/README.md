@@ -33,7 +33,7 @@ Before going through each and every step in the installation guide of the RAK107
 
 #### Hardware Tools
 
-1. [**RAK10702 Indoor Comfort Node**](https://store.rakwireless.com/products/RAK10702?utm_source=RAK10702&utm_medium=Document&utm_campaign=BuyFromStore)
+1. [**RAK10702 Indoor Comfort Node**](https://store.rakwireless.com/products/wisblock-iaq-solution-kit-rak10702)
 2. USB Type C Cable
 3. LoRaWAN gateway in range
 4. Windows PC
@@ -365,7 +365,7 @@ Chirpstack can use a payload decoder to show the payload in the device events. Y
 
 :::
 
-Adding the payload decoder is not difficult. From our [Github repo ⤴️](https://github.com/RAKWireless/RAKwireless_Standardized_Payload) open the [RAKwireless_Standardized_Payload.js](https://github.com/RAKWireless/RAKwireless_Standardized_Payload/blob/main/RAKwireless_Standardized_Payload.js⤴️) Javascript.
+Adding the payload decoder is not difficult. From our [Github repo ⤴️](https://github.com/RAKWireless/RAKwireless_Standardized_Payload) open the [RAKwireless_Standardized_Payload.js](https://github.com/RAKWireless/RAKwireless_Standardized_Payload/blob/main/RAKwireless_Standardized_Payload.js) Javascript.
 
 <rk-img
 	src="/assets/images/wisblock/rak10702/quickstart/cs-6.png"

@@ -35,7 +35,7 @@ Before going through each step in the installation guide of the RAK4260 Breakout
 - [Microchip Studio](https://www.microchip.com/mplab/microchip-studio)
 - [RAK Serial Tool](https://downloads.rakwireless.com/#LoRa/Tools/)
 - [CH340 Drivers](https://www.driverscape.com/download/usb-serial-ch340)
-- [The Things Network](https://account.thethingsnetwork.org/register) account
+- [The Things Network](https://www.thethingsnetwork.org/get-started) account
 - [Sample Code](https://github.com/RAKWireless/RAK4260-LoRaNode-demo)
 
 ### What's Included in the Package?

@@ -321,14 +321,14 @@ RAK3172-SiP uses UART2 serial pins to upload the latest firmware.
 
 #### Firmware/OS
 
-Download the latest RAK3172-SiP and RAK3172LP-SiP Breakout Board firmware provided below.
+Download the latest RAK3172-SiP and RAK3172LP-SiP firmware provided below.
 
 | Model                | Version                   | Source                                                                                      |
 | -------------------- | ------------------------- | ------------------------------------------------------------------------------------------- |
-| RAK3272-SiP (.bin)   | RUI3 (App only)           | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3272-SiP_latest.bin)         |
-| RAK3272-SiP (.hex)   | RUI3 (Bootloader and App) | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3272-SiP_latest_final.hex)   |
-| RAK3272LP-SiP (.bin) | RUI3 (App only)           | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3272LP-SiP_latest.bin)       |
-| RAK3272LP-SiP (.hex) | RUI3 (Bootloader and App) | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3272LP-SiP_latest_final.hex) |
+| RAK3172-SiP (.bin)   | RUI3 (App only)           | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3272-SiP_latest.bin)         |
+| RAK3172-SiP (.hex)   | RUI3 (Bootloader and App) | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3272-SiP_latest_final.hex)   |
+| RAK3172LP-SiP (.bin) | RUI3 (App only)           | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3272LP-SiP_latest.bin)       |
+| RAK3172LP-SiP (.hex) | RUI3 (Bootloader and App) | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3272LP-SiP_latest_final.hex) |
 
 
 ## Models and Bundles

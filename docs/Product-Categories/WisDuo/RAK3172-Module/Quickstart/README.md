@@ -40,13 +40,13 @@ _**If you are using Windows 10**_.
 Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Instead, install the original Arduino IDE from the Arduino official website. The Arduino app from the Microsoft App Store has problems using third-party Board Support Packages.
 :::
 
-- Add [RAK3172 as a supported board in Arduino IDE](/Product-Categories/wisduo/RAK3172-Module/Quickstart/#-board-support-package-in-arduino-ide) by updating Board Manager URLs in **Preferences** settings of Arduino IDE with the JSON URL below.
+- Add [RAK3172 as a supported board in Arduino IDE](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#-board-support-package-in-arduino-ide) by updating Board Manager URLs in **Preferences** settings of Arduino IDE with the JSON URL below.
 ```json
 https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main/package_rakwireless.com_rui_index.json
 ```
 After that, you can then add **RAKwireless RUI STM32 Boards** via Arduino board manager.
 
-- [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools)
+- [RAK Serial Port Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip)
 
 #### List of Acronyms
 
@@ -106,7 +106,7 @@ RAK3172 has a module variant with an IPEX connector where you can connect the Lo
 
 
 :::tip 📝 NOTE
-Detailed information about the RAK3172 LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/#LoRa/WisBlock/Accessories/).
+Detailed information about the RAK3172 LoRa antenna can be found on the [863-870 MHz antenna datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/RAK_PCB_Antenna_for_LoRa_863-870_MHz_(RAKARB04)_Datasheet.pdf) or the [902-928 MHz antenna datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/RAK_PCB_Antenna_for_LoRa_902-928_MHz_(RAKARB03)_Datasheet.pdf).
 :::
 
 :::warning ⚠️ WARNING
@@ -119,7 +119,7 @@ The default firmware of RAK3172 is based on RUI3, which allows you to develop yo
 
 ##### RAK3172 RUI3 Board Support Package in Arduino IDE
 
-If you don't have an Arduino IDE yet, you can download it on the [Arduino official website](https://www.arduino.cc/en/Main/Software) and follow the installation procedure in the [miscellaneous section](/Product-Categories/wisduo/RAK3172-Module/Quickstart/#arduino-installation) of this document.
+If you don't have an Arduino IDE yet, you can download it on the [Arduino official website](https://www.arduino.cc/en/Main/Software) and follow the installation procedure in the [miscellaneous section](/Product-Categories/WisDuo/RAK3172-Module/Quickstart/#arduino-installation) of this document.
 
 ::: tip 📝 NOTE
 **For Windows 10 and up users**:
@@ -1336,7 +1336,7 @@ Here's another way of OTAA configuration using **WisToolBox Console**. Below are
 2. Click **CONNECT DEVICE** button to launch the WisToolBox Dashboard.
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_1.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-1.png"
   width="90%"
   caption="CONNECT DEVICE"
 />
@@ -1344,13 +1344,13 @@ Here's another way of OTAA configuration using **WisToolBox Console**. Below are
 3. Select your target port where your **RAK3172** is connected. Once recognized, click **CONNECT**, as shown in **Figure 83**.
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_2.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-2.png"
   width="90%"
   caption="Setting up your device"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_3.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-3.png"
   width="90%"
   caption="Setting up your device"
 />
@@ -1358,7 +1358,7 @@ Here's another way of OTAA configuration using **WisToolBox Console**. Below are
 4. Once done, **RAK3172** will appear in the dashboard, then select it.
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_4.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-4.png"
   width="90%"
   caption="Device seen from WisToolBox dashboard"
 />
@@ -1366,7 +1366,7 @@ Here's another way of OTAA configuration using **WisToolBox Console**. Below are
 5. Then click **ADVANCED**.
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_5.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-5.png"
   width="90%"
   caption="Setting up your device"
 />
@@ -1374,19 +1374,19 @@ Here's another way of OTAA configuration using **WisToolBox Console**. Below are
 6. Once done, click **OPEN CONSOLE** to do the configuration.
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_6.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-6.png"
   width="90%"
   caption="OPEN CONSOLE"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_7.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-7.png"
   width="90%"
   caption="Opening the Console terminal of WisToolBox"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_8.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-8.png"
   width="90%"
   caption="Opening the Console terminal of WisToolBox"
 />
@@ -1414,19 +1414,19 @@ If there is no `OK` or any reply, check if the device is powered correctly. If y
 :::
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_9A.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-9a.png"
   width="90%"
   caption="Setting up your Console"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_9B.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-9b.png"
   width="90%"
   caption="Setting up your Console"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_9C.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-9c.png"
   width="90%"
   caption="Setting up your Console"
 />
@@ -1434,19 +1434,19 @@ If there is no `OK` or any reply, check if the device is powered correctly. If y
 8. Then configure the LoRaWAN join mode to **OTAA**. You can check what parameter you will input by typing **AT+NJM?** and then **Enter** into the console terminal. For **OTAA**, you should input **AT+NJM=1** and then press **Enter**, as shown in **Figure 92**.
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_10.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-10.png"
   width="90%"
   caption="Setting up your Console"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_11.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-11.png"
   width="90%"
   caption="Setting up your Console"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_12.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-12.png"
   width="90%"
   caption="Setting up your Console"
 />
@@ -1487,19 +1487,19 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_13.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-13.png"
   width="90%"
   caption="Setting up your Console"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_14.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-14.png"
   width="90%"
   caption="Setting up your Console"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_15.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-15.png"
   width="90%"
   caption="Setting up your Console"
 />
@@ -1513,19 +1513,19 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_16.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-16.png"
   width="90%"
   caption="Setting up your Console"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_17.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-17.png"
   width="90%"
   caption="Setting up your Console"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_18.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-18.png"
   width="90%"
   caption="Setting up your Console"
 />
@@ -1537,7 +1537,7 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_19.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-19.png"
   width="90%"
   caption="Setting up your Console"
 />
@@ -1547,19 +1547,19 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 - **For Application key (AppKey)**
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_20.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-20.png"
   width="90%"
   caption="Setting up your Console"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_21.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-21.png"
   width="90%"
   caption="Setting up your Console"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_22.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-22.png"
   width="90%"
   caption="Setting up your Console"
 />
@@ -1571,7 +1571,7 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_23.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-23.png"
   width="90%"
   caption="Setting up your Console"
 />
@@ -1579,13 +1579,13 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 - **For Device EUI (DevEUI)**
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_24.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-24.png"
   width="90%"
   caption="Setting up your Console"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_25.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-25.png"
   width="90%"
   caption="Setting up your Console"
 />
@@ -1597,7 +1597,7 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_26.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-26.png"
   width="90%"
   caption="Setting up your Console"
 />
@@ -1605,31 +1605,31 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 12. Once done, click **Dashboard** to check the updated credentials of your OTAA device. Click **PARAMETERS** to open the **Global Settings** and **LoRaWAN keys, ID, EUI**, and check whether these portions are updated.
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_27.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-27.png"
   width="90%"
   caption="Setting up your Console"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_28.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-28.png"
   width="90%"
   caption="Setting up your Console"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_29.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-29.png"
   width="90%"
   caption="PARAMETERS"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_30A.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-30a.png"
   width="90%"
   caption="Global settings and LoRaWAN keys, ID, EUI"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_30B.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-30b.png"
   width="90%"
   caption="Global settings and LoRaWAN keys, ID, EUI details"
 />
@@ -1663,37 +1663,37 @@ After checking all the things above, try to join again.
 :::
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_34.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-34.png"
   width="90%"
   caption="Joining mode using WisToolBox Console"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_35.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-35.png"
   width="90%"
   caption="Joining mode using WisToolBox Console"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_36.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-36.png"
   width="90%"
   caption="Joining mode using WisToolBox Console"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_37.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-37.png"
   width="90%"
   caption="Joining mode using WisToolBox Console"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_38.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-38.png"
   width="90%"
   caption="OTAA device successfully joined the network"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_39A.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-39a.png"
   width="90%"
   caption="OTAA device successfully joined the network"
 />
@@ -1705,25 +1705,25 @@ AT+SEND=2:12345678
 ```
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_40.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-40.png"
   width="90%"
   caption="OTAA device sending payload to the network"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_41.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-41.png"
   width="90%"
   caption="OTAA device sending payload to the network"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_42.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-42.png"
   width="90%"
   caption="OTAA device sending payload to the network"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_43.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-43.png"
   width="90%"
   caption="OTAA device sending payload to the network"
 />
@@ -1731,7 +1731,7 @@ AT+SEND=2:12345678
 16. You can see the data sent by the RAK3172 module on the TTN device console *Live data* section. Also, the *Last seen* info should be a few seconds or minutes ago.
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ConWis_RAK3172_New_44A.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/conwis-rak3172-new-44a.png"
   width="90%"
   caption="OTAA Test Sample Data Sent Viewed in TTN"
 />
@@ -2019,7 +2019,7 @@ Here's another way of ABP configuration using **WisToolBox Console**. Below are 
 2. Click the **CONNECT DEVICE** button to launch the WisToolBox Dashboard.
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABPConWis_RAK3172_New_1.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconwis-rak3172-new-1.png"
   width="90%"
   caption="CONNECT DEVICE"
 />
@@ -2027,13 +2027,13 @@ Here's another way of ABP configuration using **WisToolBox Console**. Below are 
 3. Select your target port where your **RAK3172** is connected. Once recognized, click **CONNECT**, as shown in **Figure 164**.
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABPConWis_RAK3172_New_2.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconwis-rak3172-new-2.png"
   width="90%"
   caption="Setting up your device"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABPConWis_RAK3172_New_3.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconwis-rak3172-new-3.png"
   width="90%"
   caption="Setting up your device"
 />
@@ -2041,7 +2041,7 @@ Here's another way of ABP configuration using **WisToolBox Console**. Below are 
 4. Once done, **RAK3172** will appear in the dashboard, and then select it.
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABPConWis_RAK3172_New_4.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconwis-rak3172-new-4.png"
   width="90%"
   caption="Device seen from WisToolBox dashboard"
 />
@@ -2049,7 +2049,7 @@ Here's another way of ABP configuration using **WisToolBox Console**. Below are 
 5. Then click **ADVANCED**.
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABPConWis_RAK3172_New_5.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconwis-rak3172-new-5.png"
   width="90%"
   caption="Setting up your device"
 />
@@ -2057,19 +2057,19 @@ Here's another way of ABP configuration using **WisToolBox Console**. Below are 
 6. Once done, click **OPEN CONSOLE** to do the configuration.
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABPConWis_RAK3172_New_6.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconwis-rak3172-new-6.png"
   width="90%"
   caption="OPEN CONSOLE"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABPConWis_RAK3172_New_7.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconwis-rak3172-new-7.png"
   width="90%"
   caption="Opening the Console terminal of WisToolBox"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABPConWis_RAK3172_New_8.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconwis-rak3172-new-8.png"
   width="90%"
   caption="Opening the Console terminal of WisToolBox"
 />
@@ -2097,19 +2097,19 @@ If there is no `OK` or any reply, check if the device is powered correctly. If y
 :::
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABPConWis_RAK3172_New_9A.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconwis-rak3172-new-9a.png"
   width="90%"
   caption="Setting up your Console"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABPConWis_RAK3172_New_9B.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconwis-rak3172-new-9b.png"
   width="90%"
   caption="Setting up your Console"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABPConWis_RAK3172_New_9C.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconwis-rak3172-new-9c.png"
   width="90%"
   caption="Setting up your Console"
 />
@@ -2117,19 +2117,19 @@ If there is no `OK` or any reply, check if the device is powered correctly. If y
 8. Then configure the LoRaWAN join mode to **ABP**. You can check what parameter you will input by typing **AT+NJM?**, and then **Enter** into the console terminal. For **ABP**, you should input **AT+NJM=0**, and then press **Enter** as shown in **Figure 173**.
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABPConWis_RAK3172_New_10.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconwis-rak3172-new-10.png"
   width="90%"
   caption="Setting up your Console"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABPConWis_RAK3172_New_11.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconwis-rak3172-new-11.png"
   width="90%"
   caption="Setting up your Console"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABPConWis_RAK3172_New_12.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconwis-rak3172-new-12.png"
   width="90%"
   caption="Setting up your Console"
 />
@@ -2169,19 +2169,19 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 | 11   | AS923-4       |
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABPConWis_RAK3172_New_13.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconwis-rak3172-new-13.png"
   width="90%"
   caption="Setting up your Console"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABPConWis_RAK3172_New_14.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconwis-rak3172-new-14.png"
   width="90%"
   caption="Setting up your Console"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABPConWis_RAK3172_New_15.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconwis-rak3172-new-15.png"
   width="90%"
   caption="Setting up your Console"
 />
@@ -2195,19 +2195,19 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABPConWis_RAK3172_New_16.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconwis-rak3172-new-16.png"
   width="90%"
   caption="Setting up your Console"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABPConWis_RAK3172_New_17.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconwis-rak3172-new-17.png"
   width="90%"
   caption="Setting up your Console"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABPConWis_RAK3172_New_18.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconwis-rak3172-new-18.png"
   width="90%"
   caption="Setting up your Console"
 />
@@ -2219,7 +2219,7 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABPConWis_RAK3172_New_19.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconwis-rak3172-new-19.png"
   width="90%"
   caption="Setting up your Console"
 />
@@ -2229,19 +2229,19 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 - **For Device address**
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABPConWis_RAK3172_New_20.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconwis-rak3172-new-20.png"
   width="90%"
   caption="Setting up your Console"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABPConWis_RAK3172_New_21.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconwis-rak3172-new-21.png"
   width="90%"
   caption="Setting up your Console"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABPConWis_RAK3172_New_22.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconwis-rak3172-new-22.png"
   width="90%"
   caption="Setting up your Console"
 />
@@ -2253,7 +2253,7 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABPConWis_RAK3172_New_23.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconwis-rak3172-new-23.png"
   width="90%"
   caption="Setting up your Console"
 />
@@ -2261,19 +2261,19 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 - **For Network session key (NwkSKey)**
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABPConWis_RAK3172_New_24.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconwis-rak3172-new-24.png"
   width="90%"
   caption="Setting up your Console"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABPConWis_RAK3172_New_25.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconwis-rak3172-new-25.png"
   width="90%"
   caption="Setting up your Console"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABPConWis_RAK3172_New_26.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconwis-rak3172-new-26.png"
   width="90%"
   caption="Setting up your Console"
 />
@@ -2285,7 +2285,7 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABPConWis_RAK3172_New_27.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconwis-rak3172-new-27.png"
   width="90%"
   caption="Setting up your Console"
 />
@@ -2293,31 +2293,31 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 12. Once done, click **Dashboard** to check the updated credentials of your ABP device. Click **PARAMETERS** to open the **Global Settings** and **LoRaWAN keys, ID, EUI**, and check whether these portions are updated.
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABPConWis_RAK3172_New_28.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconwis-rak3172-new-28.png"
   width="90%"
   caption="Setting up your Console"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABPConWis_RAK3172_New_29.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconwis-rak3172-new-29.png"
   width="90%"
   caption="Setting up your Console"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABPConWis_RAK3172_New_30.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconwis-rak3172-new-30.png"
   width="90%"
   caption="PARAMETERS"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABPConWis_RAK3172_New_31A.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconwis-rak3172-new-31a.png"
   width="90%"
   caption="Global settings and LoRaWAN keys, ID, EUI"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABPConWis_RAK3172_New_31B.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconwis-rak3172-new-31b.png"
   width="90%"
   caption="Global settings and LoRaWAN keys, ID, EUI details"
 />
@@ -2331,25 +2331,25 @@ AT+SEND=2:12345678
 ```
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABPConWis_RAK3172_New_35.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconwis-rak3172-new-35.png"
   width="90%"
   caption="ABP device sending payload to the network"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABPConWis_RAK3172_New_36.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconwis-rak3172-new-36.png"
   width="90%"
   caption="ABP device sending payload to the network"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABPConWis_RAK3172_New_37.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconwis-rak3172-new-37.png"
   width="90%"
   caption="ABP device sending payload to the network"
 />
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABPConWis_RAK3172_New_38.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconwis-rak3172-new-38.png"
   width="90%"
   caption="ABP device sending payload to the network"
 />
@@ -2357,7 +2357,7 @@ AT+SEND=2:12345678
 15. You can see the data sent by the RAK3172 module on the TTN device console *Live data* section. Also, the *Last seen* info should be a few seconds or minutes ago.
 
 <rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ABPConWis_RAK3172_New_39.png"
+  src="/assets/images/wisduo/rak3172-module/quickstart/abpconwis-rak3172-new-39.png"
   width="90%"
   caption="ABP Test Sample Data Sent Viewed in TTN"
 />

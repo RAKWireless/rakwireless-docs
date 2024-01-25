@@ -74,7 +74,7 @@ The hardware specification is categorized into five parts. It shows the chipset 
 The RAK12027 WisBlock Earthquake Sensor Module comprises a standard WisBlock connector. The WisBlock connector allows the RAK12027 module to be mounted to a WisBlock Base board. The pin order of the connector and the pinout definition is shown in **Figure 3**.
 
 <rk-img
-  src="/assets/images/wisblock/rak12027/datasheet/RAK12027-pinout.jpg"
+  src="/assets/images/wisblock/rak12027/datasheet/rak12027-pinout.png"
   width="70%"
   caption="RAK12027 pinout diagram"
 />

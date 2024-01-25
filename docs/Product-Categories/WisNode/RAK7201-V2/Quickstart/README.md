@@ -361,14 +361,14 @@ at+button=1:1:HelloWorld
 ```
 
 ::: tip 📝 NOTE
-Refer to the [datasheet](/Product-Categories/RAK7201-V2/Datasheet/#buttons/) to view the key functions of the button.
+Refer to the [datasheet](/Product-Categories/WisNode/RAK7201-V2/Datasheet/#specifications/) to view the key functions of the button.
 :::
 
 After the button is pressed, if the device is still sending, the user's subsequent key actions will be ignored until the device has finished sending.
 
 #### LEDs Functions
 
-Refer to the [datasheet](/Product-Categories/RAK7201-V2/Datasheet/#leds/) to view the key functions of the button.
+Refer to the [datasheet](/Product-Categories/WisNode/RAK7201-V2/Datasheet/#specifications/) to view the key functions of the button.
 
 #### HeartBeat Functions
 

@@ -86,7 +86,7 @@ The outer dimensions of the RAK831 are given by **80&nbsp;mm x 50&nbsp;mm** with
 The RAK831 includes Semtech’s SX1301 which is a digital baseband chip that includes a massive digital signal processing engine specifically designed to offer breakthrough gateway capabilities in the ISM bands worldwide. SX1301 integrates the LoRa concentrator IP.
 
 <rk-img
-  src="/assets/images/wislink-lora/rak831/datasheet/block-diagram-SX1301.png"
+  src="/assets/images/wislink-lora/rak831/datasheet/block-diagram-sx1301.png"
   width="80%"
   caption="SX1301 Chip Block Diagram"
 />
@@ -510,8 +510,8 @@ Download the latest firmware of the RAK831 in the table provided below.
 
 | Model  | Raspberry Pi Board | Firmware Version | Source                                                                                                 |
 | ------ | ------------------ | ---------------- | ------------------------------------------------------------------------------------------------------ |
-| RAK831 | Raspberry Pi 3B+   | V4.1.0           | [Download](https://downloads.rakwireless.com/LoRa/RAK2245-Pi-HAT/Firmware/RAK2245_Latest_Firmware.zip) |
-| RAK831 | Raspberry Pi 4     | V4.1.0           | [Download](https://downloads.rakwireless.com/LoRa/RAK2245-Pi-HAT/Firmware/RAK2245_Latest_Firmware.zip) |
+| RAK831 | Raspberry Pi 3B+   | V4.2.5R          | [Download](https://downloads.rakwireless.com/LoRa/RAK2245-Pi-HAT/Firmware/RAK2245_Latest_Firmware.zip) |
+| RAK831 | Raspberry Pi 4     | V4.2.5R           | [Download](https://downloads.rakwireless.com/LoRa/RAK2245-Pi-HAT/Firmware/RAK2245_Latest_Firmware.zip) |
 
 ## Models / Bundles
 

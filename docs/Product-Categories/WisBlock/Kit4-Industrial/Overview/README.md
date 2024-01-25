@@ -42,7 +42,7 @@ Depending on the use case, this kit supports a variety of connectivity options, 
     - Two [RAK12014 IR ToF Sensors](/Product-Categories/WisBlock/RAK12014/Quickstart/)
     - Two [RAK12018 Bar Code Scanner](/Product-Categories/WisBlock/RAK12018/Quickstart/)
     - Two [RAK16000 DC Current Sensor](/Product-Categories/WisBlock/RAK16000/Quickstart/)
-    - Two [RAK14007/RAK14013 Joystick/Button Modules](/Product-Categories/WisBlock/Rak14013/Quickstart/)
+    - Two [RAK14007/RAK14013 Joystick/Button Modules](/Product-Categories/WisBlock/RAK14013/Quickstart/)
     - Two relay modules; you can choose between RAK13001 110&nbsp;V and RAK13007 220&nbsp;V versions
     - LoRaWAN supported bands: RU864, IN865, EU868, AU915, US915, KR920, and AS923
     - (Optional) Cellular variant dependent on a country: two (2) [RAK5860](/Product-Categories/WisBlock/RAK5860/Quickstart/) with 5G LTE NB-IoT capability and two (2) [RAK13101](/Product-Categories/WisBlock/RAK13101/Quickstart/) with GSM/GPRS capability

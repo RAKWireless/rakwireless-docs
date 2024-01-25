@@ -391,4 +391,4 @@ ADC measurements will be noisier while WiFi is on, often due to poor power and/o
 :::
 
 ##### 1.5 ADC Calibration API
-Espressif provides a library (API) for ADC calibration that uses tables for comparison. You can find more details about ESP32 [ADC calibration](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/peripherals/adc.html#adc-calibration) on Espressif ADC API.
+Espressif provides a library (API) for ADC calibration that uses tables for comparison. You can find more details about ESP32 [ADC calibration](https://docs.espressif.com/projects/esp-idf/en/v5.1/esp32/api-reference/peripherals/adc_calibration.html) on Espressif ADC API.

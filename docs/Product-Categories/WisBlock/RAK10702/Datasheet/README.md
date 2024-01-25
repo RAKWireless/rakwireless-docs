@@ -277,8 +277,8 @@ Download the latest firmware version of RAK10702 WisBlock Indoor Comfort Node in
 
 | Model                                 | Version | Source                                                                                        |
 | ------------------------------------- | ------- | --------------------------------------------------------------------------------------------- |
-| RAK10702 firmware for USB or BLE DFU  | V1.0.0  | [Download](https://downloads.rakwireless.com/LoRa/WisBlock/Solutions/RAK10702-Latest.zip)     |
-| RAK10702 firmware for UF2 file update | V1.0.0  | [Download](https://downloads.rakwireless.com/LoRa/WisBlock/Solutions/RAK10702-Latest-UF2.zip) |
+| RAK10702 firmware for USB or BLE DFU  | V1.0.0  | [Download](https://downloads.rakwireless.com/LoRa/WisBlock/Solutions/RAK10702/WisBlock_Comfort_V1.0.0_23.12.28_13.48.zip)     |
+| RAK10702 firmware for UF2 file update | V1.0.0  | [Download](https://downloads.rakwireless.com/LoRa/WisBlock/Solutions/RAK10702/WisBlock_Comfort_V1.0.0_23.12.28_13.48.uf2) |
 
 #### Flashing the Updated Firmware over USB
 

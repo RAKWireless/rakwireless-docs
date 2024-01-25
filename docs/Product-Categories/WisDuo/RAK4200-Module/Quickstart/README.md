@@ -27,7 +27,7 @@ Before going through the step in the installation guide of the RAK4200 WisDuo LP
 
 #### Software Tools
 
-- [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools/)
+- [RAK Serial Port Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip)
 - [RAK Device Firmware Upgrade (DFU) Tool](https://downloads.rakwireless.com/#LoRa/Tools/RAK_Device_Firmware_Upgrade_tool/)
 - [RAK4200 Firmware](https://downloads.rakwireless.com/#LoRa/RAK4200/Firmware/)
 - [CH340 Drivers](https://downloads.rakwireless.com/#LoRa/Tools/)

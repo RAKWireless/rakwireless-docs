@@ -151,7 +151,7 @@ The RAK12022 design is based on **MAX31865** from Analog Devices. The RAK12022 i
 />
 
 <rk-img
-  src="/assets/images/wisblock/rak12022/quickstart/RAK12022_Wisblocks.png"
+  src="/assets/images/wisblock/rak12022/quickstart/RAK12022_WisBlocks.png"
   width="90%"
   caption="WisBlock Cores inside the Arduino IDE"
 />

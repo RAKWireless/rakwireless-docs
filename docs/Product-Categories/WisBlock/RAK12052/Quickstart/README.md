@@ -62,7 +62,7 @@ As shown in **Figure 2**, the location for the IO slot is properly marked by sil
 When using the **RAK4631** board, connect the LoRa and BLE antennas to avoid damage to the board.
 
 <rk-img
-  src="/assets/images/wisblock/rak12052/quickstart/RAK4631_Antenna.png"
+  src="/assets/images/wisblock/rak12052/quickstart/RAK4631_Antennas.png"
   width="50%"
   caption="LoRa and BLE antennas of RAK4631"
 />
@@ -124,7 +124,7 @@ The RAK12052 design is based on **MLX90640** from Melexis. MLX90640 is a fully-c
 />
 
 <rk-img
-  src="/assets/images/wisblock/rak12052/quickstart/RAK12052_Wisblocks.png"
+  src="/assets/images/wisblock/rak12052/quickstart/RAK12052_WisBlocks.png"
   width="90%"
   caption="WisBlock Cores inside the Arduino IDE"
 />

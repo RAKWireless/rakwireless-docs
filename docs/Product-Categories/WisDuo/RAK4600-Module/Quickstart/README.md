@@ -1171,7 +1171,7 @@ at+set_config=lora:work_mode:1
 at+set_config=lorap2p:XXX:Y:Z:A:B:C
 ```
 
-* Based on the [AT Commands for RAK4600](/Product-Categories/WisDuo/RAK4600-Module/LoRaWAN-P2P/AT-Command-Manual/), the parameters are:
+* Based on the [AT Commands for RAK4600](/Product-Categories/WisDuo/RAK4600-Module/AT-Command-Manual/), the parameters are:
 
   * **XXX**: Frequency in Hz.
   * **Y**: Spreading factor, [6, 7, 8, 9, 10, 11, 12].
@@ -1275,7 +1275,7 @@ The table shows the minimum hardware and software required to perform the firmwa
         </tr>
         <tr>
             <td>DFU Package</td>
-            <td><a href="https://downloads.rakwireless.com/#LoRa/RAK4600/Firmware/DFU-Package/">https://downloads.rakwireless.com/#LoRa/RAK4600/Firmware/DFU-Package/</a></td>
+            <td><a href="https://downloads.rakwireless.com/#LoRa/RAK4600/Firmware/History-Release-Version/DFU-Package/">https://downloads.rakwireless.com/#LoRa/RAK4600/Firmware/History-Release-Version/DFU-Package/</a></td>
         </tr>
         <tr>
             <td>nRF connect app</td>
@@ -1298,7 +1298,7 @@ Follow this procedure to upgrade the firmware in Device Firmware Upgrade (DFU) m
 
 3.  Open the Nordic mobile app and scan for the BLE signal.
 
-4.  After resetting the RAK4600, its BLE interface should broadcast a device name with the format “**RUI_XX:XX:XX**” for 60 seconds, as shown in **Figure 73**. Refer to the [Bluetooth Interface](/Product-Categories/WisDuo/RAK4600-Module/LoRaWAN®-P2P/Quickstart/#bluetooth-interface) to know more.
+4.  After resetting the RAK4600, its BLE interface should broadcast a device name with the format “**RUI_XX:XX:XX**” for 60 seconds, as shown in **Figure 73**. Refer to the [Bluetooth Interface](/Product-Categories/WisDuo/RAK4600-Module/Quickstart/#bluetooth-interface) to know more.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-module/quickstart/ble-rak4600-device.png"

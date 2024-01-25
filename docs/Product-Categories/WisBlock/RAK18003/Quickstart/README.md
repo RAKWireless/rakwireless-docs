@@ -142,7 +142,7 @@ After all this setup, you can now connect the battery and USB cable to start pro
 />
 
 <rk-img
-  src="/assets/images/wisblock/rak18003/quickstart/rakwireless_audio_library_2.png"
+  src="/assets/images/wisblock/rak18003/quickstart/rakwireless_audio_library2.png"
   width="100%"
   caption="RAKwireless Audio Library"
 />
@@ -291,7 +291,7 @@ If there is no serial plot graph shown in Arduino 2.0.x, you can try the serial 
 />
 
 <rk-img
-  src="/assets/images/wisblock/rak18003/quickstart/rakwireless_audio_library_2.png"
+  src="/assets/images/wisblock/rak18003/quickstart/rakwireless_audio_library2.png"
   width="100%"
   caption="RAKwireless Audio Library"
 />

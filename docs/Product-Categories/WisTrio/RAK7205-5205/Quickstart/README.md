@@ -1289,7 +1289,7 @@ If there are some errors in the Log box or it can’t connect, close the STM32Cu
 
 16. You can now on the second step which is burning the V3.0.0.12 firmware into RAK7205/RAK5205 using the LoRa Button Upgrade Tool.
 
-17. Download the [**RAK Upgrade Tool V1.0**](https://downloads.rakwireless.com/#LoRa/RAK612-LoRaButton/Tools/). Then, extract and open the tool.
+17. Download the [**RAK Upgrade Tool V1.0**](https://downloads.rakwireless.com/LoRa/RAK612-LoRaButton/Tools/RAK%20LoRaButton%20Upgrade%20Tool%20V1.0.zip). Then, extract and open the tool.
 
 <rk-img
   src="/assets/images/wistrio/rak7205-5205/quickstart/upgrading-the-firmware/lora-button-choose.png"

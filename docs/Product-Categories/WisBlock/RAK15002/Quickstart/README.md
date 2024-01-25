@@ -133,9 +133,9 @@ In the following example, you will be using the [RAK15002 WisBlock SD Card Modul
 
 These are the quick links that go directly to the software guide for the specific WisBlock Core module you use:
 
-- [RAK15002 in RAK4631 WisBlock Core Guide](/Product-Categories/WisBlock/rak15002/Quickstart/#rak15002-in-rak4631-wisblock-core-guide)
-- [RAK15002 in RAK11200 WisBlock Core Guide](/Product-Categories/WisBlock/rak15002/Quickstart/#rak15002-in-rak11200-wisblock-core-guide)
-- [RAK15002 in RAK11300 WisBlock Core Guide](/Product-Categories/WisBlock/rak15002/Quickstart/#rak15002-in-rak11300-wisblock-core-guide)
+- [RAK15002 in RAK4631 WisBlock Core Guide](/Product-Categories/WisBlock/RAK15002/Quickstart/#RAK15002-in-rak4631-wisblock-core-guide)
+- [RAK15002 in RAK11200 WisBlock Core Guide](/Product-Categories/WisBlock/RAK15002/Quickstart/#RAK15002-in-rak11200-wisblock-core-guide)
+- [RAK15002 in RAK11300 WisBlock Core Guide](/Product-Categories/WisBlock/RAK15002/Quickstart/#RAK15002-in-rak11300-wisblock-core-guide)
 
 #### RAK15002 in RAK4631 WisBlock Core Guide
 

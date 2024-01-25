@@ -30,7 +30,7 @@ Supported Hardware:
 
 | No.     | Feature                                          |
 | ------- | ------------------------------------------------ |
-| -       | Open-Source SBP                                  |
+| -       | Open-Source BSP                                  |
 | RUI-416 | Reduce RUI3 pre-built size                       |
 | -       | Support enable or disable feature on Arduino IDE |
 

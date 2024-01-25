@@ -34,8 +34,8 @@ Whether you are looking to measure and control various parameters in your indust
     - One standard [RAK19007 WisBlock Base Board](/Product-Categories/WisBlock/RAK19007/Quickstart/) with 4 sensor slots and 1 IO slot
     - One [RAK19001 Dual IO WisBlock Base Board](/Product-Categories/WisBlock/RAK19001/Overview/) with 6 sensor slots and 2 IO slots
     - Two [RAK13005 LIN Bus Modules](/Product-Categories/WisBlock/RAK13005/Quickstart/)
-    - Two [RAK13006 CAN Bus Modules](/Product-Categories/WisBlock/RAK13006/Quickstart/)
-    - Two [RAK13010 SDI-12 Modules](/Product-Categories/WisBlock/RAK13010/Quickstart/)
+    - Two [RAK13006 CAN Bus Modules](/Product-Categories/WisBlock/RAK13006/Overview/)
+    - Two [RAK13010 SDI-12 Modules](/Product-Categories/WisBlock/RAK13010/Overview/)
     - Two [RAK5801 4-20&nbsp;mA Interface Modules](/Product-Categories/WisBlock/RAK5801/Quickstart/)
     - Two [RAK5802 RS485 Interface Modules](/Product-Categories/WisBlock/RAK5802/Quickstart/)
     - Two [RAK5811 0-5&nbsp;V Interface Modules](/Product-Categories/WisBlock/RAK5811/Quickstart/)

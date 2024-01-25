@@ -364,8 +364,7 @@ Navigate to **System** > **Backup/Flash Firmware** > **Flash new firmware image*
 6. Verifying Operation. Check if the gateway is online in AWS IoT console.
 
 <rk-img
-  src="/assets/images/wisgate/rak7240/supported-lora-network-servers/aws/13.verifying
-.png"
+  src="/assets/images/wisgate/rak7240/supported-lora-network-servers/aws/13.verifying.png"
   width="100%"
   caption="Verifying Operation"
 />
@@ -377,8 +376,7 @@ This section shows an example of how to join the AWS IoT LoRaWAN server.
 1. Add Device Profile.
 
 <rk-img
-  src="/assets/images/wisgate/rak7240/supported-lora-network-servers/aws/14.add-device-profile
-.png"
+  src="/assets/images/wisgate/rak7240/supported-lora-network-servers/aws/14.add-device-profile.png"
   width="70%"
   caption="Adding the Device Profile"
 />

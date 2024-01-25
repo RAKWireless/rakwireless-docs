@@ -327,8 +327,8 @@ Download the latest version of RAK833 in the table provided below.
 
 | Model        | Raspberry Pi Board  | Firmware Version | Source                                                                                                            |
 | ------------ | ------------------- | ---------------- | ----------------------------------------------------------------------------------------------------------------- |
-| RAK833 - SPI | Raspberry Pi 3B+, 4 | V4.1.0           | [Download](https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/RPi-Firmware/RAK2247-USB_Latest_Firmware.zip) |
-| RAK833 - USB | Raspberry Pi 3B+, 4 | V4.1.0           | [Download](https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/RPi-Firmware/RAK2247-SPI_Latest_Firmware.zip) |
+| RAK833 - SPI | Raspberry Pi 3B+, 4 | V4.2.6R          | [Download](https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/RPi-Firmware/RAK2247-SPI_Latest_Firmware.zip) |
+| RAK833 - USB | Raspberry Pi 3B+, 4 | V4.2.6R            | [Download](https://downloads.rakwireless.com/LoRa/RAK2247-Mini-PCIe/RPi-Firmware/RAK2247-USB_Latest_Firmware.zip) |
 
 ## Models / Bundles
 

@@ -39,9 +39,9 @@ With its wide range of environmental sensors, the WisBlock Environment Sensor Ki
     - [RAK1906 IAQ (Indoor Air Quality) Sensor](/Product-Categories/WisBlock/RAK1906/Quickstart/)
     - [RAK12010 Ambient Light Sensor](/Product-Categories/WisBlock/RAK12010/Quickstart/)
     - [RAK12011 Barometer WT Sensor](/Product-Categories/WisBlock/RAK12011/Quickstart/)
-    - R[AK12019 UV Light Sensor](/Product-Categories/WisBlock/RAK12019/Quickstart/)
+    - [RAK12019 UV Light Sensor](/Product-Categories/WisBlock/RAK12019/Quickstart/)
     - [RAK12037 CO2 Sensor](/Product-Categories/WisBlock/RAK12037/Quickstart/)
-    - [RAK12039 Particle Matter Sensor](/Product-Categories/WisBlock/RAK12039/Quickstart/)
+    - [RAK12039 Particle Matter Sensor](/Product-Categories/WisBlock/RAK12039/Overview/)
     - [RAK12047 VOC Sensor](/Product-Categories/WisBlock/RAK12047/Quickstart/)
     - LoRaWAN supported bands: RU864, IN865, EU868, AU915, US915, KR920, and AS923
     - (Optional) Cellular variant dependent on a country: two (2) [RAK5860](/Product-Categories/WisBlock/RAK5860/Quickstart/) with 5G LTE NB-IoT capability and two (2) [RAK13101](/Product-Categories/WisBlock/RAK13101/Quickstart/) with GSM/GPRS capability

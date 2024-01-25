@@ -54,7 +54,7 @@ RAK12047 module can be connected to the sensor's slot of [WisBlock Base](https:/
 As shown in **Figure 2**, the location for Slot A, B, C, D, E, and F are properly marked by silkscreen. Slots C and D are located on the bottom of WisBlock Base. Follow carefully the procedure defined in [WisBlock Base board assembly/disassembly instructions](https://docs.rakwireless.com/Knowledge-Hub/Learn/RAK5005-O-Baseboard-Installation-Guide/) to attach a WisBlock module. Once attached, carefully fix the module with an M1.2 x 3&nbsp;mm screw.
 
 <rk-img
-  src="/assets/images/wisblock/rak12047/quickstart/rak12047_mounting.png"
+  src="/assets/images/wisblock/rak12047/quickstart/RAK12047_mounting.png"
   width="50%"
   caption="RAK12047 connection to WisBlock Base"
 />
@@ -264,7 +264,7 @@ void loop()
 :::
 
 ::: tip 📝 NOTE
-If you experience any error in compiling the example sketch, check the updated code for your WisBlock Core Module that can be found on the [RAK12047 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK12047_VOC_GetVOCIndex_SGP40) and this sample code in Github will work on all WisBlock Core.
+If you experience any error in compiling the example sketch, check the updated code for your WisBlock Core Module that can be found on the [RAK12047 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK12047_VOC_GetVOCIndex_SGP40) and this sample code in Github will work on all WisBlock Core.
 :::
 
 4. Once the example code is open, install the [Sensirion SGP40](https://github.com/sensirion/arduino-i2c-sgp40) library by clicking the link highlighted in yellow, as shown in **Figure 9** and **Figure 10**.

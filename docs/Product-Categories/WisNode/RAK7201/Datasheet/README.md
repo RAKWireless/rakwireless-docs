@@ -165,7 +165,7 @@ The RAK7201 comes with a 350 mAh rechargeable LiPo battery inside. In need of re
 
 | Model   | Version | Source                                                                                          |
 | ------- | ------- | ----------------------------------------------------------------------------------------------- |
-| RAK7201 | V1.0.1  | [Download](https://downloads.rakwireless.com/LoRa/RAK7201/Firmware/RAK7201_Latest_Firmware.zip) |
+| RAK7201 | V1.0.2  | [Download](https://downloads.rakwireless.com/LoRa/RAK7201/Firmware/RAK7201_Latest_Firmware.zip) |
 
 #### Working Modes
 

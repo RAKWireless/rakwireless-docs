@@ -89,7 +89,7 @@ Use **Figure 4** as a guide to connect RAKDAP1 on the RAK4600 Evaluation Board.
 />
 
 :::tip 📝 NOTE:
-For flashing the firmware, refer to the [Flash the Firmware Using DAPLink and RAKDAP1](../Low-Level-Development/#flash-the-firmware-using-daplink-and-rakdap1) section.
+For flashing the firmware, refer to the [Flash the Firmware Using DAPLink and RAKDAP1](/Product-Categories/WisDuo/RAK4600-Module/Quickstart/#firmware-upgrade-through-daplink) section.
 
 :::
 

@@ -32,7 +32,7 @@ This device released by RAKWireless is already pre-loaded with its latest firmwa
 
 ### Interfacing with RAK612 WisNode Button
 
-In order for you to be able to interface with the RAK612 WisNode Button with your Windows Machine, you need to download the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip).
+In order for you to be able to interface with the RAK612 WisNode Button with your Windows Machine, you need to download the [RAK Serial Port Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip).
 
 1. Using a standard **Micro - USB Cable**, connect your RAK612 WisNode Button to your computer.
 

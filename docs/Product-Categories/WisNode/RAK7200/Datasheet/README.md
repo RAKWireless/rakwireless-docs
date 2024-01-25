@@ -255,7 +255,7 @@ Download the latest firmware version of RAK7200 in tha table provided below.
 
 | Model   | Version   | Source                                                                                                  |
 | ------- | --------- | ------------------------------------------------------------------------------------------------------- |
-| RAK7200 | V3.X.0.13 | [Download](https://downloads.rakwireless.com/LoRa/RAK7200-Tracker/Firmware/RAK7200_Latest_Firmware.zip) |
+| RAK7200 | V3.1.0.13 | [Download](https://downloads.rakwireless.com/LoRa/RAK7200-Tracker/Firmware/RAK7200_Latest_Firmware.zip) |
 
 ## Models / Bundles
 

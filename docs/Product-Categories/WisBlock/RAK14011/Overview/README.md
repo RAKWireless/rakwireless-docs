@@ -21,7 +21,7 @@ Thank you for choosing **RAK14011 WisBlock 4x4 Keypad Module** in your awesome I
 
 ## Product Description
 
-**RAK14011 WisBlock 4x4 Keypad Module** was designed to be part of a production-ready IoT solution and must be combined with a [RAK14004 WisBlock Keypad Module](/Product-Categories/WisBlock/RAK1400/).
+**RAK14011 WisBlock 4x4 Keypad Module** was designed to be part of a production-ready IoT solution and must be combined with a [RAK14004 WisBlock Keypad Module](/Product-Categories/WisBlock/RAK14004/).
 
 ## Product Features
 

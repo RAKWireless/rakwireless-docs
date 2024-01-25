@@ -109,7 +109,7 @@ This section covers the pin number of the sensor connector, the definition, and 
 To enable **A0** as an additional channel:
 
 1. Remove **R7** on the WisBlock Base such as the RAK5005-O to disconnect Vbat sensing.
-2. On RAK5801, remove the 0 Ohms resistor in **R94** and put it to **R95**. See **Figure 3**.
+2. On RAK5801, remove the 0 Ohm resistor in **R94** and put it to **R95**. See **Figure 3**.
 :::
 
 <rk-img

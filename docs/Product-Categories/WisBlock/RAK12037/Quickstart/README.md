@@ -214,7 +214,7 @@ void loop()
 :::
 
 ::: tip 📝 NOTE
-If you experience any error in compiling the example sketch, check the updated code for your WisBlock Core Module that can be found on the [RAK12037 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/sensors/RAK12037_CO2_SCD30) and this sample code in GitHub will work on all WisBlock Core.
+If you experience any error in compiling the example sketch, check the updated code for your WisBlock Core Module that can be found on the [RAK12037 WisBlock Example Code Repository](https://github.com/RAKWireless/WisBlock/tree/master/examples/common/IO/RAK12037_CO2_SCD30) and this sample code in GitHub will work on all WisBlock Core.
 :::
 
 4. Once the example code is open, install the [SparkFun_SCD30](https://github.com/sparkfun/SparkFun_SCD30_Arduino_Library) library by clicking the yellow highlighted link, as shown in **Figure 9** and **Figure 10**.

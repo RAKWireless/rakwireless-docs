@@ -110,8 +110,8 @@ The WisBlock Base Plate with Antenna is designed as a special mounting base plat
 ::: tip 📝 NOTE
 There are two separate WisBlock Base Plate with Antenna that is optimized for 8xx Mhz and 9xx Mhz band. The 2.4&nbsp;GHz band for BLE is the same for both designs.
 
-- [863-870Mhz Antenna Datasheet](https://downloads.rakwireless.com/#LoRa/WisBlock/Accessories/)
-- [902-928Mhz Antenna Datasheet](https://downloads.rakwireless.com/#LoRa/WisBlock/Accessories/)
+- [863-870Mhz Antenna Datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/WisBlock%20Base%20Plate%20863-870Mhz%20Antenna%20Datasheet.pdf)
+- [902-928Mhz Antenna Datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/WisBlock%20Base%20Plate%20902-928Mhz%20Antenna%20Datasheet.pdf)
 
 :::
 

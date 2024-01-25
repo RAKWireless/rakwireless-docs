@@ -36,8 +36,8 @@ _**If you are using Windows 10**_.
 Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the original Arduino IDE from the Arduino official website. The Arduino app from the Microsoft App Store has problems using third-party Board Support Packages.
 :::
 
-- Add [RAK11720 as a supported board in Arduino IDE](/Product-Categories/wisduo/rak11720-module/Quickstart/#-board-support-package-in-arduino-ide) by updating Board Manager URLs in **Preferences** settings of Arduino IDE with this JSON URL `https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main/package_rakwireless.com_rui_index.json`. After that, you can then add **RAKwireless RUI Apollo3 Boards** via Arduino board manager.
-- [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools)
+- Add [RAK11720 as a supported board in Arduino IDE](/Product-Categories/WisDuo/RAK11720-Module/Quickstart/#-board-support-package-in-arduino-ide) by updating Board Manager URLs in **Preferences** settings of Arduino IDE with this JSON URL `https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main/package_rakwireless.com_rui_index.json`. After that, you can then add **RAKwireless RUI Apollo3 Boards** via Arduino board manager.
+- [RAK Serial Port Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip)
 
 ## Product Configuration
 
@@ -81,7 +81,7 @@ RAK11720 has a label on its sticker indicating where to connect the antennas, as
 />
 
 :::tip 📝 NOTE
-- Detailed information about the RAK11720 BLE and LoRa IPEX MHF4 antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/#LoRa/WisBlock/Accessories/).
+- Detailed information about the RAK11720 BLE and LoRa IPEX MHF4 antenna can be found on the [863-870 MHz antenna datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/RAK_PCB_Antenna_for_LoRa_863-870_MHz_(RAKARB04)_Datasheet.pdf) or the [902-928 MHz antenna datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/RAK_PCB_Antenna_for_LoRa_902-928_MHz_(RAKARB03)_Datasheet.pdf).
 
 - If the RAK11720 is not an IPEX MHF4 variant, the connection to the antenna is done via the RF pins. RAKwireless offers [RF Antenna Design Service](https://store.rakwireless.com/products/antenna-rf-design-service-including-pcb-design-tuning-matching-and-rf-test) for custom PCB designs.
 :::
@@ -462,12 +462,12 @@ If you are new to LoRaWAN, here are a few good references about LoRaWAN and gate
 
 To enable the RAK11720 module as a LoRaWAN end-device, a device must first be registered with the LoRaWAN network server. This guide covers both TTN and ChirpStack LoRaWAN network servers and the associated Arduino codes and AT commands for the RAK11720.
 
-- [TheThingsNetwork Guide](/Product-Categories/WisDuo/rak11720-module/quickstart/#connecting-to-the-things-network-ttn) - How to login, register new accounts, and create new applications on TTN.
-- [RAK11720 TTN OTAA Guide](/Product-Categories/WisDuo/rak11720-module/quickstart/#ttn-otaa-device-registration) - How to add OTAA device on TTN and what AT commands to use on RAK11720 OTAA activation.
-- [RAK11720 TTN ABP Guide](/Product-Categories/WisDuo/rak11720-module/quickstart/#ttn-abp-device-registration) - How to add ABP device on TTN and what AT commands to use on RAK11720 ABP activation.
-- [ChirpStack Guide](/Product-Categories/WisDuo/rak11720-module/quickstart/#connecting-with-ChirpStack) - How to create new applications on ChirpStack.
-- [RAK11720 ChirpStack OTAA Guide](/Product-Categories/WisDuo/rak11720-module/quickstart/#ChirpStack-otaa-device-registration) - How to add OTAA device to ChirpStack and what AT commands to use on RAK11720 OTAA activation.
-- [RAK11720 ChirpStack ABP Guide](/Product-Categories/WisDuo/rak11720-module/quickstart/#ChirpStack-abp-device-registration) - How to add ABP device on ChirpStack and what AT commands to use on RAK11720 ABP activation.
+- [TheThingsNetwork Guide](/Product-Categories/WisDuo/RAK11720-Module/Quickstart/#connecting-to-the-things-network-ttn) - How to login, register new accounts, and create new applications on TTN.
+- [RAK11720 TTN OTAA Guide](/Product-Categories/WisDuo/RAK11720-Module/Quickstart/#ttn-otaa-device-registration) - How to add OTAA device on TTN and what AT commands to use on RAK11720 OTAA activation.
+- [RAK11720 TTN ABP Guide](/Product-Categories/WisDuo/RAK11720-Module/Quickstart/#ttn-abp-device-registration) - How to add ABP device on TTN and what AT commands to use on RAK11720 ABP activation.
+- [ChirpStack Guide](/Product-Categories/WisDuo/RAK11720-Module/Quickstart/#connecting-with-ChirpStack) - How to create new applications on ChirpStack.
+- [RAK11720 ChirpStack OTAA Guide](/Product-Categories/WisDuo/RAK11720-Module/Quickstart/#ChirpStack-otaa-device-registration) - How to add OTAA device to ChirpStack and what AT commands to use on RAK11720 OTAA activation.
+- [RAK11720 ChirpStack ABP Guide](/Product-Categories/WisDuo/RAK11720-Module/Quickstart/#ChirpStack-abp-device-registration) - How to add ABP device on ChirpStack and what AT commands to use on RAK11720 ABP activation.
 
 #### Connecting to The Things Network (TTN)
 
@@ -1170,7 +1170,7 @@ Check **Disable counting frame verification**. During the test, when the module 
 The RAK11720 module can be configured using AT commands via the UART0 interface by default (UART1 can be used as well if configured correctly). You need a USB to UART TTL adapter to connect the RAK11720 to your computer's USB port and a serial terminal tool. It is highly recommended to use the [WisToolBox](https://docs.rakwireless.com/Product-Categories/Software-Tools/WisToolBox), so you can easily send AT commands and view the replies from the console output. You can configure the RAK11720 in two ways:
 
 - LoRaWAN End-Device
-- [LoRa P2P](/Product-Categories/WisDuo/rak11720-module/quickstart/#lora-p2p-mode) - Point-to-point communication between two RAK11720 modules.
+- [LoRa P2P](/Product-Categories/WisDuo/RAK11720-Module/Quickstart/#lora-p2p-mode) - Point-to-point communication between two RAK11720 modules.
 
 UART Parameters for AT Commands:
 

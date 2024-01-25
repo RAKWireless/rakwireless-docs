@@ -38,7 +38,7 @@ Moreover, it supports different types of mounting options such as pole, wall, DI
 
 ## Enclosure with Mounting Accessory
 
-The installation guide for mounting the different types of accessories can be found in [Mounting Guide](/Product-Categories/WisBlock/rakbox-uo150x100x45/Installation/#mounting-guide) of the medium unify enclosure.
+The installation guide for mounting the different types of accessories can be found in [Mounting Guide](/Product-Categories/WisBlock/RAKBox-UO150x100x45/Installation/#mounting-guide) of the medium unify enclosure.
 
 These are the measurements when the mounting is attached to the enclosure.
 

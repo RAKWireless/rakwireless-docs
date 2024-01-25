@@ -17,7 +17,7 @@ Thank you for choosing **RAK11300 WisDuo LPWAN Module** in your awesome IoT Proj
 * [Quick Start Guide](/Product-Categories/WisDuo/RAK11300-Module/Quickstart/)
 * [AT Command Manual](/Product-Categories/WisDuo/RAK11300-Module/AT-Command-Manual/)
 * [Datasheet](/Product-Categories/WisDuo/RAK11300-Module/Datasheet/)
-* [RAK11300 3D Model](https://downloads.rakwireless.com/3D_File/WisDuo/3D_RAK11300.stp)
+* [RAK11300 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK11300.stp)
 * [Reference Design](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK11310/Datasheet/#schematic-diagram)
 
 ## Product Description

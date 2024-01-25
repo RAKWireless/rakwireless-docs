@@ -400,8 +400,8 @@ Download the latest firmware of the RAK7244X series in the table provided below.
 
 | Model                | Raspberry Pi Board | Firmware Version | Source                                                                                                                               |
 | -------------------- | ------------------ | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| RAK7244 and RAK7244P | Raspberry Pi 4     | 4.2.0R           | [Download](https://downloads.rakwireless.com/LoRa/Developer-LoRaWAN-Gateway-RAK7244%26RAK7244P/Firmware/RAK7244_Latest_Firmware.zip) |
-| RAK7244C             | Raspberry Pi 4     | 4.2.0R           | [Download](https://downloads.rakwireless.com/LoRa/Developer-LoRaWAN-Gateway-RAK7244C/Firmware/RAK7244C_Latest_Firmware.zip)          |
+| RAK7244 and RAK7244P | Raspberry Pi 4     | 4.2.6R           | [Download](https://downloads.rakwireless.com/LoRa/Developer-LoRaWAN-Gateway-RAK7244%26RAK7244P/Firmware/RAK7244_Latest_Firmware.zip) |
+| RAK7244C             | Raspberry Pi 4     | 4.2.6R           | [Download](https://downloads.rakwireless.com/LoRa/Developer-LoRaWAN-Gateway-RAK7244C/Firmware/RAK7244C_Latest_Firmware.zip)          |
 
 ## Certification
 

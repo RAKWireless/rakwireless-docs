@@ -123,7 +123,7 @@ Helium has quickly become the most widespread LPWAN communal network with more t
 
 This section will focus on giving a brief guide on how to connect the GNSS Tracker to the network console, assuming that there is a Helium Hotspot within range.
 
-1. Login or create your account on the [Helium console page](https://www.helium.com/console).
+1. Login or create your account on the [Helium console page](https://console.helium.com/).
 
 
 <rk-img

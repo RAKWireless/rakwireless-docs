@@ -104,7 +104,7 @@ RAK has already configured a demo firmware for RAK4260 based on Microchip LoRaWA
 
 * [RAK4260 LoRaNode Demo](https://github.com/RAKWireless/RAK4260-LoRaNode-demo)
 
-The Microchip Studio LoRaWAN examples are based on [SAMR34 Xplained Pro](https://www.microchip.com/DevelopmentTools/ProductDetails/dm320111), but RAK260 did not adopt the same GPIO pinout. If you plan to develop a new LoRaWAN application, refer to the RAK4260 GPIO pins defined in the [**samr34_xplained_pro.h**](https://github.com/RAKWireless/RAK4260-LoRaNode-demo/blob/master/APPS_ENDDEVICE_DEMO1/src/ASF/sam0/boards/samr34_xplained_pro.h) file.
+The Microchip Studio LoRaWAN examples are based on [SAMR34 Xplained Pro](https://www.microchip.com/DevelopmentTools/ProductDetails/dm320111), but RAK260 did not adopt the same GPIO pinout. If you plan to develop a new LoRaWAN application, refer to the RAK4260 GPIO pins defined in the [**samr34_xplained_pro.h**](https://github.com/RAKWireless/RAK4260-LoRaNode-demo/blob/master/APPS_ENDDEVICE_DEMO1/src/ASF/sam0/boards/samr34_xplained_pro/samr34_xplained_pro.h) file.
 
 :::tip 📝 NOTE
 This sample firmware is solely for testing purposes. If you want to use and deploy your own LoRaWAN application, you need to develop a customized firmware based on Microchip LoRaWAN Stack (MLS).

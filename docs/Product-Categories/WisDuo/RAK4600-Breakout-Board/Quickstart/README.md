@@ -45,7 +45,7 @@ Before going through each and every step in the installation guide of the RAK460
 
 - [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools/)
 - [CH340 Drivers](https://downloads.rakwireless.com/#LoRa/Tools/)
-- [The Things Network](https://account.thethingsnetwork.org/register) account
+- [The Things Network](https://www.thethingsnetwork.org/get-started) account
 
 
 #### Definition of Terms

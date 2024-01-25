@@ -34,7 +34,7 @@ Before going through the steps in the installation guide of the RAK4630 WisDuo L
 _**If you are using Windows 10**_.
 Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the original Arduino IDE from the Arduino official website! The Arduino app from the Microsoft App Store has problems using third-party Board Support Packages.
 :::
-- Add [RAK4630 as a supported board in Arduino IDE](/Product-Categories/wisduo/rak4630-module/Quickstart/#-board-support-package-in-arduino-ide) by updating Board Manager URLs in **Preferences** settings of Arduino IDE with this JSON URL `https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main/package_rakwireless.com_rui_index.json`. After that, you can then add **RAKwireless RUI nRF Boards** via Arduino board manager.
+- Add [RAK4630 as a supported board in Arduino IDE](/Product-Categories/WisDuo/RAK4630-Module/Quickstart/#-board-support-package-in-arduino-ide) by updating Board Manager URLs in **Preferences** settings of Arduino IDE with this JSON URL `https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main/package_rakwireless.com_rui_index.json`. After that, you can then add **RAKwireless RUI nRF Boards** via Arduino board manager.
 - [RAK Serial Port Tool](https://downloads.rakwireless.com/#LoRa/Tools)
 
 ## Product Configuration
@@ -80,7 +80,7 @@ RAK4630 has a label on its sticker on where to connect the antennas, as shown in
 
 
 :::tip 📝 NOTE
-Detailed information about the RAK4630 BLE and LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/#LoRa/WisBlock/Accessories/).
+Detailed information about the RAK4630 BLE and LoRa antenna can be found on the [863-870 MHz antenna datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/RAK_PCB_Antenna_for_LoRa_863-870_MHz_(RAKARB04)_Datasheet.pdf) or the [902-928 MHz antenna datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/RAK_PCB_Antenna_for_LoRa_902-928_MHz_(RAKARB03)_Datasheet.pdf).
 :::
 
 :::warning ⚠️ WARNING
@@ -93,7 +93,7 @@ The default firmware of RAK4630 is based on RUI3, which allows you to develop yo
 
 ##### RAK4630 RUI3 Board Support Package in Arduino IDE
 
-If you don't have an Arduino IDE yet, you can download it from the [Arduino official website](https://www.arduino.cc/en/Main/Software) and follow the installation procedure on the [miscellaneous section](/Product-Categories/wisduo/rak4630-module/Quickstart/#arduino-installation) of this document.
+If you don't have an Arduino IDE yet, you can download it from the [Arduino official website](https://www.arduino.cc/en/Main/Software) and follow the installation procedure on the [miscellaneous section](/Product-Categories/WisDuo/RAK4630-Module/Quickstart/#arduino-installation) of this document.
 
 ::: tip 📝 NOTE
 **For Windows 10 and up users**:
@@ -2531,7 +2531,7 @@ AT+BAND=4
 
 Depending on the Regional Band you selected, you might need to configure the sub-band of your RAK4630 to match the gateway and LoRaWAN network server. This is especially important on Regional Bands like US915, AU915, and CN470.
 
-To configure the masking of channels for the sub-bands, you can use the `AT+MASK` command that can be found on the [AT Commands Manual](https://docs.rakwireless.com/Product-Categories/WisDuo/rak4630-module/AT-Command-Manual/#at-mask).
+To configure the masking of channels for the sub-bands, you can use the `AT+MASK` command that can be found on the [AT Commands Manual](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK4630-Module/AT-Command-Manual/#at-mask).
 
 To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 :::

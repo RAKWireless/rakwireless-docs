@@ -39,7 +39,7 @@ Before going through each and every step in the installation guide of the RAK720
 
 ### Interfacing with the RAK7204 WisNode Sense Home
 
-In order for you to be able to interface with the RAK7204 WisNode Sense Home with your Windows Machine, you need to download the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip).
+In order for you to be able to interface with the RAK7204 WisNode Sense Home with your Windows Machine, you need to download the [RAK Serial Port Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip).
 
 :::warning ⚠️ WARNING
 The included battery is **non rechargeable**. Please do note that when configuring the device, you have to connect the battery first in order for it to work.
@@ -141,7 +141,7 @@ Fill in a name of your choosing. The **Dev EUI**, **App EUI**, and **App Key** w
   caption="Helium devices"
 />
 
-Now your RAK7204 is registered and is awaiting activation. For this to happen, you need to import the Dev EUI, App EUI and App Key in the RAK7204 using the [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip).
+Now your RAK7204 is registered and is awaiting activation. For this to happen, you need to import the Dev EUI, App EUI and App Key in the RAK7204 using the [RAK Serial Port Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip).
 
 Open the tool, select the desired port (default baud rate) and open it. Then start importing your settings.
 
@@ -989,7 +989,7 @@ Example Data: **04 02 22 72**
 | Data flag | 04 02 |  |  |  |
 | Gas Resistance | 22 72 | 8818 | 0.01 kΩ Signed | 88.18 kΩ |
 
-For further details about the LPP format, you can take a look at this **[link.](https://developers.mydevices.com/cayenne/docs/lora/#lora-cayenne-low-power-payload-overview)**
+For further details about the LPP format, you can take a look at this **[link.](https://docs.mydevices.com/docs/lorawan/cayenne-lpp#cayenne-low-power-payload)**
 
 #### Decoding Sensor Data in TTN
 
@@ -1527,7 +1527,7 @@ Now that you have successfully connected your RAK7204 WisNode Sense Home to the 
 If the firmware version of your **RAK7204 WisNode Sense Home**  is newer than V3.0.0.0 or you have just burned the bootloader into the board according to the **Burning the Bootloader** section, follow the steps below
 
 - Make sure you have set your RAK7204 WisNode Sense Home to work in boot mode. If you have just burned the bootloader according to the previous section, it works in boot mode now.
-- Open and download the RAK Serial Port Tool [Here](https://downloads.rakwireless.com/en/LoRa/WisTrio-LoRa-RAK5205/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip) and Connect your board via the USB interface and enter the following **AT command** to let it work in boot mode.
+- Open and download the RAK Serial Port Tool [Here](https://downloads.rakwireless.com/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip) and Connect your board via the USB interface and enter the following **AT command** to let it work in boot mode.
 
 :::warning ⚠️ WARNING
  Before configuring your RAK7204 WisNode Sense Home, make sure you already connected the Battery provided  on your device in order for you to communicate with the device successfully.
