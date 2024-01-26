@@ -1,6 +1,6 @@
 ---
 rak_img: /assets/images/wisnode/rak2560/RAK2560.jpg
-rak_desc: The RAK2560 WisNode Sensor Hub is a modular sensor ecosystem consisting of the main body and multiple pre-configured sensor probes. With pluggable, interchangeable probes, and the option to add third-party sensors to the mixture, the Sensor Hub is a suitable and versatile solution platform for various IoT applications where environmental monitoring is needed.
+rak_desc: The RAK2560 WisNode Sensor Hub is a modular sensor ecosystem consisting of the main body and multiple pre-configured sensor probes. It has pluggable and interchangeable probes and supports third-party sensors integration.
 rak_grp: [wisnode,sensorhub]
 prev: ../../
 next: ../Quickstart/
@@ -11,7 +11,7 @@ tags:
 
 # RAK2560 WisNode Sensor Hub
 
-Thank you for choosing **RAK2560 WisNode Sensor Hub** in your awesome IoT project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK2560 WisNode Sensor Hub** in your awesome IoT project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [Quick Start Guide](../Quickstart/)
 * [Installation Guide](../Installation/)
@@ -22,13 +22,11 @@ Thank you for choosing **RAK2560 WisNode Sensor Hub** in your awesome IoT projec
 
 ## Product Description
 
-The **RAK2560 WisNode Sensor Hub** is a modular sensor ecosystem consisting of the main body and multiple pre-configured sensor probes. With pluggable, interchangeable probes, and the option to add third-party sensors to the mixture, the Sensor Hub is a suitable and versatile solution platform for various IoT applications where environmental monitoring is needed.
+The RAK2560 WisNode Sensor Hub is a modular sensor ecosystem consisting of the main body and multiple pre-configured sensor probes. It has pluggable and interchangeable probes and supports third-party sensors integration. These characteristics make the Sensor Hub an ideal and adaptable solution platform for a wide range of IoT applications requiring environmental monitoring.
 
-The Sensor Hub consists of a robust waterproof enclosure with two (2) sensor probe ports to connect the sensors or an external power source like a solar panel.
+The Sensor Hub is housed in a robust, waterproof enclosure with two (2) sensor probe ports for connecting sensors or an external power source, such as a solar panel. It can operate with an external power supply or in full battery mode, depending on the deployment location.
 
-The device can work in full battery mode or with an external power supply depending on the deployment location.
-
-The Sensor Hub and its sensor probes are easily configured via the WisToolBox app, available for mobile and desktop.
+With the use of the WisToolBox app, the Sensor Hub and its sensor probes can be easily configured. The application is available on mobile and desktop.
 
 ## Product Features
 
@@ -47,7 +45,10 @@ The Sensor Hub and its sensor probes are easily configured via the WisToolBox ap
 - Prevent theft via the hall effect sensor on the exclusive mounting bracket
 - IP66-rated waterproof enclosure
 - Sensor ports can host multiple Sensor Probes via Probe Splitters
+- Off-grid deployment with [RAK9154 Solar Battery](https://docs.rakwireless.com/Product-Categories/Accessories/RAK9154/Installation-Guide/) add-on
 
 :::tip 📝 NOTE
-WisNode Sensor Hub can be powered with batteries or a dedicated power adapter. It supports 2 to 4 batteries type: ER18505 3.6&nbsp;V 4000&nbsp;mAh Li-SOCl2 NON-rechargeable lithium batteries which are NOT included.
+WisNode Sensor Hub can be powered with batteries or a dedicated power adapter. It supports 2 to 4 battery types: ER18505 3.6&nbsp;V 4000&nbsp;mAh Li-SOCl2 NON-rechargeable lithium batteries which are NOT included.
+
+You can purchase the [RAK9154 Solar Battery in the RAKwireless store.](https://store.rakwireless.com/products/rak-battery-lite-solar-power-solution-rak9154)
 :::

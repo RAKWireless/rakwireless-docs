@@ -15,7 +15,7 @@ rak_img: /assets/images/wisnode/rak2560/RAK2560.jpg
 
 During installation, make sure that the installer complies with all the necessary safety regulations to ensure personal safety.
 
-:::warning ⚠️ WARNING
+::: warning ⚠️ WARNING
 Do not place the device and mounting kit on pedestrian walkways to avoid accidental damage to the device or harm to bystanders.
 :::
 
@@ -46,7 +46,7 @@ Do not place the device and mounting kit on pedestrian walkways to avoid acciden
   caption="Fitting the batteries"
 />
 
-:::tip 📝 NOTE:
+::: tip 📝 NOTE
 The battery should be 18505 in size.
 :::
 
@@ -58,17 +58,16 @@ The battery should be 18505 in size.
   caption="Closing the back cover"
 />
 
-:::tip 📝 NOTE:
-Make sure that the rubber seal is fitting nicely in its place to ensure waterproof sealing.
-<br>
-Make sure that you put enough force in the screwing to properly seal the back cover but not such as to break it.
+::: tip 📝 NOTE
+- Make sure to properly fit the rubber seal in place to ensure waterproof sealing.
+- Screw in the back cover with enough force to seal it but not enough to break it.
 :::
 
 ## Mounting of the Sensor Hub
 
 ### Wall Mounting
 
-1. Using a 5&nbsp;mm drill head, drill holes on the wall and plug the screw anchors in the holes.
+1. Using a 5&nbsp;mm drill head, drill holes in the wall and plug the screw anchors in the holes.
 
 <rk-img
   src="/assets/images/wisnode/rak2560/installation/drilling-the-wall1.png"
@@ -94,7 +93,7 @@ Make sure that you put enough force in the screwing to properly seal the back co
   caption="Installing the bracket on a pole"
 />
 
-:::tip 📝 NOTE:
+::: tip 📝 NOTE
 The diameter of the pole that is supported by the brackets is 50-80&nbsp;mm. If the pole diameter is more than this value, larger steel strips can be used. The standard mounting kit does not include larger steel strips. If needed, you should purchase them separately.
 :::
 
@@ -118,7 +117,7 @@ The diameter of the pole that is supported by the brackets is 50-80&nbsp;mm. If 
 
 ### Wall mounting
 
-1. Using a 5&nbsp;mm drill head, drill holes on the wall and plug the screw anchors in the holes.
+1. Using a 5&nbsp;mm drill head, drill holes in the wall and plug the screw anchors in the holes.
 
 <rk-img
   src="/assets/images/wisnode/rak2560/installation/drilling-the-wall2.png"
@@ -182,6 +181,10 @@ You have multiple options, depending on the deployment requirements and availabl
   caption="Connection via a splitter"
 />
 
+::: tip 📝 NOTE
+A single port can support a maximum of four (4) Probe IOs or Sensor Probes.
+:::
+
 4. Connect the Probe to the Hub using a splitter and extender cable at once for maximum placement freedom.
 
 <rk-img
@@ -202,7 +205,7 @@ RAK2560 Sensor Hub can support third-party sensors through the Probe IO.
   caption="Removing the lid"
 />
 
-2. Pass the cable of the sensor through the cable gland and the opening of the Probe IO, connect the cable to the wiring terminal.
+2. Pass the cable of the sensor through the cable gland and the opening of the Probe IO, and connect the cable to the wiring terminal.
 
 <rk-img
   src="/assets/images/wisnode/rak2560/installation/connecting-the-cable.png"
@@ -210,7 +213,11 @@ RAK2560 Sensor Hub can support third-party sensors through the Probe IO.
   caption="Connecting the cable"
 />
 
-3. Screw the cable gland body and lock nut in the proper sequence.
+::: tip 📝 NOTE
+The connection of the wiring terminal depends on the type of sensor it is connected to. Different sensors have different pin connection requirements.
+:::
+
+3. Screw the cable gland body and lock the nut in the proper sequence.
 
 <rk-img
   src="/assets/images/wisnode/rak2560/installation/screw-the-cable-gland.png"

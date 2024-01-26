@@ -91,7 +91,7 @@ The hardware specification is categorized into four (4) parts. It shows the pino
 
 #### Power Supply
 
-The **Sensor Probe** must be supplied through the 3.4~3.6&nbsp;V SP11 Pin 4 from the main body of the Sensor Hub.
+The **Sensor Probe** must be supplied through the 3.4&nbsp;~&nbsp;3.6&nbsp;V SP11 Pin 4 from the main body of the Sensor Hub.
 
 #### Power Consumption
 

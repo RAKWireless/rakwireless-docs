@@ -20,13 +20,11 @@ certifications:
 
 ### Description
 
-The RAK2560 WisNode Sensor Hub is a modular sensor ecosystem consisting of the main body and multiple pre-configured sensor probes. With pluggable, interchangeable probes, and the option to add third-party sensors to the mixture, the Sensor Hub is a suitable and versatile solution platform for various IoT applications where environmental monitoring is needed.
+The RAK2560 WisNode Sensor Hub is a modular sensor ecosystem consisting of the main body and multiple pre-configured sensor probes. It has pluggable and interchangeable probes and supports the integration of third-party sensors. These characteristics make the Sensor Hub an ideal and adaptable solution platform for a wide range of IoT applications requiring environmental monitoring.
 
-The Sensor Hub consists of a robust waterproof enclosure with two (2) sensor probe ports to connect the sensors or an external power source like a solar panel.
+The Sensor Hub is housed in a robust, waterproof enclosure with two (2) sensor probe ports for connecting sensors or an external power source, such as a solar panel. It can operate with an external power supply or in full battery mode, depending on the deployment location.
 
-The device can work in full battery mode or with an external power supply depending on the deployment location.
-
-The Sensor Hub and its sensor probes are easily configured via the WisToolBox app, available for mobile and desktop.
+With the use of the WisToolBox app, the Sensor Hub and its sensor probes can be easily configured. The application is available on mobile and desktop.
 
 ### Product Features
 
@@ -52,18 +50,18 @@ The Sensor Hub and its sensor probes are easily configured via the WisToolBox ap
 
 #### Main Specifications
 
-| Feature              | Specification                                                                                                                                                                                                         |
-| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Wireless technology  | Support LoRa end node (915&nbsp;MHz&nbsp;/&nbsp;868&nbsp;MHz)<br>Support Bluetooth for easy setup<br>Support NFC for easy setup                                                                                       |
-| Antenna              | 1 x internal: high-gain and high-efficiency LoRa antenna (also support NB-IoT)<br>1 x internal: NFC antenna<br>1 x internal: Bluetooth antenna                                                                        |
-| External interfaces  | 2 x SP11 connector (IP67) for multiple-purpose sensors<br>The SP11 supports a 12&nbsp;V power adapter and a solar panel kit for external power                                                                        |
-| Weatherproof design  | IP66 rated<br>SP11 connector for professional installation and fast deployment<br>Plastic top (UL-746C), UV-resistant<br>Metal body, die-casted, with solid and good thermal dissipation<br>Internal gasket (UL-94V0) |
-| Power source         | +12&nbsp;V<sub>DC</sub> at 1&nbsp;A (12&nbsp;W) power adapter<br>Support 12&nbsp;V<sub>DC</sub> solar panel<br>4 x ER18505 Li-SOCl2 batteries (4000&nbsp;mAh)                                                         |
-| Mounting options     | Solid mounting kit for wind speed load of 215&nbsp;km/h<br>Pole-mount (vertical or horizontal)<br>Wall-mount                                                                                                          |
-| Enclosure dimensions | 120&nbsp;x&nbsp;80&nbsp;x&nbsp;39&nbsp;mm                                                                                                                                                                             |
-| Surge and ESD        | 6&nbsp;kV surge and 8&nbsp;kV ESD protection                                                                                                                                                                          |
-| Working environment  | -30°&nbsp;C to +60°&nbsp;C<br>Suitable for outdoor and indoor use                                                                                                                                                     |
-| Storage temperature  | -40°&nbsp;C to +80°&nbsp;C                                                                                                                                                                                            |
+| Feature              | Specification                                                                                                                                                                                                              |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Wireless technology  | Support LoRa end node (915&nbsp;MHz&nbsp;/&nbsp;868&nbsp;MHz)<br>Support Bluetooth for easy setup<br>Support NFC for easy setup                                                                                            |
+| Antenna              | 1 x internal: high-gain and high-efficiency LoRa antenna (also support NB-IoT)<br>1 x internal: NFC antenna<br>1 x internal: Bluetooth antenna                                                                             |
+| External interfaces  | 2 x SP11 connector (IP67) for multiple-purpose sensors<br>The SP11 supports a 12&nbsp;V power adapter and a solar panel kit for external power                                                                             |
+| Weatherproof design  | IP66 rated<br>SP11 connector for professional installation and fast deployment<br>Plastic top (UL-746C), UV-resistant<br>Metal body, die-casted, with solid and good thermal dissipation<br>Internal gasket (UL-94V0)      |
+| Power source         | Supports the following power source:<ul><li>+12&nbsp;V<sub>DC</sub> at 1&nbsp;A (12&nbsp;W) power adapter</li><li>12&nbsp;V<sub>DC</sub> solar panel<br></li><li>4 x ER18505 Li-SOCl2 batteries (4000&nbsp;mAh) </li></ul> |
+| Mounting options     | Solid mounting kit for wind speed load of 215&nbsp;km/h<br>Pole-mount (vertical or horizontal)<br>Wall-mount                                                                                                               |
+| Enclosure dimensions | 120&nbsp;x&nbsp;80&nbsp;x&nbsp;39&nbsp;mm                                                                                                                                                                                  |
+| Surge and ESD        | 6&nbsp;kV surge and 8&nbsp;kV ESD protection                                                                                                                                                                               |
+| Working environment  | -30°&nbsp;C to +60°&nbsp;C<br>Suitable for outdoor and indoor use                                                                                                                                                          |
+| Storage temperature  | -40°&nbsp;C to +80°&nbsp;C                                                                                                                                                                                                 |
 
 #### Dimensions
 
@@ -87,7 +85,7 @@ The **RAK2560 Sensor Hub** uses RAK4630 as a core. The One-wire protocol provide
 
 ### Hardware
 
-The hardware specification is categorized into five (5) parts. It shows the pinouts of the sensor hub and their corresponding functions and diagram. It also covers the rf, power supply, and environmental characteristics that include the tabular data of the functionalities and standard values of the RAK2560 WisNode Sensor Hub.
+The hardware specification is categorized into five (5) parts. It shows the pinouts of the sensor hub and their corresponding functions and diagrams. It also covers the RF, power supply, and environmental characteristics that include the tabular data of the functionalities and standard values of the RAK2560 WisNode Sensor Hub.
 
 #### Pin Definition
 
@@ -121,8 +119,8 @@ The board supports the following LoRa frequency channels, allowing easy configur
 | Korea         | KR920        |
 | India         | IN865        |
 
-:::tip 📝 NOTE:
-The above frequency band parameters are different, depending on the region, and comply with the local regulatory requirements. Have your location in mind when placing an order.
+::: tip 📝 NOTE
+The frequency band parameters vary by region and comply with local regulations. Keep your location in mind when placing an order.
 :::
 
 
@@ -153,7 +151,7 @@ The **RAK2560 Sensor Hub** must be supplied through the 12&nbsp;V SP11 pins by a
 
 The **RAK2560** can support both Sensor Probes and Probe IO in all possible combinations.
 
-:::tip 📝 NOTE:
+::: tip 📝 NOTE
 If you want to add a Probe IO to your setup, the Sensor Hub must be supplied by an external 12&nbsp;V<sub>DC</sub> power source.
 :::
 

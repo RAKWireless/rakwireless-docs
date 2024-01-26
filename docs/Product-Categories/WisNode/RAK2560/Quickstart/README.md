@@ -15,7 +15,7 @@ tags:
 
 ### What do You Need?
 
-Before going through each and every step on using the RAK2560 WisNode Sensor Hub module, make sure to prepare the necessary items listed below:
+Before going through each and every step of using the RAK2560 WisNode Sensor Hub module, make sure to prepare the necessary items listed below:
 
 #### Hardware Tools
 
@@ -36,9 +36,9 @@ Before going through each and every step on using the RAK2560 WisNode Sensor Hub
 
 :::tip 📝 NOTE
 
-WisNode Sensor Hub can be powered with batteries or a dedicated power adapter. It supports 2 to 4 batteries type: ER18505 3.6&nbsp;V 4000&nbsp;mAh Li-SOCl2 NON-rechargeable lithium batteries which are NOT included upon purchase.
+WisNode Sensor Hub can be powered with batteries or a dedicated power adapter. It supports 2 to 4 battery types: ER18505 3.6&nbsp;V 4000&nbsp;mAh Li-SOCl2 NON-rechargeable lithium batteries which are NOT included upon purchase.
 
-You can supply the batteries locally or from one of the global electronics distributors:
+You can source the batteries locally or from one of the global electronics distributors:
 1. [Amazon](https://www.amazon.com/EEMB-Capacity-Batteries-Rechargeable-Certified/dp/B07TTGW7XQ/ref=sr_1_1_sspa?crid=3Q1EZ9Y11KCKN&keywords=ER18505&qid=1676374193&sprefix=er18505%2Caps%2C201&sr=8-1-spons&psc=1&smid=A3JZ0E8P9D7DI&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExWFpINDM3V1VLVkdWJmVuY3J5cHRlZElkPUExMDE2MzEzMkRZWDVTQ1VaQURPRyZlbmNyeXB0ZWRBZElkPUEwOTc1NjU3QTFDVFBINFIwUjEyJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==)
 2. [Mouser](https://www.mouser.bg/ProductDetail/Ultralife/ER18505?qs=zfu6fx%252B1HVV05VN8zSGKvA%3D%3D)
 3. [AliExpress](https://www.aliexpress.com/item/1005004658194639.html?spm=a2g0o.productlist.main.1.7a477185fc5rOu&algo_pvid=8404268f-c97a-4f0e-b093-fea934f49acb&algo_exp_id=8404268f-c97a-4f0e-b093-fea934f49acb-0&pdp_ext_f=%7B%22sku_id%22%3A%2212000030006218882%22%7D&pdp_npi=3%40dis%21BGN%217.95%217.15%21%21%21%21%21%402102110316763743466464381d06f9%2112000030006218882%21sea%21BG%21827888164&curPageLogUid=P9xZl9592JjT)
@@ -49,7 +49,7 @@ You can supply the batteries locally or from one of the global electronics distr
 
 ### Power On the Sensor Hub
 
-1. Connect the Sensor Probe/Probe IO to the port of the RAK2560-Hub
+1. Connect the Sensor Probe/Probe IO to the port of the RAK2560-Hub.
 
 :::warning ⚠️ WARNING
 Do not power the Sensor Hub before connecting the sensors to avoid damage to the device.
@@ -81,7 +81,15 @@ Using the 12&nbsp;V<sub>DC</sub> adapter provided with the Sensor Hub is recomme
   caption="App home screen"
 />
 
-3. Select the Sensor Hub from the list of devices.
+3. Select the connection mode to pair the device.
+
+<rk-img
+  src="/assets/images/wisnode/rak2560/quickstart/connection_mode.png"
+  width="25%"
+  caption="Connection mode"
+/>
+
+4. Select the Sensor Hub from the list of devices.
 
 <rk-img
   src="/assets/images/wisnode/rak2560/quickstart/in-app-list-of-devices.png"
@@ -89,15 +97,29 @@ Using the 12&nbsp;V<sub>DC</sub> adapter provided with the Sensor Hub is recomme
   caption="In-app list of devices"
 />
 
-4. Pair your smartphone and the Sensor Hub by touching your phone to the **N** symbol on the front of the Hub and pressing **CONNECT** in the app.
+5. Pair your smartphone and the Sensor Hub by touching your phone to the **N** symbol on the front of the Hub and pressing **CONNECT** in the app. Retain the position of the smartphone touching the **N** symbol on the Hub and wait until the scan is done.
 
 <rk-img
+  src="/assets/images/wisnode/rak2560/quickstart/pairing-the-hub-to-your-smartphone-ready-to-scan.png"
+  width="50%"
+  caption="Pairing the Hub to your smartphone"
+/>
+
+<!-- <rk-img
   src="/assets/images/wisnode/rak2560/quickstart/pairing-the-hub-to-your-smartphone.png"
   width="25%"
   caption="Pairing the Hub to your smartphone"
 />
 
-5. When the NFC of the smartphone scans the device, a **Scan successful** message will appear.
+6. Place your phone on the **N** Symbol on the Sensor Hub to pair it.
+
+<rk-img
+  src="/assets/images/wisnode/rak2560/quickstart/ready-to-scan.png"
+  width="25%"
+  caption="Ready to Scan"
+/> -->
+
+6. Once the scan is done, a **Scan successful** message will appear.
 
 <rk-img
   src="/assets/images/wisnode/rak2560/quickstart/scan-successful.png"
@@ -105,16 +127,17 @@ Using the 12&nbsp;V<sub>DC</sub> adapter provided with the Sensor Hub is recomme
   caption="Scan successful"
 />
 
-6. Automatic synchronization will start, wait until the process is complete.
+7. Automatic synchronization will start, wait until the process is complete.
 
 <rk-img
   src="/assets/images/wisnode/rak2560/quickstart/device-sync.png"
-  width="55%"
+  width="75%"
   caption="Device syncing"
 />
 
 :::tip 📝 NOTE:
-By default, the BLE advertising of the Sensor Hub is turned off automatically if no connection is established within the 30&nbsp;seconds of availability. Connect to the RAK device immediately after powering it on or power it on again.
+By default, the BLE advertising of the Sensor Hub is turned off automatically if no connection is established within 30&nbsp;seconds of availability. Connect to the RAK device immediately after powering it on again.
+<!-- or power it on again. -->
 
 Some Android smartphones require GPS enabled to permit connection to BLE. When GPS is enabled, no sensitive information is used or shared with the application.
 :::
@@ -133,26 +156,27 @@ When the data synchronization process is completed, you will see the **SENSOR HU
 - **Disconnect device** - Break the connection between your smartphone and the Hub
 
 <rk-img
-  src="/assets/images/wisnode/rak2560/quickstart/sensor-hub-info.jpg"
+  src="/assets/images/wisnode/rak2560/quickstart/sensor-hub-info.png"
   width="25%"
   caption="Sensor Hub Info"
 />
 
 #### LoRa and LoRaWAN Parameters
 
-From the LORA & LORAWAN PARAMETERS screen, you can set and see all the information needed so the device can join a network server of your choice.
+In the **LORA & LORAWAN PARAMETERS** tab, you can set and see all the information needed so the device can join a network server of your choice.
+
+1. Configure the **Join mode** and **Active region** in **Global settings**.
 
 <rk-img
-  src="/assets/images/wisnode/rak2560/quickstart/lora-and-lorawan-parameters-screen.jpg"
+  src="/assets/images/wisnode/rak2560/quickstart/lora-and-lorawan-parameters-screen.png"
   width="25%"
   caption="LoRa and LoRaWAN parameters screen"
 />
 
-1. You can configure the **Join mode** and **Active region** in **Global settings**.
-2. From the **Active region** menu, you can select the LoRaWAN band to be used.
+2. In the **Active region** menu, select the LoRaWAN band to be used.
 
 <rk-img
-  src="/assets/images/wisnode/rak2560/quickstart/active-region-list.jpg"
+  src="/assets/images/wisnode/rak2560/quickstart/active-region-list.png"
   width="25%"
   caption="Active region list"
 />
@@ -163,46 +187,55 @@ From the LORA & LORAWAN PARAMETERS screen, you can set and see all the informati
 
 #### Sensor Probe
 
-1. From the **SENSOR PROBE** screen, you can get all the information about the connected sensors.
+1. In the **SENSOR PROBE** screen, you can get all the information about the connected sensors.
 
 - **Probe ID** - The ID that the Sensor Hub uses to identify the probe (until a reset is made). Value: 1~250
 - **Hardware** - Probe's type version information
 - **Firmware** - Probe's software version information
 - **Hardware model** - Product model
-- **Probe type** - RAK2560-Probe has two WisBlock slots, that allow the mount of one or two WisBlock sensor modules in the mass production phase
-
-| Probe | Module Combination |             |          | Function           |                     |          |
-| ----- | ------------------ | ----------- | -------- | ------------------ | ------------------- | -------- |
-|       |                    | Temperature | Humidity | Barometer Pressure | 3-Axis Acceleration | Gas      |
-| A     | RAK1901            | &#10004;    | &#10004; |                    |                     |          |
-| B     | RAK1902            | &#10004;    | &#10004; | &#10004;           |                     |          |
-| C     | RAK1904            |             |          |                    | &#10004;            |          |
-| D     | RAK1906            | &#10004;    | &#10004; | &#10004;           |                     | &#10004; |
-| AB    | RAK1901+RAK1902    | &#10004;    | &#10004; | &#10004;           |                     |          |
-| AC    | RAK1901+RAK1904    | &#10004;    | &#10004; |                    | &#10004;            |          |
-| BC    | RAK1902+RAK1904    | &#10004;    | &#10004; | &#10004;           | &#10004;            |          |
-| CD    | RAK1904+RAK1906    | &#10004;    | &#10004; | &#10004;           | &#10004;            | &#10004; |
-
+- **Probe type** - RAK2560-Probe has two WisBlock slots that allow the mount of one or two WisBlock sensor modules in the mass production phase.
 - **Sensor count** - The number of sensors in the probe.
 
+The table shows the probe, module combination, and functionalities.
+
+| Probe | Module Combination |             |          | Function            |                     |          |
+| ----- | ------------------ | ----------- | -------- | ------------------- | ------------------- | -------- |
+|       |                    | Temperature | Humidity | Barometric Pressure | 3-Axis Acceleration | Gas      |
+| A     | RAK1901            | &#10004;    | &#10004; |                     |                     |          |
+| B     | RAK1902            | &#10004;    | &#10004; | &#10004;            |                     |          |
+| C     | RAK1904            |             |          |                     | &#10004;            |          |
+| D     | RAK1906            | &#10004;    | &#10004; | &#10004;            |                     | &#10004; |
+| AB    | RAK1901+RAK1902    | &#10004;    | &#10004; | &#10004;            |                     |          |
+| AC    | RAK1901+RAK1904    | &#10004;    | &#10004; |                     | &#10004;            |          |
+| BC    | RAK1902+RAK1904    | &#10004;    | &#10004; | &#10004;            | &#10004;            |          |
+| CD    | RAK1904+RAK1906    | &#10004;    | &#10004; | &#10004;            | &#10004;            | &#10004; |
+
+
+
 <rk-img
-  src="/assets/images/wisnode/rak2560/quickstart/sensor-probe-screen.jpg"
+  src="/assets/images/wisnode/rak2560/quickstart/synchronization-in-progress.png"
+  width="25%"
+  caption="Synchronization in progress"
+/>
+
+<rk-img
+  src="/assets/images/wisnode/rak2560/quickstart/sensor-probe-screen.png"
   width="25%"
   caption="Sensor Probe screen"
 />
 
-2. For each sensor, there is a dropdown menu with the option to set some parameters as well.
+2. Each sensor has a dropdown menu with the option to set some parameters as well.
 
 <rk-img
-  src="/assets/images/wisnode/rak2560/quickstart/sensor-parameters.jpg"
+  src="/assets/images/wisnode/rak2560/quickstart/sensor-parameters.png"
   width="25%"
   caption="Sensor parameters"
 />
 
-- Sensor rule settings - Select the data sending rule type.
+- **Sensor rule settings** - Select the data sending rule type.
 
 <rk-img
-  src="/assets/images/wisnode/rak2560/quickstart/sensor-rule-settings.jpg"
+  src="/assets/images/wisnode/rak2560/quickstart/sensor-rule-settings.png"
   width="25%"
   caption="Sensor rule settings"
 />
@@ -250,12 +283,12 @@ Key = 0x08(Oct) = 0b00001000(Bin)
 
  The RAK1901, RAK1902, RAK1904, and RAK1906 all incorporate multiple sensors integrated into a single sensor IC.
 
-| WisBlock Module | Sensor IC | Sensor Type                         | Sensor Data Values                                                                                                                                              |
-| --------------- | --------- | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| RAK1901         | SHTC3     | Temperature and humidity            | Temperature (-40°&nbsp;C to +125°&nbsp;C)<br>Humidity (0&nbsp;to&nbsp;100%&nbsp;RH)                                                                             |
-| RAK1902         | KPS22HB   | Temperature and barometric pressure | Temperature (-40°&nbsp;C to +85°&nbsp;C)<br>Pressure (260&nbsp;to&nbsp;1260&nbsp;hPa)                                                                           |
-| RAK1904         | LIS3DH    | 3-axis acceleration                 | 3-axis (XYZ)                                                                                                                                                    |
-| RAK1906         | BME680    | Environmental                       | Temperature (-40°&nbsp;C  to 85°&nbsp;C)<br>Humidity (0&nbsp;to&nbsp;100%&nbsp;RH)<br>Pressure (300&nbsp;to&nbsp;1100 hPa)<br>Gas (0&nbsp;to&nbsp;500&nbsp;IAQ) |
+| WisBlock Module | Sensor IC | Sensor Type                         | Sensor Data Values                                                                                                                                             |
+| --------------- | --------- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| RAK1901         | SHTC3     | Temperature and humidity            | Temperature (-40°&nbsp;C to +125°&nbsp;C)<br>Humidity (0&nbsp;to&nbsp;100%&nbsp;RH)                                                                            |
+| RAK1902         | KPS22HB   | Temperature and barometric pressure | Temperature (-40°&nbsp;C to +85°&nbsp;C)<br>Pressure (260&nbsp;to&nbsp;1260&nbsp;hPa)                                                                          |
+| RAK1904         | LIS3DH    | 3-axis acceleration                 | 3-axis (XYZ)                                                                                                                                                   |
+| RAK1906         | BME680    | Environmental                       | Temperature (-40°&nbsp;C to 85°&nbsp;C)<br>Humidity (0&nbsp;to&nbsp;100%&nbsp;RH)<br>Pressure (300&nbsp;to&nbsp;1100 hPa)<br>Gas (0&nbsp;to&nbsp;500&nbsp;IAQ) |
 
 The four (4) WisBlock modules will have four (4) sensor types as follows:
 
@@ -278,3 +311,21 @@ RAK_DATA_TYPE = IPSO_OBJECT_ID - 3200
 | Humidity sensor        | 3304    | 104                     | 0x68                | 1         | 0.1% Unsigned                    |
 | Accelerometer (3-Axis) | 3313    | 113                     | 0x71                | 6         | 0.001&nbsp;G Signed MSB per axis |
 | Barometer (Pressure)   | 3315    | 115                     | 0x73                | 2         | 0.1&nbsp;hPa Unsigned MSB        |
+
+### RAKwireless Standardized Payload Decoder
+
+On [GitHub,](https://github.com/RAKWireless/RAKwireless_Standardized_Payload/blob/main/RAKwireless_Standardized_Payload.js) you can find a standard version of the decoder that works with all solutions.
+
+## Configuring Sensor Hub for LoRaWAN Usage
+
+In this video, you can learn how to visualize your Sensor Hub data in Datacake using a WisGate Edge Gateway and TTN.
+
+<div align="center">
+
+[![Send your Sensor Hub data to Datacake using TTN and WisGate Edge](http://img.youtube.com/vi/9vMRT_G1tFI/0.jpg)](https://www.youtube.com/watch?v=9vMRT_G1tFI "Send your Sensor Hub data to Datacake using TTN and WisGate Edge")
+
+</div>
+
+:::tip 📝 NOTE:
+This YouTube tutorial covers the Weather Station, but the basics apply to all solutions.
+:::

@@ -22,8 +22,8 @@ certifications:
 
 The **Probe IO** is an accessory for the Sensor Hub solution platform. It supports modules with various communication protocols like RS-485, SDI-12, 4-20&nbsp;mA signal, and DI/DO. This accessory can work with RAKwireless modules as well as third-party ones to ensure the best solution for your project.
 
-:::tip 📝 NOTE:
-The Probe IO could not be used as a standalone product. You need the [RAK2560 WisNode Sensor Hub](https://store.rakwireless.com/products/sensor-hub?utm_source=RAK2560WisNodeSense&utm_medium=Document&utm_campaign=BuyFromStore) in order to use this probe.
+::: tip 📝 NOTE
+The Probe IO could not be used as a standalone product. You need the [RAK2560 WisNode [Sensor Hub](https://store.rakwireless.com/products/sensor-hub?utm_source=RAK2560WisNodeSense&utm_medium=Document&utm_campaign=BuyFromStore) to use this probe.
 :::
 
 ### Product Features
@@ -63,7 +63,7 @@ RAK2560's **Probe IO** uses MCU STM32L051C8 for a control center. The **Probe IO
 
 ### Hardware
 
-The hardware specification is categorized into four (4) parts. It shows the pinouts of the Probe IO and their corresponding functions and diagram. It also covers the power supply and environmental characteristics that include the tabular data of the functionalities and standard values of the RAK2560 WisNode Probe IO.
+The hardware specification is categorized into four (4) parts. It shows the pinouts of the Probe IO and their corresponding functions and diagrams. It also covers the power supply and environmental characteristics that include the tabular data of the functionalities and standard values of the RAK2560 WisNode Probe IO.
 
 #### Pin Definition
 
@@ -77,7 +77,7 @@ The hardware specification is categorized into four (4) parts. It shows the pino
 
 | Pin No. | Name          | Type | Description                   | Remarks                                                       |
 | ------- | ------------- | ---- | ----------------------------- | ------------------------------------------------------------- |
-| 1       | VIN           | PI   | 12&nbsp;V adapter in          | RAK standard adapter                                          |
+| 1       | VIN           | PI   | 12&nbsp;V Adapter Input          | RAK standard adapter                                          |
 | 2       | GND           | -    | Ground                        | -                                                             |
 | 3       | One-wire UART | IO   | Communication with Sensor Hub | -                                                             |
 | 4       | Vcc_Probe     | PI   | Power supply from the Hub     | 3.3&nbsp;V<sub>DC</sub> support mode; 3.4&nbsp;V battery mode |
@@ -144,7 +144,7 @@ The hardware specification is categorized into four (4) parts. It shows the pino
 
 #### Power Supply
 
-The **Probe IO** must be supplied through the 3.4~3.6&nbsp;V SP11 Pin 4 from the main body of the Sensor Hub. The module's power is only supplied through the VIN / 24&nbsp;V of SP11 Pin 1.
+The **Probe IO** must be supplied through the 3.4&nbsp;~&nbsp;3.6&nbsp;V SP11 Pin 4 from the main body of the Sensor Hub. The module's power is only supplied through the VIN / 24&nbsp;V of SP11 Pin 1.
 
 ##### Power Consumption
 
@@ -165,8 +165,8 @@ The **Probe IO** must be supplied through the 3.4~3.6&nbsp;V SP11 Pin 4 from the
 
 The **RAK2560** can support both Sensor Probes and Probe IO in all possible combinations.
 
-:::tip 📝 NOTE:
-If you want to add a Probe IO to your setup, the Sensor Hub must be supplied by an external 12&nbsp;V<sub>DC</sub> power source.
+::: tip 📝 NOTE
+If you buy a Probe IO sensor solution like the soil moisture sensor, you will need a Probe IO to connect it with the Sensor Hub. To integrate an additional Probe IO into your configuration, the Sensor Hub requires an external 12&nbsp;V<sub>DC</sub> power supply. It cannot operate on batteries.
 :::
 
 <rk-img
