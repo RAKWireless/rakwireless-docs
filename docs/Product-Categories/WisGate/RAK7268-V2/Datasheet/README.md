@@ -86,9 +86,9 @@ The hardware interfaces of RAK7268V2 gateway include DC 12 V, ETH interface, Con
 
 
 <rk-img
-  src="/assets/images/wisgate/rak7268-v2/datasheet/block-diagram-with-lte.png"
+  src="/assets/images/wisgate/rak7268-v2/datasheet/interfaces.png"
   width="100%"
-  caption="RAK7268V2 WisGate Edge Lite 2 interfaces"
+  caption="RAK7268V2 interfaces"
 />
 
 

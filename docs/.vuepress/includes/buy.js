@@ -532,7 +532,7 @@ export default {
   },
   '/Product-Categories/WisBlock/RAK19013/': {
     label: 'RAK19013 WisBlock LiPo Solar Power Slot Module',
-    img: '/assets/images/wisblock/rak19013/rak19013.png',
+    img: '/assets/images/wisblock/rak19013/RAK19013.png',
     store: 'https://store.rakwireless.com/products/rak19013-lipo-solar-power-slot-module?utm_source=RAK19013&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisBlock/RAK19014/': {
