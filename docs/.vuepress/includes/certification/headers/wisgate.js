@@ -11,6 +11,7 @@ export const WISGATE_HEADER = {
     'COSTA RICA',
     'JAPAN',
     'KOREA',
+    'MOROCCO',
     'NEW ZEALAND',
     'PHILIPPINES',
     'RUSSIA',

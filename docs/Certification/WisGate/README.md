@@ -14,6 +14,7 @@ rak_img: /assets/images/certifications/certification-banner.jpg
   'COSTA RICA',
   'JAPAN',
   'KOREA',
+  'MOROCCO',
   'NEW ZEALAND',
   'PHILIPPINES',
   'RUSSIA',

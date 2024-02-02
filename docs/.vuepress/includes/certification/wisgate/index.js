@@ -180,6 +180,7 @@ export const categoriesWisGate = [
             { country: "Australia", cert: "RCM", link: "https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289_RAK7289V2_RCM_Certification.pdf" },
             { country: "Brazil", cert: "Anatel", link: "https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289V2_ANATEL_Certification.pdf" },
             { country: "Korea", cert: "KC", link: "https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289_RAK7289C_RAK7289V2_RAK7289CV2_KC_Certification.pdf" },
+            { country: "Morocco", cert: "MA", link: "https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289V2_MA_Certification.pdf" },
             { country: "UK", cert: "UKCA", link: "https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289_RAK7289V2_UKCA_Certification.pdf" },
           ]
         },
@@ -193,6 +194,7 @@ export const categoriesWisGate = [
             { country: "Japan", cert: "JBTL", link: "https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289CV2_JTBL_Certification.pdf" },
             { country: "Japan", cert: "JRL", link: "https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289CV2_JRL_Certification.pdf" },
             { country: "Korea", cert: "KC", link: "https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289_RAK7289C_RAK7289V2_RAK7289CV2_KC_Certification.pdf" },
+            { country: "Morocco", cert: "MA", link: "https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289CV2_MA_Certification.pdf" },
             { country: "New Zealand", cert: "RSM", link: "https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289C_RAK7289CV2_RSM_Certification.pdf" },
             { country: "UAE", cert: "TDRA", link: "https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289CV2_TDRA_Certification.pdf" },
             { country: "UK", cert: "UKCA", link: "https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289C_RAK7289CV2_UKCA_Certification.pdf" },

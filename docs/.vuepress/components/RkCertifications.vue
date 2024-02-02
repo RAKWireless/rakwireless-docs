@@ -137,6 +137,9 @@ export default {
           case 'WPC':
             data.img = '/assets/images/certifications/WPC.png'
             break
+          case 'MA':
+            data.img = '/assets/images/certifications/MA.jpg'
+            break
           default:
             data.img =
               'https://image.shutterstock.com/image-illustration/white-unknown-document-icon-isolated-600w-1517588975.jpg'
