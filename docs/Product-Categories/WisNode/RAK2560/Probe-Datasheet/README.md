@@ -141,7 +141,7 @@ For now, RAK1906 is not fully supported by the Sensor Probe. It will be added in
 | CD    | RAK1904+RAK1906     | &#10004;    | &#10004; | &#10004;           | &#10004;            | &#10004; |
 
 :::tip 📝 NOTE
-Due to both modules (RAK1901 and RAK1902) having temperature sensor with different accuracy levels, you will get two temperature values in the WisToolBox app.
+Due to RAK1901 and RAK1902 having temperature sensor with different accuracy levels, you will get two temperature values in the WisToolBox app.
 :::
 
 #### Sensor Connection Diagram

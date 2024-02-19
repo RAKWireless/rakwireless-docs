@@ -14,7 +14,7 @@ tags:
 
 ## Introduction
 
-The RAK4200 Breakout Board is designed to simplify LoRa P2P peer-to-peer and LoRaWAN communication. This board saves you in dealing with complicated SPI protocol with the LoRa transceivers. Instead, a well-known serial communication interface is provided for sending commands and requesting the internal status of the board. This approach allows a straightforward way to integrate LoRa technology into your projects.
+The RAK4200 Breakout Board is designed to simplify LoRa P2P peer-to-peer and LoRaWAN communication. This board saves you in dealing with complicated SPI protocol with the LoRa transceivers. Instead, a well-known serial communication interface is provided to send commands and request the internal status of the board. This approach allows a straightforward way to integrate LoRa technology into your projects.
 
 On top of this serial interface, a set of AT commands is defined. An external microcontroller will be able to control the RAK4200 Breakout Board as a classic AT modem. Through the AT commands, you can set parameters of the LoRaWAN communication, controlling GPIO pins, analog inputs, etc.
 

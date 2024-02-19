@@ -15,9 +15,9 @@ tags:
 
 The RAK4600 Breakout Board is designed to simplify LoRa P2P peer-to-peer and LoRaWAN communication. This board saves you in dealing with complicated SPI protocol with the LoRa transceivers. Instead, a well-known serial communication interface is provided to send commands and request the internal status of the board. This approach allows a straightforward way to integrate LoRa technology into your projects.
 
-On top of this serial interface, a set of AT commands is defined wherein an external microcontroller will be able to control the RAK4600 Breakout Board as a classic AT modem. Through the AT commands, you can set parameters of the LoRaWAN communication, control the GPIO pins and analog inputs, etc.
+On top of this serial interface, a set of AT commands is defined. An external microcontroller will be able to control the RAK4600 Breakout Board as a classic AT modem. Through the AT commands, you can set parameters of the LoRaWAN communication, controlling GPIO pins, analog inputs, etc.
 
-In the RAK4600 Breakout Board, the serial communication is exposed on the UART1 port, through the J7 connector Pin 1 (USART1_RX) and Pin 2 (USART1_TX). The parameters of the USART1 communication are **115200 / 8-N-1**. The firmware upgrade is also possible through this port. Refer to [RAK4600 Breakout Board Datasheet](../Datasheet/) for pin distribution and schematic of RAK4600 Breakout Board.
+In the RAK4600 Breakout Board, the serial communication is exposed on the **UART1 port**, through the J7 connector Pin 1 (USART1_RX) and Pin 2 (USART1_TX). The parameters of the USART1 communication are **115200 / 8-N-1**. The firmware upgrade is also possible through this port. Refer to [RAK4600 Breakout Board Datasheet](../Datasheet/) for pin distribution and schematic of RAK4600 Breakout Board.
 
 In addition, the RAK4600 Breakout Board also supports BLE. You can use your mobile phone to communicate with the RAK4600 Breakout Board via BLE interface, or you can use the board to scan the surrounding Bluetooth beacon information. Refer to [Bluetooth Connection Modes](/Product-Categories/WisDuo/RAK4600-Breakout-Board/Quickstart/#bluetooth-connection-modes).
 

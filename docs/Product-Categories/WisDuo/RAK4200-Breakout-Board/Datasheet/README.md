@@ -17,9 +17,9 @@ prev: ../Quickstart/
 
 ### Description
 
-**RAK4200 Breakout Board** is specifically designed to allow easy access to the pins on the board in order to simplify development and testing. The breakout board footprint is based on the XBee form factor, and its main purpose is to allow the RAK4200 stamp module pins to be transferred to 2.54&nbsp;mm headers.
+**RAK4200 Breakout Board** is specifically designed to allow easy access to the pins on the board in order to simplify development and testing. The breakout board allows the RAK4200 stamp module pins to be transferred to 2.54&nbsp;mm headers.
 
-The board itself has the RAK4200 at its core, integrating an **STM32L071KB MCU** and an **SX1276 LoRa transceiver**. It has Ultra-Low Power Consumption of 9.40&nbsp;uA (down to 1.08&nbsp;μA @ 2.0&nbsp;V) in sleep mode and high LoRa output power (19&nbsp;dBm) in work mode.
+The board itself has the RAK4200 at its core, integrating an **STM32L071KB MCU** and an **SX1276 LoRa transceiver**. It has Ultra-Low Power Consumption of 9.40&nbsp;μA (down to 1.08&nbsp;μA @ 2.0&nbsp;V) in sleep mode and high LoRa output power (19&nbsp;dBm) in work mode.
 
 The board complies with LoRaWAN 1.0.2 specification. It also supports LoRa P2P Point-to-Point communication.
 
@@ -30,15 +30,15 @@ The low-power, long-range LoRa communication capabilities of the board make it s
 - LoRa module for Smart City, Smart Agriculture, Smart Industry
 - I/O ports: **UART/I2C/GPIO**
 - Frequency range: **863–923&nbsp;MHz** (entire LoRa high band spectrum)
-- Low-Power Wireless Systems with 7.8&nbsp;kHz to 500&nbsp;kHz Bandwidth
+- Low-Power Wireless Systems with **7.8&nbsp;kHz** to **500&nbsp;kHz** Bandwidth
 - LoRa Tx power up to **19&nbsp;dBm**
-- Ultra-Low Power Consumption of 9.40&nbsp;uA (down to 1.08&nbsp;μA @ 2.0&nbsp;V) in sleep mode
+- Ultra-Low Power Consumption of 9.40&nbsp;μA (down to 1.08&nbsp;μA @ 2.0&nbsp;V) in sleep mode
 - Core: **ARM 32-bit Cortex M0+** with MPU
 - Up to 128&nbsp;KB flash memory with ECC
 - 20&nbsp;KB RAM
 - 6&nbsp;KB of data EEPROM with ECC
-- Supply voltage: **2.0 ~ 3.6&nbsp;V**
-- Temperature range: **-40&nbsp;°C to +85&nbsp;°C**
+- Supply voltage: **2.0&nbsp;V ~ 3.6&nbsp;V**
+- Temperature range: **-40°&nbsp;C ~ +85°&nbsp;C**
 
 ## Specifications
 
@@ -54,7 +54,7 @@ The RAK4200 Breakout Board is shown in **Figure 1**. It displays the top view of
 
 ### Hardware
 
-The hardware specification is categorized into four parts. It discusses the interfacing, pinouts, and its corresponding functions and diagrams. It also covers the electrical, mechanical, and environmental parameters that include the tabular data of the functionalities and standard values of the RAK4200 Breakout Board.
+The hardware specification is categorized into four (4) parts. It discusses the interfacing, pinouts, and its corresponding functions and diagrams. It also covers the electrical, mechanical, and environmental parameters that include the tabular data of the functionalities and standard values of the RAK4200 Breakout Board.
 
 
 #### Interfaces
@@ -113,7 +113,7 @@ The pin definitions of the RAK4200 Breakout Board are shown in the following tab
 ##### J1 Pin Definitions
 
 | Pin | Name     | I/O | Description                                     | Alternate functions                                                          |
-| --- | -------- | --- | ----------------------------------------------- | ---------------------------------------------------------------------------- |
+| :-: | :------: | :-: | :---------------------------------------------: | :--------------------------------------------------------------------------: |
 | 1   | UART2_RX | I   | UART2 Interface (AT Commands) (STM32L071 PA3)   | USART1RX, I2C1 SDA                                                           |
 | 2   | UART2_TX | O   | UART2 Interface (AT Commands) (STM32L071 PA2)   | MCO, USART1TX, I2C1 SCL, I2C3_SMBA                                           |
 | 3   | UART2_DE | I/O | GPIO (STM32L071 PA1)                            | SPI1MOSI, EVENT OUT, USART1_RTS_DE, COMP2_OUT                                |
@@ -126,7 +126,7 @@ The pin definitions of the RAK4200 Breakout Board are shown in the following tab
 ##### J2 Pin Definitions
 
 | Pin | Name     | I/O | Description                                                  | Alternate Functions                                                       |
-| --- | -------- | --- | ------------------------------------------------------------ | ------------------------------------------------------------------------- |
+| :-: | :------: | :-: | :----------------------------------------------------------: | :-----------------------------------------------------------------------: |
 | 1   | VDD      | -   | DC3V3                                                        | Supply voltage 2.0~3.3V                                                   |
 | 2   | UART1_TX | I/O | UART1 Interface (AT Commands and FW Update) (STM32L071 PA9)  | TIM21_CH1, TIM2_CH3, USART2_TX, LPUART1_TX, COMP2_OUT, COMP2_INM, ADC_IN2 |
 | 3   | UART1_RX | I/O | UART1 Interface (AT Commands and FW Update) (STM32L071 PA10) | TIM21*CH2, TIM2* CH4, USART2_RX, LPUART1_RX, COMP2_INP, ADC_IN3           |
@@ -139,7 +139,7 @@ The pin definitions of the RAK4200 Breakout Board are shown in the following tab
 ##### J4 Pin Definitions
 
 | Pin | Name | I/O | Description | Alternate Functions           |
-| --- | ---- | --- | ----------- | ----------------------------- |
+| :-: | :--: | :-: | :---------: | :---------------------------: |
 | 1   | VDD  | -   | DC3V3       | Supply voltage 2.0~3.3&nbsp;V |
 | 2   | GND  | -   | Ground      | -                             |
 
@@ -149,10 +149,55 @@ The pin definitions of the RAK4200 Breakout Board are shown in the following tab
 
 The RAK4200 Breakout Board supports the following LoRa bands:
 
-| Module          | Region                                                                                     | Frequency                                                                    |
-| --------------- | ------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------- |
-| **RAK4200 (L)** | Europe <br> China                                                                          | EU433 <br> CN470                                                             |
-| **RAK4200 (H)** | Russia <br> Indian <br> Europe <br> North America <br> Australia <br> Korea <br> Asia <br> | RU864 <br> IN865 <br> EU868 <br> US915 <br> AU915 <br> KR920 <br> AS923 <br> |
+<table>
+  <thead style="text-align:center;">
+    <tr>
+<th>Module</th>
+<th>Region</th>
+<th>Frequency (MHz)</th>
+    </tr>
+  </thead>
+  <tbody style="text-align:center;">
+      <tr>
+      <td rowspan = "2"><b>RAK4200(L)</b></td>
+      <td>Europe</td>
+      <td>EU433</td> 
+    </tr>
+    <tr>
+      <td>China</td>
+      <td>CN470 </td>
+    </tr>
+    <tr>
+      <td rowspan = "7"><b>RAK4200(H)</b></td>
+      <td>Russia</td>
+      <td>RU864</td> 
+    </tr>
+    <tr>
+      <td>India</td>
+      <td>IN865</td>
+    </tr>
+    <tr>
+      <td>Europe</td>
+      <td>EU868</td>
+    </tr>
+    <tr>
+      <td>North America</td>
+      <td>US915</td>
+    </tr>
+    <tr>
+      <td>Australia</td>
+      <td>AU915</td>
+    </tr>
+    <tr>      
+      <td>Korea</td>
+      <td>KR920</td>
+    </tr>
+    <tr>
+      <td>Asia</td>
+      <td>AS923</td>
+    </tr>
+  </tbody>
+</table> 
 
 #### Electrical Characteristics
 
@@ -161,7 +206,7 @@ The RAK4200 Breakout Board supports the following LoRa bands:
 The table below shows the power consumption of the RAK4200 Breakout Board:
 
 | Item                         | Power Consumption | Condition                      |
-| ---------------------------- | ----------------- | ------------------------------ |
+| :--------------------------: | :---------------: | :----------------------------: |
 | Tx mode LoRa @19&nbsp;dBm    | 120&nbsp;mA       | LoRa @ PA_BOOST & BT sleep     |
 | Tx mode LoRa @17&nbsp;dBm    | 87&nbsp;mA        | LoRa @ PA_BOOST & BT sleep     |
 | Rx mode LoRa @37.5&nbsp;Kbps | 15&nbsp;mA        | LoRa @ Receive mode & BT sleep |
@@ -169,7 +214,7 @@ The table below shows the power consumption of the RAK4200 Breakout Board:
 ##### Sleep Current
 
 | Feature             | Condition | Minimum (2.0&nbsp;V) | Typical (3.3&nbsp;V) | Maximum | Unit |
-| ------------------- | --------- | -------------------- | -------------------- | ------- | ---- |
+| :-----------------: | :-------: | :------------------: | :------------------: | :-----: | :--: |
 | Current Consumption | EU868     | 1.08                 | 8.66                 |         | μA   |
 |                     | US915     | 1.14                 | 9.40                 |         | μA   |
 |                     | CN470     | 1.13                 | 7.88                 |         | μA   |
@@ -203,5 +248,5 @@ Download the latest firmware and bootloader of the RAK4200 Breakout Board provid
 #### Firmware
 
 | Model   | Version   | Source                                                                                          |
-| ------- | --------- | ----------------------------------------------------------------------------------------------- |
+| :-----: | :-------: | :---------------------------------------------------------------------------------------------: |
 | RAK4200 | V3.2.0.16 | [Download](https://downloads.rakwireless.com/LoRa/RAK4200/Firmware/RAK4200_Latest_Firmware.zip) |

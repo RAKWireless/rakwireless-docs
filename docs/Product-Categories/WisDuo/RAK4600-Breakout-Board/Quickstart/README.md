@@ -30,7 +30,7 @@ This guide covers the following topics:
 
 ### What Do You Need?
 
-Before going through each and every step in the installation guide of the RAK4600 Breakout Board, make sure to prepare the necessary items listed below:
+Before going through the steps in the installation guide of the RAK4600 Breakout Board, make sure to prepare the necessary items listed below:
 
 #### Hardware Tools
 
@@ -52,8 +52,8 @@ Before going through each and every step in the installation guide of the RAK460
 
 ##### List of acronyms
 
-<table style="text-align: left">
-<tbody>
+<table>
+<tbody  style="text-align:center;">
         <tr>
             <td>ABP</td>
             <td>Activation-By-Personalization</td>
@@ -317,7 +317,7 @@ RAKwireless has [LoRaWAN gateways](https://store.rakwireless.com/collections/wis
   caption="Add end device"
 />
 
-2. To register the module, you need to click first **Manually** then configure the activation method by selecting **Over the air activation (OTAA)** and compatible **LoRaWAN version** then click **Start** button, as shown in **Figure 22** and **Figure 23**.
+2. To register the module, start by clicking **Manually**, as shown in **Figure 22**.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-breakout-board/quickstart/t_image_9.png"
@@ -325,21 +325,24 @@ RAKwireless has [LoRaWAN gateways](https://store.rakwireless.com/collections/wis
   caption="Manually register device to The Things Stack"
 />
 
+3. Configure the activation method by selecting **Over the air activation (OTAA)** and compatible **LoRaWAN version**. Afterwards, click on the **Start** button, as shown in **Figure 23**.
 <rk-img
   src="/assets/images/wisduo/rak4600-breakout-board/quickstart/t_image_10.png"
   width="100%"
   caption="Device activation configuration"
 />
 
-3. Then input a unique **End device ID** and EUIs (**DevEUI** and **AppEUI**), as shown in **Figure 15**. Check if your module has a DevEUI on sticker or QR that you can scan then use this as the device unique DevEUI.
+4. Then input a unique **End device ID** and EUIs (**DevEUI** and **AppEUI**), as shown in **Figure 15**. Check if your module has a DevEUI on sticker or QR that you can scan then use this as the device unique DevEUI.
 
+:::tip 📝 NOTE:
 Optionally, you can add a more descriptive **End device name** and **End device description** about your device.
+:::
 
-4. After putting all the details, click **Network layer settings** to proceed to the next step.
+5. After putting all the details, click **Network layer settings** to proceed to the next step.
 
 :::tip 📝 NOTE:
 
-It is advisable to use a meaningful End device ID, End device name, and End device description that will match your device purpose. The End device ID `rak-device` is for illustration purposes only.
+It is advisable to use a meaningful **End device ID**, **End device name**, and **End device description** that will match your device purpose. The End device ID `rak-device` is for illustration purposes only.
 
 :::
 
@@ -349,7 +352,7 @@ It is advisable to use a meaningful End device ID, End device name, and End devi
   caption="OTAA Device Information"
 />
 
-5. Next step is to set up **Frequency plan**, compatible **Regional Parameter version**, and **LoRaWAN class** supported. Then you can click **Join settings**.
+6. Next step is to set up **Frequency plan**, compatible **Regional Parameter version**, and **LoRaWAN class** supported. Then you can click **Join settings**.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-breakout-board/quickstart/t_image_12.png"
@@ -357,7 +360,7 @@ It is advisable to use a meaningful End device ID, End device name, and End devi
   caption="OTAA Configuration"
 />
 
-6. The last step in the registration of a new OTAA end-device is the configuration of the **AppKey**. To get the AppKey, you must click the **generate button**. Then click **Add end device** to finish your new device registration.
+7. The last step in the registration of a new OTAA end-device is the configuration of the **AppKey**. To get the AppKey, you must click the **generate button**. Then click **Add end device** to finish your new device registration.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-breakout-board/quickstart/t_image_13.png"
@@ -365,7 +368,7 @@ It is advisable to use a meaningful End device ID, End device name, and End devi
   caption="OTAA AppKey generation and device registration"
 />
 
-7. You should now be able to see the device on The Things Stack console after you fully registered your device, as shown in **Figure 27**.
+8. You should now be able to see the device on The Things Stack console after you fully registered your device, as shown in **Figure 27**.
 
 :::tip 📝 NOTE:
 
@@ -410,19 +413,19 @@ As an example, these are the list of the parameters you need to configure in RAK
 - Application EUI: **1000000000000009**
 - Application Key: **04FA4E626EF5CF227C969601176275C2**
 
-1. Set the LoRa join mode to OTAA.
+1. Set the LoRa join mode to **OTAA**.
 
 ```
 at+set_config=lora:join_mode:0
 ```
 
-2. Set the LoRa class to Class A.
+2. Set the LoRa class to **Class A**.
 
 ```
 at+set_config=lora:class:0
 ```
 
-3. Set the frequency/region to EU868.
+3. Set the frequency/region to **EU868**.
 
 * Refer in the [RAK4600 Datasheet](/Product-Categories/WisDuo/RAK4600-Module/Datasheet/#rf-characteristics) for the list of supported frequencies.
 
@@ -431,13 +434,13 @@ at+set_config=lora:class:0
 at+set_config=lora:region:EU868
 ```
 
-4. Set the Device EUI.
+4. Set the Device **EUI**.
 
 ```
 at+set_config=lora:dev_eui:1133557799224466
 ```
 
-5. Set the Application EUI.
+5. Set the **Application EUI**.
 
 :::tip 📝 NOTE:
 All zero value Application EUI `at+set_config=lora:app_eui:0000000000000000` is **not supported** and will return error.
@@ -447,7 +450,7 @@ All zero value Application EUI `at+set_config=lora:app_eui:0000000000000000` is 
 at+set_config=lora:app_eui:1000000000000009
 ```
 
-6. Set the Application Key.
+6. Set the **Application Key**.
 
 ```
 at+set_config=lora:app_key:04FA4E626EF5CF227C969601176275C2
@@ -486,7 +489,7 @@ at+send=lora:2:1234567890
   caption="OTAA Test Sample Data Sent via RAK Serial Port Tool"
 />
 
-You can see the data sent by the RAK4600 board on The Things Stack platform, as shown in **Figure 31**.
+You can see the data sent from the RAK4600 board on The Things Stack platform, as shown in **Figure 31**.
 
 
 <rk-img
@@ -506,13 +509,14 @@ You can see the data sent by the RAK4600 board on The Things Stack platform, as 
   caption="Add end device"
 />
 
-2. To register the module, you need to click first **Manually** then configure the activation method by selecting **Activation by personalization (ABP)**, compatible **LoRaWAN version**, and click **Start** button, as shown in **Figure 33** and **Figure 34**.
+2. To register the module, start by clicking **Manually**, as shown in **Figure 33**.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-breakout-board/quickstart/t_image_9.png"
   width="100%"
   caption="Add end device"
 />
+3. Configure the activation method by selecting **Activation by personalization (ABP)** and compatible **LoRaWAN version**. Afterwards, click on the **Start** button, as shown **Figure 34**.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-breakout-board/quickstart/image_1_abp.png"
@@ -520,15 +524,17 @@ You can see the data sent by the RAK4600 board on The Things Stack platform, as 
   caption="Manually register device to The Things Stack"
 />
 
-3. At this step, input a unique **End device ID** and **DevEUI**, as shown in **Figure 35**. Check if your module has a DevEUI on sticker or QR that you can scan then use this as the device unique DevEUI.
+4. Input a unique **End device ID** and **DevEUI**, as shown in **Figure 35**. Check if your module has a DevEUI on sticker or QR that you can scan then use this as the device unique DevEUI.
 
+:::tip 📝 NOTE:
 Optionally, you can add a more descriptive **End device name** and **End device description** about your device.
+:::
 
-4. After putting all the details, click **Network layer settings** to proceed to the next step.
+5. After putting all the details, click **Network layer settings** to proceed to the next step.
 
 :::tip 📝 NOTE:
 
-It is advisable to use a meaningful End device ID, End device name, and End device description that will match your device purpose. The End device ID `rak-device-abp` is for illustration purposes only.
+It is advisable to use a meaningful **End device ID**, **End device name**, and **End device description** that will match your device purpose. The End device ID `rak-device-abp` is for illustration purposes only.
 
 :::
 
@@ -538,7 +544,7 @@ It is advisable to use a meaningful End device ID, End device name, and End devi
   caption="Device Information"
 />
 
-5. Next step is to set up **Frequency plan**, compatible **Regional Parameter version**, and **LoRaWAN class** supported. In an ABP device, you also need to generate **Device Address** and **NwkSKey** (Network Session Keys). Then you can click **Application layers settings**.
+6. Next step is to set up **Frequency plan**, compatible **Regional Parameter version**, and **LoRaWAN class** supported. In an ABP device, you also need to generate **Device Address** and **NwkSKey** (Network Session Keys). Then you can click **Application layers settings**.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-breakout-board/quickstart/image_3_abp.png"
@@ -546,7 +552,7 @@ It is advisable to use a meaningful End device ID, End device name, and End devi
   caption="ABP Configuration in The Things Stack"
 />
 
-6. The last step in the registration of a new ABP end-device is the configuration of the **AppSKey**. To get the AppSKey, you must click the **generate button**. Then click **Add end device** to finish your new device registration.
+7. The last step in the registration of a new ABP end-device is the configuration of the **AppSKey**. To get the AppSKey, you must click the **generate button**. Then click **Add end device** to finish your new device registration.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-breakout-board/quickstart/image_4_abp.png"
@@ -554,7 +560,7 @@ It is advisable to use a meaningful End device ID, End device name, and End devi
   caption="ABP Configuration in The Things Stack"
 />
 
-7. You should now be able to see the device on The Things Stack console after you fully registered your device, as shown in **Figure 38**.
+8. You should now be able to see the device on The Things Stack console after you fully registered your device, as shown in **Figure 38**.
 
 <rk-img
   src="/assets/images/wisduo/rak4600-breakout-board/quickstart/image_5_abp.png"
@@ -589,18 +595,18 @@ As an example, these are the list of the parameters you need to configure in RAK
 - Network Session Key: **433C7A924F7F6947778FE821525F183A**
 - Application Session Key: **A585653A949C2B2D44B55E99E94CB533**
 
-1. Set the LoRa join mode to ABP.
+1. Set the LoRa join mode to **ABP**.
 
 ```
 at+set_config=lora:join_mode:1
 ```
-2. Set the LoRa class to Class A.
+2. Set the LoRa class to **Class A**.
 
 ```
 at+set_config=lora:class:0
 ```
 
-3. Set the frequency/region to EU868.
+3. Set the frequency/region to **EU868**.
 
 - Refer to the [RAK4600 Breakout Board Datasheet](/Product-Categories/WisDuo/RAK4600-Breakout-Board/Datasheet/#rf-characteristics) for the list of supported frequencies.
 
@@ -608,19 +614,19 @@ at+set_config=lora:class:0
 at+set_config=lora:region:EU868
 ```
 
-4. Set the Device Address.
+4. Set the **Device Address**.
 
 ```
 at+set_config=lora:dev_addr:260BDE80
 ```
 
-5. Set the LoRa Network Session Key.
+5. Set the **LoRa Network Session Key**.
 
 ```
 at+set_config=lora:nwks_key:433C7A924F7F6947778FE821525F183A
 ```
 
-6. Set the LoRa Application Session Key.
+6. Set the **LoRa Application Session Key**.
 
 ```
 at+set_config=lora:apps_key:A585653A949C2B2D44B55E99E94CB533
@@ -876,7 +882,7 @@ at+set_config=lora:join_mode:0
 ```
 at+set_config=lora:class:0
 ```
-3.  Set the frequency/region to EU868 (for Europe).
+3.  Set the frequency/region to **EU868** (for Europe).
 
 Refer to the [Datasheet](/Product-Categories/WisDuo/RAK4600-Breakout-Board/Datasheet/#rf-characteristics) for the list of supported frequencies.
 
@@ -889,13 +895,13 @@ at+set_config=lora:region:EU868
 Remember that the device frequency shall be in the same frequency band as the gateway.
 :::
 
-4.  Set the Device EUI.
+4.  Set the Device **EUI**.
 
 ```
 at+set_config=lora:dev_eui:d045f054b2797f7c
 ```
 
-5.  Set the Application EUI.
+5. Set the **Application EUI**.
 
 ```
 at+set_config=lora:app_eui:d045f054b2797f7c
@@ -904,7 +910,7 @@ at+set_config=lora:app_eui:d045f054b2797f7c
 The App EUI parameter is not needed for the ChirpStack platform; therefore, you will use the same ID as the Device EUI. Otherwise, the firmware will fail to connect to the network server.
 :::
 
-6.  Set the Application Key.
+6.  Set the **Application Key**.
 
 
 ```
@@ -1047,7 +1053,7 @@ at+set_config=lora:join_mode:1
 at+set_config=lora:class:0
 ```
 
-3.  Set the frequency/region to EU868 (for Europe).
+3.  Set the frequency/region to **EU868** (for Europe).
 
 Refer to the [Datasheet](/Product-Categories/WisDuo/RAK4600-Breakout-Board/Datasheet/#rf-characteristics) for the list of supported frequencies.
 
@@ -1055,20 +1061,20 @@ Refer to the [Datasheet](/Product-Categories/WisDuo/RAK4600-Breakout-Board/Datas
 at+set_config=lora:region:EU868
 ```
 
-4. Set the Device Address.
+4. Set the **Device Address**.
 
 ```
 at+set_config=lora:dev_addr:26011af9
 ```
 
-5.  Set the Network Session Key.
+5. Set the **Network Session Key**.
 
 
 ```
 at+set_config=lora:nwks_key:c280cb8d1df688bc18601a97025c5488
 ```
 
-6.  Set the Application Key.
+6.  Set the **Application Key**.
 
 ```
 at+set_config=lora:apps_key:4d42ec5caf97f03d833cdaf5003f69e1
@@ -1195,7 +1201,7 @@ Refer to the [RAKDAP1 Flash and Debug Tool](/Product-Categories/Accessories/RAKD
 :::
 
 <rk-img
-  src="/assets/images/wisduo/rak4600-breakout-board/quickstart/upgrading-firmware/wwbnonxp1ugf6jtckbm6.jpg"
+  src="/assets/images/wisduo/rak4600-breakout-board/quickstart/upgrading-firmware/wwbnonxp1ugf6jtckbm6.png"
   width="65%"
   caption="Secure DFU Service in the nRF Connect App"
 />
@@ -1203,7 +1209,7 @@ Refer to the [RAKDAP1 Flash and Debug Tool](/Product-Categories/Accessories/RAKD
 5. In the “**Secure DFU Service**”, click the button highlighted in red in **Figure 71**.
 
 <rk-img
-  src="/assets/images/wisduo/rak4600-breakout-board/quickstart/upgrading-firmware/qxw4hh00xqmcv85df1f7.jpg"
+  src="/assets/images/wisduo/rak4600-breakout-board/quickstart/upgrading-firmware/qxw4hh00xqmcv85df1f7.png"
   width="65%"
   caption="Buttonless DFU"
 />
@@ -1211,7 +1217,7 @@ Refer to the [RAKDAP1 Flash and Debug Tool](/Product-Categories/Accessories/RAKD
 6. Click the arrow highlighted in **Figure 72**. A Write value pop-up window will appear and press “**Send**”.
 
 <rk-img
-  src="/assets/images/wisduo/rak4600-breakout-board/quickstart/upgrading-firmware/xb1hntew7qrbct9et5hz.jpg"
+  src="/assets/images/wisduo/rak4600-breakout-board/quickstart/upgrading-firmware/xb1hntew7qrbct9et5hz.png"
   width="65%"
   caption="Resetting the Bootloader via Bluetooth"
 />
@@ -1235,7 +1241,7 @@ Refer to the [RAKDAP1 Flash and Debug Tool](/Product-Categories/Accessories/RAKD
 9. After connected, select the **DFU Icon**. On the Select file type, choose the “**Distribution packet (ZIP)**”, and press OK. This will then prompt you to select the zip file of the DFU package that you have downloaded.
 
 <rk-img
-  src="/assets/images/wisduo/rak4600-breakout-board/quickstart/upgrading-firmware/pqnewr61x87nv5nrxovs.jpg"
+  src="/assets/images/wisduo/rak4600-breakout-board/quickstart/upgrading-firmware/pqnewr61x87nv5nrxovs.png"
   width="65%"
   caption="Distribution Packet File Type under DFU"
 />

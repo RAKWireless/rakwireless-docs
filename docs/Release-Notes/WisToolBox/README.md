@@ -10,6 +10,10 @@ WisToolBox is a complementary software tool for RUI3-based RAK modules. It is av
 
 ###### Release Version
 
+- <b> 2024 </b>
+
+    - [January 29](/Release-Notes/WisToolBox/2024/January-29/)
+
 - <b> 2023 </b>
 
     - [August 9](/Release-Notes/WisToolBox/2023/August-9/)

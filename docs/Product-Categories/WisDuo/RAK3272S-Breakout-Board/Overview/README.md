@@ -1,6 +1,6 @@
 ---
 rak_img: /assets/images/wisduo/rak3272s-breakout-board/RAK3272S-Breakout.png
-rak_desc: The RAK3272S Breakout Board is made to quickly evaluate the RAK3172 stamp module. The XBee form factor board allows access to most GPIO's.
+rak_desc: The RAK3272S Breakout Board is made to quickly evaluate the RAK3172 stamp module. The form factor of the board allows access to most GPIOs.
 rak_grp: [wisduo, breakout]
 prev: ../../
 next: ../Quickstart/
@@ -12,7 +12,7 @@ tags:
 
 # RAK3272S Breakout Board
 
-Thank you for choosing **RAK3272S Breakout Board** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK3272S Breakout Board** in your awesome IoT project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [Quick Start Guide](../Quickstart/)
 * [AT Command Manual](../AT-Command-Manual/)
@@ -22,11 +22,11 @@ Thank you for choosing **RAK3272S Breakout Board** in your awesome IoT Project! 
 
 ## Product Description
 
-RAK3272S Breakout Board is specifically designed to allow easy access to the pins on the board in order to simplify development and testing. The breakout board footprint is based on the XBee form factor, and its main purpose is to allow the RAK3172 stamp module pins to be transferred to 2.54&nbsp;mm headers.
+**RAK3272S Breakout Board** is specifically designed to allow easy access to the pins on the board to simplify development and testing. The breakout board footprint allows the RAK3172 stamp module pins to be transferred to 2.54&nbsp;mm headers.
 
-The board itself has the RAK3172 at its core, integrating a STM32WLE5CC chip. It has Ultra-Low Power Consumption of 1.69&nbsp;uA in sleep mode.
+The board itself has the RAK3172 at its core, integrating a **STM32WLE5CC** chip. It has an ultra-low power consumption of 1.69&nbsp;uA in sleep mode.
 
-This module complies with Class A, B, & C of LoRaWAN 1.0.3 specifications. It also supports LoRa Point-to-Point (P2P) communication mode, which helps you in implementing your own customized long-range LoRa network quickly.
+This module complies with Class A, B, and C of LoRaWAN 1.0.3 specifications. It also supports LoRa Point-to-Point (P2P) communication mode, which helps you in implementing your own customized LoRa network quickly.
 
 ## Product Features
 
@@ -34,6 +34,6 @@ This module complies with Class A, B, & C of LoRaWAN 1.0.3 specifications. It al
 - Custom firmware using Arduino via RUI3 API
 - I/O ports: UART/I2C/GPIO/SPI
 - Serial Wire Debug (SWD) interface
-- Module size: 25.4 x 32.3&nbsp;mm
+- Module size: 25.4&nbsp;mm x 32.3&nbsp;mm
 - Supply Voltage: 2.0&nbsp;V ~ 3.6&nbsp;V
-- Temperature Range: -20&nbsp;°C ~ 85&nbsp;°C
+- Temperature Range: -20°&nbsp;C ~ 85°&nbsp;C

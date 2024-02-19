@@ -16,7 +16,7 @@ prev: ../Quickstart/
 
 ### Description
 
-The **RAK4260 Breakout Board** is specifically designed to allow easy excess to the pins on the board in order to simplify development and testing. The breakout board utilized is of an **Xbee form factor** and its main purpose is to allow the RAK4260 stamp module form factor pinout to be transferred to 2.54&nbsp;mm headers. This makes it more convenient for a developer to debug their solution.
+The **RAK4260 Breakout Board** is specifically designed to allow easy access to the pins on the board in order to simplify development and testing. The breakout board form factor allows the RAK4260 stamp module form factor pinout to be transferred to 2.54&nbsp;mm headers. This makes it more convenient for a developer to debug their solution.
 
 The board itself has the RAK4260 at its core, which is a module that utilizes the **ATSAMR34J18B SIP**. This high level of integration allows for outstanding performance: 860&nbsp;nA in sleep mode and LoRa TX Power of up to 20&nbsp;dBm.
 
@@ -41,13 +41,13 @@ The low-power, long-range LoRa communication capabilities of the board make it s
 - 6&nbsp;KB of data EEPROM with ECC
 - **ATECC608A** cryptographic core
 - Supply voltage: **2.0&nbsp;V ~ 3.6&nbsp;V**
-- Temperature range: **-40&nbsp;°C to +85&nbsp;°C**
+- Temperature range: **-40°&nbsp;C ~ +85°&nbsp;C**
 
 ## Specifications
 
 ### Overview
 
-The RAK4260 Breakout Board is shown in Figures 1 and 2 that display the top and back view of the board, respectively.
+The RAK4260 Breakout Board is shown in **Figures 1 and 2**. It displays the top and back view of the board, respectively.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-breakout-board/datasheet/rak4260b-top-view.jpg"
@@ -63,7 +63,7 @@ The RAK4260 Breakout Board is shown in Figures 1 and 2 that display the top and 
 
 ### Hardware
 
-The hardware specification is categorized into five parts. It discusses the interfacing, pinouts and its corresponding functions and diagrams. It also covers the RF and electrical parameters that include the tabular data of the functionalities and standard values of the RAK4260 Breakout Board.
+The hardware specification is categorized into five (5) parts. It discusses the interfacing, pinouts and its corresponding functions and diagrams. It also covers the RF and electrical parameters that include the tabular data of the functionalities and standard values of the RAK4260 Breakout Board.
 
 
 #### Interfaces
@@ -78,7 +78,7 @@ When programming via a DAPLink tool, it is required to have all of the following
 4. **GND**
 
 
-::: tip 📝 NOTE
+:::tip 📝 NOTE
 For the aforementioned reason, it is best you leave these exposed for programming purposes and not to remap them as GPIOs.
 :::
 
@@ -110,7 +110,7 @@ The tables below show the pin definition of the RAK4260 Breakout Board:
 ##### J5 Pin Definitions
 
 | Pin | Name     | I/O | Description                     | Alternate Functions                   |
-| --- | -------- | --- | ------------------------------- | ------------------------------------- |
+| :-: | :------: | :-: | :-----------------------------: | :-----------------------------------: |
 | 1   | UART3_RX | I   | UART3_RX (ATSAMR34J18B PA18)    | EIC/PTC/TC/AC/CCL/SERCOM1/SERCOM3     |
 | 2   | UART3_TX | O   | UART3_TX (ATSAMR34J18B PA19)    | EIC/PTC/TC/AC/CCL/SERCOM1/SERCOM3     |
 | 3   | GPIO     | I/O | GPIO (ATSAMR34J18B PA06)        | EIC/RSTC/ADC/PTC/OPAMP/TC/CCL/SERCOM0 |
@@ -123,7 +123,7 @@ The tables below show the pin definition of the RAK4260 Breakout Board:
 ##### J6 Pin Definitions
 
 | Pin | Name     | I/O | Description                       | Alternate Functions                        |
-| --- | -------- | --- | --------------------------------- | ------------------------------------------ |
+| :-: | :------: | :-: | :-------------------------------: | :----------------------------------------: |
 | 1   | UART1_TX | O   | UART1_RX (ATSAMR34J18B PA04)      | EIC/RSTC/VREFB/ADC/AC/OPAMP/TC/CCL/SERCOM0 |
 | 2   | UART1_RX | I   | UART1_RX (ATSAMR34J18B PA05)      | EIC/RSTC/ADC/AC/OPAMP/TC/CCL/SERCOM0       |
 | 3   | GPIO     | I/O | GPIO (ATSAMR34J18B PA14)          | EIC/TC/GCLK/SERCOM2/SERCOM4                |
@@ -136,28 +136,28 @@ The tables below show the pin definition of the RAK4260 Breakout Board:
 ##### J11 Pin Definitions
 
 | Pin | Name  | I/O | Description                       | Alternate Functions               |
-| --- | ----- | --- | --------------------------------- | --------------------------------- |
+| :-: | :---: | :-: | :-------------------------------: | :-------------------------------: |
 | 1   | USB_N | I/O | USB Interface (ATSAMR34J18B PA24) | EIC/SERCOM3/SERCOM5/TC/USB_DM/CCL |
 | 2   | USB_P | I/O | USB Interface (ATSAMR34J18B PA24) | EIC/SERCOM3/SERCOM5/TC/USB_DP/CCL |
 
 ##### J12 Pin Definitions
 
 | Pin | Name    | I/O | Description                       | Alternate Functions                 |
-| --- | ------- | --- | --------------------------------- | ----------------------------------- |
+| :-: | :-----: | :-: | :-------------------------------: | :---------------------------------: |
 | 1   | I2C_SDA | I/O | I2C Interface (ATSAMR34J18B PA16) | EIC/PTC/TC/GCLK/CCL/SERCOM1/SERCOM3 |
 | 2   | I2C_SCL | I/O | I2C Interface (ATSAMR34J18B PA17) | EIC/PTC/TC/GCLK/CCL/SERCOM1/SERCOM3 |
 
 ##### J13 Pin Definitions
 
 | Pin | Name | I/O | Description | Alternate Functions                    |
-| --- | ---- | --- | ----------- | -------------------------------------- |
+| :-: | :--: | :-: | :---------: | :------------------------------------: |
 | 1   | GND  |     | Ground      | GND                                    |
 | 2   | VDD  |     | DC3V3       | Supply voltage 2.0&nbsp;V ~ 3.3&nbsp;V |
 
 ##### J14 Pin Definitions
 
 | Pin | Name | I/O | Description | Alternate Functions                    |
-| --- | ---- | --- | ----------- | -------------------------------------- |
+| :-: | :--: | :-: | :---------: | :------------------------------------: |
 | 1   | GND  |     | Ground      | GND                                    |
 | 2   | VDD  |     | DC3V3       | Supply voltage 2.0&nbsp;V ~ 3.3&nbsp;V |
 
@@ -167,16 +167,53 @@ The tables below show the pin definition of the RAK4260 Breakout Board:
 
 The RAK4260 Breakout Board supports the following LoRa bands:
 
-| Module         | Region                                                                               | Frequency (MHz)                                                         |
-| -------------- | ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------- |
-| **RAK4260(H)** | Russia <br> India <br> Europe <br> North America <br> Australia <br> Korea <br> Asia | RU864 <br> IN865 <br> EU868 <br> US915 <br> AU915 <br> KR920 <br> AS923 |
+<table>
+  <thead style="text-align:center;">
+    <tr>
+<th>Module</th>
+<th>Region</th>
+<th>Frequency (MHz)</th>
+    </tr>
+  </thead>
+  <tbody style="text-align:center;">
+    <tr>
+      <td rowspan = "7"><b>RAK4260(H)</b></td>
+      <td>Russia</td>
+      <td>RU864</td> 
+    </tr>
+    <tr>
+      <td>India</td>
+      <td>IN865</td>
+    </tr>
+    <tr>
+      <td>Europe</td>
+      <td>EU868</td>
+    </tr>
+    <tr>
+      <td>North America</td>
+      <td>US915</td>
+    </tr>
+    <tr>
+      <td>Australia</td>
+      <td>AU915</td>
+    </tr>
+    <tr>      
+      <td>Korea</td>
+      <td>KR920</td>
+    </tr>
+    <tr>
+      <td>Asia</td>
+      <td>AS923</td>
+    </tr>
+  </tbody>
+</table>  
 
 #### Electrical Characteristics
 
 ##### Power Consumption
 
 | Item                         | Power Consumption      | Condition                  |
-| ---------------------------- | ---------------------- | -------------------------- |
+| :--------------------------: | :--------------------: | :------------------------: |
 | Tx mode LoRa @20&nbsp;dBm    | 126.3&nbsp;mA          | PA_BOOST V=3.3&nbsp;V      |
 | Tx mode LoRa @17&nbsp;dBm    | 95.6&nbsp;mA           | PA_BOOST V=3.3&nbsp;V      |
 | Tx mode LoRa @14&nbsp;dBm    | 33.1&nbsp;mA (typical) | RFO_HF V=3.3&nbsp;V        |
@@ -208,5 +245,5 @@ Download the latest firmware of the RAK4260 Breakout Board in the table provided
 #### Firmware
 
 | Model   | Source                                                                                          |
-| ------- | ----------------------------------------------------------------------------------------------- |
+| :-----: | :---------------------------------------------------------------------------------------------: |
 | RAK4260 | [Download](https://downloads.rakwireless.com/LoRa/RAK4260/Firmware/RAK4260_Latest_Firmware.rar) |

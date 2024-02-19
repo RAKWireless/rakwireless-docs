@@ -13,15 +13,13 @@ tags:
 
 ## Prerequisites
 
+### What Do You Need?
 
-
-### What do you need?
-
-Before going through each and every step in the installation guide of the RAK4200 Breakout Board, make sure to prepare the necessary items listed below:
+Before going through the steps in the installation guide of the RAK4200 Breakout Board, make sure to prepare the necessary items listed below:
 
 #### Hardware Tools
 
-- [**RAK4200 Breakout Board**](https://store.rakwireless.com/products/rak4200-breakout-board?utm_source=RAK4200BreakoutModule&utm_medium=Document&utm_campaign=BuyFromStore) (provided) – including LoRa antenna, Dupont lines (13x)
+- [RAK4200 Breakout Board](https://store.rakwireless.com/products/rak4200-breakout-board?utm_source=RAK4200BreakoutModule&utm_medium=Document&utm_campaign=BuyFromStore) (provided) – including LoRa antenna, Dupont lines (13x)
 - USB to UART adapter – CH340 for example (not provided)
 - Gateway in range, for testing (not provided)
 - [RAKDAP1 DAPLink Tool](https://store.rakwireless.com/products/daplink-tool?utm_source=RAKDAP1&utm_medium=Document&utm_campaign=BuyFromStore) (not provided)
@@ -43,13 +41,13 @@ Before going through each and every step in the installation guide of the RAK420
 
 ### Interfacing with RAK4200 Breakout Board
 
-To interface with the RAK4200 Evaluation Board with your Windows Machine, you need to download the [**RAK Serial Port Tool**](https://downloads.rakwireless.com/#LoRa/Tools/).
+1. To interface with the RAK4200 Evaluation Board with your Windows Machine, you need to download the [**RAK Serial Port Tool**](https://downloads.rakwireless.com/#LoRa/Tools/).
 
 ::: warning ⚠️ WARNING
-Before powering the RAK4200 Breakout Board, make sure you have installed the included LoRa Antenna. Not doing so might damage the board
+Before powering the RAK4200 Breakout Board, make sure you have installed the included LoRa Antenna. Not doing so might damage the board.
 :::
 
-- Connect your USB to the UART adapter to the pin header on the RAK4200 via a set of 4 DuPont lines. Use **Figure 1** for reference on wiring the device properly.
+2. Connect your USB to the UART adapter to the pin header on the RAK4200 via a set of 4 DuPont lines. Use **Figure 1** for reference on wiring the device properly.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-breakout-board/quickstart/interfacing/connection.svg"
@@ -57,13 +55,13 @@ Before powering the RAK4200 Breakout Board, make sure you have installed the inc
   caption="Powering up and interfacing with the board"
 />
 
-- Go to Device Manager by pressing Windows + R and typing devmgmt.msc, or search in the Start Menu.
+3. Go to your Device Manager by pressing `Windows` + `R`, and then type `devmgmt.msc`. Or, you can also search for `devmgmt.msc` in the **Start Menu**.
 
 ::: tip 📝 NOTE
-Windows 10 should recognize the board and automatically install drivers, however, if it is missing in the COM & LPT ports list you need to manually install the CH340 Drivers.
+Windows 10 should recognize the board and automatically install drivers. However, if it is missing in the COM and LPT ports list, you need to manually install the CH340 Drivers.
 :::
 
-- Look for Ports (COM & LPT) and find the name USB-SERIAL CH340. Take note of the COM Port Number as you will need it to connect with the board. You might have another model number but the wording “USB-SERIAL” should be present in some form.
+4. Look for Ports (**COM and LPT**), and then find the name **USB-SERIAL CH340**. Take note of the COM Port Number as you will need it to connect with the board. You might have another model number but the wording **USB-SERIAL** should be present in some form.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-breakout-board/quickstart/interfacing/tvkkkqpdpkszdf4ioyg6.png"
@@ -71,7 +69,7 @@ Windows 10 should recognize the board and automatically install drivers, however
   caption="COM Port settings"
 />
 
-- Open the RAK Serial Port Tool. Select the COM Port number (the one you noted in the previous step) and set the **Baud Rate to 115200**. Click “**OPEN**”, and you should be connected to the board and be able to send commands.
+5. Open the RAK Serial Port Tool. Select the COM Port number (the one you noted in the previous step) and set the **Baud Rate to 115200**. Click **OPEN**, and you should be connected to the board and be able to send commands.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-breakout-board/quickstart/interfacing/ybo1fczw8uhagao2io7h.png"
@@ -83,7 +81,8 @@ Windows 10 should recognize the board and automatically install drivers, however
 
 The Things Network is about enabling low-power devices to be used in long-range gateways that connect to an open-source, decentralized network and exchange data with Applications. Learn more about [**The Things Network**](https://www.thethingsnetwork.org/docs/).
 
-In this section, you will be connecting the RAK4200 Breakout Board to The Things Network (TTN). If you don't have an account yet, head on to [TTN site](https://www.thethingsnetwork.org/) and create one. Once done, log in to your account and go to the console. See the highlighted box in **Figure 4**.
+In this section, you will be connecting the RAK4200 Breakout Board to The Things Network (TTN). 
+1. If you don't have an account yet, head on to the [TTN site](https://www.thethingsnetwork.org/) and create one. Once done, log in to your account and go to the console. See the highlighted box in **Figure 4**.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-breakout-board/quickstart/ttn/ttn-homepage.png"
@@ -97,7 +96,7 @@ In this section, you will be connecting the RAK4200 Breakout Board to The Things
   caption="TTN Console Page"
 />
 
-- Choose "**APPLICATIONS**"
+2. Choose **APPLICATIONS**.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-breakout-board/quickstart/ttn/add-application.png"
@@ -107,7 +106,7 @@ In this section, you will be connecting the RAK4200 Breakout Board to The Things
 
 #### Adding An Application
 
-- Click the "**add application**" button
+3. Click the **add application** button.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-breakout-board/quickstart/ttn/application-input.png"
@@ -115,14 +114,16 @@ In this section, you will be connecting the RAK4200 Breakout Board to The Things
   caption="Adding an Application"
 />
 
+:::tip 📝 NOTE
 Here are the things that you should take note of in adding an application:
 
 1. **Application ID**: a unique ID on the TTN network that should be in lower case with no spaces
 2. **Description**: This is a short and concise human-readable description of your application
 3. **Application EUI**: automatically generated by TTN
 4. **Handler Registration**: select the handler you want to register this application to
+:::
 
-- After you fill in the necessary information, press the "**Add application**" button at the bottom of this page. If you see the following page, this means that you have successfully registered your application.
+4. After filling in the necessary information, press the **Add application**. If the page is the same as shown in **Figure 8**, then you have successfully registered your application.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-breakout-board/quickstart/ttn/app-overview.png"
@@ -132,7 +133,7 @@ Here are the things that you should take note of in adding an application:
 
 ##### Register Device
 
-- Scroll down until you see the Devices section, or you can also click the "**Devices**" button at the top:
+4. Scroll down until you see the Devices section. You can also click the **Devices** button at the top.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-breakout-board/quickstart/ttn/dev-section.png"
@@ -140,7 +141,7 @@ Here are the things that you should take note of in adding an application:
   caption="Device Section"
 />
 
-- Click "**Register device "**
+6. Click **Register device**.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-breakout-board/quickstart/ttn/add-device.png"
@@ -148,14 +149,14 @@ Here are the things that you should take note of in adding an application:
   caption="Add your Device"
 />
 
+:::tip 📝 NOTE
 Here are the things that you should take note of in registering your device:
 
 1. **Device ID** - this is the unique identifier for your RAK4200 Breakout Board in your application. You need to enter this manually.
 2. **Device EUI** - this is the unique identifier for your device in the network. You can change it later if you want.
+:::
 
-Click the following icon, and the Device EUI will be automatically generated. The App Key should be in auto-generation mode by default.
-
-- Lastly, click the Register button. Now, your device is registered under the corresponding application.
+7. Populate the **Device ID** and **Device EUI** (generate a random one by pressing the arrows) fields and leave the rest as is. Click **Register**. Now, your device is registered under the corresponding application.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-breakout-board/quickstart/ttn/dev-overview2.png"
@@ -178,14 +179,12 @@ When setting up a new device in TTN, its default is to join in OTAA mode. For co
 />
 
 ::: tip 📝 NOTE
-As an example, join in OTAA mode, EU868 frequency, and the default LoRa class is Class A.
+- As an example, join in OTAA mode, EU868 frequency, and the default LoRa class is Class A.
+
+- Execute the following commands one by one and in the order given.
 :::
 
-::: tip 📝 NOTE
-Execute the following commands one by one and in the order given.
-:::
-
-1. Set the LoRa join mode to **OTAA** as follows:
+1. Set the LoRa join mode to **OTAA**.
 
 ```sh
 at+set_config=lora:join_mode:0
@@ -247,7 +246,7 @@ at+set_config=lora:app_key:XXXX
 at+set_config=device:restart
 ```
 
-8. After resetting the RAK4200 Breakout Board, join in OTAA mode:
+8. Then join in OTAA mode:
 
 ```sh
 at+join
@@ -259,7 +258,7 @@ at+join
   caption="AT Command for OTAA LoRa Join via RAK Serial Port Tool"
 />
 
-9. Joined successfully! Try to send data from the RAK4200 Breakout Board to TTN:
+9. After joining in OTAA mode successfully, try to send data from the RAK4200 Breakout Board to TTN:
 
 ```sh
 at+send=lora:2:1234567890
@@ -287,11 +286,11 @@ Before you start working with the RAK4200, it is recommended to keep the RAK4200
 
 :::tip 📝 NOTE:
 
-For RAK4200 modules with firmware version V3.0.0.12 and below, you need to use the [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) to upgrade your firmware and upload the **.hex file** (not the .bin file) of the [latest RAK4200 firmware](https://downloads.rakwireless.com/#LoRa/RAK4200/Firmware/). The lower versions of the firmware have a different bootloader code and will not work on the RAK DFU Tool.
+For RAK4200 modules with firmware version V3.0.0.12 and below, you need to use the [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) to upgrade your firmware and upload the `.hex` file (not the `.bin` file) of the [latest RAK4200 firmware](https://downloads.rakwireless.com/#LoRa/RAK4200/Firmware/). The lower versions of the firmware have a different bootloader code and will not work on the RAK DFU Tool.
 
 :::
 
-In the following sections, two (2) options for flashing new firmware in a RAK4200 module are shown: “**Firmware Upgrade through DAPLink**” and “**Firmware Upgrade through UART1**”.
+In the following sections, two (2) options for flashing new firmware in a RAK4200 module are shown: **Firmware Upgrade through DAPLink** and **Firmware Upgrade through UART1**.
 
 #### Firmware Upgrade Through DAPLink
 
@@ -302,11 +301,11 @@ Refer to [RAKDAP1 Flash and Debug Tool Quickstart Guide](/Product-Categories/Acc
 
 ##### Minimum Hardware and Software Requirements
 
-|               |                                           |
-| ------------- | ----------------------------------------- |
-| Computer      | A Windows/Linux/Mac computer              |
-| Firmware File | Bin firmware downloaded from the website. |
-| Others        | A USB to TTL adapter.                     |
+| Hardware/Software | Requirements                              |
+| :---------------: | :---------------------------------------: |
+| Computer          | A Windows/Linux/Mac computer              |
+| Firmware File     | Bin firmware downloaded from the website. |
+| Others            | A USB to TTL adapter.                     |
 
 ##### Firmware Upgrade Procedure
 
@@ -325,7 +324,7 @@ Follow this procedure to upgrade the firmware in Device Firmware Upgrade (DFU) m
   caption="Device Firmware Upgrade Tool"
 />
 
-5. Click on the "**Select Firmware**" button and choose the application firmware file of the module with the suffix ". bin".
+5. Click on the **Select Firmware** button and choose the application firmware file of the module with the suffix `. bin`.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-breakout-board/quickstart/select-firmware.png"
@@ -333,7 +332,7 @@ Follow this procedure to upgrade the firmware in Device Firmware Upgrade (DFU) m
   caption="Select firmware"
 />
 
-6. Click on the "**Upgrade**" button to upgrade the device. After the upgrade is complete, the RAK4200 module is now ready to work with the new firmware.
+6. Click on the **Upgrade** button to upgrade the device. After the upgrade is complete, the RAK4200 module is now ready to work with the new firmware.
 
 <rk-img
   src="/assets/images/wisduo/rak4200-breakout-board/quickstart/firmware-upgrading.png"

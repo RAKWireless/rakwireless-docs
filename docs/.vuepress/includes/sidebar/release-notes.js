@@ -396,6 +396,19 @@ module.exports = {
       sidebarDepth: 4,
       children : [
         {
+          title : '2024',
+          nested: false,
+          collapsible: true,
+          collapsed : true,
+          children : [
+            {
+              title : 'January 29',
+              path : '/Release-Notes/WisToolBox/2024/January-9',
+              collapsable: false
+            },
+          ]
+        },
+        {
           title : '2023',
           nested: false,
           collapsible: true,

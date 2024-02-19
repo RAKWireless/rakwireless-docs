@@ -56,7 +56,7 @@ Do not power the Sensor Hub before connecting the sensors to avoid damage to the
 :::
 
 :::tip 📝 NOTE:
-If the Sensor Probe with Temperature, Humidity, and Pressure is used(RAK1901+RAK1902) there will be two temperature values in the WisToolBox. Due to the different accuracy of the temperature sensors, the values might be different. 
+If the Sensor Probe with Temperature, Humidity, and Pressure is used (RAK1901+RAK1902), there will be two temperature values in the WisToolBox. Due to the different accuracy of the temperature sensors, the values might be different. 
 :::
 
 2. Use the power supply of your choice that is compatible with the device.

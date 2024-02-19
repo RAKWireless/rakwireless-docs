@@ -16,11 +16,9 @@ tags:
 The following two sections provide a list of the components and tools you need in order to get started with the development board. Some of the components are included in the package, others you need to provide yourself.
 
 
-
-
 ### What Do You Need?
 
-Before going through each step in the installation guide of the RAK4260 Breakout Board, make sure to prepare the necessary items listed below:
+Before going through the steps in the installation guide of the RAK4260 Breakout Board, make sure to prepare the necessary items listed below:
 
 #### Hardware Tools
 
@@ -63,13 +61,13 @@ Before powering the RAK4260 Breakout Board, make sure you have installed the inc
   caption="Powering up and interfacing with the board"
 />
 
-2. Go to your Device Manager by pressing: **Windows + R** and typing **devmgmt.msc**, or search in the Start Menu.
+2. Go to your Device Manager by pressing `Windows` + `R`, and then type `devmgmt.msc`. Or, you can also search for `devmgmt.msc` in the **Start Menu**.
 
-3. Look for Ports (**COM & LPT**) and find the name **USB-SERIAL CH340** and take note of the COM Port Number as you will need it to connect with the board.
+3. Look for Ports (**COM and LPT**), and then find the name **USB-SERIAL CH340**. Take note of the COM Port Number as you will need it to connect with the board.
 
 :::tip 📝 NOTE
 Windows 10 should recognize the board and automatically install drivers.
-If you didn't find any port with the name USB-Serial CH340, make sure you have installed the CH340 Drivers in your Windows PC.
+If you didn't find any port with the name USB-Serial CH340, make sure to install the CH340 Drivers in your Windows PC.
 :::
 
 <rk-img
@@ -78,7 +76,7 @@ If you didn't find any port with the name USB-Serial CH340, make sure you have i
   caption="COM Port settings"
 />
 
-4. Open the RAK Serial Port Tool. Select the COM Port number (the one you noted in the previous step) and set the baud rate to **115200**. Click “**OPEN**” and you should be connected to the board and be able to send commands.
+4. Open the RAK Serial Port Tool. Select the COM Port number (the one you noted in the previous step) and set the **Baud Rate to 115200**. Click **OPEN**, and you should be connected to the board and be able to send commands.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-breakout-board/quickstart/interfacing/configuring-the-rak-serial-port-tool.png"
@@ -109,7 +107,7 @@ The Things Network is about enabling low-power devices to be used in long-range 
 
 In this section, you will be connecting the RAK4260 Breakout Board to The Things Network (TTN).
 
-1. If you don't have an account yet, head on to [https://www.thethingsnetwork.org/](https://www.thethingsnetwork.org/) and create an account. Once done, log in to your account. And on the home page, go to the console. Refer to **Figure 7**.
+1. If you don't have an account yet, head on to the [TTN site](https://www.thethingsnetwork.org/) and create one. Once done, log in to your account and go to the console. Refer to **Figure 7**.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-breakout-board/quickstart/ttn/ttn-home-page.png"
@@ -123,7 +121,7 @@ In this section, you will be connecting the RAK4260 Breakout Board to The Things
   caption="TTN Console Page"
 />
 
-2. Choose "**APPLICATIONS**".
+2. Choose **APPLICATIONS**.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-breakout-board/quickstart/ttn/application-page.png"
@@ -133,7 +131,7 @@ In this section, you will be connecting the RAK4260 Breakout Board to The Things
 
 #### Adding an Application
 
-3. Click the "**add application**" button
+3. Click the **add application** button
 
 <rk-img
   src="/assets/images/wisduo/rak4260-breakout-board/quickstart/ttn/adding-an-application.png"
@@ -143,12 +141,13 @@ In this section, you will be connecting the RAK4260 Breakout Board to The Things
 
 Here are the things that you should take note of in adding an application:
 
-   - **Application ID** - this will be the unique id of your application in the Network. Note that the characters should be in lower case, no spaces are allowed.
-   - **Description** - this is a short and concise human-readable description of your application.
-   - **Application EUI** - this will be generated automatically by The Things Network for convenience.
-   - **Handler Registration** - the handler you want to register this application to.
+- **Application ID** - this will be the unique id of your application in the Network. Note that the characters should be in lower case, no spaces are allowed.
+- **Description** - this is a short and concise human-readable description of your application.
+- **Application EUI** - this will be generated automatically by The Things Network for convenience.
+- **Handler Registration** - the handler you want to register this application to.
 
-4. After filling in the necessary information, press the "**Add application**". If the page is the same as shown in **Figure 10**, then you have successfully registered your application.
+
+4. After filling in the necessary information, press the **Add application**. If the page is the same as shown in **Figure 10**, then you have successfully registered your application.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-breakout-board/quickstart/ttn/application-overview.png"
@@ -158,7 +157,7 @@ Here are the things that you should take note of in adding an application:
 
 #### Register Device
 
-5. Scroll down until you see the Devices section. You can also click the "**Devices**" button at the top.
+5. Scroll down until you see the Devices section. You can also click the **Devices** button at the top.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-breakout-board/quickstart/ttn/device-section.png"
@@ -166,7 +165,7 @@ Here are the things that you should take note of in adding an application:
   caption="Device Section"
 />
 
-6. Click "**Register device"**.
+6. Click **Register device**.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-breakout-board/quickstart/ttn/add-your-device.png"
@@ -176,12 +175,13 @@ Here are the things that you should take note of in adding an application:
 
 Here are the things that you should take note of in registering your device:
 
-   - **Device ID** - this is the unique identifier for your RAK4260 Breakout Board in your application. You need to enter this manually.
-   - **Device EUI** - this is the unique identifier for your device in the network. You can change it later if you want.
-   - **App Key** – this key will be used to secure the communication between the device and the network.
-   - **App EUI**– a unique identifier of the Application that you are registering the device within.
+- **Device ID** - this is the unique identifier for your RAK4260 Breakout Board in your application. You need to enter this manually.
+- **Device EUI** - this is the unique identifier for your device in the network. You can change it later if you want.
+- **App Key** – this key will be used to secure the communication between the device and the network.
+- **App EUI** – a unique identifier of the Application that you are registering the device within.
 
-7. Populate the **Device ID** and **Device EUI** (generate a random one by pressing the arrows) fields and leave the rest as is. Click “**Register**”.
+
+7. Populate the **Device ID** and **Device EUI** (generate a random one by pressing the arrows) fields and leave the rest as is. Click **Register**. Now, your device is registered under the corresponding application.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-breakout-board/quickstart/ttn/device-overview.png"
@@ -196,7 +196,7 @@ In the Device Overview, there are two options for the **Activation Method**: **O
 
 **OTAA** stands for **Over-The-Air Activation**. Detailed information about the OTAA will not be discussed in this document; however, the most important thing from a practical perspective is that a device needs to have the three (3) parameters: **Device EUI**, **Application EUI**, and **App Key**. It is already explained briefly in the previous section. It is set correctly in order for the LoRa Server to allow it to access the network.
 
-These can be obtained from the Device Overview page, where they are grouped one after the other for convenience.
+These can be obtained from the **Device Overview page**, where they are grouped one after the other for convenience.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-breakout-board/quickstart/ttn/device-overview-parameters.png"
@@ -230,7 +230,7 @@ Execute the following steps to connect your device with the TTN. Register and th
   caption="Open the sample project"
 />
 
-3. Go to the folder where you downloaded the GitHub repository and select the "**APPS_ENDDEVICE_DEMO1**" project file (it is in the directory with the same name as the file). Then click **Open**.
+3. Go to the folder where you downloaded the GitHub repository and select the **APPS_ENDDEVICE_DEMO1** project file (it is in the directory with the same name as the file). Then click **Open**.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-breakout-board/quickstart/ttn/demo-firmware-project-file.png"
@@ -238,7 +238,12 @@ Execute the following steps to connect your device with the TTN. Register and th
   caption="Demo firmware project file"
 />
 
-4. Once your project has loaded up, you will be presented with a file structure that contains folders and files that you can edit. You need to copy the values of the three (3) parameters shown in **Figure 14** (**Device and Application EUI plus the Application Key**) into the corresponding fields in the “**conf_app.h**” file. It is contained in the scr config folder that you can access via Solution Explorer tree.
+4. Once your project has loaded up, you will be presented with a file structure that contains folders and files that you can edit. Copy the values of the three (3) parameters shown in **Figure 14** and paste them into the **`conf_app.h`** file. This file is contained in the **`scr`** config folder that you can access via Solution Explorer tree. 
+
+Here are the required parameters:
+- **Device EUI**
+- **Application EUI**
+- **Application Key**  
 
 <rk-img
   src="/assets/images/wisduo/rak4260-breakout-board/quickstart/ttn/otaa_atmel_studio.png"
@@ -246,7 +251,11 @@ Execute the following steps to connect your device with the TTN. Register and th
   caption="Device configuration file (OTAA parameters)"
 />
 
-5. After replacing the default values with the one for the device you registered with TTN, you can proceed to compile the project. There is no need to edit anything else in order to compile the firmware that will allow you to connect to the TTN network.
+5. After replacing the default values with the one for the device you registered with TTN, you can proceed to compile the project. 
+
+:::tip 📝 NOTE:
+There is no need to edit anything else in order to compile the firmware that will allow you to connect to the TTN network.
+:::
 
 ###### Compile the Code
 
@@ -266,9 +275,9 @@ Execute the following steps to connect your device with the TTN. Register and th
   caption="Compiling the code"
 />
 
-###### Flashing the firmware
+###### Flashing the Firmware
 
-8. Once compiled, you can find the output file in the “**Debug**” folder of the directory, where you downloaded the firmware. See **Figure 21**.
+8. Once compiled, you can find the output file in the **Debug** folder of the directory, where you downloaded the firmware. See **Figure 21**.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-breakout-board/quickstart/ttn/firmware-hex-file.png"
@@ -276,7 +285,7 @@ Execute the following steps to connect your device with the TTN. Register and th
   caption="Firmware .hex file"
 />
 
-9. As the firmware is now ready, you are going to proceed to flashing it. To do this, you need to utilize your RAKDAP1 hardware tool and the pyocd software tool.
+9. As the firmware is now ready, you are going to proceed to flashing it. To do this, you need to utilize your RAKDAP1 hardware tool and the **pyocd** software tool.
 
 ###### Flash the Firmware Using RAKDAP1
 
@@ -300,13 +309,17 @@ EU868 is used for the region as an example. This section shows how to change the
   caption="Start up default output"
 />
 
-2. After the aforementioned 5-second elapse, the current configurations (**Class A, OTAA, Unconfirmed LoRa Frames, Fport - 1**) will be reported.
+2. After the aforementioned 5-second elapse, the current configurations will be reported. These configurations are: 
+  - **Class A**
+  - **OTAA**
+  - **Unconfirmed LoRa Frames**
+  - **Fport - 1**
 
 :::tip 📝 NOTE
 These settings are not adjustable at this stage. If you want to change them, you need to start over at the stage where you modify the firmware files before compiling them.
 :::
 
-3. If you use **Figure 2**3 as a reference, you will see there is a list of four (4) options to choose from. Go to the “**Main Menu**” by sending a 4.
+3. If you use **Figure 23** as a reference, you will see there is a list of four (4) options to choose from. Go to the **Main Menu** by sending a number **4**.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-breakout-board/quickstart/ttn/configuration-menu.png"
@@ -314,7 +327,7 @@ These settings are not adjustable at this stage. If you want to change them, you
   caption="Configuration menu"
 />
 
-4. After which, send 1 to select EU868 Regional Band. You may also choose a different number as a selection depending on your case.
+4. After which, send a number **1** to select EU868 Regional Band. You may also choose a different number as a selection depending on your case.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-breakout-board/quickstart/ttn/band-selection-menu.png"
@@ -322,7 +335,7 @@ These settings are not adjustable at this stage. If you want to change them, you
   caption="Band selection menu"
 />
 
-5. After you have selected the band, the device will automatically try to join to the LoRaWAN network using the **Device EUI, Application EUI, and Application Key** set in the firmware configuration file. These are also reported in **Figure 25**.
+5. Once you have selected the band, the device will automatically try to join to the LoRaWAN network using the **Device EUI, Application EUI, and Application Key** set in the firmware configuration file. 
 
 <rk-img
   src="/assets/images/wisduo/rak4260-breakout-board/quickstart/ttn/network-join-parameters-set.png"
@@ -340,7 +353,7 @@ These settings are not adjustable at this stage. If you want to change them, you
 
 ###### Uplink LoRa Frame Testing
 
-6. You should now be on the Main menu and have four options. This time **select Option 2** to send an uplink LoRa Frame.
+6. You should now be on the Main menu and have four options. This time select **Option 2** to send an uplink LoRa Frame.
 
 <rk-img
   src="/assets/images/wisduo/rak4260-breakout-board/quickstart/ttn/sending-data-to-the-server.png"
@@ -358,4 +371,6 @@ The firmware uploaded into the RAK4260 Breakout Board is just an example. Thus, 
   caption="Sending data to the server (successful)"
 />
 
-This should be sufficient to prove that the board functions as intended, and it can send data over the network after successfully joining it. As this module is intended for development, the example firmware is limited to this functionality. You can use this project as a base to develop a more complex firmware using the Microchip LoRaWAN Stack (MLS).
+This should be sufficient to prove that the board functions as intended, and it can send data over the network after successfully joining it. As this module is intended for development, the example firmware is limited to this functionality. 
+
+You can use this project as a base to develop a more complex firmware using the Microchip LoRaWAN Stack (MLS).

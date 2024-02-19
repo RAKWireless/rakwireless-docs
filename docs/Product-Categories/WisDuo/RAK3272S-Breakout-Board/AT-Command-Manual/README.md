@@ -14,7 +14,7 @@ rak_img: /assets/images/wisduo/rak3272s-breakout-board/RAK3272S-Breakout.png
 
 ## Introduction
 
-RAK3272S  Breakout Board is based on STM32WLE5CC chip and it is designed to simplify LoRaWAN and LoRa point-to-point (P2P) communication. To integrate LoRa technology into your projects, RAK3272S is implemented with an easy-to-use UART communication interface, where you can send AT commands. Through these AT commands, you can set the parameters needed for LoRa P2P and LoRaWAN communication. You can also use any microcontroller with a UART interface to control the RAK3272S  board.
+RAK3272S  Breakout Board is based on STM32WLE5CC chip. It is designed to simplify LoRaWAN and LoRa point-to-point (P2P) communication. To integrate LoRa technology into your projects, RAK3272S is implemented with an easy-to-use UART communication interface, where you can send AT commands. Through these AT commands, you can set the parameters needed for LoRa P2P and LoRaWAN communication. You can also use any microcontroller with a UART interface to control the RAK3272S board.If the host microcontroller code
 
 The UART serial communication is exposed on the **UART2 (also identified as LPUART1 port)**, through **Pin 7 (TX2)** and **Pin 8 (RX2)**. The default parameters of the UART2 communication are **115200 / 8-N-1**. The firmware upgrade is also possible through this port. To get familiar with the pin distribution of this module and find a schematic circuit of a reference application, refer to the [RAK3272S  Breakout Board Datasheet](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/Datasheet/#rak3272s-breakout-board-datasheet).
 
@@ -32,5 +32,5 @@ In addition, aside on UART2 pins, AT commands can also be interfaced via UART1_T
 
 :::warning ⚠️ WARNING
 - There are RAK3172 devices loaded with old firmware versions which are not based on RUI3 (RAKwireless Unified Interface V3). These devices have v1.0.4 and below.
-- If the host microcontroller code is based on this old firmware, we have a [RAK3172 AT Command migration guide](https://docs.rakwireless.com/Knowledge-Hub/Learn/AT-Migration-Guide/) that explain in detail the few differences between the two AT commands set.
+- If the host microcontroller code is based on this old firmware, the [RAK3172 AT Command migration guide](https://docs.rakwireless.com/Knowledge-Hub/Learn/AT-Migration-Guide/) explains in detail the few differences between the two AT commands set.
 :::

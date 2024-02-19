@@ -23,7 +23,7 @@ This guide covers the following topics:
 
 ### What Do You Need?
 
-Before going through the step in the installation guide of the RAK3272S Breakout Board, make sure to prepare the necessary items listed below:
+Before going through the steps in the installation guide of the RAK3272S Breakout Board, make sure to prepare the necessary items listed below:
 
 #### Hardware
 
@@ -37,8 +37,7 @@ Before going through the step in the installation guide of the RAK3272S Breakout
 
 ----
 :::warning ⚠️ WARNING
-_**If you are using Windows 10**_.
-Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Instead, install the original Arduino IDE from the Arduino official website. The Arduino app from the Microsoft App Store has problems using third-party Board Support Packages.
+_**For Windows 10 users**_: **DO NOT** install the Arduino IDE from the Microsoft App Store. Instead, install the original Arduino IDE from the [Arduino official website](https://support.arduino.cc/hc/en-us/articles/360019833020-Download-and-install-Arduino-IDE). The Arduino app from the Microsoft App Store has problems using third-party Board Support Packages.
 :::
 
 ----
@@ -50,7 +49,7 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Instead, inst
 #### List of Acronyms
 
 | Acronym | Definition                                       |
-| ------- | ------------------------------------------------ |
+| :-----: | :----------------------------------------------: |
 | DFU     | Device Firmware Upgrade                          |
 | JTAG    | Joint Test Action Group                          |
 | LoRa    | Long Range                                       |
@@ -77,7 +76,7 @@ The RAK3272S requires a few hardware connections before you can make it work. Th
 :::warning ⚠️ WARNING
 Firmware update is done via UART2 pins. If you will connect the module to an external device that will be interfacing with UART2, take extra precaution in your board design to ensure you can still perform FW update to it. There should be a way in your board design that can disconnect the external device to RAK3272S breakout board UART2 before connecting the module to the PC (via USB-UART converter) for the FW update process.
 
-An alternative option to update firmware aside from UART2 is to use SWD pins (SWCLK & SWDIO). This method will require you to use external tools like ST-LINK or RAKDAP1.
+An alternative option to update firmware aside from UART2 is to use SWD pins (SWCLK and SWDIO). This method will require you to use external tools like ST-LINK or RAKDAP1.
 :::
 
 <rk-img
@@ -279,7 +278,7 @@ RAK3272S breakout board can be configured using AT commands via the UART2 interf
 :::warning ⚠️ WARNING
 Firmware update and AT command functionality is done via UART2 pins. If you will connect the module to an external host MCU that will send AT commands via UART2, take extra precaution in your board design to ensure you can still perform FW update to it. There should be a way in your board design that can disconnect the host MCU UART to connect to RAK3272S UART2 before connecting the module to the PC (via USB-UART converter) for the FW update process.
 
-An alternative option to update firmware aside from UART2 is to use SWD pins (SWCLK & SWDIO). This method will require you to use external tools like ST-LINK or RAKDAP1.
+An alternative option to update firmware aside from UART2 is to use SWD pins (SWCLK and SWDIO). This method will require you to use external tools like ST-LINK or RAKDAP1.
 :::
 
 ##### Connect to the RAK3272S Breakout Board
@@ -318,7 +317,7 @@ You can use any of the pins below as Digital Pin:
 
 
 | **Pin Name** | **J Connector pin** |
-| ------------ | ------------------- |
+| :----------: | :-----------------: |
 | PA4          | J5 pin 4            |
 | PA5          | J5 pin 3            |
 | PA6          | J5 pin 2            |
@@ -368,7 +367,7 @@ There are two UART peripherals available on the RAK3272S. There are also differe
 
 
 | **Serial Port** | **UART pin number** | **Serial Instance Assignment** | **Default Mode** |
-| --------------- | ------------------- | ------------------------------ | ---------------- |
+| :-------------: | :-----------------: | :----------------------------: | :--------------: |
 | UART1_TX        | J5 pin 6            | Serial1                        | Custom Mode      |
 | UART1_RX        | J5 pin 5            | Serial1                        | Custom Mode      |
 | UART2_TX        | J4 pin 7            | Serial                         | AT Command       |
@@ -406,7 +405,7 @@ void loop()
 There is one I2C peripheral available on RAK3272S.
 
 | **I2C Pin Number** | **I2C Pin Name** |
-| ------------------ | ---------------- |
+| :----------------: | :--------------: |
 | J4 pin 1           | I2C2_SDA         |
 | J4 pin 2           | I2C2_SCL         |
 
@@ -498,7 +497,7 @@ The Arduino Serial Monitor shows the I2C device found.
 If your RUI3 project uses SPI, then J5 pins 1 to 4 are reserved for RUI3 SPI interface.
 
 | **SPI Pin Number** | **SPI Pin Name** |
-| ------------------ | ---------------- |
+| :----------------: | :--------------: |
 | J5 pin 1           | SPI_MOSI         |
 | J5 pin 2           | SPI_MISO         |
 | J5 pin 3           | SPI_CLK          |
@@ -1062,7 +1061,7 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 **List of band parameter options**
 
 | Code | Regional Band |
-| ---- | ------------- |
+| :--: | :-----------: |
 | 0    | EU433         |
 | 1    | CN470         |
 | 2    | RU864         |
@@ -1238,7 +1237,7 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 Join command format: **`AT+JOIN=w:x:y:z`**
 
 | Parameter | Description                                                  |
-| --------- | ------------------------------------------------------------ |
+| :-------: | :----------------------------------------------------------: |
 | w         | Join command - 1: joining, 0: stop joining.                  |
 | x         | Auto-join config - 1: auto-join on power-up, 0: no auto-join |
 | y         | Reattempt interval in seconds (7-255) - 8 is the default.    |
@@ -1745,7 +1744,7 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 **List of band parameter options**
 
 | Code | Regional Band |
-| ---- | ------------- |
+| :--: | :-----------: |
 | 0    | EU433         |
 | 1    | CN470         |
 | 2    | RU864         |
@@ -2191,7 +2190,7 @@ AT+BAND=4
 **List of band parameter options**
 
 | Code | Regional Band |
-| ---- | ------------- |
+| :--: | :-----------: |
 | 0    | EU433         |
 | 1    | CN470         |
 | 2    | RU864         |
@@ -2254,12 +2253,12 @@ AT+JOIN=1:0:10:8
 
 Join command format: **`AT+JOIN=w:x:y:z`**
 
-| Parameter | Description                                                 |
-| --------- | ----------------------------------------------------------- |
-| w         | Join command - 1: joining, 0: stop joining.                 |
-| x         | Auto-join config - 1: auto-join on powerup, 0: no auto-join |
-| y         | Reattempt interval in seconds (7-255) - 8 is the default.   |
-| z         | Number of join attempts (0-255) - 0 is default.             |
+| Parameter | Description                                                  |
+| :-------: | :----------------------------------------------------------: |
+| w         | Join command - 1: joining, 0: stop joining.                  |
+| x         | Auto-join config - 1: auto-join on power up, 0: no auto-join |
+| y         | Reattempt interval in seconds (7-255) - 8 is the default.    |
+| z         | Number of join attempts (0-255) - 0 is default.              |
 
 5. After 5 or 6 seconds, if the request is successfully received by a LoRaWAN gateway, then you should see JOINED status reply.
 
@@ -2398,7 +2397,7 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 **List of band parameter options**
 
 | Code | Regional Band |
-| ---- | ------------- |
+| :--: | :-----------: |
 | 0    | EU433         |
 | 1    | CN470         |
 | 2    | RU864         |
@@ -2458,7 +2457,7 @@ AT+JOIN=1:0:10:8
 Join command format: **`AT+JOIN=w:x:y:z`**
 
 | Parameter | Description                                                  |
-| --------- | ------------------------------------------------------------ |
+| :-------: | :----------------------------------------------------------: |
 | w         | Join command - 1: joining, 0: stop joining.                  |
 | x         | Auto-join config - 1: auto-join on power-up, 0: no auto-join |
 | y         | Reattempt interval in seconds (7-255) - 8 is the default.    |
