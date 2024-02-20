@@ -16,6 +16,9 @@
         <div>
           <a href="https://docs.rakwireless.com/Release-Notes/RUI/2023/December-14/" class="event-banner-link ">Check the latest updates of RUI3 v4.1.0!</a>
         </div>
+        <div>
+          <a href="https://docs.rakwireless.com/Product-Categories/WisGate/RAK7289-V2/Datasheet/?utm_source=TextAd&utm_medium=Docs&utm_id=Cert#certification" class="event-banner-link ">RAK7289V2 and RAK7289CV2 are now ANRT-certified in Morocco <span>! <u>Check out the certification</u></span>.</a>
+        </div>
       </div>
       <span @click="closePopUpBanner" class="close-event-banner-btn">
         X
@@ -41,7 +44,7 @@
 
 <style scoped>
   .event-banner-text-container {
-    height: 50px;
+    min-height: 50px;
     position: sticky;
     top: 0;
     display: flex;
@@ -94,17 +97,16 @@
   #banner-flip > div > a {
     display: flex;
     margin-bottom:45px;
-    height:45px;
-    flex-direction: column;
+    min-height:45px;
     justify-content: center;
     align-items: center;
   }
 
   #banner-flip div:first-child {
-    animation: show 10s linear infinite;
+    animation: flip5 30s linear infinite;
   }
 
-  @keyframes show {
+  /* @keyframes show {
     0% {margin-top:-270px;}
     5% {margin-top:-180px;}
     33% {margin-top:-180px;}
@@ -113,15 +115,75 @@
     71% {margin-top:0px;}
     99.99% {margin-top:0px;}
     100% {margin-top:-270px;}
+  } */
+
+  @keyframes flip2 {
+    0% { margin-top: -180px; }
+    5% { margin-top: -90px;  }
+    50% { margin-top: -90px; }
+    55% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -180px; }
+  }
+
+  @keyframes flip3 {
+    0% { margin-top: -270px; }
+    5% { margin-top: -180px; }
+    33% { margin-top: -180px; }
+    38% { margin-top: -90px; }
+    66% { margin-top: -90px; }
+    71% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -270px; }
+  }
+
+  @keyframes flip4 {
+    0% { margin-top: -360px; }
+    5% { margin-top: -270px; }
+    25% { margin-top: -270px; }
+    30% { margin-top: -180px; }
+    50% { margin-top: -180px; }
+    55% { margin-top: -90px; }
+    75% { margin-top: -90px; }
+    80% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -360px; }
+  }
+
+  @keyframes flip5 {
+    0% { margin-top: -450px; }
+    5% { margin-top: -360px; }
+    20% { margin-top: -360px; }
+    25% { margin-top: -270px; }
+    40% { margin-top: -270px; }
+    45% { margin-top: -180px; }
+    60% { margin-top: -180px; }
+    65% { margin-top: -90px; }
+    80% { margin-top: -90px; }
+    85% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -450px; }
   }
 
   @media screen and (max-width: 599px){
+    .event-banner-text-container {
+      min-height: 74px;
+    }
+
+    #banner-flip > div > a {
+      padding: 0 20px;
+      flex-direction: column;
+    }
+
+    .event-banner-link {
+      font-size: 12px;
+    }
     .event-banner-content  {
       max-width: 380px !important;
       text-align:center;
     }
     .close-event-banner-btn  {
-      top:0;
+      top:30%;
     }
   }
 

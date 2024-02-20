@@ -113,7 +113,8 @@ You can check each guide on how to use the RAK10701-P Field Tester Pro for LoRaW
 
 - [Helium](/Product-Categories/WisNode/RAK10701-P/Quickstart/#rak10701-p-field-tester-pro-guide-for-the-helium-network)
 - [The Things Network](/Product-Categories/WisNode/RAK10701-P/Quickstart/#rak10701-p-field-tester-pro-guide-for-the-things-network)
-- [Chirpstack (with Datacake integration used as backend)](/Product-Categories/WisNode/RAK10701-P/Quickstart/#rak10701-p-field-tester-pro-guide-for-chirpstack)
+- [Chirpstack (with Datacake)](/Product-Categories/WisNode/RAK10701-P/Quickstart/#rak10701-p-field-tester-pro-guide-for-chirpstack)
+- [Loriot (with Datacake)](/Product-Categories/WisNode/RAK10701-P/Quickstart/#rak10701-p-field-tester-pro-guide-for-loriot-and-datacake) 
 
 Additional information:
 
