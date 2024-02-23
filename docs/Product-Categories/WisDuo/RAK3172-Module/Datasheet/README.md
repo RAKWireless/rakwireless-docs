@@ -54,7 +54,7 @@ You can configure the mode and operation of the module using AT commands via a U
 :::tip 📝 NOTE:
 There are two certification variants available for the RAK3172 Module: (1) with the CE & UKCA Certification Mark and (2) with FCC, IC, & RCM Certification Mark.
 
-If you need LoRa module with BLE 5.0 capability, you can check [RAK11720](https://store.rakwireless.com/products/rak11720-ambiq-apollo3-module-for-lorawan?utm_source=RAK11720&utm_medium=Document&utm_campaign=BuyFromStore) which is pin-to-pin compatible to RAK3172 with extra pins for additional ground and BLE RF antenna port.
+If you need LoRa module with BLE 5.0 capability, you can check [RAK11720](https://store.rakwireless.com/products/rak11720-ambiq-apollo3-module-for-lorawan?utm_source=RAK11720&utm_medium=Document&utm_campaign=BuyFromStore). RAK11720 is pin-to-pin compatible with RAK3172 and has additional pins for ground and BLE RF antenna port.
 :::
 
 :::warning ⚠️ WARNING
@@ -84,7 +84,7 @@ The hardware specification discusses the interfaces, pinouts and its correspondi
 #### Interfaces
 
 | Module  | Interfaces           |
-| ------- | -------------------- |
+| :-----: | :------------------: |
 | RAK3172 | UART2/LPUART1, UART1 |
 
 ##### Sub-GHz SPI interface
@@ -101,7 +101,16 @@ A dedicated internal SPI interface called **SUBGHZSPI** is used to communicate w
 />
 
 :::warning ⚠️ WARNING
-When using `RF` pin for antenna connection and not the IPEX connector variant, make sure there is no ground plane (in all layers of the PCB) under the RF trace path to eliminate the possible effects of unwanted stray capacitance which can cause degradation of the RF signal levels.
+When using `RF` pin for antenna and not the IPEX connector variant, there are design considerations to make sure optimum RF performance.
+
+- RF trace must be away from interference (switching node of DC-DC supply, high current/voltage pulses from controllers of inductive load like motor, signal generators, etc.)
+- RF trace must have 50&nbsp;Ohms impedance. It is advisable to use an impedance simulation software tool to achieve this requirement.
+- If using an external antenna connector, make it close to the `RF` pin.
+- Ground plane optimization is critical on certain antenna types like monopole.
+- GND trace used for RF path return must be directly connected to the GND plane and not be treated as thermal relief.
+- It is recommended for the RF trace to be routed in a curve and not in a sharp 90&nbsp;degrees.
+
+In addition, with a commitment to making IoT easy, RAK offers a dedicated service for [Antenna RF Design](https://store.rakwireless.com/products/antenna-rf-design-service-including-pcb-design-tuning-matching-and-rf-test) which includes PCB design, tuning, matching, and RF testing.
 :::
 
 | **Pin No.** | **Name**      | **Type** | **Description**                                                                                   |
@@ -144,43 +153,81 @@ When using `RF` pin for antenna connection and not the IPEX connector variant, m
 The RAK3172 supports two different frequency variations: RAK3172(L) Low Radio Frequency and RAK3172(H) High Radio Frequency.
 
 :::tip 📝 NOTE:
-Performance test and evaluation of RAK3172-T (with TXCO), can be found on the [RAK3172-T TCXO Verification Report](https://downloads.rakwireless.com/LoRa/RAK3172-T/Test-Report/RAK3172_TCXO_Verification_Report%20_V1.2.pdf))
+Performance test and evaluation of RAK3172-T (with TXCO), can be found on the [RAK3172-T TCXO Verification Report](https://downloads.rakwireless.com/LoRa/RAK3172-T/Test-Report/RAK3172_TCXO_Verification_Report%20_V1.2.pdf)
 :::
 
 ##### Operating Frequencies
 
-| Module     | Region        | Frequency     |
-| ---------- | ------------- | ------------- |
-| RAK3172(L) | Europe        | EU433         |
-|            | China         | CN470         |
-| RAK3172(H) | Europe        | EU868         |
-|            | North America | US915         |
-|            | Australia     | AU915         |
-|            | Korea         | KR920         |
-|            | Asia          | AS923-1/2/3/4 |
-|            | India         | IN865         |
-|            | Russia        | RU864         |
+<table>
+  <thead style="text-align: center">
+    <tr>
+      <th>Module</th>
+      <th>Region</th>
+      <th>Frequency</th>
+    </tr>
+  </thead>
+  <tbody style="text-align: center">
+    <tr>
+      <td rowspan=2>RAK3172(L)</td>
+      <td>Europe</td>
+      <td>EU433</td>
+    </tr>
+    <tr>
+      <td>China</td>
+      <td>CN470</td>
+    </tr>
+    <tr>
+      <td rowspan=7>RAK3172(H)</td>
+      <td>Europe</td>
+      <td>EU868</td>
+    </tr>
+    <tr>
+      <td>North America</td>
+      <td>US915</td>
+    </tr>
+    <tr>
+      <td>Australia</td>
+      <td>AU915</td>
+    </tr>
+    <tr>
+      <td>Korea</td>
+      <td>KR920</td>
+    </tr>
+    <tr>
+      <td>Asia</td>
+      <td>AS923-1/2/3/4</td>
+    </tr>
+    <tr>
+      <td>India</td>
+      <td>IN865</td>
+    </tr>
+    <tr>
+      <td>Russia</td>
+      <td>RU864</td>
+    </tr>
+  </tbody>
+</table>
 
 #### Electrical Characteristics
 
 ##### Operating Voltage
 
 | Feature | Minimum | Typical | Maximum | Unit      |
-| ------- | ------- | ------- | ------- | --------- |
+| :-----: | :-----: | :-----: | :-----: | :-------: |
 | VCC     | 2.0     | 3.3     | 3.6     | Volts (V) |
 
 
 ##### Operating Current
 
 | Feature           | Condition | Minimum                              | Typical | Maximum | Unit |
-| ----------------- | --------- | ------------------------------------ | ------- | ------- | ---- |
+| :---------------: | :-------: | :----------------------------------: | :-----: | :-----: | :--: |
 | Operating Current | TX Mode   | 87 (@&nbsp;20&nbsp;dBm 868&nbsp;Mhz) |         |         | mA   |
 |                   | RX Mode   | 5.22                                 |         |         | mA   |
 
 ##### Sleep Current
 
 | Feature             | Condition | Minimum (2.1&nbsp;V) | Typical (3.3&nbsp;V) | Maximum | Unit |
-| ------------------- | --------- | -------------------- | -------------------- | ------- | ---- |
+| :-----------------: | :-------: | :------------------: | :------------------: | :-----: | :--: |
 | Current Consumption | EU868     | -                    | 1.69                 | -       | μA   |
 |                     | US915     | -                    | 1.69                 | -       | μA   |
 |                     | CN470     | -                    | 1.69                 | -       | μA   |
@@ -212,14 +259,14 @@ For the reference application schematic of RAK3172 with minimum components requi
 ##### Operating Temperature
 
 | Module    | Minimum | Typical | Maximum | Unit |
-| --------- | ------- | ------- | ------- | ---- |
+| :-------: | :-----: | :-----: | :-----: | :--: |
 | RAK3172   | -20     | 25      | 85      | °C   |
 | RAK3172-T | -40     | 25      | 85      | °C   |
 
 ##### Storage Temperature
 
 | Feature             | Minimum | Typical | Maximum | Unit |
-| ------------------- | ------- | ------- | ------- | ---- |
+| :-----------------: | :-----: | :-----: | :-----: | :--: |
 | Storage Temperature | -40     |         | 85      | °C   |
 
 ##### Recommended Reflow Profile
@@ -262,7 +309,7 @@ If BOOT mode is not initiated, you can manually send `AT+BOOT` command to start 
 ### Firmware
 
 | Model            | Version                                                          | Source                                                                                          |
-| ---------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| :--------------: | :--------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: |
 | RAK3172 (.bin)   | RUI3 Application Code only (default baudrate = 115200)           | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3172-E_latest.bin)               |
 | RAK3172 (.hex)   | RUI3 Bootloader and Application Code(default baudrate = 115200)  | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3172-E_latest_final.hex)         |
 | RAK3172-T (.bin) | RUI3 Application Code only(default baudrate = 115200)            | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3172-T_latest.bin)               |

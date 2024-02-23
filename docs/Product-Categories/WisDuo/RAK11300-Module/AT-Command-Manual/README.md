@@ -64,7 +64,7 @@ The AT commands have the standard format “AT+XXX”, with XXX denoting the com
 There are four available command formats:
 
 | **AT COMMAND FORMAT**      | **Description**                                   |
-| -------------------------- | ------------------------------------------------- |
+| :------------------------: | :-----------------------------------------------: |
 | `AT+XXX?`                  | Provides a short description of the given command |
 | `AT+XXX=?`                 | Reading the current value on the command          |
 | `AT+XXX=<input parameter>` | Writing configuration on the command              |
@@ -74,7 +74,7 @@ The output of the commands is returned via UART.
 
 The format of the reply is divided into two parts: returned value and the status return code.
 
-:::tip 📝 NOTE:
+:::tip 📝 NOTE
 
 `<CR>` stands for “carriage return” and `<LF>` stands for “line feed”.
 
@@ -87,7 +87,7 @@ The format of the reply is divided into two parts: returned value and the status
 The possible status codes are:
 
 | **STATUS RETURN CODE** | **Description**                              |
-| ---------------------- | -------------------------------------------- |
+| :--------------------: | :------------------------------------------: |
 | `OK`                   | Command executed correctly without error.    |
 | `+CME ERROR:1`         | Generic error or input is not supported.     |
 | `+CME ERROR:2`         | Command not allowed.                         |
@@ -97,7 +97,7 @@ The possible status codes are:
 
 More details on each command description and examples are given in the remainder of this section.
 
-:::tip 📝 NOTE:
+:::tip 📝 NOTE
 
 After changing LoRaWAN parameters, the device must be reset by either the `ATZ` command or pushing the reset button.
 
@@ -112,7 +112,7 @@ Description: Help
 Returns a list of all available commands with a short description
 
 | Command | Input Parameter | Return Value       | Return Code |
-| ------- | --------------- | ------------------ | ----------- |
+| :-----: | :-------------: | :----------------: | :---------: |
 | `AT?`   | -               | *List of commands* | `OK`        |
 
 
@@ -163,7 +163,7 @@ OK
 This command is used to restore all parameters to the initial default values of the module.
 
 | Command | Input Parameter | Return Value | Return Code |
-| ------- | --------------- | ------------ | ----------- |
+| :-----: | :-------------: | :----------: | :---------: |
 | `ATR?`  | -               | -            | `OK`        |
 | `ATR`   | -               | -            | `OK`        |
 
@@ -178,7 +178,7 @@ Description: MCU reset
 This command is used to trigger an MCU reset.
 
 | Command | Input Parameter | Return Value             | Return Code |
-| ------- | --------------- | ------------------------ | ----------- |
+| :-----: | :-------------: | :----------------------: | :---------: |
 | `ATZ?`  | -               | `ATZ: Trig a MCU reset`  | `OK`        |
 | `ATZ`   | -               | *No return. MCU resets.* | `OK`        |
 
@@ -193,7 +193,7 @@ Description: Application unique identifier
 This command is used to access and configure the APPEUI.
 
 | Command                       | Input Parameter | Return Value                        | Return Code              |
-| ----------------------------- | --------------- | ----------------------------------- | ------------------------ |
+| :---------------------------: | :-------------: | :---------------------------------: | :----------------------: |
 | `AT+APPEUI? `                 | -               | `AT+APPEUI`: Get or set the App Eui | `OK`                     |
 | `AT+APPEUI=?`                 | -               | *< 8 hex >*                         | `OK`                     |
 | `AT+APPEUI=<Input Parameter>` | *< 8 hex >*     | -                                   | `OK` or `AT_PARAM_ERROR` |
@@ -231,7 +231,7 @@ Description: Application key
 This command is used to access and configure the APPKEY.
 
 | Command                       | Input Parameter | Return Value                                | Return Code              |
-| ----------------------------- | --------------- | ------------------------------------------- | ------------------------ |
+| :---------------------------: | :-------------: | :-----------------------------------------: | :----------------------: |
 | `AT+APPKEY?`                  | -               | `AT+APPKEY`: Get or set the Application Key | `OK`                     |
 | `AT+APPKEY=?`                 | -               | *< 16 hex >*                                | `OK`                     |
 | `AT+APPKEY=<Input Parameter>` | *< 16 hex >*    | -                                           | `OK` or `AT_PARAM_ERROR` |
@@ -269,7 +269,7 @@ Description: Device EUI or DEVEUI
 This command is used to access and configure the device EUI or DEVEUI.
 
 | Command                       | Input Parameter | Return Value                           | Return Code              |
-| ----------------------------- | --------------- | -------------------------------------- | ------------------------ |
+| :---------------------------: | :-------------: | :------------------------------------: | :----------------------: |
 | `AT+DEVEUI?`                  | -               | `AT+DEVEUI`: Get or set the Device EUI | `OK`                     |
 | `AT+DEVEUI=?`                 | -               | *< 8 hex >*                            | `OK`                     |
 | `AT+DEVEUI=<Input Parameter>` | *< 8 hex >*     | -                                      | `OK` or `AT_PARAM_ERROR` |
@@ -307,7 +307,7 @@ Description: Application session key
 This command is used to access and configure the application session key or APPSKEY.
 
 | Command                        | Input Parameter | Return Value                                         | Return Code              |
-| ------------------------------ | --------------- | ---------------------------------------------------- | ------------------------ |
+| :----------------------------: | :-------------: | :--------------------------------------------------: | :----------------------: |
 | `AT+APPSKEY?`                  | -               | `AT+APPSKEY`: Get or set the Application Session Key | `OK`                     |
 | `AT+APPSKEY=?`                 | -               | *< 16 hex >*                                         | `OK`                     |
 | `AT+APPSKEY=<Input Parameter>` | *< 16 hex >*    | -                                                    | `OK` or `AT_PARAM_ERROR` |
@@ -345,7 +345,7 @@ Description: Network session keys
 This command is used to access and configure the network session keys or NWKSKEY.
 
 | Command                        | Input Parameter | Return Value                                     | Return Code              |
-| ------------------------------ | --------------- | ------------------------------------------------ | ------------------------ |
+| :----------------------------: | :-------------: | :----------------------------------------------: | :----------------------: |
 | `AT+NWKSKEY?`                  | -               | `AT+NWKSKEY`: Get or set the Network Session Key | `OK`                     |
 | `AT+NWKSKEY=?`                 | -               | *< 16 hex >*                                     | `OK`                     |
 | `AT+NWKSKEY=<Input Parameter>` | *< 16 hex >*    | -                                                | `OK` or `AT_PARAM_ERROR` |
@@ -383,7 +383,7 @@ Description: Device address or DEVADDR
 This command is used to access and configure the device address or DEVADDR.
 
 | Command                        | Input Parameter | Return Value                                | Return Code              |
-| ------------------------------ | --------------- | ------------------------------------------- | ------------------------ |
+| :----------------------------: | :-------------: | :-----------------------------------------: | :----------------------: |
 | `AT+DEVADDR?`                  | -               | `AT+DEVADDR`: Get or set the device address | `OK`                     |
 | `AT+DEVADDR=?`                 | -               | *< 4 hex >*                                 | `OK`                     |
 | `AT+DEVADDR=<Input Parameter>` | *< 4 hex >*     | -                                           | `OK` or `AT_PARAM_ERROR` |
@@ -422,7 +422,7 @@ Description: Confirmed payload mode
 This command is used to access and configure the type of payload of the device.
 
 | Command                    | Input Parameter | Return Value                                   | Return Code              |
-| -------------------------- | --------------- | ---------------------------------------------- | ------------------------ |
+| :------------------------: | :-------------: | :--------------------------------------------: | :----------------------: |
 | `AT+CFM?`                  | -               | `AT+CFM`: Get or set the confirm mode          | `OK`                     |
 | `AT+CFM=?`                 | -               | **0** (if Unconfirmed) or **1** *if confirmed) | `OK`                     |
 | `AT+CFM=<Input Parameter>` | **0** or **1**  | -                                              | `OK` or `AT_PARAM_ERROR` |
@@ -509,7 +509,7 @@ Description: Network join status
 This command is used to check the status of the devices if it is connected to a LoRaWAN network.
 
 | Command    | Input Parameter | Return Value                         | Return Code |
-| ---------- | --------------- | ------------------------------------ | ----------- |
+| :--------: | :-------------: | :----------------------------------: | :---------: |
 | `AT+NJS?`  | -               | `AT+NJS`: Get the join status        | `OK`        |
 | `AT+NJS=?` | -               | **0** (not joined) or **1** (joined) | `OK`        |
 
@@ -538,7 +538,7 @@ Description: LoRaWAN network join mode
 This command is used to access and configure the activation method of the device either OTAA or ABP. A value of 1 means OTAA join mode, a value of 0 means ABP join mode
 
 | Command                    | Input Parameter | Return Value                               | Return Code              |
-| -------------------------- | --------------- | ------------------------------------------ | ------------------------ |
+| :------------------------: | :-------------: | :----------------------------------------: | :----------------------: |
 | `AT+NJM? `                 | -               | `AT+NJM`: Get or set the network join mode | `OK`                     |
 | `AT+NJM=?`                 | -               | **0** or **1**                             | `OK`                     |
 | `AT+NJM=<Input Parameter>` | **0** or **1**  | -                                          | `OK` or `AT_PARAM_ERROR` |
@@ -576,7 +576,7 @@ Description: Set the automatic transmission period
 This command is used to set the period in seconds between automatic packet transmissions. If set to 0, automatic packet transmission is disabled.
 
 | Command                         | Input Parameter       | Return Value                                      | Return Code              |
-| ------------------------------- | --------------------- | ------------------------------------------------- | ------------------------ |
+| :-----------------------------: | :-------------------: | :-----------------------------------------------: | :----------------------: |
 | `AT+SENDFREQ?`                  | -                     | `AT+SENDFREQ`: Get or set the automatic send time | `OK`                     |
 | `AT+SENDFREQ=?`                 | -                     | `<period in seconds>`                             | `OK`                     |
 | `AT+SENDFREQ=<Input Parameter>` | `<period in seconds>` | -                                                 | `OK` or `AT_PARAM_ERROR` |
@@ -640,7 +640,7 @@ AT+SEND=SUCCESS
 ```
 Downlink packet received
 
-:::tip 📝 NOTE:
+:::tip 📝 NOTE
 
 - If there is a pending downlink message from the LNS (LoRaWAN Network Server), the downlink payload will be received after the `AT+SEND` command with the format `<fport>:<data length>:<rssi>:<snr>:<data>`.
 
@@ -674,7 +674,7 @@ Description: Adaptive data rate
 This command is used to access and configure the adaptive data rate of the module.
 
 | Command                    | Input Parameter | Return Value                                        | Return Code              |
-| -------------------------- | --------------- | --------------------------------------------------- | ------------------------ |
+| :------------------------: | :-------------: | :-------------------------------------------------: | :----------------------: |
 | `AT+ADR?`                  | -               | `AT+ADR`: Get or set the Adaptive Data Rate setting | `OK`                     |
 | `AT+ADR=?`                 | -               | **0** (ADR off) or **1** (ARD on)                   | `OK`                     |
 | `AT+ADR=<Input Parameter>` | **0** or **1**  | -                                                   | `OK` or `AT_PARAM_ERROR` |
@@ -712,7 +712,7 @@ Description: LoRaWAN class
 This command is used to access and configure the LoRaWAN class of the module.
 
 | Command                      | Input Parameter | Return Value                                      | Return Code              |
-| ---------------------------- | --------------- | ------------------------------------------------- | ------------------------ |
+| :--------------------------: | :-------------: | :-----------------------------------------------: | :----------------------: |
 | `AT+CLASS?`                  | -               | `AT+CLASS`: Get or set the Device Class (A, B, C) | `OK`                     |
 | `AT+CLASS=?`                 | -               | **A** or **C** (B not supported)                  | `OK`                     |
 | `AT+CLASS=<Input Parameter>` | **A** or **C**  | -                                                 | `OK` or `AT_PARAM_ERROR` |
@@ -752,7 +752,7 @@ Description: Data rate settings
 This command is used to access and configure data rate settings.
 
 | Command                   | Input Parameter                 | Return Value                                        | Return Code              |
-| ------------------------- | ------------------------------- | --------------------------------------------------- | ------------------------ |
+| :-----------------------: | :-----------------------------: | :-------------------------------------------------: | :----------------------: |
 | `AT+DR?`                  | -                               | `AT+DR=<DataRate><CR>`: Get or set the Tx Data Rate | `OK`                     |
 | `AT+DR=?`                 | -                               | `0`,`1`,`2`,`3`,`4`,`5`,`6`,`7`                     | `OK`                     |
 | `AT+DR=<Input Parameter>` | `0`,`1`,`2`,`3`,`4`,`5`,`6`,`7` | -                                                   | `OK` or `AT_PARAM_ERROR` |
@@ -788,7 +788,7 @@ Description: Transmit Power
 This command is used to access and configure the transmit power.
 
 | Command                    | Input Parameter | Return Value                            | Return Code              |
-| -------------------------- | --------------- | --------------------------------------- | ------------------------ |
+| :------------------------: | :-------------: | :-------------------------------------: | :----------------------: |
 | `AT+TXP?`                  | -               | `AT+TXP`: Get or set the transmit power | `OK`                     |
 | `AT+TXP=?`                 | -               | *< value >*                             | `OK` or `AT+PARAM_ERROR` |
 | `AT+TXP=<Input Parameter>` | *< value >*     | -                                       | `OK` or `AT_PARAM_ERROR` |
@@ -826,7 +826,7 @@ Description: Regional frequency band
 This command is used to access and configure the regional frequency band.
 
 | Command                     | Input Parameter | Return Value                                                       | Return Code              |
-| --------------------------- | --------------- | ------------------------------------------------------------------ | ------------------------ |
+| :-------------------------: | :-------------: | :----------------------------------------------------------------: | :----------------------: |
 | `AT+BAND?`                  | -               | `AT+BAND`: Get and Set number corresponding to active regions      | `OK`                     |
 | `AT+BAND=?`                 | -               | `0`, `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`, `10`, `11`, `12` | `OK`                     |
 | `AT+BAND=<Input Parameter>` | *< 0 to 12 >*   | -                                                                  | `OK` or `AT_PARAM_ERROR` |
@@ -834,7 +834,7 @@ This command is used to access and configure the regional frequency band.
 **List of Band Parameter Options**
 
 | Code | Regional Band |     | Code | Regional Band |
-| ---- | ------------- | --- | ---- | ------------- |
+| :--: | :-----------: | :-: | :--: | :-----------: |
 | 0    | AS923-1       |     | 7    | IN865         |
 | 1    | AU915         |     | 8    | US915         |
 | 2    | CN470         |     | 9    | AS923-2       |
@@ -877,7 +877,7 @@ This command is used to access and configure the regional channel mask.
 Channel mask can only be set for the following regions: AU915, CN470, and US915
 
 | Command                     | Input Parameter | Return Value                                                  | Return Code              |
-| --------------------------- | --------------- | ------------------------------------------------------------- | ------------------------ |
+| :-------------------------: | :-------------: | :-----------------------------------------------------------: | :----------------------: |
 | `AT+MASK?`                  | -               | `AT+MASK: Get and Set channels mask`                          | `OK`                     |
 | `AT+MASK=?`                 | -               | `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`, `10`, `11`, `12` | `OK`                     |
 | `AT+MASK=<Input Parameter>` | *< 0 to 12 >*   | -                                                             | `OK` or `AT_PARAM_ERROR` |
@@ -885,7 +885,7 @@ Channel mask can only be set for the following regions: AU915, CN470, and US915
 **List of mask channels per region**
 
 | **Mask (Sub-Band)** | **US915** | **AU915** | **CN470** |
-| ------------------- | --------- | --------- | --------- |
+| :-----------------: | :-------: | :-------: | :-------: |
 | 1                   | 0-7       | 0-7       | 0-7       |
 | 2                   | 8-15      | 8-15      | 8-15      |
 | 3                   | 16-23     | 16-23     | 16-23     |
@@ -932,11 +932,11 @@ Description: Read the battery voltage
 This command is used to read the battery voltage of the device
 
 | Command    | Input Parameter | Return Value                | Return Code              |
-| ---------- | --------------- | --------------------------- | ------------------------ |
+| :--------: | :-------------: | :-------------------------: | :----------------------: |
 | `AT+BAT?`  | -               | `AT+BAT`: Get battery level | `OK`                     |
 | `AT+BAT=?` | -               | *< value >*                 | `OK` or `AT+PARAM_ERROR` |
 
-:::tip 📝 NOTE:
+:::tip 📝 NOTE
 
 _**The battery level is returned as a value between 0 and 255**_.
 
@@ -967,11 +967,11 @@ Description: Receive signal strength indicator
 This command is used to get the RSSI value of the last packet received.
 
 | Command     | Input Parameter | Return Value                                        | Return Code |
-| ----------- | --------------- | --------------------------------------------------- | ----------- |
+| :---------: | :-------------: | :-------------------------------------------------: | :---------: |
 | `AT+RSSI?`  | -               | `AT+RSSI`: Get the RSSI of the last received packet | `OK`        |
 | `AT+RSSI=?` | -               | *< integer > in dBm*                                | `OK`        |
 
-:::tip 📝 NOTE:
+:::tip 📝 NOTE
 
 The reply will be **'0'** if there is no last packet received yet.
 
@@ -1002,11 +1002,11 @@ Description: Signal to Noise Ratio
 This command is used to get the SNR value of the last packet received.
 
 | Command    | Input Parameter | Return Value                                      | Return Code |
-| ---------- | --------------- | ------------------------------------------------- | ----------- |
+| :--------: | :-------------: | :-----------------------------------------------: | :---------: |
 | `AT+SNR?`  | -               | `AT+SNR`: Get the SNR of the last received packet | `OK`        |
 | `AT+SNR=?` | -               | *< integer >* in dB                               | `OK`        |
 
-:::tip 📝 NOTE:
+:::tip 📝 NOTE
 
 The reply will be **'0'** if there is no last packet received yet.
 
@@ -1037,7 +1037,7 @@ Description: Version of the firmware
 This command is used to get the firmware version installed on the device.
 
 | Command    | Input Parameter | Return Value                              | Return Code |
-| ---------- | --------------- | ----------------------------------------- | ----------- |
+| :--------: | :-------------: | :---------------------------------------: | :---------: |
 | `AT+VER?`  | -               | `AT+VER`: Get the version of the firmware | `OK`        |
 | `AT+VER=?` | -               | *< V.x.y >*                               | `OK`        |
 
@@ -1066,7 +1066,7 @@ Description: Show device status
 This command is used to get the current device status.
 
 | Command       | Input Parameter | Return Value                     | Return Code |
-| ------------- | --------------- | -------------------------------- | ----------- |
+| :-----------: | :-------------: | :------------------------------: | :---------: |
 | `AT+STATUS?`  | -               | `AT+STATUS`: Show LoRaWAN status | `OK`        |
 | `AT+STATUS=?` | -               | *< status >*                     | `OK`        |
 
@@ -1118,7 +1118,7 @@ OK
 <b> EU433/EU868/RU864/AS923 </b>
 
 | Data Rate | Configuration             | Indicative Physical Bit Rate [bit/s] |
-| --------- | ------------------------- | ------------------------------------ |
+| :-------: | :-----------------------: | :----------------------------------: |
 | 0         | LoRa: SF12 / 125&nbsp;kHz | 250                                  |
 | 1         | LoRa: SF11 / 125&nbsp;kHz | 440                                  |
 | 2         | LoRa: SF10 / 125&nbsp;kHz | 980                                  |
@@ -1134,7 +1134,7 @@ OK
 <b> CN470/KR920 </b>
 
 | Data Rate | Configuration             | Indicative Physical Bit Rate [bit/s] |
-| --------- | ------------------------- | ------------------------------------ |
+| :-------: | :-----------------------: | :----------------------------------: |
 | 0         | LoRa: SF12 / 125&nbsp;kHz | 250                                  |
 | 1         | LoRa: SF11 / 125&nbsp;kHz | 440                                  |
 | 2         | LoRa: SF10 / 125&nbsp;kHz | 980                                  |
@@ -1148,7 +1148,7 @@ OK
 <b> US915 </b>
 
 | Data Rate | Configuration             | Indicative Physical Bit Rate [bit/s] |
-| --------- | ------------------------- | ------------------------------------ |
+| :-------: | :-----------------------: | :----------------------------------: |
 | 0         | LoRa: SF10 / 125&nbsp;kHz | 980                                  |
 | 1         | LoRa: SF9 / 125&nbsp;kHz  | 1760                                 |
 | 2         | LoRa: SF8 / 125&nbsp;kHz  | 3125                                 |
@@ -1168,7 +1168,7 @@ OK
 <b> AU915 </b>
 
 | Data Rate | Configuration             | Indicative Physical Bit Rate [bit/s] |
-| --------- | ------------------------- | ------------------------------------ |
+| :-------: | :-----------------------: | :----------------------------------: |
 | 0         | LoRa: SF12 / 125&nbsp;kHz | 250                                  |
 | 1         | LoRa: SF11 / 125&nbsp;kHz | 440                                  |
 | 2         | LoRa: SF10 / 125&nbsp;kHz | 980                                  |
@@ -1188,7 +1188,7 @@ OK
 <b> IN865 </b>
 
 | Data Rate | Configuration             | Indicative Physical Bit Rate [bit/s] |
-| --------- | ------------------------- | ------------------------------------ |
+| :-------: | :-----------------------: | :----------------------------------: |
 | 0         | LoRa: SF12 / 125&nbsp;kHz | 250                                  |
 | 1         | LoRa: SF11 / 125&nbsp;kHz | 440                                  |
 | 2         | LoRa: SF10 / 125&nbsp;kHz | 980                                  |
@@ -1210,7 +1210,7 @@ OK
 By default, MaxEIRP is considered to be +16&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
-| ------- | -------------------- |
+| :-----: | :------------------: |
 | 0       | MaxEIRP              |
 | 1       | MaxEIRP - 2&nbsp;dB  |
 | 2       | MaxEIRP - 4&nbsp;dB  |
@@ -1227,7 +1227,7 @@ By default, MaxEIRP is considered to be +16&nbsp;dBm.
 <b> US915 </b>
 
 | TXPower | Configuration (Conducted Power) |
-| ------- | ------------------------------- |
+| :-----: | :-----------------------------: |
 | 0       | 30&nbsp;dBm - 2*TXpower         |
 | 1       | 28&nbsp;dBm                     |
 | 2       | 26&nbsp;dBm                     |
@@ -1242,7 +1242,7 @@ By default, MaxEIRP is considered to be +16&nbsp;dBm.
 By default, MaxEIRP is considered to be +30&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
-| ------- | -------------------- |
+| :-----: | :------------------: |
 | 0       | MaxEIRP              |
 | 1 ~ 10  | MaxEIRP - 2*TXPower  |
 | 11 ~ 10 | RFU                  |
@@ -1255,7 +1255,7 @@ By default, MaxEIRP is considered to be +30&nbsp;dBm.
 By default, MaxEIRP is considered to be +14&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
-| ------- | -------------------- |
+| :-----: | :------------------: |
 | 0       | MaxEIRP              |
 | 1       | MaxEIRP - 2&nbsp;dB  |
 | 2       | MaxEIRP - 4&nbsp;dB  |
@@ -1274,7 +1274,7 @@ By default, MaxEIRP is considered to be +14&nbsp;dBm.
 By default, Max EIRP is considered to be 16&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
-| ------- | -------------------- |
+| :-----: | :------------------: |
 | 0       | MaxEIRP              |
 | 1       | MaxEIRP - 2&nbsp;dB  |
 | 2       | MaxEIRP - 4&nbsp;dB  |
@@ -1294,7 +1294,7 @@ By default, Max EIRP is considered to be 16&nbsp;dBm.
 By default, MaxEIRP is considered to be 30&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
-| ------- | -------------------- |
+| :-----: | :------------------: |
 | 0       | MaxEIRP              |
 | 1       | MaxEIRP - 2&nbsp;dB  |
 | 2       | MaxEIRP - 4&nbsp;dB  |
@@ -1315,7 +1315,7 @@ By default, MaxEIRP is considered to be 30&nbsp;dBm.
 By default, MaxEIRP is considered to be +16&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
-| ------- | -------------------- |
+| :-----: | :------------------: |
 | 0       | MaxEIRP              |
 | 1       | MaxEIRP - 2&nbsp;dB  |
 | 2       | MaxEIRP - 4&nbsp;dB  |
@@ -1333,7 +1333,7 @@ By default, MaxEIRP is considered to be +16&nbsp;dBm.
 By default, MaxEIRP is considered to be +19.15&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
-| ------- | -------------------- |
+| :-----: | :------------------: |
 | 0       | MaxEIRP              |
 | 1       | MaxEIRP 2&nbsp;dB    |
 | 2       | MaxEIRP 4&nbsp;dB    |
@@ -1351,7 +1351,7 @@ By default, MaxEIRP is considered to be +19.15&nbsp;dBm.
 By default, MAxEIRP is considered to be +12.15&nbsp;dBm.
 
 | TXPower | Configuration (EIRP) |
-| ------- | -------------------- |
+| :-----: | :------------------: |
 | 0       | MaxEIRP              |
 | 1       | MaxEIRP - 2&nbsp;dB  |
 | 2       | MaxEIRP - 4&nbsp;dB  |
@@ -1366,14 +1366,14 @@ By default, MAxEIRP is considered to be +12.15&nbsp;dBm.
 
 ### Appendix III Maximum Transmission Load by Region
 
-:::tip 📝 NOTE:
+:::tip 📝 NOTE
 M in the following list is the length with MAC header, N is the maximum usable payload size for the user data without MAC header.
 :::
 
 <b> EU868 </b>
 
 | Data Rate | M           | N           |
-| --------- | ----------- | ----------- |
+| :-------: | :---------: | :---------: |
 | 0         | 59          | 51          |
 | 1         | 59          | 51          |
 | 2         | 59          | 51          |
@@ -1389,7 +1389,7 @@ M in the following list is the length with MAC header, N is the maximum usable p
 <b> US915 </b>
 
 | Data Rate | M           | N           |
-| --------- | ----------- | ----------- |
+| :-------: | :---------: | :---------: |
 | 0         | 19          | 11          |
 | 1         | 61          | 53          |
 | 2         | 133         | 125         |
@@ -1409,7 +1409,7 @@ M in the following list is the length with MAC header, N is the maximum usable p
 <b> AU915 </b>
 
 | Data Rate | M           | N           |
-| --------- | ----------- | ----------- |
+| :-------: | :---------: | :---------: |
 | 0         | 59          | 51          |
 | 1         | 59          | 51          |
 | 2         | 59          | 51          |
@@ -1431,7 +1431,7 @@ M in the following list is the length with MAC header, N is the maximum usable p
 <b> KR920 </b>
 
 | Data Rate | M           | N           |
-| --------- | ----------- | ----------- |
+| :-------: | :---------: | :---------: |
 | 0         | 59          | 51          |
 | 1         | 59          | 51          |
 | 2         | 59          | 51          |
@@ -1529,7 +1529,7 @@ M in the following list is the length with MAC header, N is the maximum usable p
 <b> IN865 </b>
 
 | Data Rate | M           | N           |
-| --------- | ----------- | ----------- |
+| :-------: | :---------: | :---------: |
 | 0         | 59          | 51          |
 | 1         | 59          | 51          |
 | 2         | 59          | 51          |
@@ -1545,7 +1545,7 @@ M in the following list is the length with MAC header, N is the maximum usable p
 <b> RU864 </b>
 
 | Data Rate | M           | N           |
-| --------- | ----------- | ----------- |
+| :-------: | :---------: | :---------: |
 | 0         | 59          | 51          |
 | 1         | 59          | 51          |
 | 2         | 59          | 51          |
@@ -1561,7 +1561,7 @@ M in the following list is the length with MAC header, N is the maximum usable p
 <b> CN470 </b>
 
 | Data Rate | M           | N           |
-| --------- | ----------- | ----------- |
+| :-------: | :---------: | :---------: |
 | 0         | 59          | 51          |
 | 1         | 59          | 51          |
 | 2         | 59          | 51          |
@@ -1575,7 +1575,7 @@ M in the following list is the length with MAC header, N is the maximum usable p
 <b> EU433 </b>
 
 | Data Rate | M           | N           |
-| --------- | ----------- | ----------- |
+| :-------: | :---------: | :---------: |
 | 0         | 59          | 51          |
 | 1         | 59          | 51          |
 | 2         | 59          | 51          |

@@ -69,7 +69,7 @@ The hardware specification is categorized into six parts. It discusses the pinou
 #### Interfaces
 
 | Module | Interfaces               |
-| ------ | ------------------------ |
+| :----: | :----------------------: |
 | RAK811 | UART1, UART3, GPIOs, ADC |
 
 #### Pin Definition
@@ -77,7 +77,16 @@ The hardware specification is categorized into six parts. It discusses the pinou
 The RAK811 supports two different frequency variations: **Low Radio Frequency** and **High Radio Frequency**.
 
 :::warning ⚠️ WARNING
-When using `RF_OUT` for antenna connection and not the IPEX connector variant, make sure there is no ground plane (in all layers of the PCB) under the RF trace path to eliminate the possible effects of unwanted stray capacitance which can cause degradation of the RF signal levels.
+When using `RF_OUT` pin for antenna and not the IPEX connector variant, there are design considerations to make sure optimum RF performance.
+
+- RF trace must be away from interference (switching node of DC-DC supply, high current/voltage pulses from controllers of inductive load like motor, signal generators, etc.)
+- RF trace must have 50&nbsp;Ohms impedance. It is advisable to use an impedance simulation software tool to achieve this requirement.
+- If using an external antenna connector, make it close to the `RF_OUT` pin.
+- Ground plane optimization is critical on certain antenna types like monopole.
+- GND trace used for RF path return must be directly connected to the GND plane and not be treated as thermal relief.
+- It is recommended for the RF trace to be routed in a curve and not in a sharp 90&nbsp;degrees.
+
+In addition, with a commitment to making IoT easy, RAK offers a dedicated service for [Antenna RF Design](https://store.rakwireless.com/products/antenna-rf-design-service-including-pcb-design-tuning-matching-and-rf-test) which includes PCB design, tuning, matching, and RF testing.
 :::
 
 ##### 1. Low Radio Frequency Version (RAK811(L))
@@ -153,7 +162,7 @@ Low radio frequency hardware supports bandwidth in the regions of EU433 and CN47
 ##### RF Switch Control Logic Table
 
 | **SX_RF_LF** | **SX_RF_RX** | **SX_RF_PA** | **Condition** |
-| ------------ | ------------ | ------------ | ------------- |
+| :----------: | :----------: | :----------: | :-----------: |
 | 0            | 1            | 0            | RX mode       |
 | 0            | 0            | 1            | TX mode       |
 
@@ -233,7 +242,7 @@ High radio frequency hardware supports the regions of EU868, US915, AU915, KR920
 ##### RF Switch Control Logic Table
 
 | **SX_RF_HF** | **SX_RF_RX** | **SX_RF_PA** | **Condition** |
-| ------------ | ------------ | ------------ | ------------- |
+| :----------: | :----------: | :----------: | :-----------: |
 | 0            | 1            | 0            | RX mode       |
 | 0            | 0            | 1            | TX mode       |
 
@@ -242,7 +251,7 @@ High radio frequency hardware supports the regions of EU868, US915, AU915, KR920
 ##### Operating Frequencies
 
 | Module    | Region        | Frequency |
-| --------- | ------------- | --------- |
+| :-------: | :-----------: | :-------: |
 | RAK811(L) | Europe        | EU433     |
 |           | China         | CN470     |
 | RAK811(H) | Europe        | EU868     |
@@ -253,7 +262,7 @@ High radio frequency hardware supports the regions of EU868, US915, AU915, KR920
 |           | India         | IN865     |
 
 | Feature        | Condition | Minimum | Typical | Maximum | Unit |
-| -------------- | --------- | ------- | ------- | ------- | ---- |
+| :------------: | :-------: | :-----: | :-----: | :-----: | :--: |
 | Transmit       | TX Power  |         | 14      | 20      | dBm  |
 | RX Sensitivity | RSSI      | -130    |         |         | dBm  |
 |                | SNR       | -15     |         |         | dB   |
@@ -303,14 +312,14 @@ RAK811 supports two UARTs: UART1 (pin6-TX1, pin7-RX1) and UART3 (pin25-TX3, pin2
 ##### Operating Voltage
 
 | Feature | Minimum | Typical | Maximum | Unit      |
-| ------- | ------- | ------- | ------- | --------- |
+| :-----: | :-----: | :-----: | :-----: | :-------: |
 | VCC     | 2.1     | 3.3     | 3.45    | Volts (V) |
 
 
 ##### Operating Current
 
 | Feature           | Condition | Minimum                 | Typical | Maximum | Unit |
-| ----------------- | --------- | ----------------------- | ------- | ------- | ---- |
+| :---------------: | :-------: | :---------------------: | :-----: | :-----: | :--: |
 | Operating Current | TX Power  | 30 (@&nbsp;14&nbsp;dBm) |         |         | mA   |
 |                   | RX Mode   | 5.5                     |         |         | mA   |
 
@@ -318,7 +327,7 @@ RAK811 supports two UARTs: UART1 (pin6-TX1, pin7-RX1) and UART3 (pin25-TX3, pin2
 ##### Sleep Current
 
 | Feature             | Condition | Minimum (2.1V) | Typical (3.3V) | Maximum | Unit |
-| ------------------- | --------- | -------------- | -------------- | ------- | ---- |
+| :-----------------: | :-------: | :------------: | :------------: | :-----: | :--: |
 | Current Consumption | EU868     | 8.37           | 11.9           |         | μA   |
 |                     | US915     | 1.11           | 11.8           |         | μA   |
 |                     | CN470     | 1.65           | 3.07           |         | μA   |
@@ -347,13 +356,13 @@ RAK811 supports two UARTs: UART1 (pin6-TX1, pin7-RX1) and UART3 (pin25-TX3, pin2
 ##### Operating Temperature
 
 | Feature               | Minimum | Typical | Maximum | Unit |
-| --------------------- | ------- | ------- | ------- | ---- |
+| :-------------------: | :-----: | :-----: | :-----: | :--: |
 | Operating Temperature | -30     | 25      | 85      | °C   |
 
 ##### Storage Temperature
 
 | Feature             | Minimum | Typical | Maximum | Unit |
-| ------------------- | ------- | ------- | ------- | ---- |
+| :-----------------: | :-----: | :-----: | :-----: | :--: |
 | Storage Temperature | -40     |         | 85      | °C   |
 
 ##### Reflow Profile
@@ -385,7 +394,7 @@ The **hex file** contains both the bootloader and the application code. You need
 #### Firmware / OS
 
 | Model     | Version     | Source                                                                                               |
-| --------- | ----------- | ---------------------------------------------------------------------------------------------------- |
+| :-------: | :---------: | :--------------------------------------------------------------------------------------------------: |
 | RAK811(L) | V3.0.0.14.L | [Download](https://downloads.rakwireless.com/LoRa/RAK811/Firmware/RAK811%28L%29_Latest_Firmware.zip) |
 | RAK811(H) | V3.0.0.14.H | [Download](https://downloads.rakwireless.com/LoRa/RAK811/Firmware/RAK811%28H%29_Latest_Firmware.zip) |
 

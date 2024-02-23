@@ -60,7 +60,7 @@ The hardware specification is categorized into three parts. It covers the RF, el
 #### Interfaces
 
 | Module   | Interfaces                                   |
-| -------- | -------------------------------------------- |
+| :------: | :------------------------------------------: |
 | RAK11720 | UART0 (Default for AT command and FW update) |
 
 #### Pin Definition
@@ -72,8 +72,18 @@ The hardware specification is categorized into three parts. It covers the RF, el
 />
 
 :::warning ⚠️ WARNING
-When using `LORA RF` and `BLE RF` for antenna connection and not the IPEX connector variant, make sure there is no ground plane (in all layers of the PCB) under the RF trace path to eliminate the possible effects of unwanted stray capacitance which can cause degradation of the RF signal levels.
+When using `LORA RF` and `BLE RF` pins for antenna and not the IPEX connector variant, there are design considerations to make sure optimum RF performance.
+
+- RF trace must be away from interference (switching node of DC-DC supply, high current/voltage pulses from controllers of inductive load like motor, signal generators, etc.)
+- RF trace must have 50&nbsp;Ohms impedance. It is advisable to use an impedance simulation software tool to achieve this requirement.
+- If using an external antenna connector, make it close to the `LORA RF` and `BLE RF` pins.
+- Ground plane optimization is critical on certain antenna types like monopole.
+- GND trace used for RF path return must be directly connected to the GND plane and not be treated as thermal relief.
+- It is recommended for the RF trace to be routed in a curve and not in a sharp 90&nbsp;degrees.
+
+In addition, with our commitment to making IoT easy, we offer dedicated service for [Antenna RF Design which includes PCB design, tuning, matching and RF testing](https://store.rakwireless.com/products/antenna-rf-design-service-including-pcb-design-tuning-matching-and-rf-test).
 :::
+
 
 | **Pin No.** | **Name**      | **Type** | **Description**                                                         |
 | ----------- | ------------- | -------- | ----------------------------------------------------------------------- |
@@ -117,12 +127,12 @@ When using `LORA RF` and `BLE RF` for antenna connection and not the IPEX connec
 The RAK11720 module supports the LoRaWAN bands shown in the table below. When buying a RAK11720 module, pay attention to specifying the correct core module RAK11720 H/L for your region, in which H stands for high-frequency regions and L for low-frequency regions.
 
 <table>
-  <thead><tr>
+  <thead style="text-align: center"><tr>
     <th>Module</th>
     <th>Region</th>
     <th>Frequency</th>
   </tr></thead>
-<tbody>
+<tbody style="text-align: center">
   <tr>
     <td rowspan = "2">RAK11720 (L)</td>
     <td>Europe</td>
@@ -170,20 +180,20 @@ The RAK11720 module supports the LoRaWAN bands shown in the table below. When bu
 ##### Operating Voltage
 
 | Feature | Minimum | Typical | Maximum | Unit      |
-| ------- | ------- | ------- | ------- | --------- |
+| :-----: | :-----: | :-----: | :-----: | :-------: |
 | VCC     | 1.8     | 3.3     | 3.6     | Volts (V) |
 
 ##### Operating Current
 
 | Feature           | Condition    | Minimum | Typical                             | Maximum | Unit |
-| ----------------- | ------------ | ------- | ----------------------------------- | ------- | ---- |
+| :---------------: | :----------: | :-----: | :---------------------------------: | :-----: | :--: |
 | Operating Current | BLE TX Mode  | -       | 12.7 @4.0&nbsp;dBm                  | -       | mA   |
 |                   | LORA TX Mode | -       | 87 @&nbsp;20&nbsp;dBm, 868&nbsp;MHz | -       | mA   |
 
 ##### Sleep Current
 
 | Feature             | Condition | Minimum (2.1&nbsp;V) | Typical (3.3&nbsp;V) | Maximum | Unit |
-| ------------------- | --------- | -------------------- | -------------------- | ------- | ---- |
+| :-----------------: | :-------: | :------------------: | :------------------: | :-----: | :--: |
 | Current Consumption | EU868     | -                    | 2.37                 | -       | μA   |
 |                     | US915     | -                    | 2.37                 | -       | μA   |
 |                     | CN470     | -                    | 2.37                 | -       | μA   |
@@ -211,13 +221,13 @@ The RAK11720 module supports the LoRaWAN bands shown in the table below. When bu
 ##### Operating Temperature
 
 | Feature               | Minimum | Typical | Maximum | Unit |
-| --------------------- | ------- | ------- | ------- | ---- |
+| :-------------------: | :-----: | :-----: | :-----: | :--: |
 | Operating Temperature | -40     | 25      | 85      | °C   |
 
 ##### Storage Temperature
 
 | Feature             | Minimum | Typical | Maximum | Unit |
-| ------------------- | ------- | ------- | ------- | ---- |
+| :-----------------: | :-----: | :-----: | :-----: | :--: |
 | Storage Temperature | -40     | -       | 85      | °C   |
 
 ##### Recommended Reflow Profile
@@ -242,7 +252,7 @@ Standard conditions for reflow soldering:
 Download the latest RAK11720 WisDuo LPWAN Module firmware provided below. RAK11720 (L) and RAK11720 (H) use the same firmware and it will automatically detect the variant of the module being used.
 
 | Model                    | Note                        | Source                                                                                                      |
-| ------------------------ | --------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| :----------------------: | :-------------------------: | :---------------------------------------------------------------------------------------------------------: |
 | RAK11720 (.bin via UART) | (default baudrate = 115200) | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK11720_latest_Nonsecure_OTA_Package_UART.bin) |
 | RAK11720 (.bin via BLE)  |                             | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK11720_latest_Nonsecure_OTA_Package_BLE.bin)  |
 | RAK11720 (.hex)          |                             | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK11720_latest_final.hex)                      |

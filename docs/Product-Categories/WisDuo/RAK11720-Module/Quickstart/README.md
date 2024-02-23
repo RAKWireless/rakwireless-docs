@@ -342,7 +342,7 @@ void loop()
 There are two UART peripherals available on the RAK11720. There are also different [Serial Operating Modes](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/#rui3-serial-operating-modes) possible in RUI3, namely Binary Mode, AT Mode, and Custom Mode.
 
 | **Serial Port**                             | **Serial Instance Assignment** | **Default Mode**  |
-| ------------------------------------------- | ------------------------------ | ----------------- |
+| :-----------------------------------------: | :----------------------------: | :---------------: |
 | UART0 (Pin 5 - GP39/RX0)/(Pin 4 - GP40/TX0) | Serial                         | AT Command        |
 | UART1 (Pin 1 - GP43/RX1)/(Pin 2 - GP42/TX1) | Serial1                        | Custom Mode       |
 | BLE Serial                                  | Serial6                        | Custom Mode       |
@@ -1264,7 +1264,7 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 <b>List of band parameter options</b>
 
 | Code | Regional Band |
-| ---- | ------------- |
+| :--: | :-----------: |
 | 0    | EU433         |
 | 1    | CN470         |
 | 2    | RU864         |
@@ -1407,7 +1407,7 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 Join command format: **`AT+JOIN=w:x:y:z`**
 
 | Parameter | Description                                                  |
-| --------- | ------------------------------------------------------------ |
+| :-------: | :----------------------------------------------------------: |
 | w         | Join command - 1: joining, 0: stop joining.                  |
 | x         | Auto-join config - 1: auto-join on power-up, 0: no auto-join |
 | y         | Reattempt interval in seconds (7-255) - 8 is the default.    |
@@ -1579,7 +1579,7 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 **<b>List of band parameter options</b>**
 
 | Code | Regional Band |
-| ---- | ------------- |
+| :--: | :-----------: |
 | 0    | EU433         |
 | 1    | CN470         |
 | 2    | RU864         |

@@ -39,7 +39,7 @@ Before going through the step in the installation guide of the RAK4200 WisDuo LP
 ##### List of Acronyms
 
 | Acronym | Meaning                       |
-| ------- | ----------------------------- |
+| :-----: | :---------------------------: |
 | ABP     | Activation By Personalization |
 | BLE     | Bluetooth Low Energy          |
 | DFU     | Device Firmware Upgrade       |
@@ -1089,7 +1089,7 @@ Refer to the [RAKDAP1 Flash and Debug Tool Quickstart Guide](/Product-Categories
 ##### Minimum Hardware and Software Requirements
 
 |               |                                           |
-| ------------- | ----------------------------------------- |
+| :-----------: | :---------------------------------------: |
 | Computer      | A Windows/Linux/Mac computer              |
 | Firmware File | Bin firmware downloaded from the website. |
 | Others        | A USB to TTL adapter.                     |

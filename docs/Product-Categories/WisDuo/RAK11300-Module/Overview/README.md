@@ -11,7 +11,7 @@ tags:
 
 # RAK11300 WisDuo LPWAN Module
 
-Thank you for choosing **RAK11300 WisDuo LPWAN Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAK11300 WisDuo LPWAN Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 
 * [Quick Start Guide](/Product-Categories/WisDuo/RAK11300-Module/Quickstart/)
@@ -22,7 +22,7 @@ Thank you for choosing **RAK11300 WisDuo LPWAN Module** in your awesome IoT Proj
 
 ## Product Description
 
-RAK11300 WisDuo LPWAN Module is based on the Raspberry Pi RP2040 chip and SX1262 RF transceiver. It provides an easy-to-use, small-size, low-power solution for long-range wireless data applications. This module complies with Class A & C of LoRaWAN 1.0.2 specifications. It can easily connect to different LoRaWAN server platforms like TheThingsNetwork (TTN), Chirpstack, Helium, etc.
+**RAK11300 WisDuo LPWAN Module** is based on the Raspberry Pi RP2040 chip and SX1262 RF transceiver. It provides an easy-to-use, small-size, low-power solution for long-range wireless data applications. This module complies with Class A & C of LoRaWAN 1.0.2 specifications. It can easily connect to different LoRaWAN server platforms like TheThingsNetwork (TTN), Chirpstack, Helium, etc.
 
 
 ## Product Features
@@ -33,7 +33,7 @@ RAK11300 WisDuo LPWAN Module is based on the Raspberry Pi RP2040 chip and SX1262
 - LoRaWAN Activation by OTAA/ABP
 - Long-range - greater than 15&nbsp;km with optimized antenna
 - ARM Cortex-M0+ Dual Core
-- 133Mhz CPU Clock
+- 133&nbsp;MHz CPU Clock
 - 246&nbsp;kbytes RAM
 - **Supply Voltage**: 2.0&nbsp;V ~ 3.6&nbsp;V
 - **Temperature Range**: -20°&nbsp;C ~ 85°&nbsp;C

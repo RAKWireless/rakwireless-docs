@@ -45,17 +45,34 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Install the o
 
 The RAK4630 requires a few hardware connections before you can make it work. The bare minimum requirement is to have the power section properly configured, reset button, antenna, and USB connection.
 
+There are two ways to set up the RAK4630, depending on your power source. The following two modes are derived from the features of the nRF52840 chip embedded inside the RAK4630 module.
+
+- High Voltage Mode: for an external battery and 3.3&nbsp;V
+- Normal Mode: for a 3.3&nbsp;V voltage rail as a power source
+
+**1. Standard Mode**
+
+In standard mode, you can use 3.3V power source to all voltage supply input.
+
+<rk-img
+  src="/assets/images/wisduo/rak4630-module/quickstart/rak4630_standard.png"
+  width="65%"
+  caption="RAK4630 Standard Mode"
+/>
+
+**2. High Voltage Mode**
+
+In high voltage mode, you can directly connect your external source (usually battery) to VBAT_NRF pin. VBAT_NRF should be higher than 3.3&nbsp;V which is the nominal operating VDD level and must be left floating. The maximum allowed voltage for VBAT_NRF is 5.5&nbsp;V. 
+
+This configuration is required in nRF52840 inside the RAK4630 to operate in High Voltage Mode in which internal DC/DC and REG0/REG1 are enabled. This is the default setting on the RAK4631 WisBlock Core which uses RAK4630 module.
+
 <rk-img
   src="/assets/images/wisduo/rak4630-module/quickstart/rak4630_minimum.png"
   width="65%"
-  caption="RAK4630 minimum schematic"
+  caption="RAK4630 High Voltage Mode"
 />
 
-:::warning ⚠️ WARNING
-VBAT should be higher than 3.3&nbsp;V. The recommended value is the nominal voltage of a Li-Ion battery, which ranges from 3.7&nbsp;V to 4.2&nbsp;V. This is required because the power configuration of the nRF52840 inside the RAK4630 is High Voltage, DC/DC with REG0 and REG1 enabled.
-:::
-
-Ensure that the antennas are properly connected to have a good LoRa and BLE signal. Also, note that you can damage the RF section of the chip if you power the module without an antenna connected to the IPEX connectors.
+After selecting appropriate mode for your applicaiton, ensure that the antennas are properly connected to have a good LoRa and BLE signal. Also, note that you can damage the RF section of the chip if you power the module without an antenna connected to the IPEX connectors.
 
 <rk-img
   src="/assets/images/wisduo/rak4630-module/quickstart/wisblock_antenna.png"
@@ -334,7 +351,7 @@ There are two UART peripherals available on RAK4630. There are also different [S
 
 
 | **Serial Port**           | **Serial Instance Assignment** | **Default Mode**  |
-| ------------------------- | ------------------------------ | ----------------- |
+| :-----------------------: | :----------------------------: | :---------------: |
 | UART1 (pin 19, 20)        | Serial0                        | AT Command        |
 | UART2 (pin 15, 16)        | Serial1                        | Custom Mode       |
 
@@ -1208,7 +1225,7 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 <b>List of band parameter options</b>
 
 | Code | Regional Band |
-| ---- | ------------- |
+| :--: | :-----------: |
 | 0    | EU433         |
 | 1    | CN470         |
 | 2    | RU864         |
@@ -1384,7 +1401,7 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 Join command format: **`AT+JOIN=w:x:y:z`**
 
 | Parameter | Description                                                  |
-| --------- | ------------------------------------------------------------ |
+| :-------: | :----------------------------------------------------------: |
 | w         | Join command - 1: joining, 0: stop joining.                  |
 | x         | Auto-join config - 1: auto-join on power-up, 0: no auto-join |
 | y         | Reattempt interval in seconds (7-255) - 8 is the default.    |
@@ -1889,7 +1906,7 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 **<b>List of band parameter options</b>**
 
 | Code | Regional Band |
-| ---- | ------------- |
+| :--: | :-----------: |
 | 0    | EU433         |
 | 1    | CN470         |
 | 2    | RU864         |
@@ -2333,7 +2350,7 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 **<b>List of band parameter options</b>**
 
 | Code | Regional Band |
-| ---- | ------------- |
+| :--: | :-----------: |
 | 0    | EU433         |
 | 1    | CN470         |
 | 2    | RU864         |
@@ -2394,7 +2411,7 @@ AT+JOIN=1:0:10:8
 Join command format: **`AT+JOIN=w:x:y:z`**
 
 | Parameter | Description                                                  |
-| --------- | ------------------------------------------------------------ |
+| :-------: | :----------------------------------------------------------: |
 | w         | Join command - 1: joining, 0: stop joining.                  |
 | x         | Auto-join config - 1: auto-join on power-up, 0: no auto-join |
 | y         | Reattempt interval in seconds (7-255) - 8 is the default.    |
@@ -2539,7 +2556,7 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 **<b>List of band parameter options</b>**
 
 | Code | Regional Band |
-| ---- | ------------- |
+| :--: | :-----------: |
 | 0    | EU433         |
 | 1    | CN470         |
 | 2    | RU864         |
@@ -2596,7 +2613,7 @@ AT+JOIN=1:0:10:8
 Join command format: **`AT+JOIN=w:x:y:z`**
 
 | Parameter | Description                                                  |
-| --------- | ------------------------------------------------------------ |
+| :-------: | :----------------------------------------------------------: |
 | w         | Join command - 1: joining, 0: stop joining.                  |
 | x         | Auto-join config - 1: auto-join on power-up, 0: no auto-join |
 | y         | Reattempt interval in seconds (7-255) - 8 is the default.    |

@@ -38,7 +38,7 @@ The module complies with LoRaWAN 1.0.2 specification. It also supports LoRa P2P 
 - **Temperature range**: -40&nbsp;°C to +85&nbsp;°C
 - **Supply voltage**: 2.0 ~ 3.6&nbsp;V
 - **Frequency range**: 863–870&nbsp;MHz (EU) / 902–928&nbsp;MHz (US), ISM and SRD systems
-- Low-Power Wireless Systems with 7.8&nbsp;kHz to 500&nbsp;KHz Bandwidth
+- Low-Power Wireless Systems with 7.8&nbsp;kHz to 500&nbsp;kHz Bandwidth
 - Ultra-Low Power Consumption of 9.40&nbsp;μA (down to 1.08&nbsp;μA @ 2.0&nbsp;V) in sleep mode
 - **Core**: ARM 32-bit Cortex – M0+ with MPU
 - Up to 128&nbsp;KB flash memory with ECC

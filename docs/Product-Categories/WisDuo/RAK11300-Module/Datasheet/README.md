@@ -25,7 +25,7 @@ RAK11300 WisDuo LPWAN Module is based on the Raspberry Pi RP2040 chip and SX1262
 - LoRaWAN Activation by OTAA/ABP
 - Long-range - greater than 15&nbsp;km with optimized antenna
 - ARM Cortex-M0+ Dual Core
-- 133Mhz CPU Clock
+- 133&nbsp;MHz CPU Clock
 - 246&nbsp;kbytes RAM
 - **Supply Voltage**: 2.0&nbsp;V ~ 3.6&nbsp;V
 - **Temperature Range**: -20°&nbsp;C ~ 85°&nbsp;C
@@ -51,7 +51,7 @@ The hardware specification is categorized into six parts. It shows the interface
 #### Interfaces
 
 | Module   | Interfaces |
-| -------- | ---------- |
+| :------: | :--------: |
 | RAK11300 | UART, USB  |
 
 #### Pin Definition
@@ -67,7 +67,7 @@ The hardware specification is categorized into six parts. It shows the interface
 The table below shows the pin definition and description of RAK11300:
 
 | Type | Description    |
-| ---- | -------------- |
+| :--: | :------------: |
 | PI   | Power Input    |
 | PO   | Power Output   |
 | DI   | Digital Input  |
@@ -80,7 +80,7 @@ The table below shows the pin definition and description of RAK11300:
 ##### Power Supply
 
 | Pin Name   | Pin No.                | Type   | Description                               |
-| ---------- | ---------------------- | ------ | ----------------------------------------- |
+| :--------: | :--------------------: | :----: | :---------------------------------------: |
 | VBAT_SX    | 21                     | PI     | Supply for the LoRa IC                    |
 | VBAT_SX_IO | 22                     | PI     | Supply for the Digital I/O interface pins |
 | DVDD       | 45                     | PI     | Supply for the MCU                        |
@@ -89,7 +89,7 @@ The table below shows the pin definition and description of RAK11300:
 
 ##### I2C Interface
 | Pin Name | Pin No. | Type | Description      |
-| -------- | ------- | ---- | ---------------- |
+| :------: | :-----: | :--: | :--------------: |
 | I2C1_SDA | 4       | IO   | I2C serial data  |
 | I2C1_SCL | 5       | DO   | I2C serial clock |
 | I2C2_SDA | 24      | IO   | I2C serial data  |
@@ -98,14 +98,14 @@ The table below shows the pin definition and description of RAK11300:
 ##### USB Interface
 
 | Pin Name | Pin No. | Type | Description              |
-| -------- | ------- | ---- | ------------------------ |
+| :------: | :-----: | :--: | :----------------------: |
 | USB_DM   | 2       | IO   | USB differential data(-) |
 | USB_DP   | 3       | IO   | USB differential data(+) |
 
 ##### UART Interface
 
 | Pin Name | Pin No. | Type | Description    |
-| -------- | ------- | ---- | -------------- |
+| :------: | :-----: | :--: | :------------: |
 | UART1_RX | 9       | DI   | UART1 receive  |
 | UART1_TX | 10      | DO   | UART1 transmit |
 | UART2_RX | 6       | DI   | UART2 receive  |
@@ -114,7 +114,7 @@ The table below shows the pin definition and description of RAK11300:
 ##### SPI Interface
 
 | Pin Name  | Pin No. | Type | Description                    |
-| --------- | ------- | ---- | ------------------------------ |
+| :-------: | :-----: | :--: | :----------------------------: |
 | SPI0_SCK  | 30      | DO   | SPI clock                      |
 | SPI0_MISO | 33      | DI   | SPI master input, slave output |
 | SPI0_MOSI | 34      | DO   | SPI master output. slave input |
@@ -123,30 +123,40 @@ The table below shows the pin definition and description of RAK11300:
 ##### SWD Interface
 
 | Pin Name | Pin No. | Type  | Description                                   |
-| -------- | ------- | ----- | --------------------------------------------- |
+| :------: | :-----: | :---: | :-------------------------------------------: |
 | SWCLK    | 19      | Debug | SWD clock input for debugging and programming |
 | SWDIO    | 20      | Debug | SWD I/O for debugging and programming         |
 
 ##### RESET
 
 | Pin Name | Pin No. | Type | Description                  |
-| -------- | ------- | ---- | ---------------------------- |
+| :------: | :-----: | :--: | :--------------------------: |
 | RESET    | 18      | DI   | Reset the module, Active Low |
 
 ##### Antenna Interface
 
 :::warning ⚠️ WARNING
-When using `RF_LoRa` for antenna connection and not the IPEX connector variant, make sure there is no ground plane (in all layers of the PCB) under the RF trace path to eliminate the possible effects of unwanted stray capacitance which can cause degradation of the RF signal levels.
+When using `RF_LoRa` pin for antenna and not the IPEX connector variant, there are design considerations to make sure optimum RF performance.
+
+- RF trace must be away from interference (switching node of DC-DC supply, high current/voltage pulses from controllers of inductive load like motor, signal generators, etc.)
+- RF trace must have 50&nbsp;Ohms impedance. It is advisable to use an impedance simulation software tool to achieve this requirement.
+- If using an external antenna connector, make it close to the `RF_LoRa` pin.
+- Ground plane optimization is critical on certain antenna types like monopole.
+- GND trace used for RF path return must be directly connected to the GND plane and not be treated as thermal relief.
+- It is recommended for the RF trace to be routed in a curve and not in a sharp 90&nbsp;degrees.
+
+In addition, with a commitment to making IoT easy, RAK offers a dedicated service for [Antenna RF Design](https://store.rakwireless.com/products/antenna-rf-design-service-including-pcb-design-tuning-matching-and-rf-test) which includes PCB design, tuning, matching, and RF testing.
 :::
 
+
 | Pin Name | Pin No. | Type | Description            | Comment                                                                                                          |
-| -------- | ------- | ---- | ---------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| :------: | :-----: | :--: | :--------------------: | ---------------------------------------------------------------------------------------------------------------- |
 | RF_LoRa  | 38      | IO   | LoRa antenna interface | 50&nbsp;Ω Impedance<br/>This pin can't be used on modules with an IPEX connector. If unused, keep this pin open. |
 
 ##### ADC and GPIO
 
 | Pin Name         | Pin No. | Type        | Description                                                       |
-| ---------------- | ------- | ----------- | ----------------------------------------------------------------- |
+| :--------------: | :-----: | :---------: | :---------------------------------------------------------------: |
 | GPIO7            | 11      | IO          | General-purpose input/output                                      |
 | GPIO8            | 12      | IO          | General-purpose input/output                                      |
 | GPIO9            | 13      | IO          | General-purpose input/output                                      |
@@ -163,24 +173,62 @@ The RAK11300 supports two different frequency variations: RAK11300(L) Low Radio 
 
 ##### Operating Frequencies
 
-| Module      | Region    | Frequency |
-| ----------- | --------- | --------- |
-| RAK11300(L) | Europe    | EU433     |
-|             | China     | CN470     |
-| RAK11300(H) | Europe    | EU868     |
-|             | America   | US915     |
-|             | Australia | AU915     |
-|             | Korea     | KR920     |
-|             | Asia      | AS923     |
-|             | India     | IN865     |
-|             | Russia    | RU864     |
+<table>
+  <thead style="text-align: center">
+    <tr>
+      <th>Module</th>
+      <th>Region</th>
+      <th>Frequency</th>
+    </tr>
+  </thead>
+  <tbody style="text-align: center">
+    <tr>
+      <td rowspan=2>RAK11300(L)</td>
+      <td>Europe</td>
+      <td>EU433</td>
+    </tr>
+    <tr>
+      <td>China</td>
+      <td>CN470</td>
+    </tr>
+    <tr>
+      <td rowspan=8>RAK11300(H)</td>
+      <td>Europe</td>
+      <td>EU868</td>
+    </tr>
+    <tr>      
+      <td>America</td>
+      <td>US915</td>
+    </tr>
+    <tr>      
+      <td>Australia</td>
+      <td>AU915</td>
+    </tr>
+    <tr>      
+      <td>Korea</td>
+      <td>KR920</td>
+    </tr>
+    <tr>      
+      <td>Asia</td>
+      <td>AS923</td>
+    </tr>
+    <tr>      
+      <td>India</td>
+      <td>IN865</td>
+    </tr>
+    <tr>      
+      <td>Russia</td>
+      <td>RU864</td>
+    </tr>
+  </tbody>
+</table>
 
 #### Electrical Characteristics
 
 ##### Recommended Operating Conditions
 
 | **Symbol** | **Description**            | **Min.** | **Nom.** | **Max.** | **Unit** |
-| ---------- | -------------------------- | -------- | -------- | -------- | -------- |
+| :--------: | :------------------------: | :------: | :------: | :------: | :------: |
 | VBAT_SX    | SX1262 supply voltage      | 2.0      | 3.3      | 3.7      | V        |
 | VBAT_SX_IO | SX1262 supply for I/O pins | 2.0      | 3.3      | 3.7      | V        |
 | DVDD       | Power supply  of MCU       | 2.0      | 3.3      | 3.6      | V        |
@@ -191,7 +239,7 @@ The RAK11300 supports two different frequency variations: RAK11300(L) Low Radio 
 ##### Absolute Maximum Ratings
 
 | **Symbol** | **Description**               | **Min.** | **Nom.** | **Max.** | **Unit** |
-| ---------- | ----------------------------- | -------- | -------- | -------- | -------- |
+| :--------: | :---------------------------: | :------: | :------: | :------: | :------: |
 | VBAT_SX    | LoRa chip supply voltage      | -0.5     | -        | 3.9      | V        |
 | VBAT_SX_IO | LoRa chip supply for I/O pins | -0.5     | -        | 3.9      | V        |
 | DVDD       | Supply for the MCU            | -0.5     | -        | 3.6      |          |
@@ -223,13 +271,13 @@ The RAK11300 supports two different frequency variations: RAK11300(L) Low Radio 
 ##### Operating Temperature
 
 | Feature               | Minimum | Typical | Maximum | Unit |
-| --------------------- | ------- | ------- | ------- | ---- |
+| :-------------------: | :-----: | :-----: | :-----: | :--: |
 | Operating Temperature | -20     | 25      | 85      | °C   |
 
 ##### Storage Temperature
 
 | Feature             | Minimum | Typical | Maximum | Unit |
-| ------------------- | ------- | ------- | ------- | ---- |
+| :-----------------: | :-----: | :-----: | :-----: | :--: |
 | Storage Temperature | -20     |         | 85      | °C   |
 
 ##### Recommended Reflow Profile
@@ -242,12 +290,12 @@ The RAK11300 supports two different frequency variations: RAK11300(L) Low Radio 
 
 Standard conditions for reflow soldering:
 
-- Pre-heating Ramp (A) (Initial temperature: 150&nbsp;℃): **1~2.5&nbsp;℃/sec**
-- Soaking Time (T2) (150~180&nbsp;℃): **60~100&nbsp;sec**
-- Peak Temperature (G): **230~250&nbsp;℃**
-- Reflow Time (T3) (>220&nbsp;℃): **30~60&nbsp;sec**
-- Ramp-up Rate (B): **0~2.5&nbsp;℃/sec**
-- Ramp-down Rate (C): **1~3&nbsp;℃/sec**
+- Pre-heating Ramp (A) (Initial temperature: 150°&nbsp;C): **1~2.5°&nbsp;C/sec**
+- Soaking Time (T2) (150~180°&nbsp;C): **60~100&nbsp;sec**
+- Peak Temperature (G): **230~250°&nbsp;C**
+- Reflow Time (T3) (>220°&nbsp;C): **30~60&nbsp;sec**
+- Ramp-up Rate (B): **0~2.5°&nbsp;C/sec**
+- Ramp-down Rate (C): **1~3°&nbsp;C/sec**
 
 ### Software
 
@@ -255,5 +303,5 @@ Download the latest firmware of the RAK11300 WisDuo LPWAN Module provided below.
 
 #### Firmware / OS
 | Model    | Version | Source                                                                                            |
-| -------- | ------- | ------------------------------------------------------------------------------------------------- |
+| :------: | :-----: | :-----------------------------------------------------------------------------------------------: |
 | RAK11300 | V1.0.0  | [Download](https://downloads.rakwireless.com/LoRa/RAK11300/Firmware/RAK11300_Latest_Firmware.zip) |

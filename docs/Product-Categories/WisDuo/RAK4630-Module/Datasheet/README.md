@@ -59,7 +59,7 @@ The hardware specification is categorized into three parts. It covers the RF, el
 #### Interfaces
 
 | Module  | Interfaces |
-| ------- | ---------- |
+| :-----: | :--------: |
 | RAK4630 | USB, UART1 |
 
 #### Pin Definition
@@ -71,11 +71,20 @@ The hardware specification is categorized into three parts. It covers the RF, el
 />
 
 :::warning ⚠️ WARNING
-When using `RF_LoRa` and `RF_BT` for antenna connection and not the IPEX connector variant, make sure there is no ground plane (in all layers of the PCB) under the RF trace path to eliminate the possible effects of unwanted stray capacitance which can cause degradation of the RF signal levels.
+When using `RF_LoRa` and `RF_BT` pins for antenna and not the IPEX connector variant, there are design considerations to make sure optimum RF performance.
+
+- RF trace must be away from interference (switching node of DC-DC supply, high current/voltage pulses from controllers of inductive load like motor, signal generators, etc.)
+- RF trace must have 50&nbsp;Ohms impedance. It is advisable to use an impedance simulation software tool to achieve this requirement.
+- If using an external antenna connector, make it close to the `RF_LoRa` and `RF_BT` pins.
+- Ground plane optimization is critical on certain antenna types like monopole.
+- GND trace used for RF path return must be directly connected to the GND plane and not be treated as thermal relief.
+- It is recommended for the RF trace to be routed in a curve and not in a sharp 90&nbsp;degrees.
+
+In addition, with a commitment to making IoT easy, RAK offers a dedicated service for [Antenna RF Design](https://store.rakwireless.com/products/antenna-rf-design-service-including-pcb-design-tuning-matching-and-rf-test) which includes PCB design, tuning, matching, and RF testing.
 :::
 
 | **Pin No.** | **Name**                        |
-| ----------- | ------------------------------- |
+| :---------: | :-----------------------------: |
 | 1           | VBUS                            |
 | 2           | USB-                            |
 | 3           | USB+                            |
@@ -126,7 +135,7 @@ When using `RF_LoRa` and `RF_BT` for antenna connection and not the IPEX connect
 Information to write custom firmware for the RAK4630.  This shows the internal connection between the RAK4630 and required information when initializing the SX1262 LoRa Transceiver.
 
 | nRF52840 GPIO	| SX1262 pin | function                          |
-| ------------- | ---------- | --------------------------------- |
+| :-----------: | :--------: | :-------------------------------: |
 | P1.10         | NSS        | SPI NSS                           |
 | P1.11         | SCK        | SPI CLK                           |
 | P1.12         | MOSI       | SPI MOSI                          |
@@ -150,7 +159,7 @@ Detailed information about the RAK4630 BLE and LoRa antenna can be found on the 
 :::
 
 | Region        | Frequency (MHz)  | Core Module |
-| ------------- | ---------------- | ----------- |
+| :-----------: | :--------------: | :---------: |
 | India         | IN865            | RAK4630(H)  |
 | Europe        | EU868            | RAK4630(H)  |
 | Europe        | EU433            | RAK4630(L)  |
@@ -166,7 +175,7 @@ Detailed information about the RAK4630 BLE and LoRa antenna can be found on the 
 ##### Power Consumption
 
 | **Item**                                 | **Current Average** | **Condition - Voltage and Dwell Time** |
-| ---------------------------------------- | ------------------- | -------------------------------------- |
+| :--------------------------------------: | :-----------------: | :------------------------------------: |
 | RAK4630 Module in One-Time Sleep         | 4.42&nbsp;uA        | 3.3V 10seconds                         |
 | RAK4630 Module System up in Idle mode    | 3.35&nbsp;mA        | 3.3V 10seconds                         |
 | RAK4630 Module in LoRaWAN One-Time Sleep | 4.23&nbsp;uA        | 3.3V 10seconds                         |
@@ -176,7 +185,7 @@ Detailed information about the RAK4630 BLE and LoRa antenna can be found on the 
 ##### Absolute Maximum Ratings
 
 | **Symbol** | **Description**               | **Min.** | **Nom.** | **Max.** | **Unit** |
-| ---------- | ----------------------------- | -------- | -------- | -------- | -------- |
+| :--------: | :---------------------------: | :------: | :------: | :------: | :------: |
 | VBAT_SX    | LoRa chip supply voltage      | -0.5     |          | 3.9      | V        |
 | VBAT_SX_IO | LoRa chip supply for I/O pins | -0.5     |          | 3.9      | V        |
 | VDD_NRF    | MCU power supply              | -0.3     |          | 3.9      | V        |
@@ -187,7 +196,7 @@ Detailed information about the RAK4630 BLE and LoRa antenna can be found on the 
 ##### Recommended Operating Conditions
 
 | **Symbol** | **Description**                    | **Min.** | **Nom.** | **Max.** | **Unit** |
-| ---------- | ---------------------------------- | -------- | -------- | -------- | -------- |
+| :--------: | :--------------------------------: | :------: | :------: | :------: | :------: |
 | VBAT_SX    | SX1262 supply voltage              | 2.0      | 3.3      | 3.7      | V        |
 | VBAT_SX_IO | SX1262 supply for I/O pins         | 2.0      | 3.3      | 3.7      | V        |
 | VDD_NRF    | NRF52840 power supply              | 2.0      | 3.3      | 3.6      | V        |

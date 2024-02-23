@@ -81,7 +81,7 @@ For the reference application schematic of RAK3172-SiP with minimum components r
 #### Interfaces
 
 | Module        | Interfaces                            |
-| ------------- | ------------------------------------- |
+| :-----------: | :-----------------------------------: |
 | RAK3172-SiP   | UART2 (Default for AT Command), UART1 |
 | RAK3172LP-SiP | UART2 (Default for AT Command), UART1 |
 
@@ -96,11 +96,21 @@ You can check the pin definitions on the table and illustration, as shown in **F
 />
 
 :::warning ⚠️ WARNING
-Make sure there is no ground plane (in all layers of the PCB) under the `RF_OUT` trace path to eliminate the possible effects of unwanted stray capacitance which can cause degradation of the RF signal levels.
+When using `RF_OUT` pin for antenna and not the IPEX connector variant, there are design considerations to make sure optimum RF performance.
+
+- RF trace must be away from interference (switching node of DC-DC supply, high current/voltage pulses from controllers of inductive load like motor, signal generators, etc.)
+- RF trace must have 50&nbsp;Ohms impedance. It is advisable to use an impedance simulation software tool to achieve this requirement.
+- If using an external antenna connector, make it close to the `RF_OUT` pin.
+- Ground plane optimization is critical on certain antenna types like monopole.
+- GND trace used for RF path return must be directly connected to the GND plane and not be treated as thermal relief.
+- It is recommended for the RF trace to be routed in a curve and not in a sharp 90&nbsp;degrees.
+
+In addition, with a commitment to making IoT easy, RAK offers a dedicated service for [Antenna RF Design](https://store.rakwireless.com/products/antenna-rf-design-service-including-pcb-design-tuning-matching-and-rf-test) which includes PCB design, tuning, matching, and RF testing.
 :::
 
+
 | **Pin No.** | **Name**     | **Type** | **Description**                                                    |
-| ----------- | ------------ | -------- | ------------------------------------------------------------------ |
+| :---------: | :----------: | :------: | ------------------------------------------------------------------ |
 | 1           | PA13         | I        | Reserved - SWD debug pin (SWDIO)                                   |
 | 2           | PA14         | O        | Reserved - SWD debug pin (SWCLK)                                   |
 | 3           | VDD          |          | VDD                                                                |
@@ -175,7 +185,7 @@ The RAK3172-SiP supports the frequency of operation from 863 to 930&nbsp;Mhz.
 ##### Operating Frequencies
 
 | Region        | Frequency     |
-| ------------- | ------------- |
+| :-----------: | :-----------: |
 | Europe        | EU868         |
 | North America | US915         |
 | Australia     | AU915         |
@@ -189,14 +199,14 @@ The RAK3172-SiP supports the frequency of operation from 863 to 930&nbsp;Mhz.
 ##### Absolute Maximum Ratings
 
 | Parameter    | Minimum     | Typical | Maximum | Unit      |
-| ------------ | ----------- | ------- | ------- | --------- |
+| :----------: | :---------: | :-----: | :-----: | :-------: |
 | VDD and GPIO | -0.3&nbsp;V | -       | 3.9     | Volts (V) |
 
 
 ##### Operating Voltage
 
 | Parameter                             | Minimum | Typical | Maximum | Unit      |
-| ------------------------------------- | ------- | ------- | ------- | --------- |
+| :-----------------------------------: | :-----: | :-----: | :-----: | :-------: |
 | VCC                                   | 1.8     | -       | 3.6     | Volts (V) |
 | VDDA (ADC or COMP used)               | 1.71    | -       | 3.6     | Volts (V) |
 | VDDA (VREFBUF used)                   | 2.4     | -       | 3.6     | Volts (V) |
@@ -214,7 +224,7 @@ The RAK3172-SiP supports the frequency of operation from 863 to 930&nbsp;Mhz.
 ###### RAK3172-SiP (uses RFO_HP RF output)
 
 | Parameter  | Condition   | Current Consumption (Typical) |
-| ---------- | ----------- | ----------------------------- |
+| :--------: | :---------: | :---------------------------: |
 | TX mode    | 20&nbsp;dBm | 87&nbsp;mA                    |
 | RX mode    | -           | 6.14&nbsp;mA                  |
 | Sleep mode | -           | 1.69&nbsp;uA                  |
@@ -222,38 +232,42 @@ The RAK3172-SiP supports the frequency of operation from 863 to 930&nbsp;Mhz.
 ###### RAK3172LP-SiP (uses RFO_LP RF output)
 
 <table>
-  <tr>
-    <th>Parameter</th>
-    <th>Condition</th>
-    <th>Current Consumption (Typical)</th>
-  </tr>
-  <tr>
-    <td rowspan = "4" >TX mode</td>
-    <td>14&nbsp;dBm</td>
-    <td>39.1&nbsp;mA</td>
-  </tr>
-  <tr>
-    <td>12&nbsp;dBm</td>
-    <td>33&nbsp;mA</td>
-  </tr>
-  <tr>
-    <td>10&nbsp;dBm</td>
-    <td>28&nbsp;mA</td>
-  </tr>
-  <tr>
-    <td>8&nbsp;dBm</td>
-    <td>25&nbsp;mA</td>
-  </tr>
-  <tr>
-    <td>RX mode</td>
-    <td>-</td>
-    <td>9.69&nbsp;mA</td>
-  </tr>
-  <tr>
-    <td>Sleep mode</td>
-    <td>-</td>
-    <td>2.1&nbsp;uA</td>
-  </tr>
+  <thead style="text-align: center">
+    <tr>
+      <th>Parameter</th>
+      <th>Condition</th>
+      <th>Current Consumption (Typical)</th>
+    </tr>
+  </thead>
+  <tbody style="text-align: center">
+    <tr>
+      <td rowspan = "4" >TX mode</td>
+      <td>14&nbsp;dBm</td>
+      <td>39.1&nbsp;mA</td>
+    </tr>
+    <tr>
+      <td>12&nbsp;dBm</td>
+      <td>33&nbsp;mA</td>
+    </tr>
+    <tr>
+      <td>10&nbsp;dBm</td>
+      <td>28&nbsp;mA</td>
+    </tr>
+    <tr>
+      <td>8&nbsp;dBm</td>
+      <td>25&nbsp;mA</td>
+    </tr>
+    <tr>
+      <td>RX mode</td>
+      <td>-</td>
+      <td>9.69&nbsp;mA</td>
+    </tr>
+    <tr>
+      <td>Sleep mode</td>
+      <td>-</td>
+      <td>2.1&nbsp;uA</td>
+    </tr>
+  </tbody>
 </table>
 
 #### Mechanical Characteristics
@@ -279,13 +293,13 @@ The RAK3172-SiP supports the frequency of operation from 863 to 930&nbsp;Mhz.
 ##### Operating Temperature
 
 | Feature               | Minimum | Typical | Maximum | Unit |
-| --------------------- | ------- | ------- | ------- | ---- |
+| :-------------------: | :-----: | :-----: | :-----: | :--: |
 | Operating Temperature | -40     | 25      | 85      | °C   |
 
 ##### Storage Temperature
 
 | Feature             | Minimum | Typical | Maximum | Unit |
-| ------------------- | ------- | ------- | ------- | ---- |
+| :-----------------: | :-----: | :-----: | :-----: | :--: |
 | Storage Temperature | -40     | -       | 85      | °C   |
 
 ##### Recommended Reflow Profile
@@ -324,7 +338,7 @@ RAK3172-SiP uses UART2 serial pins to upload the latest firmware.
 Download the latest RAK3172-SiP and RAK3172LP-SiP firmware provided below.
 
 | Model                | Version                   | Source                                                                                      |
-| -------------------- | ------------------------- | ------------------------------------------------------------------------------------------- |
+| :------------------: | :-----------------------: | :-----------------------------------------------------------------------------------------: |
 | RAK3172-SiP (.bin)   | RUI3 (App only)           | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3272-SiP_latest.bin)         |
 | RAK3172-SiP (.hex)   | RUI3 (Bootloader and App) | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3272-SiP_latest_final.hex)   |
 | RAK3172LP-SiP (.bin) | RUI3 (App only)           | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3272LP-SiP_latest.bin)       |
@@ -336,7 +350,7 @@ Download the latest RAK3172-SiP and RAK3172LP-SiP firmware provided below.
 ### Ordering Information
 
 | P/N                 | Model       | Frequency                           | SKU    |
-| ------------------- | ----------- | ----------------------------------- | ------ |
+| :-----------------: | :---------: | :---------------------------------: | :----: |
 | RAK3172-SIP-8-SM-NI | RAK3172-SiP | 8XX MHz for RU864/IN865/EU868       | 305041 |
 | RAK3172-SIP-9-SM-NI | RAK3172-SiP | 9XX MHz for US915/AU915/KR920/AS923 | 306039 |
 

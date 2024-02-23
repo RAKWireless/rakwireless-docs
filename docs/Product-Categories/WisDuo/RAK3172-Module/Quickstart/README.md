@@ -51,7 +51,7 @@ After that, you can then add **RAKwireless RUI STM32 Boards** via Arduino board 
 #### List of Acronyms
 
 | Acronym | Definition                                       |
-| ------- | ------------------------------------------------ |
+| :-----: | :----------------------------------------------: |
 | DFU     | Device Firmware Upgrade                          |
 | JTAG    | Joint Test Action Group                          |
 | LoRa    | Long Range                                       |
@@ -294,7 +294,7 @@ You can use any of the pins below as Digital Pin.
 
 
 | **Pin Name** | **Alternative Pin Usage** |
-| ------------ | ------------------------- |
+| :----------: | :-----------------------: |
 | PA0          |             -             |
 | PA1          |             -             |
 | PA4          | SPI                       |
@@ -321,7 +321,7 @@ You can use any of the pins below as Digital Pin.
 The pins listed below must not be used.
 
 | **Pin name** | **Pin Usage**                                                                                                                                     |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| :----------: | :-----------------------------------------------------------------------------------------------------------------------------------------------: |
 | PA2          | UART2_TX                                                                                                                                          |
 | PA3          | UART2_RX                                                                                                                                          |
 | PA13         | SWDIO                                                                                                                                             |
@@ -360,7 +360,7 @@ void loop()
 You can use any of the pins below as Analog Input.
 
 | **Analog Port** | **Pin Name** |
-| --------------- | ------------ |
+| :-------------: | :----------: |
 | ADC1            | PB3          |
 | ADC2            | PB4          |
 | ADC3            | PB2          |
@@ -404,7 +404,7 @@ There are two UART peripherals available on the RAK3172 module. There are also d
 
 
 | **Serial Port**   | **Serial Instance Assignment** | **Default Mode** |
-| ----------------- | ------------------------------ | ---------------- |
+| :---------------: | :----------------------------: | :--------------: |
 | UART1 (pins 4, 5) | Serial1                        | Custom Mode      |
 | UART2 (pins 1, 2) | Serial                         | AT Command       |
 
@@ -438,7 +438,7 @@ void loop()
 There is one I2C peripheral available on RAK3172.
 
 | **I2C Pin Number** | **I2C Pin Name** |
-| ------------------ | ---------------- |
+| :----------------: | :--------------: |
 | PA12               | I2C_SCL          |
 | PA11               | I2C_SDA          |
 
@@ -1471,7 +1471,7 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 **List of band parameter options**
 
 | Code | Regional Band |
-| ---- | ------------- |
+| :--: | :-----------: |
 | 0    | EU433         |
 | 1    | CN470         |
 | 2    | RU864         |
@@ -2154,7 +2154,7 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 **List of band parameter options**
 
 | Code | Regional Band |
-| ---- | ------------- |
+| :--: | :-----------: |
 | 0    | EU433         |
 | 1    | CN470         |
 | 2    | RU864         |
@@ -2430,7 +2430,7 @@ ChirpStack LoraServer supports multiple system configurations, with only one by 
 
 1. Choose the **Application** created in the previous step, then select the **DEVICES** tab, as shown in **Figure 209** and **Figure 210**.
 
-2. Once done, click the "**+ CREATE**" button.
+2. Once done, click the **+ CREATE** button.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/27.application-available.png"
@@ -2445,7 +2445,7 @@ ChirpStack LoraServer supports multiple system configurations, with only one by 
   caption="Device Tab of an Application"
 />
 
-3. Once inside the **DEVICES** tab, create a new device (LoRaWAN node) by clicking on the "**+ CREATE**" button.
+3. Once inside the **DEVICES** tab, create a new device (LoRaWAN node) by clicking on the **+ CREATE** button.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/29.adding-node.png"
@@ -2601,7 +2601,7 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 **List of band parameter options**
 
 | Code | Regional Band |
-| ---- | ------------- |
+| :--: | :-----------: |
 | 0    | EU433         |
 | 1    | CN470         |
 | 2    | RU864         |
@@ -2675,7 +2675,7 @@ Join command format: **`AT+JOIN=w:x:y:z`**
 | w         | Join command - 1: joining, 0: stop joining.                  |
 | x         | Auto-join config - 1: auto-join on power-up, 0: no auto-join |
 | y         | Reattempt interval in seconds (7-255) - 8 is the default.    |
-| z         | Number of join attempts (0-255) - 0 is the default.              |
+| z         | Number of join attempts (0-255) - 0 is the default.          |
 
 After 5 or 6 seconds, if the request is successfully received by a LoRa gateway, you should see the JOINED status reply.
 
@@ -2816,7 +2816,7 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 **List of band parameter options**
 
 | Code | Regional Band |
-| ---- | ------------- |
+| :--: | :-----------: |
 | 0    | EU433         |
 | 1    | CN470         |
 | 2    | RU864         |
@@ -2886,7 +2886,7 @@ Join command format: **`AT+JOIN=w:x:y:z`**
 | w         | Join command - 1: joining, 0: stop joining.                  |
 | x         | Auto-join config - 1: auto-join on power-up, 0: no auto-join |
 | y         | Reattempt interval in seconds (7-255) - 8 is the default.    |
-| z         | Number of join attempts (0-255) - 0 is the default.              |
+| z         | Number of join attempts (0-255) - 0 is the default.          |
 
 4. After 5 or 6 seconds, if the request is successfully received by a LoRa gateway, then you should see the JOINED status reply.
 
@@ -3043,7 +3043,7 @@ You can recover your device by using the `.hex` file in the datasheet and upload
 Refer to the table for the minimum hardware and software required to perform the firmware upgrade via UART2:
 
 | Hardware/Software | Requirement                                   |
-| ----------------- | --------------------------------------------- |
+| :---------------: | :-------------------------------------------: |
 | Computer          | A Windows/Ubuntu/Mac computer                 |
 | Firmware File     | Bin firmware file downloaded from the website |
 | Others            | A USB to TTL module                           |

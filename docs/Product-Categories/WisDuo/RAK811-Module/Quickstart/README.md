@@ -47,7 +47,7 @@ Before going through the step in the installation guide of the RAK811 WisDuo LPW
 #### List of Acronyms
 
 | Acronym | Definition                          |
-| ------- | ----------------------------------- |
+| :-----: | :---------------------------------: |
 | DFU     | Device Firmware Upgrade             |
 | JTAG    | Joint Test Action Group             |
 | LoRa    | Long Range                          |
@@ -1097,7 +1097,7 @@ Refer to the [RAKDAP1 Flash and Debug Tool](/Product-Categories/Accessories/RAKD
 Refer to the table for the minimum hardware and software required to perform the firmware upgrade using J-Link.
 
 | Hardware/Software | Requirement                                   |
-| ----------------- | --------------------------------------------- |
+| :---------------: | :-------------------------------------------: |
 | Computer          | A Windows/Ubuntu/Mac computer                 |
 | Firmware File     | Bin firmware file downloaded from the website |
 | Others            | A USB to TTL module                           |

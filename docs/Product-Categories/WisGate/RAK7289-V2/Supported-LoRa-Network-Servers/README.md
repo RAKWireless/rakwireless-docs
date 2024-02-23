@@ -1951,3 +1951,120 @@ In this section, you will learn how to add RAK7289V2/RAK7289CV2 WisGate Edge Pro
 ThingPark is Actility’s platform, in which you can register your LoRaWAN gateway and end devices. ThingPark offers a user-friendly dashboard, in which you can monitor different information about the gateway/end device like status, radio traffic, statistics, and more. Together with HTTPS integration, you can send the data received from the end nodes to an Application server for post-processing and visualizing.
 
 For the complete step-by-step tutorial, refer to the [How to Add RAK WisGate Edge Gateway V2 in ThingPark - Actility ThingPark Guide](https://docs.rakwireless.com/Knowledge-Hub/Learn/How-to-Add-RAK-WisGate-Edge-Gateway-V2-in-ThingPark-Actility-ThingPark-Guide/).
+
+
+
+## Chirp Wireless
+
+[Chirp Wireless](https://chirpwireless.io/) is a leading global wireless network provider, offering reliable and extensive IoT connectivity solutions for outdoor and indoor use. Chirp's main objective is to simplify IoT deployments for its clients. 
+
+By providing multiple connectivity options and offering white-label business-specific modules, Chirp eliminates the need for multiple networks, platforms, and billing systems. Chirp offers its visualization platform, empowering clients to effortlessly implement IoT devices and visualize data with a simple click.
+
+In this guide, you will learn how to connect a WisGate Edge V2 gateway to the LNS solution provided by Chirp Wireless.
+
+### Adding the Gateway
+
+1. Log in to your account at the [Chirp Wireless login page](https://app.chirpwireless.io/). If you don't have an account, create one.
+
+<rk-img
+src="/assets/images/wisgate/rak7289-v2/supported-lora-network-servers/chirpwireless/1.chirps-login-page.png"
+width="100%"
+caption="Chirp's login page"
+/>
+
+2. Once logged in, navigate to **Gateways** > **+Add gateway** > **3rd Party Gateway**.
+
+<rk-img
+src="/assets/images/wisgate/rak7289-v2/supported-lora-network-servers/chirpwireless/2.adding-a-gateway.png"
+width="100%"
+caption="Adding a gateway"
+/>
+
+3. Fill in the needed data and click **Next**.
+
+- **Name** - Enter a name for the gateway that will help you identify it easily.
+- **Region** – This is the LoRaWAN region of the gateway. For this example, we will be using the EU868.
+- **Gateway EUI** – This is the EUI of the gateway. You can find it either on a sticker at the back of the device or in the **Web UI** > **Dashboard** > **Overview**.
+
+<rk-img
+src="/assets/images/wisgate/rak7289-v2/supported-lora-network-servers/chirpwireless/3.gateway-information.png"
+width="100%"
+caption="Gateway information"
+/>
+
+4. After confirmation, download the `certs.zip` containing the needed certificates and copy the LNS address to the clipboard. Click **Continue**.
+
+<rk-img
+src="/assets/images/wisgate/rak7289-v2/supported-lora-network-servers/chirpwireless/4.certificates-and-address-generation.png"
+width="100%"
+caption="Certificates and address generation"
+/>
+
+5. Now, your gateway is successfully added to the Chirp platform. Click **Continue** to view your gateway list.
+
+<rk-img
+src="/assets/images/wisgate/rak7289-v2/supported-lora-network-servers/chirpwireless/5.gateway-successfully-added.png"
+width="100%"
+caption="Gateway successfully added"
+/>
+
+:::tip 📝 NOTE
+If you didn't save the certificates or LNS address, you can navigate to the gateway's **Settings** tab.
+:::
+
+<rk-img
+src="/assets/images/wisgate/rak7289-v2/supported-lora-network-servers/chirpwireless/6.gateway-settings.png"
+width="100%"
+caption="Gateway settings"
+/>
+
+### Configuring the Gateway
+
+1. To configure the gateway, access it via the Web UI. To learn how to do that, refer to the Quick Start Guide for each gateway.
+2. Navigate to **LoRa** > **Configuration** > **Work mode** and select **Basics station**. 
+
+- **Server URL** - Put the LNS Address you copied from Chirp's dashboard.
+- **Server Port** - Enter the port number `443`.
+-  **Authentication Mode** - Select *TLS Server & Client Authentication*.
+
+<rk-img
+src="/assets/images/wisgate/rak7289-v2/supported-lora-network-servers/chirpwireless/7.gateway-configuration.png"
+width="100%"
+caption="Gateway configuration"
+/>
+
+3. Unzip the certificates.
+
+<rk-img
+src="/assets/images/wisgate/rak7289-v2/supported-lora-network-servers/chirpwireless/8.certificates.png"
+width="50%"
+caption="Certificates"
+/>
+
+4. Upload each certificate to the corresponding field in the Web UI and click **Save changes**.
+
+| Field                  | Certificate |
+| :--------------------: | :---------: |
+| Trust (CA Certificate) | `tc.trust`  |
+| Client certificate     | `tc.crt`    |
+| Client key             | `tc.key`    |
+
+<rk-img
+src="/assets/images/wisgate/rak7289-v2/supported-lora-network-servers/chirpwireless/9.uploading-certificates.png"
+width="100%"
+caption="Uploading certificates"
+/>
+
+5. If set up correctly, the status of the gateway on the Chirp's dashboard will show as online. It may take a couple of minutes, so wait till the dashboard appears.
+
+<rk-img
+src="/assets/images/wisgate/rak7289-v2/supported-lora-network-servers/chirpwireless/10.gateway-is-online.png"
+width="100%"
+caption="Gateway is online"
+/>
+
+<rk-img
+src="/assets/images/wisgate/rak7289-v2/supported-lora-network-servers/chirpwireless/11.gateway-overview.png"
+width="100%"
+caption="Gateway overview"
+/>

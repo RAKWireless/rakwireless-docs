@@ -90,6 +90,19 @@ The hardware specification is categorized into five parts. It discusses the pino
   caption="Pin Out Diagram for RAK813"
 />
 
+:::warning ⚠️ WARNING
+When using `LORA_ANT` and `BLE_ANT` pins for antenna and not the IPEX connector variant, there are design considerations to make sure optimum RF performance.
+
+- RF trace must be away from interference (switching node of DC-DC supply, high current/voltage pulses from controllers of inductive load like motor, signal generators, etc.)
+- RF trace must have 50&nbsp;Ohms impedance. It is advisable to use an impedance simulation software tool to achieve this requirement.
+- If using an external antenna connector, make it close to the `LORA_ANT` and `BLE_ANT` pins.
+- Ground plane optimization is critical on certain antenna types like monopole.
+- GND trace used for RF path return must be directly connected to the GND plane and not be treated as thermal relief.
+- It is recommended for the RF trace to be routed in a curve and not in a sharp 90&nbsp;degrees.
+
+In addition, with a commitment to making IoT easy, RAK offers a dedicated service for [Antenna RF Design](https://store.rakwireless.com/products/antenna-rf-design-service-including-pcb-design-tuning-matching-and-rf-test) which includes PCB design, tuning, matching, and RF testing.
+:::
+
 | Pin Number | Name           | Type | Description                     |
 | ---------- | -------------- | ---- | ------------------------------- |
 | 1          | GND            |      | Ground connection               |
@@ -131,7 +144,7 @@ The hardware specification is categorized into five parts. It discusses the pino
 ##### LoRa
 
 | Characteristics         | Condition | Minimum | Typical | Maximum | Unit |
-| ----------------------- | --------- | ------- | ------- | ------- | ---- |
+| :---------------------: | :-------: | :-----: | :-----: | :-----: | :--: |
 | **LoRa Transmit**       | TX Power  |         | 14      | 20      | dBm  |
 | **LoRa RX Sensitivity** | RSSI      | -130    |         |         | dBm  |
 |                         | SNR       | -15     |         |         | dB   |
@@ -139,7 +152,7 @@ The hardware specification is categorized into five parts. It discusses the pino
 ##### BLE
 
 | Characteristics        | Condition   | Minimum | Typical | Maximum | Unit |
-| ---------------------- | ----------- | ------- | ------- | ------- | ---- |
+| :--------------------: | :---------: | :-----: | :-----: | :-----: | :--: |
 | **BLE Transmit**       | TX Power    |         | 0       | 4       | dBm  |
 | **BLE RX Sensitivity** | Sensitivity | -97     |         |         | dBm  |
 
@@ -168,13 +181,13 @@ The hardware specification is categorized into five parts. It discusses the pino
 ##### Recommended Operation Rating
 
 |     | Minimum | Typical | Maximum | Unit |
-| --- | ------- | ------- | ------- | ---- |
+| :-: | :-----: | :-----: | :-----: | :--: |
 | VCC | 3.15    | 3.3     | 3.45    | V    |
 
 ##### Current Consumption
 
 | Condition  | Minimum          | Typical | Maximum | Unit |
-| ---------- | ---------------- | ------- | ------- | ---- |
+| :--------: | :--------------: | :-----: | :-----: | :--: |
 | TX Mode    | 30 (14&nbsp;dBm) |         |         | mA   |
 | RX Mode    | 5.5              |         |         | mA   |
 | Sleep Mode | 7.2              |         |         | uA   |
@@ -203,6 +216,6 @@ The hardware specification is categorized into five parts. It discusses the pino
 ### Ordering Information
 
 | Model Name | Operation Frequency                 | Output Power  |
-| ---------- | ----------------------------------- | ------------- |
+| :--------: | :---------------------------------: | :-----------: |
 | RAK813-HF  | 865-870&nbsp;MHz / 920~928&nbsp;MHz | 5-20&nbsp;dBm |
 | RAK813-LF  | 433-435&nbsp;MHz / 470~510&nbsp;MHz | 5-20&nbsp;dBm |

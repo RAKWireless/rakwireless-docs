@@ -85,7 +85,7 @@ The hardware specification discusses the interfaces, pinouts and its correspondi
 #### Interfaces
 
 | Module  | Interfaces              |
-| ------- | ----------------------- |
+| :-----: | :---------------------: |
 | RAK4270 | UART1, UART2, I2C, GPIO |
 
 #### Pin Definition
@@ -96,8 +96,18 @@ The hardware specification discusses the interfaces, pinouts and its correspondi
   caption="RAK4270 Pinout"
 />
 
+
 :::warning ⚠️ WARNING
-When using `RF` pin for antenna connection and not the IPEX connector variant, make sure there is no ground plane (in all layers of the PCB) under the RF trace path to eliminate the possible effects of unwanted stray capacitance which can cause degradation of the RF signal levels.
+When using `RF` pin for antenna and not the IPEX connector variant, there are design considerations to make sure optimum RF performance.
+
+- RF trace must be away from interference (switching node of DC-DC supply, high current/voltage pulses from controllers of inductive load like motor, signal generators, etc.)
+- RF trace must have 50&nbsp;Ohms impedance. It is advisable to use an impedance simulation software tool to achieve this requirement.
+- If using an external antenna connector, make it close to the `RF` pin.
+- Ground plane optimization is critical on certain antenna types like monopole.
+- GND trace used for RF path return must be directly connected to the GND plane and not be treated as thermal relief.
+- It is recommended for the RF trace to be routed in a curve and not in a sharp 90&nbsp;degrees.
+
+In addition, with a commitment to making IoT easy, RAK offers a dedicated service for [Antenna RF Design](https://store.rakwireless.com/products/antenna-rf-design-service-including-pcb-design-tuning-matching-and-rf-test) which includes PCB design, tuning, matching, and RF testing.
 :::
 
 | Pin | Name          | Type | Description                                                       | Alternate Functions                                             |
@@ -127,7 +137,7 @@ When using `RF` pin for antenna connection and not the IPEX connector variant, m
 ##### LoRa Transceiver IC Connection to RAK4270 Internal STM32
 
 | **LoRa IC Pin** | **STM32 GPIO** |
-| --------------- | -------------- |
+| :-------------: | :------------: |
 | DIO1            | PB1            |
 | DIO2            | PB5            |
 | SPI1_SCK        | PA5            |
@@ -141,7 +151,7 @@ When using `RF` pin for antenna connection and not the IPEX connector variant, m
 ##### RF Switch Control Logic table
 
 | **ANT_SW** | **DIO2** | **Condition** |
-| ---------- | -------- | ------------- |
+| :--------: | :------: | :-----------: |
 | 1          | 0        | RX mode       |
 | 0          | 1        | TX mode       |
 
@@ -183,17 +193,51 @@ It is recommended to add four decoupling capacitors near the RAK4270 power suppl
 
 ##### Operating Frequencies
 
-
-| Module     | Region        | Frequency |
-| ---------- | ------------- | --------- |
-| RAK4270(L) | Europe        | EU433     |
-|            | China         | CN470     |
-| RAK4270(H) | Europe        | EU868     |
-|            | North America | US915     |
-|            | Australia     | AU915     |
-|            | Korea         | KR920     |
-|            | Asia          | AS923     |
-|            | India         | IN865     |
+<table>
+  <thead style="text-align: center">
+    <tr>
+      <th>Module</th>
+      <th>Region</th>
+      <th>Frequency</th>
+    </tr>
+  </thead>
+  <tbody style="text-align: center">
+    <tr>
+      <td rowspan=2>RAK4270(L)</td>
+      <td>Europe</td>
+      <td>EU433</td>
+    </tr>
+    <tr>
+      <td>China</td>
+      <td>CN470</td>
+    </tr>
+    <tr>
+      <td rowspan=6>RAK4270(H)</td>
+      <td>Europe</td>
+      <td>EU868</td>
+    </tr>
+    <tr>
+      <td>North America</td>
+      <td>US915</td>
+    </tr>
+    <tr>
+      <td>Australia</td>
+      <td>AU915</td>
+    </tr>
+    <tr>
+      <td>Korea</td>
+      <td>KR920</td>
+    </tr>
+    <tr>
+      <td>Asia</td>
+      <td>AS923</td>
+    </tr>
+    <tr>
+      <td>India</td>
+      <td>IN865</td>
+    </tr>
+  </tbody>
+</table>
 
 #### Electrical Characteristics
 
@@ -209,20 +253,20 @@ It is recommended to add four decoupling capacitors near the RAK4270 power suppl
 ##### Operating Voltage
 
 | Feature | Minimum | Typical | Maximum | Unit      |
-| ------- | ------- | ------- | ------- | --------- |
+| :-----: | :-----: | :-----: | :-----: | :-------: |
 | VCC     | 2.0     | 3.3     | 3.6     | Volts (V) |
 
 ##### Operating Current
 
 | Feature           | Condition | Minimum                             | Typical | Maximum | Unit |
-| ----------------- | --------- | ----------------------------------- | ------- | ------- | ---- |
+| :---------------: | :-------: | :---------------------------------: | :-----: | :-----: | :--: |
 | Operating Current | TX Mode   | 35.4 (@&nbsp;1&nbsp;dBm SF7 868Mhz) |         |         | mA   |
 |                   | RX Mode   | 15.8                                |         |         | mA   |
 
 ##### Sleep Current
 
 | Feature             | Condition | Minimum (2.0V) | Typical (3.3V) | Maximum | Unit |
-| ------------------- | --------- | -------------- | -------------- | ------- | ---- |
+| :-----------------: | :-------: | :------------: | :------------: | :-----: | :--: |
 | Current Consumption | EU868     | 1.74           | 2.19           |         | μA   |
 |                     | US915     | 1.61           | 2.31           |         | μA   |
 
@@ -249,13 +293,13 @@ It is recommended to add four decoupling capacitors near the RAK4270 power suppl
 ##### Operating Temperature
 
 | Feature               | Minimum | Typical | Maximum | Unit |
-| --------------------- | ------- | ------- | ------- | ---- |
+| :-------------------: | :-----: | :-----: | :-----: | :--: |
 | Operating Temperature | -30     | 25      | 85      | °C   |
 
 ##### Storage Temperature
 
 | Feature             | Minimum | Typical | Maximum | Unit |
-| ------------------- | ------- | ------- | ------- | ---- |
+| :-----------------: | :-----: | :-----: | :-----: | :--: |
 | Storage Temperature | -40     |         | 85      | °C   |
 
 ##### Recommended Reflow Profile
@@ -292,7 +336,7 @@ The **hex file** contains both the bootloader and the application code. You need
 #### Firmware
 
 | Model   | Version   | Source                                                                                          |
-| ------- | --------- | ----------------------------------------------------------------------------------------------- |
+| :-----: | :-------: | :---------------------------------------------------------------------------------------------: |
 | RAK4270 | V3.3.0.18 | [Download](https://downloads.rakwireless.com/LoRa/RAK4270/Firmware/RAK4270_Latest_Firmware.zip) |
 
 

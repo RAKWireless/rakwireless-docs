@@ -54,7 +54,7 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Instead, inst
 #### List of Acronyms
 
 | Acronym | Definition                                       |
-| ------- | ------------------------------------------------ |
+| :-----: | :----------------------------------------------: |
 | DFU     | Device Firmware Upgrade                          |
 | JTAG    | Joint Test Action Group                          |
 | LoRa    | Long Range                                       |
@@ -287,7 +287,7 @@ This section discusses how to use and access RAK3172-SiP pins using RUI3 API. It
 You can use any of the pins below as Digital Pin.
 
 | **Port Name** | **Alternative Pin Usage** |
-| ------------- | ------------------------- |
+| :-----------: | :-----------------------: |
 | PA4           | SPI1_NSS                  |
 | PA5           | SPI1_CLK                  |
 | PA6           | SPI1_MISO                 |
@@ -332,7 +332,7 @@ In **Figure 21**, the available I/O pins are shown in purple.
 The pins listed below must not be used.
 
 | **Port Name** | **Pin Usage** | **Pin Number** |
-| ------------- | ------------- | :------------: |
+| :-----------: | :-----------: | :------------: |
 | PA2           | UART2_TX      |       29       |
 | PA3           | UART2_RX      |       30       |
 | PA13          | SWDIO         |       1        |
@@ -367,7 +367,7 @@ void loop()
 You can use any of the pins below as Analog Input.
 
 | **Port Name** | **ADC** | **Pin Number** |
-| ------------- | ------- | :------------: |
+| :-----------: | :-----: | :------------: |
 | PB3           | PIN_A0  |       14       |
 | PB4           | PIN_A1  |       15       |
 | PB2           | PIN_A2  |       57       |
@@ -415,7 +415,7 @@ There are two UART peripherals available on the RAK3172-SiP module. There are al
 UART Pin map table
 
 | **Port Name** | **Serial Port** | **Serial Instance Assignment** | **Default Mode** | **Pin Number** |
-| ------------- | --------------- | :----------------------------: | ---------------- | :------------: |
+| :-----------: | :-------------: | :----------------------------: | :--------------: | :------------: |
 | PB6           | UART1_RX        |            Serial1             | Custom Mode      |       17       |
 | PB7           | UART1_TX        |            Serial1             | Custom Mode      |       18       |
 | PA3           | UART2_RX        |             Serial             | AT Command       |       30       |
@@ -452,7 +452,7 @@ void loop()
 There is one I2C peripheral available on RAK3172-SiP Module.
 
 | **Port Name** | **I2C Pin Name** | **Pin Number** |
-| ------------- | ---------------- | -------------- |
+| :-----------: | :--------------: | :------------: |
 | PA9           | I2C_SCL          | 50             |
 | PA10          | I2C_SDA          | 62             |
 
@@ -543,7 +543,7 @@ The Arduino Serial Monitor shows the I2C device found.
 If your RUI3 project uses SPI, then PA4 to PA7 pins are reserved for RUI3 SPI interface.
 
 | **Port Name** | **SPI Pin Name** | **Pin Number** |
-| ------------- | ---------------- | -------------- |
+| :-----------: | :--------------: | :------------: |
 | PA4           | SPI1_CS          | 31             |
 | PA5           | SPI1_CLK         | 32             |
 | PA6           | SPI1_MISO        | 33             |
@@ -1123,7 +1123,7 @@ AT+BAND=4
 **List of band parameter options**
 
 | Code | Regional Band |
-| ---- | ------------- |
+| :--: | :-----------: |
 | 0    | EU433         |
 | 1    | CN470         |
 | 2    | RU864         |
@@ -1298,7 +1298,7 @@ AT+BAND=4
 Join command format: **`AT+JOIN=w:x:y:z`**
 
 | Parameter | Description                                                  |
-| --------- | ------------------------------------------------------------ |
+| :-------: | :----------------------------------------------------------: |
 | w         | Join command - 1: joining, 0: stop joining.                  |
 | x         | Auto-join config - 1: auto-join on power-up, 0: no auto-join |
 | y         | Reattempt interval in seconds (7-255) - 8 is the default.    |
@@ -1792,7 +1792,7 @@ AT+BAND=4
 **List of band parameter options**
 
 | Code | Regional Band |
-| ---- | ------------- |
+| :--: | :-----------: |
 | 0    | EU433         |
 | 1    | CN470         |
 | 2    | RU864         |
@@ -2223,7 +2223,7 @@ AT+BAND=4
 **List of band parameter options**
 
 | Code | Regional Band         |
-| ---- | --------------------- |
+| :--: | :-------------------: |
 | 0    | EU433 (Not Supported) |
 | 1    | CN470 (Not Supported) |
 | 2    | RU864                 |
@@ -2284,7 +2284,7 @@ AT+JOIN=1:0:10:8
 Join command format: **`AT+JOIN=w:x:y:z`**
 
 | Parameter | Description                                                  |
-| --------- | ------------------------------------------------------------ |
+| :-------: | :----------------------------------------------------------: |
 | w         | Join command - 1: joining, 0: stop joining.                  |
 | x         | Auto-join config - 1: auto-join on power-up, 0: no auto-join |
 | y         | Reattempt interval in seconds (7-255) - 8 is the default.    |
@@ -2419,7 +2419,7 @@ AT+BAND=4
 **List of band parameter options**
 
 | Code | Regional Band         |
-| ---- | --------------------- |
+| :--: | :-------------------: |
 | 0    | EU433 (Not Supported) |
 | 1    | CN470 (Not Supported) |
 | 2    | RU864                 |
@@ -2477,7 +2477,7 @@ AT+JOIN=1:0:10:8
 Join command format: **`AT+JOIN=w:x:y:z`**
 
 | Parameter | Description                                                  |
-| --------- | ------------------------------------------------------------ |
+| :-------: | :----------------------------------------------------------: |
 | w         | Join command - 1: joining, 0: stop joining.                  |
 | x         | Auto-join config - 1: auto-join on power-up, 0: no auto-join |
 | y         | Reattempt interval in seconds (7-255) - 8 is the default.    |
@@ -2634,7 +2634,7 @@ You can recover your device by using the .hex file in the datasheet and uploadin
 Refer to the table for the minimum hardware and software required to perform the firmware upgrade via UART2:
 
 | Hardware/Software | Requirement                                   |
-| ----------------- | --------------------------------------------- |
+| :---------------: | :-------------------------------------------: |
 | Computer          | A Windows/Ubuntu/Mac computer                 |
 | Firmware File     | Bin firmware file downloaded from the website |
 | Others            | A USB to TTL module                           |

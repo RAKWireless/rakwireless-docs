@@ -81,7 +81,16 @@ The hardware specification is categorized into five parts. It covers the pinouts
 />
 
 :::warning ⚠️ WARNING
-When using `RF` pin for antenna connection and not the IPEX connector variant, make sure there is no ground plane (in all layers of the PCB) under the RF trace path to eliminate the possible effects of unwanted stray capacitance which can cause degradation of the RF signal levels.
+When using `RF` pin for antenna and not the IPEX connector variant, there are design considerations to make sure optimum RF performance.
+
+- RF trace must be away from interference (switching node of DC-DC supply, high current/voltage pulses from controllers of inductive load like motor, signal generators, etc.)
+- RF trace must have 50&nbsp;Ohms impedance. It is advisable to use an impedance simulation software tool to achieve this requirement.
+- If using an external antenna connector, make it close to the `RF` pin.
+- Ground plane optimization is critical on certain antenna types like monopole.
+- GND trace used for RF path return must be directly connected to the GND plane and not be treated as thermal relief.
+- It is recommended for the RF trace to be routed in a curve and not in a sharp 90&nbsp;degrees.
+
+In addition, with a commitment to making IoT easy, RAK offers a dedicated service for [Antenna RF Design](https://store.rakwireless.com/products/antenna-rf-design-service-including-pcb-design-tuning-matching-and-rf-test) which includes PCB design, tuning, matching, and RF testing.
 :::
 
 | Pin | Name     | I/O | Description                                     |
@@ -126,7 +135,7 @@ When using `RF` pin for antenna connection and not the IPEX connector variant, m
 ##### LoRa Transceiver Mode
 
 | **LoRa Mode** | **VCTL1 GPIO** | **VCTL2 GPIO** |
-| :------------ | :------------: | :------------: |
+| :-----------: | :------------: | :------------: |
 | TX mode       |       H        |       L        |
 | RX mode       |       L        |       H        |
 
@@ -141,16 +150,51 @@ L level (0&nbsp;V)
 
 The board supports the following LoRaWAN frequency channels shown in the table below. The frequency parameter is easy to configure as you go through the device configuration setup. RAK4200 has two different types based on its frequency: RAK4200(L) for low frequency and RAK4200(H) for high frequency.
 
-|     **Module**      |  **Region**   | **Frequency (MHz)** |
-| :-----------------: | :-----------: | :-----------------: |
-| **RAK4200** **(L)** |    Europe     |        EU433        |
-|                     |     China     |        CN470        |
-| **RAK4200** **(H)** |    Indian     |        IN865        |
-|                     |    Europe     |        EU868        |
-|                     | North America |        US915        |
-|                     |   Australia   |        AU915        |
-|                     |     Korea     |        KR920        |
-|                     |     Asia      |        AS923        |
+<table>
+  <thead style="text-align: center">
+    <tr>
+      <th>Module</th>
+      <th>Region</th>
+      <th>Frequency (MHz)</th>
+    </tr>
+  </thead>
+  <tbody style="text-align: center">
+    <tr>
+      <td rowspan=2>RAK3172(L)</td>
+      <td>Europe</td>
+      <td>EU433</td>
+    </tr>
+    <tr>
+      <td>China</td>
+      <td>CN470</td>
+    </tr>
+    <tr>
+      <td rowspan=6>RAK4200 (H)</td>
+      <td>Indian</td>
+      <td>IN865</td>
+    </tr>
+    <tr>
+      <td>Europe</td>
+      <td>EU868</td>
+    </tr>
+    <tr>
+      <td>North America</td>
+      <td>US915</td>
+    </tr>
+    <tr>
+      <td>Australia</td>
+      <td>AU915</td>
+    </tr>
+    <tr>
+      <td>Korea</td>
+      <td>KR920</td>
+    </tr>
+    <tr>
+      <td>Asia</td>
+      <td>AS923</td>
+    </tr>
+  </tbody>
+</table>
 
 #### Electrical Characteristics
 
@@ -161,8 +205,8 @@ Several current consumption ratings are provided below for a detailed RAK4200 Wi
 ##### Operating Voltage
 
 | Feature | Minimum | Typical | Maximum | Unit      |
-| ------- | ------- | ------- | ------- | --------- |
-| VCC     | 2.0     | 3.3     | 3.6    | Volts (V) |
+| :-----: | :-----: | :-----: | :-----: | :-------: |
+| VCC     | 2.0     | 3.3     | 3.6     | Volts (V) |
 
 ##### Laboratory Testing
 
@@ -202,14 +246,14 @@ The RAK4200 WisDuo LPWAN Module takes **46.179&nbsp;ms** to receive a LoRa packe
 ##### Operating Current
 
 | Feature           | Condition | Minimum | Typical | Maximum | Unit |
-| ----------------- | --------- | ------- | ------- | ------- | ---- |
+| :---------------: | :-------: | :-----: | :-----: | :-----: | :--: |
 | Operating Current | TX Power  | 68.4    |         |         | mA   |
 |                   | RX Mode   | 17.1    |         |         | mA   |
 
 ##### Sleep Current
 
 | Feature             | Condition | Minimum (2.0V) | Typical (3.3V) | Maximum | Unit |
-| ------------------- | --------- | -------------- | -------------- | ------- | ---- |
+| :-----------------: | :-------: | :------------: | :------------: | :-----: | :--: |
 | Current Consumption | EU868     | 1.08           | 8.66           |         | μA   |
 |                     | US915     | 1.14           | 9.40           |         | μA   |
 |                     | CN470     | 1.13           | 7.88           |         | μA   |
@@ -275,7 +319,7 @@ The **hex file** contains both the bootloader and the application code. You need
 #### Firmware
 
 | Model Source | Source                                                                                          |
-| ------------ | ----------------------------------------------------------------------------------------------- |
+| :----------: | :---------------------------------------------------------------------------------------------: |
 | RAK4200      | [Download](https://downloads.rakwireless.com/LoRa/RAK4200/Firmware/RAK4200_Latest_Firmware.zip) |
 
 

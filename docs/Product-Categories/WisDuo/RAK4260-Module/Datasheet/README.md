@@ -87,11 +87,20 @@ Provided in this section is the pinout of the RAK4260 WisDuo LPWAN Module.
 />
 
 :::warning ⚠️ WARNING
-When using `RFC` pin for antenna connection and not the IPEX connector variant, make sure there is no ground plane (in all layers of the PCB) under the RF trace path to eliminate the possible effects of unwanted stray capacitance which can cause degradation of the RF signal levels.
+When using `RFC` pin for antenna and not the IPEX connector variant, there are design considerations to make sure optimum RF performance.
+
+- RF trace must be away from interference (switching node of DC-DC supply, high current/voltage pulses from controllers of inductive load like motor, signal generators, etc.)
+- RF trace must have 50&nbsp;Ohms impedance. It is advisable to use an impedance simulation software tool to achieve this requirement.
+- If using an external antenna connector, make it close to the `RFC` pin.
+- Ground plane optimization is critical on certain antenna types like monopole.
+- GND trace used for RF path return must be directly connected to the GND plane and not be treated as thermal relief.
+- It is recommended for the RF trace to be routed in a curve and not in a sharp 90&nbsp;degrees.
+
+In addition, with a commitment to making IoT easy, RAK offers a dedicated service for [Antenna RF Design](https://store.rakwireless.com/products/antenna-rf-design-service-including-pcb-design-tuning-matching-and-rf-test) which includes PCB design, tuning, matching, and RF testing.
 :::
 
 |  PIN  |     NAME      |  I/O  |                Description                 |
-| :---: | :-----------: | :---: | :----------------------------------------: |
+| ----- | ------------- | ----- | ------------------------------------------ |
 |   1   |      GND      |   -   |                   Ground                   |
 |   2   |      RFC      |   -   |                  RF Port                   |
 |   3   |      GND      |   -   |                   Ground                   |
@@ -142,7 +151,7 @@ When using `RFC` pin for antenna connection and not the IPEX connector variant, 
 ##### RF Switch control logic table
 
 | **LoRa Mode** | **BAND_SEL** | **TX/RX** | **PA28** |
-| :------------ | :----------: | :-------: | :------: |
+| :-----------: | :----------: | :-------: | :------: |
 | Shutdown      |      L       |     L     |    L     |
 | PA_BOOST      |      L       |     H     |    H     |
 | RFI_HF (RX)   |      H       |     L     |    H     |

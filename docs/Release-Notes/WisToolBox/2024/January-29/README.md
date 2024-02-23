@@ -31,3 +31,4 @@ logo: /assets/images/release-notes/WisToolBox.png
 | 1   | UI Improvement - Hiding Auxiliary Sensors | Users can now hide auxiliary sensors for a cleaner interface. |
 | 2   | Stability and UI Tweaks                   | Addressed bugs for improved stability.                        |
 | 3   |                                           | Made minor UI enhancements for a smoother user experience.    |
+

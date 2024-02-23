@@ -203,7 +203,7 @@ In the **LORA & LORAWAN PARAMETERS** tab, you can set and see all the informatio
 The table shows the probe, module combination, and functionalities.
 
 | Probe | Module Combination |             |          | Function            |                     |          |
-| ----- | ------------------ | ----------- | -------- | ------------------- | ------------------- | -------- |
+| :---: | :----------------: | :---------: | :------: | :-----------------: | :-----------------: | :------: |
 |       |                    | Temperature | Humidity | Barometric Pressure | 3-Axis Acceleration | Gas      |
 | A     | RAK1901            | &#10004;    | &#10004; |                     |                     |          |
 | B     | RAK1902            | &#10004;    | &#10004; | &#10004;            |                     |          |
@@ -236,18 +236,20 @@ The table shows the probe, module combination, and functionalities.
   caption="Sensor parameters"
 />
 
-- **Sensor rule settings** - Select the data sending rule type.
+- **Detailed sensor settings** - Configure the parameter for sending the data.
 
 <rk-img
   src="/assets/images/wisnode/rak2560/quickstart/sensor-rule-settings.png"
   width="25%"
-  caption="Sensor rule settings"
+  caption="Detailed sensor settings"
 />
 
-- **Sensor interval(s)** - Payload sending interval in seconds (when periodic sensor rule is used). Limit: 60~86400 seconds
 - **Sensor data** - The currently fetched data value
-- **Threshold (below)** - Set up sending rules
-- **Threshold (above)** - Set up sending rules
+- **Toogle button sensor data changes** - Send data if there is any change in the sensor value
+- **Sensor interval(s)** - Payload sending interval in seconds (when periodic sensor rule is used). Limit: 60~86400 seconds
+- **Toogle button for periodic uplink** - Sends data in the time interval configured 
+- **Lower Threshold** - Set up the lower value for the sending rules
+- **Upper Threshold** - Set up the upper value for the sending rules
 
 3. The Sensor Probe sends data to the Sensor Hub according to established rules. Those rules are as follows:
 
@@ -288,7 +290,7 @@ Key = 0x08(Oct) = 0b00001000(Bin)
  The RAK1901, RAK1902, RAK1904, and RAK1906 all incorporate multiple sensors integrated into a single sensor IC.
 
 | WisBlock Module | Sensor IC | Sensor Type                         | Sensor Data Values                                                                                                                                             |
-| --------------- | --------- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| :-------------: | :-------: | :---------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | RAK1901         | SHTC3     | Temperature and humidity            | Temperature (-40°&nbsp;C to +125°&nbsp;C)<br>Humidity (0&nbsp;to&nbsp;100%&nbsp;RH)                                                                            |
 | RAK1902         | KPS22HB   | Temperature and barometric pressure | Temperature (-40°&nbsp;C to +85°&nbsp;C)<br>Pressure (260&nbsp;to&nbsp;1260&nbsp;hPa)                                                                          |
 | RAK1904         | LIS3DH    | 3-axis acceleration                 | 3-axis (XYZ)                                                                                                                                                   |
@@ -297,7 +299,7 @@ Key = 0x08(Oct) = 0b00001000(Bin)
 The four (4) WisBlock modules will have four (4) sensor types as follows:
 
 | Sensor      | Type | Data Size |
-| ----------- | ---- | --------- |
+| :---------: | :--- | :-------: |
 | Temperature | 0x67 | 2         |
 | Humidity    | 0x68 | 1         |
 | Pressure    | 0x66 | 2         |
@@ -310,7 +312,7 @@ RAK_DATA_TYPE = IPSO_OBJECT_ID - 3200
 ```
 
 | Type                   | IPSO ID | RAK Data Type (Decimal) | RAK Data Type (Hex) | Data Size | Data Resolution per Bit          |
-| ---------------------- | ------- | ----------------------- | ------------------- | --------- | -------------------------------- |
+| :--------------------: | :-----: | :---------------------: | :-----------------: | :-------: | :------------------------------: |
 | Temperature sensor     | 3303    | 103                     | 0x67                | 2         | 0.1°&nbsp;C Signed MSB           |
 | Humidity sensor        | 3304    | 104                     | 0x68                | 1         | 0.1% Unsigned                    |
 | Accelerometer (3-Axis) | 3313    | 113                     | 0x71                | 6         | 0.001&nbsp;G Signed MSB per axis |
