@@ -1954,11 +1954,11 @@ For the complete step-by-step tutorial, refer to the [How to Add RAK WisGate Edg
 
 
 
-## Chirp Wireless
+## Chirp Network
 
 [Chirp Wireless](https://chirpwireless.io/) is a leading global wireless network provider, offering reliable and extensive IoT connectivity solutions for outdoor and indoor use. Chirp's main objective is to simplify IoT deployments for its clients. 
 
-By providing multiple connectivity options and offering white-label business-specific modules, Chirp eliminates the need for multiple networks, platforms, and billing systems. Chirp offers its visualization platform, empowering clients to effortlessly implement IoT devices and visualize data with a simple click.
+By providing multiple connectivity options, including 2.4 GHz LoRa, and offering white-label business-specific modules, Chirp eliminates the need for multiple networks, platforms, and billing systems. Chirp offers its visualization platform, empowering clients to effortlessly implement IoT devices and visualize data with a simple click.
 
 In this guide, you will learn how to connect a WisGate Edge V2 gateway to the LNS solution provided by Chirp Wireless.
 

@@ -17,7 +17,15 @@
           <a href="https://docs.rakwireless.com/Release-Notes/RUI/2023/December-14/" class="event-banner-link ">Check the latest updates of RUI3 v4.1.0!</a>
         </div>
         <div>
-          <a href="https://docs.rakwireless.com/Product-Categories/WisGate/RAK7289-V2/Datasheet/?utm_source=TextAd&utm_medium=Docs&utm_id=Cert#certification" class="event-banner-link ">RAK7289V2 and RAK7289CV2 are now ANRT-certified in Morocco <span>! <u>Check out the certification</u></span>.</a>
+          <a href="https://docs.rakwireless.com/Product-Categories/WisGate/RAK7289-V2/Datasheet/?utm_source=TextAd&utm_medium=Docs&utm_id=Cert#certification" class="event-banner-link "><span :style="{
+            paddingRight: '2px',
+          }">RAK7289V2 and RAK7289CV2 are now ANRT-certified in Morocco!</span>  <u>Check out the certification</u>.</a>
+        </div>
+        <div>
+          <a href="https://docs.rakwireless.com/Product-Categories/WisGate/RAK7289-V2/Datasheet/?utm_source=TextAd&utm_medium=Docs&utm_id=Cert#certification" class="event-banner-link "><span :style="{
+            paddingRight: '2px',
+            textDecoration: 'underline'
+          }">RUI3 is now open source.</span> Power your project with flexibility and community support.</a>
         </div>
       </div>
       <span @click="closePopUpBanner" class="close-event-banner-btn">
@@ -103,7 +111,7 @@
   }
 
   #banner-flip div:first-child {
-    animation: flip5 30s linear infinite;
+    animation: flip6 36s linear infinite;
   }
 
   /* @keyframes show {
@@ -163,6 +171,23 @@
     85% { margin-top: 0px; }
     99.99% { margin-top: 0px; }
     100% { margin-top: -450px; }
+  }
+
+  @keyframes flip6 {
+    0% { margin-top: -540px; }
+    5% { margin-top: -450px; }
+    15% { margin-top: -450px; }
+    25% { margin-top: -360px; }
+    35% { margin-top: -360px; }
+    40% { margin-top: -270px; }
+    50% { margin-top: -270px; }
+    55% { margin-top: -180px; }
+    65% { margin-top: -180px; }
+    70% { margin-top: -90px; }
+    80% { margin-top: -90px; }
+    85% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -540px; }
   }
 
   @media screen and (max-width: 599px){

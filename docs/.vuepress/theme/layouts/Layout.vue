@@ -3,7 +3,7 @@
     <q-layout view="hHh LpR lfr">
       <div id="lt-md-div" class="lt-md"></div>
       <q-header class="bg-primary text-white">
-        <rk-banner-text :bgColor="'#333333'"/>
+        <rk-banner-text :bgColor="'#E9AD39'"/>
 
         <q-toolbar style="height: 70px">
           <q-btn

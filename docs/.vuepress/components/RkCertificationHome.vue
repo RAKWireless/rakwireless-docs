@@ -10,7 +10,7 @@
     <h2>Product Compliance Certification</h2>
 
     <div v-for="([headerKey,headerValue]) in Object.entries(computedHeadersData)">
-      <h3>{{ computedHeadersData[headerKey].product }}</h3>
+      <h3 :id="(computedHeadersData[headerKey].product).toLowerCase()" style="padding-top:130px;">{{ computedHeadersData[headerKey].product }}</h3>
       <div class="table-container">
         <table>
           <thead>
