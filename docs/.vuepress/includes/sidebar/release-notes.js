@@ -118,8 +118,13 @@ module.exports = {
           collapsed : true,
           children : [
             {
-              title : 'August 9',
-              path : '/Release-Notes/WisToolBox/2023/August-9',
+              title : 'AGW: July 5',
+              path : '/Release-Notes/5G/AGW/2023/July-5',
+              collapsable: false
+            },
+            {
+              title : 'Open5GS: July 5',
+              path : '/Release-Notes/5G/Open5GS/2023/July-5',
               collapsable: false
             },
           ]
@@ -408,7 +413,7 @@ module.exports = {
           children : [
             {
               title : 'January 29',
-              path : '/Release-Notes/WisToolBox/2024/January-9',
+              path : '/Release-Notes/WisToolBox/2024/January-29',
               collapsable: false
             },
           ]

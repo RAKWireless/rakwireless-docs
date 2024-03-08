@@ -8,7 +8,7 @@
           <a href="https://docs.rakwireless.com/Product-Categories/WisNode/RAK2560/Overview/" class="event-banner-link ">Access the improved structure for Sensor Hub documentation.</a>
         </div>
         <div>
-          <a href="https://docs.rakwireless.com/Release-Notes/WisGateOS2/2024/January-2/" class="event-banner-link ">Discover the latest features of WisGateOS2 v2.2.1!</a>
+          <a href="https://docs.rakwireless.com/Release-Notes/WisGateOS2/2024/January-2/" class="event-banner-link ">Discover the latest features of WisGateOS2 v2.2.2!</a>
         </div>
         <div>
           <a href="https://docs.rakwireless.com/Release-Notes/WisDM/2023/December-4/" class="event-banner-link ">WisDM v1.6.1 is out now. See what's new!</a>
