@@ -12,7 +12,7 @@ tags:
 
 # GPS Antenna
 
-Thank you for choosing **GPS Antenna** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **GPS Antenna** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [Datasheet](../Datasheet/)
 
@@ -22,7 +22,7 @@ The GPS Antenna is a high-gain and high-efficiency active antenna designed with 
 
 ## Product Features
 
-- Frequency: **1559-1577&nbsp;MHz**
+- Frequency: **1559 ~ 1577&nbsp;MHz**
 - Type: **Active Antenna** 
 - Gain: **28 ± 2&nbsp;dB typical**
 - Voltage: **3&nbsp;V ± 0.3&nbsp;V<sub>DC</sub>**

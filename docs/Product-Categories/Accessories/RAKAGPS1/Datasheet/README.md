@@ -16,11 +16,11 @@ rak_img: /assets/images/accessories/gps-antenna/gps-antenna.png
 
 ### Description
 
-The GPS Antenna is a high-gain and high-efficiency active antenna designed with lightning protection antistatic (LNA) feature. It is widely used in power base stations and marine positioning systems and supports 1559-1577&nbsp;MHz frequencies.
+The GPS Antenna is a high-gain and high-efficiency active antenna designed with lightning protection antistatic (LNA) feature. It is widely used in power base stations and marine positioning systems and supports 1559 ~ 1577&nbsp;MHz frequencies.
 
 ### Features
 
-- Frequency: **1559-1577&nbsp;MHz**
+- Frequency: **1559 ~ 1577&nbsp;MHz**
 - Type: **Active Antenna**
 - Gain: **28 ± 2&nbsp;dB typical**
 - Voltage: **3&nbsp;V ± 0.3&nbsp;V<sub>DC</sub>**
@@ -44,15 +44,15 @@ The GPS Antenna is a high-gain and high-efficiency active antenna designed with 
 
 | Parameter        | Value                     |
 | ---------------- | ------------------------- |
-| Frequency        | 1559~1577&nbsp;MHz        |
+| Frequency        | 1559 ~ 1577&nbsp;MHz        |
 | Voltage          | DC 3 ±0.3&nbsp;V          |
-| Current          | ≤ 10&nbsp;mA at 3&nbsp;V  |
+| Current          | ≤10&nbsp;mA at 3&nbsp;V  |
 | Gain             | 28 ± 2&nbsp;dB typical    |
 | Noise Figure     | 1.5&nbsp;dB max           |
 | Bandwidth        | 18&nbsp;MHz min           |
 | Output VSWR      | 3.0 max                   |
 | Output Impedance | 50&nbsp;Ω                 |
-| Dimensions       | Ф 96×129&nbsp;mm          |
+| Dimensions       | Ф&nbsp;96×129&nbsp;mm          |
 | Cable            | 2000 ± 50&nbsp;mm (RG195) |
 | Connector        | N-type male               |
 

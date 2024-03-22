@@ -20,7 +20,7 @@ RAKARP01 is a high-gain directional antenna is the latest in the RAKwireless LPW
 
 ### Features
 
-- Frequency range: 860 ~ 930&nbsp;MHz
+- Frequency range: 860&nbsp;MHz ~ 930&nbsp;MHz
 - Peak gain: 12&nbsp;dBi
 - VSWR: ≤ 1.5
 - Dimensions: 750x280x125&nbsp;mm
@@ -38,9 +38,9 @@ RAKARP01 is a high-gain directional antenna is the latest in the RAKwireless LPW
 #### Electrical Characteristics
 
 | Parameter             | Value                           |
-| :-------------------- | ------------------------------- |
+|:----------------------|---------------------------------|
 | Model                 | 12&nbsp;dBi Directional Antenna |
-| Frequency range       | 860 ~ 930&nbsp;MHz              |
+| Frequency range       | 860&nbsp;MHz ~ 930&nbsp;MHz     |
 | Peak gain             | 12&nbsp;dBi (± 0.5&nbsp;dBi)    |
 | VSWR                  | ≤ 1.5                           |
 | Polarization          | Vertical                        |
@@ -55,7 +55,7 @@ RAKARP01 is a high-gain directional antenna is the latest in the RAKwireless LPW
 #### Mechanical Specifications
 
 | Parameters                 | Value                         |
-| :------------------------- | ----------------------------- |
+|:---------------------------|-------------------------------|
 | Product dimensions         | 750×280×125&nbsp;mm           |
 | Package dimensions         | 825×345×200&nbsp;mm           |
 | Weight                     | 4.3&nbsp;kg (clamps included) |

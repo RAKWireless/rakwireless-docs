@@ -10,18 +10,18 @@ tags:
 
 # RAKARJ19 868MHz Gray Antenna
 
-Thank you for choosing **RAKARJ19 868MHz Gray Antenna** in your awesome IoT Project! 🎉 To help you get started, we have provided you all the necessary documentation for your product.
+Thank you for choosing **RAKARJ19 868MHz Gray Antenna** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * [Datasheet](../Datasheet/)
 
 ## Product Description
 
-HWR Series ½-wave center-fed dipole antennas deliver outstanding performance in a rugged and cosmetically attractive package. The articulating base allows the antenna to tilt 90 degrees and rotate 360 degrees. The antenna’s internal counterpoise eliminates external ground plane dependence and maximizes performance. HWR Series antennas attach via a Part 15 compliant RP-SMA connector.
+**HWR Series ½-wave center-fed dipole antennas** deliver outstanding performance in a rugged and cosmetically attractive package. The articulating base allows the antenna to tilt 90&nbsp;degrees and rotate 360&nbsp;degrees. The antenna’s internal counterpoise eliminates external ground plane dependence and maximizes performance. HWR Series antennas attach via a Part 15 compliant RP-SMA connector.
 
 ## Product Features
 
-- Frequency Range: 853~883&nbsp;MHz
-- Peak Gain: 2.3&nbsp;dBi
+- Frequency Range: 853 ~ 883&nbsp;MHz
+- Peak Gain: -2.3&nbsp;dBi
 - VSWR: ≤2.0
 - Internal counterpoise
 - Tilts and rotates

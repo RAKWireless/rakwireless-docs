@@ -421,10 +421,10 @@ module.exports = {
       sidebarDepth: 4
     }
   ],
-  '/Product-Categories/Accessories/GPS-Antenna/': [
+  '/Product-Categories/Accessories/RAKAGPS1/': [
     {
       title: 'Overview',
-      path: '/Product-Categories/Accessories/GPS-Antenna/Overview/',
+      path: '/Product-Categories/Accessories/RAKAGPS1/Overview/',
       collapsable: false,
       nested: true,
       download: true,
@@ -432,7 +432,7 @@ module.exports = {
     },
     {
       title: 'Datasheet',
-      path: '/Product-Categories/Accessories/GPS-Antenna/Datasheet/',
+      path: '/Product-Categories/Accessories/RAKAGPS1/Datasheet/',
       collapsable: false,
       nested: true,
       download: true,
@@ -470,6 +470,60 @@ module.exports = {
     {
       title: 'Datasheet',
       path: '/Product-Categories/Accessories/RAKARG22/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }
+  ],
+  '/Product-Categories/Accessories/RAKARG12/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/RAKARG12/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/RAKARG12/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }
+  ],
+  '/Product-Categories/Accessories/RAKARW01/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/RAKARW01/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/RAKARW01/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }
+  ],
+  '/Product-Categories/Accessories/RAKARL01/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/RAKARL01/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/RAKARL01/Datasheet/',
       collapsable: false,
       nested: true,
       download: true,

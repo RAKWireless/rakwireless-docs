@@ -158,6 +158,14 @@ The hardware section discusses the interfacing, pinouts, and its corresponding f
 | 51      | RESERVED           | HOST_CSN      | IO   | Host SPI CSN                                |                                                                              |
 | 52      | 3.3Vaux            | 3V3           | PI   | 3.3&nbsp;V<sub>DC</sub> supply              |                                                                              |
 
+#### LED Definition
+
+<rk-img
+  src="/assets/images/wislink-lora/rak5146l/datasheet/RAK5146L_LED.png"
+  width="75%"
+  caption="RAK5146L LED Definition"
+/>
+
 #### RF Characteristics
 
 ##### Operating Frequencies

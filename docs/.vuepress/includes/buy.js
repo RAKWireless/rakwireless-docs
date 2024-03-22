@@ -1400,8 +1400,8 @@ export default {
     img: '/assets/images/accessories/antenna-mounting-kit/overview.png',
     store: 'https://store.rakwireless.com/products/antenna-mounting-kit-1?utm_source=AntennaMountingKit&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-  '/Product-Categories/Accessories/GPS-Antenna/': {
-    label: 'GPS-Antenna',
+  '/Product-Categories/Accessories/RAKAGPS1/': {
+    label: 'RAKAGPS1',
     img: '/assets/images/accessories/gps-antenna/gps-antenna.png',
     store: 'https://store.rakwireless.com/products/gps-antenna?utm_source=GPSAntenna&utm_medium=Document&utm_campaign=BuyFromStore'
   },
@@ -1454,6 +1454,11 @@ export default {
     label: 'RAKA0C52 Magnetic Antenna Base',
     img: '/assets/images/accessories/rak0c52/1.antenna-up.png',
     store: 'https://store.rakwireless.com/products/antenna-magnetic-base?utm_source=MagneticAntennaBase&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/Accessories/RAKARG12/': {
+    label: '860-930MHz 3dBi Fiberglass Antenna',
+    img: '/assets/images/accessories/rakarg12/antenna-overview.png',
+    store: 'https://store.rakwireless.com/products/3dbi-fiber-glass-antenna?_pos=1&_sid=b72197500&_ss=r&variant=39723306123462?utm_source=RAKARG12&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/Accessories/RAKARG13/': {
     label: '863-870MHz 5.8dBi Fiberglass Antenna',
@@ -1523,12 +1528,22 @@ export default {
   '/Product-Categories/Accessories/RAKARJ19/': {
     label: 'RAKARJ19 868MHz Gray Antenna',
     img: '/assets/images/accessories/rakarj19/KRAKBJ2701C00M---868MHz_02.png',
-    store: 'https://store.rakwireless.com/?utm_source=RAKARJ19868MHzGrayAntenna&utm_medium=Document&utm_campaign=BuyFromStore'
+    store: 'https://store.rakwireless.com/?utm_source=RAKARJ19&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/Accessories/RAKARL01/': {
+    label: 'LTE Outdoor Fiberglass Antenna',
+    img: '/assets/images/accessories/rakarl01/antenna-overview.png',
+    store: 'https://store.rakwireless.com/products/directional-antenna?utm_source=RAKARL01&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/Accessories/RAKARP01/': {
     label: '860-930MHz 12dBi Directional Antenna',
     img: '/assets/images/accessories/rakarp01/unipolarization-plate.png',
-    store: 'https://store.rakwireless.com/products/directional-antenna?utm_source=12dBiDirectionalAntenna&utm_medium=Document&utm_campaign=BuyFromStore'
+    store: 'https://store.rakwireless.com/products/directional-antenna?utm_source=RAKARP01&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/Accessories/RAKARW01/': {
+    label: '860-930MHz 12dBi Directional Antenna',
+    img: '/assets/images/accessories/rakarw01/antenna-overview.png',
+    store: '/assets/images/accessories/rakarw01/antenna-overview.png?utm_source=RAKARW01&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
 
@@ -1619,6 +1634,16 @@ export default {
   },
 
 
+  '/Product-Categories/Real-IoT-Solutions/Real-IoT-Kit/': {
+    label: 'Solutions',
+    img: '/assets/images/rism/kit/rism-kit.png',
+    store: 'https://store.rakwireless.com/collections/real-iot-marketplace?utm_source=realiotsolutions&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
 
+  '/Product-Categories/Real-IoT-Solutions/Real-IoT-Sensor/': {
+    label: 'Solutions',
+    img: '/assets/images/rism/sensor/rism-sensor.png',
+    store: 'https://store.rakwireless.com/collections/real-iot-marketplace?utm_source=realiotsolutions&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
 
 }

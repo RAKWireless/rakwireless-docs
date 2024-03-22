@@ -11,6 +11,7 @@ var accessories = require('./accessories')
 var softwareapislibraries = require('./software-apis-libraries')
 var softwaretools = require('./software-tools')
 var fiveg = require('./5g')
+var realiotsolutions = require('./real-iot-solutions')
 
 module.exports = {
   ...wisduino,
@@ -25,5 +26,6 @@ module.exports = {
   ...accessories,
   ...softwareapislibraries,
   ...softwaretools,
-  ...fiveg
+  ...fiveg,
+  ...realiotsolutions
 }

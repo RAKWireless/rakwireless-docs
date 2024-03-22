@@ -175,6 +175,15 @@ The hardware is categorized into seven (7) parts. It discusses the interfacing, 
 | 51      | RESERVED           | HOST_CSN      | IO   | Host SPI CSN                                |                                                                                |
 | 52      | 3.3Vaux            | 3V3           | PI   | 3.3&nbsp;V<sub>DC</sub> supply              |                                                                                |
 
+#### LED Definition
+
+<rk-img
+  src="/assets/images/wislink-lora/rak5146/datasheet/RAK5146_LED.png"
+  width="75%"
+  caption="RAK5146 LED Definition"
+/>
+
+
 #### RF Characteristics
 
 ##### Operating Frequencies
