@@ -266,6 +266,11 @@ module.exports = {
                 collapsable: false
               },
               {
+                title: 'RAK2270',
+                path: '/Certification/wisnode/?device=RAK2270',
+                collapsable: false
+              },
+              {
                 title: 'RAK2560',
                 path: '/Certification/wisnode/?device=RAK2560',
                 collapsable: false

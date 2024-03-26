@@ -1401,7 +1401,7 @@ export default {
     store: 'https://store.rakwireless.com/products/antenna-mounting-kit-1?utm_source=AntennaMountingKit&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/Accessories/RAKAGPS1/': {
-    label: 'RAKAGPS1',
+    label: 'GPS Antenna',
     img: '/assets/images/accessories/gps-antenna/gps-antenna.png',
     store: 'https://store.rakwireless.com/products/gps-antenna?utm_source=GPSAntenna&utm_medium=Document&utm_campaign=BuyFromStore'
   },
@@ -1500,6 +1500,16 @@ export default {
     img: '/assets/images/accessories/rakarg22/cbrs-antenna.png',
     store: 'https://store.rakwireless.com/products/cbrs-omni-antennas-cables?utm_source=CBRS-Omni-Antenna&utm_medium=Document&utm_campaign=BuyFromStore'
   },
+  '/Product-Categories/Accessories/RAKARJ10/': {
+    label: 'RAKARJ10 902-930 MHz Black Plastic Antenna',
+    img: '/assets/images/accessories/rakarj10/black_antenna_overview_900.png',
+    store: 'https://store.rakwireless.com/products/lora-antenna?_pos=1&_sid=796191262&_ss=r&variant=39945249652934'
+  },
+  '/Product-Categories/Accessories/RAKARJ11/': {
+    label: 'RAKARJ11 860-868 MHz Black Plastic Antenna',
+    img: '/assets/images/accessories/rakarj11/black_antenna_overview_800.png',
+    store: 'https://store.rakwireless.com/products/lora-antenna?_pos=1&_sid=796191262&_ss=r&variant=39942879641798'
+  },
   '/Product-Categories/Accessories/RAKARJ14/': {
     label: 'RAKARJ14 915MHz White Blade Antenna',
     img: '/assets/images/accessories/rakarj14/White 915MHz Antenna Features.png',
@@ -1582,6 +1592,11 @@ export default {
     label: '858~878MHz 8dBi Fiber Glass Antenna',
     img: '/assets/images/accessories/905000-905001/antenna_view.png',
     store: 'https://store.rakwireless.com/products/fiber-glass-antenna-1?utm_source=8dBiFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/Accessories/Solar-Panel-Kit-for-Battery-Plus-New/': {
+    label: 'Solar Panel Kit for Battery Plus(2024)',
+    img: '/assets/images/accessories/solar-panel-kit-for-battery-plus-new/solar-panel-kit-for-battery-plus-overview-new.png',
+    store: 'https://store.rakwireless.com/products/solar-panel-for-rak-battery-plus-with-mounting-kit?utm_source=SolarPanelBatteryPlus&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/Accessories/Solar-Panel-Kit-for-Battery-Plus/': {
     label: 'Solar Panel Kit for Battery Plus',

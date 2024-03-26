@@ -205,6 +205,42 @@ module.exports = {
 
 
   // antennas
+  '/Product-Categories/Accessories/RAKARJ10/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/RAKARJ10/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/RAKARJ10/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }
+  ],
+  '/Product-Categories/Accessories/RAKARJ11/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/RAKARJ11/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/RAKARJ11/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }
+  ],
   '/Product-Categories/Accessories/RAKARJ14/': [
     {
       title: 'Overview',
@@ -918,6 +954,32 @@ module.exports = {
     {
       title: 'Datasheet',
       path: '/Product-Categories/Accessories/RP025-4800500/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+  ],
+  '/Product-Categories/Accessories/Solar-Panel-Kit-for-Battery-Plus-New/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/Solar-Panel-Kit-for-Battery-Plus-New/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Installation Guide',
+      path: '/Product-Categories/Accessories/Solar-Panel-Kit-for-Battery-Plus-New/Installation-Guide/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/Solar-Panel-Kit-for-Battery-Plus-New/Datasheet/',
       collapsable: false,
       nested: true,
       download: true,

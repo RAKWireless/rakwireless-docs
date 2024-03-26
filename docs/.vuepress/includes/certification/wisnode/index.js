@@ -15,6 +15,14 @@ export const categoriesWisNode = [
           ]
         },
         {
+          device: "RAK2270",
+          data: [
+            { country: "Europe", cert: "CE", link: "https://downloads.rakwireless.com/LoRa/RAK2270/Certification/RAK2270_CE_Certification.pdf" },
+            { country: "USA", cert: "FCC", link: "https://downloads.rakwireless.com/LoRa/RAK2270/Certification/RAK2270_FCC_Certification.pdf" },
+            { country: "Canada", cert: "ISED", link: "https://downloads.rakwireless.com/LoRa/RAK2171/Certification/RAK2171_ISED_Certification.pdf"},
+          ]
+        },
+        {
           device: "RAK2560",
           data: [
             { country: "Europe", cert: "CE", link: "https://downloads.rakwireless.com/LoRa/SensorHub/Certification/SensorHub_RAK2560_RAK2560C_CE_Certification.pdf" },

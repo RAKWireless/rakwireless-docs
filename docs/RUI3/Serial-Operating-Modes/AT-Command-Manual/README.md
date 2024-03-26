@@ -59,7 +59,7 @@ The possible status codes are:
 
 * `OK`: command runs correctly without error.
 * `AT_ERROR`: generic error.
-* `AT_PARAM_ERROR`: a parameter of the command is wrong
+* `AT_PARAM_ERROR`: a parameter of the command is wrong.
 * `AT_BUSY_ERROR`: the LoRa network is busy, so the command has not been completed.
 * `AT_TEST_PARAM_OVERFLOW`: the parameter is too long.
 * `AT_NO_CLASSB_ENABLE`: End-node has not yet switched in Class B.
@@ -349,7 +349,7 @@ This command is used to access the build date and time of the firmware.
 | Command          | Input Parameter | Return value                                        | Return code           |
 | ---------------- | --------------- | --------------------------------------------------- | --------------------- |
 | `AT+BUILDTIME?`  | -               | `AT+BUILDTIME`:  get the build time of the firmware | OK                    |
-| `AT+BUILDTIME=?` | -               | `AT+BUILDTIME`=*date-time of build*                 | OK <br> `AT_BUSY_ERROR` |
+| `AT+BUILDTIME=?` | -               | `AT+BUILDTIME`=*date - time of build*                 | OK <br> `AT_BUSY_ERROR` |
 
 **Example:**
 
@@ -676,7 +676,7 @@ This command locks the AT command serial port.
 
 :::tip 📝 NOTE
  - If you input the `AT+LOCK` or `AT+LOCK=` command, it will lock the serial port.
- - The default password is '00000000' and can be changed via the `AT+PWORD` command.
+ - The default password is '**00000000**' and can be changed via the `AT+PWORD` command.
 :::
 
 **Example:**
@@ -793,7 +793,7 @@ If it has been changed, use the recover commands to roll back to `AT+ATM` mode.
 :::
 
 [Back](#content)
--->>
+-->
 
 ## Bootloader Commands
 
@@ -1184,11 +1184,11 @@ Description: Confirm Mode
 
 This command is used to configure the uplink payload to be confirmed or unconfirmed type.
 
-| Command          | Input Parameter | Return Value                                                 | Return Code            |
-| ---------------- | --------------- | ------------------------------------------------------------ | ---------------------- |
-| `AT+CFM?`        | -               | `AT+CFM`: get or set the confirmation mode (0 = off, 1 = on) | OK                     |
-| `AT+CFM=?`       | -               | `AT+CFM`= (0 or 1)                                           | OK                     |
-| `AT+CFM=<Input>` | 0 or 1          | -                                                            | OK <br> `AT_PARAM_ERROR` |
+| Command          | Input Parameter | Return Value                                                                     | Return Code              |
+| ---------------- | --------------- | -------------------------------------------------------------------------------- | ------------------------ |
+| `AT+CFM?`        | -               | `AT+CFM`: get or set the confirmation mode (0&nbsp;=&nbsp;OFF, 1&nbsp;=&nbsp;ON) | OK                       |
+| `AT+CFM=?`       | -               | `AT+CFM`= (0 or 1)                                                               | OK                       |
+| `AT+CFM=<Input>` | 0 or 1          | -                                                                                | OK <br> `AT_PARAM_ERROR` |
 
 **Example:**
 
@@ -1297,10 +1297,10 @@ Description: Network Join Mode
 
 This command is used to access the network join mode.
 
-| Command          | Input Parameter | Return Value                                                   | Return Code            |
-| ---------------- | --------------- | -------------------------------------------------------------- | ---------------------- |
-| `AT+NJM?`        | -               | `AT+NJM`: get or set the network join mode (0 = ABP, 1 = OTAA) | OK                     |
-| `AT+NJM`         | -               | -                                                              | OK                     |
+| Command          | Input Parameter | Return Value                                                   | Return Code              |
+| ---------------- | --------------- | -------------------------------------------------------------- | ------------------------ |
+| `AT+NJM?`        | -               | `AT+NJM`: get or set the network join mode (0 = ABP, 1 = OTAA) | OK                       |
+| `AT+NJM`         | -               | `0`                                                            | OK                       |
 | `AT+NJM=<Input>` | 0 or 1          | -                                                              | OK <br> `AT_PARAM_ERROR` |
 
 **Example:**
@@ -1503,11 +1503,11 @@ Description: Adaptive Rate
 
 This command is used to access the adaptive data rate.
 
-| Command          | Input Parameter | Return Value                                                          | Return Code            |
-| ---------------- | --------------- | --------------------------------------------------------------------- | ---------------------- |
-| `AT+ADR?`        | -               | `AT+ADR`: get or set the adaptive data rate setting (0 = off, 1 = on) | OK                     |
-| `AT+ADR=?`       | -               | `AT+ADR`=(0 or 1)                                                     | OK                     |
-| `AT+ADR=<Input>` | 0 or 1          | -                                                                     | OK <br> `AT_PARAM_ERROR` |
+| Command          | Input Parameter | Return Value                                                                              | Return Code              |
+| ---------------- | --------------- | ----------------------------------------------------------------------------------------- | ------------------------ |
+| `AT+ADR?`        | -               | `AT+ADR`: get or set the adaptive data rate setting (0&nbsp;=&nbsp;OFF, 1&nbsp;=&nbsp;ON) | OK                       |
+| `AT+ADR=?`       | -               | `AT+ADR`=(0 or 1)                                                                         | OK                       |
+| `AT+ADR=<Input>` | 0 or 1          | -                                                                                         | OK <br> `AT_PARAM_ERROR` |
 
 **Example:**
 
@@ -1648,10 +1648,10 @@ Description: Join delay on RX window 1
 
 This command is used to configure the join delay on RX window 1. The range of acceptable values is 1 to 14 seconds.
 
-| Command            | Input Parameter | Return Value                                                                                          | Return Code                               |
-| ------------------ | --------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------- |
-| `AT+JN1DL?`        | -               | `AT+JN1DL`: get or set the join accept delay between the end of TX and the join RX window 1 in second | OK                                        |
-| `AT+JN1DL=?`       | -               | `<integer>`                                                                                           | OK <br> `AT_BUSY_ERROR`                     |
+| Command            | Input Parameter | Return Value                                                                                          | Return Code                                   |
+| ------------------ | --------------- | ----------------------------------------------------------------------------------------------------- | --------------------------------------------- |
+| `AT+JN1DL?`        | -               | `AT+JN1DL`: get or set the join accept delay between the end of TX and the join RX window 1 in second | OK                                            |
+| `AT+JN1DL=?`       | -               | `5`                                                                                                   | OK <br> `AT_BUSY_ERROR`                       |
 | `AT+JN1DL=<input>` | `<integer>`     | -                                                                                                     | OK <br> `AT_PARAM_ERROR` <br> `AT_BUSY_ERROR` |
 
 **Example:**
@@ -1666,8 +1666,8 @@ OK
 ```
 
 :::tip 📝 NOTE:
-- `AT_PARAM_ERROR` is returned when a join or a send is being processed.
-- `AT_BUSY_ERROR` is returned when setting wrong or malformed value.
+- `AT_BUSY_ERROR` is returned when a join or a send is being processed.
+- `AT_PARAM_ERROR` is returned when setting wrong or malformed value.
 - In this case, the default value is **5.** `<Input>`: 1-decimal integer and the range of values is 1~14.
 :::
 
@@ -1683,7 +1683,7 @@ This command is used to configure the join delay on RX window 2. The range of ac
 | Command            | Input Parameter | Return Value                                                                                   | Return Code                               |
 | ------------------ | --------------- | ---------------------------------------------------------------------------------------------- | ----------------------------------------- |
 | `AT+JN2DL?`        | -               | `AT+JN2DL`: get the join accept delay between the end of TX and the join RX window 2 in second | OK                                        |
-| `AT+JN2DL=?`       | -               | `<integer>`                                                                                    | OK <br> `AT_BUSY_ERROR`                     |
+| `AT+JN2DL=?`       | -               | `6`                                                                                    | OK <br> `AT_BUSY_ERROR`                     |
 | `AT+JN2DL=<input>` | `<integer>`     | -                                                                                              | OK <br> `AT_PARAM_ERROR` <br> `AT_BUSY_ERROR` |
 
 **Example:**
@@ -1695,9 +1695,9 @@ OK
 ```
 
 :::tip 📝 NOTE:
-- Take note that AT+JN2DL must be larger than AT+JN1DL or it will not work. `AT_PARAM_ERROR` is returned when wrong setting is applied.
-- Also, `AT_PARAM_ERROR` is returned when a join or a send is being processed.
-- `AT_BUSY_ERROR` is returned when setting wrong or malformed value.
+- Take note that `AT+JN2DL` must be larger than AT+JN1DL or it will not work. `AT_BUSY_ERROR` is returned when wrong setting is applied.
+- Also, `AT_BUSY_ERROR` is returned when a join or a send is being processed.
+- `AT_PARAM_ERROR` is returned when setting wrong or malformed value.
 :::
 
 [Back](#content)
@@ -1709,11 +1709,11 @@ Description: Public network mode
 
 This command is used to access the public network mode.
 
-| Command          | Input Parameter | Return Value                                                   | Return Code            |
-| ---------------- | --------------- | -------------------------------------------------------------- | ---------------------- |
-| `AT+PNM?`        | -               | `AT+PNM`: get or set the public network mode (0 = off, 1 = on) | OK                     |
-| `AT+PNM=?`       | -               | 0 or 1                                                         | OK                     |
-| `AT+PNM=<input>` | 0 or 1          | -                                                              | OK <br> `AT_PARAM_ERROR` |
+| Command          | Input Parameter | Return Value                                                                       | Return Code              |
+| ---------------- | --------------- | ---------------------------------------------------------------------------------- | ------------------------ |
+| `AT+PNM?`        | -               | `AT+PNM`: get or set the public network mode (0&nbsp;=&nbsp;OFF, 1&nbsp;=&nbsp;ON) | OK                       |
+| `AT+PNM=?`       | -               | 0 or 1                                                                             | OK                       |
+| `AT+PNM=<input>` | 0 or 1          | -                                                                                  | OK <br> `AT_PARAM_ERROR` |
 
 **Example:**
 
@@ -1744,11 +1744,11 @@ Description: Delay of the received window 1
 
 This command is used to access the delay of the received window 1. The range of acceptable values is 1 to 15&nbsp;seconds. Whenever `AT+RX1DL` is updated, `AT+RX2DL` is also updated automatically.
 
-| Command            | Input Parameter | Return Value                                                                                | Return Code                               |
-| ------------------ | --------------- | ------------------------------------------------------------------------------------------- | ----------------------------------------- |
-| `AT+RX1DL?`        | -               | `AT+RX1DL`: get or set the delay between the end of TX and the RX window 1 in second (1-15) | OK                                        |
-| `AT+RX1DL=?`       | -               | `<integer>`                                                                                 | OK                                        |
-| `AT+RX1DL=<input>` | `<integer>`     | -                                                                                           | OK <br> `AT_PARAM_ERROR` <br> `AT_BUSY_ERROR` |
+| Command            | Input Parameter | Return Value                                                                                      | Return Code                                   |
+| ------------------ | --------------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------- |
+| `AT+RX1DL?`        | -               | `AT+RX1DL`: get or set the delay between the end of TX and the RX window 1 (in 1~15&nbsp;seconds) | OK                                            |
+| `AT+RX1DL=?`       | -               | `<integer>`                                                                                       | OK                                            |
+| `AT+RX1DL=<input>` | `<integer>`     | -                                                                                                 | OK <br> `AT_PARAM_ERROR` <br> `AT_BUSY_ERROR` |
 
 **Example:**
 
@@ -1777,10 +1777,10 @@ Description: Delay of the received window 2
 
 This command is used to access the delay of the received window 2. The range of acceptable values is 2 to 15&nbsp;seconds. Whenever `AT+RX2DL` is updated, `AT+RX1DL` is also updated automatically.
 
-| Command      | Input Parameter | Return Value                                                                         | Return Code      |
-| ------------ | --------------- | ------------------------------------------------------------------------------------ | ---------------- |
-| `AT+RX2DL?`  | -               | `AT+RX2DL`: get the delay between the end of TX and the RX window 2 in second (2-16) | OK               |
-| `AT+RX2DL=?` | -               | `<integer>`                                                                          | OK `AT_BUSY_ERROR` |
+| Command      | Input Parameter | Return Value                                                                               | Return Code        |
+| ------------ | --------------- | ------------------------------------------------------------------------------------------ | ------------------ |
+| `AT+RX2DL?`  | -               | `AT+RX2DL`: get the delay between the end of TX and the RX window 2 (in 2~15&nbsp;seconds) | OK                 |
+| `AT+RX2DL=?` | -               | `<integer>`                                                                                | OK `AT_BUSY_ERROR` |
 
 **Example:**
 
@@ -1905,7 +1905,7 @@ This command is used to access and configure the device network link status.
 
 | Command                | Input Parameter | Return value                                                                              | Return code            |
 | ---------------------- | --------------- | ----------------------------------------------------------------------------------------- | ---------------------- |
-| `AT+LINKCHECK?`        | -               | `AT+LINKCHECK`: get or set the link check setting (0 = disabled, 1 = once, 2 = everytime) | OK                     |
+| `AT+LINKCHECK?`        | -               | `AT+LINKCHECK`: get or set the link check setting (0 = disabled, 1&nbsp;=&nbsp;ONce, 2 = everytime) | OK                     |
 | `AT+LINKCHECK=?`       | -               | [0,1,2]                                                                                   | OK                     |
 | `AT+LINKCHECK=<Input>` | [0,1,2]         | -                                                                                         | OK <br> `AT_PARAM_ERROR` |
 
@@ -2347,6 +2347,7 @@ The table below shows the attached list on setting the channel mask.
             <td>All Channels</td>
             <td>All Channels</td>
             <td>All Channels</td>
+            <td>All Channels</td>
         </tr>
         <tr>
             <td>1</td>
@@ -2354,12 +2355,14 @@ The table below shows the attached list on setting the channel mask.
             <td>0000000000000001</td>
             <td>0-7, 64</td>
             <td>0-7, 64</td>
-             <td>0-7</td>
+            <td>0-7, 64</td>
+            <td>0-7</td>
         </tr>
         <tr>
            <td>2</td>
             <td>0002</td>
             <td>0000000000000010</td>
+            <td>8-15, 65</td>
             <td>8-15, 65</td>
             <td>8-15, 65</td>
             <td>8-15</td>
@@ -2370,12 +2373,14 @@ The table below shows the attached list on setting the channel mask.
             <td>0000000000000100</td>
             <td>16-23, 66</td>
             <td>16-23, 66</td>
+            <td>16-23, 66</td>
             <td>16-23</td>
         </tr>
         <tr>
            <td>4</td>
             <td>0008</td>
             <td>0000000000001000</td>
+            <td>24-31, 67</td>
             <td>24-31, 67</td>
             <td>24-31, 67</td>
             <td>24-31</td>
@@ -2386,12 +2391,14 @@ The table below shows the attached list on setting the channel mask.
             <td>0000000000010000</td>
             <td>32-39, 68</td>
             <td>32-39, 68</td>
+            <td>32-39, 68</td>
             <td>32-39</td>
         </tr>
         <tr>
            <td>6</td>
             <td>0020</td>
             <td>0000000000100000</td>
+            <td>40-47, 69</td>
             <td>40-47, 69</td>
             <td>40-47, 69</td>
             <td>40-47</td>
@@ -2402,12 +2409,14 @@ The table below shows the attached list on setting the channel mask.
             <td>0000000001000000</td>
             <td>48-55, 70</td>
             <td>48-55, 70</td>
+            <td>48-55, 70</td>
             <td>48-55</td>
         </tr>
         <tr>
            <td>8</td>
             <td>0080</td>
             <td>0000000010000000</td>
+            <td>56-63, 71</td>
             <td>56-63, 71</td>
             <td>56-63, 71</td>
             <td>56-63</td>
@@ -2418,12 +2427,14 @@ The table below shows the attached list on setting the channel mask.
             <td>0000000100000000</td>
             <td>-</td>
             <td>-</td>
+            <td>-</td>
             <td>64-71</td>
         </tr>
         <tr>
            <td>10</td>
             <td>0200</td>
             <td>0000001000000000</td>
+            <td>-</td>
             <td>-</td>
             <td>-</td>
             <td>72-79</td>
@@ -2434,12 +2445,14 @@ The table below shows the attached list on setting the channel mask.
             <td>0000010000000000</td>
             <td>-</td>
             <td>-</td>
+            <td>-</td>
             <td>80-87</td>
         </tr>
         <tr>
            <td>12</td>
             <td>0800</td>
             <td>0000100000000000</td>
+            <td>-</td>
             <td>-</td>
             <td>-</td>
             <td>88-95</td>
@@ -2476,7 +2489,7 @@ OK
 
 :::tip 📝 NOTE
 - `AT_PARAM_ERROR` is returned when setting wrong or malformed value.
-- In this case, the eight-channel mode is only for US915, AU915, CN470. LA915.
+- In this case, the eight-channel mode is only for US915, AU915, CN470, and LA915.
 - US915 / AU915 / LA915 range of values is 0~9.
 - CN470 range of values is 0~12.
 - For example, `AT+CHE=1:2:3:4` to enable ch0~31. `<value>`: maximum 12 decimal numbers and the range of values depends on region.
@@ -3339,11 +3352,11 @@ Description: Active region
 
 This command sets numbers corresponding to active regions.
 
-| Command           | Input Parameter           | Return Value                                                                                                                                                                                 | Return Code                                |
-| ----------------- | ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
-| `AT+BAND?`        | -                         | `AT+BAND`: get or set the active region<br>(0 = EU433, 1 = CN470, 2 = RU864, 3 = IN865, 4 = EU868,<br>5 = US915, 6 = AU915, 7 = KR920, 8 = AS923-1, 9 = AS923-2, 10 = AS923-3, 11 = AS923-4, 12 = LA915) | OK                                         |
-| `AT+BAND=?`       | -                         | 0,1,2,3,4,5,6,7,8,9,10,11, 12                                                                                                                                                                    | OK                                         |
-| `AT+BAND=<Input>` | 0,1,2,3,4,5,6,7,8,9,10,11,12 | -                                                                                                                                                                                            | OK <br>  `AT_PARAM_ERROR` <br> `AT_BUSY_ERROR` |
+| Command           | Input Parameter              | Return Value                                                                                                                                                                                             | Return Code                                    |
+| ----------------- | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
+| `AT+BAND?`        | -                            | `AT+BAND`: get or set the active region<br>(0 = EU433, 1 = CN470, 2 = RU864, 3 = IN865, 4 = EU868,<br>5 = US915, 6 = AU915, 7 = KR920, 8 = AS923-1, 9 = AS923-2, 10 = AS923-3, 11 = AS923-4, 12 = LA915) | OK                                             |
+| `AT+BAND=?`       | -                            | 0,1,2,3,4,5,6,7,8,9,10,11,12                                                                                                                                                                             | OK                                             |
+| `AT+BAND=<Input>` | 0,1,2,3,4,5,6,7,8,9,10,11,12 | -                                                                                                                                                                                                        | OK <br>  `AT_PARAM_ERROR` <br> `AT_BUSY_ERROR` |
 
 **Example:**
 ```
@@ -3761,11 +3774,11 @@ Description: P2P Channel Activity Detection
 
 This command allows the user to get or set the Channel Activity Detection of P2P mode.
 
-| Command          | Input Parameter | Return Value                                                                                           | Return Code            |
-| ---------------- | --------------- | ------------------------------------------------------------------------------------------------------ | ---------------------- |
-| `AT+CAD?`        | -               | `AT+CAD`: get or set the Channel Activity Detection of P2P mode ( 1&nbsp;=&nbsp;on, 0&nbsp;=&nbsp;off) | OK                     |
-| `AT+CAD=? `      | -               | `<0 or 1> `                                                                                            | OK                     |
-| `AT+CAD=<Input>` | `<0 or 1>`      | -                                                                                                      | OK <br> `AT_PARAM_ERROR` |
+| Command          | Input Parameter | Return Value                                                                                          | Return Code              |
+| ---------------- | --------------- | ----------------------------------------------------------------------------------------------------- | ------------------------ |
+| `AT+CAD?`        | -               | `AT+CAD`: get or set the Channel Activity Detection of P2P mode (1&nbsp;=&nbsp;ON, 0&nbsp;=&nbsp;OFF) | OK                       |
+| `AT+CAD=? `      | -               | `<0 or 1> `                                                                                           | OK                       |
+| `AT+CAD=<Input>` | `<0 or 1>`      | -                                                                                                     | OK <br> `AT_PARAM_ERROR` |
 
 **Example:**
 ```
@@ -4032,18 +4045,18 @@ AT_PARAM_ERROR
 
 Description: P2P IQ Inversion
 
-This command is used to get or set P2P IQ Inversion (1=ON, 0=OFF).
+This command is used to get or set P2P IQ Inversion (1&nbsp;=&nbsp;ON, 0&nbsp;=&nbsp;OFF).
 
-| Command              | Input Parameter | Return Value                                                | Return Code            |
-| -------------------- | --------------- | ----------------------------------------------------------- | ---------------------- |
-| `AT+IQINVER?`        | -               | `AT+IQINVER`: get or set P2P IQ inversion (1 = on, 0 = off) | OK                     |
-| `AT+IQINVER=?`       | -               | `<0 or 1>`                                                  | OK                     |
-| `AT+IQINVER=<Input>` | `<0 or 1>`      | -                                                           | OK <br> `AT_PARAM_ERROR` |
+| Command              | Input Parameter | Return Value                                                                    | Return Code              |
+| -------------------- | --------------- | ------------------------------------------------------------------------------- | ------------------------ |
+| `AT+IQINVER?`        | -               | `AT+IQINVER`: get or set P2P IQ inversion (1&nbsp;=&nbsp;ON, 0&nbsp;=&nbsp;OFF) | OK                       |
+| `AT+IQINVER=?`       | -               | `<0 or 1>`                                                                      | OK                       |
+| `AT+IQINVER=<Input>` | `<0 or 1>`      | -                                                                               | OK <br> `AT_PARAM_ERROR` |
 
 **Example:**
 ```
 AT+IQINVER?
-AT+IQINVER: get or set P2P IQ inversion (1 = on, 0 = off)
+AT+IQINVER: get or set P2P IQ inversion (1&nbsp;=&nbsp;ON, 0&nbsp;=&nbsp;OFF)
 OK
 
 AT+IQINVER=?
@@ -4289,15 +4302,15 @@ OK
 
 ### AT+FIXLENGTHPAYLOAD
 
-Description: P2P fix length payload on/off ( 1 = on, 0 = off)
+Description: P2P fix length payload on/off (1&nbsp;=&nbsp;ON, 0&nbsp;=&nbsp;OFF)
 
-This command allows the user to get or set P2P fix length payload on/off ( 1 = on, 0 = off).
+This command allows the user to get or set P2P fix length payload on/off (1&nbsp;=&nbsp;ON, 0&nbsp;=&nbsp;OFF).
 
-| Command                       | Input Parameter | Return Value                                                                       | Return Code            |
-| ----------------------------- | --------------- | ---------------------------------------------------------------------------------- | ---------------------- |
-| `AT+FIXLENGTHPAYLOAD?`        | -               | `AT+FIXLENGTHPAYLOAD`: get or set P2P fix length payload on/off ( 1 = on, 0 = off) | OK                     |
-| `AT+FIXLENGTHPAYLOAD=?`       | -               | `<0 or 1> `                                                                        | OK                     |
-| `AT+FIXLENGTHPAYLOAD=<Input>` | `<0 or 1> `     | -                                                                                  | OK <br> `AT_PARAM_ERROR` |
+| Command                       | Input Parameter | Return Value                                                                                          | Return Code              |
+| ----------------------------- | --------------- | ----------------------------------------------------------------------------------------------------- | ------------------------ |
+| `AT+FIXLENGTHPAYLOAD?`        | -               | `AT+FIXLENGTHPAYLOAD`: get or set P2P fix length payload on/off (1&nbsp;=&nbsp;ON, 0&nbsp;=&nbsp;OFF) | OK                       |
+| `AT+FIXLENGTHPAYLOAD=?`       | -               | `<0 or 1> `                                                                                           | OK                       |
+| `AT+FIXLENGTHPAYLOAD=<Input>` | `<0 or 1> `     | -                                                                                                     | OK <br> `AT_PARAM_ERROR` |
 
 **Example:**
 ```

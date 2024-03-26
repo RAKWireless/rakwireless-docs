@@ -9,6 +9,10 @@ tags:
   - wisnode
   - RAK2270
   - sticker tracker
+certifications:  
+  - [CE, https://downloads.rakwireless.com/LoRa/RAK2270/Certification/RAK2270_CE_Certification.pdf]
+  - [FCC, https://downloads.rakwireless.com/LoRa/RAK2270/Certification/RAK2270_FCC_Certification.pdf]
+  - [ISED, https://downloads.rakwireless.com/LoRa/RAK2270/Certification/RAK2270_ISED_Certification.pdf]
 ---
 
 # RAK2270 Sticker Tracker Datasheet
@@ -101,5 +105,7 @@ The table below shows the supported LoRaWAN Bands of the RAK2270 Sticker Tracker
 | India         | IN865           |
 | Russia        | RU864           |
 
+## Certification
 
+<rk-certifications :params="$page.frontmatter.certifications" />
 

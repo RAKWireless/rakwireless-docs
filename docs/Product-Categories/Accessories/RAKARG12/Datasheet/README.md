@@ -10,16 +10,16 @@ rak_img: /assets/images/accessories/rakarg12/antenna-overview.png
 ---
 
 
-# 860 ~ 930MHz 3dBi Fiberglass Antenna Datasheet
+# 860-930 MHz 3dBi Fiberglass Antenna Datasheet
 
 ## Overview
 
 ### Features
 
 - Frequency Range: 860 ~ 930&nbsp;MHz
-- One antenna to suit both 868 MHz and 915&nbsp;MHz bands 
+- One antenna to suit both 868 MHz and 915&nbsp;MHz bands
 - Max Gain: 3&nbsp;dBi
-- High efficiency 
+- High efficiency
 - Vertically polarized monopole
 - Omnidirectional
 - Outdoor use
@@ -51,7 +51,7 @@ rak_img: /assets/images/accessories/rakarg12/antenna-overview.png
 
 
 
-### VSWR and Return loss
+#### VSWR and Return Loss
 
 | Frequency (MHz) | VSWR   | Return loss (dB) |
 |-----------------|--------|------------------|
@@ -70,7 +70,7 @@ rak_img: /assets/images/accessories/rakarg12/antenna-overview.png
 />
 
 
-### Peak Gain & Efficiency
+#### Peak Gain & Efficiency
 
 | Frequency (MHz) | Efficiency (%) | Gain (dBi) |
 |-----------------|----------------|------------|
@@ -91,7 +91,7 @@ rak_img: /assets/images/accessories/rakarg12/antenna-overview.png
 | 930             | 60.4           | 2.7        |
 
 
-### Radiation Patterns
+#### Radiation Patterns
 
 <rk-img
   src="/assets/images/accessories/rakarg12/radiation-patterns-860.png"
@@ -133,7 +133,8 @@ rak_img: /assets/images/accessories/rakarg12/antenna-overview.png
   width="70%"
   caption="RAKARG12 Radiation Pattern for 930 MHz"
 />
-### Mechanical Characteristics
+
+#### Mechanical Characteristics
 
 <rk-img
   src="/assets/images/accessories/rakarg12/mechanical-characteristics.png"

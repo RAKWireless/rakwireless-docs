@@ -137,6 +137,18 @@ module.exports = {
       collapsible: false,
       children : [
         {
+          title : '2024',
+          collapsible: true,
+          collapsed: true,
+          children : [
+            {
+              title : 'March 21',
+              path : '/Release-Notes/WisDM/2024/March-21',
+              collapsable: false
+            },
+          ]
+        },
+        {
           title : '2023',
           collapsible: true,
           collapsed: true,
