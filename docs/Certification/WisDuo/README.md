@@ -7,6 +7,7 @@ rak_img: /assets/images/certifications/certification-banner.jpg
   'EUROPE',
   'USA',
   'AUSTRALIA',
+  'BRAZIL',
   'CANADA',
   'JAPAN',
   'KOREA',

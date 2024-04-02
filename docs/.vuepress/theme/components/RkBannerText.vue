@@ -11,7 +11,7 @@
           <a href="https://docs.rakwireless.com/Release-Notes/WisGateOS2/2024/January-2/" class="event-banner-link ">Discover the latest features of WisGateOS2 v2.2.2!</a>
         </div>
         <div>
-          <a href="https://docs.rakwireless.com/Release-Notes/WisDM/2023/December-4/" class="event-banner-link ">WisDM v1.6.1 is out now. See what's new!</a>
+          <a href="https://docs.rakwireless.com/Release-Notes/WisDM/2024/March-21/?utm_source=docs_center&utm_medium=organic&utm_campaign=WisDMv1.6.2" class="event-banner-link ">WisDM v1.6.2 is now available with Bulk Sync of Gateway System Settings & more. Check updates now!</a>
         </div>
         <div>
           <a href="https://docs.rakwireless.com/Release-Notes/RUI/2023/December-14/" class="event-banner-link ">Check the latest updates of RUI3 v4.1.0!</a>
