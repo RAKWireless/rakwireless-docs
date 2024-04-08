@@ -49,6 +49,16 @@ export default {
     img: '/assets/images/wislink-lora/rak5148/RAK5148.png',
     store: 'https://store.rakwireless.com/products/2-4-ghz-mini-pcie-concentrator-module-for-lora-based-on-sx1280-rak5148?utm_source=RAK5148&utm_medium=Document&utm_campaign=BuyFromStore'
   },
+  '/Product-Categories/WisLink/RAK5166/': {
+    label: 'RAK5166  WisLink LPWAN Concentrator',
+    img: '/assets/images/wislink-lora/rak5166/RAK5166.png',
+    store: 'https://store.rakwireless.com/products/rak5166-rak5167-concentrator-card-m-2-form-factor-innovation-for-lorawan-applications-sx1303-lora-core-usb-gps-lbt?utm_source=RAK5166&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisLink/RAK5167/': {
+    label: 'RAK5167  WisLink LPWAN Concentrator',
+    img: '/assets/images/wislink-lora/rak5167/RAK5167.png',
+    store: 'https://store.rakwireless.com/products/rak5166-rak5167-concentrator-card-m-2-form-factor-innovation-for-lorawan-applications-sx1303-lora-core-usb-gps-lbt?utm_source=RAK5167&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
 
 
   // Cellular
@@ -422,7 +432,11 @@ export default {
     img: '/assets/images/wisgate/rak7289-v2/RAK7289V2.png',
     store: 'https://store.rakwireless.com/products/wisgate-edge-pro-rak7289v2-rak7289cv2?utm_source=WisGateRAK7289V2&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-
+ '/Product-Categories/WisGate/RAK7285/': {
+    label: 'RAK7285 WisGate Edge Ultra',
+    img: '/assets/images/wisgate/rak7285/RAK7285.png',
+    store: 'https://store.rakwireless.com/products/wisgate-edge-ultra-full-duplex-the-ultimate-lora-gateway-for-iot-solutions-rak7285-rak7285c?utm_source=RAK7285&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
 
   // Developer
 

@@ -260,4 +260,38 @@ module.exports = {
     sidebarDepth: 4
   },
   ],
+  '/Product-Categories/WisLink/RAK5166/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisLink/RAK5166/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisLink/RAK5166/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  ],
+  '/Product-Categories/WisLink/RAK5167/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisLink/RAK5167/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisLink/RAK5167/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  ],
 }

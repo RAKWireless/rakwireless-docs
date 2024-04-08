@@ -676,6 +676,39 @@ module.exports = {
   sidebarDepth: 4
 }
 ],
+'/Product-Categories/WisGate/RAK7285/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisGate/RAK7285/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Quick Start Guide',
+  path: '/Product-Categories/WisGate/RAK7285/Quickstart/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Supported LoRa Network Servers',
+  path: '/Product-Categories/WisGate/RAK7285/Supported-LoRa-Network-Servers/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisGate/RAK7285/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
 '/Product-Categories/WisGate/RAKR314/': [{
   title: 'Product Overview',
   path: '/Product-Categories/WisGate/RAKR314/Overview/',
