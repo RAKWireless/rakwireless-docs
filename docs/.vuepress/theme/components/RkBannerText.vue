@@ -11,6 +11,11 @@
           <a href="https://docs.rakwireless.com/Release-Notes/WisGateOS2/2024/January-2/" class="event-banner-link ">Discover the latest features of WisGateOS2 v2.2.2!</a>
         </div>
         <div>
+          <a href="https://docs.rakwireless.com/Certification/#wisnode?utm_source=textad_docs&utm_medium=organic&utm_campaign=rak2270cert" class="event-banner-link "><span :style="{
+            paddingRight: '2px',
+          }">RAK2270 RAK Sticker Tracker is now IC, CE, FCC certified.</span>  <u>See certifications</u>!</a>
+        </div>
+        <div>
           <a href="https://docs.rakwireless.com/Release-Notes/WisDM/2024/March-21/?utm_source=docs_center&utm_medium=organic&utm_campaign=WisDMv1.6.2" class="event-banner-link ">WisDM v1.6.2 is now available with Bulk Sync of Gateway System Settings & more. Check updates now!</a>
         </div>
         <div>
@@ -111,7 +116,7 @@
   }
 
   #banner-flip div:first-child {
-    animation: flip6 36s linear infinite;
+    animation: flip7 36s linear infinite;
   }
 
   /* @keyframes show {
@@ -188,6 +193,25 @@
     85% { margin-top: 0px; }
     99.99% { margin-top: 0px; }
     100% { margin-top: -540px; }
+  }
+
+    @keyframes flip7 {
+    0% { margin-top: -630px; }
+    5% { margin-top: -540px; }
+    12.5% { margin-top: -540px; }
+    17.5% { margin-top: -450px; }
+    30% { margin-top: -450px; }
+    35% { margin-top: -360px; }
+    45% { margin-top: -360px; }
+    50% { margin-top: -270px; }
+    60% { margin-top: -270px; }
+    65% { margin-top: -180px; }
+    75% { margin-top: -180px; }
+    80% { margin-top: -90px; }
+    90% { margin-top: -90px; }
+    95% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -630px; }
   }
 
   @media screen and (max-width: 599px){
