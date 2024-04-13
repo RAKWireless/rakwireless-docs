@@ -39,4 +39,6 @@ RAK7268V2 is especially suitable for small and medium-sized deployment scenarios
 - Built-in Network Server for easy deployment of applications and integration of gateways
 - LTE Cat 4 network (optional)
 
-
+:::tip 📝 NOTE:
+A model of RAK7268V2/RAK7268CV2 WisGate Edge Lite 2 is available upon request, featuring support for 9~24&nbsp;V<sub>DC</sub> power input. For more information or to make a purchase, kindly contact [inquiry@rakwireless.com](mailto:inquiry@rakwireless.com).
+:::

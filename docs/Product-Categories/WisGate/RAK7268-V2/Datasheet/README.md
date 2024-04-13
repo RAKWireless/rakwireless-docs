@@ -49,6 +49,9 @@ RAK7268V2 is especially suitable for small and medium-sized deployment scenarios
 - Built-in Network Server for easy deployment of applications and integration of gateways
 - LTE Cat 4 network (optional)
 
+:::tip 📝 NOTE:
+A model of RAK7268V2/RAK7268CV2 WisGate Edge Lite 2 is available upon request, featuring support for 9~24&nbsp;V<sub>DC</sub> power input. For more information or to make a purchase, kindly contact [inquiry@rakwireless.com](mailto:inquiry@rakwireless.com).
+:::
 
 
 ## Specifications
@@ -158,8 +161,9 @@ only in RAK7268CV2)</td><td>Slow Flicker (1800&nbsp;ms High / 200&nbsp;ms Low) -
         <tr><td>- LTE FDD: B2/B4/B5/B12/B13</td></tr>
         <tr><td>- WCDMA: B2/B4/B5</td></tr>
         <tr><td>Optional supports other PCIe LTE module for Global Region</td></tr>
-        <tr><td rowspan="2">Power supply</td><td>DC 12&nbsp;V - 1&nbsp;A</td></tr>
+        <tr><td rowspan="3">Power supply</td><td>DC 12&nbsp;V - 1&nbsp;A</td></tr>
         <tr><td>PoE (IEEE 802.3 af), 36~57&nbsp;VDC</td></tr>
+        <tr><td>(Optional) 9-24&nbsp;V<sub>DC</sub> input upon request. Kindly contact <a href="mailto:inquiry@rakwireless.com">inquiry@rakwireless.com</a>. </td></tr>
         <tr><td>Power consumption</td><td>12&nbsp;W (typical)</td></tr>
         <tr><td>ETH</td><td>RJ45 (10/100 M)</td></tr>
         <tr><td>Console</td><td>Type-C USB</td></tr>
