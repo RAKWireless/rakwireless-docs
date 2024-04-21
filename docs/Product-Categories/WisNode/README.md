@@ -13,16 +13,28 @@ WisNode is a category of products built by the RAK company for the IoT Industry.
 
 </rk-head>
 
-## WisNode Track & Map
+## WisNode Track
 
-<rk-head img="/assets/rakwireless/product-categories/WisNode-Track-&-Map.svg">
+<rk-head img="/assets/rakwireless/product-categories/WisNode-Track.svg">
 
-Under this sub-category are the nodes with onboard GPS or GNSS, which utilize the power of IoT to relay data coordinates. More so, there is a variety of options as far as onboard sensors go. This makes it possible to construct a set of deployment scenarios where GPS/GNSS triggers on some metrics, such as movement and temperature change.
+WisNode Track is a series of tracking devices that offer an optimal tracking and monitoring solution. Tracking devices with built-in GPS receivers send locations directly over the LoRaWAN network, while devices without built-in GPS receivers use the network's Time Difference of Arrival (TDoA) feature to determine data location. The sensors in these tracking devices may vary to detect movement as a trigger or report the temperature of the project to which they are connected.
 
 
 </rk-head>
 
 <rk-products :tags="['wisnode', 'track']" />
+
+## WisNode Map
+
+<rk-head img="/assets/rakwireless/product-categories/WisNode-Map.svg">
+
+WisNode Map is a series of devices designed to evaluate deployed LoRaWAN networks. This mapping device assists in obtaining important insights into your network coverage, providing information about the distance, number of gateways, RSSI, and SNR from the position of the device. With these devices, your deployment works exactly as needed without blind spots with the best coverage possible for the real-world environment and also helps optimize the existing coverage of your network.
+
+
+</rk-head>
+
+<rk-products :tags="['wisnode', 'map']" />
+
 
 ## WisNode Sense
 

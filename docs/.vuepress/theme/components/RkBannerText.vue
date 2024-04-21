@@ -22,15 +22,9 @@
           <a href="https://docs.rakwireless.com/Release-Notes/RUI/2023/December-14/" class="event-banner-link ">Check the latest updates of RUI3 v4.1.0!</a>
         </div>
         <div>
-          <a href="https://docs.rakwireless.com/Product-Categories/WisGate/RAK7289-V2/Datasheet/?utm_source=TextAd&utm_medium=Docs&utm_id=Cert#certification" class="event-banner-link "><span :style="{
+          <a href="https://downloads.rakwireless.com/LoRa/RAK11720/Certification/RAK11720_ANATEL_Certification.pdf?utm_source=textad_docs&utm_medium=organic&utm_campaign=RAK11720-ANATEL-Certification" class="event-banner-link "><span :style="{
             paddingRight: '2px',
-          }">RAK7289V2 and RAK7289CV2 are now ANRT-certified in Morocco!</span>  <u>Check out the certification</u>.</a>
-        </div>
-        <div>
-          <a href="https://docs.rakwireless.com/Product-Categories/WisGate/RAK7289-V2/Datasheet/?utm_source=TextAd&utm_medium=Docs&utm_id=Cert#certification" class="event-banner-link "><span :style="{
-            paddingRight: '2px',
-            textDecoration: 'underline'
-          }">RUI3 is now open source.</span> Power your project with flexibility and community support.</a>
+          }">LoRa Bluetooth Module RAK11720 now ANATEL-certified.</span>  <u>View certification for details</u>.</a>
         </div>
       </div>
       <span @click="closePopUpBanner" class="close-event-banner-btn">
@@ -116,7 +110,7 @@
   }
 
   #banner-flip div:first-child {
-    animation: flip7 36s linear infinite;
+    animation: flip6 36s linear infinite;
   }
 
   /* @keyframes show {
@@ -195,6 +189,7 @@
     100% { margin-top: -540px; }
   }
 
+   /*
     @keyframes flip7 {
     0% { margin-top: -630px; }
     5% { margin-top: -540px; }
@@ -212,7 +207,7 @@
     95% { margin-top: 0px; }
     99.99% { margin-top: 0px; }
     100% { margin-top: -630px; }
-  }
+  } */
 
   @media screen and (max-width: 599px){
     .event-banner-text-container {
