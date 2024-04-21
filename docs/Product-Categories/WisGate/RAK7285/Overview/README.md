@@ -22,9 +22,9 @@ Thank you for choosing **RAK7285 WisGate Edge Ultra** in your awesome IoT Projec
 
 **RAK7285 WisGate Edge Ultra** is the latest edition of the RAK WisGate Edge Series, specifically designed for IoT commercial deployments. With its industrial-grade components, it ensures a high level of reliability for any use case scenario, including rapid deployment or UI and functionality customization.
 
-The RAK7285 supports up to 8 LoRa channels in full duplex and provides backhaul for Ethernet connectivity. It has a dedicated port for different power options, such as solar panels and batteries. Additionally, the new enclosure design allows the cavity filter to be inside the enclosure.
+This gateway supports up to 8 LoRa channels in full-duplex (16 channels variant is coming soon), multi-backhaul with Ethernet, Wi-Fi, and Cellular connectivity (LTE cellular connection is available with the C model). It has a dedicated port for different power options, such as solar panels and batteries. Additionally, the new enclosure design allows the cavity filter to be inside the enclosure.
 
-This gateway operates under WisGateOS2, which is built on the latest OpenWRT kernel. This new version incorporates the most recent security updates, such as OpenSSL 1.1 and multiple account access. In addition, the web UI has been updated with a new design and user-friendly information tooltips.
+In addition, RAK7285 operates under WisGateOS2, which is built on the latest OpenWrT kernel. This new version incorporates the most recent security updates, such as OpenSSL 1.1 and multiple account access. The web UI adopts a new design. It supports the installation of multiple extensions and remote management using WisDM to achieve personalized customization of the gateway.
 
 ## Product Features
 
@@ -33,10 +33,13 @@ This gateway operates under WisGateOS2, which is built on the latest OpenWRT ker
 - **IP67** industrial-grade enclosure with cable glands
 - **PoE (802.3at)** + Surge Protection
 - LoRa Concentrator for up to **8 channels**
-- **Backhaul**: Ethernet
+- Built-in cavity filters for out-of-band interference suspension
+- Built-in lightning protection of the LoRa antenna ports
+- **Backhaul**: Wi-Fi, Ethernet, & LTE (optional: available with RAK7285C)
 - GPS
 - Supports 9~36&nbsp;V<sub>DC</sub> power supply or solar power supply with electricity monitoring (Solar Kit - optional)
 - External antenna for GPS and LoRa
+
 
 ### Software
 
@@ -49,5 +52,4 @@ This gateway operates under WisGateOS2, which is built on the latest OpenWRT ker
 - **Buffering of LoRa frames in Packet Forwarder mode** in case of NS outage (automatic data recovery)
 - **Full-duplex**
 - **Listen Before Talk**
-- **Cellular connectivity** (for RAK7285C)
 - **Fine timestamping** (optional)

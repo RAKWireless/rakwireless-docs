@@ -21,21 +21,27 @@ In summary, there are only three steps to follow to have a working end-to-end Re
 2. Power on the end-device.
 3. Scan the QR code to generate a working IoT dashboard.
 
-## Gateway Setup
+## 1. Gateway Setup
 
 To initiate the Real IoT Kit setup, ensure that the gateway is online and connected to the LoRaWAN Network Server (LNS).
 
 :::tip 📝 NOTE
-- If you have a RAKwireless gateway, refer to the  [RAKwireless WisGate Documentation](https://docs.rakwireless.com/Product-Categories/WisGate/) guidelines. 
+- If you have a RAKwireless gateway, refer to the <a href="[/Product-Categories/WisGate/RAK7268/Quickstart/](https://docs.rakwireless.com/Product-Categories/WisGate/)" target="_blank">RAKwireless WisGate Documentation</a>.
 - If you have a third party gateway, setup the gateway according to its designated configuration.
 - Do not use the reset key to restore the factory settings of your gateway. If you do this, it will be disconnected from the LNS and will need to be reconfigured again.
 :::
 
-## Power On the Device
+## 2. Power On the Device
 
-After configuring the gateway and ensuring its internet connectivity, you can proceed with powering on the device. The guide to power on the device is included in your Real IoT Kit. It differs depending on the type of device included in your kit. Some devices are battery-powered, so they require careful mounting with consideration of the battery polarity. In addition, deployment and installation considerations are also included in these documents.
+After configuring the gateway and ensuring its internet connectivity, you can proceed with powering on the device that is included in your Real IoT Kit.
+
+The guide differs depending on the type of device included in your kit. Some devices are battery-powered, so they require careful mounting with consideration of the battery polarity.
+
+In addition, deployment and installation considerations are also included in the specific documentation of these devices.
 
 A table of documentation is provided so you can easily access the documentation of your specific device.
+
+How to activate devices is also shown on the next sections. If you have no advance setting needed, you can just activate the device and start using it. However, if more advance configuration is needed you can find the complete details on the device specific user guide.
 
 **Device Documentation**
 
@@ -46,39 +52,82 @@ A table of documentation is provided so you can easily access the documentation 
     <th colspan = "2">Documentation</th>
   </tr></thead>
 <tbody>
-  <tr>
-    <td>AM308</td>
-    <td>Temperature and Humidity Sensor</td>
-    <td><a href="https://downloads.rakwireless.com/IoT-Marketplace/Milesight/Milesight-NB300-TH%20Datasheet.pdf">Datasheet</a></td>
-    <td><a href="https://downloads.rakwireless.com/IoT-Marketplace/Milesight/Milesignt-NB308-AM300-Series-User%20Guide.pdf">User Manual</a></td>
-  </tr>
     <tr>
     <td>NB300-TH</td>
     <td>Indoor Air Quality Sensor</td>
     <td><a href="https://downloads.rakwireless.com/IoT-Marketplace/Milesight/Milesight-AM300%20Series%20Datasheet.pdf">Datasheet</a></td>
     <td><a href="https://downloads.rakwireless.com/IoT-Marketplace/Milesight/Milesignt-NB308-AM300-Series-User%20Guide.pdf">User Manual</a></td>
   </tr>
+    <tr>
+    <td>NB308/AM308</td>
+    <td>Indoor Air Quality Sensor </td>
+    <td><a href="https://downloads.rakwireless.com/IoT-Marketplace/Milesight/Milesight-AM300%20Series%20Datasheet.pdf">Datasheet</a></td>
+    <td><a href="https://downloads.rakwireless.com/IoT-Marketplace/Milesight/Milesignt-NB308-AM300-Series-User%20Guide.pdf">User Manual</a></td>
+  </tr>
 </tbody>
 </table>
 
+### Sample: Enable Milesight Devices
 
-## Datacake App
+Milesight devices are not enabled once you receive it. You need to use a smartphone with NFC feature and download/install the Milesight Toolbox app from <a href="https://play.google.com/store/apps/details?id=com.ursalinknfc" target="_blank">Google Playstore</a> or <a href="https://apps.apple.com/us/app/milesight-toolbox/id1518748039" target="_blank">Apple App Store</a> to enable Milesight devices.
 
-### App Installation
+1. Enable the NFC of the smartphone and open the Milesight Toolbox App. Place the smartphone in front of the sensor so it can detect the NFC then click the **NFC Read**. If you see a **Ready to Scan** image, you can move away the smartphone and put it back again to trigger the NFC.
+
+<rk-img
+  src="/assets/images/rism/kit/quickstart/nfc_connection.png"
+  width="70%"
+  caption="Milesight Toolbox NFC Connection"
+/>
+
+:::tip 📝 NOTE
+If it doesn't respond, you can try to turn on and off the NFC function of the smartphone and try again. In addition, the position of the smartphone and the device is important. It must be very close to the device NFC section. You can slowly move the device left-right and up-down to determine the trigger area.
+:::
+
+2. After successful connection, you should be able to see the front screen where you can enable the device via the **Device Status** button switch. Enable it and scan/trigger the NFC again with **NFC Read** button.
+
+
+<rk-img
+  src="/assets/images/rism/kit/quickstart/device_status_on.png"
+  width="25%"
+  caption="Device Status Activation"
+/>
+
+<rk-img
+  src="/assets/images/rism/kit/quickstart/power_on.png"
+  width="25%"
+  caption="Device Successfully Activated"
+/>
+
+3. If activation is successful, you should be able to see display on the device (if it has display) and dashboard update in few minutes.
+
+:::tip 📝 NOTE
+Mounting instructions varies in each device. It is recommended to check the device specific users guide
+:::
+
+
+:::warning ⚠️ WARNING
+If you want full ownership and access to your device you need to <a href="/Product-Categories/Solutions/Real-IoT-Solutions-Marketplace/Quickstart/#how-to-claim-the-device-to-your-own-account" target="_blank">claim the device to your own Datacake account</a>.
+:::
+
+
+## 3. Device Dashboard Visualization
+
+### Datacake App
 
 After powering up the device, download and install the Datacake App on your smartphone. Both Android and iOS are supported.
 
 <rk-img
-  src="/assets/images/rism/sensor/quickstart/datacake_iphone.png"
+  src="/assets/images/rism/kit/quickstart/datacake_iphone.png"
   width="30%"
   caption="Datacake on iOS"
 />
 
 <rk-img
-  src="/assets/images/rism/sensor/quickstart/datacake_android.png"
+  src="/assets/images/rism/kit/quickstart/datacake_android.png"
   width="30%"
   caption="Datacake on Android"
 />
+
 
 When you open the App, the Datacake logo will show momentarily then proceed on the list of demo dashboards. You can have a glance at these dashboards to have an idea of how the widgets look.
 
@@ -95,7 +144,7 @@ Follow the steps below for the dashboard creation:
 1. To create a dashboard, click on the **+** (plus) icon located on the upper right to proceed with adding your device dashboard.
 
 <rk-img
-  src="/assets/images/rism/sensor/quickstart/add-dashboard.png"
+  src="/assets/images/rism/kit/quickstart/add-dashboard.png"
   width="55%"
   caption="Adding device dashboard"
 />
@@ -103,7 +152,7 @@ Follow the steps below for the dashboard creation:
 2. Click the **Scan QR Code** button. It will open the camera of your phone, which allows you to capture the QR code. This step might require permission on your smartphone to access the camera. Get your device, locate the QR code, then scan it.
 
 <rk-img
-  src="/assets/images/rism/sensor/quickstart/qr_scan.png"
+  src="/assets/images/rism/kit/quickstart/qr_scan.png"
   width="55%"
   caption="Scanning QR"
 />
@@ -111,13 +160,15 @@ Follow the steps below for the dashboard creation:
 3. After a successful QR code scan, you will be given quick access to the page with the necessary information. You can change the **Title** field, which corresponds to the name of the device.
 
 :::tip 📝 NOTE
-If you do not set a custom title, it will use the default **Title**. It is recommended to modify the **Title** because it allows you to quickly identify specific device dashboards on the App. In addition, you can also create a useful description of the function and purpose of the device.
+If you do not set a custom title, it will use the default **Title**. It is recommended to modify the **Title** because it allows you to quickly identify specific device dashboards on the App.
+
+In addition, you can also create a useful description of the function and purpose of the device.
 :::
 
 4. After finalizing the details, you can now click **Save**.
 
 <rk-img
-  src="/assets/images/rism/sensor/quickstart/save_url.png"
+  src="/assets/images/rism/kit/quickstart/save_url.png"
   width="30%"
   caption="Saving dashboard on the Datacake App"
 />
@@ -125,7 +176,7 @@ If you do not set a custom title, it will use the default **Title**. It is recom
 5. Once done saving the information, the main view of devices will be updated. The demo dashboards will be removed, and you will see two different views of the dashboards available named **LIST** and **GALLERY**. You can choose the suitable interface for your application.
 
 <rk-img
-  src="/assets/images/rism/sensor/quickstart/device_on_list_gallery.png"
+  src="/assets/images/rism/kit/quickstart/device_on_list_gallery.png"
   width="55%"
   caption="Device added on Datacake App"
 />
@@ -133,49 +184,67 @@ If you do not set a custom title, it will use the default **Title**. It is recom
 6. At this point, the dashboard is now ready for viewing and already saved in your application.
 
 <rk-img
-  src="/assets/images/rism/sensor/quickstart/datacake_dashboard.png"
+  src="/assets/images/rism/kit/quickstart/datacake_dashboard.png"
   width="30%"
   caption="Dashboard ready on the App"
 />
 
-## End-Device Claiming on Datacake
+## FAQs
 
-Before mounting the device in its final location, it is advisable to claim it first using your Datacake account. This step allows you to access the device and customize its default dashboard, as well as create useful reports, alerts, and notifications. While this step is optional, failing to claim the device will prevent you from accessing these features.
+### Why No Data is Showing in the Dashboard?
 
-When claiming the device, enter the claim code. If the device has already been mounted, it will be difficult to access the printed claim code.
+The device uplinks data to the LoRaWAN Network Server every few minutes. You have to wait for this uplink period before data is shown on the dashboard.
+
+You can also check the LoRaWAN Gateway if you are online. The LED on the gateway should be blue. Otherwise, there is no connection to the internet. There are three possible reasons:
+
+- The ethernet cable is disconnected.
+- The SIM card is already out of data connectivity.
+- WiFi is down, especially since the gateway connects to an access point.
+
+In the deployment aspect, it is crucial to ensure that the external antenna of the gateway and the device are properly attached. Failure to do so could cause degradation of the RF signal leading to the failure of uplink packets.
+
+Additionally, it is important to consider the area and placement of the device. If it is mounted in an area where the LoRaWAN gateway cannot reach, such as a location too far away or has many walls and blockages, it can cause attenuation of the signal.
+
+You can check for possible issues on the Datacake platform by going to its status page <a href="https://datacake-status.com/" target="_blank">Datacake Status</a>. You can see if there is downtime on the platform or if issues are being solved.
+
+### How to Claim the Device to Your Account?
+
+Before mounting and deploying the device in its final location, it is recommended to first claim the device using your Datacake account. By doing this, you will be able to access the device and customize its default dashboard, as well as create useful reports, alerts, and notifications. While this step is optional, failing to claim the device will prevent you from accessing these features.
+
+When claiming the device, you need to enter the claim code. It may be difficult to access the printed claim code if the device has already been installed.
 
 To claim your device, follow the steps outlined below:
 
-1. Go to [RAKwireless-Datacake](https://rakwireless.datacake.co) site, then click **Create Account**.
+1. Go to <a href="https://rakwireless.datacake.co" target="_blank">RAKwireless-Datacake</a> site, then click **Create Account**.
 
 :::tip 📝 NOTE
 If you have a Datacake account already, you can use your account's login credentials, then proceed to **Step 3**.
 :::
 
 <rk-img
-  src="/assets/images/rism/sensor/quickstart/datacake_rak_login.png"
-  width="90%"
+  src="/assets/images/rism/kit/quickstart/datacake_rak_login.png"
+  width="30%"
   caption="RAKwireless-Datacake login page"
 />
 
 2. Input the necessary information and agree to the terms and conditions, then click **Create Account**. Once the account is created, log in and go to your RAKwireless-Datacake account.
 
 <rk-img
-  src="/assets/images/rism/sensor/quickstart/account_creation.png"
-  width="90%"
+  src="/assets/images/rism/kit/quickstart/account_creation.png"
+  width="30%"
   caption="Creation of account"
 />
 
 3. Once logged in, start the claiming process by clicking **+ Add Device** and then **Pincode Claiming**.
 
 <rk-img
-  src="/assets/images/rism/sensor/quickstart/add-device-on-claim.png"
+  src="/assets/images/rism/kit/quickstart/add-device-on-claim.png"
   width="80%"
   caption="Add device to claim"
 />
 
 <rk-img
-  src="/assets/images/rism/sensor/quickstart/pincode_claim.png"
+  src="/assets/images/rism/kit/quickstart/pincode_claim.png"
   width="60%"
   caption="PIN code claiming"
 />
@@ -183,90 +252,63 @@ If you have a Datacake account already, you can use your account's login credent
 4. Input the **Serial Number** which is the DEVEUI of your device as well as the **Claiming Code**, then click on **Add Device to Workplace**.
 
 <rk-img
-  src="/assets/images/rism/sensor/quickstart/claiming_code.png"
+  src="/assets/images/rism/kit/quickstart/claiming_code.png"
   width="60%"
   caption="Input DEVEUI as Serial number, then claim code in device sticker"
 />
 
-### Creation of Reports and Alerts via Rules
+### How to Create Reports and Alerts via Rules?
 
-1. To generate reports, go to the **Reports** tab and click **+ Add Report**. It redirects you to the page where you can configure the reports you need, as shown in **Figure 14**.
+1. To generate reports, go to the **Reports** tab and click **+ Add Report**. It redirects you to the page where you can configure the reports you need.
 
 <rk-img
-  src="/assets/images/rism/sensor/quickstart/report_generation.png"
+  src="/assets/images/rism/kit/quickstart/report_generation.png"
   width="80%"
   caption="Reports feature of Datacake"
 />
 
 <rk-img
-  src="/assets/images/rism/sensor/quickstart/report_configuration.png"
+  src="/assets/images/rism/kit/quickstart/report_configuration.png"
   width="50%"
   caption="Reports setting and configuration"
 />
 
-For notifications and alerts, go to the **Rules** tab and click on **+ Add Rule**. You can create a descriptive name for this notification and set the conditions, as shown in **Figure 16**. When the condition is met, it sends a notification via email or SMS. Also, you can perform automatic actions via webhook or downlink process.
+2. For notifications and alerts, go to the **Rules** tab and click on **+ Add Rule**. You can create a descriptive name for this notification and set the condition.
 
 <rk-img
-  src="/assets/images/rism/sensor/quickstart/rules_generation.png"
+  src="/assets/images/rism/kit/quickstart/rules_generation.png"
   width="80%"
   caption="Rules and conditional alerts"
 />
 
+3. When the condition is met, it sends a notification via email or SMS. Also, you can perform automatic actions via webhook or downlink process.
+
 <rk-img
-  src="/assets/images/rism/sensor/quickstart/rules_configuration.png"
+  src="/assets/images/rism/kit/quickstart/rules_configuration.png"
   width="80%"
   caption= "Rules and alert configuration"
 />
 
-## Updating License
+### How to Upgrade Datacake License?
 
 1. To upgrade your license for longer data retention and dedicated support, go to the device you want to upgrade the plan.
 
 <rk-img
-  src="/assets/images/rism/sensor/quickstart/license_purchase_1.png"
+  src="/assets/images/rism/kit/quickstart/license_purchase_1.png"
   width="80%"
   caption="Device configuration for the purchase of a license"
 />
 
-2. Scroll down to the bottom until you see **Device Plan** under **Danger Zone**, then click on **Change Plan**. It opens a new window where you can select the plan and payment method to upgrade it, as shown in **Figure 19**.
+2. Scroll down to the bottom until you see **Device Plan** under **Danger Zone**, then click on **Change Plan**. It opens a new window where you can select the plan and payment method to upgrade it.
 
 <rk-img
-  src="/assets/images/rism/sensor/quickstart/license_purchase_2.png"
+  src="/assets/images/rism/kit/quickstart/license_purchase_2.png"
   width="80%"
   caption="Device configuration for the purchase of a license"
 />
 
 <rk-img
-  src="/assets/images/rism/sensor/quickstart/license_purchase_3.png"
+  src="/assets/images/rism/kit/quickstart/license_purchase_3.png"
   width="50%"
   caption="Device configuration for the purchase of a license"
 />
-
-## Device Mounting
-
-The mounting procedure varies depending on the device and sensor. It is common to see walls mounted once and fixed by screws. While others use magnets, double-sided tape, and other methods.
-
-It is recommended to check the user manual of specific devices to see if mounting options are possible.
-
-
-<table class="text-center">
-  <thead><tr>
-    <th>Device</th>
-    <th>Description</th>
-    <th colspan = "2">Documentation</th>
-  </tr></thead>
-<tbody>
-  <tr>
-    <td>AM308</td>
-    <td>Temperature and Humidity Sensor</td>
-    <td><a href="https://downloads.rakwireless.com/IoT-Marketplace/Milesight/Milesight-NB300-TH%20Datasheet.pdf">Datasheet</a></td>
-    <td><a href="https://downloads.rakwireless.com/IoT-Marketplace/Milesight/Milesignt-NB308-AM300-Series-User%20Guide.pdf">User Manual</a></td>
-  </tr>
-    <tr>
-    <td>NB300-TH</td>
-    <td>Indoor Air Quality Sensor</td>
-    <td><a href="https://downloads.rakwireless.com/IoT-Marketplace/Milesight/Milesight-AM300%20Series%20Datasheet.pdf">Datasheet</a></td>
-    <td><a href="https://downloads.rakwireless.com/IoT-Marketplace/Milesight/Milesignt-NB308-AM300-Series-User%20Guide.pdf">User Manual</a></td>
-  </tr>
-</tbody>
-</table>

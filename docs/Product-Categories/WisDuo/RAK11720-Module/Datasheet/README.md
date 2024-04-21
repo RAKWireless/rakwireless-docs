@@ -6,6 +6,12 @@ next: false
 tags:
   - datasheet
   - RAK11720
+certifications:
+  - [Anatel, https://downloads.rakwireless.com/LoRa/RAK11720/Certification/RAK11720_ANATEL_Certification.pdf]
+  - [CE, https://downloads.rakwireless.com/LoRa/RAK11720/Certification/RAK11720_CE_Certification.pdf]
+  - [FCC, https://downloads.rakwireless.com/LoRa/RAK11720/Certification/RAK11720_FCC_Certification.pdf]
+  - [ISED, https://downloads.rakwireless.com/LoRa/RAK11720/Certification/RAK11720_ISED_Certification.pdf]
+  - [RCM, https://downloads.rakwireless.com/LoRa/RAK11720/Certification/RAK11720_RCM_Certification.pdf]
 ---
 
 # RAK11720 WisDuo LPWAN+BLE Module Datasheet
@@ -257,3 +263,7 @@ Download the latest RAK11720 WisDuo LPWAN Module firmware provided below. RAK117
 | RAK11720 (.bin via BLE)  |                             | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK11720_latest_Nonsecure_OTA_Package_BLE.bin)  |
 | RAK11720 (.hex)          |                             | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK11720_latest_final.hex)                      |
 
+
+## Certification
+
+<rk-certifications :params="$page.frontmatter.certifications" />

@@ -13,7 +13,6 @@ rak_img: /assets/images/certifications/certification-banner.jpg
   'KOREA',
   'LoRa Alliance',
   'UK',
-  'BRAZIL'
   ]"/>
 
 <rk-certification-newsletter/>

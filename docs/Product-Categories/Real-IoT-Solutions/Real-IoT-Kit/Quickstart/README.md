@@ -23,13 +23,13 @@ In summary, there are only three steps to follow to have a working end-to-end Re
 
 ## Gateway Setup
 
-To initiate the Real IoT Kit setup, ensure that the gateway is online and connected to the LoRaWAN Network Server (LNS). By default, a successfully connected LoRaWAN gateway to the internet will have a blue LED indicator. 
+To initiate the Real IoT Kit setup, ensure that the gateway is online and connected to the LoRaWAN Network Server (LNS). By default, a successfully connected LoRaWAN gateway to the internet will have a blue LED indicator.
 
 The LED indicator feature allows you to quickly determine the gateway's internet connection status by looking at it. If the LED indicator is not blue, the gateway is not connected to the internet and cannot transfer data from devices to the LNS.
 
 When using an Ethernet connection or cellular connectivity via a SIM card, simply turn on your gateway and connect the LAN cable. Alternatively, insert the SIM card and wait for the LED to turn blue.
 
-On the other hand, if you connect via WiFi, you need to follow the [RAK7268V2 quick start guide](/Product-Categories/WisGate/RAK7268/Quickstart/). This guide gives more details about your gateway, like the meaning of different LED color statuses.
+On the other hand, if you connect via WiFi, you need to follow the <a href="/Product-Categories/WisGate/RAK7268/Quickstart/" target="_blank">RAK7268V2 Quick Start Guide</a>. This guide gives more details about your gateway, like the meaning of different LED color statuses.
 
 :::warning ⚠️ WARNING
 Do not use the reset key to restore the factory settings of your gateway. If you do this, it will be disconnected from the LNS and will need to be reconfigured to its solutions kit factory settings.
@@ -37,7 +37,7 @@ Do not use the reset key to restore the factory settings of your gateway. If you
 
 ### Power On the Gateway
 
-1. 1. Attach the LoRa Antenna via screwing it to the RP-SMA connector on the back panel of the RAK7268/C WisGate Edge Lite 2.
+1. Attach the LoRa Antenna via screwing it to the RP-SMA connector on the back panel of the RAK7268/C WisGate Edge Lite 2.
 
 <rk-img
   src="/assets/images/rism/kit/quickstart/gateway_with_antenna.png"
@@ -50,7 +50,7 @@ Do not power the device if the LoRa Antenna port has been left open to avoid pot
 :::
 
 
-2. Connect the Ethernet cable to the port marked ETH on the gateway and the other end to the router. After the ethernet connection, you can now connect the AC power adapter to the gateway and plug it to the power source. 
+2. Connect the Ethernet cable to the port marked ETH on the gateway and the other end to the router. After the ethernet connection, you can now connect the AC power adapter to the gateway and plug it to the power source.
 
 For more advance setup, you can configure the gateway on its portal if your PC is connected on the same LAN network where your gateway is connected.
 
@@ -61,15 +61,15 @@ For more advance setup, you can configure the gateway on its portal if your PC i
 />
 
 
-## Power On the Device
+## 2. Power On the Device
 
-After configuring the gateway and ensuring its internet connectivity, you can proceed with powering on the device that is included in your Real IoT Kit. 
+After configuring the gateway and ensuring its internet connectivity, you can proceed with powering on the device that is included in your Real IoT Kit.
 
-The guide differs depending on the type of device included in your kit. Some devices are battery-powered, so they require careful mounting with consideration of the battery polarity. 
+The guide differs depending on the type of device included in your kit. Some devices are battery-powered, so they require careful mounting with consideration of the battery polarity.
 
 In addition, deployment and installation considerations are also included in the specific documentation of these devices.
 
-A table of documentation is provided so you can easily access the documentation of your specific device. 
+A table of documentation is provided so you can easily access the documentation of your specific device.
 
 How to activate devices is also shown on the next sections. If you have no advance setting needed, you can just activate the device and start using it. However, if more advance configuration is needed you can find the complete details on the device specific user guide.
 
@@ -97,12 +97,17 @@ How to activate devices is also shown on the next sections. If you have no advan
 </tbody>
 </table>
 
-### How to Enable Milesight Devices
+### Sample: Enable Milesight Devices
 
-Milesight devices are not enabled once you receive it. You need to use a smartphone with NFC feature and download/install the Milesight Toolbox app from [Google Playstore](https://play.google.com/store/apps/details?id=com.ursalinknfc) or [Apple App Store](https://apps.apple.com/us/app/milesight-toolbox/id1518748039) to enable Milesight devices.
+Milesight devices are not enabled once you receive it. You need to use a smartphone with NFC feature and download/install the Milesight Toolbox app from <a href="https://play.google.com/store/apps/details?id=com.ursalinknfc" target="_blank">Google Playstore</a> or <a href="https://apps.apple.com/us/app/milesight-toolbox/id1518748039" target="_blank">Apple App Store</a> to enable Milesight devices.
 
-1. Enable the NFC of the smartphone and open the Milesight Toolbox App. Place the smartphone in front of the sensor so it can detect the NFC then click the **NFC Read**. If you see a **Ready to Scan** image, you can move away the smartphone and put it back again to trigger the NFC. 
+1. Enable the NFC of the smartphone and open the Milesight Toolbox App. Place the smartphone in front of the sensor so it can detect the NFC then click the **NFC Read**. If you see a **Ready to Scan** image, you can move away the smartphone and put it back again to trigger the NFC.
 
+<rk-img
+  src="/assets/images/rism/kit/quickstart/nfc_connection.png"
+  width="70%"
+  caption="Milesight Toolbox NFC Connection"
+/>
 
 :::tip 📝 NOTE:
 If it doesn't respond, you can try to turn on and off the NFC function of the smartphone and try again. In addition, the position of the smartphone and the device is important. It must be very close to the device NFC section. You can slowly move the device left-right and up-down to determine the trigger area.
@@ -125,18 +130,18 @@ If it doesn't respond, you can try to turn on and off the NFC function of the sm
 
 3. If activation is successful, you should be able to see display on the device (if it has display) and dashboard update in few minutes.
 
-:::tip 📝 NOTE:
-Mounting instructions varies in each device. It is recommended to check the device specific users guide 
+:::tip 📝 NOTE
+Mounting instructions varies in each device. It is recommended to check the device specific users guide.
 :::
 
 
 :::warning ⚠️ WARNING
-If you want full ownership and access to your device you need to [claim the device to your own Datacake account](/Product-Categories/Solutions/Real-IoT-Solutions-Marketplace/Quickstart/#how-to-claim-the-device-to-your-own-account).
+If you want full ownership and access to your device you need to <a href="/Product-Categories/Solutions/Real-IoT-Solutions-Marketplace/Quickstart/#how-to-claim-the-device-to-your-own-account" target="_blank">claim the device to your own Datacake account</a>.
 :::
 
-## Device Dashboard Visualization
+## 3. Device Dashboard Visualization
 
-### Datacake App Installation
+### Datacake App
 
 After powering up the device, download and install the Datacake App on your smartphone. Both Android and iOS are supported.
 
@@ -184,7 +189,7 @@ Follow the steps below for the dashboard creation:
 3. After a successful QR code scan, you will be given quick access to the page with the necessary information. You can change the **Title** field, which corresponds to the name of the device.
 
 :::tip 📝 NOTE
-If you do not set a custom title, it will use the default **Title**. It is recommended to modify the **Title** because it allows you to quickly identify specific device dashboards on the App. 
+If you do not set a custom title, it will use the default **Title**. It is recommended to modify the **Title** because it allows you to quickly identify specific device dashboards on the App.
 
 In addition, you can also create a useful description of the function and purpose of the device.
 :::
@@ -220,14 +225,16 @@ In addition, you can also create a useful description of the function and purpos
 The device uplinks data to the LoRaWAN Network Server every few minutes. You have to wait for this uplink period before data is shown on the dashboard.
 
 You can also check the LoRaWAN Gateway if you are online. The LED on the gateway should be blue. Otherwise, there is no connection to the internet. There are three possible reasons:
-The ethernet cable is disconnected;
-The SIM card is already out of data connectivity;
-WiFi is down, especially since the gateway connects to an access point.
-In the deployment aspect, it is crucial to ensure that the external antenna of the gateway and the device are properly attached. Failure to do so could cause degradation of the RF signal leading to the failure of uplink packets. 
 
-Additionally, it is important to consider the area and placement of the device. If it is mounted in an area where the LoRaWAN gateway cannot reach, such as a location too far away or has many walls and blockages, it can cause attenuation of the signal. 
+- The ethernet cable is disconnected.
+- The SIM card is already out of data connectivity.
+- WiFi is down, especially since the gateway connects to an access point.
 
-You can check for possible issues on the Datacake platform by going to its status page [Datacake Status](https://datacake-status.com/). You can see if there is downtime on the platform or if issues are being solved.
+In the deployment aspect, it is crucial to ensure that the external antenna of the gateway and the device are properly attached. Failure to do so could cause degradation of the RF signal leading to the failure of uplink packets.
+
+Additionally, it is important to consider the area and placement of the device. If it is mounted in an area where the LoRaWAN gateway cannot reach, such as a location too far away or has many walls and blockages, it can cause attenuation of the signal.
+
+You can check for possible issues on the Datacake platform by going to its status page <a href="https://datacake-status.com/" target="_blank">Datacake Status</a>. You can see if there is downtime on the platform or if issues are being solved.
 
 ### How to Claim the Device to Your Account?
 
@@ -237,7 +244,7 @@ When claiming the device, you need to enter the claim code. It may be difficult 
 
 To claim your device, follow the steps outlined below:
 
-1. Go to [RAKwireless-Datacake](https://rakwireless.datacake.co) site, then click **Create Account**.
+1. Go to <a href="https://rakwireless.datacake.co" target="_blank">RAKwireless-Datacake</a> site, then click **Create Account**.
 
 :::tip 📝 NOTE
 If you have a Datacake account already, you can use your account's login credentials, then proceed to **Step 3**.
@@ -279,7 +286,7 @@ If you have a Datacake account already, you can use your account's login credent
   caption="Input DEVEUI as Serial number, then claim code in device sticker"
 />
 
-### How to Create Reports and Alerts via Rules
+### How to Create Reports and Alerts via Rules?
 
 1. To generate reports, go to the **Reports** tab and click **+ Add Report**. It redirects you to the page where you can configure the reports you need.
 
@@ -311,7 +318,7 @@ If you have a Datacake account already, you can use your account's login credent
   caption= "Rules and alert configuration"
 />
 
-### How to Upgrade Datacake License
+### How to Upgrade Datacake License?
 
 1. To upgrade your license for longer data retention and dedicated support, go to the device you want to upgrade the plan.
 

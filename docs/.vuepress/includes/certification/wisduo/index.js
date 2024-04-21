@@ -80,6 +80,9 @@ export const categoriesWisDuo = [
             { country: "Europe", cert: "CE", link: "https://downloads.rakwireless.com/LoRa/RAK11720/Certification/RAK11720_CE_Certification.pdf" },
             { country: "USA", cert: "FCC", link: "https://downloads.rakwireless.com/LoRa/RAK11720/Certification/RAK11720_FCC_Certification.pdf" },
             { country: "Canada", cert: "ISED", link: "https://downloads.rakwireless.com/LoRa/RAK11720/Certification/RAK11720_ISED_Certification.pdf" },
+            { country: "Australia", cert: "RCM", link: "https://downloads.rakwireless.com/LoRa/RAK11720/Certification/RAK11720_RCM_Certification.pdf" },
+            { country: "Brazil", cert: "ANATEL", link: "https://downloads.rakwireless.com/LoRa/RAK11720/Certification/RAK11720_ANATEL_Certification.pdf" },
+
           ]
         },
       ]

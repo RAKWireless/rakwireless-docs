@@ -91,6 +91,8 @@ The pole supported by the brackets has a diameter ranging from 50~100&nbsp;mm. I
   caption="Fastening the enclosure to the bracket"
 />
 
+5. Attach the LoRa, Wi-Fi, and GPS antennas. If you choose the LTE variant, you also need to attach the LTE antennas.
+
 #### Connecting the PoE Adapter
 
 1. Connect the Ethernet cable from the enclosure to the Ethernet port labeled PoE adapter.

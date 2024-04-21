@@ -6,7 +6,6 @@ prev: ../Supported-LoRa-Network-Servers/
 next: false
 tags:
     - RAK7285
-    - RAK7285
     - wisgate
     - datasheet
 ---
@@ -20,18 +19,20 @@ tags:
 
 **RAK7285 WisGate Edge Ultra** is the latest edition of the RAK WisGate Edge Series, specifically designed for IoT commercial deployments. With its industrial-grade components, it ensures a high level of reliability for any use case scenario, including rapid deployment or UI and functionality customization.
 
-The RAK7285 supports up to 8 LoRa channels and provides backhaul for Ethernet connectivity. It has a dedicated port for different power options, such as solar panels and batteries. Additionally, the new enclosure design allows the cavity filter to be inside the enclosure.
+This gateway supports up to 8 LoRa channels in full-duplex (16 channels variant is coming soon), multi-backhaul with Ethernet, Wi-Fi, and Cellular connectivity (LTE cellular connection is available with the C model). It has a dedicated port for different power options, such as solar panels and batteries. Additionally, the new enclosure design allows the cavity filter to be inside the enclosure.
 
-This gateway operates under WisGateOS2, which is built on the latest OpenWRT kernel. This new version incorporates the most recent security updates, such as OpenSSL 1.1 and multiple account access. In addition, the web UI has been updated with a new design and user-friendly information tooltips.
+In addition, RAK7285 operates under WisGateOS2, which is built on the latest OpenWrT kernel. This new version incorporates the most recent security updates, such as OpenSSL 1.1 and multiple account access. The web UI adopts a new design. It supports the installation of multiple extensions and remote management using WisDM to achieve personalized customization of the gateway.
 
-### Product Features
+### Features
 
 #### Hardware
 
 - **IP67** industrial-grade enclosure with cable glands
 - **PoE (802.3at)** + Surge Protection
 - LoRa Concentrator for up to **8 channels**
-- **Backhaul**: Ethernet
+- Built-in cavity filters for out-of-band interference suspension
+- Built-in lightning protection of the LoRa antenna ports
+- **Backhaul**: Wi-Fi, Ethernet, & LTE (optional: available with RAK7285C)
 - GPS
 - Supports 9~36&nbsp;V<sub>DC</sub> power supply or solar power supply with electricity monitoring (Solar Kit - optional)
 - External antenna for GPS and LoRa
@@ -47,7 +48,6 @@ This gateway operates under WisGateOS2, which is built on the latest OpenWRT ker
 - **Buffering of LoRa frames in Packet Forwarder mode** in case of NS outage (automatic data recovery)
 - **Full-duplex**
 - **Listen Before Talk**
-- **Cellular connectivity** (for RAK7285C)
 - **Fine timestamping** (optional)
 
 ## Specifications
@@ -60,23 +60,35 @@ The overview presents the block diagram for the RAK7285 that shows the internal 
 
 <rk-img
   src="/assets/images/wisgate/rak7285/datasheet/1.rak7285-block-diagram.png"
-  width="80%"
+  width="100%"
   caption="RAK7285 WisGate Edge Ultra block diagram"
 />
 
 
-### Main Specifications
+#### Main Specifications
 
 <table>
     <thead><tr><th>Feature</th><th>Specifications</th></tr></thead>
     <tbody>
         <tr><td>Computing</td><td>MT7628, DDR2 RAM 128&nbsp;MB</td></tr>
+        <tr><td rowspan="5">Wi-Fi feature</td><td>Frequency: 2.4&nbsp;GHz (802.11b/g/n)</td></tr>
+        <tr><td>2x2 MIMO</td></tr>
+        <tr><td>RX Sensitivity: -95&nbsp;dBm (Min)</td></tr>
+        <tr><td>TX Power: 20&nbsp;dBm (Max)</td></tr>
+        <tr><td>Operation channels: 2.4 GHz: 1-13</td></tr>
         <tr><td rowspan="5">LoRa feature</td><td>SX1303 On Board</td></tr>
         <tr><td>8 Channels</td></tr>
         <tr><td>RX Sensitivity: -139&nbsp;dBm (Min)</td></tr>
         <tr><td>TX Power: 30&nbsp;dBm (Max)</td></tr>
         <tr><td>Listen Before Talk</td></tr>
         <tr><td>Frequency</td><td>US915/AU915</td></tr>
+        <tr><td rowspan="7">Cellular Feature (available with RAK7285C)</td><td>Supports Quectel EG95-E/EG95-NA/EC25-AU (IoT/M2M -optimized LTE Cat 4 Module)</td></tr>
+        <tr><td><b>EG95-E for EMEA Region (Europe, Middle East and Africa)</b></td></tr>
+        <tr><td>LTE FDD: B1/B3/B7/B8/B20/B28A<br>WCDMA: B1/B8<br>GSM/EDGE: B3/B8</td></tr>
+        <tr><td><b>EG95-NA for North America Region</b></td></tr>
+        <tr><td>LTE FDD: B2/B4/B5/B12/B13<br>WCDMA: B2/B4/B5</td></tr>
+        <tr><td><b>EC25-AU for Latin America, Australia, and New Zealand Region</b></td></tr>
+        <tr><td>LTE-FDD: B1/B2/B3/B4/B5/B7/B8/B28<br>LTE-TDD: B40<br>WCDMA: B1/B2/B5/B8<br>GSM/EDGE: B2/B3/B5/B8</td></tr>
         <tr><td>Power Supply</td><td>PoE (IEEE 802.3at)<br>42~57&nbsp;V<sub>DC</sub></td></tr>
         <tr><td>ETH</td><td>RJ45 (10/100 M)</td></tr>
         <tr><td rowspan="4">Antenna</td><td>LoRa: N-Type connector (one for the 8-channel gateway and two for the 16-channel gateway)</td></tr>
@@ -91,12 +103,44 @@ The overview presents the block diagram for the RAK7285 that shows the internal 
 </tbody>
 </table>
 
-
 ### Hardware
 
 The hardware specification covers the interfacing of the RAK7285 and its corresponding functionalities. It also presents the parameters and the standard values of the gateway.
 
 #### RF Specifications
+
+##### Wi-Fi Radio Specifications
+
+<table>
+    <thead><tr><th>Feature</th><th>Specifications</th></tr></thead>
+    <tbody>
+        <tr><td>Wireless Standard</td><td>IEEE 802.11 b/g/n</td></tr>
+        <tr><td>Operating Frequency</td><td>ISM band: 2.412~2.472 (GHz)</td></tr>
+        <tr><td>Operation Channels</td><td>2.4&nbsp;GHz: 1-13</td></tr>
+        <tr><td rowspan="11">Transmit Power<br>(The max power maybe different<br>depending on local regulations) - per chain</td><td>802.11b</td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;19&nbsp;dBm @1&nbsp;Mbps</td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;19&nbsp;dBm @11&nbsp;Mbps</td></tr>
+        <tr><td>802.11g</td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;18&nbsp;dBm @6&nbsp;Mbps</td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;16 dBm @54&nbsp;Mbps</td></tr>
+        <tr><td>802.11n (2.4G)</td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;18&nbsp;dBm @MCS0 (HT20)</td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;16&nbsp;dBm @MCS7 (HT20)</td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;17&nbsp;dBm @MCS0 (HT40) </td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;15&nbsp;dBm @MCS7 (HT40)</td></tr>
+        <tr><td rowspan="11">Receiver Sensitivity<br>(Typical)</td><td>802.11b</td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;-95&nbsp;dBm @1&nbsp;Mbps</td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;-88&nbsp;dBm @11&nbsp;Mbps</td></tr>
+        <tr><td>802.11g</td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;-90&nbsp;dBm @6&nbsp;Mbps</td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;-75&nbsp;dBm @54&nbsp;Mbps</td></tr>
+        <tr><td>802.11n (2.4G)</td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;-89&nbsp;dBm @MCS0 (HT20)</td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;-72&nbsp;dBm @MCS7 (HT20)</td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;-86&nbsp;dBm @MCS0 (HT40)</td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;-68&nbsp;dBm @MCS7 (HT40)</td></tr>
+    </tbody>
+</table>
 
 
 ##### LoRa Radio Specifications
@@ -115,13 +159,7 @@ The hardware specification covers the interfacing of the RAK7285 and its corresp
 
 <rk-img
   src="/assets/images/wisgate/rak7285/datasheet/2.interfaces1.png"
-  width="60%"
-  caption="RAK7285 WisGate Edge Ultra interfaces"
-/>
-
-<rk-img
-  src="/assets/images/wisgate/rak7285/datasheet/2.interfaces2.png"
-  width="60%"
+  width="100%"
   caption="RAK7285 WisGate Edge Ultra interfaces"
 />
 
@@ -136,19 +174,34 @@ The function of the Reset key is as follows:
 The status of the LEDs is described as below. Refer to the printing of the LEDs on the main board.
 
 <table>
-    <thead><tr><th>LEDs</th><th>Status Indication Description</th></tr></thead>
+    <thead>
+        <tr><th>LEDs</th><th>Status Indication Description</th></tr>
+    </thead>
     <tbody>
-        <tr><td>LED 1 (PWR)</td><td>Power Indicator: The LED is on when device power is on.</td></tr>
-        <tr><td rowspan="4">LED 2 (ETH)</td></tr>
-        <tr><td>ON: Linkup</td></tr>
-        <tr><td>OFF: Linkdown</td></tr>
-        <tr><td>Flicker: Data transmitting and receiving</td></tr>
-        <tr><td rowspan="4">LED 3 (LoRa)</td></tr>
-        <tr><td>ON: LoRa is working.</td></tr>
-        <tr><td>OFF: LoRa is not working.</td></tr>
-        <tr><td>Flicker: Indicate LoRa Packet receiving and sending</td></tr>
- </tbody>
+        <tr><td>LED 1 (PWR)</td><td>Power indicator - The LED is on when device power is on.</td></tr>
+        <tr><td rowspan="3">LED 2 (ETH)</td><td>ON - Linkup</td></tr>
+        <tr><td>OFF - Linkdown</td></tr>
+        <tr><td>Flicker - Data transmitting and receiving</td></tr>
+        <tr><td rowspan="3">LED 3 (LoRa 1)</td><td>ON - LoRa 1 is working</td></tr>
+        <tr><td>OFF - LoRa 1 is not working</td></tr>
+        <tr><td>Flicker - Indicate LoRa 1 Packet receiving and sending</td></tr>
+        <tr><td rowspan="7">LED 4 (WLAN)</td><td>AP Mode: </td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;ON - The AP is up</td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;Flicker - Data receiving and sending</td></tr>
+        <tr><td>STA Mode: </td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;Slow flicker (1&nbsp;Hz) - Disconnected</td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;ON - Connected</td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;Flicker - Data receiving and sending</td></tr>
+        <tr><td rowspan="4">LED 5 (LTE)</td><td>Slow Flicker (200&nbsp;ms Bright / 1800&nbsp;ms Dark) - Network searching</td></tr>
+        <tr><td>Slow flicker (200&nbsp;ms Dark / 1800&nbsp;ms Bright) - Idle</td></tr>
+        <tr><td>Fast flicker (125&nbsp;ms Bright / 125&nbsp;ms Dark) - Ongoing data transfer</td></tr>
+        <tr><td>ON - Voice is working</td></tr>
+        <tr><td rowspan="3">LED 6 (LoRa 2 for 16 channel)</td><td>ON - LoRa 2 is working</td></tr>
+        <tr><td>OFF - LoRa 2 is not working</td></tr>
+        <tr><td>Flicker - Indicate LoRa 2 Packet receiving and sending</td></tr>
+    </tbody>
 </table>
+
 
 ### Software
 
@@ -176,9 +229,9 @@ Detailed information about the extensions can be found on the <a href="https://d
 
 
 
-|  Model  | Firmware Version |                                            Source                                            |
-| :-----: | :--------------: | :------------------------------------------------------------------------------------------: |
-| RAK7285 |      v2.2.1      | [Download](https://downloads.rakwireless.com/LoRa/WisGateOS2/WisGateOS2_Latest_Firmware.zip) |
+|      Model       | Firmware Version |                            Source                            |
+| :--------------: | :--------------: | :----------------------------------------------------------: |
+| RAK7285/RAK7285C |      v2.2.1      | [Download](https://downloads.rakwireless.com/LoRa/WisGateOS2/WisGateOS2_Latest_Firmware.zip) |
 
 
 ## Models/Bundles
