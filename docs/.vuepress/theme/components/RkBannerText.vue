@@ -26,6 +26,12 @@
             paddingRight: '2px',
           }">LoRa Bluetooth Module RAK11720 now ANATEL-certified.</span>  <u>View certification for details</u>.</a>
         </div>
+        <div>
+          <a href="https://www.rakwireless.com/en-us/products/rui3?utm_source=newshub&utm_medium=organic&utm_campaign=rui3opensource" class="event-banner-link "><span :style="{
+            paddingRight: '2px',
+            textDecoration: 'underline'
+          }">RUI3 is now open source.</span> Power your project with flexibility and community support.</a>
+        </div>
       </div>
       <span @click="closePopUpBanner" class="close-event-banner-btn">
         X
@@ -110,7 +116,7 @@
   }
 
   #banner-flip div:first-child {
-    animation: flip6 36s linear infinite;
+    animation: flip7 36s linear infinite;
   }
 
   /* @keyframes show {
@@ -189,7 +195,6 @@
     100% { margin-top: -540px; }
   }
 
-   /*
     @keyframes flip7 {
     0% { margin-top: -630px; }
     5% { margin-top: -540px; }
@@ -207,7 +212,7 @@
     95% { margin-top: 0px; }
     99.99% { margin-top: 0px; }
     100% { margin-top: -630px; }
-  } */
+  }
 
   @media screen and (max-width: 599px){
     .event-banner-text-container {

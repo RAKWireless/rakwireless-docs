@@ -278,6 +278,7 @@ module.exports = {
       ]
     }
   ],
+
   '/Product-Categories/WisNode/RAK7432-RAK7434/': [{
     title: 'Product Overview',
     path: '/Product-Categories/WisNode/RAK7432-RAK7434/Overview/',
@@ -314,7 +315,40 @@ module.exports = {
     ]
   }
  ],
-
+ '/Product-Categories/WisNode/RAK2461/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisNode/RAK2461/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisNode/RAK2461/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
+'/Product-Categories/WisNode/RAK2470/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisNode/RAK2470/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisNode/RAK2470/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+}
+],
   '/Product-Categories/WisNode/RAK2171/': [{
     title: 'Product Overview',
     path: '/Product-Categories/WisNode/RAK2171/Overview/',

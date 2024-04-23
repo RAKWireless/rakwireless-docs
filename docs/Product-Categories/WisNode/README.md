@@ -17,7 +17,7 @@ WisNode is a category of products built by the RAK company for the IoT Industry.
 
 <rk-head img="/assets/rakwireless/product-categories/WisNode-Track.svg">
 
-WisNode Track is a series of tracking devices that offer an optimal tracking and monitoring solution. Tracking devices with built-in GPS receivers send locations directly over the LoRaWAN network, while devices without built-in GPS receivers use the network's Time Difference of Arrival (TDoA) feature to determine data location. The sensors in these tracking devices may vary to detect movement as a trigger or report the temperature of the project to which they are connected.
+WisNode Track is a series of tracking devices that offer an optimal tracking and monitoring solution. Tracking devices with built-in GPS receivers send locations directly over the LoRaWAN network, while devices without built-in GPS receivers use the network's Time Difference of Arrival (TDoA) feature to determine data location. The sensors in these tracking devices may vary to detect movement as a trigger or report the temperature of the environment in which they are deployed.
 
 
 </rk-head>

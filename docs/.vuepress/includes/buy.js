@@ -181,6 +181,16 @@ export default {
     img: '/assets/images/wisnode/rak7432-rak7434/RAK7432-RAK7434.png',
     store: 'https://store.rakwireless.com/products/wisnode-bridge-rak7432-rak7434?utm_source=RAK7432-RAK7434&utm_medium=Document&utm_campaign=BuyFromStore'
   },
+  '/Product-Categories/WisNode/RAK2461/': {
+    label: 'RAK2461 WisNode Bridge IO Lite',
+    img: '/assets/images/wisnode/rak2461/datasheet/RAK2461.png',
+    store: 'https://store.rakwireless.com/products/rak2461-wisnode-bridge-io-lite?utm_source=rak2461&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  '/Product-Categories/WisNode/RAK2470/': {
+    label: 'RAK2470 WisNode Bridge Serial Prime',
+    img: '/assets/images/wisnode/rak2470/datasheet/RAK2470.png',
+    store: 'https://store.rakwireless.com/products/wisnode-bridge-serial-prime-rak2470?utm_source=rak2470&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
 
   //WisTrio
 
