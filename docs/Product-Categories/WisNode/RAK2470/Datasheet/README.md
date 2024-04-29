@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK2461 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisnode/RAK2470/datasheet/RAK2470.png
+rak_img: /assets/images/wisnode/rak2470-n/datasheet/RAK2470.png
 prev: ../Overview/
 next: false
 tags:
@@ -86,7 +86,7 @@ RAK2470 allows for pole mounting. Follow the provided installation steps to ensu
 
 
 <rk-img
-  src="/assets/images/wisnode/RAK2470/datasheet/fixing.png"
+  src="/assets/images/wisnode/rak2470-n/datasheet/fixing.png"
   width="40%"
   caption="Fixing the device to the mounting kit"
 />
@@ -96,7 +96,7 @@ RAK2470 allows for pole mounting. Follow the provided installation steps to ensu
 
 
 <rk-img
-  src="/assets/images/wisnode/RAK2470/datasheet/steel_strips.png"
+  src="/assets/images/wisnode/rak2470-n/datasheet/steel_strips.png"
   width="40%"
   caption="Using the steel strips"
 />
@@ -111,7 +111,7 @@ The pole diameter supported by the included steel strips is 55~80&nbsp;mm.
 
 
 <rk-img
-  src="/assets/images/wisnode/RAK2470/datasheet/connecting_device.png"
+  src="/assets/images/wisnode/rak2470-n/datasheet/connecting_device.png"
   width="40%"
   caption="Connecting to another device"
 />

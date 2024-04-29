@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK2461 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisnode/RAK2461/datasheet/RAK2461.png
+rak_img: /assets/images/wisnode/rak2461-n/datasheet/RAK2461.png
 prev: ../Overview/
 next: false
 tags:
@@ -77,7 +77,7 @@ RAK2461 WisNode Bridge IO Lite provides different Digital Inputs, Outputs (Relay
 An example would be using the <a href="https://store.rakwireless.com/products/rak7289-8-16-channel-outdoor-lorawan-gateway" target="_blank">RAK7289V2</a> WisGate Edge Pro LoRaWAN gateway coupled with the RAK WisDM cloud management platform, to realize an end-to-end industrial field data acquisition and control system. Using the built-in LoRa Server, which comes standard with any RAK LoRaWAN gateway, one could seamlessly achieve transmission of the end device data to any application server. Furthermore, the MQTT integration allows for a high level of security and efficiency.
 
 <rk-img
-  src="/assets/images/wisnode/RAK2461/datasheet/RAK2461_network_structure.png"
+  src="/assets/images/wisnode/rak2461-n/datasheet/RAK2461_network_structure.png"
   width="100%"
   caption="RAK2461 WisNode Bridge IO Lite network structure"
 />
@@ -91,19 +91,19 @@ The hardware specification covers only the interfacing and detailed parameters a
 #### Interfaces
 
 <rk-img
-  src="/assets/images/wisnode/RAK2461/datasheet/RAK2461_top.png"
+  src="/assets/images/wisnode/rak2461-n/datasheet/RAK2461_top.png"
   width="70%"
   caption="RAK2461 WisNode Bridge IO Lite interfaces top (DO and DI)"
 />
 
 <rk-img
-  src="/assets/images/wisnode/RAK2461/datasheet/RAK2461_bottom_1.png"
+  src="/assets/images/wisnode/rak2461-n/datasheet/RAK2461_bottom_1.png"
   width="70%"
   caption="RAK2461 WisNode Bridge IO Lite interfaces bottom (RS485-DOx4)"
 />
 
 <rk-img
-  src="/assets/images/wisnode/RAK2461/datasheet/RAK2461_bottom_2.png"
+  src="/assets/images/wisnode/rak2461-n/datasheet/RAK2461_bottom_2.png"
   width="70%"
   caption="RAK2461 WisNode Bridge IO Lite interfaces bottom (RS485-DIx4-DOx1)"
 />
@@ -131,7 +131,7 @@ RAK2461 allows for two installation methods: wall mounting and DIN rail installa
 1. Drill the wall corresponding to the device dimensions and insert the anchors in the holes.
 
 <rk-img
-  src="/assets/images/wisnode/RAK2461/datasheet/mounting_wall_1.png"
+  src="/assets/images/wisnode/rak2461-n/datasheet/mounting_wall_1.png"
   width="100%"
   caption="Hole drilling"
 />
@@ -139,7 +139,7 @@ RAK2461 allows for two installation methods: wall mounting and DIN rail installa
 2. Fix the device to the wall with two tapping screws.
 
 <rk-img
-  src="/assets/images/wisnode/RAK2461/datasheet/mounting_wall_2.png"
+  src="/assets/images/wisnode/rak2461-n/datasheet/mounting_wall_2.png"
   width="60%"
   caption="Wall mounting"
 />
@@ -149,7 +149,7 @@ RAK2461 allows for two installation methods: wall mounting and DIN rail installa
 1. Attach the DIN rail mounting clip on the device with two M3*6 countersink screws.
 
 <rk-img
-  src="/assets/images/wisnode/RAK2461/datasheet/mounting_din_3.png"
+  src="/assets/images/wisnode/rak2461-n/datasheet/mounting_din_3.png"
   width="70%"
   caption="Attaching the clip"
 />
@@ -157,7 +157,7 @@ RAK2461 allows for two installation methods: wall mounting and DIN rail installa
 2. Mount the device to the DIN rail.
 
 <rk-img
-  src="/assets/images/wisnode/RAK2461/datasheet/mounting_din_4.png"
+  src="/assets/images/wisnode/rak2461-n/datasheet/mounting_din_4.png"
   width="70%"
   caption="DIN rail mounting"
 />
