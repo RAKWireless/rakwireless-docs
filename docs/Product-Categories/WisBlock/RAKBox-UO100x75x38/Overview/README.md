@@ -24,6 +24,8 @@ RAKBox-UO100x75x38 is a small-sized **WisBlock Unify Enclosure**. It is an IP67-
 
 Moreover, it supports different types of mounting options such as pole, wall, DIN rail, belt, and hook.
 
+A variant with Solar Panel is also available: <a href="https://docs.rakwireless.com/Product-Categories/WisBlock/RAKBox-UO100x75x38-Solar/Overview/" target="_blank">RAKBox-UO100x75x38-Solar</a>.
+
 ## Product Features
 - IP67-rated
 - Dimensions L x W x H: 100&nbsp;mm x 75&nbsp;mm x 38&nbsp;mm

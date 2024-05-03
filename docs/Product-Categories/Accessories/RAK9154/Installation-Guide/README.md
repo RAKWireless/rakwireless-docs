@@ -25,7 +25,7 @@ src="/assets/images/accessories/rak9154/installation/1.fixing.png"
   caption="Fixing the mounting bracket to the pole"
 />
 
-2. Attach the mounting plate onto the RAKK9154 with two M3 screws.
+2. Attach the mounting plate onto the RAK9154 with two M3 screws.
 
 <rk-img
 src="/assets/images/accessories/rak9154/installation/2.attaching.png"

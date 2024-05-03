@@ -23,9 +23,9 @@ The SDI-12 bus is a bidirectional interface for the conversion of commands and d
   * Voltage supply: **VBAT and 3.3&nbsp;V**
   * SDI-12 communications protocol
   * Supports the 3-wire SDI-12 communication cable
-  * Provides the 12&nbsp;V supply for the SDI-12 sensors and has an option to use an external 12&nbsp;V supply if required.
-  * Operating temperature: **-40 &nbsp;°C ~ 85&&nbsp;°C**
-- Module size: 35 x 25&nbsp;mm
+  * Provides a built-in 12&nbsp;V step-up supply (300&nbsp;mA max) for the SDI-12 sensors and has an option to use an external 12&nbsp;V supply if required.
+  * Operating temperature: **-40°&nbsp;C ~ 85°&nbsp;C**
+  * Module size: 35 x 25&nbsp;mm
 
 ## Specifications
 
@@ -76,14 +76,67 @@ This section shows the maximum and minimum ratings of the RAK13010 module and it
 
 ##### Recommended Operating Conditions
 
-| Symbol | Description                     | Min. | Typ. | Max. | Unit |
-| ------ | ------------------------------- | ---- | ---- | ---- | ---- |
-| 3V3_S  | 3V3_S                           | -    | 3.3  | -    | V    |
-| VBAT   | Battery                         | -    | 4.2  | -    | V    |
-| 5V     | SN74LVC1G125DBVR supply voltage | -    | 5    | -    | V    |
-| 12V    | Internal 12&nbsp;V              | -    | 12   | -    | V    |
-| 12V_EX | External 12&nbsp;V              | -    | 12   | -    | V    |
-
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Description </th>
+      <th>Min.</th>
+      <th>Typ.</th>
+      <th>Max.</th>
+      <th>Unit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3V3_S</td>
+      <td>3V3_S</td>
+      <td>-</td>
+      <td>3.3</td>
+      <td>-</td>
+      <td>V</td>
+    </tr>
+    <tr>
+      <td>VBAT</td>
+      <td>Battery</td>
+      <td>-</td>
+      <td>4.2</td>
+      <td>-</td>
+      <td>V</td>
+    </tr>
+    <tr>
+      <td>5V</td>
+      <td>SN74LVC1G125DBVR supply voltage</td>
+      <td>-</td>
+      <td>5</td>
+      <td>-</td>
+      <td>V</td>
+    </tr>
+    <tr>
+      <td rowspan="2">12V</td>
+      <td>Internal 12&nbsp;V</td>
+      <td>-</td>
+      <td>12</td>
+      <td>-</td>
+      <td>V</td>
+    </tr>
+    <tr>
+      <td>Internal 12&nbsp;V Output Current</td>
+      <td>-</td>
+      <td>-</td>
+      <td>300</td>
+      <td>mA</td>
+    </tr>
+    <tr>
+      <td>12V_EX</td>
+      <td>External 12&nbsp;V</td>
+      <td>-</td>
+      <td>12</td>
+      <td>-</td>
+      <td>V</td>
+    </tr>
+  </tbody>
+</table>
 
 #### Mechanical Characteristics
 

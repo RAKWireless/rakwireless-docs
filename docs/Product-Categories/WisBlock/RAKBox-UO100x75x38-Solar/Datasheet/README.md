@@ -27,7 +27,8 @@ Moreover, it supports different types of mounting options such as pole, wall, DI
 - Support the application of various scenarios via optional mounting accessories
 - Allows **customization service** without MOQ and supports CNC machining, painting, label printing, etc.
 
-## Solar Panel Specifications:
+## Solar Panel Specifications
+- <a href="https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/Solar%20Panel%20HX-80X45%E5%A4%9A%E6%99%B6%E5%B1%82%E5%8E%8B%E6%9D%BF%E8%A7%84%E6%A0%BC%E4%B9%A6.pdf" target="_blank">Solar Panel HX-80X45 Datasheet</a>
 - Panel Dimensions: 80&nbsp;mm x 45&nbsp;mm x 1.7&nbsp;mm (±0.2&nbsp;mm)
 - Voltage at nominal power: 5&nbsp;V (±10%)
 - Current at nominal power: 90&nbsp;mA (±5%)

@@ -8,20 +8,6 @@
           <a href="https://docs.rakwireless.com/Product-Categories/WisNode/RAK2560/Overview/" class="event-banner-link ">Access the improved structure for Sensor Hub documentation.</a>
         </div>
         <div>
-          <a href="https://docs.rakwireless.com/Release-Notes/WisGateOS2/2024/January-2/" class="event-banner-link ">Discover the latest features of WisGateOS2 v2.2.2!</a>
-        </div>
-        <div>
-          <a href="https://docs.rakwireless.com/Certification/#wisnode?utm_source=textad_docs&utm_medium=organic&utm_campaign=rak2270cert" class="event-banner-link "><span :style="{
-            paddingRight: '2px',
-          }">RAK2270 RAK Sticker Tracker is now IC, CE, FCC certified.</span>  <u>See certifications</u>!</a>
-        </div>
-        <div>
-          <a href="https://docs.rakwireless.com/Release-Notes/WisDM/2024/March-21/?utm_source=docs_center&utm_medium=organic&utm_campaign=WisDMv1.6.2" class="event-banner-link ">WisDM v1.6.2 is now available with Bulk Sync of Gateway System Settings & more. Check updates now!</a>
-        </div>
-        <div>
-          <a href="https://docs.rakwireless.com/Release-Notes/RUI/2023/December-14/" class="event-banner-link ">Check the latest updates of RUI3 v4.1.0!</a>
-        </div>
-        <div>
           <a href="https://downloads.rakwireless.com/LoRa/RAK11720/Certification/RAK11720_ANATEL_Certification.pdf?utm_source=textad_docs&utm_medium=organic&utm_campaign=RAK11720-ANATEL-Certification" class="event-banner-link "><span :style="{
             paddingRight: '2px',
           }">LoRa Bluetooth Module RAK11720 now ANATEL-certified.</span>  <u>View certification for details</u>.</a>
@@ -116,7 +102,7 @@
   }
 
   #banner-flip div:first-child {
-    animation: flip7 36s linear infinite;
+    animation: flip3 15s linear infinite;
   }
 
   /* @keyframes show {
@@ -150,7 +136,7 @@
     100% { margin-top: -270px; }
   }
 
-  @keyframes flip4 {
+  /*@keyframes flip4 {
     0% { margin-top: -360px; }
     5% { margin-top: -270px; }
     25% { margin-top: -270px; }
@@ -212,7 +198,7 @@
     95% { margin-top: 0px; }
     99.99% { margin-top: 0px; }
     100% { margin-top: -630px; }
-  }
+  }*/
 
   @media screen and (max-width: 599px){
     .event-banner-text-container {

@@ -17,7 +17,9 @@ Thank you for choosing **RAKBox-UO100x75x38 with Solar** for your awesome IoT pr
 
 - [Datasheet](../Datasheet/)
 - [Installation Guide](../Installation/)
+- <a href="https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/Solar%20Panel%20HX-80X45%E5%A4%9A%E6%99%B6%E5%B1%82%E5%8E%8B%E6%9D%BF%E8%A7%84%E6%A0%BC%E4%B9%A6.pdf" target="_blank">Solar Panel HX-80X45 Datasheet</a>
 - [RAKBox-UO100x75x38 with Solar Panel 3D Model](https://downloads.rakwireless.com/#3D_File/WisBlock/Unify%20Enclosure/RAKBox-UO100x75x38/)
+
 
 ## Product Description
 RAKBox-UO100x75x38 with Solar Panel is a small-sized **WisBlock Unify Enclosure** that allows you to charge the battery using solar energy. It is an IP65-rated protection class that allows the unit to be used outdoors while protecting the internal components from dust and water. It is also a weatherproof fire retardant enclosure made from ABS plastic specially designed for WisBlock Products. It also has a solar panel included for powering up your devices and charging the batteries.

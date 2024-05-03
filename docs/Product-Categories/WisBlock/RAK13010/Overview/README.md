@@ -34,8 +34,8 @@ The SDI-12 bus is a bidirectional interface for the conversion of commands and d
     * Voltage supply: **VBAT and 3.3&nbsp;V**
     * SDI-12 communications protocol
     * Supports the 3-wire SDI-12 communication cable
-    * Provides the 12&nbsp;V supply for the SDI-12 sensors and has an option to use an external 12&nbsp;V supply if required.
-    * Operating temperature: **-40 &nbsp;°C ~ 85&&nbsp;°C**
+    * Provides a built-in 12&nbsp;V step-up supply (300&nbsp;mA max) for the SDI-12 sensors and has an option to use an external 12&nbsp;V supply if required.
+    * Operating temperature: **-40°&nbsp;C ~ 85°&nbsp;C**
 
 * **Size**
     * 35 x 25&nbsp;mm

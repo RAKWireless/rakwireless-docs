@@ -28,6 +28,10 @@ The Ethernet cable gland is designed to safely connect your outdoor equipment wi
 - Casing connector: RJ45 female
 - Board connector: RJ45 male
 
+:::tip 📝 NOTE
+The Ethernet Cable Gland is intended for use with the <a href="/https://docs.rakwireless.com/Product-Categories/WisGate/RAK7249/Overview/" >RAK7249 WisGate Edge Max Gateway</a>, Outdoor Gateway Enclosure, or with enclosures with a threaded hole. In addition, a matching nut for securing it is not included.
+:::
+
 
 ## Specifications
 
