@@ -401,6 +401,16 @@ RAK7391 has an M.2 B-key interface, which provides PCIe and USB3.0 signals. Curr
 
 The WisBlock IO interface is a standard, open interface defined by RAK. It is compatible with many sensors and other modules, providing users with many different choices. The RAK7391 is compatible with the majority of WisBlock IO modules, allowing the user to use industrial protocols from the RAK7391 or connect sensors and actuators to it.
 
+#### Mechanical Characteristics
+
+The RAK7391 board uses a standard VIA Mini-ITX form factor. The board is 170x170&nbsp;mm with four (4) support holes.
+
+<rk-img
+  src="/assets/images/wisgate/rak7391/datasheet/4.mechanical.png"
+  width="70%"
+  caption="Mechanical drawing"
+/>
+
 ## Certification
 
 <rk-certifications :params="$page.frontmatter.certifications" />

@@ -3,7 +3,7 @@
     <div class="text-container">
       <p class="text-container-header">{{ computedTextHeader }}</p>
       <p>
-        Stay up to date with the latest <b>software product releases</b>, <b> feature updates</b>, and <b>enhancements</b>.
+        Stay up to date with the latest <b>software and hardware product releases</b>, <b> feature updates</b>, and <b>enhancements</b>.
       </p>
     </div>
     <div class="form-container">
