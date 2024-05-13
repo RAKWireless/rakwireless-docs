@@ -84,9 +84,10 @@ The hardware specification is categorized into four (4) parts. It shows the pino
 | ------- | ------------- | ---- | ----------------------------- | ------------------------------------------------------------- |
 | 1       | NC            | -    | No function                   | -                                                             |
 | 2       | GND           | -    | Ground                        | -                                                             |
-| 3       | One-wire UART | IO   | Communication with Sensor Hub | -                                                             |
+| 3       | Reserved      | -    | Not defined                   | -                                                             |
 | 4       | Vcc_Probe     | PI   | Power supply from the Hub     | 3.3&nbsp;V<sub>DC</sub> support mode; 3.4&nbsp;V battery mode |
-| 5       | Reserved      | -    | Not defined for now           | Reserved for future applications                              |
+| 5       | One-wire UART | IO   | Communication with Sensor Hub |                                                               |
+
 
 
 #### Power Supply

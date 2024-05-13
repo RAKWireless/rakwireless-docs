@@ -1,5 +1,10 @@
 # Binary Command Manual
 
+::: tip 📝 NOTE    
+Binary Mode has been removed from the API to reduce code size.    
+:::
+
+<!--
 ## Overview
 
 Binary mode is designed for M2M (Machine to Machine) communication, which provides an efficient way to do binary data transmission between multiple devices supporting Binary mode. On receiving a frame, it unwraps the received frame and dispatches the payload to the correct upper software layer. It can be easily extended via upper software layers to register customized frame types and provide corresponding customized handlers.
@@ -3485,3 +3490,4 @@ Send **AT+ENCKEY=0102030405060708**
 >> 0x7E 0x00 0x0C 0x01 0x00 0x00 0x08 0x02 0x41 0x01 0x02 0x03 0x04 0x05 0x06 0x07 0x08 0x12
 << 0x7E 0x00 0x05 0x01 0x01 0x00 0x01 0x01 0x41 0x00 0x06
 ```
+-->

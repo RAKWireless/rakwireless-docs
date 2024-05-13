@@ -2,6 +2,11 @@
 lineNumbers: true
 ---
 
+::: tip 📝 NOTE    
+Binary Mode has been removed from the API to reduce code size.    
+:::
+
+<!--
 # Binary Mode
 
 ## send()
@@ -59,3 +64,5 @@ api.apiMode.deregisterHandler(frame_type);
 | **Function**   | `int32_t deregisterHandler(uint8_t frame_type)`       |
 | -------------- | ----------------------------------------------------- |
 | **Parameters** | **frame_type**	frame type header of Binary mode protocol |
+
+-->

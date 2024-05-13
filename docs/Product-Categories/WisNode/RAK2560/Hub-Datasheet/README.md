@@ -101,9 +101,11 @@ Each of the two ports has five (5) pins and they are the same for both ports.
 | ------- | ------------- | ---- | ----------------------------- | ------------------------------------------------------------- |
 | 1       | Vin           | PI   | 12&nbsp;V<sub>DC</sub> supply | Input 5~16&nbsp;V                                             |
 | 2       | GND           | -    | Ground                        | -                                                             |
-| 3       | One-wire UART | IO   | Communication with probe      | -                                                             |
+| 3       | Reserved      | IO   | Not defined                   | Reserved for future use                                       |
 | 4       | Vcc_Probe     | PO   | Power supply for the probe    | 3.3&nbsp;V<sub>DC</sub> support mode; 3.4&nbsp;V battery mode |
-| 5       | Reserved      | -    | Not defined                   | Reserved for future applications                              |
+| 5       | One-wire UART | IO   | Communication with probe      | Applications                                     	           |
+
+
 
 #### RF Characteristics
 ##### Operating Frequencies

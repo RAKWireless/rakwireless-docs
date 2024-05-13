@@ -5,20 +5,6 @@
     <div class="event-banner-content">
       <div id="banner-flip">
         <div>
-          <a href="https://docs.rakwireless.com/Product-Categories/WisNode/RAK2560/Overview/" class="event-banner-link ">Access the improved structure for Sensor Hub documentation.</a>
-        </div>
-        <div>
-          <a href="https://www.rakwireless.com/en-us/products/rui3?utm_source=newshub&utm_medium=organic&utm_campaign=rui3opensource" class="event-banner-link "><span :style="{
-            paddingRight: '2px',
-            textDecoration: 'underline'
-          }">RUI3 is now open source.</span>&nbsp;Power your project with flexibility and community support.</a>
-        </div>
-        <div>
-          <a href="https://docs.rakwireless.com/Release-Notes/WisDM/2024/April-29/?utm_source=textad_docs&utm_medium=organic&utm_campaign=release_notes_wisdm_v1621" class="event-banner-link "><span :style="{
-            paddingRight: '2px',
-          }">WisDM V1.6.2.1: Discounted subscription and new hints for whitelist management.</span> &nbsp;  <u>Check the updates</u>.</a>
-        </div>
-        <div>
           <a href="https://docs.rakwireless.com/Product-Categories/WisGate/RAK7271-7371/Datasheet/#certification?utm_source=textad_docs&utm_medium=organic&utm_campaign=rak7271_rak7371_cert" class="event-banner-link "><span :style="{
             paddingRight: '2px',
           }">RAK7271/RAK7371 now complies with RoHS and REACH for global sale.</span> &nbsp;  <u>Read full reports.</u></a>
@@ -107,10 +93,10 @@
   }
 
   #banner-flip div:first-child {
-    animation: flip4 20s linear infinite;
+    animation: flip1 5s linear infinite;
   }
 
-  /* @keyframes show {
+  @keyframes show {
     0% {margin-top:-270px;}
     5% {margin-top:-180px;}
     33% {margin-top:-180px;}
@@ -119,8 +105,8 @@
     71% {margin-top:0px;}
     99.99% {margin-top:0px;}
     100% {margin-top:-270px;}
-  } */
-
+  }
+ /*
   @keyframes flip2 {
     0% { margin-top: -180px; }
     5% { margin-top: -90px;  }
@@ -153,7 +139,7 @@
     99.99% { margin-top: 0px; }
     100% { margin-top: -360px; }
   }
-  /*
+ 
   @keyframes flip5 {
     0% { margin-top: -450px; }
     5% { margin-top: -360px; }

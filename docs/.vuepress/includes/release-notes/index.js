@@ -27,6 +27,12 @@ export const categories = [
     img:"/assets/images/release-notes/wisgate-os2.png",
     path:"/Release-Notes/WisGateOS2/",
     label:"WisGateOS2",
-    desc:"LoRaWAN Gateway OS with Built-in Network Server, Integrations, and Useful Plugins."
+    desc:"LoRaWAN Gateway OS with Built-in Network Server, Integrations, and Useful Plugins"
+  },
+  {
+    img:"/assets/images/release-notes/Hardware.png",
+    path:"/Release-Notes/Hardware/",
+    label:"Hardware",
+    desc:"Updates on product changes, including hardware modifications, discontinuations, and production adjustments"
   }
 ]

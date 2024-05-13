@@ -1,82 +1,47 @@
 # BLE
 
+### Devices that support RUI3 BLE API
+
+| RAK Modules                                                                       |
+|-----------------------------------------------------------------------------------|
+| <a href="/Product-Categories/WisDuo/RAK4630-Module" target="_blank">RAK4630</a>   |
+| <a href="/Product-Categories/WisDuo/RAK11720-Module" target="_blank">RAK11720</a> |
 
 ## RUI BLE Data Type
 
-### RAK\_BLE\_SERVICE\_MODE
+### Enumerations
+
+#### RAK\_BLE\_SERVICE\_MODE
 
 ```c
 enum RAK_BLE_SERVICE_MODE
 ```
 
-<table>
-<thead>
-  <tr>
-    <th colspan="2">Enumerator</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>RAK_BLE_SERVICE_MODE </td>
-    <td>Switch to Beacon Mode.</td>
-  </tr>
-</tbody>
-</table>
+| Mode                 | Comment                 |
+|----------------------|-------------------------|
+| RAK_BLE_UART_MODE    | Switch to BLE UART mode |
+| RAK_BLE_SERVICE_MODE | Switch to Beacon Mode.  |
 
-
-### RAK\_CHARS\_SECURITY\_REQ
+#### RAK\_CHARS\_SECURITY\_REQ
 
 
 ```c
 enum RAK_CHARS_SECURITY_REQ
 ```
 
-<table>
-<thead>
-  <tr>
-    <th colspan="2">Enumerator</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>RAK_SET_OPEN </td>
-    <td>Set <code>sec_mode</code> pointed to by ptr to require no protection, open link.</td>
-  </tr>
-  <tr>
-    <td>RAK_SET_ENC_NO_MITM </td>
-    <td>Set <code>sec_mode</code> pointed to by ptr to require encryption, but no MITM protection.</td>
-  </tr>
-  <tr>
-    <td>RAK_SET_ENC_WITH_MITM </td>
-    <td>Set <code>sec_mode</code> pointed to by ptr to require encryption and MITM protection.</td>
-  </tr>
-</tbody>
-</table>
-
+| Mode                  | Comment                                                                                    |
+|-----------------------|--------------------------------------------------------------------------------------------|
+| RAK_SET_OPEN          | Set <code>sec_mode</code> pointed to by ptr to require no protection, open link.           |
+| RAK_SET_ENC_NO_MITM   | Set <code>sec_mode</code> pointed to by ptr to require encryption, but no MITM protection. |
+| RAK_SET_ENC_WITH_MITM | Set <code>sec_mode</code> pointed to by ptr to require encryption and MITM protection.     |
 
 
 ### RAK\_CHARS\_PROPERTIES
 
-```c
-enum RAK_CHARS_PROPERTIES
-```
-<table>
-<thead>
-  <tr>
-    <th colspan="2">Enumerator</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>RAK_CHR_PROPS_READ </td>
-    <td>Set the characteristic property to be Read.</td>
-  </tr>
-  <tr>
-    <td>RAK_CHR_PROPS_NOTIFY </td>
-    <td>Set the characteristic property to be Notify.</td>
-  </tr>
-</tbody>
-</table>
+| Property             | Comment                                       |
+|----------------------|-----------------------------------------------|
+| RAK_CHR_PROPS_READ   | Set the characteristic property to be Read.   |
+| RAK_CHR_PROPS_NOTIFY | Set the characteristic property to be Notify. |
 
 ### BLE\_HANDLER
 
@@ -121,8 +86,8 @@ api.ble.stop()
 ```
 
 | **Function** | `void stop(void)` |
-| ------------ | ------------------ |
-| **Returns**  | void               |
+|--------------|-------------------|
+| **Returns**  | void              |
 
 ### registerCallback
 
@@ -133,7 +98,7 @@ api.ble.registerCallback()
 ```
 
 | **Function**   | `void registerCallback (Event event, BLE_HANDLER callback)`                       |
-| -------------- | --------------------------------------------------------------------------------- |
+|----------------|-----------------------------------------------------------------------------------|
 | **Parameters** | **event** - set connect or disconnect event <br> **callback** - callback function |
 | **Returns**    | void                                                                              |
 
@@ -152,10 +117,10 @@ api.ble.uart.start()
 ```
 
 
-| **Function** | `void start(uint8_t adv_time)`                                                      |
-| ------------ | ----------------------------------------------------------------------------------- |
-| **Parameters** | **adv_time** - advertising timeout in seconds. If x = 0, advertising never stops  |
-| **Returns**  | void                                                                                |
+| **Function**   | `void start(uint8_t adv_time)`                                                   |
+|----------------|----------------------------------------------------------------------------------|
+| **Parameters** | **adv_time** - advertising timeout in seconds. If x = 0, advertising never stops |
+| **Returns**    | void                                                                             |
 
 
 ### stop()
@@ -168,7 +133,7 @@ api.ble.uart.stop()
 
 
 | **Function** | `void stop(void)` |
-| ------------ | ----------------- |
+|--------------|-------------------|
 | **Returns**  | void              |
 
 ::: details Click to View Example
@@ -195,7 +160,7 @@ api.ble.uart.available()
 
 
 | **Function**      | `bool available(void)`                                                      |
-| ----------------- | --------------------------------------------------------------------------- |
+|-------------------|-----------------------------------------------------------------------------|
 | **Returns**       | bool                                                                        |
 | **Return Values** | **TRUE** - receive data from the ble device <br> **FALSE** - nothing to get |
 
@@ -208,7 +173,7 @@ api.ble.uart.read()
 ```
 
 | **Function** | `char read(void)`                                              |
-| ------------ | -------------------------------------------------------------- |
+|--------------|----------------------------------------------------------------|
 | **Returns**  | The first byte of incoming BLE data available (Type: **char**) |
 
 ### write()
@@ -220,7 +185,7 @@ api.ble.uart.write(data, size)
 ```
 
 | **Function**   | `void write(uint8_t * data, uint16_t size = 6)`                                                                            |
-| -------------- | -------------------------------------------------------------------------------------------------------------------------- |
+|----------------|----------------------------------------------------------------------------------------------------------------------------|
 | **Parameters** | **data** - an array to send as a series of bytes <br> **size** - length of the data that will be written to the ble device |
 | **Returns**    | void                                                                                                                       |
 
@@ -233,7 +198,7 @@ api.ble.uart.setPIN(key, size)
 ```
 
 | **Function**   | `void setPIN(uint8_t * key, uint16_t size)`                                                            |
-| -------------- | ------------------------------------------------------------------------------------------------------ |
+|----------------|--------------------------------------------------------------------------------------------------------|
 | **Parameters** | **key** - the key to set the passkey (6 digits only) <br> **size** - the length of key (can only be 6) |
 | **Returns**    | void                                                                                                   |
 
@@ -246,7 +211,7 @@ api.ble.uart.setPermission(permission)
 ```
 
 | **Function**   | `void setPermission(RAK_CHARS_SECURITY_REQ permission)`                                                                                  |
-| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+|----------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | **Parameters** | **permission** - This will cause apps to perform pairing with static PIN you set <br> `RAK_SET_ENC_WITH_MITM` <br> `RAK_SET_ENC_NO_MITM` |
 | **Returns**    | void                                                                                                                                     |
 
@@ -272,7 +237,7 @@ If MAC is 6 bytes and x is passed as 2, the return value will be position [2] in
 :::
 
 | **Function**   | `char* get(uint8_t pos)`              |
-| -------------- | ------------------------------------- |
+|----------------|---------------------------------------|
 | **Parameters** | **pos** - single byte, array location |
 | **Returns**    | the current BLE MAC Address           |
 
@@ -290,7 +255,7 @@ api.ble.settings.txPower.set(txpwr)
 
 
 | **Function**      | `bool set(int8_t txpwr)`                                                                                                                               |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Parameters**    | **txpwr** - The TX power level (dBm), which can be one of the following values (from lowest to higher transmit power): 0~8, -4, -8, -12, -16, -20, -40 |
 | **Returns**       | bool                                                                                                                                                   |
 | **Return Values** | **TRUE** for success SET <br> **FALSE** for SET fail                                                                                                   |
@@ -306,7 +271,7 @@ api.ble.settings.txPower.get()
 
 
 | **Function** | `int8_t get()`             |
-| ------------ | -------------------------- |
+|--------------|----------------------------|
 | **Returns**  | the current transmit power |
 
 ### advertiseInterval
@@ -321,7 +286,7 @@ api.ble.settings.advertiseInterval.set(adv_interval)
 
 
 | **Function**      | `bool set	(int32_t adv_interval`                     |
-| ----------------- | ---------------------------------------------------- |
+|-------------------|------------------------------------------------------|
 | **Parameters**    | **adv_interval** 1000&nbsp;ms ~ 10240&nbsp;ms        |
 | **Returns**       | bool                                                 |
 | **Return Values** | **TRUE** for success SET <br> **FALSE** for SET fail |
@@ -337,7 +302,7 @@ api.ble.settings.advertiseInterval.get()
 
 
 | **Function** | `int32_t get()`                                                          |
-| ------------ | ------------------------------------------------------------------------ |
+|--------------|--------------------------------------------------------------------------|
 | **Returns**  | Return the current advertisement interval (1000&nbsp;ms ~ 10240&nbsp;ms) |
 
 
@@ -353,7 +318,7 @@ api.ble.settings.broadcastName.set(ble_name, device_name_length)
 
 
 | **Function**      | `bool set(char *ble_name, uint8_t device_name_length)`                                                                             |
-| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+|-------------------|------------------------------------------------------------------------------------------------------------------------------------|
 | **Parameters**    | **ble_name** - setting device name an array of data to send as bytes <br> **device_name_length** - the number of bytes to transmit |
 | **Returns**       | bool                                                                                                                               |
 | **Return Values** | **TRUE** for success SET <br> **FALSE** for SET fail                                                                               |
@@ -370,7 +335,7 @@ api.ble.settings.broadcastName.get()
 
 
 | **Function** | `char* get()`               |
-| ------------ | --------------------------- |
+|--------------|-----------------------------|
 | **Returns**  | the current BLE Device Name |
 
 
@@ -386,7 +351,7 @@ api.ble.advertise.start(adv_time)
 
 
 | **Function**       | `bool start(uint8_t adv_time)`                                                      |
-| ------------------ | ----------------------------------------------------------------------------------- |
+|--------------------|-------------------------------------------------------------------------------------|
 | **Parameters**     | **adv_time** - advertising timeout in seconds. If x = 0, advertising never stops.   |
 | **Returns**        | bool                                                                                |
 | **Returns Values** | **TRUE**	for start advertising success <br> **FALSE** for start advertising failure |
@@ -401,7 +366,7 @@ api.ble.advertise.stop()
 ```
 
 | **Function**       | `bool stop()`                                                                     |
-| ------------------ | --------------------------------------------------------------------------------- |
+|--------------------|-----------------------------------------------------------------------------------|
 | **Returns**        | bool                                                                              |
 | **Returns Values** | **TRUE**	for stop advertising success <br> **FALSE** for stop advertising failure |
 
@@ -428,7 +393,7 @@ api.ble.advertise.status()
 
 
 | **Function**       | `bool status()`                                                                           |
-| ------------------ | ----------------------------------------------------------------------------------------- |
+|--------------------|-------------------------------------------------------------------------------------------|
 | **Returns**        | bool                                                                                      |
 | **Returns Values** | **TRUE**	- the device is in advertising <br> **FALSE** -  the device stops in advertising |
 |                    |
@@ -445,7 +410,7 @@ api.ble.settings.blemode(ble_mode)
 
 
 | **Function**   | `void blemode(RAK_BLE_SERVICE_MODE ble_mode)` |
-| -------------- | --------------------------------------------- |
+|----------------|-----------------------------------------------|
 | **Parameters** | **ble_mode**	`RAK_BLE_BEACON_MODE`            |
 | **Returns**    | void                                          |
 
@@ -464,7 +429,7 @@ api.ble.beacon.ibeacon.uuid.set(beaconUuid)
 ```
 
 | **Function**      | `bool set(uint8_t beaconUuid[])`                     |
-| ----------------- | ---------------------------------------------------- |
+|-------------------|------------------------------------------------------|
 | **Parameters**    | **beaconUuid** - define 16 bytes                     |
 | **Returns**       | bool                                                 |
 | **Return Values** | **TRUE** for success SET <br> **FALSE** for SET fail |
@@ -481,7 +446,7 @@ api.ble.beacon.ibeacon.major.set(major_value)
 ```
 
 | **Function**      | `bool set(uint16_t major_value)`                     |
-| ----------------- | ---------------------------------------------------- |
+|-------------------|------------------------------------------------------|
 | **Parameters**    | **major_value**  - set major (define 2 bytes)        |
 | **Returns**       | bool                                                 |
 | **Return Values** | **TRUE** for success SET <br> **FALSE** for SET fail |
@@ -498,7 +463,7 @@ api.ble.beacon.ibeacon.minor.set(minor_value)
 ```
 
 | **Function**      | `bool set(uint16_t minor_value)`                     |
-| ----------------- | ---------------------------------------------------- |
+|-------------------|------------------------------------------------------|
 | **Parameters**    | **minor_value**  - set minor (define 2 bytes)        |
 | **Returns**       | bool                                                 |
 | **Return Values** | **TRUE** for success SET <br> **FALSE** for SET fail |
@@ -514,7 +479,7 @@ api.ble.beacon.ibeacon.power.set(ibeacon_power)
 ```
 
 | **Function**      | `bool set(int8_t ibeacon_power)`                        |
-| ----------------- | ------------------------------------------------------- |
+|-------------------|---------------------------------------------------------|
 | **Parameters**    | **ibeacon_power** - display measured power value (RSSI) |
 | **Returns**       | bool                                                    |
 | **Return Values** | **TRUE** for success SET <br> **FALSE** for SET fail    |
@@ -529,7 +494,7 @@ api.ble.beacon.custom.payload.set(cus_adv_data[], cus_adv_len)
 ```
 
 | **Function**      | `bool set(uint8_t cus_adv_data[], uint8_t cus_adv_len)`                                                                        |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+|-------------------|--------------------------------------------------------------------------------------------------------------------------------|
 | **Parameters**    | **cus_adv_data[]** - set the advertising payload (MAX 31 bytes) <br> **cus_adv_len** - the number of bytes to advertising data |
 | **Returns**       | bool                                                                                                                           |
 | **Return Values** | **TRUE** for success SET <br> **FALSE** for SET fail                                                                           |
@@ -544,7 +509,7 @@ api.ble.scanner.start(timeout_sec)
 ```
 
 | **Function**   | `void start(uint16_t timeout_sec)`                                                                |
-| -------------- | ------------------------------------------------------------------------------------------------- |
+|----------------|---------------------------------------------------------------------------------------------------|
 | **Parameters** | **timeout_sec** - field is scanning stop after x seconds. If `timeout_sec=0`, always scanning on. |
 | **Returns**    | void                                                                                              |
 
@@ -558,7 +523,7 @@ api.ble.scanner.setInterval(scan_interval, scan_window);
 ```
 
 | **Function**      | `bool setInterval(uint16_t scan_interval, uint16_t scan_window)`                                                                                                                           |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Parameters**    | **scan_interval** - Defines at what intervals scanner is started. (3&nbsp;ms ~ 40960&nbsp;ms) <br> **scan_window** - Defines how long to scan at each interval (3&nbsp;ms ~ 40960&nbsp;ms) |
 | **Returns**       | bool                                                                                                                                                                                       |
 | **Return Values** | **TRUE** for success SET <br> **FALSE** for SET fail                                                                                                                                       |
@@ -574,7 +539,7 @@ void setScannerCallback	(void(*)(int8_t, uint8_t *, uint8_t *, uint16_t) userFun
 ```
 
 | **Function**   | `api.ble.scanner.setScannerCallback(userFunc)` |
-| -------------- | ---------------------------------------------- |
+|----------------|------------------------------------------------|
 | **Parameters** | **userFunc**	callback                          |
 | **Returns**    | void                                           |
 
@@ -591,7 +556,7 @@ This API provides developers to create a new BLE service and construct an instan
 RAKBleService hrms = RAKBleService(service_uuid[])
 ```
 | **Function**   | `RAKBleService(uint8_t service_uuid[])`                                                             |
-| -------------- | --------------------------------------------------------------------------------------------------- |
+|----------------|-----------------------------------------------------------------------------------------------------|
 | **Parameters** | **service_uuid[]** - create a 128-bit base UUID, and the 3rd and 4th byte means Service 16-bit UUID |
 | **Returns**    | void                                                                                                |
 
@@ -613,7 +578,7 @@ RAKBleService hrms = RAKBleService(service_uuid[])
 
 
 | **Function** | `void begin()` |
-| ------------ | -------------- |
+|--------------|----------------|
 | **Returns**  | void           |
 
 
@@ -728,7 +693,7 @@ RAKBleCharacteristic bslc = RAKBleCharacteristic(characteristicUUID)
 ```
 
 | **Function**   | `RAKBleCharacteristic(uint16_t characteristicUUID)`                                                                                                                             |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Parameters** | **characteristicUUID** - The base is the same as the base uuid used when construct an instance BLEService, only provided the 3rd and 4th byte means characteristic (16bit UUID) |
 
 
@@ -749,7 +714,7 @@ RAKBleCharacteristic bslc = RAKBleCharacteristic(characteristicUUID)
 :::
 
 | **Function**   | `void setProperties(RAK_CHARS_PROPERTIES prop)`                   |
-| -------------- | ----------------------------------------------------------------- |
+|----------------|-------------------------------------------------------------------|
 | **Parameters** | **prop** - currently supports (`CHR_PROPS_NOTIFY/CHR_PROPS_READ`) |
 | **Returns**    | void                                                              |
 
@@ -869,7 +834,7 @@ RAKBleCharacteristic bslc = RAKBleCharacteristic(characteristicUUID)
 :::
 
 | **Function**   | `void setPermission(RAK_CHARS_SECURITY_REQ read_write_perm)` |
-| -------------- | ------------------------------------------------------------ |
+|----------------|--------------------------------------------------------------|
 | **Parameters** | **read_write_perm** `RAK_SET_OPEN`                           |
 | **Returns**    | void                                                         |
 
@@ -988,7 +953,7 @@ RAKBleCharacteristic bslc = RAKBleCharacteristic(characteristicUUID)
 :::
 
 | **Function**   | `void setFixedLen(uint16_t fixed_len)`                              |
-| -------------- | ------------------------------------------------------------------- |
+|----------------|---------------------------------------------------------------------|
 | **Parameters** | **fixed_len** - the length of the incoming data for notify or write |
 | **Returns**    | void                                                                |
 
@@ -1107,7 +1072,7 @@ RAKBleCharacteristic bslc = RAKBleCharacteristic(characteristicUUID)
 :::
 
 | **Function** | `void begin()` |
-| ------------ | -------------- |
+|--------------|----------------|
 | **Returns**  | void           |
 
 
@@ -1226,7 +1191,7 @@ RAKBleCharacteristic bslc = RAKBleCharacteristic(characteristicUUID)
 :::
 
 | **Function**   | `void notify	(uint8_t * notify_data)`                   |
-| -------------- | ------------------------------------------------------- |
+|----------------|---------------------------------------------------------|
 | **Parameters** | **notify_data** - an array to send as a series of bytes |
 | **Returns**    | void                                                    |
 
@@ -1345,7 +1310,7 @@ RAKBleCharacteristic bslc = RAKBleCharacteristic(characteristicUUID)
 :::
 
 | **Function**   | `void write(uint8_t * send_data)`                     |
-| -------------- | ----------------------------------------------------- |
+|----------------|-------------------------------------------------------|
 | **Parameters** | **send_data** - an array to send as a series of bytes |
 | **Returns**    | void                                                  |
 
@@ -1463,7 +1428,7 @@ RAKBleCharacteristic bslc = RAKBleCharacteristic(characteristicUUID)
 :::
 
 | **Function** | `bool notifyEnabled(void)` |
-| ------------ | -------------------------- |
+|--------------|----------------------------|
 | **Returns**  | void                       |
 
 :::details Click to View Example
@@ -1580,7 +1545,7 @@ RAKBleCharacteristic bslc = RAKBleCharacteristic(characteristicUUID)
 :::
 
 | **Function**   | `void setCccdWriteCallback(void(*)(uint16_t, uint8_t *) 	userFunc)` |
-| -------------- | ------------------------------------------------------------------- |
+|----------------|---------------------------------------------------------------------|
 | **Parameters** | **userFunc** - callback function                                    |
 | **Returns**    | void                                                                |
 
@@ -1698,7 +1663,7 @@ RAKBleCharacteristic bslc = RAKBleCharacteristic(characteristicUUID)
 :::
 
 | **Function**   | `void setWriteCallback(void(*)(uint16_t, uint8_t *) 	userFunc)` |
-| -------------- | --------------------------------------------------------------- |
+|----------------|-----------------------------------------------------------------|
 | **Parameters** | **userFunc** - callback function                                |
 | **Returns**    | void                                                            |
 
@@ -1811,7 +1776,7 @@ api.ble.customer.init()
 
 
 | **Function** | `void init()` |
-| ------------ | ------------- |
+|--------------|---------------|
 | **Returns**  | void          |
 
 
@@ -1825,5 +1790,5 @@ api.ble.customer.start()
 
 
 | **Function** | `void start()` |
-| ------------ | -------------- |
+|--------------|----------------|
 | **Returns**  | void           |

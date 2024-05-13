@@ -1,5 +1,9 @@
 # One Wire Serial
 
+::: tip 📝 NOTE    
+OneWireSerial API calls are only available on the RAK4630 and RAk3172 WisDuo modules.    
+:::
+
 ## RAK_ONEWIRE_SERIAL_RECEIVE_T
 
 Structure with the received data

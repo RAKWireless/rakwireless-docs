@@ -3,9 +3,27 @@ lineNumbers: true
 ---
 # Arduino API
 
+:::warning ⚠️ WARNING
+With version V4.1.1 of RUI3, the LoRa P2P functions are separated into a new class and API calls for LoRa have a changed syntax:
+
+| Old                        | New                     | Comment                                          |
+| -------------------------- | ----------------------- | ------------------------------------------------ |
+| `api.lorawan.pXXX`         | `api.lora.pXXX`         | All LoRa P2P API calls change.                   |
+| `api.lorawan.registerPyyy` | `api.lora.registerPyyy` | All LoRa P2P callback register API calls change. |
+| `api.lorawan.nwm.set(1)`   | `api.lorawan.nwm.set()` | Set device to LoRaWAN mode.                      |
+| `api.lorawan.nwm.set(0)`   | `api.lora.nwm.set()`    | Set device to LoRa P2P mode.                     |
+
+:::
+
 ## RUI Arduino Data Type
 
-### RAK\_SERIAL\_MODE
+### Typedefs
+
+typedef enum _eAnalogReference 	eAnalogReference
+
+### Enumerations
+
+#### RAK\_SERIAL\_MODE
 
 ```c
 enum RAK_SERIAL_MODE
@@ -18,7 +36,7 @@ enum RAK_SERIAL_MODE
 | RAK_DEFAULT_MODE | Default mode which depends on platform |
 
 
-### RAK\_ADC\_RESOLUTION
+#### RAK\_ADC\_RESOLUTION
 
 ```c
 enum RAK_ADC_RESOLUTION
@@ -33,7 +51,7 @@ enum RAK_ADC_RESOLUTION
 
 
 
-### RAK\_ADC\_MODE
+#### RAK\_ADC\_MODE
 
 ```c
 enum RAK_ADC_MODE
@@ -48,7 +66,7 @@ enum RAK_ADC_MODE
 | RAK_ADC_MODE_1_2     | maximum 1.2V                            |
 
 
-### RAK\_PWM\_RESOLUTION
+#### RAK\_PWM\_RESOLUTION
 
 ```c
 enum RAK_PWM_RESOLUTION
@@ -92,6 +110,10 @@ void setup() {
 void loop() {
 }
 ```
+:::
+
+::: tip 📝 NOTE
+For RAK4630 and RAK11720 with BLE, the BLE UART is assigned to _**`Serial6`**_.
 :::
 
 
@@ -140,7 +162,8 @@ void setup() {
 }
 
 void loop() {
-}```
+}
+```
 :::
 
 
@@ -159,10 +182,10 @@ To lock the Serial port of the device.
 Serial.lock(locked);
 ```
 
-| **Function**   | `void lock(bool locked)`                                                |
-| -------------- | ----------------------------------------------------------------------- |
-| **Parameters** | **locked** - giving true to lock the device, false to unlock the device |
-| **Returns**    | void                                                                    |
+| **Function**   | `void lock(bool locked)`                                             |
+| -------------- | -------------------------------------------------------------------- |
+| **Parameters** | **locked** - `true` to lock the device, `false` to unlock the device |
+| **Returns**    | void                                                                 |
 
 ::: details Click to View Example
 ```c{7}
@@ -228,14 +251,19 @@ Serial.write(buf, size);
 
 
 ::: tip 📝 NOTE
-This function is a virtual function that declared in `Print.h`.
+This function is a virtual function declared in `Print.h`.
 :::
 
 
-| **Function**   | `virtual size_t write(const uint8_t* buf, size_t size)`                                                                                                       |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Parameters** | **val** - a value to send as a single byte <br> **buf** -	an array to send as a series of bytes <br> **size** - the number of bytes to be sent from the array |
-| **Returns**    | number of bytes sent successfully (Type: size_t)                                                                                                              |
+| **Function**   | `virtual size_t write( uint8_t val)`             |
+| -------------- | ------------------------------------------------ |
+| **Parameters** | **val** - a value to send as a single byte       |
+| **Returns**    | number of bytes sent successfully (Type: size_t) |
+
+| **Function**   | `virtual size_t write(const uint8_t* buf, size_t size)`                                                       |
+| -------------- | ------------------------------------------------------------------------------------------------------------- |
+| **Parameters** | **buf** - an array to send as a series of bytes <br> **size** - the number of bytes to be sent from the array |
+| **Returns**    | number of bytes sent successfully (Type: size_t)                                                              |
 
 ::: details Click to View Example
 ```c{6,7}
@@ -295,10 +323,10 @@ Serial.read();
 `Serial.read()` inherits from the Stream utility class.
 :::
 
-| **Function**      | `virtual int read(void)`                                         |
-| ----------------- | ---------------------------------------------------------------- |
-| **Returns**       | The first byte of incoming serial data available (Type: int32_t) |
-| **Return Values** | **-1** Read fail, get nothing from the specified serial port     |
+| **Function**      | `virtual int read(void)`                                          |
+| ----------------- | ----------------------------------------------------------------- |
+| **Returns**       | The first byte of incoming serial data available (Type: int32_t)  |
+| **Return Values** | **-1** Read fail, received nothing from the specified serial port |
 
 ::: details Click to View Example
 ```c{9}
@@ -865,10 +893,10 @@ Wire.endTransmission();
 Wire.endTransmission(sendStop);
 ```
 
-| **Function**   | `uint32_t endTransmission(uint8_t sendStop = false)`                                                                                                                                           |
-| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Parameters** | **sendStop(optional)** <br> - **true** will send a stop message, releasing the bus after transmission. <br>  - **false** will send a restart, keeping the connection active (default = false). |
-| **Returns**    | 0	- success <br> 1- fail                                                                                                                                                                       |
+| **Function**   | `uint32_t endTransmission(uint8_t sendStop = false)`                                                                                                                                                         |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Parameters** | **sendStop(optional)** <br> &#x2022; **true** will send a stop message, releasing the bus after transmission. <br>  &#x2022; **false** will send a restart, keeping the connection active (default = false). |
+| **Returns**    | 0	- success <br> 1- fail                                                                                                                                                                                     |
 
 ::: details Click to View Example
 ```c{8}
@@ -1149,10 +1177,10 @@ Sets the SPI data mode: that is, clock polarity and phase.
 SPI.setDataMode(mode)
 ```
 
-| **Function**   | `void setDataMode(uint8_t mode)`                                 |
-| -------------- | ---------------------------------------------------------------- |
-| **Parameters** | **mode**	- SPI_MODE0 <br>SPI_MODE1 <br> SPI_MODE2 <br> SPI_MODE3 |
-| **Returns**    | void                                                             |
+| **Function**   | `void setDataMode(uint8_t mode)`                                           |
+| -------------- | -------------------------------------------------------------------------- |
+| **Parameters** | **mode**<br>	- SPI_MODE0 <br>- SPI_MODE1 <br> - SPI_MODE2 <br> - SPI_MODE3 |
+| **Returns**    | void                                                                       |
 
 ### setClockDivider()
 
@@ -1162,10 +1190,10 @@ Sets the SPI clock divider relative to the system clock.
 SPI.setClockDivider(divider)
 ```
 
-| **Function**   | `void setClockDivider(uint32_t uc_div)`                                                                                                                                    |
-| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Parameters** | **divider** - SPI_CLOCK_DIV2 <br> SPI_CLOCK_DIV4 <br> SPI_CLOCK_DIV8 <br> SPI_CLOCK_DIV16 <br> SPI_CLOCK_DIV32 <br> SPI_CLOCK_DIV64 <br> SPI_CLOCK_DIV128 SPI_CLOCK_DIV256 |
-| **Returns**    | void                                                                                                                                                                       |
+| **Function**   | `void setClockDivider(uint32_t uc_div)`                                                                                                                                                           |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Parameters** | **divider**<br> - SPI_CLOCK_DIV2 <br> - SPI_CLOCK_DIV4 <br> - SPI_CLOCK_DIV8 <br> - SPI_CLOCK_DIV16 <br> - SPI_CLOCK_DIV32 <br> - SPI_CLOCK_DIV64 <br> - SPI_CLOCK_DIV128 <br> - SPI_CLOCK_DIV256 |
+| **Returns**    | void                                                                                                                                                                                              |
 
 ## Time
 
@@ -2098,6 +2126,8 @@ void setup() {
   Serial.begin(115200);
   Serial.println("Test target 0xABCD");
 
+  uint16_t target = 0xABCD;
+
   Serial.print("lowByte() of 0xABCD = "); // extract the low-order byte of the target
   Serial.println(lowByte(target), HEX);
 
@@ -2129,6 +2159,8 @@ void setup() {
   Serial.begin(115200);
   Serial.println("Test target 0xABCD");
 
+  uint16_t target = 0xABCD;
+
   Serial.print("lowByte() of 0xABCD = "); // extract the low-order byte of the target
   Serial.println(lowByte(target), HEX);
 
@@ -2152,10 +2184,10 @@ Configures the specified pin to behave either as an input or an output.
 pinMode(pin, mode);
 ```
 
-| **Function**   | `void pinMode(uint8_t pin, uint8_t mode)`                                                    |
-| -------------- | -------------------------------------------------------------------------------------------- |
-| **Parameters** | **pin** - The pin which you want to set <br> **mode** - `INPUT`, `OUTPUT`, or `INPUT_PULLUP` |
-| **Returns**    | void                                                                                         |
+| **Function**   | `void pinMode(uint8_t pin, uint8_t mode)`                                                                                           |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| **Parameters** | **pin** - The pin which you want to set <br> **mode** <br> - `INPUT`<br> -  `OUTPUT`<br> -  `INPUT_PULLUP` <br> -  `INPUT_PULLDOWN` |
+| **Returns**    | void                                                                                                                                |
 
 ::: details Click to View Example
 ```c{6,7}
@@ -2250,8 +2282,6 @@ void loop()
 ```
 :::
 
-
-
 ## AnalogIO
 
 ### analogRead()
@@ -2285,6 +2315,22 @@ analogReference(type);
 :::warning ⚠️ WARNING
 ADC voltage reference for RAK3172 and RAK3172-SiP is fixed to VDD voltage.
 :::
+
+### analogOversampling()
+
+Sets the number of readings from the analog port.
+
+```c
+void analogOversampling(uint32_t ulOversampling);
+```
+
+
+| **Function**   | `void analogOversampling(uint32_t ulOversampling)`        |
+| -------------- | --------------------------------------------------------- |
+| **Parameters** | **ulOversampling** - Number of readings from analog input |
+| **Returns**    | void                                                      |
+
+
 
 ### analogWrite()
 
@@ -2335,15 +2381,12 @@ void loop() {
     analogWrite(BLUE_LED, val); //Light the blue led
 
 }    digitalWrite(ledPin, LOW); // disable led if input is HIGH
-}
 ```
 :::
 
 ### analogReadResolution()
 
-`analogReadResolution()` is an extension of the Analog API for the Zero, Due, MKR family, Nano 33 (BLE and IoT), and Portenta.
-
-Sets the size (in bits) of the value returned by `analogRead()`. It defaults to 10 bits (returns values between 0-1023) for backward compatibility with AVR based boards.
+`analogReadResolution()` sets the size (in bits) of the value returned by `analogRead()`. It defaults to 10 bits (returns values between 0-1023) for backward compatibility with AVR based boards.
 
 
 ```c
@@ -2357,7 +2400,7 @@ analogReadResolution(bits);
 
 ### analogWriteResolution()
 
-analogWriteResolution() is an extension of the Analog API for the Arduino Due. It sets the resolution of the `analogWrite()` function. It defaults to 8 bits (values between 0-255) for backward compatibility with AVR based boards.
+analogWriteResolution() sets the resolution of the `analogWrite()` function. It defaults to 8 bits (values between 0-255) for backward compatibility with AVR based boards.
 
 ```c
 analogWriteResolution(bits);
@@ -2432,10 +2475,10 @@ Digital Pins With Interrupts. See also [AttachInterrupt](https://www.arduino.cc/
 attachInterrupt(pin, ISR, mode);
 ```
 
-| **Function**   | `void attachInterrupt(uint32_t pin, void(*)(void) userFunc, int mode)`                                                                                                                                                                                                                                                            |
-| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Parameters** | **pin** - The number of the interrupt <br> **ISR** - The ISR to call when the interrupt occurs; this function must take no parameters and return nothing. This function is sometimes referred to as an interrupt service routine. <br>  **mode** - Defines when the interrupt should be triggered (LOW, CHANGE, RISING, FALLING). |
-| **Returns**    | void                                                                                                                                                                                                                                                                                                                              |
+| **Function**   | `void attachInterrupt(uint32_t pin, void(*)(void) userFunc, int mode)`                                                                                                                                                                                                                                                                                                               |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Parameters** | **pin** - The number of the interrupt <br> **ISR** - The ISR to call when the interrupt occurs; this function must take no parameters and return nothing. This function is sometimes referred to as an interrupt service routine. <br>  **mode** - Defines when the interrupt should be triggered <br> &#x2022; LOW <br> &#x2022; CHANGE <br> &#x2022; RISING <br> &#x2022; FALLING. |
+| **Returns**    | void                                                                                                                                                                                                                                                                                                                                                                                 |
 
 ::: details Click to View Example
 ```c{15}

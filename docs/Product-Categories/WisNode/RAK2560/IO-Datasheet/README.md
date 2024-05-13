@@ -20,22 +20,26 @@ certifications:
 
 ### Description
 
-The **Probe IO** is an accessory for the Sensor Hub solution platform. It supports modules with various communication protocols like RS-485, SDI-12, 4-20&nbsp;mA signal, and DI/DO. This accessory can work with RAKwireless modules as well as third-party ones to ensure the best solution for your project.
+The **Probe IO** is an accessory for the Sensor Hub solution platform. It supports modules with various communication protocols like RS-485, SDI-12, 4-20&nbsp;mA signal, and DI/DO. This accessory can work with RAKwireless modules to ensure the best solution for your project.
 
-::: tip 📝 NOTE
-The Probe IO could not be used as a standalone product. You need the [RAK2560 WisNode [Sensor Hub](https://store.rakwireless.com/products/sensor-hub?utm_source=RAK2560WisNodeSense&utm_medium=Document&utm_campaign=BuyFromStore) to use this probe.
+:::tip 📝 NOTE
+- The Probe IO could not be used as a standalone product. You need the <a href="https://store.rakwireless.com/products/sensor-hub?utm_source=RAK2560WisNodeSense&utm_medium=Document&utm_campaign=BuyFromStore" target="_blank">RAK2560 WisNode Sensor Hub</a> in order to use this probe.
 :::
 
 ### Product Features
 
-- Support one RS-485 device
-- Support one SDI-12 device
-- Support one 4-20&nbsp;mA device
-- Support two DO (dry contact)
-- Support one DI
+- Support one RS-485 device<sup>[1]</sup>
+- Support one SDI-12 device<sup>[1]</sup>
+- Support one 4-20&nbsp;mA device<sup>[1]</sup>
+- Support two DO (dry contact)<sup>[1]</sup>
+- Support one DI<sup>[1]</sup>
 - Supply 5&nbsp;V / VIN / 24&nbsp;V (0.5&nbsp;A) power
-- One-wire protocol
+- One-wire protocol<sup>[1]</sup>
 - Waterproof (IP67-rated for the probe body)
+
+:::tip 📝 NOTE
+<sup>[1]</sup> - For now, custom or 3rd party sensors cannot be connected to the ProbeIO SensorHub. If the desired sensor is not available in the <a href="https://store.rakwireless.com/collections/sensorhub-solution" target="_blank">SensorHub Solutions</a>, reach us at <a href="mailto:support@rakwireless.com" target="_blank">support@rakwireless.com</a> and we will check the compatibility of your desired sensor. 
+:::
 
 ## Specifications
 
@@ -43,7 +47,7 @@ The Probe IO could not be used as a standalone product. You need the [RAK2560 Wi
 
 #### Dimensions
 
-The **Probe IO** dimensions are 74&nbsp;x&nbsp;33&nbsp;x&nbsp;26&nbsp;mm. It is l shape. There is one physical port for connection to the Sensor Hub with a 50&nbsp;cm cable length. The **Probe IO** is IP67-rated and suitable for outdoor use. The device is designed to meet the UL/EN60950-22 standard.
+The **Probe IO** dimensions are 74&nbsp;x&nbsp;33&nbsp;x&nbsp;26&nbsp;mm. There is one physical port for connection to the Sensor Hub with a 50&nbsp;cm cable length. The **Probe IO** is IP67-rated and suitable for outdoor use. The device is designed to meet the UL/EN60950-22 standard.
 
 <rk-img
   src="/assets/images/wisnode/rak2560/io-datasheet/probe-io-dimensions.png"
@@ -53,7 +57,7 @@ The **Probe IO** dimensions are 74&nbsp;x&nbsp;33&nbsp;x&nbsp;26&nbsp;mm. It is 
 
 #### Block Diagram
 
-RAK2560's **Probe IO** uses MCU STM32L051C8 for a control center. The **Probe IO** supports four (4) types of device interfaces and DI / DO to control or monitor the working environment directly.
+RAK2560's **Probe IO** uses MCU STM32L051C8 for a control center. The **Probe IO** supports four (4) types of device interfaces and DI/DO to control or monitor the working environment directly.
 
 <rk-img
   src="/assets/images/wisnode/rak2560/io-datasheet/block-diagram.png"
@@ -76,12 +80,12 @@ The hardware specification is categorized into four (4) parts. It shows the pino
 />
 
 | Pin No. | Name          | Type | Description                   | Remarks                                                       |
-| ------- | ------------- | ---- | ----------------------------- | ------------------------------------------------------------- |
-| 1       | VIN           | PI   | 12&nbsp;V Adapter Input          | RAK standard adapter                                          |
+|---------|---------------|------|-------------------------------|---------------------------------------------------------------|
+| 1       | Vin           | PI   | 12&nbsp;V<sub>DC</sub> supply | Input 5~16&nbsp;V                                             |
 | 2       | GND           | -    | Ground                        | -                                                             |
-| 3       | One-wire UART | IO   | Communication with Sensor Hub | -                                                             |
-| 4       | Vcc_Probe     | PI   | Power supply from the Hub     | 3.3&nbsp;V<sub>DC</sub> support mode; 3.4&nbsp;V battery mode |
-| 5       | Reserved      | -    | Not defined for now           | Reserved for future applications                              |
+| 3       | Reserved      | IO   | Not defined                   | Reserved for future use                                       |
+| 4       | Vcc_Probe     | PI   | Power supply for the probe    | 3.3&nbsp;V<sub>DC</sub> support mode; 3.4&nbsp;V battery mode |
+| 5       | One-wire UART | IO   | Communication with probe      |                                                               |
 
 ##### Probe IO PCBA
 
@@ -92,7 +96,7 @@ The hardware specification is categorized into four (4) parts. It shows the pino
 />
 
 | J1     | Name      | Description            |
-| ------ | --------- | ---------------------- |
+|--------|-----------|------------------------|
 | Pin 14 | 485_A+    | RS-485 port            |
 | Pin 15 | 485_B-    | RS-485 port            |
 | Pin 16 | UART1_TX  | MCU UART-TX            |
@@ -110,7 +114,7 @@ The hardware specification is categorized into four (4) parts. It shows the pino
 <br>
 
 | J6     | Name      | Description             |
-| ------ | --------- | ----------------------- |
+|--------|-----------|-------------------------|
 | Pin 1  | DO0_OUT   | Dry contact out         |
 | Pin 2  | DO0_COM   | Dry contact common      |
 | Pin 3  | DO1_OUT   | Dry contact out         |
@@ -133,13 +137,13 @@ The hardware specification is categorized into four (4) parts. It shows the pino
   caption="RAK2560 WisNode Probe IO SP11 device side"
 />
 
-| Type       | Pin 1         | Pin 2 | Pin 3 | Pin 4   | Pin 5     |
-| ---------- | ------------- | ----- | ----- | ------- | --------- |
-| RS-485     | VIN/24&nbsp;V | GND   | NC    | B-      | A+        |
-| SDI-12     | VIN/24&nbsp;V | GND   | NC    | NC      | Data      |
-| 4-20&nbsp; | VIN/24&nbsp;V | GND   | NC    | NC      | Signal-in |
-| DO         | VIN/24&nbsp;V | GND   | NC    | DO0_COM | DO0_OUT   |
-| DI         | VIN/24&nbsp;V | GND   | NC    | DI_COM  | DI        |
+| Type   | Pin 1         | Pin 2 | Pin 3 | Pin 4   | Pin 5     |
+|--------|---------------|-------|-------|---------|-----------|
+| RS-485 | VIN/24&nbsp;V | GND   | NC    | B-      | A+        |
+| SDI-12 | VIN/24&nbsp;V | GND   | NC    | NC      | Data      |
+| 4-20   | VIN/24&nbsp;V | GND   | NC    | NC      | Signal-in |
+| DO     | VIN/24&nbsp;V | GND   | NC    | DO0_COM | DO0_OUT   |
+| DI     | VIN/24&nbsp;V | GND   | NC    | DI_COM  | DI        |
 
 
 #### Power Supply
@@ -149,7 +153,7 @@ The **Probe IO** must be supplied through the 3.4&nbsp;~&nbsp;3.6&nbsp;V SP11 Pi
 ##### Power Consumption
 
 | Mode        | Condition        | Min         | Typical     | Max         |
-| ----------- | ---------------- | ----------- | ----------- | ----------- |
+|-------------|------------------|-------------|-------------|-------------|
 | Active mode | Read sensor data | 3.2&nbsp;mA | 3.5&nbsp;mA | 3.6&nbsp;mA |
 | Sleep mode  | Sleep mode       | 40&nbsp;uA  | 60&nbsp;uA  | 90&nbsp;uA  |
 
@@ -158,7 +162,7 @@ The **Probe IO** must be supplied through the 3.4&nbsp;~&nbsp;3.6&nbsp;V SP11 Pi
 ##### Operating Conditions
 
 | Parameter                    | Min         | Typical     | Max         |
-| ---------------------------- | ----------- | ----------- | ----------- |
+|------------------------------|-------------|-------------|-------------|
 | Normal operating temperature | –30°&nbsp;C | +25°&nbsp;C | +80°&nbsp;C |
 
 #### Sensor Connection Diagram

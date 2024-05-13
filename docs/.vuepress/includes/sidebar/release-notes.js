@@ -480,6 +480,12 @@ module.exports = {
           ]
         }
       ]
+    },
+    {
+      title : 'Hardware',
+      path: '/Release-Notes/Hardware/',
+      collapsible: false,
+      sidebarDepth: 4,
     }
   ],
 }

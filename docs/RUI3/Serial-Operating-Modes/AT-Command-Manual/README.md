@@ -3,11 +3,20 @@
 ## Overview
 AT command is the initial setting in the default serial port used on RUI3 devices. The default baud rate is 115200.
 
-### Switching to AT Mode
+::: tip 📝 NOTE
+When communicating through AT commands with the WisDuo modules, it is important to always wait for the response from the WisDuo module before sending the next command.
+Some AT commands respond not only immediately, but also with a second asynchronous event response that must be handled before the next command can be processed.
 
-<!---**Binary Mode to AT Command**
+For users that write the firmware for the host MCU with Arduino or PlatformIO, it is recommended to use a communication library.
+The <a href="https://github.com/beegee-tokyo/RUI3-Arduino-Library" target="_blank">RUI3-Arduino-Library</a> is a helper for the AT command communication between a RUI3 based RAKwireless WisDuo module and an Arduino based host MCU. This library can be installed using the Arduino IDE library manager. <a href="https://beegee-tokyo.github.io/RUI3-Arduino-Library/" target="_blank">Library documentation</a>. <a href="https://github.com/beegee-tokyo/RUI3-Arduino-Library/tree/main/examples" target="_blank">Library examples</a>
+:::
 
-`AT+ATM` command on a Serial Port will switch its serial operating mode to AT Command mode. In Binary Command mode, you can also send byte array `0x7E 0x00 0x04 0x01 0x00 0x00 0x00 0x02 0x48 x04` to switch to AT Command mode.-->
+
+<!---### Switching to AT Mode
+
+**Binary Mode to AT Command**
+
+`AT+ATM` command on a Serial Port will switch its serial operating mode to AT Command mode. In Binary Command mode, you can also send byte array `0x7E 0x00 0x04 0x01 0x00 0x00 0x00 0x02 0x48 x04` to switch to AT Command mode.
 
 **Custom Mode to AT Command**
 
@@ -17,18 +26,20 @@ During AT mode, the RUI3 powered device is compatible to WisToolBox.
 
 [WisToolBox](https://docs.rakwireless.com/Product-Categories/Software-Tools/WisToolBox/Overview/) is a software tool that setups the LoRa parameters and configurations of the RUI3-powered device and also manages firmware updates.
 
+-->
+
 ### RUI3-Supported RAK Modules
 
-  - [RAK4630](/Product-Categories/WisDuo/RAK4630-Module/Overview)
-  - [RAK4631-R](/Product-Categories/WisBlock/RAK4631-R/Overview)
-  - [RAK3172 or RAK3172-T](/Product-Categories/WisDuo/RAK3172-Module/Overview)
-  - [RAK3272S](/Product-Categories/WisDuo/RAK3272S-Breakout-Board/Overview)
-  - [RAK3372 / RAK3172 Evaluation Board](/Product-Categories/WisDuo/RAK3172-Evaluation-Board/Overview)
-  - [RAK3172-SiP](/Product-Categories/WisDuo/RAK3172-SiP/Overview)
-  - [RAK3272-SiP](/Product-Categories/WisDuo/RAK3272-SiP-Breakout-Board/Overview)
-  - [RAK11720](/Product-Categories/WisDuo/RAK11720-Module/Overview)
-  - [RAK11721](/Product-Categories/WisDuo/RAK11721-Breakout-Board/Overview)
-  - [RAK11722](/Product-Categories/WisBlock/RAK11722/Overview)
+  - <a href="/Product-Categories/WisDuo/RAK4630-Module/Overview" target="_blank">RAK4630</a>
+  - <a href="/Product-Categories/WisBlock/RAK4631-R/Overview" target="_blank">RAK4631-R</a>
+  - <a href="/Product-Categories/WisDuo/RAK3172-Module/Overview" target="_blank">RAK3172 or RAK3172-T</a>
+  - <a href="/Product-Categories/WisDuo/RAK3272S-Breakout-Board/Overview" target="_blank">RAK3272S</a>
+  - <a href="/Product-Categories/WisDuo/RAK3172-Evaluation-Board/Overview" target="_blank">RAK3372 / RAK3172 Evaluation Board</a>
+  - <a href="/Product-Categories/WisDuo/RAK3172-SiP/Overview" target="_blank">RAK3172-SiP</a>
+  - <a href="/Product-Categories/WisDuo/RAK3272-SiP-Breakout-Board/Overview" target="_blank">RAK3272-SiP</a>
+  - <a href="/Product-Categories/WisDuo/RAK11720-Module/Overview" target="_blank">RAK11720</a>
+  - <a href="/Product-Categories/WisDuo/RAK11721-Breakout-Board/Overview" target="_blank">RAK11721</a>
+  - <a href="/Product-Categories/WisBlock/RAK11722/Overview" target="_blank">RAK11722</a>
 
 ### RUI3 AT Command Format
 
@@ -65,6 +76,7 @@ The possible status codes are:
 * `AT_NO_CLASSB_ENABLE`: End-node has not yet switched in Class B.
 * `AT_NO_NETWORK_JOINED`: the LoRa network has not been joined yet.
 * `AT_RX_ERROR`: error detection during the reception of the command.
+
 
 More details on each command description and examples are given in the remainder of this section.
 
@@ -219,7 +231,7 @@ This section describes the generic commands related to the device.
 
 Description: Attention
 
-This command is used to check that the link is working properly.
+This command is used to check that the communication is working properly.
 
 | Command | Input Parameter | Return Value | Return Code |
 | ------- | --------------- | ------------ | ----------- |
@@ -248,7 +260,7 @@ This command is used to see the AT command input on the Serial Terminal.
 | Command | Input Parameter | Return Value                                | Return Code |
 | ------- | --------------- | ------------------------------------------- | ----------- |
 | `AT`    | -               | -                                           | OK          |
-| `AT?`   | -               | `ATE`: toggle the At Command echo available | OK          |
+| `AT?`   | -               | `ATE`: toggle the AT Command echo           | OK          |
 
 **Example:**
 
@@ -333,7 +345,7 @@ This command is used to access the battery level.
 
 ```
 AT+BAT=?
-AT+BAT=0.971191
+AT+BAT=2.971191
 OK
 ```
 
@@ -539,6 +551,10 @@ OK
 
 ### AT+BLEMAC
 
+::: tip 📝 NOTE
+This command is **ONLY** available on the RAK4630 and RAK11720 modules.
+:::
+
 Description: BLE Mac Address of the device
 
 This command allows the user to get or set the BLE Mac address.
@@ -633,6 +649,10 @@ OK
 [Back](#content)
 
 ### AT+LPMLVL
+
+::: tip 📝 NOTE
+The two sleep modes can **ONLY** be selected with RAK3172. This AT command has **NO EFFECT** on other modules.
+:::
 
 Description: Sleep level for low power mode
 
@@ -1257,13 +1277,15 @@ This command is used to join a LoRaWAN network.
 | `AT+JOIN=?`                 | -                                                                                                 | `AT+JOIN`=*Param1: Param2: Param3: Param4* | OK or `AT_BUSY_ERROR` |
 | `AT+JOIN=<Input Parameter>` | *Param1:Param2:Param3:Param4*                                                                     | -                                          | OK                  |
 |                             | *Param1* = **Join command**: 1 for joining the network, 0 for stop joining.                       |                                            |                     |
-|                             | *Param2* = **Auto-Join config**: 1 for Auto-join on power up, 0 for no auto-join. (0 is default) |                                            |                     |
-|                             | *Param3* = **Reattempt interval**: 7 - 255 seconds (8 is default).                                |                                            |                     |
-|                             | *Param4* = **No. of join attempts**: 0 - 255 (0 is default).                                      |                                            |                     |
+|                             | *Param2* = **Auto-Join config**: 1 for Auto-join on power up, 0 for no auto-join. <br> (Optional parameter <br> 0 is default) |                                            |                     |
+|                             | *Param3* = **Reattempt interval**: 7 - 255 seconds <br> (Optional parameter <br> 8 seconds is default).                                |                                            |                     |
+|                             | *Param4* = **No. of join attempts**: 0 - 255 <br> (Optional parameter <br> 0 times is default).                                      |                                            |                     |
 
 :::tip 📝 NOTE:
 This is an asynchronous command. `OK` means that the device is joining. The completion of the JOIN can be verified with the `AT+NJS=?` command.
 <br>Parameters of `AT+JOIN` command are optional. You can use `AT+JOIN` directly to join the LoRaWAN network. If no parameters are configured, the device will use the default values.
+
+The device will as well respond with an asynchronous message whether the join process was successful or failed.
 :::
 
 **Examples**:
@@ -1426,6 +1448,11 @@ OK
 - `AT_NO_NETWORK_JOINED` is returned when the network is not yet joined.
 :::
 
+:::tip 📝 NOTE:
+This is an asynchronous command. `OK` means that the device has started to send.
+The device will as respond with an asynchronous message whether the send process was successful or failed.
+:::
+
 [Back](#content)
 
 
@@ -1457,6 +1484,16 @@ OK
 - `AT_PARAM_ERROR` is returned when setting wrong or malformed value.
 - This command is only supported by WisGate Edge gateways and their internal LoRaWAN server.
 :::
+
+:::tip 📝 NOTE:
+This is an asynchronous command. `OK` means that the device has started to send.
+The device will as respond with an asynchronous message whether the send process was successful or failed.
+:::
+
+:::tip 📝 NOTE:
+Long packet data mode is only supported for uplink packets. Downlink packets **cannot** have the long packet data format.
+:::
+
 
 [Back](#content)
 
@@ -3792,6 +3829,10 @@ OK
 
 :::tip 📝 NOTE
 - `AT_PARAM_ERROR` is returned when setting wrong or malformed value.
+:::
+
+:::tip 📝 NOTE
+When CAD mode is enabled, the device will continue to check for channel activity until it can send the packet.
 :::
 
 [Back](#content)
