@@ -21,7 +21,7 @@ tags:
 
 This gateway supports up to 8 LoRa channels in full-duplex (16 channels variant is coming soon), multi-backhaul with Ethernet, Wi-Fi, and Cellular connectivity (LTE cellular connection is available with the C model). It has a dedicated port for different power options, such as solar panels and batteries. Additionally, the new enclosure design allows the cavity filter to be inside the enclosure.
 
-In addition, RAK7285 operates under WisGateOS2, which is built on the latest OpenWrT kernel. This new version incorporates the most recent security updates, such as OpenSSL 1.1 and multiple account access. The web UI adopts a new design. It supports the installation of multiple extensions and remote management using WisDM to achieve personalized customization of the gateway.
+In addition, RAK7285 operates under WisGateOS2, which is built on the latest OpenWrt kernel. This new version incorporates the most recent security updates, such as OpenSSL 1.1 and multiple account access. The web UI adopts a new design. It supports the installation of multiple extensions and remote management using WisDM to achieve personalized customization of the gateway.
 
 ### Features
 
@@ -48,7 +48,7 @@ In addition, RAK7285 operates under WisGateOS2, which is built on the latest Ope
 - **Buffering of LoRa frames in Packet Forwarder mode** in case of NS outage (automatic data recovery)
 - **Full-duplex**
 - **Listen Before Talk**
-- **Fine timestamping** (optional)
+- **Fine timestamping**
 
 ## Specifications
 
@@ -71,6 +71,7 @@ The overview presents the block diagram for the RAK7285 that shows the internal 
     <thead><tr><th>Feature</th><th>Specifications</th></tr></thead>
     <tbody>
         <tr><td>Computing</td><td>MT7628, DDR2 RAM 128&nbsp;MB</td></tr>
+        <tr><td>Frequency</td><td>US915/AU915</td></tr>
         <tr><td rowspan="5">Wi-Fi feature</td><td>Frequency: 2.4&nbsp;GHz (802.11b/g/n)</td></tr>
         <tr><td>2x2 MIMO</td></tr>
         <tr><td>RX Sensitivity: -95&nbsp;dBm (Min)</td></tr>
@@ -81,7 +82,6 @@ The overview presents the block diagram for the RAK7285 that shows the internal 
         <tr><td>RX Sensitivity: -139&nbsp;dBm (Min)</td></tr>
         <tr><td>TX Power: 30&nbsp;dBm (Max)</td></tr>
         <tr><td>Listen Before Talk</td></tr>
-        <tr><td>Frequency</td><td>US915/AU915</td></tr>
         <tr><td rowspan="7">Cellular Feature (available with RAK7285C)</td><td>Supports Quectel EG95-E/EG95-NA/EC25-AU (IoT/M2M -optimized LTE Cat 4 Module)</td></tr>
         <tr><td><b>EG95-E for EMEA Region (Europe, Middle East and Africa)</b></td></tr>
         <tr><td>LTE FDD: B1/B3/B7/B8/B20/B28A<br>WCDMA: B1/B8<br>GSM/EDGE: B3/B8</td></tr>
@@ -89,12 +89,14 @@ The overview presents the block diagram for the RAK7285 that shows the internal 
         <tr><td>LTE FDD: B2/B4/B5/B12/B13<br>WCDMA: B2/B4/B5</td></tr>
         <tr><td><b>EC25-AU for Latin America, Australia, and New Zealand Region</b></td></tr>
         <tr><td>LTE-FDD: B1/B2/B3/B4/B5/B7/B8/B28<br>LTE-TDD: B40<br>WCDMA: B1/B2/B5/B8<br>GSM/EDGE: B2/B3/B5/B8</td></tr>
-        <tr><td>Power Supply</td><td>PoE (IEEE 802.3at)<br>42~57&nbsp;V<sub>DC</sub></td></tr>
+        <tr><td>Power Supply</td><td>PoE (IEEE 802.3at): 42~57&nbsp;V<sub>DC</sub><br/>Power Jack: 9~36&nbsp;V<sub>DC</sub><br/>Compatible with RAK Battery Plus</td></tr>
         <tr><td>ETH</td><td>RJ45 (10/100 M)</td></tr>
         <tr><td rowspan="4">Antenna</td><td>LoRa: N-Type connector (one for the 8-channel gateway and two for the 16-channel gateway)</td></tr>
         <tr><td>GPS: One N-Type connector</td></tr>
         <tr><td>Wi-Fi: Two N-Type connectors</td></tr>
         <tr><td>LTE: Two N-Type connectors( only for RAK7285C)</td></tr>
+        <tr><td rowspan="2">Diplexer</td><td><b>AU915:</b><br/>Frequency:<br/> - Rx: 915 ~ 920&nbsp;MHz<br/> - Tx: 923 ~ 928&nbsp;MHz<br/>Insertion loss:<br/> - Rx: 2.6 (Typical) / 4.0 (Maximum)  <br/>- Tx: 2.6 (Typical) / 3.8 (Maximum)<br/>Isolation between Rx and Tx: &gt; 80&nbsp;dB<br/>Return loss: &lt; -18&nbsp;dB<br/>Impedance: 50&nbsp;Ω</td></tr>
+        <tr><td><b>US915:</b><br/>Frequency: <br/>- Rx: 902 ~ 915&nbsp;MHz<br/>- Tx: 923 ~ 928&nbsp;MHz<br/>Insertion loss:<br/>- Rx: 1.3 (Typical) / 1.6 (Maximum) <br/>- Tx: 1.8 (Typical) / 2.0 (Maximum)<br/>Isolation between Rx and Tx: &gt; 90&nbsp;dB<br/>Return loss: &lt; -18&nbsp;dB<br/>Impedance: 50&nbsp;Ω</td></tr>
         <tr><td>Ingress Protection</td><td>IP67</td></tr>
         <tr><td>Enclosure Material</td><td>Aluminum</td></tr>
         <tr><td>Dimensions</td><td>310&nbsp;x&nbsp;290&nbsp;x&nbsp;146&nbsp;mm</td></tr>
@@ -102,6 +104,7 @@ The overview presents the block diagram for the RAK7285 that shows the internal 
         <tr><td>Installation Method</td><td>Pole or wall mounting</td></tr>
 </tbody>
 </table>
+
 
 ### Hardware
 
@@ -163,9 +166,16 @@ The hardware specification covers the interfacing of the RAK7285 and its corresp
   caption="RAK7285 WisGate Edge Ultra interfaces"
 />
 
+:::tip 📝 NOTE
+
++ The SD card found in the SD card slot must not be ejected. Doing so might affect the performance of the device, as different logs and data are stored on it.
++ The SIM card slot of the cellular versions is not hot-swappable. Make sure the gateway is switched off before inserting or ejecting the SIM card.
++ The available antenna interfaces vary between variants. For example two N-type LTE interfaces are available on the RAK7285C. Not available on RAK7285.
+  :::
+
 ##### Reset Key Functions
 
-The function of the Reset key is as follows:
+The functions of the Reset key are as follows:
 - **Short press**: Restart the gateway.
 - **Long press** (5&nbsp;seconds or more): Restore factory settings.
 
@@ -208,17 +218,19 @@ The status of the LEDs is described as below. Refer to the printing of the LEDs 
 <table>
     <thead><tr><th>LoRa</th><th>Network</th><th>Management</th></tr></thead>
     <tbody>
-        <tr><td>LoRa Package Forward (Packet Forwarder, Basics Station)</td><td>Uplink Backup</td><td>SSH2, NTP</td></tr>
-        <tr><td>Frequency Band Setup</td><td>Firewall</td><td>Firmware Update</td></tr>
-        <tr><td>Server Address and Port Setup</td><td>DHCP Server/Client</td><td>LoRa Packet Forwarder</td></tr>
-        <tr><td>TX Power Setup</td><td> </td><td>Built-in Network Server</td></tr>
-        <tr><td>Data Logger</td><td> </td><td>MQTT Bridge</td></tr>
-        <tr><td>Location Setup</td><td> </td><td>OpenVPN, Ping Watch Dog</td></tr>
+         <tr><td>Gateway OTA management</td><td>Wi-Fi Client mode</td><td>WisDM</td></tr>
+        <tr><td>LoRa Package Forward (Packet Forwarder, Basics Station)</td><td>LTE APN Setup</td><td>SSH2, NTP</td></tr>
+        <tr><td>Frequency Band Setup</td><td>Support 802.1q</td><td>Firmware Update</td></tr>
+        <tr><td>Server Address and Port Setup</td><td>Uplink backup</td><td>LoRa Packet Forwarder</td></tr>
+        <tr><td>TX Power Setup</td><td>Firewall</td><td>Built-in Network Server</td></tr>
+        <tr><td>Data Logger</td><td>DHCP Server/Client</td><td>MQTT Bridge</td></tr>
+        <tr><td>Location Setup</td><td>Wi-Fi AP mode</td><td>OpenVPN, Ping Watch Dog</td></tr>
         <tr><td>Statistic</td><td> </td><td>WEB UI</td></tr>
         <tr><td>Supports class A, B, & C</td><td> </td><td> </td></tr>
         <tr><td>Automatic Data Recovery</td><td> </td><td> </td></tr>
 </tbody>
 </table>
+
 
 ### Firmware
 
@@ -229,9 +241,9 @@ Detailed information about the extensions can be found on the <a href="https://d
 
 
 
-|      Model       | Firmware Version |                            Source                            |
-| :--------------: | :--------------: | :----------------------------------------------------------: |
-| RAK7285/RAK7285C |      v2.2.1      | [Download](https://downloads.rakwireless.com/LoRa/WisGateOS2/WisGateOS2_Latest_Firmware.zip) |
+|      Model       |                            Source                            |
+| :--------------: | :----------------------------------------------------------: |
+| RAK7285/RAK7285C | [Download](https://downloads.rakwireless.com/LoRa/WisGateOS2/WisGateOS2_Latest_Firmware.zip) |
 
 
 ## Models/Bundles

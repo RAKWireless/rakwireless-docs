@@ -72,85 +72,135 @@ The RAK7431 - RS485 serial interface can support up to **16 RS485 devices**. VOU
 
 ### Gateway Connection Settings
 
-In this section, the **RAK7431 WisNode Bridge Serial** shall be connected into the RAKwireless Gateway. For this demonstration, a [RAK7249 WisGate Edge Max](https://store.rakwireless.com/products/rak7249-diy-outdoor-gateway?utm_source=RAK7249Max&utm_medium=Document&utm_campaign=BuyFromStore) shall be used. Listed below are the requisites for this section.
+In this section, the **RAK7431 WisNode Bridge Serial** will be connected into the RAKwireless Gateway. For this guide, the [RAK7289 WisGate Edge Pro V2](https://store.rakwireless.com/products/wisgate-edge-pro-rak7289?utm_source=WisGateRAK7289&utm_medium=Document&utm_campaign=BuyFromStore) shall be used. Listed below are the requisites for this section:
 
 - [RAK Serial Port Tool](https://downloads.rakwireless.com/LoRa/Tools/RAK_SERIAL_PORT_TOOL_V1.2.1.zip) - used to configure the RAK7431 WisNode Bridge Serial
-- [Web Management Platform Documentation](/Knowledge-Hub/Learn/WEB-Management-Platform/) - guide on how to configure the RAK7249 WisGate Edge Max
+- [WisGate OS 2 User Manual](https://docs.rakwireless.com/Product-Categories/Software-APIs-and-Libraries/WisGateOS-2/Overview/#overview)- guide on how to configure the RAK7289 WisGate Edge Pro V2
 
 #### Gateway Configuration
 
 ##### Set-up the Built-in Network Server
 
-1. Sign in to the gateway by following the [Accessing the Web Management](/Knowledge-Hub/Learn/WEB-Management-Platform/#accessing-the-web-management-platform) section of the WEB Management Platform documentation.
+1. Start by accessing the gateway. You can see how to do it on the [WisGateOS V2 user manual](https://docs.rakwireless.com/Product-Categories/Software-APIs-and-Libraries/WisGateOS-2/Overview/#overview).
 
-2. Setup the RAK7249 WisGate Edge Max using its Built-in Network Server by following this [guide](/Knowledge-Hub/Learn/Build-in-LoRa-Server/#gateway-built-in-lora®-ns).
+<rk-img
+  src="/assets/images/wisnode/rak7431/quickstart/wisgateos-v2-login-page.png"
+  width="100%"
+  caption="WisGateOS V2 login page"
+/>
+
+2. Once logged in, head to the **LoRa** menu.
+
+<rk-img
+  src="/assets/images/wisnode/rak7431/quickstart/lora-page.png"
+  width="100%"
+  caption="LoRa page"
+/>
+
+1. By default, the gateway works as a Built-In Network Server. If that is not the case, check the [Built-in Network Server Mode Settings](https://docs.rakwireless.com/Product-Categories/Software-APIs-and-Libraries/WisGateOS-2/Overview/#lora) on the WisGateOS V2 User manual to switch the mode.
 
 ##### Adding Application
 
-1. To enter the application configuration interface click: **LoRaNetwork > Application**. Enter a name for the application and click the **Add** button.
+1. Once the gateway is in Built-in network server mode, head to the **Applications** tab.
 
 <rk-img
-  src="/assets/images/wisnode/rak7431/quickstart/create-application.png"
+  src="/assets/images/wisnode/rak7431/quickstart/application-page.png"
   width="100%"
   caption="Create Application in the Built-In Network Server"
 />
 
-2. Turn on the **Auto Add LoRa Device** slider.
+2. Click the **Add application** button or **add one now** link to add a new application. On the new page, fill in the following information:
 
-3. Generate **Application EUI** and **Application Key** by pressing the generate icon marked in the image below.
-
-::: tip 📝 NOTE
-The description is optional.
-:::
+- **Application name** - type a name for the application.
+- **Application description** - optionally you can write a description of the application.
+- **Application Type** - from the drop-down menu select the type of application.
+- **Unified Application key** - all devices will use the same application key. Selecting this option pops up an **Application Key** field. You can type your application key there or use the **Autogenerate** button to generate one.
 
 <rk-img
-  src="/assets/images/wisnode/rak7431/quickstart/register-application.png"
-  width="100%"
-  caption="Registering an application"
+src="/assets/images/wisnode/rak7431/quickstart/7.unified-application-key.png"
+width="45%"
+caption="Unified application key"
 />
 
-4. After which, press **Save & Apply**.
-
-5. You will be returned to the Application page. Select **Edit** on the created application.
+The **Auto Add Device** switch activates the **Application EUI** field. The device will be automatically added to the application after the application EUI and key verification.
 
 <rk-img
-  src="/assets/images/wisnode/rak7431/quickstart/application-list.png"
-  width="100%"
-  caption="Application list"
+src="/assets/images/wisnode/rak7431/quickstart/8.auto-add-device.png"
+width="45%"
+caption="Auto add device"
 />
 
-6. Enter the **Device EUI** and press **Add**.
-
-::: tip 📝 NOTE
-The RAK7431 Device EUI can be seen at the label on the back
-:::
+- **Separate Application keys** – each device will have its own application key. The key is added when registering the device.
+- **Payload type** - from the drop-down, select **CayenneLPP** payload type and turn on the **Only forward data object** feature.
 
 <rk-img
-  src="/assets/images/wisnode/rak7431/quickstart/app-add-rak7431.png"
-  width="100%"
-  caption="Adding the RAK7431"
+src="/assets/images/wisnode/rak7431/quickstart/9.adding-application.png"
+width="100%"
+caption="Adding application"
 />
 
-7. On the next page, select the settings provided below:
-
-- **LoRaWAN Class**: C
-- **Join Mode**: OTAA
-- **Description**: Optional
+3. Once set, click **Save application** to add the application.
+4. After the application is added, head to the **End devices** tab. The devices should automatically register upon join request if you are using the Auto Add Device feature.
 
 <rk-img
-  src="/assets/images/wisnode/rak7431/quickstart/bns-add-rak7431.png"
-  width="100%"
-  caption="Adding the RAK7431 to the Built-In Server"
+src="/assets/images/wisnode/rak7431/quickstart/10.successfully-added-end-device.png"
+width="100%"
+caption="Successfully added end device"
+/>
+
+If that’s not the case, click the **Add end device** button. On the **End device information** page fill in the following information:
+
+- **Activation Mode** - choose the activation mode of your device:
+  - **OTAA**
+  - **ABP** - This mode pops up two additional fields:
+    - **Application Session Key**
+    - **Network Session Key**
+
+<rk-img
+src="/assets/images/wisnode/rak7431/quickstart/11.adding-abp-device.png"
+width="40%"
+caption="Adding ABP device"
+/>
+
+- **End device (group) name** – the name of the device.
+- **End device description (optional)** – optionally, you can add a description for the device.
+- **Class** – the class of the device.
+- **Frame Counter width** – the width of the frame counter. Leave it as default.
+- **LoRaWAN MAC Version** – the LoRaWAN MAC version. V1.0.2 pops up a **LoRaWAN Regional Parameters reversion** field where you need to select the reversion of the device.
+
+<rk-img
+src="/assets/images/wisnode/rak7431/quickstart/12.successfully-created-application.png"
+width="100%"
+caption="Successfully created application"
+/>
+
+##### Adding the Device
+
+1. Once everything is set, click **Add end devices** to go to the page and add the device.
+
+<rk-img
+src="/assets/images/wisnode/rak7431/quickstart/13.adding-end-device.png"
+width="100%"
+caption="Adding end device"
+/>
+
+2. On the **Adding end devices** page, type the device EUI at the **End Device EUI (main)** and click **Add to “End Devices list”**.
+   - If the EUI is correct, the device will show in the **End devices list**.
+   - If the EUI is not correct, the devices will show in the **End devices with an error**.
+3. Once the device is added to the **End devices list** click **Add end devices**. Confirm you are adding the device.
+
+<rk-img
+src="/assets/images/wisnode/rak7431/quickstart/14.confirmation-message-for-adding-a-device.png"
+width="40%"
+caption="Confirmation message for adding a device"
 />
 
 #### RAK7431 Configuration
 
-##### Connect the RAK7431 to your Network
+##### Connect the RAK7431 to Your Network
 
 1. Connect the RAK7431 to a computer using the Micro USB cable.
-
 2. Open the RAK Serial Tool and select the correct COM port. The default baud rate is **115200**.
-
 3. After selecting, press **Open**.
 
 <rk-img
@@ -409,15 +459,7 @@ The RAK7431 sends an instruction to the sensor every 1&nbsp;minute to obtain tem
 
 ### MQTT Subscribe to Data Server
 
-To better demonstrate the functionality, you will use the Application Server Integration feature to subscribe to the Built-In Network Server Topics, using the MQTT client, to obtain data and send instructions to the RAK7431.
-
-<rk-img
-  src="/assets/images/wisnode/rak7431/quickstart/mqtt-topic-template.png"
-  width="100%"
-  caption="Gateway MQTT Topic Templates"
-/>
-
-To communicate with the MQTT bridge in the gateway, you need to use MQTT Topic Templates.
+To better demonstrate the functionality, you will use the gateway MQTT integration feature to subscribe to the Built-In Network Server Topics, using the MQTT client, to obtain data and send instructions to the RAK7431. To communicate with the MQTT bridge in the gateway, you need to use MQTT Topic Templates.
 
 **MQTT Topic Configuration**:
 
@@ -473,25 +515,17 @@ Application/{{application_ID}}/device/{{device_EUI}}/status
 <rk-img
   src="/assets/images/wisnode/rak7431/quickstart/subscribed-topic-data.png"
   width="100%"
-  caption="Subscribed topic data"
+  caption="Subscribed topic"
 />
 
 - Notice that the data field is in **base64** format, which has to be converted to hex string to be useful. You can change the data format from the built-in server settings.
 
-6. This is done by going to **Gateway>Application>Integrations>Data Encode/Decode Type** and chose **HEX String** form the drop-down menu. Press **Save & Apply**.
+6. This is done by going to **LoRa>Application**, select the application you created and enter the "Configuration" interface of the application. Chose **HEX String** in Decode Type . Press **Save changes**.
 
 <rk-img
   src="/assets/images/wisnode/rak7431/quickstart/data-encode-decode-type.png"
   width="100%"
   caption="Change the Data Encode/Decode Type"
-/>
-
-- Now, all received data will be in HEX String.
-
-<rk-img
-  src="/assets/images/wisnode/rak7431/quickstart/received-hex-format.png"
-  width="100%"
-  caption="Received data field in HEX format"
 />
 
 ### RAK7431 Remote Control and Configuration via MQTT.fx

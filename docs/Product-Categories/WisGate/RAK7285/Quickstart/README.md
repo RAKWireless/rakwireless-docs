@@ -22,7 +22,9 @@ tags:
 
 :::warning ⚠️ WARNING
 
-The SD card found in the SD card slot must not be ejected. Doing so might affect the performance of the device, as different logs and data are stored on it.
++ The SD card found in the SD card slot must not be ejected. Doing so might affect the performance of the device, as different logs and data are stored on it.
++ The SIM card slot of the cellular versions is not hot-swappable. Make sure the gateway is switched off before inserting or ejecting the SIM card.
+
 :::
 
 

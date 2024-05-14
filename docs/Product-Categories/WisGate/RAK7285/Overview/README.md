@@ -52,4 +52,4 @@ In addition, RAK7285 operates under WisGateOS2, which is built on the latest Ope
 - **Buffering of LoRa frames in Packet Forwarder mode** in case of NS outage (automatic data recovery)
 - **Full-duplex**
 - **Listen Before Talk**
-- **Fine timestamping** (optional)
+- **Fine timestamping**

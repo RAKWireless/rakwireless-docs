@@ -17,6 +17,7 @@ The supported models are as follows:
 
 - <b> 2024 </b>
 
+    - [May 8](/Release-Notes/WisGateOS2/2024/May-8)
     - [February 27](/Release-Notes/WisGateOS2/2024/February-27)
     - [January 2](/Release-Notes/WisGateOS2/2024/January-2)
 
