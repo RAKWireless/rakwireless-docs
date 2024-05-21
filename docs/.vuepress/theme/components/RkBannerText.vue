@@ -18,6 +18,9 @@
             textDecoration: 'underline'
           }">RUI3 is now open source.</span> Power your project with flexibility and community support.</a>
         </div>
+        <div>
+          <a href="https://docs.rakwireless.com/Release-Notes/WisDM/2024/March-21/?utm_source=textad_docs&utm_medium=organic&utm_campaign=release_notes_wisdm_v1621" class="event-banner-link ">WisDM V1.6.2.1: Discounted subscription and new hints for whitelist management. Check the updates.</a>
+        </div>
       </div>
       <span @click="closePopUpBanner" class="close-event-banner-btn">
         X
@@ -102,7 +105,7 @@
   }
 
   #banner-flip div:first-child {
-    animation: flip3 15s linear infinite;
+    animation: flip4 20s linear infinite;
   }
 
   /* @keyframes show {
@@ -136,7 +139,7 @@
     100% { margin-top: -270px; }
   }
 
-  /*@keyframes flip4 {
+  @keyframes flip4 {
     0% { margin-top: -360px; }
     5% { margin-top: -270px; }
     25% { margin-top: -270px; }
@@ -148,7 +151,7 @@
     99.99% { margin-top: 0px; }
     100% { margin-top: -360px; }
   }
-
+  /*
   @keyframes flip5 {
     0% { margin-top: -450px; }
     5% { margin-top: -360px; }

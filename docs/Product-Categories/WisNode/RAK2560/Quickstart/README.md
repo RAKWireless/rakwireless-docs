@@ -13,7 +13,7 @@ tags:
 
 ## Prerequisites
 
-### What do You Need?
+### What Do You Need?
 
 Before going through each and every step of using the RAK2560 WisNode Sensor Hub module, make sure to prepare the necessary items listed below:
 
@@ -56,7 +56,7 @@ Do not power the Sensor Hub before connecting the sensors to avoid damage to the
 :::
 
 :::tip 📝 NOTE:
-If the Sensor Probe with Temperature, Humidity, and Pressure is used (RAK1901+RAK1902), there will be two temperature values in the WisToolBox. Due to the different accuracy of the temperature sensors, the values might be different. 
+If the Sensor Probe with Temperature, Humidity, and Pressure is used (RAK1901+RAK1902), there will be two temperature values in the WisToolBox. Due to the different accuracy of the temperature sensors, the values might be different.
 :::
 
 2. Use the power supply of your choice that is compatible with the device.
@@ -247,7 +247,7 @@ The table shows the probe, module combination, and functionalities.
 - **Sensor data** - The currently fetched data value
 - **Toogle button sensor data changes** - Send data if there is any change in the sensor value
 - **Sensor interval(s)** - Payload sending interval in seconds (when periodic sensor rule is used). Limit: 60~86400 seconds
-- **Toogle button for periodic uplink** - Sends data in the time interval configured 
+- **Toogle button for periodic uplink** - Sends data in the time interval configured
 - **Lower Threshold** - Set up the lower value for the sending rules
 - **Upper Threshold** - Set up the upper value for the sending rules
 
@@ -291,9 +291,9 @@ Key = 0x08(Oct) = 0b00001000(Bin)
 
 | WisBlock Module | Sensor IC | Sensor Type                         | Sensor Data Values                                                                                                                                             |
 | :-------------: | :-------: | :---------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| RAK1901         | SHTC3     | Temperature and humidity            | Temperature (-40°&nbsp;C to +125°&nbsp;C)<br>Humidity (0&nbsp;to&nbsp;100%&nbsp;RH)                                                                            |
-| RAK1902         | KPS22HB   | Temperature and barometric pressure | Temperature (-40°&nbsp;C to +85°&nbsp;C)<br>Pressure (260&nbsp;to&nbsp;1260&nbsp;hPa)                                                                          |
-| RAK1904         | LIS3DH    | 3-axis acceleration                 | 3-axis (XYZ)                                                                                                                                                   |
+| RAK1901         | SHTC3     | Temperature and Humidity            | Temperature (-40°&nbsp;C to +125°&nbsp;C)<br>Humidity (0&nbsp;to&nbsp;100%&nbsp;RH)                                                                            |
+| RAK1902         | KPS22HB   | Temperature and Barometric Pressure | Temperature (-40°&nbsp;C to +85°&nbsp;C)<br>Pressure (260&nbsp;to&nbsp;1260&nbsp;hPa)                                                                          |
+| RAK1904         | LIS3DH    | 3-Axis Acceleration                 | 3-Axis (XYZ)                                                                                                                                                   |
 | RAK1906         | BME680    | Environmental                       | Temperature (-40°&nbsp;C to 85°&nbsp;C)<br>Humidity (0&nbsp;to&nbsp;100%&nbsp;RH)<br>Pressure (300&nbsp;to&nbsp;1100 hPa)<br>Gas (0&nbsp;to&nbsp;500&nbsp;IAQ) |
 
 The four (4) WisBlock modules will have four (4) sensor types as follows:

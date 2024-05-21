@@ -866,6 +866,7 @@ module.exports = {
 
 
   //Power Supplies
+
   '/Product-Categories/Accessories/PoE-Injector/': [
     {
       title: 'Overview',
@@ -1006,6 +1007,24 @@ module.exports = {
     {
       title: 'Datasheet',
       path: '/Product-Categories/Accessories/Solar-Panel-Kit-for-Battery-Plus/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }
+  ],
+  '/Product-Categories/Accessories/Battery-Plus-Service-Power-Adapter/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/Battery-Plus-Service-Power-Adapter/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/Battery-Plus-Service-Power-Adapter/Datasheet/',
       collapsable: false,
       nested: true,
       download: true,

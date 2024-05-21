@@ -1591,7 +1591,11 @@ export default {
 
 
   // Power Supplies
-
+  '/Product-Categories/Accessories/Battery-Plus-Service-Power-Adapter/': {
+    label: 'Battery Plus Service Power Adapter',
+    img: '/assets/images/accessories/Battery-Plus-Service-Power-Adapter/overview.png',
+    store: 'https://store.rakwireless.com/products/service-power-adapter-for-battery-plus?variant=45380221599911?utm_source=BatteryPlusServicePowerAdapter&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
   '/Product-Categories/Accessories/R012-4800500/': {
     label: '100M PoE Injector',
     img: '/assets/images/accessories/r012-4800500/poe-injector-illustration.png',

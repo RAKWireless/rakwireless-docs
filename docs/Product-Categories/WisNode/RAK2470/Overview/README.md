@@ -27,9 +27,16 @@ RAK2470, together with a RAK WisGate gateway and LoRa Server products, can quick
 ## Product Features
 
 - **LoRaWAN 1.0.3** protocol stack
-- **Supported LoRaWAN Class:** A, B, and C
+- **Supported LoRaWAN Class:** A and C
 - **Industrial grade STM MCU:** Ultra-low power (**4&nbsp;µA sleep**) and wide temperature range of operation
 - **Input range:** 5 ~ 12&nbsp;V<sub>DC</sub>
 - **Mounting:** Pole
 - IP67 weatherproof
 - Customizable adapter cable upon request
+
+
+## Package Contents
+
+- One (1) RAK2470 WisNode Bridge Serial Prime
+- One (1) Mounting Kit
+- One (1) T-Type Conversion Cable
