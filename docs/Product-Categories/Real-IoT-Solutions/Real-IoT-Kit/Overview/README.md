@@ -1,8 +1,8 @@
 ---
 rak_img: /assets/images/rism/kit/rism-kit.png
-rak_desc: Real IoT Kit offers use-case focused bundles that immediately work without complex and hard to follow configuration. It is designed to be very easy to deploy with minimal frictions and without complex configurations. It is a plug and play solutions so that customers can focus in their IoT use cases.
+rak_desc: Real IoT Kit offers use-case focused bundles that immediately work without complex and hard to follow configuration. It is a plug and play solutions so that customers can focus in their IoT use cases.
 rak_grp: rism
-rak_model: Sensor
+rak_model: Kit
 prev: ../../
 next: ../Quickstart/
 tags:
@@ -20,7 +20,7 @@ Thank you for choosing **Real IoT Kit** in your awesome IoT Project! 🎉 To hel
 
 ## Product Description
 
-Real IoT Kit is part of Real IoT Solutions Marketplace which is a comprehensive collection of plug and play IoT solutions.
+Real IoT Kit is part of Real IoT Solutions Marketplace which is a comprehensive collection of plug-and-play IoT solutions.
 
 ## Product Features
 

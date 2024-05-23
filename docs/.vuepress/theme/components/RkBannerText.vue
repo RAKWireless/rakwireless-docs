@@ -10,16 +10,23 @@
         <div>
           <a href="https://downloads.rakwireless.com/LoRa/RAK11720/Certification/RAK11720_ANATEL_Certification.pdf?utm_source=textad_docs&utm_medium=organic&utm_campaign=RAK11720-ANATEL-Certification" class="event-banner-link "><span :style="{
             paddingRight: '2px',
-          }">LoRa Bluetooth Module RAK11720 now ANATEL-certified.</span>  <u>View certification for details</u>.</a>
+          }">LoRa Bluetooth Module RAK11720 now ANATEL-certified.</span> &nbsp; <u>View certification for details</u>.</a>
         </div>
         <div>
           <a href="https://www.rakwireless.com/en-us/products/rui3?utm_source=newshub&utm_medium=organic&utm_campaign=rui3opensource" class="event-banner-link "><span :style="{
             paddingRight: '2px',
             textDecoration: 'underline'
-          }">RUI3 is now open source.</span> Power your project with flexibility and community support.</a>
+          }">RUI3 is now open source.</span>&nbsp;Power your project with flexibility and community support.</a>
         </div>
         <div>
-          <a href="https://docs.rakwireless.com/Release-Notes/WisDM/2024/March-21/?utm_source=textad_docs&utm_medium=organic&utm_campaign=release_notes_wisdm_v1621" class="event-banner-link ">WisDM V1.6.2.1: Discounted subscription and new hints for whitelist management. Check the updates.</a>
+          <a href="https://docs.rakwireless.com/Release-Notes/WisDM/2024/March-21/?utm_source=textad_docs&utm_medium=organic&utm_campaign=release_notes_wisdm_v1621" class="event-banner-link "><span :style="{
+            paddingRight: '2px',
+          }">WisDM V1.6.2.1: Discounted subscription and new hints for whitelist management.</span> &nbsp;  <u>Check the updates</u>.</a>
+        </div>
+        <div>
+          <a href="https://downloads.rakwireless.com/IoT-Marketplace/Rejeee/Multiple%20External%20Waterproof%20Road%20Temperature%20Sensors/Certification/Rejeee%20Multiple%20External%20Temperature%20Sensor_FCC_Certification.pdf?utm_source=textad_docs&utm_medium=organic&utm_campaign=FCC_cert_for_rejeee_multiple_external_temperature_sensor_adhoc2024" class="event-banner-link "><span :style="{
+            paddingRight: '2px',
+          }">Now FCC-certified: Rejeee Multiple External Temperature Sensors for LoRaWAN®.</span> &nbsp;  <u>Read certification</u>.</a>
         </div>
       </div>
       <span @click="closePopUpBanner" class="close-event-banner-btn">
@@ -105,7 +112,7 @@
   }
 
   #banner-flip div:first-child {
-    animation: flip4 20s linear infinite;
+    animation: flip5 25s linear infinite;
   }
 
   /* @keyframes show {
@@ -151,7 +158,7 @@
     99.99% { margin-top: 0px; }
     100% { margin-top: -360px; }
   }
-  /*
+
   @keyframes flip5 {
     0% { margin-top: -450px; }
     5% { margin-top: -360px; }
@@ -166,7 +173,7 @@
     99.99% { margin-top: 0px; }
     100% { margin-top: -450px; }
   }
-
+  /*
   @keyframes flip6 {
     0% { margin-top: -540px; }
     5% { margin-top: -450px; }

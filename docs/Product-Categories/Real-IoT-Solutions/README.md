@@ -9,7 +9,7 @@ rak_img: /assets/rakwireless/product-categories/rism-kit.png
 
 <rk-head img="/assets/rakwireless/product-categories/rism-kit.png" center>
 
-Solutions product line of RAKwireless offers complete end-to-end IoT applications that is plug-and-play and will work with minimal setup procedures. 
+The Real IoT Solutions product line of RAKwireless offers complete end-to-end IoT applications that is plug-and-play and will work with minimal setup procedures.
 
 
 </rk-head>

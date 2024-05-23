@@ -1,5 +1,5 @@
 ---
-rak_desc: Contains instructions and a guide for installing and deploying your Real IoT Kit. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device.
+rak_desc: Contains instructions and a guide for installing and deploying your Real IoT Sensor. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device.
 rak_img: /assets/images/rism/sensor/rism-sensor.png
 prev: ../Overview/
 next: false
@@ -7,15 +7,15 @@ tags:
   - Solutions
   - RISM
   - quickstart
-  - Real IoT Kit
+  - Real IoT Sensor
   - Real IoT Solutions Marketplace
 ---
 
 # Real IoT Sensor Quick Start Guide
 
-This guide covers all the steps needed to start using the Real IoT Kit and bundles. The kits are preconfigured, and minimal procedures are required to have a working IoT application.
+This guide covers all the steps needed to start using the Real IoT Sensor and bundles. The bundles are preconfigured, and minimal procedures are required to have a working IoT application.
 
-In summary, there are only three steps to follow to have a working end-to-end Real IoT Kit.
+In summary, there are only three steps to follow to have a working end-to-end Real IoT Sensor.
 
 1. Power on the LoRaWAN gateway and connect it to the internet.
 2. Power on the end-device.
@@ -23,7 +23,7 @@ In summary, there are only three steps to follow to have a working end-to-end Re
 
 ## 1. Gateway Setup
 
-To initiate the Real IoT Kit setup, ensure that the gateway is online and connected to the LoRaWAN Network Server (LNS).
+To initiate the Real IoT Sensor setup, ensure that the gateway is online and connected to the LoRaWAN Network Server (LNS).
 
 :::tip 📝 NOTE
 - If you have a RAKwireless gateway, refer to the <a href="[/Product-Categories/WisGate/RAK7268/Quickstart/](https://docs.rakwireless.com/Product-Categories/WisGate/)" target="_blank">RAKwireless WisGate Documentation</a>.
@@ -33,7 +33,7 @@ To initiate the Real IoT Kit setup, ensure that the gateway is online and connec
 
 ## 2. Power On the Device
 
-After configuring the gateway and ensuring its internet connectivity, you can proceed with powering on the device that is included in your Real IoT Kit.
+After configuring the gateway and ensuring its internet connectivity, you can proceed with powering on the device that is included in your Real IoT Sensor.
 
 The guide differs depending on the type of device included in your kit. Some devices are battery-powered, so they require careful mounting with consideration of the battery polarity.
 
