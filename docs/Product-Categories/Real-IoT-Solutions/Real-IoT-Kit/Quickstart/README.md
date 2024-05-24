@@ -21,7 +21,7 @@ In summary, there are only three steps to follow to have a working end-to-end Re
 2. Power on the end-device.
 3. Scan the QR code to generate a working IoT dashboard.
 
-## Gateway Setup
+## 1. Gateway Setup
 
 To initiate the Real IoT Kit setup, ensure that the gateway is online and connected to the LoRaWAN Network Server (LNS). By default, a successfully connected LoRaWAN gateway to the internet will have a blue LED indicator.
 

@@ -5,17 +5,17 @@ tags:
   - HKA18019095-6C
   - datasheet
 rak_desc: Provides comprehensive information about your Battery Plus Service Power Adapter to help you use it. This information includes technical specifications, characteristics, and requirements.
-rak_img: /assets/images/accessories/battery-plus-service-power-adapter/overview.png
+rak_img: /assets/images/accessories/rak-battery-plus-service-power-adapter/overview.png
 
 ---
 
-# Battery Plus Service Power Adapter
+# Battery Plus Service Power Adapter Datasheet
 
 ## Overview
 
 ### Description
 
-The **RAK Battery Plus Service power adapter** is designed to pair with RAK9155 Battery Plus for thorough in-house charging prior to deployment. This adapter enables quick and reliable battery charging, ideal for reviving batteries with prolonged storage or simulating a full power cycle for maintenance and evaluation purposes. It provides a 19&nbsp;V<sub>DC</sub> output with a 9.47&nbsp;A current and 180&nbsp;W power, featuring a dedicated connector that matches the Battery Plus input (PV input).
+The **RAK Battery Plus Service Power Adapter** is designed to pair with RAK9155 Battery Plus for thorough in-house charging prior to deployment. This adapter enables quick and reliable battery charging, ideal for reviving batteries with prolonged storage or simulating a full power cycle for maintenance and evaluation purposes. It provides a 19&nbsp;V<sub>DC</sub> output with a 9.47&nbsp;A current and 180&nbsp;W power, featuring a dedicated connector that matches the Battery Plus input (PV input).
 
 ### Features
 
@@ -38,14 +38,14 @@ The **RAK Battery Plus Service power adapter** is designed to pair with RAK9155 
 - One (1) AC Input 100-240&nbsp;V power input
 
 <rk-img
-  src="/assets/images/accessories/battery-plus-service-power-adapter/power-input.png"
+  src="/assets/images/accessories/rak-battery-plus-service-power-adapter/power-input.png"
   width="35%"
   caption="Power Input Interface"
 />
 
 - One (1) Battery Plus PV Input compatible connector
 <rk-img
-  src="/assets/images/accessories/battery-plus-service-power-adapter/power-output.png"
+  src="/assets/images/accessories/rak-battery-plus-service-power-adapter/power-output.png"
   width="45%"
   caption="Output/PV Input compatible connector"
 />
@@ -83,7 +83,7 @@ The **RAK Battery Plus Service power adapter** is designed to pair with RAK9155 
 #### Mechanical Characteristics
 
 <rk-img
-  src="/assets/images/accessories/battery-plus-service-power-adapter/dimensions.png"
+  src="/assets/images/accessories/rak-battery-plus-service-power-adapter/dimensions.png"
   width="80%"
   caption="Battery Plus Service Power Adapter Dimensions"
 />
