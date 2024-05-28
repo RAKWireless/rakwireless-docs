@@ -6,7 +6,11 @@ tags:
   - datasheet
   - wisduo
   - RAK11300
-
+certifications:
+  - [CE, https://downloads.rakwireless.com/LoRa/WisBlock/RAK11310/Certification/RAK11300_RAK11310_CE_Certification.pdf]
+  - [FCC, https://downloads.rakwireless.com/LoRa/WisBlock/RAK11310/Certification/RAK11300_RAK11310_FCC_Certification.zip]
+  - [ISED, https://downloads.rakwireless.com/LoRa/WisBlock/RAK11310/Certification/RAK11300_RAK11310_ISED_Certification.pdf]
+  - [UKCA, https://downloads.rakwireless.com/LoRa/WisBlock/RAK11310/Certification/RAK11300_RAK11310_UKCA_Certification.pdf]
 ---
 
 # RAK11300 WisDuo LPWAN Module Datasheet
@@ -305,3 +309,7 @@ Download the latest firmware of the RAK11300 WisDuo LPWAN Module provided below.
 | Model    | Version | Source                                                                                            |
 | :------: | :-----: | :-----------------------------------------------------------------------------------------------: |
 | RAK11300 | V1.0.0  | [Download](https://downloads.rakwireless.com/LoRa/RAK11300/Firmware/RAK11300_Latest_Firmware.zip) |
+
+## Certification
+
+<rk-certifications :params="$page.frontmatter.certifications" />

@@ -20,7 +20,7 @@ export const categoriesWisBlock = [
                 { country: "Europe", cert: "CE", link: "https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630_RAK4631_CE_Certification.zip" },
                 { country: "Europe", cert: "REACH", link: "https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630_RAK4631_REACH_Report.pdf" },
                 { country: "Europe", cert: "RoHS", link: "https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630_RAK4631_RoHS_Report.pdf" },
-                { country: "USA", cert: "FCC", link: "https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630_RAK4631_FCC_Certiification.zip" },
+                { country: "USA", cert: "FCC", link: "https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630_RAK4631_FCC_Certification.zip" },
                 { country: "Canada", cert: "ISED", link: "https://downloads.rakwireless.com/LoRa/WisBlock/RAK4631/Certification/RAK4631_ISED_Certification.pdf" },
                 { country: "Australia", cert: "RCM", link: "https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630_RCM_Certification.pdf" },
                 { country: "Korea", cert: "KCC", link: "https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630_RAK4631_KC_Certification.pdf" },
@@ -73,7 +73,7 @@ export const categoriesWisBlock = [
             data: [
                 { country: "Europe", cert: "CE", link: "https://downloads.rakwireless.com/LoRa/WisBlock/RAK13401/Certification/RAK13401_CE_Certification.pdf" },
                 { country: "USA", cert: "FCC", link: "https://downloads.rakwireless.com/LoRa/WisBlock/RAK13401/Certification/RAK13401_FCC_Certification.pdf" },
-                { country: "Canada", cert: "ISED", link: "https://downloads.rakwireless.com/LoRa/WisBlock/RAK13600/Certification/RAK13600_ISED_Certification.pdf" },
+                { country: "Canada", cert: "ISED", link: "https://downloads.rakwireless.com/LoRa/WisBlock/RAK13401/Certification/RAK13401_ISED_Certification.pdf" },
                 { country: "UK", cert: "UKCA", link: "https://downloads.rakwireless.com/LoRa/WisBlock/RAK13401/Certification/RAK13401_UKCA_Certification.pdf" },
             ]
         },

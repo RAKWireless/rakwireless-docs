@@ -8,7 +8,7 @@ export const WISDUO_HEADER = {
     'BRAZIL',
     'JAPAN',
     'KOREA',
-    'LoRa Alliance',
+    'LORA ALLIANCE',
     'NEW ZEALAND',
     'UK'
   ]

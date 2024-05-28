@@ -195,9 +195,6 @@ The table below lists the operation and storage temperature requirements.
 
 ### Firmware
 
-Download the latest firmware version of RAK10701-P in the table provided below.
 
-| Model                                      | Version | Firmware                                                              |
-| ------------------------------------------ | ------- | --------------------------------------------------------------------- |
-| RAK10701-P| V1.1.1  | [Download - .hex](https://downloads.rakwireless.com/LoRa/RAK10701/Firmware/RAK10701_L_P_Latest_Firmware.hex) <br> [Download - .zip](https://downloads.rakwireless.com/LoRa/RAK10701/Firmware/RAK10701_L_P_Latest_Firmware.zip) |
+Download the latest firmware version of RAK10701-P via the <a href="https://docs.rakwireless.com/Product-Categories/Software-Tools/WisToolBox/Overview"> WisToolBox</a>.
 

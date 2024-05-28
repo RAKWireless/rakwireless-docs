@@ -4,7 +4,7 @@ export const WISNODE_HEADER = {
     'EUROPE',
     'USA',
     'CANADA',
-    'LoRa Alliance',
+    'LORA ALLIANCE',
     'UK'
   ]
 }

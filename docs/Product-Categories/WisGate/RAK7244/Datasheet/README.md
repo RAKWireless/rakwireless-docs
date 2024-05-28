@@ -8,7 +8,7 @@ tags:
 prev: ../Supported-LoRa-Network-Servers/
 next: false
 certifications:
-  - [RoHS, https://downloads.rakwireless.com/LoRa/Developer-LoRaWAN-Gateway-RAK7244%26RAK7244P/Certification/RAK7244_RoHS_Report.pdf]
+  - [RoHS, https://downloads.rakwireless.com/LoRa/Developer-LoRaWAN-Gateway-RAK7244-RAK7244P/Certification/RAK7244_RoHS_Report.pdf]
 ---
 
 # RAK7244 WisGate Developer D4 Gateway Datasheet

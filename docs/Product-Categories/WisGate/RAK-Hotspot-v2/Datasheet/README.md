@@ -13,7 +13,6 @@ certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/RAK_Hotspot/Certification/RAK7248_HotspotV2.0_CE_Certification.pdf]
   - [ERP, https://downloads.rakwireless.com/LoRa/RAK_Hotspot/Certification/RAK7248_HotspotV2.0_ERP_Certification.pdf]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK_Hotspot/Certification/RAK7248_HotspotV2.0_FCC_Certification.pdf]
-  - [ISED, https://downloads.rakwireless.com/LoRa/RAK_Hotspot/Certification/RAK7248_HotspotV2.0_ISED_Report.pdf]
   - [IMDA, https://downloads.rakwireless.com/LoRa/RAK_Hotspot/Certification/RAK7248_HotspotV2.0_IMDA_Certification.zip]
   - [KCC, https://downloads.rakwireless.com/LoRa/RAK_Hotspot/Certification/RAK7248_HotspotV2.0_KC_Certification.pdf]
   - [NBTC, https://downloads.rakwireless.com/LoRa/RAK_Hotspot/Certification/RAK7248_HotspotV2.0_NBTC_Certification.zip]

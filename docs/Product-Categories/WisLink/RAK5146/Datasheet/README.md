@@ -13,7 +13,7 @@ certifications:
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_FCC_Certification.zip]
   - [IMDA, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_IMDA_Certification.pdf]
   - [ISED, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_ISED_Certification.pdf]
-  - [JRL, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_JRL_certification.pdf]
+  - [JRL, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_JRL_Certification.pdf]
   - [KCC, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_KC_Certification.pdf]
   - [MOC, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_MOC_Certification.pdf]
   - [NCC, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_NCC_Certification.pdf]
@@ -23,7 +23,7 @@ certifications:
   - [SIRIM, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_SIRIM_QAS_Certification.pdf]
   - [SUTEL, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_SUTEL_Certification.pdf]
   - [UKCA, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_UKCA_Certification.zip]
-  - [Vietnam, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_Vietnam_Certification.pdf]
+  - [Vietnam, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_MIC_Certification.pdf]
   - [WPC, https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_WPC_Certification.pdf]
 ---
 

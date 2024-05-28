@@ -11,8 +11,8 @@ certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/RAK4200/Certification-Report/RAK4200H_CE_Certification.zip]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK4200/Certification-Report/RAK4200_FCC_Certification.zip]
   - [ISED, https://downloads.rakwireless.com/LoRa/RAK4200/Certification-Report/RAK4200H_ISED_Certification.pdf]
-  - [REACH, https://downloads.rakwireless.com/LoRa/RAK4200/Certification-Report/RAK4200H_REACH_Certification.pdf]
-  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK4200/Certification-Report/RAK4200H_RoHS_Certification.pdf]
+  - [REACH, https://downloads.rakwireless.com/LoRa/RAK4200/Certification-Report/RAK4200H_REACH_Report.pdf]
+  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK4200/Certification-Report/RAK4200H_RoHS_Report.pdf]
 
 ---
 

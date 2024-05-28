@@ -235,3 +235,7 @@ Detailed information about the RAK4630 BLE and LoRa antenna can be found on the 
   width="70%"
   caption="PCB footprint and recommendations"
 />
+
+## Certification
+
+<rk-certifications :params="$page.frontmatter.certifications" />

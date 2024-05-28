@@ -263,7 +263,6 @@ Download the latest RAK11720 WisDuo LPWAN Module firmware provided below. RAK117
 | RAK11720 (.bin via BLE)  |                             | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK11720_latest_Nonsecure_OTA_Package_BLE.bin)  |
 | RAK11720 (.hex)          |                             | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK11720_latest_final.hex)                      |
 
-
 ## Certification
 
 <rk-certifications :params="$page.frontmatter.certifications" />

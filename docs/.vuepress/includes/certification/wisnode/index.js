@@ -6,7 +6,6 @@ export const categoriesWisNode = [
         {
           device: "RAK2171",
           data: [
-            { country: "Europe", cert: "CE", link: "https://downloads.rakwireless.com/LoRa/RAK2171/Certification/RAK2171_CE_Certification.pdf" },
             { country: "Europe", cert: "REACH", link: "https://downloads.rakwireless.com/LoRa/RAK2171/Certification/RAK2171_REACH_Report.pdf" },
             { country: "Europe", cert: "RoHS", link: "https://downloads.rakwireless.com/LoRa/RAK2171/Certification/RAK2171_RoHS_Report.pdf" },
             { country: "USA", cert: "FCC", link: "https://downloads.rakwireless.com/LoRa/RAK2171/Certification/RAK2171_FCC_Certification.pdf" },
@@ -19,7 +18,7 @@ export const categoriesWisNode = [
           data: [
             { country: "Europe", cert: "CE", link: "https://downloads.rakwireless.com/LoRa/RAK2270/Certification/RAK2270_CE_Certification.pdf" },
             { country: "USA", cert: "FCC", link: "https://downloads.rakwireless.com/LoRa/RAK2270/Certification/RAK2270_FCC_Certification.pdf" },
-            { country: "Canada", cert: "ISED", link: "https://downloads.rakwireless.com/LoRa/RAK2171/Certification/RAK2171_ISED_Certification.pdf"},
+            { country: "Canada", cert: "ISED", link: "https://downloads.rakwireless.com/LoRa/RAK2270/Certification/RAK2270_ISED_Certification.pdf"},
           ]
         },
         {

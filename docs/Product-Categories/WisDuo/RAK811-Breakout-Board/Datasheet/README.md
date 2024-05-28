@@ -10,9 +10,9 @@ next: ../AT-Command-Manual/
 certifications:
   - [CE, https://downloads.rakwireless.com/LoRa/RAK811/Certification_Report/RAK811_CE_Certification.zip]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK811/Certification_Report/RAK811_FCC_Certification.zip]
-  - [KCC, https://downloads.rakwireless.com/LoRa/RAK811/Certification_Report/RAK811_KC_Certification.pdf]
+  - [KCC, https://downloads.rakwireless.com/LoRa/RAK811/Certification_Report/RAK811_KC_Certification.zip]
   - [MIC, https://downloads.rakwireless.com/LoRa/RAK811/Certification_Report/RAK811_MIC_Certification.zip]
-  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK811/Certification_Report/RAK811_RoHS_Certification.zip]
+  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK811/Certification_Report/RAK811_RoHS_Report.zip]
 
 
 ---

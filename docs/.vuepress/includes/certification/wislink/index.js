@@ -62,7 +62,7 @@ export const categoriesWisLink = [
             { country: "Singapore", cert: "IMDA", link: "https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_IMDA_Certification.pdf" },
             { country: "Taiwan, China", cert: "NCC", link: "https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_NCC_Certification.pdf" },
             { country: "UK", cert: "UKCA", link: "https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_UKCA_Certification.zip" },
-            { country: "Vietnam", cert: "Vietnam", link: "https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_Vietnam_Certification.pdf" },
+            { country: "Vietnam", cert: "MIC", link: "https://downloads.rakwireless.com/LoRa/RAK5146/Certification/RAK5146_MIC_Certification.pdf" },
           ]
         },
         {
@@ -83,6 +83,8 @@ export const categoriesWisLink = [
           device: "LX200V30",
           data: [
             { country: "Europe", cert: "RoHS", link: "https://downloads.rakwireless.com/PLC/LX200V30/Certification%20Report/LX200V30_RoHS_Certification.pdf" },
+            { country: "Europe", cert: "CE", link: "https://downloads.rakwireless.com/PLC/LX200V30/Certification%20Report/LX200V30_CE_Certification.pdf" },
+            { country: "USA", cert: "FCC", link: "https://downloads.rakwireless.com/PLC/LX200V30/Certification%20Report/LX200V30_FCC_Certification.pdf" },
           ]
         },
         {

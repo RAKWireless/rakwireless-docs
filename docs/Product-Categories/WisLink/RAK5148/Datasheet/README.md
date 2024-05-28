@@ -272,3 +272,7 @@ In general, the RAK5148's variation is the defined as **RAK5148 - XYZ**, where *
 | :---------: | :---: | :---: | :-------: |
 | RAK5148-211 |   √   |       |     √     |
 | RAK5148-221 |   √   |   √   |     √     |
+
+## Certification
+
+<rk-certifications :params="$page.frontmatter.certifications" />

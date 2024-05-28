@@ -6,7 +6,7 @@ tags:
 prev: ../Quickstart/
 next: false
 certifications:
-  - [Anatel, https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification-Report/RAK2287_Anatel_Certification.pdf]
+  - [Anatel, https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification-Report/RAK2287_ANATEL_Certification.pdf]
   - [CE, https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification-Report/RAK2287_CE_Certification.zip]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification-Report/RAK2287_FCC_Certification.zip]
   - [ISED, https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification-Report/RAK2287_ISED_Certification.zip]

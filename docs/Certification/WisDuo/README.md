@@ -11,7 +11,7 @@ rak_img: /assets/images/certifications/certification-banner.jpg
   'CANADA',
   'JAPAN',
   'KOREA',
-  'LoRa Alliance',
+  'LORA ALLIANCE',
   'UK',
   ]"/>
 

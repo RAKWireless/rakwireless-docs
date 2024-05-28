@@ -6,6 +6,10 @@ tags:
   - wisduo
   - RAK4600 Breakout Board
 prev: ../Quickstart/
+next: false
+certifications:
+  - [CE, https://downloads.rakwireless.com/LoRa/RAK4600/Certification/RAK4600_CE_Certification.zip]
+  - [FCC, https://downloads.rakwireless.com/LoRa/RAK4600/Certification/RAK4600_FCC_Certification.zip]
 ---
 
 # RAK4600 Breakout Board Datasheet
@@ -226,3 +230,6 @@ Download the latest firmware of the RAK4600 Breakout Board in the table provided
 | :-----: | :------: | :---------------------------------------------------------------------------------------------: |
 | RAK4600 | 3.4.0.14 | [Download](https://downloads.rakwireless.com/LoRa/RAK4600/Firmware/RAK4600_Latest_Firmware.zip) |
 
+## Certification
+
+<rk-certifications :params="$page.frontmatter.certifications" />

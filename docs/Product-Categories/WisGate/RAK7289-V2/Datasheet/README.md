@@ -12,11 +12,10 @@ tags:
 certifications:
     - [CE, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289C_RAK7289V2_CE_Certification.pdf]
     - [ISED, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289C_ISED_Certification.zip]
-    - [JBTL, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289CV2_JTBL_Certification.pdf]
-    - [JRL, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289CV2_JRL_certification.pdf]
+    - [JRL, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289CV2_RAK7289V2_JRL_certification.pdf]
+    - [JTBL, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289CV2_JTBL_Certification.pdf]
     - [KCC, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289_RAK7289C_RAK7289V2_RAK7289CV2_KC_Certification.pdf]
     - [MA, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289V2_MA_Certification.pdf]
-    - [MTBF, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289CV2_MTBF_Report.pdf]
     - [RCM, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289_RAK7289V2_RCM_Certification.pdf]
     - [REACH, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289C_RAK7289_RAK7289CV2_RAK7289V2_REACH_Report.pdf]
     - [RoHS, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289C_RAK7289_RAK7289CV2_RAK7289V2_RoHS_Report.pdf]

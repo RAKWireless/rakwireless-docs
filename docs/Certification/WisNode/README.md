@@ -7,7 +7,7 @@ rak_img: /assets/images/certifications/certification-banner.jpg
   'EUROPE',
   'USA',
   'CANADA',
-  'LoRa Alliance',
+  'LORA ALLIANCE',
   'UK']"/>
 
 <rk-certification-newsletter/>

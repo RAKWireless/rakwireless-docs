@@ -140,6 +140,15 @@ export default {
           case 'MA':
             data.img = '/assets/images/certifications/MA.jpg'
             break
+          case 'RFC':
+            data.img = '/assets/images/certifications/RFC.png'
+            break
+          case 'JTBL':
+            data.img = '/assets/images/certifications/JTBL.png'
+            break
+          case 'BSMI':
+            data.img = '/assets/images/certifications/BSMI.png'
+            break             
           default:
             data.img =
               'https://image.shutterstock.com/image-illustration/white-unknown-document-icon-isolated-600w-1517588975.jpg'

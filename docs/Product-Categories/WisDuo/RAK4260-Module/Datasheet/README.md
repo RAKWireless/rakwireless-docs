@@ -6,8 +6,8 @@ tags:
   - wisduo
   - RAK4260
 certifications:
-  - [CE, https://downloads.rakwireless.com/LoRa/RAK4260H/Certification-Report/RAK4260H_CE_Certification.zip]
-  - [FCC, https://downloads.rakwireless.com/LoRa/RAK4260H/Certification-Report/RAK4260H_FCC_Certification.zip]
+  - [CE, https://downloads.rakwireless.com/LoRa/RAK4260/Certification-Report/RAK4260H_CE_Certification.zip]
+  - [FCC, https://downloads.rakwireless.com/LoRa/RAK4260/Certification-Report/RAK4260H_FCC_Certification.zip]
 prev: ../Quickstart/
 next: false
 ---

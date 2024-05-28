@@ -9,6 +9,10 @@ tags:
   - Power Supply
 rak_desc: Provides comprehensive information about your RAK9154 Solar Battery to help you in using it. This information includes technical specifications, characteristics, and requirements.
 rak_img: /assets/images/accessories/rak9154/datasheet/RAK9154.png
+certifications:
+  - [CE, https://downloads.rakwireless.com/Accessories/RAK9154/Certification/RAK9154_CE_Certification.pdf]
+  - [FCC, https://downloads.rakwireless.com/Accessories/RAK9154/Certification/RAK9154_FCC_Certification.pdf]
+  - [RoHS, https://downloads.rakwireless.com/Accessories/RAK9154/Certification/RAK9154_RoHS_Report.pdf]
 ---
 
 # RAK9154 Solar Battery Datasheet
@@ -130,3 +134,7 @@ This product must comply with the operating instructions. Any installation, main
 - Do not let the product carry heavy load or pressure. It should not be stacked on top of each other.
 - Although this battery is not a high-pressure energy storage device, non-professionals, and improper operation and use may still cause serious consequences such as burning and explosion. The installation and maintenance of the battery system must be operated by professional technicians. Its usage must strictly abide by the relevant safety regulations; non-professionals are strictly prohibited to install, repairing battery systems and abuse.
 :::
+
+## Certification
+
+<rk-certifications :params="$page.frontmatter.certifications" />

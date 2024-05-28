@@ -8,6 +8,11 @@ tags:
   - RAK7371
 prev: ../Quickstart/
 next: false
+certifications:
+  - [CE, https://downloads.rakwireless.com/LoRa/RAK7371/Certification/RAK7371_CE_Certification.pdf]
+  - [FCC, https://downloads.rakwireless.com/LoRa/RAK7371/Certification/RAK7371_FCC_and_ISED_Report.pdf]
+  - [REACH, https://downloads.rakwireless.com/LoRa/RAK7371/Certification/RAK7371_RAK7271_REACH_Report.pdf]
+  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK7371/Certification/RAK7371_RAK7271_RoHS_Report.pdf]
 ---
 
 # RAK7271/RAK7371 WisGate Developer Base Datasheet
@@ -234,3 +239,7 @@ Unless indicated otherwise, all operating condition specifications are at an amb
 | Parameter            | Variations                                                                             |
 | -------------------- | -------------------------------------------------------------------------------------- |
 | Y - Supported Region | 1 - EU433; 2 - CN470; 3 - EU868; 4 - US915; 5 - KR920; 6 - AS923; 7 - IN865; 8 - AU915 |
+
+## Certification
+
+<rk-certifications :params="$page.frontmatter.certifications" />

@@ -7,6 +7,13 @@ tags:
   - RAK4270 Breakout Board
 prev: ../AT-Command-Manual/
 next: false
+certifications:
+  - [CE, https://downloads.rakwireless.com/LoRa/RAK4270/Certification-Report/RAK4270_CE_Certification.zip]
+  - [FCC, https://downloads.rakwireless.com/LoRa/RAK4270/Certification-Report/RAK4270_FCC_Certification.zip]
+  - [JRL, https://downloads.rakwireless.com/LoRa/RAK4270/Certification-Report/RAK4270_JRL_Certification.zip]
+  - [KC, https://downloads.rakwireless.com/LoRa/RAK4270/Certification-Report/RAK4270_KC_Certification.pdf]
+  - [REACH, https://downloads.rakwireless.com/LoRa/RAK4270/Certification-Report/RAK4270_REACH_Report.pdf]
+  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK4270/Certification-Report/RAK4270_RoHS_Report.pdf]
 ---
 
 # RAK4270 Breakout Board Datasheet
@@ -202,4 +209,6 @@ The **hex file** contains both the bootloader and the application code. You need
 | ------- | --------- | ----------------------------------------------------------------------------------------------- |
 | RAK4270 | V3.3.0.18 | [Download](https://downloads.rakwireless.com/LoRa/RAK4270/Firmware/RAK4270_Latest_Firmware.zip) |
 
+## Certification
 
+<rk-certifications :params="$page.frontmatter.certifications" />

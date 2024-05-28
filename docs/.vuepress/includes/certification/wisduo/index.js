@@ -8,9 +8,9 @@ export const categoriesWisDuo = [
           data: [
             { country: "Europe", cert: "CE", link: "https://downloads.rakwireless.com/LoRa/RAK811/Certification_Report/RAK811_CE_Certification.zip" },
             { country: "Europe", cert: "RoHS", link: "https://downloads.rakwireless.com/LoRa/RAK811/Certification_Report/RAK811_RoHS_Report.zip" },
-            { country: "USA", cert: "FCC", link: "https://downloads.rakwireless.com/Accessories/RAK9155/Certification/RAK9155_FCC_Certification.jpg" },
+            { country: "USA", cert: "FCC", link: "https://downloads.rakwireless.com/LoRa/RAK811/Certification_Report/RAK811_FCC_Certification.zip" },
             { country: "Japan", cert: "MIC", link: "https://downloads.rakwireless.com/LoRa/RAK811/Certification_Report/RAK811_MIC_Certification.zip" },
-            { country: "Korea", cert: "KC", link: "https://downloads.rakwireless.com/LoRa/RAK811/Certification_Report/RAK811_KC_Certification.pdf" },
+            { country: "Korea", cert: "KC", link: "https://downloads.rakwireless.com/LoRa/RAK811/Certification_Report/RAK811_KC_Certification.zip" },
           ]
         },
         {
@@ -23,9 +23,9 @@ export const categoriesWisDuo = [
             { country: "Canada", cert: "ISED", link: "https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_ISED_Certification.pdf" },
             { country: "Australia", cert: "RCM", link: "https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_RCM_Certification.pdf" },
             { country: "Brazil", cert: "ANATEL", link: "https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_ANATEL_Certification.pdf" },
-            { country: "Japan", cert: "MIC", link: "https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_JRL_Certification.pdf" },
+            { country: "Japan", cert: "JRL", link: "https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_JRL_Certification.pdf" },
             { country: "Korea", cert: "KC", link: "https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_KC_Certification.pdf" },
-            { country: "LoRa Alliance", cert: "LoRa", link: "https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_LoRa_Alliance_Certification.pdf" },
+            { country: "LoRa Alliance", cert: "LoRaWAN", link: "https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_LoRa_Alliance_Certification.pdf" },
             { country: "New Zealand", cert: "RSM", link: "https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_RSM_Certification.pdf" },
             { country: "UK", cert: "UKCA", link: "https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_UKCA_Certification.pdf" },
           ]
@@ -46,7 +46,7 @@ export const categoriesWisDuo = [
             { country: "Europe", cert: "REACH", link: "https://downloads.rakwireless.com/LoRa/RAK4200/Certification-Report/RAK4200H_REACH_Report.pdf" },
             { country: "Europe", cert: "RoHS", link: "https://downloads.rakwireless.com/LoRa/RAK4200/Certification-Report/RAK4200H_RoHS_Report.pdf" },
             { country: "USA", cert: "FCC", link: "https://downloads.rakwireless.com/LoRa/RAK4200/Certification-Report/RAK4200_FCC_Certification.zip" },
-            { country: "USA", cert: "FCC", link: "https://downloads.rakwireless.com/LoRa/RAK4200/Certification-Report/RAK4200H_ISED_Certification.pdf" },
+            { country: "Canada", cert: "ISED", link: "https://downloads.rakwireless.com/LoRa/RAK4200/Certification-Report/RAK4200H_ISED_Certification.pdf" },
           ]
         },
         {
@@ -75,6 +75,26 @@ export const categoriesWisDuo = [
           ]
         },
         {
+          device: "RAK4630/RAK4631",
+          data: [
+            { country: "Europe", cert: "CE", link: "https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630_RAK4631_CE_Certification.zip" },
+            { country: "USA", cert: "FCC", link: "https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630_RAK4631_FCC_Certification.zip" },
+            { country: "Korea", cert: "KC", link: "https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630_RAK4631_KC_Certification.pdf" },
+            { country: "Australia", cert: "RCM", link: "https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630_RCM_Certification.pdf" },
+            { country: "Europe", cert: "REACH", link: "https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630_RAK4631_REACH_Report.pdf" },
+            { country: "Europe", cert: "RoHS", link: "https://downloads.rakwireless.com/LoRa/RAK4630/Certification/RAK4630_RAK4631_RoHS_Report.pdf" },
+          ]
+        },
+        {
+          device: "RAK11300/RAK11310",
+          data: [
+              { country: "Europe", cert: "CE", link: "https://downloads.rakwireless.com/LoRa/WisBlock/RAK11310/Certification/RAK11300_RAK11310_CE_Certification.pdf" },
+              { country: "USA", cert: "FCC", link: "https://downloads.rakwireless.com/LoRa/WisBlock/RAK11310/Certification/RAK11300_RAK11310_FCC_Certification.zip" },
+              { country: "Canada", cert: "ISED", link: "https://downloads.rakwireless.com/LoRa/WisBlock/RAK11310/Certification/RAK11300_RAK11310_ISED_Certification.pdf" },
+              { country: "UK", cert: "UKCA", link: "https://downloads.rakwireless.com/LoRa/WisBlock/RAK11310/Certification/RAK11300_RAK11310_UKCA_Certification.pdf" },
+          ]
+        },
+        {
           device: "RAK11720",
           data: [
             { country: "Europe", cert: "CE", link: "https://downloads.rakwireless.com/LoRa/RAK11720/Certification/RAK11720_CE_Certification.pdf" },
@@ -82,7 +102,6 @@ export const categoriesWisDuo = [
             { country: "Canada", cert: "ISED", link: "https://downloads.rakwireless.com/LoRa/RAK11720/Certification/RAK11720_ISED_Certification.pdf" },
             { country: "Australia", cert: "RCM", link: "https://downloads.rakwireless.com/LoRa/RAK11720/Certification/RAK11720_RCM_Certification.pdf" },
             { country: "Brazil", cert: "ANATEL", link: "https://downloads.rakwireless.com/LoRa/RAK11720/Certification/RAK11720_ANATEL_Certification.pdf" },
-
           ]
         },
       ]

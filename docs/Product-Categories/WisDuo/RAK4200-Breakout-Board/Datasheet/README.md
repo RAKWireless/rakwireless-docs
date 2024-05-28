@@ -6,7 +6,13 @@ tags:
   - wisduo
   - RAK4200 Breakout Board
 prev: ../Quickstart/
-
+next: false
+certifications:
+  - [CE, https://downloads.rakwireless.com/LoRa/RAK4200/Certification-Report/RAK4200H_CE_Certification.zip]
+  - [FCC, https://downloads.rakwireless.com/LoRa/RAK4200/Certification-Report/RAK4200_FCC_Certification.zip]
+  - [ISED, https://downloads.rakwireless.com/LoRa/RAK4200/Certification-Report/RAK4200H_ISED_Certification.pdf]
+  - [REACH, https://downloads.rakwireless.com/LoRa/RAK4200/Certification-Report/RAK4200H_REACH_Report.pdf]
+  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK4200/Certification-Report/RAK4200H_RoHS_Report.pdf]
 ---
 
 # RAK4200 Breakout Board Datasheet
@@ -250,3 +256,7 @@ Download the latest firmware and bootloader of the RAK4200 Breakout Board provid
 | Model   | Version   | Source                                                                                          |
 | :-----: | :-------: | :---------------------------------------------------------------------------------------------: |
 | RAK4200 | V3.2.0.16 | [Download](https://downloads.rakwireless.com/LoRa/RAK4200/Firmware/RAK4200_Latest_Firmware.zip) |
+
+## Certification
+
+<rk-certifications :params="$page.frontmatter.certifications" />
