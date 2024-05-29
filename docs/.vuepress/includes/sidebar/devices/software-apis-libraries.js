@@ -94,7 +94,7 @@ module.exports = {
     ],
     '/Product-Categories/Software-APIs-and-Libraries/WisGateOS-2-Extensions/': [
       {
-        title: 'WisGateOS 2 Extensions',
+        title: 'WisGateOS2 Extensions',
         path: '/Product-Categories/Software-APIs-and-Libraries/WisGateOS-2-Extensions/Overview/',
         collapsable: false,
         nested: true,

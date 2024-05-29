@@ -18,6 +18,11 @@
             paddingRight: '2px',
           }">WisDM V1.6.2.1: Discounted subscription and new hints for whitelist management.</span> &nbsp;  <u>Check the updates</u>.</a>
         </div>
+        <div>
+          <a href="https://docs.rakwireless.com/Product-Categories/WisGate/RAK7271-7371/Datasheet/#certification?utm_source=textad_docs&utm_medium=organic&utm_campaign=rak7271_rak7371_cert" class="event-banner-link "><span :style="{
+            paddingRight: '2px',
+          }">RAK7271/RAK7371 now complies with RoHS and REACH for global sale.</span> &nbsp;  <u>Read full reports.</u></a>
+        </div>
       </div>
       <span @click="closePopUpBanner" class="close-event-banner-btn">
         X
@@ -102,7 +107,7 @@
   }
 
   #banner-flip div:first-child {
-    animation: flip3 15s linear infinite;
+    animation: flip4 20s linear infinite;
   }
 
   /* @keyframes show {
@@ -135,7 +140,7 @@
     99.99% { margin-top: 0px; }
     100% { margin-top: -270px; }
   }
-  /*
+
   @keyframes flip4 {
     0% { margin-top: -360px; }
     5% { margin-top: -270px; }
@@ -148,7 +153,7 @@
     99.99% { margin-top: 0px; }
     100% { margin-top: -360px; }
   }
-
+  /*
   @keyframes flip5 {
     0% { margin-top: -450px; }
     5% { margin-top: -360px; }
