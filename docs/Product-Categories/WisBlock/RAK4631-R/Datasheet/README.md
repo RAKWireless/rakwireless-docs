@@ -111,7 +111,7 @@ Detailed information about the RAK4631-R BLE and LoRa antenna can be found on th
 
 | **Item**                     | **Power Consumption** | **Condition**                 |
 | ---------------------------- | --------------------- | ----------------------------- |
-| Tx mode LoRa @20&nbsp;dBm    | 12&nbsp;5mA           | LoRa @ PA_BOOST&BT sleep      |
+| Tx mode LoRa @20&nbsp;dBm    | 125&nbsp;mA           | LoRa @ PA_BOOST&BT sleep      |
 | Tx mode LoRa @17&nbsp;dBm    | 92&nbsp;mA            | LoRa @ PA_BOOST&BT sleep      |
 | Tx mode BT@4&nbsp;dBm        | 9&nbsp;mA             | BT Tx mode & Lora sleep       |
 | Rx mode LoRa @37.5&nbsp;kbps | 17&nbsp;mA            | LoRa @ Receive mode &BT sleep |
