@@ -2,7 +2,7 @@
 rak_img: /assets/images/software-apis-and-library/wisgateos2.png
 rak_desc: WisGateOS2 features an extension functionality, which provides additional features and functions that can be added or removed, based on the user's needs. Later this year RAKwireless will provide the option for our users to build their own extensions.
 rak_grp: [software-apis-and-libraries, wisgateos]
-prev: ../Software-APIs-and-Libraries/
+prev: ../../
 next:  false
 tags:
     - wisgate
@@ -18,10 +18,10 @@ WisGateOS2 2.2 comes with significant updates that affect all extensions, downgr
 - **Downgrading Restrictions**: Once you upgrade to WisGateOS2 2.2.x, you will not be able to revert to version 2.1.x using the standard downgrade (WebUI). Make sure to back up and secure all critical data before proceeding with the upgrade. Only through a recovery procedure will a downgrade be possible. The steps for the recovery procedure can be found here: <a href="https://docs.rakwireless.com/Knowledge-Hub/Learn/OpenWRT-Recovery-Procedure/" target="_blank">OpenWrt Recovery Procedure</a>.
 - **Extension Signature Requirement**: All extensions for WisGateOS2 2.2.x will now require a signature for increased security and compatibility. Extensions that lack this signature (such as those for WisGateOS2 2.0.x/2.1.x) will not be installable on 2.2.x. This ensures that you are running the new firmware with verified and trusted extensions. On WisGateOS2 2.2.x, the Extension Gallery will automatically update installed Extensions. Some extensions, such as WireGuard, require manual installation after upgrading to WisGateOS2 2.2.x.
 - **Internet Connection**: Because the new firmware and Extension gallery require a signature check, an Internet connection is required during the update.
-- **Dual Firmware**: Some customers may still be using firmware version 2.1.x. Both versions will be supported, but it is critical to use the correct and corresponding extensions for each version to avoid compatibility issues. We strongly recommend moving to the new WisGateOS2 2.2.x to be able to use the latest features, security, and services.
+- **Dual Firmware**: Some customers may still be using firmware version 2.1.x. Both versions will be supported, but it is critical to use the correct and corresponding extensions for each version to avoid compatibility issues. We strongly recommend upgrading to the new WisGateOS2 2.2.x version to be able to use the latest features, security, and services.
 :::
 
-The following table list the supported WisGate Edge Gateway models of every WisGateOS:
+The following table lists the supported WisGate Edge Gateway models of every WisGateOS:
 
 |              WisGateOS1 1.x              |                 WisGateOS2 2.x                  |
 |:----------------------------------------:|:-----------------------------------------------:|
@@ -31,7 +31,7 @@ The following table list the supported WisGate Edge Gateway models of every WisG
 | WisGate Edge Prime (RAK7240 / RAK7240C)  |     WisGate Edge Ultra (RAK7285 / RAK7285C)     |
 
 ::: tip 📝 NOTE
-The hardware in V1 and V2 gateways is different. WisGateOS2 can be used only with V2 gateways.
+The hardware in V1 and V2 Gateways are different. WisGateOS2 can be used only with V2 Gateways.
 :::
 
 
@@ -53,7 +53,7 @@ The hardware in V1 and V2 gateways is different. WisGateOS2 can be used only wit
 | LBT                          |       X        |       ✔        |
 
 ::: tip 📝 NOTE
-**LBT** is available for certain gateway models since they are related to specific hardware functionality.
+**LBT** is available for certain gateway models since they are related to a specific hardware functionality.
 :::
 
 ## Overview
@@ -62,24 +62,25 @@ WisGateOS2 features an extension functionality, which provides additional featur
 
 **Supported Extensions**
 
-| Extensions           | Descriptions                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Remarks                                                                                                |
-|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-| Breathing Light      | By using the breathing light extension you can personalize the LED light’s working modes, frequency, and color.                                                                                                                                                                                                                                                                                                                                                                                       |                                                                                                        |
-| Custom Logo          | The Custom Logo extension allows you to upload your logo in the Web UI. This extension is universal and it works for all gateways, supporting WisGateOS2.                                                                                                                                                                                                                                                                                                                                             |                                                                                                        |
-| Country Settings/LBT | LBT (Listen Before Talk) means that, before transmitting, the gateway checks the availability of the channel. This is necessary because LoRaWAN is a multi-channel protocol and uses ISM Band. Anyone can use the band - a collision occurs if two or more end devices send signals simultaneously. LBT is usually governed by regulations per country. In WisGateOS2, there is a country table which includes proper configurations for all countries so you can set the country code in WisGateOS2. |                                                                                                        |
-| Open/Close Port      | This extension can add or delete packet traffic management rules on the gateway through the Open/Close port extension, allowing the host IP of any (or specific) network segment to communicate with the gateway through the specified port.                                                                                                                                                                                                                                                          |                                                                                                        |
-| Solar Battery        | The Solar battery extension is used to display the status of the solar battery used by the gateway. The status includes the solar battery's performance, battery health status, cycle period, battery power, charging and discharging mode, and other information.                                                                                                                                                                                                                                              | The extension is compatible with **RAK7289 WisGate Edge Pro and RAK7285 WisGate Edge Ultra gateways**. |
-| Wireguard            | WireGuard is a simple but fast VPN. It aims to be faster, simpler, and leaner than the IPsec protocol. It intends to be more performant than the well-known RAKwireless - OpenVPN. Before, it was not possible to use the WireGuard protocol on the RAKwireless gateways, but that is not the case now.                                                                                                                                                                                               |                                                                                                        |
-| Open VPN             | OpenVPN is a virtual private network (VPN). A VPN is created where a server is deployed that both the Gateway and any number of customer devices (PC, Phone, etc.) can connect to via a public IP address. This is possible to implement using any of the backhaul connectivity options the Gateway supports (Ethernet, Wi-Fi, LTE). For the LTE backhaul, make sure that the gateway has a static public IP.                                                                                         |                                                                                                        |
+| Extensions                | Descriptions                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Remarks                                                                                                |
+|---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
+| Breathing Light           | By using the breathing light extension you can personalize the LED light’s working modes, frequency, and color.                                                                                                                                                                                                                                                                                                                                                                                       |                                                                                                        |
+| Custom Logo               | The Custom Logo extension allows you to upload your logo in the Web UI. This extension is universal and it works for all gateways, supporting WisGateOS2.                                                                                                                                                                                                                                                                                                                                             |                                                                                                        |
+| Country Settings/LBT      | LBT (Listen Before Talk) means that, before transmitting, the gateway checks the availability of the channel. This is necessary because LoRaWAN is a multi-channel protocol and uses ISM Band. Anyone can use the band - a collision occurs if two or more end devices send signals simultaneously. LBT is usually governed by regulations per country. In WisGateOS2, there is a country table which includes proper configurations for all countries so you can set the country code in WisGateOS2. |                                                                                                        |
+| Open/Close Port           | This extension can add or delete packet traffic management rules on the gateway through the Open/Close port extension, allowing the host IP of any (or specific) network segment to communicate with the gateway through the specified port.                                                                                                                                                                                                                                                          |                                                                                                        |
+| Solar Battery             | The Solar battery extension is used to display the status of the solar battery used by the gateway. The status includes the solar battery's performance, battery health status, cycle period, battery power, charging and discharging mode, and other information.                                                                                                                                                                                                                                    | The extension is compatible with **RAK7289 WisGate Edge Pro and RAK7285 WisGate Edge Ultra Gateways**. |
+| Wireguard                 | WireGuard is a simple but fast VPN. It aims to be faster, simpler, and leaner than the IPsec protocol. It intends to be more performant than the well-known RAKwireless - Open VPN. Before, it was not possible to use the WireGuard protocol on the RAKwireless gateways, but that is not the case now.                                                                                                                                                                                              |                                                                                                        |
+| Open VPN                  | Open VPN is a virtual private network (VPN). A VPN is created where a server is deployed that both the Gateway and any number of customer devices (PC, Phone, etc.) can connect to via a public IP address. This can be implemented using any of the backhaul connectivity options the Gateway supports (Ethernet, Wi-Fi, LTE). For the LTE backhaul, make sure that the gateway has a static public IP.                                                                                              |                                                                                                        |
+| Operation and Maintenance | This is an operation and maintenance tool that features scheduled device reboot and monitoring of the 4G network status. If the 4G network connection is lost, it automatically restarts the cellular module to recover the connection.                                                                                                                                                                                                                                                               | This extension is only compatible with **WisGateOS2 2.2.2 and later**.                                 |
 
-The extensions are built to work with gateways running WisGateOS2. With new firmware update for gateway, WisGateOS2 2.2.x simplifies the installation of extensions, allowing you to select and install the required extensions in the **Extension gallery**. You can choose the installation method for extensions based on the firmware version running on the gateway. To check the gateway firmware version, head to the "**Dashboard** → **Overview**" webpage.
+The extensions are built to work with gateways running WisGateOS2. With new firmware update for gateway, WisGateOS2 2.2.x simplifies the installation of extensions, allowing you to select and install the required extensions in the **Extension gallery**. You can choose the installation method for extensions based on the firmware version running on the gateway. To check the gateway firmware version, head to the **Dashboard** >&nbsp;**Overview** webpage.
 
 + If your gateway is running firmware version WisGateOS2 2.0.x or WisGateOS2 2.1.x, follow carefully the procedure defined in <a href="https://docs.rakwireless.com/Product-Categories/Software-APIs-and-Libraries/WisGateOS-2-Extensions/Overview/#for-wisgateos2-2-0-x-2-1-x" target="_blank">For WisGateOS2 2.0.x/2.1.x</a>.
 + If your gateway is running firmware version WisGateOS2 2.2.x or later, follow carefully the procedure defined in <a href="https://docs.rakwireless.com/Product-Categories/Software-APIs-and-Libraries/WisGateOS-2-Extensions/Overview/#for-wisgateos2-2-2-x-or-later" target="_blank">For WisGateOS2 2.2.x or Later</a>.
 
 ## For WisGateOS2 2.0.x/2.1.x
 
-Before installing the extensions, you need to obtain the extension files in **ipk** format. Gateways running WisGateOS2 2.0.x/2.1.x support the extensions shown in the table below.
+Before installing the extensions, you need to obtain the extension files in `ipk` format. Gateways running WisGateOS2 2.0.x/2.1.x support the extensions shown in the table below.
 
 | **Extension Name**   |                                                  **Extension Files**                                                   |
 |----------------------|:----------------------------------------------------------------------------------------------------------------------:|
@@ -198,12 +199,20 @@ Wait for the process to finish.
 
 ### How to Use Extensions
 
+- <a href="#breathing-light" target="_blank">Breathing Light</a>
+- <a href="#custom-logo" target="_blank">Custom Logo</a>
+- <a href="#country-settings-lbt" target="_blank">Country Settings/LBT</a>
+- <a href="#open-close-port" target="_blank">Open/Close Port</a>
+- <a href="#solar-battery" target="_blank">Solar Battery</a>
+- <a href="#wireguard" target="_blank">Wireguard</a>
+- <a href="#openvpn" target="_blank">OpenVPN</a>
+
 #### Breathing Light
 
-The breathing light LED is located on the top cover of the WisGate Edge Lite 2 gateways and helps to easily determine the gateway’s status visually. The breathing light extension allows you to enable or disable the breathing light on the gateway’s top cover. The default state of the LED is as in its Normal state - a slowly blinking blue light.
+The breathing light LED is located on the top cover of the WisGate Edge Lite 2 Gateways and helps to easily determine the gateway’s status visually. The breathing light extension allows you to enable or disable the breathing light on the gateway’s top cover. The default state of the LED is as in its Normal state - a slowly blinking blue light.
 
 ::: tip 📝 NOTE
-Breathing Light extension is available only for the WisGate Edge Lite 2 version 2 gateways.
+Breathing Light extension is available only for the WisGate Edge Lite 2 version 2 Gateways.
 :::
 
 ##### Working Modes
@@ -468,7 +477,7 @@ For example, the **Allow-http** service indicates that any host in WAN can commu
 
 #### Solar Battery
 
-The Solar battery extension is used to display the status of the solar battery used by the gateway. The status includes the solar battery's performance, battery health status, cycle period, battery power, charging and discharging mode, and other information. The extension is compatible only with **RAK7289 WisGate Edge Pro and RAK7285 WisGate Edge Ultra gateways**. You can learn the status of solar batteries used in real time through the UI interface.
+The Solar battery extension is used to display the status of the solar battery used by the gateway. The status includes the solar battery's performance, battery health status, cycle period, battery power, charging and discharging mode, and other information. The extension is compatible only with **RAK7289 WisGate Edge Pro and RAK7285 WisGate Edge Ultra Gateways**. You can learn the status of solar batteries used in real time through the UI interface.
 
 ##### Installing the Extension
 
@@ -517,14 +526,14 @@ To install the extension, follow the steps in the <a href="https://docs.rakwirel
 
 #### Wireguard
 
-WireGuard is a simple but fast VPN. It aims to be faster, simpler, and leaner than the IPsec protocol. It intends to be more performant than the well-known RAKwireless - OpenVPN. Before, it was not possible to use the WireGuard protocol on the RAKwireless gateways, but that is not the case now.
+WireGuard is a simple but fast VPN. It aims to be faster, simpler, and leaner than the IPsec protocol. It intends to be more performant than the well-known RAKwireless - OpenVPN. Before, it was not possible to use the WireGuard protocol on the RAKwireless Gateways, but that is not the case now.
 
 The new WisGateOS2 now offers Extension features, where you can install and set up the WireGuard extension. In this tutorial, you will learn how to set the WireGuard client on the gateway.
 
 This guide assumes that you have some knowledge in setting up a WireGuard server and have a WireGuard server set up. <!--If you are not familiar with the WireGuard server, you can check this link <mark><link></mark>  to learn how to set up a WireGuard server.-->
 
 :::tip 📝 NOTE
-WireGuard extension can only be installed on WisGate Edge V2 gateways, with WisGateOS2 only.
+WireGuard extension can only be installed on WisGate Edge V2 Gateways, with WisGateOS2 only.
 :::
 
 ##### Installing the Extension
@@ -554,7 +563,7 @@ To install the extension, follow the steps in the <a href="https://docs.rakwirel
 4. Fill in the following information:
 
 * **Interface** - the settings for the WireGuard client.
-    * **Address with netmask** – the address that the WireGuard client will use. IP of the client must be in the same range (e. g. `10.0.8.0` to `10.0.8.255`) defined by the server.
+    * **Address with netmask** – the address that the WireGuard client will use. IP of the client must be in the same range (e.g. `10.0.8.0` to `10.0.8.255`) defined by the server.
     * **Public Key** – the public key of the WireGuard client.
     * **Private Key** – the private key of the WireGuard client.
 
@@ -596,10 +605,10 @@ Remember to add the WireGuard Client credentials to the WireGuard server configu
 
 OpenVPN is a virtual private network (VPN). A VPN is created where a server is deployed that both the Gateway and any number of customer devices (PC, Phone, etc.) can connect to via a public IP address. This is possible to implement using any of the backhaul connectivity options the Gateway supports (Ethernet, Wi-Fi, LTE). For the LTE backhaul, make sure that the gateway has a static public IP.
 
-Thus, by connecting to the server via a remote client, the user can remotely manage the gateway from any point, at any time. As mentioned above, an OpenVPN server is required. This guide shows how to set up a server in the AWS cloud.
+Thus, by connecting to the server via a remote client,  can remotely manage the gateway from any point, at any time. As mentioned above, an OpenVPN server is required. This guide shows how to set up a server in the AWS cloud.
 
 :::tip 📝 NOTE:
-The OpenVPN extension can only be installed on WisGate Edge V2 gateways, operating with WisGateOS2.
+The OpenVPN extension can only be installed on WisGate Edge V2 Gateways, operating with WisGateOS2.
 :::
 
 ##### Installing the Extension
@@ -794,7 +803,7 @@ In order to use the latest features of the extension, we strongly recommend upda
   caption="Updated extension"
 />
 
-For the convenience of timely updates, RAK gateways provide an automatic update feature. It allows you to check the **Auto Update** button on the extension tab. When the **Auto Update** is enabled, gateways will automatically update the extension if the latest version is available.
+For the convenience of timely updates, RAK Gateways provide an automatic update feature. It allows you to check the **Auto Update** button on the extension tab. When the **Auto Update** is enabled, gateways will automatically update the extension if the latest version is available.
 
 <rk-img
   src="/assets/images/software-apis-and-library/wisgateos2-extensions/extensions/v22x-update4.png"
@@ -804,12 +813,21 @@ For the convenience of timely updates, RAK gateways provide an automatic update 
 
 ### How to Use Extensions
 
+- <a href="#rak-breathing-light" target="_blank">RAK Breathing Light</a>
+- <a href="#rak-custom-logo" target="_blank">RAK Custom Logo</a>
+- <a href="#rak-country-settings-lbt" target="_blank">RAK Country Settings/LBT</a>
+- <a href="#rak-open-close-port" target="_blank">RAK Open/Close Port</a>
+- <a href="#rak-solar-battery" target="_blank">RAK Solar Battery</a>
+- <a href="#rak-wireguard" target="_blank">RAK Wireguard</a>
+- <a href="#rak-openvpn-client" target="_blank">RAK OpenVPN Client</a>
+- <a href="#operation-and-maintenance" target="_blank">Operation and Maintenance</a>
+
 #### RAK Breathing Light
 
-The breathing light LED is located on the top cover of the WisGate Edge Lite 2 gateways. The LED determines the gateway’s status visually. The breathing light extension allows you to enable or disable the breathing light. The default state of the LED is its Normal state, indicated by a slow blinking blue light.
+The breathing light LED is located on the top cover of the WisGate Edge Lite 2 Gateways. The LED determines the gateway’s status visually. The breathing light extension allows you to enable or disable the breathing light. The default state of the LED is its Normal state, indicated by a slow blinking blue light.
 
 ::: tip 📝 NOTE
-Breathing Light extension is available only for the WisGate Edge Lite 2 version 2 gateways.
+Breathing Light extension is available only for the WisGate Edge Lite 2 version 2 Gateways.
 :::
 
 ##### Working Modes
@@ -1070,7 +1088,7 @@ For example, the **Allow-http** service indicates that any host in WAN can commu
 
 #### RAK Solar Battery
 
-The Solar battery extension is used to display the status of the solar battery used by the gateway. The status includes the solar battery's performance, battery health status, cycle period, battery power, charging and discharging mode, and other information. The extension is compatible only with **RAK7289 WisGate Edge Pro and RAK7285 WisGate Edge Ultra gateways**. You can learn the status of solar batteries used in real time through the UI interface.
+The Solar battery extension is used to display the status of the solar battery used by the gateway. The status includes the solar battery's performance, battery health status, cycle period, battery power, charging and discharging mode, and other information. The extension is compatible only with **RAK7289 WisGate Edge Pro and RAK7285 WisGate Edge Ultra Gateways**. You can learn the status of solar batteries used in real time through the UI interface.
 
 ##### Installation
 
@@ -1118,14 +1136,14 @@ To install the extension, follow the steps in the <a href="https://docs.rakwirel
 
 #### RAK Wireguard
 
-WireGuard is a simple but fast VPN. It aims to be faster, simpler, and leaner than the IPsec protocol. It intends to be more performant than the well-known RAKwireless - OpenVPN. Before, it was not possible to use the WireGuard protocol on the RAKwireless gateways, but that is not the case now.
+WireGuard is a simple but fast VPN. It aims to be faster, simpler, and leaner than the IPsec protocol. It intends to be more performant than the well-known RAKwireless - OpenVPN. Before, it was not possible to use the WireGuard protocol on the RAKwireless Gateways, but that is not the case now.
 
 The new WisGateOS2 now offers Extension features, where you can install and set up the WireGuard extension. In this tutorial, you will learn how to set the WireGuard client on the gateway.
 
 This guide assumes that you have some knowledge in setting up a WireGuard server and have a WireGuard server set up. <!--If you are not familiar with the WireGuard server, you can check this link <mark><link></mark>  to learn how to set up a WireGuard server.-->
 
 :::tip 📝 NOTE
-WireGuard extension can only be installed on WisGate Edge V2 gateways, with WisGateOS2 only.
+WireGuard extension can only be installed on WisGate Edge V2 Gateways, with WisGateOS2 only.
 :::
 
 ##### Installing the Extension
@@ -1201,7 +1219,7 @@ OpenVPN is a virtual private network (VPN). A VPN is created where a server is d
 Thus, by connecting to the server via a remote client, the user can remotely manage the gateway from any point, at any time. As mentioned above, an OpenVPN server is required. This guide shows how to set up a server in the AWS cloud.
 
 :::tip 📝 NOTE:
-The OpenVPN extension can only be installed on WisGate Edge V2 gateways, operating with WisGateOS2.
+The OpenVPN extension can only be installed on WisGate Edge V2 Gateways, operating with WisGateOS2.
 :::
 
 ##### Installing the Extension
@@ -1276,3 +1294,42 @@ src="/assets/images/software-apis-and-library/wisgateos2-extensions/openvpn/v22x
   caption="OpenVPN assigned IP"
 />
 
+#### Operation and Maintenance
+
+The Operation and Maintenance extension is operation and maintenance tool that features scheduled device reboot and monitoring of the 4G network status. If the 4G network connection is lost, it automatically restarts the cellular module to recover the connection.
+
+:::tip 📝 NOTE:
+This extension is only compatible with **WisGateOS2 2.2.2 and later**.
+:::
+
+##### Installing the Extension
+
+To install the extension, follow the steps in the [guide](https://docs.rakwireless.com/Product-Categories/Software-APIs-and-Libraries/WisGateOS-2-Extensions/Overview/#how-to-add-an-extension-2).
+
+##### Configuring the Extension
+
+1. In the left navigation bar, click **Extensions** and you can see the installed **Operation and Maintenance** extension.
+
+2. Click the **Launch** button.
+
+<rk-img
+  src="/assets/images/software-apis-and-library/wisgateos2-extensions/operation-and-Maintenance/v22x-extensions-tab.png"
+  width="100%"
+  caption="Extensions tab"
+/>
+
+3. On the configuration page, you can set up cellular network monitoring and schedule reboot.
+
+<rk-img
+src="/assets/images/software-apis-and-library/wisgateos2-extensions/operation-and-Maintenance/v22x-configuration-page.png"
+  width="100%"
+  caption="Configuration page"
+/>
+
++ **Cellular Network Monitoring**: Enabling this feature, the gateway will monitor cellular connection status every 2 minutes. If the 4G network connection is lost, it automatically restarts the cellular module to recover the connection. 
++ **Schedule Reboot**: Enabling this feature, the gateway will reboot periodically according to the settings.
++ **Gateway Current Time**: System time need to sync for schedule task to work properly. If you need to change the current time, head to **User Preferences** to set it.
++ **Reboot Time**: Set reboot time.
++ **Repeat Time**: Set reboot cycle.
+
+4. When everything is set, click **Save changes** to save the settings.

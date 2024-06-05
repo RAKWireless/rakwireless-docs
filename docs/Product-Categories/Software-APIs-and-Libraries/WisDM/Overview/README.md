@@ -2,7 +2,7 @@
 rak_img: /assets/images/software-apis-and-library/wisdm/wisdm.png
 rak_desc: WisDM is RAKwireless cloud-based device management platform. It is designed to help you optimize the ways of controlling your gateways. This manual explains in detail the functionalities and configurations of WisDM.
 rak_grp: [software-apis-and-libraries, wisdm]
-prev: ../Software-APIs-and-Libraries/
+prev: ../../
 next: false
 tags:
     - wisdm
@@ -13,7 +13,7 @@ tags:
 
 ## Overview
 
-WisDM is the cloud-based device management platform of RAKwireless. The WisDM platform is designed to help you optimize the ways of controlling your gateways. It allows you to access your gateways from a distance and configure them.
+**WisDM** is the cloud-based device management platform of RAKwireless. The WisDM platform is designed to help you optimize the ways of controlling your gateways. It allows you to access your gateways from a distance and configure them.
 
 WisDM device management software supports IoT networks of any scale built around commercial-grade LoRaWAN Edge gateways from RAKwireless.
 
@@ -25,17 +25,17 @@ This manual will explain in detail the functionalities and configurations of Wis
 
 - **Organization** – The organization in the context of WisDM is your account, where all your activities are tied under the same cap. You need to establish an organization to use the location and all its functionality.
 - **Location** – The location defines how the gateways are connected to the LoRaWAN Network Server (LNS).
-- **Assigned gateway** - The assigned gateway is one added to a location in WisDM.
+- **Assigned gateway** - The assigned gateway is the one added to a location in WisDM.
 - **Unassigned gateway** -  The unassigned gateway is an onboarded gateway that was removed from the location but remains in the organization.
 
 
 ### Minimum Requirements
 
-To connect to WisDM, you need the RAKwireless Edge Gateways running WisGate OS version 1.2.2 or above. However, it is recommended to use the latest possible version.
+To connect to WisDM, you need the RAKwireless Edge Gateways running WisGate OS version 1.2.2 or later. However, it is recommended to use the latest available version.
 
 ## Create an Account
 
-Log in to WisDM using your RAK ID. If you don't have a RAK ID yet, refer to the [FAQ page](https://support.wisdm.rakwireless.com/hc/en-us/sections/4410156423319-Login-RAK-ID) and create one.
+Log in to WisDM using your RAK ID. If you don't have a RAK ID yet, refer to the <a href="https://support.wisdm.rakwireless.com/hc/en-us/sections/4410156423319-Login-RAK-ID" target="_blank">FAQ page</a> and create one.
 
 <rk-img
   src="/assets/images/software-apis-and-library/wisdm/1.access-wisdm.png"
@@ -43,13 +43,12 @@ Log in to WisDM using your RAK ID. If you don't have a RAK ID yet, refer to the 
   caption="Accessing WisDM"
 />
 
+:::tip 📝 NOTE
 There are two ways to access WisDM:
 
   - For new users, create an account and RAK ID. Click on **Create new** to start creating an account.
   - If you already have a RAK ID, simply enter your credentials in the login field.
-
-:::tip 📝 NOTE
-RAK ID is the authentication service of RAKwireless. It is a set of credentials that provides access to all RAKwireless services.
+    - RAK ID is the authentication service of RAKwireless. It is a set of credentials that provides access to all RAKwireless services.
 :::
 
 <rk-img
@@ -58,12 +57,12 @@ RAK ID is the authentication service of RAKwireless. It is a set of credentials 
   caption="Signing in"
 />
 
-After entering the correct credentials, you can now start the configuration by first creating an **Organization**.
+After entering the correct credentials, you can now start the configuration. Begin by creating an **Organization**.
 
 
 ## Create an Organization
 
-In the context of WisDM structure, Organization is your account, and it ties all your activity under one cap. Learn more about the Organization on the [FAQ](https://support.wisdm.rakwireless.com/hc/en-us/articles/4410169165591-What-is-an-Organization-and-why-do-I-need-to-create-one-) page.
+In the context of WisDM structure, Organization is your account, and it ties all your activity under one cap. Learn more about the Organization on the <a href="https://support.wisdm.rakwireless.com/hc/en-us/articles/4410169165591-What-is-an-Organization-and-why-do-I-need-to-create-one-" target="_blank">FAQ</a> page.
 
 
 <rk-img
@@ -85,7 +84,7 @@ Fill in some basic information for the organization. The page consists of the fo
 - **Address (optional)** – you can add an address for the organization either by typing in the search box or by choosing an address on the map on the right.
 - **Phone (optional)** – optionally, you can add a phone number.
 
-After filling in the required information, choose the subscription plan. Choosing the pricing plan is the last step in creating an Organization. More information can be found on the [support page](https://support.wisdm.rakwireless.com/hc/en-us/sections/4410156421399-Subscription).
+After filling in the required information, choose the subscription plan. Choosing the pricing plan is the last step in creating an Organization. More information can be found on the <a href="https://support.wisdm.rakwireless.com/hc/en-us/sections/4410156421399-Subscription" target="_blank">support page</a>.
 
 
 <rk-img
@@ -94,7 +93,7 @@ After filling in the required information, choose the subscription plan. Choosin
   caption="Subscription Plan"
 />
 
-WisDM offers a free subscription plan that allows you to manage up to three (3) gateways. The different paid subscription plans allow you to manage a variety of gateways. More about the subscription plans and what they provide can be found on the [FAQ](https://support.wisdm.rakwireless.com/hc/en-us/sections/4410156421399-Subscription) page.
+WisDM offers a free subscription plan that allows you to manage up to three (3) gateways. The different paid subscription plans allow you to manage a variety of gateways. More about the subscription plans and what they provide can be found on the <a href="https://support.wisdm.rakwireless.com/hc/en-us/sections/4410156421399-Subscription" target="_blank">FAQ</a> page.
 
 <rk-img
   src="/assets/images/software-apis-and-library/wisdm/6.subscription-plan.png"
@@ -147,7 +146,8 @@ After choosing the work mode and the band that the location will operate on, con
 
 - **Work Mode** – choose the work mode in which they want the location to operate.
 - **Frequency Plan** – choose the band that is suitable for the gateways and the country of residence.
-- **Supported channel number** –  choose the number of the channels according to how many channels the gateway that will be added to that location supports.
+- **Supported channel number** –  choose the number of channels based on the supported channels of the gateway intended for that location.
+
   :::tip 📝 NOTE
   The 16-channel gateways can be added to any location, but an 8-channel gateway can be added only to 8-channel locations.
   :::
@@ -155,6 +155,9 @@ After choosing the work mode and the band that the location will operate on, con
 - **Templates** – can save the network configuration as a template to use when adding locations in the future.
 
 The further configurations for the three possible work modes differ in the following ways:
+- <a href="#location-in-packet-forwarder-work-mode" target="_blank">Location in Packet Forwarder Work Mode</a>
+- <a href="#basics-station-work-mode" target="_blank">Basics Station Work Mode</a>
+- <a href="#location-in-built-in-network-server-work-mode" target="_blank">Location in Built-In Network Server Work Mode</a>
 
 #### Location in Packet Forwarder Work Mode
 
@@ -178,7 +181,7 @@ When creating a new location in Basics Station work mode, you need to set up the
   caption="Location in Basics Station work mode"
 />
 
-- **Basics station server setup** –  in this part, you need to input the **Server URL** and the **server port number** of the LoRa Network Server (LNS) to which the gateways will forward the LoRaWAN messages. You have the option to input the LNS server's address directly or choose **CUPS** mode, which will update the LNS address and parameters dynamically.
+- **Basics station server setup** –  in this part, you need to input the **Server URL** and the **Server port** number of the LoRa Network Server (LNS) to which the gateways will forward the LoRaWAN messages. You have the option to input the LNS server's address directly or choose **CUPS** mode, which will update the LNS address and parameters dynamically.
 - **Authentication mode** -  to strengthen the connection security to the LNS, you can choose from different authentication methods - TLS server authentication, TLS server and Client authentication, TLS server authentication, and client token.
 
 
@@ -243,11 +246,11 @@ On the next page, you can see the following required information to add a gatewa
   caption="Adding gateway information"
 />
 
-- **Unassigned gateways** – unassigned gateways are gateways that you remove from the location. Read more on the [FAQ](https://support.wisdm.rakwireless.com/hc/en-us/articles/4414740675607-What-are-assigned-and-unassigned-gateways-) page.
+- **Unassigned gateways** – unassigned gateways are gateways that you removed from the location. Read more on the <a href="https://support.wisdm.rakwireless.com/hc/en-us/articles/4414740675607-What-are-assigned-and-unassigned-gateways-" target="_blank">FAQ</a> page.
 - **Upload CSV** –  use a comma-separated value document to import the required information for several gateways simultaneously.
 - **Add a gateway** – add gateways to the location.
 - **Serial Number** – can be found on the back of the gateway
-- **Gateway EUI** – can be found on the WisGate OS web page. **Status>overview>system>gateway EUI**
+- **Gateway EUI** – can be found on the WisGate OS web page by navigating **Status > Overview > System > Gateway EUI**
 
 <rk-img
   src="/assets/images/software-apis-and-library/wisdm/19.gateway-availability.png"
@@ -278,7 +281,7 @@ Assigned gateways are gateways you put to work inside WisDM by adding them to a 
 
 When you add a gateway to WisDM, you add it to a location. Without specifying a location, you cannot add a gateway. Once you’ve specified the location and added them, you have an assigned gateway.
 
-Unassigned gateways are gateways that you remove from the location. Removing them means they are not actively working for you but remain within the organization for you to assign to a location later.
+Unassigned gateways are gateways that you removed from the location. Removing them means they are not actively working for you but remain within the organization for you to assign to a location later.
 
 <rk-img
   src="/assets/images/software-apis-and-library/wisdm/20.1.assigned-unassigned.png"
@@ -294,7 +297,7 @@ There are different user roles in WisDM, and they provide different levels of ac
 
 - <b> Organization admin </b>
 
-The Organization admin has full access to all its assets to all the organization. The Organization admin in WisDM has the right to make any kind of change possible and can see and change the subscription plan and the billing information. It is the only user role that can give access to other users
+The Organization admin has full access to all its assets in all the organization. The Organization admin in WisDM has the right to make any kind of change possible and can see and change the subscription plan and the billing information. It is the only user role that can give access to other users
 
 - <b> Organization supervisor </b>
 
@@ -329,7 +332,7 @@ The Location supervisor in WisDM has access to several locations pre-stated by t
 
 ## WisDM Plans and Subscriptions
 
-More about payment security can be found on the [FAQ](https://support.wisdm.rakwireless.com/hc/en-us/articles/4414719686807-WisDM-payment-security) page.
+More about payment security can be found on the <a href="https://support.wisdm.rakwireless.com/hc/en-us/articles/4414719686807-WisDM-payment-security" target="_blank">FAQ</a> page.
 
 
 ### Subscription Plans and Pricing
@@ -344,7 +347,7 @@ WisDM offers various subscription plans. The plans are designed to meet your nee
 
 WisDM offers a free subscription plan that allows you to manage up to three (3) gateways. With the paid subscription plans, you can manage more gateways, depending on the plan you choose.
 
-More about the subscription plans and what they provide can be found on the [FAQ](https://support.wisdm.rakwireless.com/hc/en-us/sections/4410156421399-Subscription) page.
+More about the subscription plans and what they provide can be found on the <a href="https://support.wisdm.rakwireless.com/hc/en-us/sections/4410156421399-Subscription" target="_blank">FAQ</a> page.
 
 
 #### Subscriptions Offered
@@ -359,7 +362,7 @@ WisDM provides a few subscriptions to match the needs of the organization:
 #### Subscription Upgrade
 
 
-You can upgrade your subscription plan at any time. You will only pay the difference. between your current and the new plan.
+You can upgrade your subscription plan at any time. You will only pay the difference between your current and the new plan.
 
 <rk-img
   src="/assets/images/software-apis-and-library/wisdm/22.upgrading.png"
@@ -371,9 +374,9 @@ You can upgrade your subscription plan at any time. You will only pay the differ
 
 #### Subscription Downgrade
 
-There are two approaches to how your subscription could be downgraded:
-1. During the current billing cycle - once you choose to downgrade a subscription it will still be active until the end of the paid billing cycle. We do not provide refunds.
-2. During the retry period – the downgrade happens immediately.
+There are two approaches on how your subscription could be downgraded:
+1. **During the current billing cycle**: Once you choose to downgrade a subscription it will still be active until the end of the paid billing cycle. We do not provide refunds.
+2. **During the retry period**: The downgrade happens immediately.
 
 
 <rk-img
@@ -383,19 +386,23 @@ There are two approaches to how your subscription could be downgraded:
 />
 
 
-For more information about subscription plan management, refer to the [FAQ](https://support.wisdm.rakwireless.com/hc/en-us/sections/4410156421399-Subscription) page.
+For more information about subscription plan management, refer to the <a href="https://support.wisdm.rakwireless.com/hc/en-us/sections/4410156421399-Subscription" target="_blank">FAQ</a> page.
 
 
 #### Subscription Cancellation
 
-There are two approaches to how your subscription could be canceled:
-1. During the current billing cycle - Once you choose to cancel a subscription it will still be active until the end of the paid billing cycle. We do not provide refunds.
-2. During the retry period – Cancellation is immediate to the user choosing to cancel.
+There are two approaches on how your subscription could be canceled:
+1. **During the current billing cycle**: Once you choose to cancel a subscription it will still be active until the end of the paid billing cycle. We do not provide refunds.
+2. **During the retry period**: Cancellation is immediate to the user choosing to cancel.
 
 
 #### Billing Ownership Change
 
-The billing ownership within an Organization can be changed. The billing ownership can be transferred only to members that are organization admins. To transfer the billing ownership, go to Members -> choose the member you want to transfer the billing ownership to -> click on the kebab menu (the three vertical dots), and choose Transfer billing ownership.
+The billing ownership within an Organization can be changed. It can be transferred only to members that are organization admins. 
+
+1. To transfer the billing ownership, go to **Members**.
+2. Choose the member you want to transfer the billing ownership to. 
+3. Click on the kebab menu (<img src="/assets/images/software-apis-and-library/wisdm/24.transfer-ownership-kebab-menu.png" alt="kebab menu" width="13" height="13">), and choose **Transfer billing ownership**.
 
 
 <rk-img
@@ -416,6 +423,6 @@ The billing ownership within an Organization can be changed. The billing ownersh
   caption="Granting temporary access to RAK support team"
 />
 
-RAK support can access your Organization only upon your request. By going to your Organization’s Settings and clicking on the Temporary access option, you can choose the period for which the RAK support team will have access to your WisDM Organization to identify how to solve the problem you’re experiencing.
+RAK support can access your Organization only upon your request. By going to your Organization’s Settings and clicking on the Temporary access option, you can choose the period during which the **RAK support team** can have access to your WisDM Organization and identify how to solve the problem you’re experiencing.
 
 

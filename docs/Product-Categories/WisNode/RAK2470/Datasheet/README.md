@@ -16,22 +16,23 @@ tags:
 
 <rk-img
 src="/assets/images/wisnode/rak2470-n/datasheet/1.rak2470-overview.png"
-width="40%"
+width="35%"
 caption="RAK2470 overview"
 />
 
 ### Description
 
-The **RAK2470 WisNode Bridge Serial Prime** is an RS485 to LoRaWAN converter designed for outdoor industrial applications. It uses LoRaWAN network to wirelessly transmit RS485 data to and from the end devices. This device also has an RS485 interface that can connect to any RS485 device, such as an MPPT Solar Charge Controller, Inverter, or Inverter Integrated Machine.
+The **RAK2470 WisNode Bridge Serial Prime** is an RS485 to LoRaWAN converter designed for outdoor industrial applications. Utilizing the LoRaWAN network, RAK2470 wirelessly transmits RS485 data to and from end devices. 
 
-The WisNode Bridge can be customized using the adapter cable. One end is matched with the J4 connector of the PCBA, while the other can be matched to the use case. Although two pre-existing options are offered (USB 3.0 Connector and 4-pin Circular Connector), customization is still possible upon request.
+Additionally, RAK2470 WisNode Bridge Serial Prime comes with a T-type conversion cable, enabling it to link up with any RS485 equipped sensors. Both the RAK2470 and connected sensors can be powered via the DC power port. 
 
-RAK2470, together with a RAK WisGate gateway and LoRa Server products, can quickly and easily build a wireless industrial field control system. It adopts an industrial protection design, supports a wide range of voltage supplies, supports pole mounting, and facilitates field installation and use.
+RAK2470's default interface, the M12-4 circular connector, permits direct connection to MPPT Solar Charge Controllers, Inverters, or Inverter Integrated Machines. 
+
+Together with a RAK WisGate Gateway and LoRa Server products, RAK2470 can quickly and easily build a wireless industrial field control system. It is designed with industrial-grade protection, accommodates a wide range of voltage supplies, supports pole mounting, and facilitates field installation and use.
 
 ### Features
 
-- **LoRaWAN 1.0.3** protocol stack
-- **Supported LoRaWAN Class:** A and C
+- **LoRaWAN 1.0.3** protocol stack, supports **Class A and C**
 - **Industrial grade STM MCU:** Ultra-low power (**4&nbsp;µA sleep**) and wide temperature range of operation
 - **Input range:** 5 ~ 12&nbsp;V<sub>DC</sub>
 - **Mounting:** Pole
@@ -42,21 +43,21 @@ RAK2470, together with a RAK WisGate gateway and LoRa Server products, can quick
 
 ### Overview
 
-| Parameter           | Value                                            | Remarks                                                              |
-|---------------------|--------------------------------------------------|----------------------------------------------------------------------|
-| LoRaWAN Protocol    | LoRaWAN 1.0.3                                    |                                                                      |
-| LoRa Frequency      | RU864, IN865, EU868, US915,  AU915, KR920, AS923 | Model specific                                                       |
-| LoRaWAN Mode        | Class A, and C                                   |                                                                      |
-| LoRa Tx Power       | 20&nbsp;dBm                                      |                                                                      |
-| LoRa Antenna        | Built-in-the-body fiberglass antenna             | 863~928&nbsp;MHz<br>VSWR < 2<br>Efficiency > 80%<br>Max Gain: 3&nbsp;dBi |
-| RS485 Data Rate     | 115200&nbsp;bps                                  |                                                                      |
-| Input Voltage       | 5 ~ 12&nbsp;V                                    |                                                                      |
-| Enclosure Material  | Fiberglass                                       |                                                                      |
-| Dimensions          | 30 × 215&nbsp;mm                                 |                                                                      |
-| Protection Grade    | IP67                                             |                                                                      |
-| Installation        | Pole                                             |                                                                      |
-| Working Temperature | -20 ~ +70&nbsp;°C                                | Typical +25&nbsp;°C                                                  |
-| Storage Temperature | -30 ~ 85&nbsp;°C                                 |                                                                      |
+| Parameter           | Value                                            | Remarks                                                                    |
+|---------------------|--------------------------------------------------|----------------------------------------------------------------------------|
+| LoRaWAN Protocol    | LoRaWAN 1.0.3                                    |                                                                            |
+| LoRa Frequency      | RU864, IN865, EU868, US915,  AU915, KR920, AS923 | Model specific                                                             |
+| LoRaWAN Mode        | Class A, and C                                   |                                                                            |
+| LoRa Tx Power       | 20&nbsp;dBm                                      |                                                                            |
+| LoRa Antenna        | Built-in fiberglass antenna                      | 863 ~ 928&nbsp;MHz<br>VSWR < 2<br>Efficiency > 80%<br>Max Gain: 3&nbsp;dBi |
+| RS485 Data Rate     | 115200&nbsp;bps                                  |                                                                            |
+| Input Voltage       | 5 ~ 12&nbsp;V                                    |                                                                            |
+| Enclosure Material  | Fiberglass                                       |                                                                            |
+| Dimensions          | 30&nbsp;mm × 215&nbsp;mm                         |                                                                            |
+| Protection Grade    | IP67                                             |                                                                            |
+| Installation        | Pole                                             |                                                                            |
+| Working Temperature | -20 ~ +70°&nbsp;C                                | Typical +25°&nbsp;C                                                        |
+| Storage Temperature | -30 ~ 85°&nbsp;C                                 |                                                                            |
 
 
 
@@ -66,7 +67,7 @@ The hardware specification covers only the interfacing and detailed parameters a
 
 #### Interfaces
 
-The **RAK2470 WisNode Bridge Serial Prime** comes with an M12-4 circular connector (including power and RS485 data interfaces). The power interface needs to be powered by a DC power supply (5&nbsp;V ~ 12&nbsp;V) and the voltage must be stable.
+The **RAK2470 WisNode Bridge Serial Prime** comes with an M12-4 circular connector (including power and RS485 data interfaces). The power interface needs to be powered by a DC power supply (5 ~ 12&nbsp;V) and the voltage must be stable.
 
 In addition, the RS485 host baud rate is 115200, and multiple devices can be connected.
 
@@ -84,7 +85,7 @@ In addition, the RS485 host baud rate is 115200, and multiple devices can be con
 
 <rk-img
 src="/assets/images/wisnode/rak2470-n/datasheet/3.m12-4-connector-pin-definition.png"
-width="40%"
+width="35%"
 caption="M12-4 connector pin definition"
 />
 
@@ -97,13 +98,13 @@ caption="M12-4 connector pin definition"
 
 #### T-Type Conversion Cable
 
-The RAK2470 comes with a T-type conversion cable with a length of 1&nbsp;m for each branch. Using this conversion cable, the RAK2470 can be connected to any sensor of the RS485 interface, and power can be supplied to both the RAK2470 and the connected sensor via the DC power port.
+The RAK2470 comes with a 1&nbsp;m T-type conversion cable for each branch. Using this conversion cable, the RAK2470 can be connected to any RS485 equipped sensors, and power can be supplied to both the RAK2470 and the connected sensor via the DC power port.
 
-As shown in the figure below, the T-type conversion cable consists of an L20-4 Four-core Straight-through Port for connecting RS485 sensors, an M12-4 Female-pin Port for connecting to the RAK2470, and a DC port for power supply.
+As shown in the **Figure 3**, the T-type conversion cable consists of an L20-4 Four-core Straight-through Port for connecting RS485 sensors, an M12-4 Female-pin Port for connecting to the RAK2470, and a DC port for power supply.
 
 <rk-img
 src="/assets/images/wisnode/rak2470-n/datasheet/4.t-type-conversion-cable.png"
-width="80%"
+width="70%"
 caption="T-type conversion cable"
 />
 
@@ -115,7 +116,7 @@ RAK2470 allows for pole mounting. Follow the provided installation steps to ensu
 
 <rk-img
 src="/assets/images/wisnode/rak2470-n/datasheet/5.fixing-the-device-to-the-mounting-kit.png"
-width="40%"
+width="30%"
 caption="Fixing the device to the mounting kit"
 />
 
@@ -124,13 +125,13 @@ caption="Fixing the device to the mounting kit"
 
 <rk-img
 src="/assets/images/wisnode/rak2470-n/datasheet/6.using-the-steel-strips.png"
-width="40%"
+width="45%"
 caption="Using the steel strips"
 />
 
 
-:::tip 📝 NOTE:
-The pole diameter supported by the included steel strips is 55~80&nbsp;mm.
+:::tip 📝 NOTE
+The pole diameter supported by the included steel strips is 55 ~ 80&nbsp;mm.
 :::
 
 
@@ -139,7 +140,7 @@ The pole diameter supported by the included steel strips is 55~80&nbsp;mm.
 
 <rk-img
 src="/assets/images/wisnode/rak2470-n/datasheet/7.adding-the-connector.png"
-width="40%"
+width="45%"
 caption="Adding the connector"
 />
 

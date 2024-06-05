@@ -17,26 +17,32 @@ Thank you for choosing **RAK2470 WisNode Bridge Serial Prime** in your awesome I
 
 ## Product Description
 
-The **RAK2470 WisNode Bridge Serial Prime** is an RS485 to LoRaWAN converter designed for outdoor industrial applications. It uses LoRaWAN network to wirelessly transmit RS485 data to and from the end devices. This device also has an RS485 interface that can connect to any RS485 device, such as an MPPT Solar Charge Controller, Inverter, or Inverter Integrated Machine.
+The **RAK2470 WisNode Bridge Serial Prime** is an RS485 to LoRaWAN converter designed for outdoor industrial applications. Utilizing the LoRaWAN network, RAK2470 wirelessly transmits RS485 data to and from end devices. 
 
-The WisNode Bridge can be customized using the adapter cable. One end is matched with the J4 connector of the PCBA, while the other can be matched to the use case. Although two pre-existing options are offered (USB 3.0 Connector and 4-pin Circular Connector), customization is still possible upon request.
+Additionally, RAK2470 WisNode Bridge Serial Prime comes with a T-type conversion cable, enabling it to link up with any RS485 equipped sensors. Both the RAK2470 and connected sensors can be powered via the DC power port. 
 
-RAK2470, together with a RAK WisGate gateway and LoRa Server products, can quickly and easily build a wireless industrial field control system. It adopts an industrial protection design, supports a wide range of voltage supplies, supports pole mounting, and facilitates field installation and use.
+RAK2470's default interface, the M12-4 circular connector, permits direct connection to MPPT Solar Charge Controllers, Inverters, or Inverter Integrated Machines. 
+
+Together with a RAK WisGate Gateway and LoRa Server products, RAK2470 can quickly and easily build a wireless industrial field control system. It is designed with industrial-grade protection, accommodates a wide range of voltage supplies, supports pole mounting, and facilitates field installation and use.
 
 
 ## Product Features
 
-- **LoRaWAN 1.0.3** protocol stack
-- **Supported LoRaWAN Class:** A and C
+- **LoRaWAN 1.0.3** protocol stack, supports **Class A and C**
 - **Industrial grade STM MCU:** Ultra-low power (**4&nbsp;µA sleep**) and wide temperature range of operation
 - **Input range:** 5 ~ 12&nbsp;V<sub>DC</sub>
 - **Mounting:** Pole
 - IP67 weatherproof
-- Customizable adapter cable upon request
 
 
-## Package Contents
+## Package Inclusions
 
 - One (1) RAK2470 WisNode Bridge Serial Prime
 - One (1) Mounting Kit
 - One (1) T-Type Conversion Cable
+
+<rk-img
+src="/assets/images/wisnode/rak2470-n/overview/2.package-contents.png"
+width="80%"
+caption="RAK2470 Package Inclusions"
+/>

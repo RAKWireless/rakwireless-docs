@@ -312,6 +312,31 @@ module.exports = {
     sidebarDepth: 4
   }
   ],
+  '/Product-Categories/WisBlock/RAKBox-UO150x100x45-Solar/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisBlock/RAKBox-UO150x100x45-Solar/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Installation Guide',
+    path: '/Product-Categories/WisBlock/RAKBox-UO150x100x45-Solar/Installation/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisBlock/RAKBox-UO150x100x45-Solar/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  }
+  ],
   '/Product-Categories/WisBlock/RAKBox-UO100x75x38/': [{
     title: 'Product Overview',
     path: '/Product-Categories/WisBlock/RAKBox-UO100x75x38/Overview/',
