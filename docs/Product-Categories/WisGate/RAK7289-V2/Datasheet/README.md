@@ -11,7 +11,8 @@ tags:
     - datasheet
 certifications:
     - [CE, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289C_RAK7289V2_CE_Certification.pdf]
-    - [ISED, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289C_ISED_Certification.zip]
+    - [FCC, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289_FCC_Certification.pdf]
+    - [ISED, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289_ISED_Certification.zip]
     - [JRL, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289CV2_RAK7289V2_JRL_certification.pdf]
     - [JTBL, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289CV2_JTBL_Certification.pdf]
     - [KCC, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289_RAK7289C_RAK7289V2_RAK7289CV2_KC_Certification.pdf]

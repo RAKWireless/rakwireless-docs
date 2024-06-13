@@ -149,6 +149,12 @@ export default {
     img: '/assets/images/wisnode/rak2560/RAK2560.jpg',
     store: 'https://store.rakwireless.com/products/sensor-hub?utm_source=RAK2560WisNodeSense&utm_medium=Document&utm_campaign=BuyFromStore'
   },
+  '/Product-Categories/WisNode/Soil-pH-Monitoring/': {
+    label: 'Soil pH Monitoring Sensor Hub Solutions',
+    img: '/assets/images/wisnode/soil-ph-monitoring/SoilpHSol.png',
+    store: 'https://store.rakwireless.com/products/soil-ph-monitoring?m=3&h=sensor-hub&variant=42505216786630?utm_source=SoilpH&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+
 
   // Button
 

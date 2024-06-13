@@ -81,6 +81,38 @@ module.exports = {
     sidebarDepth: 4
   }
 ],
+
+'/Product-Categories/WisNode/Soil-pH-Monitoring/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisNode/Soil-pH-Monitoring/Overview/',
+  collapsable: false,
+  nested: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Quick Start Guide',
+  path: '/Product-Categories/WisNode/Soil-pH-Monitoring/Quickstart/',
+  collapsable: false,
+  nested: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Supported LoRa Network Servers',
+  path: '/Product-Categories/WisNode/Soil-pH-Monitoring/Supported-LoRa-Network-Servers/',
+  collapsable: false,
+  nested: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisNode/Soil-pH-Monitoring/Datasheet/',
+  collapsable: false,
+  nested: true,
+  sidebarDepth: 4
+},
+],
+
+
   '/Product-Categories/WisNode/RAK7200/': [{
       title: 'Product Overview',
       path: '/Product-Categories/WisNode/RAK7200/Overview/',
