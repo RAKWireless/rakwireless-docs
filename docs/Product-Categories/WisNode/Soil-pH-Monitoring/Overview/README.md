@@ -1,7 +1,8 @@
 ---
-rak_img: /assets/images/wisnode/soil-ph-monitoring/SoilpHSol.png
-rak_desc: This device comes equipped with the WisNode Sensor Hub RAK2560, and the JXBS-3001-PH-RS sensor. Sensor Hub pH value monitoring is widely used in applications that require ph monitoring, such as measuring soil ph to determine soil fertility.
+rak_img: /assets/images/wisnode/soil-ph-monitoring/soil-ph.png
+rak_desc: The Soil pH Sensor Solution comprises the RAK Sensor Hub and JXBS-3001-PF 485, which are suitable for use in various settings, such as rice fields and greenhouse cultivation.
 rak_grp: [wisnode, solutions]
+rak_model: Soil pH
 prev: ../../
 next: ../Quickstart/
 tags:
@@ -10,9 +11,9 @@ tags:
     - Sensor Hub Solutions
 ---
 
-# Soil pH Monitoring Sensor
+# Soil pH Monitoring Solution
 
-Thank you for choosing the **Soil pH Monitoring Sensor** in your awesome IoT project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
+Thank you for choosing the **Soil pH Monitoring Solution** in your awesome IoT project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 * <a href = "../Quickstart/" target = "_blank">Quick Start Guide</a>
 * <a href = "../Supported-LoRa-Network-Servers/" target = "_blank">Supported LoRa Network Servers</a>
@@ -21,12 +22,11 @@ Thank you for choosing the **Soil pH Monitoring Sensor** in your awesome IoT pro
 
 ### Solution Description
 
-The Soil pH Sensor Solution is an ideal tool for monitoring soil pH levels. It comprises the RAK Sensor Hub and JXBS-3001-PF 485, which are suitable for use in various settings, such as rice fields and greenhouse cultivation.
+The Soil pH Monitoring Solution is an ideal tool for monitoring soil pH levels. It comprises the RAK Sensor Hub and JXBS-3001-PF 485, which are suitable for use in various settings, such as rice fields and greenhouse cultivation.
 
 This solution provides a comprehensive and versatile soil condition monitoring system with Sensor Hub’s form factor, which allows for simultaneous connection of different sensors.
 
 In addition, the sensor features three isolated components: input power supply, sensing probe, and signal output. This design ensures safety, reliability, and easy installation.
-
 
 
 ### Solution Features

@@ -4,23 +4,23 @@ rak_img: /assets/images/wisgate/rak-hotspot-v2/RAK-Hotspot-V2.png
 next: ../Troubleshooting/
 prev: ../Overview/
 tags:
-  - RAK Hotspot v2
+  - RAK Hotspot V2
   - wisgate
   - quickstart
 ---
 
-# RAK Hotspot v2 Quick Start Guide
+# RAK Hotspot V2 Quick Start Guide
 
 ## Prerequisites
 
 ### What Do You Need?
 
-1. [**RAK Hotspot v2**](https://store.rakwireless.com/products/rak-hotspot-miner?utm_source=RAKHotspotMiner&utm_medium=Document&utm_campaign=BuyFromStore)
+1. [**RAK Hotspot V2**](https://store.rakwireless.com/products/rak-hotspot-miner?utm_source=RAKHotspotMiner&utm_medium=Document&utm_campaign=BuyFromStore)
 2. 32&nbsp;GB microSD Card (included)
 3. USB Type-C Power Adapter (included)
 
 :::warning ⚠️ WARNING
-The SIM card slot of the cellular versions is not hot-swappable. Make sure the gateway is switched off before inserting or ejecting the SIM card.
+The SIM card slot of the cellular versions is not hot-swappable. Ensure that the gateway is switched off before inserting or ejecting the SIM card.
 :::
 
 ### What's Included in the Package?
@@ -33,13 +33,13 @@ The SIM card slot of the cellular versions is not hot-swappable. Make sure the g
 
 ## Product Configuration
 
-For Antenna Mounting Scenarios and proper connectivity chain, refer to this [guide](../Troubleshooting/#proper-miner-connection-scenarios-with-the-rak-outdoor-enclosure-antennas)
+For antenna mounting scenarios and proper connectivity chain, refer to the <a href="../Troubleshooting/#proper-miner-connection-scenarios-with-the-rak-outdoor-enclosure-antennas" target="_blank"> Troubleshooting guide.</a>
 ### Download the Helium App
 
-The application is available for both Android and iOS. You can manually search it or just scan the QR Code provided below:
+The application is available for both Android and iOS. You can manually search for it or simply scan the QR code provided in **Figure 2**.
 
 * [**Android**](https://play.google.com/store/apps/details?id=com.helium.wallet)
-* [**iOS:**](https://apps.apple.com/ph/app/helium-hotspot/id1450463605)
+* [**iOS**](https://apps.apple.com/ph/app/helium-hotspot/id1450463605)
 
 <rk-img
   src="/assets/images/wisgate/rak-hotspot/quickstart/qr.png"
@@ -54,27 +54,27 @@ The application is available for both Android and iOS. You can manually search i
 />
 
 
-### Power on the RAK Hotspot
+### Power On the RAK Hotspot V2
+
+1. Connect the LoRa antenna before powering on the device.
 
 :::warning ⚠️ WARNING
-Before powering on, the best advice is to follow the guidelines below to avoid damaging the RAK Hotspot. Familiarize the interfaces of the product as shown in the  [Interfaces](/Product-Categories/WisGate/RAK-Hotspot/Datasheet/#interfaces) section of the RAK Hotspot Datasheet.
+When powering on the Hotspot, **DO NOT** leave the port antenna open to avoid potential damage to the device.
 :::
 
-1. Attach the LoRa Antenna.
+2. Plug in and connect the included power supply to the USB-C port on the RAK Hotspot V2.
 
-2. When you are ready to set up your RAK Hotspot, plugin, and connect the included power supply to the USB-C port on the RAK Hotspot.
+3. After approximately one minute, you can add the RAK Hotspot V2 to the Helium app. Press the pairing button on the side to enable the **Hotspot Pairing** mode.
 
-3. After approximately one minute, the RAK Hotspot will be ready to be added via the Helium app. Press the pairing button on the side to enable the hotspot Pairing mode.
-
-4. Select **Set up Hotspot** in the app and follow the prompts, press the Pairing button as requested.
+4. Select **Set up Hotspot** in the app and follow the instructions. Press the **Pairing** button when requested.
 
 :::tip 📝 NOTE
-If in the future you need to connect to the app again, you only need to press the button.
+If you need to connect to the app again in the future, you only need to press the button.
 :::
 
 #### Account Security
 
-During the setup of your account, you will be asked to input a seed phrase. It is a sequence of 12 words used to recover or transfer your accounts between phones.
+When setting up your account, you will be asked to input a 12-word seed phrase. This sequence will help you recover or transfer your account to a new phone if necessary.
 
 <rk-img
   src="/assets/images/wisgate/rak-hotspot/quickstart/fill-up.png"

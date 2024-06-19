@@ -11,16 +11,16 @@ tags:
   - Weather Station
 ---
 
-# Weather Station Solution Quick Start Guide
+# Weather Station Monitoring Solution Quick Start Guide
 
 ## Prerequisites
 
-Before proceeding with each step for using the Weather Station Solution, make sure to have all the necessary items listed below:
+Before proceeding with each step for using the Weather Station Monitoring Solution, make sure to have all the necessary items listed below:
 
 <rk-img
     src="/assets/images/wisnode/weather-station/quickstart/0.sensor-hub-weather-station-solution-accessories.png"
     width="80%"
-    caption="Sensor Hub Weather Solution Package Inclusion"
+    caption="Weather Station Solution Package Inclusion"
 />
 
 ### Hardware Tools
@@ -235,7 +235,7 @@ When connecting to RAK9154, ensure that the Sensor Hub is connected to the Outpu
 :::
 
 <rk-img
-src="/assets/images/wisnode/weather-station/quickstart/edit2.png"
+src="/assets/images/wisnode/weather-station/quickstart/connect-sensorhub-rak9154.png"
 width="60%"
 caption="Connect the Sensor Hub and RAK9154"
 />

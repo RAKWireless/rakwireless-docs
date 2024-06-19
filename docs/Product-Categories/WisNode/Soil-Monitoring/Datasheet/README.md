@@ -1,6 +1,6 @@
 ---
 rak_img: /assets/images/wisnode/soil-monitoring/soil-moisture.png
-rak_desc: Provides comprehensive information on your RAK10701-P Field Tester for LoRaWAN to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_desc: Provides comprehensive information on your Soil Moisture, Temperature, and Electrical Conductivity Solution to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 prev: ../Supported-LoRa-Network-Servers/
 next: false
 tags:

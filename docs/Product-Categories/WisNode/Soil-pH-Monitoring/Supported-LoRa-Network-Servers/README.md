@@ -1,6 +1,6 @@
 ---
-rak_img: /assets/images/wisnode/soil-ph-monitoring/SoilpHSol.png
-rak_desc: Contains a comprehensive guide in setting up both your Weather Station Monitoring device to the LoRaWAN and the NB-IoT platforms. It also includes instructions on connecting and configuring your LoRaWAN Gateway TTN and Datacake.
+rak_img: /assets/images/wisnode/soil-ph-monitoring/soil-ph.png
+rak_desc: Contains a comprehensive guide in setting up both your Soil pH Monitoring Solution to the LoRaWAN and the NB-IoT platforms. It also includes instructions on connecting and configuring your LoRaWAN Gateway TTN and Datacake.
 prev: ../Quickstart/
 next: ../Datasheet/
 tags:
@@ -56,7 +56,7 @@ For this example, you will use the TTNv3 cloud server and RAK7289 V2 WisGate Edg
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f4pHSolution_LNS_TTN2.png"
-  width="50%"
+  width="100%"
   caption="TTN home page"
 />
 
@@ -419,7 +419,7 @@ var n = parseInt (str, base);
 - Leave everything else as default, and click **Add Field** to complete the setup.
 :::
 
-3. When completed, it will look the same, as shown in **Figure 38**.
+4. When completed, it will look the same, as shown in **Figure 38**.
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/supported-lora-network-servers/f38pHSolution_LNS_DC17.png"
@@ -503,7 +503,7 @@ This section will use the public MQTT broker integration as an example to demons
   caption="Gateway built-in NS application scenario"
 />
 
-##### Configure ThingsBoard
+##### Configure the ThingsBoard
 
 1. Log in to <a href="https://thingsboard.cloud/login" target="_blank">ThingsBoard</a>. If you don't have an account, <a href="https://thingsboard.cloud/signup" target="_blank">create one</a> before proceeding.
 

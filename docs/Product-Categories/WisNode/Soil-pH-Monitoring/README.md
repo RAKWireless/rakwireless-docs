@@ -1,6 +1,6 @@
 ---
-rak_desc: This device comes equipped with the WisNode Sensor Hub RAK2560, and the JXBS-3001-PH-RS sensor. Sensor Hub pH value monitoring is widely used in applications that require ph monitoring, such as measuring soil ph to determine soil fertility.
-rak_img: /assets/images/wisnode/soil-ph-monitoring/SoilpHSol.png
+rak_desc: The Soil pH Sensor Solution comprises the RAK Sensor Hub and JXBS-3001-PF 485, which are suitable for use in various settings, such as rice fields and greenhouse cultivation. 
+rak_img: /assets/images/wisnode/soil-ph-monitoring/soil-ph.png
 
 ---
 

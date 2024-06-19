@@ -1,5 +1,5 @@
 ---
-rak_desc: Contains a comprehensive guide in setting up your Weather Station Monitoring device to the LoRaWAN and the NB-IoT platforms. It also includes instructions in connecting and configuring your LoRaWAN Gateway TTN and Datacake.
+rak_desc: Contains a comprehensive guide in setting up your Weather Station Monitoring Solution to the LoRaWAN and the NB-IoT platforms. It also includes instructions in connecting and configuring your LoRaWAN Gateway TTN and Datacake.
 rak_img: /assets/images/wisnode/weather-station/weather-station-solution.png
 prev: ../Quickstart/
 next: ../Datasheet/

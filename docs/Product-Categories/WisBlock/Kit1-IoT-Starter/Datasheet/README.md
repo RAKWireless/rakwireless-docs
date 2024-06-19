@@ -16,30 +16,32 @@ tags:
 
 ### Description
 
-The **WisBlock IoT Starter Kit** is an all-in-one solution for quickly developing and prototyping IoT applications. This comprehensive kit includes multiple connectivity options, including LoRaWAN, BLE, LTE-M/NB-IoT, and a range of different modules, including temperature/humidity, accelerometer, barometer, ambient light, and GPS. It also supports multiple outputs such as a buzzer, RGB LED, and I2C OLED.
+The **WisBlock IoT Starter Kit** is an all-in-one solution for quickly developing and prototyping IoT applications. This comprehensive kit includes multiple connectivity options, namely LoRaWAN, BLE, and LTE-M/NB-IoT. It also includes a range of different modules, like temperature and humidity, accelerometer, barometer, ambient light, and GPS. The kit supports multiple outputs, such as a buzzer, RGB LED, and I2C OLED.
 
-With this kit, users can easily create custom IoT solutions for a variety of use cases, such as environmental monitoring, asset tracking, and smart agriculture. The kit is designed to be modular and customizable, allowing users to mix and match different modules and connectivity options to create the perfect solution for their needs.
+With this kit, you can easily create custom IoT solutions for a variety of use cases, such as environmental monitoring, asset tracking, and smart agriculture. The kit is designed to be modular and customizable, allowing to mix and match different modules and connectivity options to create the perfect solution for your needs.
 
 ### Features
 
 - Compatible with Arduino IDE
-- USB C interface for data, power, and battery charging
-- Supports Li-Ion batteries with built-in solar charging capability
-- Multiple communication protocols (LoRa/LoRaWAN, WiFi, BLE, LTE-M, and NB-IoT)
+- USB-C interface for data, power, and battery charging
+- Supports Li-Ion batteries with built-in solar charging capability.
+- Multiple communication protocols (LoRaWAN, WiFi, BLE, LTE-M, and NB-IoT)
 - Included modules:
-    - One WisBlock Core modules - [RAK4631 LPWAN Module](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK4631/Quickstart/)
-    - One WisBlock Core modules - [RAK11200 WiFi Module](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK11200/Quickstart/)
-    - Two standard [RAK19007 WisBlock Base Board](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK19007/Quickstart/) with 4 sensor slots and 1 IO slot
-    - Two [RAK12010 Light Sensor](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK12010/Quickstart/)
-    - Two [RAK1901 Temperature and Humidity Sensor](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK1901/Quickstart/)
-    - Two [RAK12047 VOC Sensor](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK12047/Quickstart/)
-    - Two [RAK1904 3-Axis Acceleration Sensor](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK1904/Quickstart/)
-    - Two [RAK18001 Buzzer Module](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK18001/Quickstart/)
-    - Two [RAK14001 RGB LED Module](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK14001/Quickstart/)
-    - Two [RAK1921 OLED Display](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK1921/Quickstart/)
-    - Two [RAK12021 RGB Sensor Module](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK12021/Quickstart/)
-    - LoRaWAN supported bands: RU864, IN865, EU868, AU915, US915, KR920, and AS923
-    - (Optional) Cellular variant dependent on a country: two (2) [RAK5860](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK5860/Quickstart/) with 5G LTE NB-IoT capability and two (2) [RAK13101](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK13101/Quickstart/) with GSM/GPRS capability
+    - One WisBlock Core modules - <a href="https://store.rakwireless.com/products/rak4631-lpwan-node?utm_source=RAK4631WisBlockLPWANModule&utm_medium=Document&utm_campaign=BuyFromStore" target="_blank">RAK4631 LPWAN Module</a> 
+    - One WisBlock Core modules - <a href="https://store.rakwireless.com/products/wiscore-esp32-module-rak11200?utm_source=WisBlockRAK11200&utm_medium=Document&utm_campaign=BuyFromStore" target="_blank">RAK11200 WiFi Module</a> 
+    - Two standard <a href="https://store.rakwireless.com/products/rak19007-wisblock-base-board-2nd-gen?utm_source=RAK19007&utm_medium=Document&utm_campaign=BuyFromStore" target="_blank">RAK19007 WisBlock Base Board</a> with four (4) sensor slots and 1 IO slot
+    - Two <a href="https://store.rakwireless.com/products/wisblock-ambient-light-sensor-rak12010?utm_source=RAK12010&utm_medium=Document&utm_campaign=BuyFromStore" target="_blank">RAK12010 Light Sensor</a> 
+    - Two <a href="https://store.rakwireless.com/products/rak1901-shtc3-temperature-humidity-sensor?utm_source=RAK1901&utm_medium=Document&utm_campaign=BuyFromStore" target="_blank">RAK1901 Temperature and Humidity Sensor</a> 
+    - Two <a href="https://store.rakwireless.com/products/rak12047-voc-sensor-sensirion-sgp40?utm_source=RAK12047&utm_medium=Document&utm_campaign=BuyFromStore" target="_blank">RAK12047 VOC Sensor</a> 
+    - Two <a href="https://store.rakwireless.com/products/rak1904-lis3dh-3-axis-acceleration-sensor?utm_source=RAK1904&utm_medium=Document&utm_campaign=BuyFromStore" target="_blank">RAK1904 3-Axis Acceleration Sensor</a> 
+    - Two <a href="https://store.rakwireless.com/products/wisblock-buzzer-module-rak18001?utm_source=WisBlockRAK18001&utm_medium=Document&utm_campaign=BuyFromStore" target="_blank">RAK18001 Buzzer Module</a> 
+    - Two <a href="https://store.rakwireless.com/products/rgb-led-module-rak14001?utm_source=RAK14001&utm_medium=Document&utm_campaign=BuyFromStore" target="_blank">RAK14001 RGB LED Module</a> 
+    - Two <a href="https://store.rakwireless.com/products/rak1921-oled-display-panel?utm_source=RAK1921&utm_medium=Document&utm_campaign=BuyFromStore" target="_blank">RAK1921 OLED Display</a> 
+    - Two <a href="https://store.rakwireless.com/products/rak12021-wisblock-rgb-sensor?utm_source=RAK12021&utm_medium=Document&utm_campaign=BuyFromStore" target="_blank">RAK12021 RGB Sensor Module</a> 
+    - LoRaWAN supported bands: RU864, IN865, EU868, AU915, US915, KR920, and AS923  
+    - Select a cellular variant that is applicable for your region:  
+        - Two (2) <a href="https://store.rakwireless.com/products/rak5860-lte-nb-iot-extension-board?utm_source=RAK5860&utm_medium=Document&utm_campaign=BuyFromStore" target="_blank">RAK5860</a> with 5G LTE NB-IoT capability
+        - Two (2) <a href="https://store.rakwireless.com/products/wisblock-gsm-module-rak13101?utm_source=RAK13101&utm_medium=Document&utm_campaign=BuyFromStore" target="_blank">RAK13101</a> with GSM/GPRS capability
 - GPS built-in on cellular modules
 
 ## Specifications
@@ -50,7 +52,7 @@ The WisBlock IoT Starter Kit includes the following modules:
 
 <rk-img
   src="/assets/images/wisblock/kits/1_iot_starter_kit_2.png"
-  width="80%"
+  width="70%"
   caption="Modules of the WisBlock IoT Starter Kit"
 />
 
@@ -58,18 +60,18 @@ The WisBlock IoT Starter Kit includes the following modules:
 
 #### WisBlock Base and Core
 
-WisBlock Kits require WisBlock Base and WisBlock Core to be useful for any IoT application. The sensor and IO modules included in the kit will not work without the base and core.
+WisBlock Kits require both the WisBlock Base and WisBlock Core to be useful for any IoT application. The sensor and IO modules included in the kit will not work without the base and core.
 
 The table shows the base and core included in the kit.
 
-| RAK Model                                         | Function      | Feature                                                               |
-| ------------------------------------------------- | ------------- | --------------------------------------------------------------------- |
-| [RAK19007](/Product-Categories/WisBlock/RAK19007) | WisBlock Base | USB-C, 4 sensor slot, 1 IO slot, battery/solar connector              |
-| [RAK4631](/Product-Categories/WisBlock/RAK4631)   | WisBlock Core | Based on nrf52840 (BLE) and SX1262 (LoRa), IPEX connector for antenna |
-| [RAK11200](/Product-Categories/WisBlock/RAK11200) | WisBlock Core | Based on ESP32 (WiFi + BLE), built-in PCB antenna                     |
+| RAK Model                                                                                                                                                                             | Function      | Feature                                                               |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | --------------------------------------------------------------------- |
+| <a href="https://store.rakwireless.com/products/rak19007-wisblock-base-board-2nd-gen?utm_source=RAK19007&utm_medium=Document&utm_campaign=BuyFromStore" target="_blank">RAK19007</a>  | WisBlock Base | USB-C, 4 sensor slot, 1 IO slot, battery/solar connector              |
+| <a href="https://store.rakwireless.com/products/rak4631-lpwan-node?utm_source=RAK4631WisBlockLPWANModule&utm_medium=Document&utm_campaign=BuyFromStore" target="_blank">RAK4631</a>   | WisBlock Core | Based on nrf52840 (BLE) and SX1262 (LoRa), IPEX connector for antenna |
+| <a href="https://store.rakwireless.com/products/wiscore-esp32-module-rak11200?utm_source=WisBlockRAK11200&utm_medium=Document&utm_campaign=BuyFromStore" target="_blank">RAK11200</a> | WisBlock Core | Based on ESP32 (WiFi + BLE), built-in PCB antenna                     |
 
 :::tip 📝 NOTE
-RAK4631 is compatible with Arduino IDE. You can add the module to the board manager by following either the [Installation Guide in the Learn section](https://docs.rakwireless.com/Knowledge-Hub/Learn/Installation-of-Board-Support-Package-in-Arduino-IDE/) or the [RAK Arduino BSP GitHub Repo](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
+**RAK4631** is compatible with Arduino IDE. You can add the module to the board manager by following either the [Installation Guide in the Learn section](https://docs.rakwireless.com/Knowledge-Hub/Learn/Installation-of-Board-Support-Package-in-Arduino-IDE/) or the [RAK Arduino BSP GitHub Repo](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
 :::
 
 #### WisBlock Modules
@@ -77,28 +79,28 @@ RAK4631 is compatible with Arduino IDE. You can add the module to the board mana
 The modules included in the kit and the chips used in them are listed below.
 
 :::tip 📝 NOTE
-Check individual modules for their specific requirements like needed battery, configurations, as well as its limitations.
+Check individual modules for their specific requirements, such as needed battery, configurations, as well as their limitations.
 :::
 
-| RAK Model                                         | Function                    | Chip       | Manufacturer                |
-| ------------------------------------------------- | --------------------------- | ---------- | --------------------------- |
-| [RAK12010](/Product-Categories/WisBlock/RAK12010) | Ambient Light Sensor        | VEML7700   | Vishay Semiconductors       |
-| [RAK1901](/Product-Categories/WisBlock/RAK1901)   | Temperature Humidity Sensor | SHTC3      | Sensirion                   |
-| [RAK12047](/Product-Categories/WisBlock/RAK12047) | VOC Sensor                  | SGP40      | Sensirion                   |
-| [RAK1904](/Product-Categories/WisBlock/RAK1904)   | 3-Axis Accelerometer        | LIS3DH     | STmicroelectronics          |
-| [RAK18001](/Product-Categories/WisBlock/RAK18001) | Buzzer Module               | MLT-5020   | Jiangsu Huaneng Electronics |
-| [RAK14001](/Product-Categories/WisBlock/RAK14001) | RGB LED Module              | NCP5623B   | On Semiconductors           |
-| [RAK1921](/Product-Categories/WisBlock/RAK1921)   | OLED display                | SSD1306    | Solomon Systech Limited     |
-| [RAK12021](/Product-Categories/WisBlock/RAK12021) | RGB Sensor                  | TCS37725FN | AMS                         |
+| RAK Model                                                                                                                                                                               | Function                    | Chip       | Manufacturer                |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- | ---------- | --------------------------- |
+| <a href="https://store.rakwireless.com/products/wisblock-ambient-light-sensor-rak12010?utm_source=RAK12010&utm_medium=Document&utm_campaign=BuyFromStore" target="_blank">RAK12010</a>  | Ambient Light Sensor        | VEML7700   | Vishay Semiconductors       |
+| <a href="https://store.rakwireless.com/products/rak1901-shtc3-temperature-humidity-sensor?utm_source=RAK1901&utm_medium=Document&utm_campaign=BuyFromStore" target="_blank">RAK1901</a> | Temperature Humidity Sensor | SHTC3      | Sensirion                   |
+| <a href="https://store.rakwireless.com/products/rak12047-voc-sensor-sensirion-sgp40?utm_source=RAK12047&utm_medium=Document&utm_campaign=BuyFromStore" target="_blank">RAK12047</a>     | VOC Sensor                  | SGP40      | Sensirion                   |
+| <a href="https://store.rakwireless.com/products/rak1904-lis3dh-3-axis-acceleration-sensor?utm_source=RAK1904&utm_medium=Document&utm_campaign=BuyFromStore" target="_blank">RAK1904</a> | 3-Axis Accelerometer        | LIS3DH     | STmicroelectronics          |
+| <a href="https://store.rakwireless.com/products/wisblock-buzzer-module-rak18001?utm_source=WisBlockRAK18001&utm_medium=Document&utm_campaign=BuyFromStore" target="_blank">RAK18001</a> | Buzzer Module               | MLT-5020   | Jiangsu Huaneng Electronics |
+| <a href="https://store.rakwireless.com/products/rgb-led-module-rak14001?utm_source=RAK14001&utm_medium=Document&utm_campaign=BuyFromStore" target="_blank">RAK14001</a>                 | RGB LED Module              | NCP5623B   | On Semiconductors           |
+| <a href="https://store.rakwireless.com/products/rak1921-oled-display-panel?utm_source=RAK1921&utm_medium=Document&utm_campaign=BuyFromStore" target="_blank">RAK1921</a>                | OLED display                | SSD1306    | Solomon Systech Limited     |
+| <a href="https://store.rakwireless.com/products/rak12021-wisblock-rgb-sensor?utm_source=RAK12021&utm_medium=Document&utm_campaign=BuyFromStore" target="_blank">RAK12021</a>            | RGB Sensor                  | TCS37725FN | AMS                         |
 
 #### WisBlock Cellular Modules
 
-The cellular modules support different cellular protocols, as shown in the table.
+The cellular modules support different cellular protocols, as shown in the following table.
 
-| RAK Model                                         | Supported Protocol | Chip   | Manufacturer |
-| ------------------------------------------------- | ------------------ | ------ | ------------ |
-| [RAK13101](/Product-Categories/WisBlock/RAK13101) | GSM/GPRS           | MC20CE | Quectel      |
-| [RAK5860](/Product-Categories/WisBlock/RAK5860)   | LTE-M/NB-IoT       | BG77   | Quectel      |
+| RAK Model                                                                                                                                                                        | Supported Protocol | Chip   | Manufacturer |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------ | ------------ |
+| <a href="https://store.rakwireless.com/products/wisblock-gsm-module-rak13101?utm_source=RAK13101&utm_medium=Document&utm_campaign=BuyFromStore" target="_blank">RAK13101</a>     | GSM/GPRS           | MC20CE | Quectel      |
+| <a href="https://store.rakwireless.com/products/rak5860-lte-nb-iot-extension-board?utm_source=RAK5860&utm_medium=Document&utm_campaign=BuyFromStore" target="_blank">RAK5860</a> | LTE-M/NB-IoT       | BG77   | Quectel      |
 
 #### Interconnections
 

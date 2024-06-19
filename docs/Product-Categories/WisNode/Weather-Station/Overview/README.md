@@ -1,6 +1,6 @@
 ---
 rak_img: /assets/images/wisnode/weather-station/weather-station-solution.png
-rak_desc: Weather Station Solution is built with RAK Sensor Hub and RK900-09, widely used in applications like weather detection, prediction, and analysis.
+rak_desc: Weather Station Monitoring Solution is built with RAK Sensor Hub and RK900-09, widely used in applications like weather detection, prediction, and analysis.
 rak_grp: [wisnode, solutions]
 rak_model: Weather Station
 prev: ../../
@@ -11,9 +11,9 @@ tags:
     - Sensor Hub Solutions
 ---
 
-# Weather Station Monitoring Sensor
+# Weather Station Monitoring Solution
 
-Thank you for choosing the **Weather Station Monitoring Sensor** in your awesome IoT project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
+Thank you for choosing the **Weather Station Monitoring Solution** in your awesome IoT project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
 - <a href="../Quickstart/" target="_blank">Quick Start Guide</a>
 - <a href="../Supported-LoRa-Network-Servers/" target="_blank">Supported LoRa Network Servers</a>
@@ -21,7 +21,7 @@ Thank you for choosing the **Weather Station Monitoring Sensor** in your awesome
 
 ### Solution Description
 
-The Weather Station Solution is a mini ultrasonic weather, built with RAK Sensor Hub and RK900-09. It incorporates integrated ultrasonic wind speed and direction sensors, along with high-precision digital temperature, humidity, and pressure sensors.
+The Weather Station Monitoring Solution is a mini ultrasonic weather, built with RAK Sensor Hub and RK900-09. It incorporates integrated ultrasonic wind speed and direction sensors, along with high-precision digital temperature, humidity, and pressure sensors.
 
 The weather station features a high-strength structural design that enables it to function reliably even in harsh climates and environments. This solution is ideal for environmental monitoring, industry, agriculture, and transportation.
 

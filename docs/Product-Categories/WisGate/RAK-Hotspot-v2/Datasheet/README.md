@@ -1,11 +1,10 @@
 ---
-static_root:
-rak_desc: Provides comprehensive information about your RAK Hotspot v2 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_desc: Provides comprehensive information about your RAK Hotspot V2 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 rak_img: /assets/images/wisgate/rak-hotspot-v2/RAK-Hotspot-V2.png
 tags:
   - datasheet
   - wisgate
-  - RAK Hotspot v2
+  - RAK Hotspot V2
 next: false
 prev: ../Troubleshooting/
 certifications:
@@ -26,7 +25,7 @@ certifications:
   - [Vietnam, https://downloads.rakwireless.com/LoRa/RAK_Hotspot/Certification/RAK7248_HotspotV2.0_Vietnam_Certification.pdf]
 ---
 
-# RAK Hotspot v2 Datasheet
+# RAK Hotspot V2 Datasheet
 
 ## Overview
 
@@ -34,59 +33,54 @@ certifications:
 
 **Hotspot Details**
 
-- Efficient for a new cryptocurrency, **Helium (HNT)**
-- Complete set-up in minutes using a smartphone
-- **LongFi technology** maximizes range and battery life without Wi-Fi, cellular or Bluetooth
-- Low Power – only uses about the same amount as an LED light bulb (5W)
-- Easily manage Hotspots and tokens from the mobile app
-- LongFi™ Technology
+- Efficient for mining the **Helium (HNT)** cryptocurrency
+- Complete setup in minutes using a smartphone
+- **LongFi technology** maximizes range and battery life without Wi-Fi, cellular, or Bluetooth
+- Low Power: Only consumes about the same amount of energy as an LED light bulb (5&nbsp;W)
+- Easily manage hotspots and tokens from the mobile app
 
 ![longfi](/assets/images/wisgate/rak-hotspot/icons/longfi.png)
 
-**Helium LongFi** is a technology architecture that combines the leading wireless technology, LoRaWAN, and the
-Helium Blockchain. LongFi is optimized for miles of range, and long battery life for IoT devices.
+**Helium LongFi** is a technology architecture that combines leading wireless technology, LoRaWAN, and the Helium Blockchain. LongFi is optimized for miles of range and long battery life for IoT devices.
 
 ![proof-of-coverage](/assets/images/wisgate/rak-hotspot/icons/proof-of-coverage.png)
 
-RAK Hotspot earns Helium when devices connect, and for validating wireless coverage delivered by peers. Using a system called Proof-of-Coverage, RAK Hotspot earns more Helium when they're in range of other RAK Hotspot, but need to be at least 300 meters apart.
+RAK Hotspot earns Helium when devices connect and for validating wireless coverage delivered by peers. Using a system called Proof-of-Coverage, RAK Hotspot earns more Helium when they are in range of other RAK Hotspots, but they need to be at least 300&nbsp;meters apart.
 
-Range depends on the environment. For rural areas, **up to 10 miles or more**, but in more dense areas, **up to a mile**. Single RAK Hotspot earn less as they can only issue Challenges over the internet, and can’t participate in Proof-of-Coverage.
+The range depends on the environment. For rural areas, it can reach **up to 10 miles** or more, while for denser areas, it's **up to a mile**. A single RAK Hotspot earns less as it can only issue Challenges over the internet and cannot participate in Proof-of-Coverage.
 
 ![wireless-coverage](/assets/images/wisgate/rak-hotspot/icons/wireless-coverage.png)
 
-- Deliver many square miles of coverage from a single RAK Hotspot.
-- Based on initial testing, only about 50 to 100 RAK Hotspots are needed to provide complete coverage for an entire city.
+- A single RAK Hotspot can deliver coverage over many square miles
+- Initial testing suggests that complete city coverage can be achieved with only 50 to 100 RAK Hotspots.
 
 ![connect-anything](/assets/images/wisgate/rak-hotspot/icons/connect-anything.png)
 
-- Create a new global network for billions of devices.
-- Any IoT device can become Helium-enabled using readily available off-the-shelf hardware components, software, and a reference design that is open source for anyone to improve upon.
+- Establish a global network capable of connecting billions of devices
+- Any IoT device can be Helium-enabled using easily accessible off-the-shelf hardware components, software, and an open-source reference design that is available for anyone to enhance.
 
-### Features
+## Product Features
 
-- Computing with Raspberry Pi4 (Linux)
-- 2&nbsp;GB on-board RAM
+- Utilizes the Raspberry Pi 4 computer board
+- Onboard RAM: 2&nbsp;GB , 4&nbsp;GB , or 8&nbsp;GB 
 - 32&nbsp;GB SD card
 - Based on the LoRa Concentrator Engine: Semtech® SX1302
-- Built-in Heat Sink for thermal heat dissipation management
+- Built-in heat sink for efficient thermal heat dissipation management
 - Supports 5&nbsp;V / 2.4&nbsp;A power supply
 - IP30 housing
 - TX power up to 27&nbsp;dBm, RX sensitivity down to -139&nbsp;dBm @SF12, BW 125&nbsp;KHz
-- LoRa Frequency band support: RU864, IN865, EU868, US915, AU915, KR920, AS923.
-- Includes Pi ready 'ID EE PROM', GPIO setup, and device tree can be automatically configured
-from vendor information
-- Supports a fully open source LoRaWAN server
-- 2.4 GHz and 5.0 GHz IEEE 802.11b/g/n/ac wireless LAN, Bluetooth 5.0, BLE
+- LoRa frequency band support includes RU864, IN865, EU868, US915, AU915, KR920, and AS923
+- 2.4&nbsp;GHz and 5.0&nbsp;GHz IEEE 802.11b/g/n/ac wireless LAN, Bluetooth 5.0, BLE.
 
 ## Specifications
 
 ### Overview
 
-The overview covers the RAK Hotspot details and block diagram.
+The overview covers the details and block diagram of the RAK Hotspot.
 
 #### Board Overview
 
-The outer dimensions of RAK Hotspot is **92 mm x 68.3 mm x 57.2&nbsp;mm**.
+The outer dimensions of the RAK Hotspot are **92 mm x 68.3 mm x 57.2&nbsp;mm**.
 
 <rk-img
   src="/assets/images/wisgate/rak-hotspot-v2/datasheet/dimensions.svg"
@@ -96,7 +90,9 @@ The outer dimensions of RAK Hotspot is **92 mm x 68.3 mm x 57.2&nbsp;mm**.
 
 #### Hotspot Details
 
-Figure 2 summarizes the basic building blocks of the RAK Hotspot. The RAK2287 is an essential part of it as it provides all LoRaWAN connectivity. It receives and transmits LoRa Frames and takes care of modulating/demodulating the signals among others. The processing of the LoRa Frames, as well as higher-level protocol-related tasks, is done by the embedded host system (Raspberry Pi). Received and processed LoRa Frames are being sent to a LoRaWAN Server. The segmentation of protocol-related tasks is outside the scope of this document.
+**Figure 2** summarizes the basic building blocks of the RAK Hotspot. The RAK2287 is essential to the device's functionality, providing all LoRaWAN connectivity. In addition, it sends and receives LoRa frames and handles signal modulation and demodulation.
+
+The embedded host system, Raspberry Pi, is responsible for processing the LoRa frames and other high-level protocol-related tasks. After receiving and processing the LoRa frames, they are then sent to a LoRaWAN server. 
 
 <rk-img
   src="/assets/images/wisgate/rak-hotspot/datasheet/hotspot-details.png"
@@ -106,7 +102,7 @@ Figure 2 summarizes the basic building blocks of the RAK Hotspot. The RAK2287 is
 
 #### Block Diagram
 
-The RAK Hotspot is the central hardware solution for all LoRa based radio communication. It receives and transmits radio messages. The processing of radio messages, as well as the protocol-related tasks, is done by the embedded host system (Raspberry Pi 4). Received and processed radio messages are being sent to a LoRaWAN server. Figure 3 shows the block diagram of the RAK Hotspot.
+The RAK Hotspot serves as the central hardware solution for all LoRa-based radio communication that receives and transmits radio messages. The embedded host system, Raspberry Pi, handles the processing of the LoRa frames and other high-level protocol-related tasks. Once the radio messages are received and processed, they are sent to a LoRaWAN server.
 
 <rk-img
   src="/assets/images/wisgate/rak-hotspot/datasheet/block-diagram.png"
@@ -115,7 +111,7 @@ The RAK Hotspot is the central hardware solution for all LoRa based radio commun
 />
 
 :::tip 📝 NOTE
-The concrete segmentation of the protocol-related tasks is outside the scope of this document.
+The detailed segmentation of protocol-related tasks is beyond the scope of this document.
 :::
 
 ### Hardware
@@ -133,23 +129,13 @@ The concrete segmentation of the protocol-related tasks is outside the scope of 
 
 ##### Operating Frequencies
 
-The RAK Hotspot supports all LoRaWAN frequency channels as below. It is easy to configure while building the firmware from the source code.
-
-| **Region**    | **Frequency (MHz)** |
-| ------------- | ------------------- |
-| Europe        | EU868               |
-| North America | US915               |
-| Asia          | AS923               |
-| Australia     | AU915               |
-| Korea         | KR920               |
-| India         | IN865               |
-| Russia        | RU864               |
+The RAK Hotspot supports all LoRaWAN frequency channels, including RU864, IN865, EU868, US915, AU915, KR920, and AS923. Configuration is straightforward when building the firmware from the source code.
 
 ##### LoRa RF Characteristics
 
 ###### Transmitter RF Characteristics
 
-The RAK Hotspot has an excellent transmitter performance. It is highly recommended to use an optimized configuration for the power level configuration, which is part of the HAL. This results in a mean RF output power level and current consumption.
+The RAK Hotspot boasts excellent transmitter performance. It is highly recommended to utilize an optimized configuration for the power level configuration, which is part of the Hardware Abstraction Layer (HAL). HAL ensures a consistent RF output power level and current consumption.
 
 | **PA Control** | **PWID Control** | **Power**   |
 | -------------- | ---------------- | ----------- |
@@ -171,19 +157,16 @@ The RAK Hotspot has an excellent transmitter performance. It is highly recommend
 | **1**          | 22               | 27&nbsp;dBm |
 
 :::tip 📝 NOTE
-Normally, there is a ±1.5&nbsp;dB difference between the actual test value and the table data.
-:::
-
-:::tip 📝 NOTE
-If nothing else is stated, T=25&nbsp;℃, VDD=5&nbsp;V (Typ.).
+- Usually, there's a ±1.5&nbsp;dB variance between the actual test value and the data in the table.
+- If nothing else is stated, T=25&nbsp;℃, VDD=5&nbsp;V (Typ.).
 :::
 
 | **Parameter**                              | **Condition**            | **Min**       | **Typ.** | **Max**       |
 | ------------------------------------------ | ------------------------ | ------------- | -------- | ------------- |
 | **Frequency Range**                        |                          | 863&nbsp;MHz  |          | 870&nbsp;MHz  |
 | **Modulation Techniques**                  | FSK/LoRa                 |               |          |               |
-| **TX Frequency Variation vs. Temperature** | Power Level Setting : 20 | -3&nbsp;kHz   |          | +3&nbsp;kHz   |
-| **TX Power Variation vs. Temperature**     | Power Level Setting : 20 | -5&nbsp;dBm   |          | +5&nbsp;dBm   |
+| **TX Frequency Variation vs. Temperature** | Power Level Setting: 20 | -3&nbsp;kHz   |          | +3&nbsp;kHz   |
+| **TX Power Variation vs. Temperature**     | Power Level Setting: 20 | -5&nbsp;dBm   |          | +5&nbsp;dBm   |
 | **TX Power Variation**                     |                          | -1.5&nbsp;dBm |          | +1.5&nbsp;dBm |
 
 | **Parameter**             | **Condition** | **Min**      | **Typ.** | **Max**      |
@@ -193,7 +176,7 @@ If nothing else is stated, T=25&nbsp;℃, VDD=5&nbsp;V (Typ.).
 
 ###### Receiver RF Characteristics
 
-It is highly recommended to use optimized RSSI calibration values, which is part of the HAL v3.l. For both Radio 1 and 2, the RSSI-Offset should be set at -169.0. The following table gives the typical sensitivity level of the RAK Hotspot.
+It is highly recommended to use optimized RSSI calibration values, which are part of HAL v3.1. For both Radio 1 and 2, the RSSI-Offset should be set to -169.0. The following table provides the typical sensitivity level of the RAK Hotspot.
 
 | **Signal Bandwidth (Khz)** | **Spreading Factor** | **Sensitivity (dBm)** |
 | :------------------------: | :------------------: | :-------------------: |
@@ -210,7 +193,7 @@ It is highly recommended to use optimized RSSI calibration values, which is part
 
 ###### Overview
 
-The LoRa Antenna with RP-SMA Male connector is shown in Figure 5.
+The LoRa antenna with RP-SMA Male connector is shown in Figure 5.
 
 <rk-img
   src="/assets/images/wisgate/rak-hotspot/datasheet/lora-antenna.png"
@@ -222,7 +205,7 @@ The LoRa Antenna with RP-SMA Male connector is shown in Figure 5.
 
 
 <rk-img
-  src="/assets/images/wisgate/rak-hotspot/datasheet/lora-antenna-dimension.png"
+  src="/assets/images/wisgate/rak-hotspot-v2/datasheet/lora-antenna-dimension-v2.png"
   width="65%"
   caption="LoRa Antenna Dimension (mm)"
 />
@@ -240,7 +223,7 @@ The LoRa Antenna with RP-SMA Male connector is shown in Figure 5.
 
 #### Electrical Requirements
 
-The RAK Hotspot operates at 5V/ 2.4A
+The RAK Hotspot operates at a voltage of 5&nbsp;V and a current of 2.4&nbsp;A.
 
 | **Parameter**      | **Min.** | **Typical** | **Max**     |
 | ------------------ | -------- | ----------- | ----------- |
@@ -249,7 +232,7 @@ The RAK Hotspot operates at 5V/ 2.4A
 | **Burn Test Mode** | -        | -           | 940&nbsp;mA |
 
 :::tip 📝 NOTE
-* **LoRa Tx Mode**: The LoRa module works at the maximum transmit power state.
+* **LoRa Tx Mode**: The LoRa module operates at the maximum transmit power state.
 * **Burn Test Mode**: Raspberry Pi CPU and memory are running at full capacity.
 :::
 
@@ -273,8 +256,7 @@ The table below lists the operation and storage temperature requirements:
 #### LoRaWAN
 
 * Supports class A, C
-* Supports connect to TTN server Supports LoRa package forward
-* Supports build-in ChirpStack® LoRaWAN Server
+* Supports connection to the Helium Network.
 
 #### Network Protocol Stack
 
@@ -294,20 +276,22 @@ Any changes or modifications not expressly approved by the party responsible for
 This device complies with part 15 of the FCC Rules. Operation is subject to the following two conditions: (1) This device may not cause harmful interference, and (2) this device must accept any interference received, including interference that may cause undesired operation.
 
 :::tip 📝 IMPORTANT NOTE
-This equipment has been tested and found to comply with the limits for a Class B digital device, according to part 15 of the FCC Rules. These limits are designed to provide reasonable protection against harmful interference in a residential installation. This equipment generates, uses, and can radiate radio frequency energy and, if not installed and used following the instructions, may cause harmful interference to radio communications. However, there is no guarantee that interference will not occur in a particular installation. If this equipment does cause harmful interference to radio or television reception, which can be determined by turning the equipment off and on, the user is encouraged to try to correct the interference by one or more of the following measures:
+This equipment has been tested and found to comply with the limits for a Class B digital device, according to part 15 of the FCC Rules. These limits are designed to provide reasonable protection against harmful interference in a residential installation. This equipment generates, uses, and can radiate radio frequency energy and, if not installed and used following the instructions, may cause harmful interference to radio communications. 
+
+However, there is no guarantee that interference will not occur in a particular installation. If this equipment does cause harmful interference to radio or television reception, which can be determined by turning the equipment off and on, the user is encouraged to try to correct the interference by one or more of the following measures:
 
 * Reorient or relocate the receiving antenna.
 * Increase the separation between the equipment and receiver.
-* Connect the equipment into an outlet on a circuit different from that to which the receiver is connected.
+* Connect the equipment to an outlet on a circuit different from that to which the receiver is connected.
 * Consult the dealer or an experienced radio/TV technician for help.
 :::
 
 ### FCC Radiation Exposure Statement
 
-This equipment complies with FCC radiation exposure limits set forth for an uncontrolled environment. This equipment should be installed and operated with a minimum distance of 20&nbsp;cm between the radiator & your body.
+This equipment complies with FCC radiation exposure limits set forth for an uncontrolled environment. It should be installed and operated with a minimum distance of 20&nbsp;cm between the radiator and your body.
 
 :::warning 📝 ISEDC Warning
-This device complies with Innovation, Science, and Economic Development Canada licence-exempt RSS standard(s). Operation is subject to the following two conditions:
+This device complies with Innovation, Science, and Economic Development Canada's licence-exempt RSS standard(s). Operation is subject to the following two conditions:
 
 1. this device may not cause interference, and
 2. this device must accept any interference, including interference that may cause undesired operation of the device.

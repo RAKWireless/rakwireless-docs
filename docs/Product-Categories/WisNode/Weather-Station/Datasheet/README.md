@@ -9,13 +9,13 @@ tags:
   - Weather Station
 ---
 
-# Weather Station Solution Datasheet
+# Weather Station Monitoring Solution Datasheet
 
 ## Solution Overview
 
 ### Description
 
-The Weather Station Solution is a mini ultrasonic weather, built with RAK Sensor Hub and RK900-09. It incorporates integrated ultrasonic wind speed and direction sensors, along with high-precision digital temperature, humidity, and pressure sensors.
+The Weather Station Monitoring Solution is a mini ultrasonic weather, built with RAK Sensor Hub and RK900-09. It incorporates integrated ultrasonic wind speed and direction sensors, along with high-precision digital temperature, humidity, and pressure sensors.
 
 The weather station features a high-strength structural design that enables it to function reliably even in harsh climates and environments. This solution is ideal for environmental monitoring, industry, agriculture, and transportation.
 

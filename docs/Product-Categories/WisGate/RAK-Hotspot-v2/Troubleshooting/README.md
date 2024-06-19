@@ -23,18 +23,18 @@ The RAK Hotspot V2 includes two (2) small LEDs for status:
   caption="Status LED location"
 />
 
-🔴 **Red LED**: Solid red is good; it means Pi is getting power. In normal operation, only solid red should be seen. Flashing red means there is some issue with the power supply — reconnect power and check again.
+🔴 **Red LED**: A solid red light indicates that the Pi is receiving power, which is normal during operation. If the red LED is flashing, it indicates a power supply issue. Reconnect the power and check again to resolve the problem.
 
-🟢 **Green LED**: At power-up, Green LED will blink in a random pattern, but after about 5 seconds, it should stop. If Green is blinking repeatedly for a long time, it means there is some problem - usually, this will be the SD card, but maybe a power issue too.
+🟢 **Green LED**: Upon power-up, the green LED will blink randomly for a brief period, typically about 5 seconds, before stopping. If the green LED continues to blink repeatedly for an extended period, it suggests a problem, usually related to the SD card, but possibly also due to a power issue.
 
-In the case of a constant blinking Green, refer to the following recommendations:
+In case the green LED continues blinking persistently, consider the following recommendations:
 
-1. Unplug USB-C power.
-2. Extract microSD card, check and re-insert it making sure it is well seated. The card could have moved in shipping, or the user may have inserted it incorrectly, which is upside down after backup.
-3. Reconnect USB-C power making sure it is plugged in all the way.
+1. Unplug the USB-C power cable.
+2. Remove the microSD card, check its position, and re-insert it ensuring it is properly seated. The card may have shifted during shipping or you might have inserted it incorrectly, perhaps upside down, after backing up.
+3. Reconnect the USB-C power cable, ensuring it is securely plugged in all the way.
 
 
-## Proper connection scenarios with the RAK outdoor enclosure/antennas
+## Proper Connection Scenarios with the RAK Outdoor Enclosure/Antennas
 
 ### Scenario 1 (Indoor, optimal)
 
@@ -42,7 +42,7 @@ Products Used:
 
 - [RAK Hotspot V2](https://store.rakwireless.com/products/rak-hotspot-miner?utm_source=RAKHotspotMiner&utm_medium=Document&utm_campaign=BuyFromStore)
 - [Magnetic Antenna Base](https://store.rakwireless.com/products/antenna-magnetic-base?utm_source=MagneticAntennaBase&utm_medium=Document&utm_campaign=BuyFromStore)
-- [Fiberglass Antenna](https://store.rakwireless.com/products/900-930mhz-8dbi-fiber-glass-antenna?variant=36518410322078&utm_source=868-930MHz8dBiFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Fiberglass Antenna](https://store.rakwireless.com/products/fiber-glass-antenna-1?m=2&h=helium-antenna&variant=43034794721478?utm_source=868-930MHz8dBiFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore)
 
 <rk-img
   src="/assets/images/wisgate/rak-hotspot-v2/troubleshooting/Fig2.png"
@@ -56,7 +56,7 @@ Products Used:
 
 - [RAK Hotspot V2](https://store.rakwireless.com/products/rak-hotspot-miner?utm_source=RAKHotspotMiner&utm_medium=Document&utm_campaign=BuyFromStore)
 - Converter Cable (included with any of the Fiberglass Antennas)
-- [Fiberglass Antenna](https://store.rakwireless.com/products/900-930mhz-8dbi-fiber-glass-antenna?variant=36518410322078&utm_source=868-930MHz8dBiFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Fiberglass Antenna](https://store.rakwireless.com/products/fiber-glass-antenna-1?m=2&h=helium-antenna&variant=43034794721478?utm_source=868-930MHz8dBiFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore)
 
 <rk-img
   src="/assets/images/wisgate/rak-hotspot-v2/troubleshooting/Fig3.png"
@@ -71,7 +71,7 @@ Products Used:
 - [RAK Hotspot V2](https://store.rakwireless.com/products/rak-hotspot-miner?utm_source=RAKHotspotMiner&utm_medium=Document&utm_campaign=BuyFromStore)
 - [Outdoor Enclosure Kit RAKBox-GW-3](https://store.rakwireless.com/products/Outdoor-Enclosure-Kit-H?utm_source=OutdoorEnclosureKitH&utm_medium=Document&utm_campaign=BuyFromStore)
 - [Lightning Arrestor](https://store.rakwireless.com/products/lightning-arrestor-for-gps-antenna?utm_source=LoRa-WiFi-LTE-SPD&utm_medium=Document&utm_campaign=BuyFromStore)
-- [Fiberglass Antenna](https://store.rakwireless.com/products/900-930mhz-8dbi-fiber-glass-antenna?variant=36518410322078&utm_source=868-930MHz8dBiFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Fiberglass Antenna](https://store.rakwireless.com/products/fiber-glass-antenna-1?m=2&h=helium-antenna&variant=43034794721478?utm_source=868-930MHz8dBiFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore)
 
 <rk-img
   src="/assets/images/wisgate/rak-hotspot-v2/troubleshooting/Fig4.png"
@@ -85,7 +85,7 @@ Products Used:
 - [RAK Hotspot V2](https://store.rakwireless.com/products/rak-hotspot-miner?utm_source=RAKHotspotMiner&utm_medium=Document&utm_campaign=BuyFromStore)
 - Converter Cable (included with any of the Fiberglass Antennas)
 - [Lightning Arrestor](https://store.rakwireless.com/products/lightning-arrestor-for-gps-antenna?utm_source=LoRa-WiFi-LTE-SPD&utm_medium=Document&utm_campaign=BuyFromStore)
-- [Fiberglass Antenna](https://store.rakwireless.com/products/900-930mhz-8dbi-fiber-glass-antenna?variant=36518410322078&utm_source=868-930MHz8dBiFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Fiberglass Antenna](https://store.rakwireless.com/products/fiber-glass-antenna-1?m=2&h=helium-antenna&variant=43034794721478)
 
 <rk-img
   src="/assets/images/wisgate/rak-hotspot-v2/troubleshooting/Fig5.png"
@@ -99,7 +99,7 @@ Products Used:
 
 - [RAK Hotspot V2](https://store.rakwireless.com/products/rak-hotspot-miner?utm_source=RAKHotspotMiner&utm_medium=Document&utm_campaign=BuyFromStore)
 - [Pulsar Cable LMR400 RAK9733](https://store.rakwireless.com/products/pulsar-cable-rak9731-rak9733?utm_source=RAK9733&utm_medium=Document&utm_campaign=BuyFromStore)
-- [Fiberglass Antenna](https://store.rakwireless.com/products/900-930mhz-8dbi-fiber-glass-antenna?variant=36518410322078&utm_source=868-930MHz8dBiFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Fiberglass Antenna](https://store.rakwireless.com/products/fiber-glass-antenna-1?m=2&h=helium-antenna&variant=43034794721478?utm_source=868-930MHz8dBiFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore)
 
 <rk-img
   src="/assets/images/wisgate/rak-hotspot-v2/troubleshooting/Fig6.png"
@@ -114,7 +114,7 @@ Products Used:
 - [RAK Hotspot V2](https://store.rakwireless.com/products/rak-hotspot-miner?utm_source=RAKHotspotMiner&utm_medium=Document&utm_campaign=BuyFromStore)
 - [Pulsar Cable LMR400 RAK9733](https://store.rakwireless.com/products/pulsar-cable-rak9731-rak9733?utm_source=RAK9733&utm_medium=Document&utm_campaign=BuyFromStore)
 - [Lightning Arrestor](https://store.rakwireless.com/products/lightning-arrestor-for-gps-antenna?utm_source=LoRa-WiFi-LTE-SPD&utm_medium=Document&utm_campaign=BuyFromStore)
-- [Fiberglass Antenna](https://store.rakwireless.com/products/900-930mhz-8dbi-fiber-glass-antenna?variant=36518410322078&utm_source=868-930MHz8dBiFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Fiberglass Antenna](https://store.rakwireless.com/products/fiber-glass-antenna-1?m=2&h=helium-antenna&variant=43034794721478?utm_source=868-930MHz8dBiFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore)
 
 <rk-img
   src="/assets/images/wisgate/rak-hotspot-v2/troubleshooting/Fig7.png"
@@ -128,7 +128,7 @@ Products Used:
 
 - [RAK Hotspot V2](https://store.rakwireless.com/products/rak-hotspot-miner?utm_source=RAKHotspotMiner&utm_medium=Document&utm_campaign=BuyFromStore)
 - [Outdoor Enclosure Kit RAKBox-GW-3](https://store.rakwireless.com/products/Outdoor-Enclosure-Kit-H?utm_source=OutdoorEnclosureKitH&utm_medium=Document&utm_campaign=BuyFromStore)
-- [Fiberglass Antenna](https://store.rakwireless.com/products/900-930mhz-8dbi-fiber-glass-antenna?variant=36518410322078&utm_source=868-930MHz8dBiFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Fiberglass Antenna](https://store.rakwireless.com/products/fiber-glass-antenna-1?m=2&h=helium-antenna&variant=43034794721478?utm_source=868-930MHz8dBiFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore)
 
 <rk-img
   src="/assets/images/wisgate/rak-hotspot-v2/troubleshooting/Fig8.png"
@@ -143,7 +143,7 @@ Products Used:
 - [RAK Hotspot V2](https://store.rakwireless.com/products/rak-hotspot-miner?utm_source=RAKHotspotMiner&utm_medium=Document&utm_campaign=BuyFromStore)
 - [Outdoor Enclosure Kit RAKBox-GW-3](https://store.rakwireless.com/products/Outdoor-Enclosure-Kit-H?utm_source=OutdoorEnclosureKitH&utm_medium=Document&utm_campaign=BuyFromStore)
 - [Pulsar Cable LMR400 RAK9731](https://store.rakwireless.com/products/pulsar-cable-rak9731-rak9733?utm_source=RAK9731&utm_medium=Document&utm_campaign=BuyFromStore)
-- [Fiberglass Antenna](https://store.rakwireless.com/products/900-930mhz-8dbi-fiber-glass-antenna?variant=36518410322078&utm_source=868-930MHz8dBiFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Fiberglass Antenna](https://store.rakwireless.com/products/fiber-glass-antenna-1?m=2&h=helium-antenna&variant=43034794721478)
 
 <rk-img
   src="/assets/images/wisgate/rak-hotspot-v2/troubleshooting/Fig9.png"
@@ -159,7 +159,7 @@ Products Used:
 - [Outdoor Enclosure Kit RAKBox-GW-3](https://store.rakwireless.com/products/Outdoor-Enclosure-Kit-H?utm_source=OutdoorEnclosureKitH&utm_medium=Document&utm_campaign=BuyFromStore)
 - [Pulsar Cable LMR400 RAK9731](https://store.rakwireless.com/products/pulsar-cable-rak9731-rak9733?utm_source=RAK9731&utm_medium=Document&utm_campaign=BuyFromStore)
 - [Lightning Arrestor](https://store.rakwireless.com/products/lightning-arrestor-for-gps-antenna?utm_source=LoRa-WiFi-LTE-SPD&utm_medium=Document&utm_campaign=BuyFromStore)
-- [Fiberglass Antenna](https://store.rakwireless.com/products/900-930mhz-8dbi-fiber-glass-antenna?variant=36518410322078&utm_source=868-930MHz8dBiFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore)
+- [Fiberglass Antenna](https://store.rakwireless.com/products/fiber-glass-antenna-1?m=2&h=helium-antenna&variant=43034794721478?utm_source=868-930MHz8dBiFiberGlassAntenna&utm_medium=Document&utm_campaign=BuyFromStore)
 
 <rk-img
   src="/assets/images/wisgate/rak-hotspot-v2/troubleshooting/Fig10.png"

@@ -1,5 +1,5 @@
 ---
-rak_desc: RAK Hotspot is efficient for a new cryptocurrency, Helium (HNT). It can be set up completely in minutes using a smartphone and can easily manage hotspots and tokens from the mobile app. It offers low power that uses about the same amount as a 5W LED bulb, and it has LongFi™ technology that maximizes range and battery life.
+rak_desc: The RAK Hotspot V2 is a powerful mining device designed for the cryptocurrency, Helium (HNT). It boasts easy setup within minutes using just a smartphone. With low power consumption, it offers energy efficiency. Additionally, its LongFi™ technology optimizes range and battery life for enhanced performance.
 rak_img: /assets/images/wisgate/rak-hotspot-v2/RAK-Hotspot-V2.png
 
 ---

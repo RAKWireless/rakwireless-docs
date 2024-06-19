@@ -1,6 +1,6 @@
 ---
-rak_img: /assets/images/wisnode/soil-ph-monitoring/SoilpHSol.png
-rak_desc: This section provides instructions on installing and configuring the Sensor Hub for the Soil pH Monitoring Solution, covering details on mounting, power supply, and battery installation.
+rak_img: /assets/images/wisnode/soil-ph-monitoring/soil-ph.png
+rak_desc: Provides comprehensive information on your Soil pH Monitoring Solution to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 prev: ../Overview/
 next: ../Supported-LoRa-Network-Servers/
 tags:
@@ -20,7 +20,7 @@ Before proceeding with each step for using the Soil pH Solution, make sure to ha
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/datasheet/f1pHSolution_accesories.png"
   width="70%"
-  caption="Sensor Hub Soil pH Solution Accesories"
+  caption="Soil pH Solution Package Inclusion"
 />
 
 ### Hardware Tools
@@ -180,7 +180,7 @@ Mount the bracket on a pole with a 50-80&nbsp;mm diameter. For larger poles, use
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/quickstart/f15pHSolution_Batteryins3.png"
-  width="35%"
+  width="40%"
   caption="Attach the RAK9154 to solar panel"
 />
 
@@ -188,7 +188,7 @@ Mount the bracket on a pole with a 50-80&nbsp;mm diameter. For larger poles, use
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/quickstart/f16pHSolution_Batteryins4.png"
-  width="35%"
+  width="40%"
   caption="RAK9154 and Solar Panel Connection"
 />
 
@@ -196,7 +196,7 @@ Mount the bracket on a pole with a 50-80&nbsp;mm diameter. For larger poles, use
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/quickstart/f17pHSolution_Batteryins5.png"
-  width="30%"
+  width="40%"
   caption="Install the solar panel combination"
 />
 
@@ -208,7 +208,7 @@ When connecting to RAK9154, ensure that the Sensor Hub is connected to the Outpu
 
 <rk-img
   src="/assets/images/wisnode/soil-ph-monitoring/quickstart/f18pHSolution_Batteryins6.png"
-  width="45%"
+  width="55%"
   caption="Connect the Sensor Hub and RAK9154"
 />
 

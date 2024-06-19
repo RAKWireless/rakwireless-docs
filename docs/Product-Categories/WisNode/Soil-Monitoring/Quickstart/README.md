@@ -1,6 +1,6 @@
 ---
 rak_img: /assets/images/wisnode/soil-monitoring/soil-moisture.png
-rak_desc: Provides comprehensive information on your RAK10701-P Field Tester for LoRaWAN to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
+rak_desc: Provides comprehensive information on your Soil Moisture, Temperature, and Electrical Conductivity Solution to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 prev: ../Datasheet/
 next: ../Supported-LoRa-Network-Servers/
 tags:
@@ -20,9 +20,8 @@ Before proceeding with each step for using the Soil Moisture, Temperature, and E
 <rk-img
   src="/assets/images/wisnode/soil-monitoring/quickstart/1-Device-List.png"
   width="75%"
-  caption="Solutions Package Inclusion"
+  caption="Soil Moisture, Temperature, and Electrical Conductivity Solutions Package Inclusion"
 />
-
 
 ### Hardware
 
@@ -106,7 +105,7 @@ Mount the bracket on a pole with a 50-80&nbsp;mm diameter. For larger poles, use
 
 <rk-img
   src="/assets/images/wisnode/soil-monitoring/quickstart/8-Installation-of-equipment1.png"
-  width="40%"
+  width="35%"
   caption="Device Installation"
 />
 
@@ -180,7 +179,7 @@ Mount the bracket on a pole with a 50-80&nbsp;mm diameter. For larger poles, use
 
 <rk-img
   src="/assets/images/wisnode/soil-monitoring/quickstart/15-Attach-RAK9154-to-solar-panel.png"
-  width="50%"
+  width="40%"
   caption="Attach RAK9154 to solar panel"
 />
 
@@ -188,7 +187,7 @@ Mount the bracket on a pole with a 50-80&nbsp;mm diameter. For larger poles, use
 
 <rk-img
   src="/assets/images/wisnode/soil-monitoring/quickstart/16-Connector-the-RAK9154.png"
-  width="50%"
+  width="40%"
   caption="RAK9154 and Solar Panel Connection"
 />
 
@@ -208,7 +207,7 @@ When connecting to RAK9154, ensure that the Sensor Hub is connected to the Outpu
 
 <rk-img
   src="/assets/images/wisnode/soil-monitoring/quickstart/18-Connect-Sensor-Hub-and-RAK9154-1.png"
-  width="50%"
+  width="60%"
   caption="Connect Sensor Hub and RAK9154"
 />
 
@@ -220,7 +219,7 @@ When connecting to RAK9154, ensure that the Sensor Hub is connected to the Outpu
 
 <rk-img
   src="/assets/images/wisnode/soil-monitoring/quickstart/20-Connect-the-power-adapter.png"
-  width="50%"
+  width="40%"
   caption="Connect the power adapter"
 />
 

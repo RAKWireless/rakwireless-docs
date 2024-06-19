@@ -155,8 +155,8 @@ export default {
     store: 'https://store.rakwireless.com/products/soil-monitoring?m=3&h=sensorhub-solution?m=3&h=sensor-hub&variant=42505216786630?utm_source=SoilMoisture&utm_medium=Document&utm_campaign=BuyFromStore'
   },
     '/Product-Categories/WisNode/Soil-pH-Monitoring/': {
-    label: 'Soil pH Monitoring Sensor Hub Solutions',
-    img: '/assets/images/wisnode/soil-ph-monitoring/SoilpHSol.png',
+    label: 'Soil pH Monitoring Sensor Hub Solution',
+    img: '/assets/images/wisnode/soil-ph-monitoring/soil-ph.png',
     store: 'https://store.rakwireless.com/products/soil-ph-monitoring?m=3&h=sensor-hub&variant=42505216786630?utm_source=SoilpH&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisNode/Weather-Station/': {

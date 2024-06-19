@@ -1,6 +1,6 @@
 ---
-rak_img: /assets/images/wisnode/soil-ph-monitoring/SoilpHSol.png
-rak_desc: Contains the key features of the Soil pH Monitoring sensor, detailing its main technical specifications, physical attributes, and data configuration.
+rak_img: /assets/images/wisnode/soil-ph-monitoring/soil-ph.png
+rak_desc: Contains the key features of the Soil pH Monitoring Solution, detailing its main technical specifications, physical attributes, and data configuration.
 prev: ../Supported-LoRa-Network-Servers/
 tags:
     - Sensor Hub
@@ -15,7 +15,7 @@ tags:
 
 ### Description
 
-The Soil pH Sensor Solution is an ideal tool for monitoring soil pH levels. It comprises the RAK Sensor Hub and JXBS-3001-PF 485, which are suitable for use in various settings, such as rice fields and greenhouse cultivation. 
+The Soil pH Monitoring Solution is an ideal tool for monitoring soil pH levels. It comprises the RAK Sensor Hub and JXBS-3001-PF 485, which are suitable for use in various settings, such as rice fields and greenhouse cultivation. 
 
 This solution provides a comprehensive and versatile soil condition monitoring system with Sensor Hub’s form factor, which allows for simultaneous connection of different sensors.  
 
