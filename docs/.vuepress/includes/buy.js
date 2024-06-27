@@ -463,6 +463,11 @@ export default {
     img: '/assets/images/wisgate/rak7285/RAK7285.png',
     store: 'https://store.rakwireless.com/products/wisgate-edge-ultra-full-duplex-the-ultimate-lora-gateway-for-iot-solutions-rak7285-rak7285c?utm_source=RAK7285&utm_medium=Document&utm_campaign=BuyFromStore'
   },
+ '/Product-Categories/WisGate/RAK7267/': {
+    label: 'RAK7267 WisGate Soho Pro',
+    img: '/assets/images/wisgate/rak7267/RAK7267.png',
+    store: 'https://store.rakwireless.com/'
+  },
 
   // Developer
 
