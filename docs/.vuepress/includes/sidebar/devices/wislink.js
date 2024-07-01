@@ -184,6 +184,14 @@ module.exports = {
     sidebarDepth: 4
   },
   {
+    title: 'Quickstart',
+    path: '/Product-Categories/WisLink/RAK5146/Quickstart/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
     title: 'Datasheet',
     path: '/Product-Categories/WisLink/RAK5146/Datasheet/',
     collapsable: false,

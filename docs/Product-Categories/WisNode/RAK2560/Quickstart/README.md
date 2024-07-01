@@ -283,7 +283,7 @@ Key = 0x08(Oct) = 0b00001000(Bin)
 
 - 0b00001000 = Periodic Enable
 
-## Sensor Hub LoRaWAN Payload
+## Sensor Hub LoRaWAN Payload and NB IoT JSON Format
 
 ###  Sensor Probe
 
@@ -311,16 +311,73 @@ RAK Sensor Type is 1&nbsp;Byte, which uses the IPSO Object ID minus 3200 in the 
 RAK_DATA_TYPE = IPSO_OBJECT_ID - 3200
 ```
 
-| Type                   | IPSO ID | RAK Data Type (Decimal) | RAK Data Type (Hex) | Data Size | Data Resolution per Bit          |
-| :--------------------: | :-----: | :---------------------: | :-----------------: | :-------: | :------------------------------: |
-| Temperature sensor     | 3303    | 103                     | 0x67                | 2         | 0.1°&nbsp;C Signed MSB           |
-| Humidity sensor        | 3304    | 104                     | 0x68                | 1         | 0.1% Unsigned                    |
-| Accelerometer (3-Axis) | 3313    | 113                     | 0x71                | 6         | 0.001&nbsp;G Signed MSB per axis |
-| Barometer (Pressure)   | 3315    | 115                     | 0x73                | 2         | 0.1&nbsp;hPa Unsigned MSB        |
+| Type                   | IPSO ID | RAK Data Type (Decimal) | RAK Data Type (Hex) | Data Size | Data Resolution per Bit     | Sensor Hub NB IoT Json |
+| ---------------------- | ------- | ----------------------- | ------------------- | --------- | --------------------------- | ---------------------- |
+| Temperature sensor     | 3303    | 103                     | 0x67                | 2         | 0.1° C Signed MSB           | "Temperature"          |
+| Humidity sensor        | 3304    | 104                     | 0x68                | 1         | 0.1% Unsigned               | "Humidity"             |
+| Accelerometer (3-Axis) | 3313    | 113                     | 0x71                | 6         | 0.001 G Signed MSB per axis | "Accelerometer"        |
+| Barometer (Pressure)   | 3315    | 115                     | 0x73                | 2         | 0.1 hPa Unsigned MSB        | "Barometer"            |
 
 ### RAKwireless Standardized Payload Decoder
 
 On [GitHub,](https://github.com/RAKWireless/RAKwireless_Standardized_Payload/blob/main/RAKwireless_Standardized_Payload.js) you can find a standard version of the decoder that works with all solutions.
+
+### Sensor Probe IO
+
+| Type                                                   | IPSO ID | RAK Data Type (Decimal) | RAK Data Type (HEX) | Data Size | Data Resolution per Bit                                      | Sensor Hub NB IoT Json                                       |
+| ------------------------------------------------------ | ------- | ----------------------- | ------------------- | --------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Digital Input                                          | 3200    | 0                       | 0x00                | 1         | (ON/OFF)                                                     | "Digital-Input"                                              |
+| Digital  Output                                        | 3201    | 1                       | 0x01                | 1         | (ON /  OFF)                                                  | "Digital-Output"                                             |
+| Analog  Input                                          | 3202    | 2                       | 0x02                | 2         | 0.01mA(V),  Min: 0.0, MAX: 655.35                            | "Analog-Input"                                               |
+| Nitrogen                                               | 3216    | 16                      | 0x10                | 2         | 1mg/Kg,  Min: 0, MAX: 65535                                  | "NITROGEN"                                                   |
+| Phosphorus                                             | 3217    | 17                      | 0x11                | 2         | 1mg/Kg,  Min: 0, MAX: 65535                                  | "PHOSPHORUS"                                                 |
+| Potassium                                              | 3218    | 18                      | 0x12                | 2         | 1mg/Kg,  Min: 0, MAX: 65535                                  | "POTASSIUM"                                                  |
+| Salinity                                               | 3219    | 19                      | 0x13                | 2         | 1mg/L,  Min: 0, MAX: 65535                                   | "SALINITY"                                                   |
+| Dissolved  oxygen (DO)                                 | 3220    | 20                      | 0x14                | 2         | 0.01mg/L,  Min: 0.0, MAX: 655.35                             | "Dissolved-Oxygen"                                           |
+| Oxidation  Reduction Potential (ORP)                   | 3221    | 21                      | 0x15                | 2         | 0.1mv  sign                                                  | "ORP"                                                        |
+| Chemical  Oxygen Demand (COD)                          | 3222    | 22                      | 0x16                | 2         | 1mg/L,  Min: 0, MAX: 65535                                   | "COD"                                                        |
+| Turbidity                                              | 3223    | 23                      | 0x17                | 2         | 1NTU,  Min: 0, MAX: 65535                                    | "Turbidity"                                                  |
+| NO3                                                    | 3224    | 24                      | 0x18                | 2         | 0.1ppm,  Min: 0.0, MAX: 6553.5                               | "NO3"                                                        |
+| NH4+                                                   | 3225    | 25                      | 0x19                | 2         | 0.01ppm,  Min: 0.0, MAX: 655.35                              | "NH4PULS"                                                    |
+| Biochemical  oxygen demand (BOD)                       | 3226    | 26                      | 0x1A                | 2         | 1mg/L,  Min: 0, MAX: 65535                                   | "BOD"                                                        |
+| Illuminance                                            | 3301    | 101                     | 0x65                | 4         | 1Lux,  Min: 0, MAX:4294967295                                | "Illuminance"                                                |
+| Presence                                               | 3302    | 102                     | 0x66                | 1         | (Yes/No)                                                     | "Presence"                                                   |
+| Temperature                                            | 3303    | 103                     | 0x67                | 2         | 0.1°C, Min: -3276.8, MAX:3276.7                              | "Temperature"                                                |
+| Humidity  Sensor     Soil Humidity      SCD30 humidity | 3304    | 104                     | 0x68                | 1         | 1%RH  Unsigned                                               | "Humidity"                                                   |
+| Air  Quality Index                                     | 3305    | 105                     | 0x69                | 2         | 1  Unsigned MSB     1, Min: 0, MAX: 65535                    | "GAS"                                                        |
+| Humidity                                               | 3312    | 112                     | 0x70                | 2         | 0.1%,  Min: 0.0, MAX:100.0                                   | "High-Precise-Humidity"                                      |
+| Accelerometer  (3-Axis)                                | 3313    | 113                     | 0x71                | 6         | 0.001 G  Signed MSB per axis                                 | "Accelerometer"                                              |
+| Pressure                                               | 3315    | 115                     | 0x73                | 2         | 0.1hPa, Min: 0.0, MAX: 6553.5                                | "Barometer"                                                  |
+| Battery  Level (Battery Voltage)                       | 3316    | 116                     | 0x74                | 2         | 0.01V,  Min: 0.0, MAX: 655.35                                | "BatteryValue"                                               |
+| Precipitation                                          | 3317    | 117                     | 0x77                | 2         | 1mm/h,  Min: 0, MAX: 65535                                   | "Precipitation"                                              |
+| Percentage                                             | 3320    | 120                     | 0x78                | 1         | 1%, Min: 0, Max:100                                          | "Percentage"                                                 |
+| CO2 concentration                                      | 3325    | 125                     | 0x7D                | 2         | 1ppm,  Min: 0, MAX: 65535                                    | "CO2"                                                        |
+| EC                                                     | 3392    | 192                     | 0xC0                | 2         | 0.001mS/cm,  Min: 0.0, Max:65.535                            | "EC"                                                         |
+| EC                                                     | 3327    | 127                     | 0x7F                | 4         | 0.001uS/cm,  Min: 0.0, Max:4294967.295                       | "High-Precision-EC"                                          |
+| Distance                                               | 3330    | 130                     | 0x82                | 4         | 0.001 m                                                      | "Distance"                                                   |
+| VOC                                                    | 3338    | 138                     | 0x8A                | 2         | 1, Min:  0, MAX: 65535                                       | "VOC"                                                        |
+| Wind  Speed                                            | 3346    | 146                     | 0x92                | 2         | 0.01m/s,  Min: 0.0, MAX: 655.35                              | "GustWindSpeed"                                              |
+| Strikes                                                | 3347    | 147                     | 0x93                | 2         | 1, Min:  0, MAX: 65535                                       | "Strikes"                                                    |
+| Capacity                                               | 3384    | 184                     | 0xB8                | 1         | 1%RH,  Min: 0, MAX: 100                                      | "Capacity"                                                   |
+| DC  Current                                            | 3385    | 185                     | 0xB9                | 2         | 0.01A,  Min: -327.68, MAX: 327.67                            | "DC_Current"                                                 |
+| DC  Voltage                                            | 3386    | 186                     | 0xBA                | 2         | 0.01V,  Min: 0.0, MAX: 655.35                                | "DC_Voltage"                                                 |
+| Moisture                                               | 3388    | 188                     | 0xBC                | 2         | 0.1%,  Min:0.0, Max:100.0                                    | "Moisture"                                                   |
+| Wind  Speed                                            | 3390    | 190                     | 0xBE                | 2         | 0.01m/s,  Min: 0.0, MAX: 655.35                              | "Wind-Speed"                                                 |
+| Wind  Direction (0o -  North)                          | 3391    | 191                     | 0xBF                | 2         | 1o , in 0~359o                                               | "Wind-Direction"                                             |
+| pH                                                     | 3393    | 193                     | 0xC1                | 2         | 0.01,  Min: 0.0, MAX: 655.35                                 | "High_Precision_PH"                                          |
+| Normal  Precision pH                                   | 3394    | 194                     | 0xC2                | 2         | 0.1 pH                                                       | "PH"                                                         |
+| Pyranometer                                            | 3395    | 195                     | 0xC3                | 2         | 1  unsigned MSB (W/m2)                                       | "PYRANOMETER"                                                |
+| PM10                                                   | 3427    | 227                     | 0xE3                | 2         | 1ug/m3, Min: 0, MAX: 65535                                   | "PM10"                                                       |
+| PM2.5                                                  | 3428    | 228                     | 0xE4                | 2         | 1ug/m3,  Min: 0, MAX: 65535                                  | "PM2.5"                                                      |
+| Noise                                                  | 3433    | 233                     | 0xE9                | 2         | 0.1dB,  Min: 0.0, MAX: 6553.5                                | "Noise"                                                      |
+| Orientation                                            | 3429    | 229                     | 0xE5                | 2         | 0.1°,  Min: -90.0, MAX: 90.0                                 | "ORIENTATION"                                                |
+| Raw Data  in Binary (Modbus ADU)                       | 3441    | 241                     | 0xF1                | /         |                                                              | TLV  format binary raw data     for Modbus, RS232 or     other specific data format     "BinaryRaw" (NBIOT Json  Mode) |
+| Binary2byte                                            | 3443    | 243                     | 0xF3                | 2         | Modbus  content                                              | “Raw2byte”                                                   |
+| Binary4byte                                            | 3424    | 224                     | 0xF4                | 4         | Modbus  content                                              | “Raw4byte”                                                   |
+| Generic  Float (IEEE754)                               | 3445    | 245                     | 0xF5                | 4         |                                                              | “Float”                                                      |
+| Generic  Integer (32bit)                               | 3446    | 246                     | 0xF6                | 4         | Min:  -2147483648, Max: 2147483647                           | “Int32”                                                      |
+| Generic  Unsigned Integer (32bit)                      | 3447    | 247                     | 0xF7                | 4         | Min: 0,  Max: 4294967295                                     | "uInt32”                                                     |
+| Raw Data  in Binary                                    | 3448    | 248                     | 0xF8                | /         | TLV  format binary raw data     “BinaryTLV” (NBIOT Json Mode) | “BinaryTLV”                                                  |
 
 ## Configuring Sensor Hub for LoRaWAN Usage
 

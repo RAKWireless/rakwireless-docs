@@ -24,11 +24,12 @@ WisGateOS2 2.2 comes with significant updates that affect all extensions, downgr
 The following table lists the supported WisGate Edge Gateway models of every WisGateOS:
 
 |              WisGateOS1 1.x              |                 WisGateOS2 2.x                  |
-|:----------------------------------------:|:-----------------------------------------------:|
+| :--------------------------------------: | :---------------------------------------------: |
 |  WisGate Edge Lite (RAK7258 / RAK7258C)  | WisGate Edge Lite 2 V2 (RAK7268V2 / RAK7268CV2) |
 | WisGate Edge Lite 2 (RAK7268 / RAK7268C) |  WisGate Edge Pro V2 (RAK7289V2 / RAK7289CV2)   |
 |  WisGate Edge Pro (RAK7289 / RAK7289C)   | WisGate Edge Prime V2 (RAK7240V2 / RAK7240CV2)  |
 | WisGate Edge Prime (RAK7240 / RAK7240C)  |     WisGate Edge Ultra (RAK7285 / RAK7285C)     |
+|                                          |           WisGate Soho Pro (RAK7267)            |
 
 ::: tip 📝 NOTE
 The hardware in V1 and V2 Gateways are different. WisGateOS2 can be used only with V2 Gateways.

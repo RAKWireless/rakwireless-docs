@@ -466,7 +466,7 @@ export default {
  '/Product-Categories/WisGate/RAK7267/': {
     label: 'RAK7267 WisGate Soho Pro',
     img: '/assets/images/wisgate/rak7267/RAK7267.png',
-    store: 'https://store.rakwireless.com/'
+    store: 'https://store.rakwireless.com/products/wisgate-soho-pro-gateway-rak7267?variant=45687475994791?utm_source=rak7267&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
   // Developer

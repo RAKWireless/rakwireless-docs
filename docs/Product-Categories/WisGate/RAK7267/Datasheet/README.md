@@ -17,15 +17,15 @@ tags:
 
 ### Descriptions
 
-The RAK7267 WisGate Soho Pro is an innovative 8-channel LoRaWAN gateway designed for both indoor and outdoor deployments. This gateway supports Wi-Fi and Cellular network backhaul, with a specifically tailored gateweay enclosure to allow the LoRa, LTE, Wi-Fi, and GPS antennas to be inside the enclosure.
+The RAK7267 WisGate Soho Pro is an innovative 8-channel LoRaWAN gateway designed for both indoor and outdoor deployments. This gateway supports Wi-Fi and Cellular network backhaul, with a specifically tailored gateway enclosure to allow the LoRa, LTE, Wi-Fi, and GPS antennas to be inside the enclosure.
 
-Aside from the connectivity, this gateway offers an IP-67 Unify Enslosure, protecting the internal components from dust and water.  The exposure has a weatherproof fire retardant enclosure made of ABS plastic specially designed for outdoors. 
+Aside from the connectivity, this gateway offers an IP67 Unify Enclosure, protecting the internal components from dust and water.  The exposure has a weatherproof fire retardant enclosure made of ABS plastic specially designed for outdoors.
 
 RAK7267 operates under WisGateOS2, which is built on the latest OpenWrt kernel. This new version incorporates the most recent security updates, such as OpenSSL 1.1, and allows multiple account access. The web UI has been redesigned and now supports the installation of multiple extensions. It also allows for remote management using WisDM for personalized customization of the gateway.
 
-This outdoor gateway can be powered with a wide range power supply battery of 9~36 V&nbsp;<sub>DC</sub>  and RAK Solar Battery System.
+This outdoor gateway can be powered with a wide range power supply battery of 9~36 V&nbsp;<sub>DC</sub> and RAK Solar Battery System.
 
-### Product Features
+### Features
 
 #### Hardware
 
@@ -38,7 +38,7 @@ This outdoor gateway can be powered with a wide range power supply battery of 9~
 
 #### Software
 
-- Built-in Network Server (LoRaWAN support V 1.0.3)
+- Built-in Network Server (LoRaWAN support v1.0.3)
 - OpenVPN
 - Software and UI sit on top of OpenWrt
 - LoRaWAN Stack support with Semtech SX1303
@@ -84,7 +84,7 @@ This section presents the block diagram for the RAK7267 that shows the internal 
         <tr><td>GSM: B2/B3/B5/B8</td></tr>
         <tr><td><b>EG915Q-NA for North America Region</b></td></tr>
         <tr><td>LTE FDD: B2/B4/B5/B12/B13/B66/B71</td></tr>
-        <tr><td rowspan="5">Wi-Fi feature</td><td>Frequency: 2.4&nbsp;GHz (802.11b/g/n)</td></tr>
+        <tr><td rowspan="5">Wi-Fi Feature</td><td>Frequency: 2.4&nbsp;GHz (802.11b/g/n)</td></tr>
         <tr><td>2x2 MIMO</td></tr>
         <tr><td>RX Sensitivity: -95&nbsp;dBm (Min)</td></tr>
         <tr><td>TX Power: 20&nbsp;dBm (Max)</td></tr>
@@ -92,23 +92,21 @@ This section presents the block diagram for the RAK7267 that shows the internal 
         <tr><td>Power Supply</td><td>9~36&nbsp;V<sub>DC</sub><br/>Compatible with RAK Solar Battery Kits</td></tr>
         <tr><td rowspan="9">Antenna</td><td>LoRa/LTE/WiFi/GPS: Internal antenna</td></tr>
         <tr><td><b>LoRa</b></td></tr>
-        <tr><td>Frequency Range: 863&nbsp;MHz~928&nbsp;MHz<br>Peak Gain: 2.5&nbsp;dBi<br>VSWR:≤ 1.5<br>Efficiency: &gt;85%<br>Feed Impedance: 50&nbsp;Ohms<br>Polarization: Vertical<br>Dimensions (mm): 51&nbsp;mm x 16&nbsp;mm </td></tr>
+        <tr><td>Frequency Range: 863&nbsp;MHz~928&nbsp;MHz<br>Peak Gain: 2.5&nbsp;dBi<br>VSWR:≤ 1.5<br>Efficiency: &gt;85%<br>Polarization: Vertical</td></tr>
          <tr><td><b>LTE</b></td></tr>
-        <tr><td>Frequency Range: 700&nbsp;MHz~960&nbsp;MHz/1710&nbsp;MHz~21700&nbsp;MHz<br>Peak Gain: 3&nbsp;dBi<br>VSWR:≤ 3<br>Efficiency: &gt;60%<br>Feed Impedance: 50&nbsp;Ohms<br>Polarization: Vertical<br>Dimensions (mm): 51&nbsp;mm x 16&nbsp;mm </td></tr>
+        <tr><td>Frequency Range: 700&nbsp;MHz~960&nbsp;MHz/1710&nbsp;MHz~21700&nbsp;MHz<br>Peak Gain: 3&nbsp;dBi<br>VSWR:≤ 3<br>Efficiency: &gt;60%<br>Polarization: Vertical</td></tr>
         <tr><td><b>WiFi</b></td></tr>
-        <tr><td>Frequency Range: 2400&nbsp;MHz~2500&nbsp;MHz <br>Peak Gain: 2&nbsp;dBi<br>VSWR:≤ 2.5<br>Efficiency: &gt;75%<br>Feed Impedance: 50&nbsp;Ohms<br>Polarization: Vertical<br>Dimensions (mm): 15&nbsp;mm x 3&nbsp;mm </td></tr>
+        <tr><td>Frequency Range: 2400&nbsp;MHz~2500&nbsp;MHz <br>Peak Gain: 2&nbsp;dBi<br>VSWR:≤ 2.5<br>Efficiency: &gt;75%<br>Polarization: Vertical</td></tr>
          <tr><td><b>GPS</b></td></tr>
         <tr><td>Frequency Range: 1575&nbsp;MHz~1602&nbsp;MHz <br>Peak Gain: 28&nbsp;dBi<br>VSWR:&lt;2<br>Polarization: RHCP</td></tr>
-        <tr><td>Ingress protection</td><td>IP67</td></tr>
+        <tr><td>Ingress Protection</td><td>IP67</td></tr>
         <tr><td>Dimension</td><td>180&nbsp;mm x 130&nbsp;mm x&nbsp;60 mm</td></tr>
-        <tr><td>Enclosure material</td><td>ABS plastic</td></tr>
-        <tr><td>Operating temperature</td><td>-30˚&nbsp;C to +55˚&nbsp;C</td></tr>
-        <tr><td>Operating humidity</td><td>0~95&nbsp;% RH non-condensing</td></tr>
+        <tr><td>Enclosure Material</td><td>ABS plastic</td></tr>
+        <tr><td>Operating Temperature</td><td>-30˚&nbsp;C to +55˚&nbsp;C</td></tr>
+        <tr><td>Operating Humidity</td><td>0~95&nbsp;% RH non-condensing</td></tr>
         <tr><td>Installation Method</td><td>Pole mounting</td></tr>
 </tbody>
 </table>
-
-
 
 
 ### Hardware
@@ -174,8 +172,8 @@ The hardware specification covers the interfacing of the RAK7267 and its corresp
 :::tip 📝 NOTE
 
 + The SD card found in the SD card slot must not be ejected. Doing so might affect the performance of the device, as different logs and data are stored on it.
-+ The SIM card slot is not hot-swappable. Make sure the gateway is switched off before inserting or ejecting the SIM card. 
-  
++ The SIM card slot is not hot-swappable. Make sure the gateway is switched off before inserting or ejecting the SIM card.
+
   :::
 
 ##### Reset Key Functions
@@ -262,7 +260,7 @@ The firmware sits on OpenWrt. There is a Web UI for easy configuration and manag
             <td style="text-align: center;">√</td>
             <td style="text-align: center;">√</td>
             <td style="text-align: center;">√</td>
-        </tr> 
+        </tr>
     </tbody>
 </table>
 

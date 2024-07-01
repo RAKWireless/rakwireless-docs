@@ -421,6 +421,14 @@ module.exports = {
   sidebarDepth: 4
 },
 {
+  title: 'Quick Start Guide',
+  path: '/Product-Categories/WisNode/RAK2461/Quickstart/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
   title: 'Datasheet',
   path: '/Product-Categories/WisNode/RAK2461/Datasheet/',
   collapsable: false,
@@ -432,6 +440,14 @@ module.exports = {
 '/Product-Categories/WisNode/RAK2470/': [{
   title: 'Product Overview',
   path: '/Product-Categories/WisNode/RAK2470/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Quick Start Guide',
+  path: '/Product-Categories/WisNode/RAK2470/Quickstart/',
   collapsable: false,
   nested: true,
   download: true,
