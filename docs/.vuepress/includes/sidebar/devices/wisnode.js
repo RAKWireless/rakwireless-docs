@@ -177,6 +177,36 @@ module.exports = {
 },
 ],
 
+'/Product-Categories/WisNode/solar-radiation-monitoring/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisNode/solar-radiation-monitoring/Overview/',
+  collapsable: false,
+  nested: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Quick Start Guide',
+  path: '/Product-Categories/WisNode/solar-radiation-monitoring/Quickstart/',
+  collapsable: false,
+  nested: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Supported LoRa Network Servers',
+  path: '/Product-Categories/WisNode/solar-radiation-monitoring/Supported-LoRa-Network-Servers/',
+  collapsable: false,
+  nested: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisNode/solar-radiation-monitoring/Datasheet/',
+  collapsable: false,
+  nested: true,
+  sidebarDepth: 4
+},
+],
+
 
   '/Product-Categories/WisNode/RAK7200/': [{
       title: 'Product Overview',

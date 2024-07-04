@@ -1,6 +1,6 @@
 ---
 rak_img: /assets/images/wisgate/rak7289-v2/RAK7289V2.png
-rak_desc: RAK7289 V2 WisGate Edge Pro is an ideal product for IoT commercial deployment. With its industrial-grade components, it achieves a high standard of reliability. It supports WisGateOS 2, which is based on the latest OpenWRT kernel and accommodates the latest security update.
+rak_desc: RAK7289V2 WisGate Edge Pro is an ideal product for IoT commercial deployment. With its industrial-grade components, it achieves a high standard of reliability. It supports WisGateOS 2, which is based on the latest OpenWRT kernel and accommodates the latest security update.
 rak_grp: [wisgate, edge]
 prev: ../Supported-LoRa-Network-Servers/
 next: false
@@ -17,6 +17,7 @@ certifications:
     - [JTBL, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289CV2_JTBL_Certification.pdf]
     - [KCC, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289_RAK7289C_RAK7289V2_RAK7289CV2_KC_Certification.pdf]
     - [MA, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289V2_MA_Certification.pdf]
+    - [NBTC, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289CV2_NBTC_Certification.pdf]
     - [RCM, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289_RAK7289V2_RCM_Certification.pdf]
     - [REACH, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289C_RAK7289_RAK7289CV2_RAK7289V2_REACH_Report.pdf]
     - [RoHS, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289C_RAK7289_RAK7289CV2_RAK7289V2_RoHS_Report.pdf]
@@ -34,9 +35,9 @@ certifications:
 
 ### Descriptions
 
-RAK7289 V2 WisGate Edge Pro is the latest edition of the RAK Edge Series. It is an ideal product for IoT commercial deployment. With its industrial-grade components, it achieves a high standard of reliability. The new RAK7289 V2 supports up to 16 LoRa channels, multi-backhaul with Ethernet, Wi-Fi, and Cellular connectivity. Optionally, there is a dedicated port for different power options, solar panels, and batteries. Its new enclosure is designed to allow the LTE, Wi-Fi, and GPS antennas to be inside the enclosure.
+RAK7289V2 WisGate Edge Pro is the latest edition of the RAK Edge Series. It is an ideal product for IoT commercial deployment. With its industrial-grade components, it achieves a high standard of reliability. The new RAK7289V2 supports up to 16 LoRa channels, multi-backhaul with Ethernet, Wi-Fi, and Cellular connectivity. Optionally, there is a dedicated port for different power options, solar panels, and batteries. Its new enclosure is designed to allow the LTE, Wi-Fi, and GPS antennas to be inside the enclosure.
 
-The RAK7289 V2 supports WisGateOS 2, which is based on the latest OpenWRT kernel and accommodates the latest security updates like IPv6, OpenSSL 1.1 support, multiple accounts access, and more. The web UI has a fresh new look, with more user-friendly information tooltips.
+The RAK7289V2 supports WisGateOS 2, which is based on the latest OpenWRT kernel and accommodates the latest security updates like IPv6, OpenSSL 1.1 support, multiple accounts access, and more. The web UI has a fresh new look, with more user-friendly information tooltips.
 
 Simply said, the RAK7289 is suited for any use case scenario, be it rapid deployment or customization with regard to UI and functionality.
 
@@ -75,7 +76,7 @@ This product is designed to be powered by 12&nbsp;V<sub>DC</sub> via a dedicated
 
 ### Overview
 
-The overview presents the block diagram for the RAK7289 V2 that shows the internal architecture of the board.
+The overview presents the block diagram for the RAK7289V2 that shows the internal architecture of the board.
 
 ## Block Diagram
 
@@ -132,7 +133,7 @@ The overview presents the block diagram for the RAK7289 V2 that shows the intern
 
 ### Hardware
 
-The hardware specification covers the interfacing of the RAK7289 V2 and its corresponding functionalities. It also presents the parameters and the standard values of the gateway.
+The hardware specification covers the interfacing of the RAK7289V2 and its corresponding functionalities. It also presents the parameters and the standard values of the gateway.
 
 #### RF Specifications
 

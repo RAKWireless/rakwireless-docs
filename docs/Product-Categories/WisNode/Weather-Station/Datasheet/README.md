@@ -15,9 +15,11 @@ tags:
 
 ### Description
 
-The Weather Station Monitoring Solution is a mini ultrasonic weather, built with RAK Sensor Hub and RK900-09. It incorporates integrated ultrasonic wind speed and direction sensors, along with high-precision digital temperature, humidity, and pressure sensors.
+The Weather Station Solution is built with RAK Sensor Hub and RK900-09 Miniature Ultrasonic Weather Station Sensor. This solution features a high-strength structural design, ensuring reliable operation even in the harshest of climates and environments. Equipped with high-precision sensors, the Weather Station Solution is ideal for environmental monitoring, industry, agriculture, and transportation.
 
-The weather station features a high-strength structural design that enables it to function reliably even in harsh climates and environments. This solution is ideal for environmental monitoring, industry, agriculture, and transportation.
+With the plug-and-play feature of the Sensor Hub, the Weather Station Solution comes with pre-installed components ready for easy installation and connection. The sensor provides highly accurate wind speed and direction, temperature, humidity, and pressure readings, with the Sensor Hub collecting and transmitting the data via LoRaWAN or NB-IoT/CAT M1.
+
+The Sensor Hub’s connectivity function allows for versatile data transmission to the cloud using the two most commonly used communication protocols in IoT. This versatility ensures that data is readily available for storage, visualization, and in-depth analysis, enabling informed decision-making based on comprehensive knowledge of the weather.
 
 
 ### Features
