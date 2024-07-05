@@ -9,7 +9,7 @@ tags:
     - LoRaWAN
     - Solar Radiation
 rak_desc: Provides comprehensive information to connect it to various LoRaWAN network servers and display data on IoT platforms.
-rak_img: /assets/images/wisnode/solar-radiation-solution/SolarSolution.png
+rak_img: /assets/images/wisnode/solar-radiation-monitoring/SolarSolution.png
 ---
 
 # Solar Radiation Sensor Supported LoRa Network Servers
@@ -19,8 +19,8 @@ rak_img: /assets/images/wisnode/solar-radiation-solution/SolarSolution.png
 This section outlines the operational steps for connecting the device to the network server in both the LoRaWAN and NB-IoT application scenarios.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f1application_scenarios.png"
-  width="100%"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f1application_scenarios.png"
+  width="80%"
   caption="LoRaWAN Application Scenarios"
 />
 
@@ -33,8 +33,8 @@ The cloud network server deployment scenario involves connecting the gateway and
 This section provides instructions on creating a Datacake visualization application using the TTN v3 cloud network server.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f2CloudNetworkServer.png"
-  width="100%"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f2CloudNetworkServer.png"
+  width="80%"
   caption="Cloud network server deployment solution"
 />
 
@@ -47,7 +47,7 @@ For this example, you will use the TTNv3 cloud server and RAK7289V2 WisGate Edge
 1. Register an account and log in to the [TTN v3 website.](https://eu1.cloud.thethings.network/console/) If you already have a TTN account, you can log in with your **The Things ID** credentials.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f3SolarSolution_LNS_TTN1.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f3SolarSolution_LNS_TTN1.png"
   width="50%"
   caption="Log in to the TTN website"
 />
@@ -55,7 +55,7 @@ For this example, you will use the TTNv3 cloud server and RAK7289V2 WisGate Edge
 2. Once logged into the site, click on **Register a gateway** to begin the registration process for a new gateway. 
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f4SolarSolution_LNS_TTN2.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f4SolarSolution_LNS_TTN2.png"
   width="50%"
   caption="TTN home page"
 />
@@ -65,7 +65,7 @@ For this example, you will use the TTNv3 cloud server and RAK7289V2 WisGate Edge
 The Gateway EUI serves as a distinct 64-bit extended identifier for the gateway, accessible from the Overview page of the gateway management platform or from the label situated behind the gateway.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f5SolarSolution_LNS_TTN3.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f5SolarSolution_LNS_TTN3.png"
   width="100%"
   caption="Enter the Gateway EUI"
 />
@@ -73,7 +73,7 @@ The Gateway EUI serves as a distinct 64-bit extended identifier for the gateway,
 4. Choose the appropriate frequency plan used by the gateway, and click **Register gateway** to complete the registration process of the gateway.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f6SolarSolution_LNS_TTN4.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f6SolarSolution_LNS_TTN4.png"
   width="100%"
   caption="Configure the gateway frequency"
 />
@@ -85,7 +85,7 @@ TTNv3 supports TLS server authentication and client tokens, which require trust 
 1. To generate a key file, navigate to **API keys** from the **Overview** page of the registered gateway, then click on **Add API key**.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f8SolarSolution_LNS_TTN6.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f8SolarSolution_LNS_TTN6.png"
   width="100%"
   caption="Add API keys"
 />
@@ -93,7 +93,7 @@ TTNv3 supports TLS server authentication and client tokens, which require trust 
 2. In the **Add API key** page, set the **Name** field, tick of the checkboxes shown in **Figure 8**, then click **Create API key**. 
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f9SolarSolution_LNS_TTN7.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f9SolarSolution_LNS_TTN7.png"
   width="100%"
   caption="Configure the API Key"
 />
@@ -101,8 +101,8 @@ TTNv3 supports TLS server authentication and client tokens, which require trust 
 3. A new window pops up with the generated key. Copy the new API key by clicking the icon and then the **I have copied the key** button.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f10SolarSolution_LNS_TTN8.png"
-  width="50%"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f10SolarSolution_LNS_TTN8.png"
+  width="60%"
   caption="Copy and save the API Key"
 />
 
@@ -118,7 +118,7 @@ TTNv3 supports TLS server authentication and client tokens, which require trust 
 - **Client Token**: Copied API Keys
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f11SolarSolution_LNS_TTN9.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f11SolarSolution_LNS_TTN9.png"
   width="100%"
   caption="Configure the gateway"
 />
@@ -126,7 +126,7 @@ TTNv3 supports TLS server authentication and client tokens, which require trust 
 2. After saving the changes, return to the TTN gateway interface, and navigate to the **Gateways** tab to confirm that the gateway is now connected to TTNv3 as a Basics Station.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f12SolarSolution_LNS_TTN10.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f12SolarSolution_LNS_TTN10.png"
   width="100%"
   caption="Gateway connected successfully"
 />
@@ -136,15 +136,15 @@ TTNv3 supports TLS server authentication and client tokens, which require trust 
 1. Return to the TTNv3 homepage and select **Create an application** to add a node.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f13SolarSolution_LNS_TTN11.png"
-  width="50%"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f13SolarSolution_LNS_TTN11.png"
+  width="70%"
   caption="Select Create application"
 />
 
 2. Click **+ Create application** to initiate the creation of a node.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f14SolarSolution_LNS_TTN12.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f14SolarSolution_LNS_TTN12.png"
   width="100%"
   caption="Create a new application"
 />
@@ -152,14 +152,14 @@ TTNv3 supports TLS server authentication and client tokens, which require trust 
 3. Enter the desired **Application ID** in the provided field, then click on **Create application**.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f15SolarSolution_LNS_TTN13.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f15SolarSolution_LNS_TTN13.png"
   width="100%"
   caption="Enter the application ID"
 />
 4. Click on the **+Register end device** button to add a new end device to the application.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f16SolarSolution_LNS_TTN14.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f16SolarSolution_LNS_TTN14.png"
   width="100%"
   caption="Add the end device"
 />
@@ -167,7 +167,7 @@ TTNv3 supports TLS server authentication and client tokens, which require trust 
 5. Set the parameters of the end device, as shown in **Figure 16**.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f17SolarSolution_LNS_TTN15.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f17SolarSolution_LNS_TTN15.png"
   width="100%"
   caption="End device parameters"
 />
@@ -181,7 +181,7 @@ Ensure that the three parameters - **JoinEUI**, **DevEUI**, and **AppKey** - are
 6. After completing the settings, return to the WisToolBox app, and click **JOIN NETWORK** to send the end device network access request.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f18SolarSolution_LNS_TTN16.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f18SolarSolution_LNS_TTN16.png"
   width="25%"
   caption="Sending end device network join request"
 />
@@ -189,7 +189,7 @@ Ensure that the three parameters - **JoinEUI**, **DevEUI**, and **AppKey** - are
 7. As shown in **Figure 18**, the Sensor Hub has successfully joined the TTNv3 network server.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f19SolarSolution_LNS_TTN17.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f19SolarSolution_LNS_TTN17.png"
   width="100%"
   caption="Successfully joined the TTNv3 network server"
 />
@@ -203,7 +203,7 @@ Datacake is a versatile IoT platform. It offers a range of features tailored for
 1. In the TTN console, navigate to **Integrations** on the sidebar, proceed to the **Webhooks** section, and then click **+Add Webhooks** to set up an integration.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f20SolarSolution_LNS_TTN18.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f20SolarSolution_LNS_TTN18.png"
   width="100%"
   caption="Adding an integration"
 />
@@ -211,7 +211,7 @@ Datacake is a versatile IoT platform. It offers a range of features tailored for
 2. From the list of webhook templates, select the **Datacake** template.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f21SolarSolution_LNS_TTN19.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f21SolarSolution_LNS_TTN19.png"
   width="100%"
   caption="Select the Datacake template"
 />
@@ -219,7 +219,7 @@ Datacake is a versatile IoT platform. It offers a range of features tailored for
 3. Generate an API key for webhook authentication on Datacake. To get started, register a [Datacake](https://datacake.co/) account, and then log in.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f22SolarSolution_LNS_DC1.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f22SolarSolution_LNS_DC1.png"
   width="100%"
   caption="Log in to the Datacake IoT platform"
 />
@@ -227,7 +227,7 @@ Datacake is a versatile IoT platform. It offers a range of features tailored for
 4. Navigate to the Datacake workspace. Select **Members** on the sidebar, and switch to the **API Users** tab, then click the **Add API User** button.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f23SolarSolution_LNS_DC2.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f23SolarSolution_LNS_DC2.png"
   width="100%"
   caption="Add API User"
 />
@@ -235,7 +235,7 @@ Datacake is a versatile IoT platform. It offers a range of features tailored for
 5. Enter the name of the API User, for instance, **TTS API**. Set the relevant parameters accordingly and click **Save** to finalize the creation process.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f24SolarSolution_LNS_DC3.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f24SolarSolution_LNS_DC3.png"
   width="50%"
   caption="Set Parameters"
 />
@@ -243,7 +243,7 @@ Datacake is a versatile IoT platform. It offers a range of features tailored for
 6. Click the **Copy** button to copy the generated Datacake API Token.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f25SolarSolution_LNS_DC4.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f25SolarSolution_LNS_DC4.png"
   width="100%"
   caption="Copy the generated Datacake API Token"
 />
@@ -251,7 +251,7 @@ Datacake is a versatile IoT platform. It offers a range of features tailored for
 7. Back on the TTN website, enter **sensorhub** in the **Webhook ID** field (as an example), and paste the Datacake API Token you previously copied into the **Token** field. Click the **Create Datacake Webhook** button to generate the Datacake Webhook.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f26SolarSolution_LNS_DC5.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f26SolarSolution_LNS_DC5.png"
   width="100%"
   caption="Create the Datacake Webhook"
 />
@@ -261,7 +261,7 @@ Datacake is a versatile IoT platform. It offers a range of features tailored for
 1. To add a new device, select **Devices** in the sidebar and click the **+Add Device** button.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f27SolarSolution_LNS_DC6.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f27SolarSolution_LNS_DC6.png"
   width="100%"
   caption="Add a Device"
 />
@@ -269,7 +269,7 @@ Datacake is a versatile IoT platform. It offers a range of features tailored for
 2. Choose **LoRaWAN** from the options and click **Next** to proceed.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f28SolarSolution_LNS_DC7.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f28SolarSolution_LNS_DC7.png"
   width="50%"
   caption="Choose LoRaWAN connectivity"
 />
@@ -277,7 +277,7 @@ Datacake is a versatile IoT platform. It offers a range of features tailored for
 3. As the Sensor Hub is a new device, there is no pre-existing template. Create a template by clicking **New Product**, enter the **Product Name**, and click **Next** to proceed.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f29SolarSolution_LNS_DC8.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f29SolarSolution_LNS_DC8.png"
   width="50%"
   caption="Create a New Product"
 />
@@ -285,7 +285,7 @@ Datacake is a versatile IoT platform. It offers a range of features tailored for
 4. Choose a network server for your device. In this guide, select **The Things Stack V3**, then click **Next** to continue.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f30SolarSolution_LNS_DC9.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f30SolarSolution_LNS_DC9.png"
   width="50%"
   caption="Select the Things Stack V3"
 />
@@ -293,7 +293,7 @@ Datacake is a versatile IoT platform. It offers a range of features tailored for
 5. In the **Step 3 Devices** tab, enter the device **DEVEUI** and **NAME** fields, and click **Next** to continue.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f31SolarSolution_LNS_DC10.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f31SolarSolution_LNS_DC10.png"
   width="50%"
   caption="Add DEVEUI and Name"
 />
@@ -301,7 +301,7 @@ Datacake is a versatile IoT platform. It offers a range of features tailored for
 6. In **Step 4 Plan**, select the preferred subscription plan, and click **Add 1 device** to add the device. For this example, choose **Free**.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f32SolarSolution_LNS_DC11.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f32SolarSolution_LNS_DC11.png"
   width="50%"
   caption="Select a subscription plan"
 />
@@ -309,7 +309,7 @@ Datacake is a versatile IoT platform. It offers a range of features tailored for
 7. The registered devices can now be viewed on the **Devices** tab.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f33SolarSolution_LNS_DC12.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f33SolarSolution_LNS_DC12.png"
   width="100%"
   caption="Registered device"
 />
@@ -319,13 +319,13 @@ Datacake is a versatile IoT platform. It offers a range of features tailored for
 1. Click the successfully registered device and go to the **Configuration** tab. Scroll down to the **Payload Decoder** field, then copy and save the decoder code.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f34SolarSolution_LNS_DC13.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f34SolarSolution_LNS_DC13.png"
   width="100%"
   caption="Configuration tab"
 />
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f35SolarSolution_LNS_DC14.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f35SolarSolution_LNS_DC14.png"
   width="100%"
   caption="Decoder code"
 />
@@ -388,7 +388,7 @@ function parseTriple(str, base) {
 2. Displace the menu bar to the **+Add Field** section and click **+Add Field**.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f36SolarSolution_LNS_DC15.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f36SolarSolution_LNS_DC15.png"
   width="100%"
   caption="Add Field"
 />
@@ -396,7 +396,7 @@ function parseTriple(str, base) {
 3. The **Add Field** window appears. Fill out the fields shown in **Figure 36** to configure the stored data in the device.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f37SolarSolution_LNS_DC16.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f37SolarSolution_LNS_DC16.png"
   width="50%"
   caption="Configuration fields"
 />
@@ -411,7 +411,7 @@ function parseTriple(str, base) {
 3. When completed, it will look the same, as shown in **Figure 37**.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f38SolarSolution_LNS_DC17.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f38SolarSolution_LNS_DC17.png"
   width="100%"
   caption="Successfully added fields"
 />
@@ -421,7 +421,7 @@ function parseTriple(str, base) {
 1. To create a dashboard, toggle the **edit mode** switch on the **Dashboard** tab of the device in Datacake.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f39SolarSolution_LNS_DC18.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f39SolarSolution_LNS_DC18.png"
   width="100%"
   caption="Turn on the edit mode switch"
 />
@@ -429,7 +429,7 @@ function parseTriple(str, base) {
 2. Click **+Add Widget** to include a visualization widget.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f40SolarSolution_LNS_DC19.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f40SolarSolution_LNS_DC19.png"
   width="100%"
   caption="Add visualization widget"
 />
@@ -437,7 +437,7 @@ function parseTriple(str, base) {
 3. Select **Value** from the menu to create a new dashboard.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f41SolarSolution_LNS_DC20.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f41SolarSolution_LNS_DC20.png"
   width="50%"
   caption="Select Value to create a new dashboard"
 />
@@ -449,7 +449,7 @@ You can select various types of widgets to accommodate different data formats.
 4. In the **Title** field under the **Basics** tab, name the widget, for example, *Pyranometer*.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f43SolarSolution_LNS_DC22.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f43SolarSolution_LNS_DC22.png"
   width="50%"
   caption="Name the Widget"
 />
@@ -457,7 +457,7 @@ You can select various types of widgets to accommodate different data formats.
 5. Under the **Data** tab, click the Field dropdown arrow, select **Pyranometer**, and set the unit to **W/m2**.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f42SolarSolution_LNS_DC21.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f42SolarSolution_LNS_DC21.png"
   width="50%"
   caption="Setting Parameters"
 />
@@ -465,7 +465,7 @@ You can select various types of widgets to accommodate different data formats.
 6. Under the **Gauge** tab, select the gauge type and color, set the range of values for the widget, and then click **Save**.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f44SolarSolution_LNS_DC23.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f44SolarSolution_LNS_DC23.png"
   width="50%"
   caption="Set Gauge"
 />
@@ -473,7 +473,7 @@ You can select various types of widgets to accommodate different data formats.
 7. When you finish adding the widgets, turn off the **edit mode** switch to save the edits.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f45SolarSolution_LNS_DC24.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f45SolarSolution_LNS_DC24.png"
   width="100%"
   caption="Added Widget"
 />
@@ -487,8 +487,8 @@ The built-in network server of the RAK gateway provides MQTT and HTTP integratio
 This section will use the public MQTT broker integration as an example to demonstrate how to use the built-in network server to create a visualization application on ThingsBoard.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f46Built-inServe ApplicationFlow.png"
-  width="100%"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f46Built-inServe ApplicationFlow.png"
+  width="80%"
   caption="Gateway built-in NS application scenario"
 />
 
@@ -497,15 +497,15 @@ This section will use the public MQTT broker integration as an example to demons
 1. Log in to [ThingsBoard.](https://thingsboard.cloud/login) If you don't have an account yet, [create one](https://thingsboard.cloud/signup) before proceeding.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f47SolarSolution_LNS_TB1.png"
-  width="50%"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f47SolarSolution_LNS_TB1.png"
+  width="40%"
   caption="ThingsBoard authentication page"
 />
 
 2. After successfully logging in, you will be directed to the ThingsBoard homepage.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f48SolarSolution_LNS_TB2.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f48SolarSolution_LNS_TB2.png"
   width="100%"
   caption="ThingsBoard Homepage"
 />
@@ -513,7 +513,7 @@ This section will use the public MQTT broker integration as an example to demons
 3. Navigate to the **Integration center > Data converter** menu bar to create a data converter for the uplink.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f49SolarSolution_LNS_TB3png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f49SolarSolution_LNS_TB3png"
   width="100%"
   caption="Create a Data Converter"
 />
@@ -521,14 +521,14 @@ This section will use the public MQTT broker integration as an example to demons
 4. Click on the **Add Data Converter** icon and choose the **Create new converter** option.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f50SolarSolution_LNS_TB4.png"
-  width="50%"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f50SolarSolution_LNS_TB4.png"
+  width="40%"
   caption="Create a new Converter"
 />
 
 5. Enter the name of the decoder in the **Name** field (for example, *Uplink decoder*), leave the **Type** field as **Uplink**, and select the **JavaScript** option.
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f51SolarSolution_LNS_TB5.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f51SolarSolution_LNS_TB5.png"
   width="50%"
   caption="Add the decoder code"
 />
@@ -584,7 +584,7 @@ In the above code, the word `pyranometer` marked is the device ID, which is the 
 7. Navigate to the **Integration Center > Integrations** menu and click the **Add Integration** icon to add the MQTT integration.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f52SolarSolution_LNS_TB6.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f52SolarSolution_LNS_TB6.png"
   width="100%"
   caption="Add the MQTT Integration"
 />
@@ -592,7 +592,7 @@ In the above code, the word `pyranometer` marked is the device ID, which is the 
 8. Enter the name of the integration (for example, *MQTT Integration*) in the **Name** field and select **MQTT** in the Type drop-down menu. Click **Next** to continue.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f53SolarSolution_LNS_TB7.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f53SolarSolution_LNS_TB7.png"
   width="50%"
   caption="Basic Settings"
 />
@@ -600,7 +600,7 @@ In the above code, the word `pyranometer` marked is the device ID, which is the 
 9. In the **Uplink data converter** options, click **Select existing** to choose the previously created decoder (**Uplink Decoder**), then click **Next**.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f54SolarSolution_LNS_TB8.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f54SolarSolution_LNS_TB8.png"
   width="50%"
   caption="Select the created decoder"
 />
@@ -608,7 +608,7 @@ In the above code, the word `pyranometer` marked is the device ID, which is the 
 10. In the **Downlink data converter** interface, no configuration is necessary. Simply click **Skip** to bypass this setup.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f55SolarSolution_LNS_TB9.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f55SolarSolution_LNS_TB9.png"
   width="50%"
   caption="WisGate OS Web Management Platform"
 />
@@ -619,7 +619,7 @@ In the above code, the word `pyranometer` marked is the device ID, which is the 
 12. Enter the address `broker.hivemq.com` in the **Host** field, with the port number `1883`. Click the **Add topic filter** button to configure the subscription topic:
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f56SolarSolution_LNS_TB10.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f56SolarSolution_LNS_TB10.png"
   width="50%"
   caption="WisGate OS Web Management Platform"
 />
@@ -642,7 +642,7 @@ The values in the subscription topic must be all lowercase. For example, *applic
 :::
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f56-1SolarSolution_LNS_TB10-1.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f56-1SolarSolution_LNS_TB10-1.png"
   width="50%"
   caption="WisGate OS Web Management Platform"
 />
@@ -650,7 +650,7 @@ The values in the subscription topic must be all lowercase. For example, *applic
 13.  After configuring the details, click on **Add** to save and complete the settings.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f56-2SolarSolution_LNS_TB10-2.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f56-2SolarSolution_LNS_TB10-2.png"
   width="100%"
   caption="WisGate OS Web Management Platform"
 />
@@ -662,15 +662,15 @@ This section will use [RAK7268 V2 WisGate Edge Lite 2](https://store.rakwireless
 1. To access the gateway web management platform, refer to the [WisGateOS V2 User Manual](https://docs.rakwireless.com.cn/Product-Categories/Software-APIs-and-Libraries/WisGateOS-2/Overview/) for details.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f57SolarSolution_LNS_TB11.png"
-  width="50%"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f57SolarSolution_LNS_TB11.png"
+  width="80%"
   caption="WisGate OS Web Management Platform"
 />
 
 2. After successfully logging in, navigate to the **LoRa®** menu in the left navigation tree. Set the **Work mode** of the gateway to **Built-in network server**.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f58SolarSolution_LNS_TB12.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f58SolarSolution_LNS_TB12.png"
   width="100%"
   caption="Set the Work mode of the gateway"
 />
@@ -678,7 +678,7 @@ This section will use [RAK7268 V2 WisGate Edge Lite 2](https://store.rakwireless
 3. Once done with the setting, click the **Applications** tab, then the **Add application** button. You can also click **add one now** text link to add a new application.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f59SolarSolution_LNS_TB13.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f59SolarSolution_LNS_TB13.png"
   width="100%"
   caption="Applications Tab"
 />
@@ -689,16 +689,16 @@ This section will use [RAK7268 V2 WisGate Edge Lite 2](https://store.rakwireless
 
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f60SolarSolution_LNS_TB14.png"
-  width="50%"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f60SolarSolution_LNS_TB14.png"
+  width="60%"
   caption="Unified Application Key"
 />
 
 - After enabling the Auto Add Device option, configure the **Application EUI option**. The value needs to be consistent with the node value. Once you have verified the application EUI and key, the device will be added automatically to the application.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f61SolarSolution_LNS_TB15.png"
-  width="50%"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f61SolarSolution_LNS_TB15.png"
+  width="60%"
   caption="Auto Add Device"
 />
 
@@ -709,8 +709,8 @@ You can obtain the values by either querying the end device or generating it aut
 - **Separate Application keys**: Each device has its own application key. Add the key when registering the device.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f62SolarSolution_LNS_TB16.png"
-  width="50%"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f62SolarSolution_LNS_TB16.png"
+  width="60%"
   caption="Add Application Key"
 />
 
@@ -719,7 +719,7 @@ You can obtain the values by either querying the end device or generating it aut
 6. In the application list, locate the newly created application and navigate to the **End devices** tab. If you've enabled the **Auto Add Device** function, the device will be automatically registered upon the addition request.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f63SolarSolution_LNS_TB17.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f63SolarSolution_LNS_TB17.png"
   width="100%"
   caption="End Devices Tab"
 />
@@ -736,16 +736,16 @@ You can obtain the values by either querying the end device or generating it aut
 - **LoRaWAN MAC Version:** The protocol version (V1.0.3) of the node.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f64SolarSolution_LNS_TB18.png"
-  width="50%"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f64SolarSolution_LNS_TB18.png"
+  width="60%"
   caption="Add new end devices"
 />
 
 8. After completing, click **Add end devices** to proceed to the next step.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f64-1SolarSolution_LNS_TB18-1.png"
-  width="50%"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f64-1SolarSolution_LNS_TB18-1.png"
+  width="70%"
   caption="Add the device to the device list"
 />
 
@@ -758,15 +758,15 @@ You can obtain the values by either querying the end device or generating it aut
 :::
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f65SolarSolution_LNS_TB19.png"
-  width="50%"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f65SolarSolution_LNS_TB19.png"
+  width="70%"
   caption="Complete the end device addition"
 />
 
 10. Click the Add button to confirm adding the device.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f66SolarSolution_LNS_TB20.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f66SolarSolution_LNS_TB20.png"
   width="50%"
   caption="Confirm to add the end device"
 />
@@ -778,8 +778,8 @@ You can obtain the values by either querying the end device or generating it aut
 For specific configuration on how to connect SensorHub to the server, please refer to **SensorHub Network Configuration > LoRaWAN Application Scenario**. Once completed, the device will join the network. As shown in **Figure 69**, the end device SensorHub has successfully connected to the gateway's built-in server.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f67SolarSolution_LNS_TB21.png"
-  width="100%"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f67SolarSolution_LNS_TB21.png"
+  width="80%"
   caption="End device  SensoHub has been connected"
 />
 
@@ -790,7 +790,7 @@ For specific configuration on how to connect SensorHub to the server, please ref
 2. Enable the **Enable Integration Interface** option and select **Generic MQTT** as the **Integration mode**.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f68SolarSolution_LNS_TB22.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f68SolarSolution_LNS_TB22.png"
   width="50%"
   caption="Set up MQTT integration"
 />
@@ -800,7 +800,7 @@ For specific configuration on how to connect SensorHub to the server, please ref
 4. After the device has joined and has been sending uplink data, check the uplink data in **ThingsBoard > Integrations > Your Integration > Events**.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f69SolarSolution_LNS_TB23.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f69SolarSolution_LNS_TB23.png"
   width="100%"
   caption="View the gateway uplink data"
 />
@@ -810,7 +810,7 @@ For specific configuration on how to connect SensorHub to the server, please ref
 1. After creating the data converter, integrating, and obtaining some data in the **Event** tab, check the automatically created devices based on the decoder in the **Entities > Devices > Groups** tab.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f70SolarSolution_LNS_TB24.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f70SolarSolution_LNS_TB24.png"
   width="100%"
   caption="Check the device"
 />
@@ -818,7 +818,7 @@ For specific configuration on how to connect SensorHub to the server, please ref
 2. Click the group named **All** in the **Device groups** menu to automatically create a decoder device.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f71SolarSolution_LNS_TB25.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f71SolarSolution_LNS_TB25.png"
   width="100%"
   caption="Automatically created decoder device"
 />
@@ -826,7 +826,7 @@ For specific configuration on how to connect SensorHub to the server, please ref
 3. Click the device, and navigate to the **Attributes** tab, and check on the node data.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f72SolarSolution_LNS_TB26.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f72SolarSolution_LNS_TB26.png"
   width="100%"
   caption="Node data"
 />
@@ -836,7 +836,7 @@ For specific configuration on how to connect SensorHub to the server, please ref
 5. On the next page, choose the desired widget for your data from the **Current bundle** drop-down menu. In this example, select **Outdoor Environment**, and then select the appropriate visualization chart for the *Pyranometer* by clicking the slide icon.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f74SolarSolution_LNS_TB28.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f74SolarSolution_LNS_TB28.png"
   width="100%"
   caption="Select Widget"
 />
@@ -846,7 +846,7 @@ For specific configuration on how to connect SensorHub to the server, please ref
 By default, the profile does not have a dashboard, so you need to select **Create new dashboard** and enter a name for the dashboard in the **New dashboard title** field, for example, *Sensor Hub*.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f75SolarSolution_LNS_TB29.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f75SolarSolution_LNS_TB29.png"
   width="100%"
   caption="Add data to Dashboard"
 />
@@ -854,7 +854,7 @@ By default, the profile does not have a dashboard, so you need to select **Creat
 7. After setting the name of the dashboard, click the **Add** button to add more widgets. Alternatively, check the **Open dashboard** option to automatically open the created dashboard after adding the widget.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f76SolarSolution_LNS_TB30.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f76SolarSolution_LNS_TB30.png"
   width="50%"
   caption="Enter the dashboard name"
 />
@@ -863,13 +863,13 @@ By default, the profile does not have a dashboard, so you need to select **Creat
 If the **Open** dashboard option is not selected, users can still easily view the added widgets via **Dashboard groups > All > [Group Name]**.
 :::
 
-8. Click the Edit mode icon ![Edit](/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/icon1.png) to set the appropriate name and unit for the Pyranometer. 
+8. Click the Edit mode icon <img src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/icon1.png" alt="Edit" style="width: 10%; vertical-align: middle;"> to set the appropriate name and unit for the Pyranometer. 
 
-9. Click the Edit widget icon ![edit2](/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/icon2.png) and complete the following setup steps:
+9. Click the Edit widget icon <img src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/icon2.png" alt="Edit" style="width: 4%; vertical-align: middle;"> and complete the following setup steps:
 
 - Select the Pyranometer unit in the **Value** drop-down menu; in this example, it's W/m².
 - Click the **Apply** button to apply the settings.
-- Click the exit icon ![close](/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/icon3.png) , and then click the save icon ![save](/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/icon4.png) to save the settings.
+- Click the exit icon <img src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/icon3.png" alt="Edit" style="width: 3%; vertical-align: middle;"> , and then click the save icon <img src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/icon4.png" alt="Edit" style="width: 7%; vertical-align: middle;"> to save the settings.
 
 :::tip 📝 NOTE:
 The ThingsBoard visualization dashboard editor allows you to adjust the size and shape of widgets by dragging the edges of the widgets in the Edit mode.
@@ -878,7 +878,7 @@ The ThingsBoard visualization dashboard editor allows you to adjust the size and
 If the above settings are correct, the final visualization widget on the Dashboard should resemble **Figure 78**.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f77SolarSolution_LNS_TB31.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f77SolarSolution_LNS_TB31.png"
   width="100%"
   caption="Dashboard created"
 />
@@ -890,7 +890,7 @@ If the above settings are correct, the final visualization widget on the Dashboa
 In the **Network Server and Visualization Configuration** section, the server in the example has been set as a public MQTT broker: `broker.hivemq.com`. Refer to the corresponding section for details. Users can also choose other brokers or servers, such as AWS IoT Core (optional), according to actual usage scenarios.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f79NB-IoTLTE-CAT-M1-Application-Scenari.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f79NB-IoTLTE-CAT-M1-Application-Scenari.png"
   width="100%"
   caption="NB-IoT/LTE CAT-M1 application scenario"
 />
@@ -906,7 +906,7 @@ To get started, create an account on the [official website](https://datacake.co/
 1. After logging in to your account, navigate to the **Devices** tab and click **+ Add Device** to proceed with adding the Sensor Hub end device.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f80SolarSolution_NBI1.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f80SolarSolution_NBI1.png"
   width="100%"
   caption="Devices Page"
 />
@@ -914,7 +914,7 @@ To get started, create an account on the [official website](https://datacake.co/
 2. Select the **API** option and click **Next** to proceed.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f82SolarSolution_NBI3.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f82SolarSolution_NBI3.png"
   width="50%"
   caption="Select API"
 />
@@ -922,7 +922,7 @@ To get started, create an account on the [official website](https://datacake.co/
 3. As the device is new and there's no ready-made template, choose **New Product** from the **Datacake Product** options. Enter the device name in the **Product Name** field, then click **Next** to proceed.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f83SolarSolution_NBI4.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f83SolarSolution_NBI4.png"
   width="50%"
   caption="Select New Product"
 />
@@ -930,7 +930,7 @@ To get started, create an account on the [official website](https://datacake.co/
 4. The **SERIAL NUMBER** field can be left blank. Datacake will randomly generate a serial number for the device, then click **Next**.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f84SolarSolution_NBI5.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f84SolarSolution_NBI5.png"
   width="50%"
   caption="Add Devices"
 />
@@ -938,7 +938,7 @@ To get started, create an account on the [official website](https://datacake.co/
 5. Select the preferred subscription plan, then click **Add 1 device**. For this example, choose **Free**.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f85SolarSolution_NBI6.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f85SolarSolution_NBI6.png"
   width="50%"
   caption="Select a subscription plan"
 />
@@ -946,7 +946,7 @@ To get started, create an account on the [official website](https://datacake.co/
 6. The registered device can now be viewed on the **Devices** tab.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f86SolarSolution_NBI7.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f86SolarSolution_NBI7.png"
   width="100%"
   caption="Registered device"
 />
@@ -956,7 +956,7 @@ To get started, create an account on the [official website](https://datacake.co/
 1. Click the name of the device you just created in the list to enter the interface, then select the **Configuration** tab.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f88SolarSolution_NBI9.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f88SolarSolution_NBI9.png"
   width="100%"
   caption="Configuration tab"
 />
@@ -964,7 +964,7 @@ To get started, create an account on the [official website](https://datacake.co/
 2. Scroll down to the **API Configuration** option and copy the **Serial number**. Save it locally for later use.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f89SolarSolution_NBI10.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f89SolarSolution_NBI10.png"
   width="100%"
   caption="Copy the serial number"
 />
@@ -973,7 +973,7 @@ To get started, create an account on the [official website](https://datacake.co/
 4. Click **+Add new MQTT server** and configure the relevant parameters. 
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f90SolarSolution_NBI11.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f90SolarSolution_NBI11.png"
   width="100%"
   caption="Configure the external MQTT Broker"
 />
@@ -981,7 +981,7 @@ To get started, create an account on the [official website](https://datacake.co/
 5. Fill in the relevant information based on the actual server used, then click **Test Connection** to verify whether Datacake can successfully connect to the **MQTT Broker**. The information shown in **Figure 89** is just an example.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f91SolarSolution_NBI12.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f91SolarSolution_NBI12.png"
   width="50%"
   caption="Configure the relevant parameters"
 />
@@ -993,7 +993,7 @@ If SSL/TLS encryption and authentication are set for more secure communication, 
  6. If the connection is successful, you will see the message **Connection successful**. Click **Add MQTT Server** to complete the addition of the MQTT server.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f92SolarSolution_NBI13.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f92SolarSolution_NBI13.png"
   width="100%"
   caption="Connection established successfully"
 />
@@ -1001,7 +1001,7 @@ If SSL/TLS encryption and authentication are set for more secure communication, 
 7. After successfully adding the MQTT server, click on **+Add Uplink Decoder** to add a decoder.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f93SolarSolution_NBI14.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f93SolarSolution_NBI14.png"
   width="100%"
   caption="Add MQTT Server"
 />
@@ -1009,7 +1009,7 @@ If SSL/TLS encryption and authentication are set for more secure communication, 
 8. A new window will appear, and fill in the fields according to your project.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f94SolarSolution_NBI15.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f94SolarSolution_NBI15.png"
   width="50%"
   caption="Add Uplink Decoder"
 />
@@ -1041,7 +1041,7 @@ In the above code, make sure that the parameter **serial_number** (device: `3778
 10. In the **Fields** option, click **+Add Field** to show the monitoring values of the devices. Each device can create a certain number of fields, also known as a **_data points_**.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f95SolarSolution_NBI16.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f95SolarSolution_NBI16.png"
   width="100%"
   caption="Set the related parameters of the field"
 />
@@ -1049,7 +1049,7 @@ In the above code, make sure that the parameter **serial_number** (device: `3778
 11. Set the necessary parameters of the Fields. For **Fields** with multiple data points, add them one by one. Once done, click **Add Field**.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f95SolarSolution_NBI17.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f95SolarSolution_NBI17.png"
   width="50%"
   caption="Set the related parameters of the field"
 />
@@ -1061,7 +1061,7 @@ The **Identifier** field will be automatically filled based on the name.
 12. Once the uplink data is received, the **Current value** column in the **Fields** list will display the current monitoring value from the sensor.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f96SolarSolution_NBI18.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f96SolarSolution_NBI18.png"
   width="100%"
   caption="Added sensor monitoring values"
 />
@@ -1074,7 +1074,7 @@ The **Identifier** field will be automatically filled based on the name.
 2. Click on the **+ Add Widget** button to add a widget for visualizing data.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f97SolarSolution_NBI19.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f97SolarSolution_NBI19.png"
   width="100%"
   caption="Open the edit mode"
 />
@@ -1082,7 +1082,7 @@ The **Identifier** field will be automatically filled based on the name.
 3. Choose what type of widgets you want to display. For this example, select **Value** to visualize the Solar Radiation values. 
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f98SolarSolution_NBI20.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f98SolarSolution_NBI20.png"
   width="50%"
   caption="Select and add widgets for visualizing data"
 />
@@ -1090,7 +1090,7 @@ The **Identifier** field will be automatically filled based on the name.
 4. Click on the **Data** tab. Choose the field for visualization from the **Field** options and set the unit of the field, which is **W/m2** in this example.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f99SolarSolution_NBI21.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f99SolarSolution_NBI21.png"
   width="50%"
   caption="Select the visualization data field"
 />
@@ -1098,7 +1098,7 @@ The **Identifier** field will be automatically filled based on the name.
 5. After configuring the widget, click **Save**. Once done with the dashboard configuration, turn off the **edit mode** switch to save the settings.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/supported-lora-network-servers/f100SolarSolution_NBI22.png"
+  src="/assets/images/wisnode/solar-radiation-monitoring/supported-lora-network-servers/f100SolarSolution_NBI22.png"
   width="100%"
   caption="Solar Radiation data visualization"
 />

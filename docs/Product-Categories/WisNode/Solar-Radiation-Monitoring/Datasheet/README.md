@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your Sensor Hub Solar Radiation solution to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisnode/solar-radiation-solution/SolarSolution.png
+rak_img: /assets/images/wisnode/solar-radiation-monitoring/SolarSolution.png
 prev: ../Supported-LoRa-Network-Servers/
 next: false
 tags:
@@ -137,22 +137,22 @@ If you need detailed information about the Sensor Hub, including technical speci
 As illustrated in Figure 2, the RAK9154 battery system comprises two sets of three 2600&nbsp;mAh battery units connected in series. The system also incorporates one (1) BMS board integrated with an 18 V input solar charger.The RAK9154 battery system is depicted in Figure 2. This battery system comprises two sets of three 2600mAh battery cells connected in series, accompanied by a BMS board that integrates an 18&nbsp;V input solar charger.
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/datasheet/f2SolarSolution_dimensions.png"
-  width="80%"
+  src="/assets/images/wisnode/solar-radiation-monitoring/datasheet/f2SolarSolution_dimensions.png"
+  width="60%"
   caption="RAK9154 battery system"
 />
 
-#### Electrical Characteristics**
+#### Electrical Characteristics
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/datasheet/f3SolarSolution_bdiagram1.png"
-  width="80%"
+  src="/assets/images/wisnode/solar-radiation-monitoring/datasheet/f3SolarSolution_bdiagram1.png"
+  width="60%"
   caption="RAK9154 electrical schematic diagram"
 />
 
 <rk-img
-  src="/assets/images/wisnode/solar-radiation-solution/datasheet/f4SolarSolution_bdiagram2.png"
-  width="80%"
+  src="/assets/images/wisnode/solar-radiation-monitoring/datasheet/f4SolarSolution_bdiagram2.png"
+  width="60%"
   caption="System circuit schematic diagram"
 />
 
