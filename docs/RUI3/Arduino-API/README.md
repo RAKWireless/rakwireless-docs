@@ -42,12 +42,12 @@ enum RAK_SERIAL_MODE
 enum RAK_ADC_RESOLUTION
 ```
 
-| Enumerator               |                   |
-| ------------------------ | ----------------- |
-| RAK_ADC_RESOLUTION_8BIT  | 8 bit resolution  |
-| RAK_ADC_RESOLUTION_10BIT | 10 bit resolution |
-| RAK_ADC_RESOLUTION_12BIT | 12 bit resolution |
-| RAK_ADC_RESOLUTION_14BIT | 14 bit resolution |
+| Enumerator               |                        |
+| ------------------------ | ---------------------- |
+| RAK_ADC_RESOLUTION_8BIT  | 8&nbsp;bit resolution  |
+| RAK_ADC_RESOLUTION_10BIT | 10&nbsp;bit resolution |
+| RAK_ADC_RESOLUTION_12BIT | 12&nbsp;bit resolution |
+| RAK_ADC_RESOLUTION_14BIT | 14&nbsp;bit resolution |
 
 
 
@@ -57,13 +57,13 @@ enum RAK_ADC_RESOLUTION
 enum RAK_ADC_MODE
 ```
 
-| Enumerator           |                                         |
-| -------------------- | --------------------------------------- |
-| RAK_ADC_MODE_DEFAULT | default range which depends on platform |
-| RAK_ADC_MODE_3_0     | maximum 3.0V                            |
-| RAK_ADC_MODE_2_4     | maximum 2.4V                            |
-| RAK_ADC_MODE_1_8     | maximum 1.8V                            |
-| RAK_ADC_MODE_1_2     | maximum 1.2V                            |
+| Enumerator           |                                               |
+| -------------------- | --------------------------------------------- |
+| RAK_ADC_MODE_DEFAULT | default range which depends on platform       |
+| RAK_ADC_MODE_3_0     | maximum 3.0&nbsp;V                            |
+| RAK_ADC_MODE_2_4     | maximum 2.4&nbsp;V                            |
+| RAK_ADC_MODE_1_8     | maximum 1.8&nbsp;V                            |
+| RAK_ADC_MODE_1_2     | maximum 1.2&nbsp;V                            |
 
 
 #### RAK\_PWM\_RESOLUTION
@@ -72,12 +72,12 @@ enum RAK_ADC_MODE
 enum RAK_PWM_RESOLUTION
 ```
 
-| Enumerator               |                   |
-| ------------------------ | ----------------- |
-| RAK_PWM_RESOLUTION_8BIT  | 8 bit resolution  |
-| RAK_PWM_RESOLUTION_10BIT | 10 bit resolution |
-| RAK_PWM_RESOLUTION_12BIT | 12 bit resolution |
-| RAK_PWM_RESOLUTION_14BIT | 14 bit resolution |
+| Enumerator               |                        |
+| ------------------------ | ---------------------- |
+| RAK_PWM_RESOLUTION_8BIT  | 8&nbsp;bit resolution  |
+| RAK_PWM_RESOLUTION_10BIT | 10&nbsp;bit resolution |
+| RAK_PWM_RESOLUTION_12BIT | 12&nbsp;bit resolution |
+| RAK_PWM_RESOLUTION_14BIT | 14&nbsp;bit resolution |
 
 ## Serial
 
@@ -293,7 +293,7 @@ Serial.available();
 
 | **Function** | `virtual int available(void)`                                                        |
 | ------------ | ------------------------------------------------------------------------------------ |
-| **Returns**  | the number of bytes available for reading from the specified serial port (Type: int) |
+| **Returns**  | The number of bytes available for reading from the specified serial port (Type: int) |
 
 ::: details Click to View Example
 ```c{7}
@@ -419,7 +419,7 @@ Serial.print(val,format);
 | **Function**   | `size_t print(long, int=DEC)`                                                              |
 | -------------- | ------------------------------------------------------------------------------------------ |
 | **Parameters** | **val** - the value to print, allows any data type                                         |
-| **Returns**    | returns the number of bytes written, though reading that number is optional (Type: size_t) |
+| **Returns**    | Returns the number of bytes written, though reading that number is optional (Type: size_t) |
 
 ::: details Click to View Example
 ```c{7-19}
@@ -482,7 +482,7 @@ Serial.print(val,format);
 | **Function**   | `size_t println(int, int=DEC)`                                                             |
 | -------------- | ------------------------------------------------------------------------------------------ |
 | **Parameters** | **val** - the value to print, allows any data type                                         |
-| **Returns**    | returns the number of bytes written, though reading that number is optional (Type: size_t) |
+| **Returns**    | Returns the number of bytes written, though reading that number is optional (Type: size_t) |
 
 ::: details Click to View Example
 ```c{13-17}
@@ -520,7 +520,7 @@ Serial.printf(val);
 | **Function**   | `size_t printf(const char * val,	...)`                                                     |
 | -------------- | ------------------------------------------------------------------------------------------ |
 | **Parameters** | **val**                                                                                    |
-| **Returns**    | returns the number of bytes written, though reading that number is optional (Type: size_t) |
+| **Returns**    | Returns the number of bytes written, though reading that number is optional (Type: size_t) |
 
 ::: details Click to View Example
 ```c{10}
@@ -1110,7 +1110,7 @@ receivedVal16 = SPI.transfer16(val16)
 | **Function**   | `uint16_t transfer16	(uint16_t data)`                       |
 | -------------- | ----------------------------------------------------------- |
 | **Parameters** | **val16** - the two bytes variable to send out over the bus |
-| **Returns**    | the received data                                           |
+| **Returns**    | The received data                                           |
 
 
 ### transfer()
@@ -1129,7 +1129,7 @@ SPI.transfer(buffer, size)
 | **Function**   | `void transfer(void* buf, size_t count)`                                                          |
 | -------------- | ------------------------------------------------------------------------------------------------- |
 | **Parameters** | **val** - the byte to send out over the bus <br> **buffer** - the array of data to be transferred |
-| **Returns**    | the  received data                                                                                |
+| **Returns**    | The received data                                                                                 |
 
 ### beginTransaction()
 
@@ -1404,7 +1404,7 @@ void loop() {
 
 ### shiftOut()
 
-Shifts out a byte of data one bit at a time. Starts from either the most (i.e. the leftmost) or least (rightmost) significant bit. Each bit is written in turn to a data pin, after which a clock pin is pulsed (taken high, then low) to indicate that the bit is available.
+Shifts out a byte of data one bit at a time. Starts from either the most (That it the leftmost) or least (rightmost) significant bit. Each bit is written in turn to a data pin, after which a clock pin is pulsed (taken high, then low) to indicate that the bit is available.
 
 ```c
 shiftOut(dataPin, clockPin, bitOrder, val);
@@ -1417,7 +1417,7 @@ shiftOut(dataPin, clockPin, bitOrder, val);
 
 ### shiftIn()
 
-Shifts in a byte of data one bit at a time. Starts from either the most (i.e. the leftmost) or least (rightmost) significant bit. For each bit, the clock pin is pulled high, the next bit is read from the data line, and then the clock pin is taken low.
+Shifts in a byte of data one bit at a time. Starts from either the most (That is the leftmost) or least (rightmost) significant bit. For each bit, the clock pin is pulled high, the next bit is read from the data line, and then the clock pin is taken low.
 
 ```c
 byte incoming = shiftIn(dataPin, clockPin, bitOrder);
@@ -1535,9 +1535,9 @@ Analyze if a char is alpha (that is a letter). Returns true if thisChar contains
 isAlpha(thisChar);
 ```
 
-| **Function**   | `boolean isAlpha(int thisChar)`                                                   |
-| -------------- | --------------------------------------------------------------------------------- |
-| **Parameters** | **thisChar**	variable(Type: char)                                                 |
+| **Function**   | `boolean isAlpha(int thisChar)`                                                    |
+| -------------- | ---------------------------------------------------------------------------------- |
+| **Parameters** | **thisChar**	variable(Type: char)                                                  |
 | **Returns**    | **TRUE**: The character is a letter<br> **FALSE**	: The character is not a letter |
 
 ::: details Click to View Example
@@ -1568,9 +1568,9 @@ Analyze if a char is Ascii. Returns true if thisChar contains an Ascii character
 isAscii(thisChar);
 ```
 
-| **Function**   | `boolean isAscii(int thisChar)`                                              |
-| -------------- | ---------------------------------------------------------------------------- |
-| **Parameters** | **thisChar**	variable(Type: char)                                            |
+| **Function**   | `boolean isAscii(int thisChar)`                                               |
+| -------------- | ----------------------------------------------------------------------------- |
+| **Parameters** | **thisChar**	variable(Type: char)                                             |
 | **Returns**    | **TRUE**: The character is Ascii <br> **FALSE**	: The character is not Ascii |
 
 
@@ -1863,7 +1863,7 @@ void loop() {
 
 ### isUpperCase()
 
-Analyze if a char is upper case (that is, a letter in upper case). Returns true if thisChar is upper case.
+Analyze if a char is upper case (that is a letter in upper case). Returns true if thisChar is upper case.
 
 ```c
 isUpperCase(thisChar);
@@ -2395,7 +2395,7 @@ analogReadResolution(bits);
 
 | **Function**   | `void analogReadResolution(uint8_t bits)`                                                                                                                                                                                                                                          |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Parameters** | **bits** - Determines the resolution (in bits) of the value returned by the `analogRead()` function. You can set this between 1 and 32. You can also set the resolutions higher than the supported 12 or 16 bits, but values returned by `analogRead()` will suffer approximation. |
+| **Parameters** | **bits** - Determines the resolution (in bits) of the value returned by the `analogRead()` function. You can set this between 1 and 32. You can also set the resolutions higher than the supported 12 or 16&nbsp;bits, but values returned by `analogRead()` will suffer approximation. |
 | **Returns**    | void                                                                                                                                                                                                                                                                               |
 
 ### analogWriteResolution()

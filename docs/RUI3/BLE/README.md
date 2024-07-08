@@ -239,7 +239,7 @@ If MAC is 6 bytes and x is passed as 2, the return value will be position [2] in
 | **Function**   | `char* get(uint8_t pos)`              |
 |----------------|---------------------------------------|
 | **Parameters** | **pos** - single byte, array location |
-| **Returns**    | the current BLE MAC Address           |
+| **Returns**    | The current BLE MAC Address           |
 
 
 
@@ -271,8 +271,8 @@ api.ble.settings.txPower.get()
 
 
 | **Function** | `int8_t get()`             |
-|--------------|----------------------------|
-| **Returns**  | the current transmit power |
+| ------------ | -------------------------- |
+| **Returns**  | The current transmit power |
 
 ### advertiseInterval
 
@@ -335,8 +335,8 @@ api.ble.settings.broadcastName.get()
 
 
 | **Function** | `char* get()`               |
-|--------------|-----------------------------|
-| **Returns**  | the current BLE Device Name |
+| ------------ | --------------------------- |
+| **Returns**  | The current BLE Device Name |
 
 
 ### RAKBleAdvertise
@@ -445,11 +445,11 @@ This API further specifies a specific iBeacon and use case. For example, this co
 api.ble.beacon.ibeacon.major.set(major_value)
 ```
 
-| **Function**      | `bool set(uint16_t major_value)`                     |
-|-------------------|------------------------------------------------------|
-| **Parameters**    | **major_value**  - set major (define 2 bytes)        |
-| **Returns**       | bool                                                 |
-| **Return Values** | **TRUE** for success SET <br> **FALSE** for SET fail |
+| **Function**      | `bool set(uint16_t major_value)`                          |
+| ----------------- | --------------------------------------------------------- |
+| **Parameters**    | **major_value**  - set major (define 2&nbsp;bytes)        |
+| **Returns**       | bool                                                      |
+| **Return Values** | **TRUE** for success SET <br> **FALSE** for SET fail      |
 
 
 #### minor
@@ -462,17 +462,17 @@ This API allows further subdivision of region or use case specified by the appli
 api.ble.beacon.ibeacon.minor.set(minor_value)
 ```
 
-| **Function**      | `bool set(uint16_t minor_value)`                     |
-|-------------------|------------------------------------------------------|
-| **Parameters**    | **minor_value**  - set minor (define 2 bytes)        |
-| **Returns**       | bool                                                 |
-| **Return Values** | **TRUE** for success SET <br> **FALSE** for SET fail |
+| **Function**      | `bool set(uint16_t minor_value)`                          |
+| ----------------- | --------------------------------------------------------- |
+| **Parameters**    | **minor_value**  - set minor (define 2&nbsp;bytes)        |
+| **Returns**       | bool                                                      |
+| **Return Values** | **TRUE** for success SET <br> **FALSE** for SET fail      |
 
 #### power
 
 ##### set()
 
-This API provides information about the measured power value expected at one (1) meter from the beacon.
+This API provides information about the measured power value expected at one (1)&nbsp;meter from the beacon.
 
 ```c
 api.ble.beacon.ibeacon.power.set(ibeacon_power)
@@ -487,17 +487,17 @@ api.ble.beacon.ibeacon.power.set(ibeacon_power)
 
 #### set()
 
-This API provides the developer to control all data for BLE Beacon advertising and allows function to support full 31 byte payload.
+This API provides the developer to control all data for BLE Beacon advertising and allows function to support full 31&nbsp;byte payload.
 
 ```c
 api.ble.beacon.custom.payload.set(cus_adv_data[], cus_adv_len)
 ```
 
-| **Function**      | `bool set(uint8_t cus_adv_data[], uint8_t cus_adv_len)`                                                                        |
-|-------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| **Parameters**    | **cus_adv_data[]** - set the advertising payload (MAX 31 bytes) <br> **cus_adv_len** - the number of bytes to advertising data |
-| **Returns**       | bool                                                                                                                           |
-| **Return Values** | **TRUE** for success SET <br> **FALSE** for SET fail                                                                           |
+| **Function**      | `bool set(uint8_t cus_adv_data[], uint8_t cus_adv_len)`                                                                             |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| **Parameters**    | **cus_adv_data[]** - set the advertising payload (Max 31&nbsp;bytes) <br> **cus_adv_len** - the number of bytes to advertising data |
+| **Returns**       | bool                                                                                                                                |
+| **Return Values** | **TRUE** for success SET <br> **FALSE** for SET fail                                                                                |
 
 ## BLE Scanner
 
@@ -555,10 +555,10 @@ This API provides developers to create a new BLE service and construct an instan
 ```c
 RAKBleService hrms = RAKBleService(service_uuid[])
 ```
-| **Function**   | `RAKBleService(uint8_t service_uuid[])`                                                             |
-|----------------|-----------------------------------------------------------------------------------------------------|
-| **Parameters** | **service_uuid[]** - create a 128-bit base UUID, and the 3rd and 4th byte means Service 16-bit UUID |
-| **Returns**    | void                                                                                                |
+| **Function**   | `RAKBleService(uint8_t service_uuid[])`                                                                  |
+| -------------- | -------------------------------------------------------------------------------------------------------- |
+| **Parameters** | **service_uuid[]** - create a 128-bit base UUID, and the 3rd and 4th&nbsp;byte means Service 16-bit UUID |
+| **Returns**    | void                                                                                                     |
 
 
 #### begin()
@@ -692,9 +692,9 @@ This API creates a new BLE characteristic associated with this service.
 RAKBleCharacteristic bslc = RAKBleCharacteristic(characteristicUUID)
 ```
 
-| **Function**   | `RAKBleCharacteristic(uint16_t characteristicUUID)`                                                                                                                             |
-|----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Parameters** | **characteristicUUID** - The base is the same as the base uuid used when construct an instance BLEService, only provided the 3rd and 4th byte means characteristic (16bit UUID) |
+| **Function**   | `RAKBleCharacteristic(uint16_t characteristicUUID)`                                                                                                                                   |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Parameters** | **characteristicUUID** - The base is the same as the base UUID used when construct an instance BLEService, only provided the 3rd and 4th&nbsp;byte means characteristic (16 bit UUID) |
 
 
 #### setProperties()

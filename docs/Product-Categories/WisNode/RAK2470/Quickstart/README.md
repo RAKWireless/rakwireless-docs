@@ -13,7 +13,6 @@ tags:
 
 ## Prerequisite
 
-### What Do You Need?
 Before going through each and every step in the installation guide of the WisNode Bridge IO Lite, make sure to prepare the necessary items listed below:
 
 #### Hardware Tools
@@ -31,11 +30,18 @@ IO.Box Desktop is a software application that will allow you to configure the de
 - <a href="https://downloads.rakwireless.com/#WisIO/" target="_blank">Linux</a>
 - <a href="https://downloads.rakwireless.com/#WisIO/" target="_blank">macOS</a>
 
-#### What’s Included in the Package?
+## Package Inclusion
+
+<rk-img
+src="/assets/images/wisnode/rak2470-n/overview/2.package-contents.png"
+width="60%"
+caption="RAK2470 Package Inclusions"
+/>
 
 - One (1) RAK2470 WisNode Bridge Serial Prime
-- One (1) Mounting kit
-- One (1) T-type conversion cable
+- One (1) Mounting Kit
+- One (1) T-Type Conversion Cable
+- One (1) Power Adapter
 
 ## Product Configuration
 
@@ -65,7 +71,7 @@ The RAK2470 device can be powered with 5 ~ 24&nbsp;V<sub>DC</sub> wide-range inp
 
 #### Data Interface Connection
 
-The connection to a sensor Is via the L20-4 Port of the T-type conversion cable, shown in **Figure 3**.
+The connection to a sensor Is via the L20-4 Port of the T-type conversion cable, shown in **Figure 4**.
 
 <rk-img
   src="/assets/images/wisnode/rak2470-n/quickstart/device-with-data-interface.png"

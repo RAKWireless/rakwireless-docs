@@ -55,7 +55,7 @@ Do **NOT** install the Arduino IDE from the Microsoft App store. Install the ori
 />
 
 
-4. Once the Arduino IDE has been installed successfully, click the **Close** button to exit the installer.
+4. Once the Arduino IDE has been installed successfully, click the **Finish** button to exit the installer.
 
 <rk-img
   src="/assets/images/rui3/vs/6.installation-success.png"
@@ -65,52 +65,62 @@ Do **NOT** install the Arduino IDE from the Microsoft App store. Install the ori
 
 #### For Linux
 
-First, you need the check the compatibility with your system and choose between the 32-bit, 64-bit, and ARM versions of the Arduino IDE for Linux.
+First, you need the check the compatibility with your system and choose between the 32-&nbsp;bit, 64-&nbsp;bit, and ARM versions of the Arduino IDE for Linux.
 
-##### Installing via a tarball
+##### Installing via a AppImage 64 bits (X86-64)
 
-1. After downloading the correct Arduino version, open a terminal, then run `ls` to check the installation file on the download folder.
+1. After downloading the correct Arduino version,  we need to first make it an executable file, you must check following this steps **Right-click the file** -> **Click on Properties** -> **Select permissions tab** -> **Click the allow executing file as program box** 
 
 <rk-img
-  src="/assets/images/rui3/vs/ls-arduino.png"
-  width="100%"
-  caption="Check the download folder"
+  src="/assets/images/rui3/vs/AppImage-properties.png"
+  width="30%"
+  caption="AppImage Properties"
 />
 
-
-2. A tarball is a type of compressed folder, like a `.zip` file, commonly used to distribute software in Linux. To extract the files from the tarball, change the directory to where the downloaded tarball is, then run the following command:
+2. Check if you have FUSE installed on your system, if not install it using this commands 
 
 ```
-tar xvf arduino-version.xz
+sudo add-apt-repository universe
+sudo apt install libfuse2
 ```
 
 <rk-img
-  src="/assets/images/rui3/vs/tar-linux.png"
-  width="100%"
-  caption="Tarball extract command"
+  src="/assets/images/rui3/vs/fuse-install.png"
+  width="80%"
+  caption="Fuse Install Commands"
 />
 
-3. When the tar command is finished, run `ls` again. A folder named  **arduino-version** will be created.
+
+3. Wait until FUSE is installed in your system:
+
 
 <rk-img
-  src="/assets/images/rui3/vs/ls-tarball.png"
-  width="100%"
-  caption="Arduino install folder created"
+  src="/assets/images/rui3/vs/fuse-installed.png"
+  width="80%"
+  caption="Fuse installed"
 />
 
-4. Change the current directory and go to the newly created folder directory. There will be a file named `install.sh` in the folder. Execute `sudo ./install.sh` to install the Arduino IDE.
+4. Double click on the **AppImage** and the Terms of Service window will pop up, accept the terms of service for Arduino IDE.
 
 <rk-img
-  src="/assets/images/rui3/vs/sudo-install.png"
-  width="100%"
-  caption="Arduino install script running"
+  src="/assets/images/rui3/vs/arduino-terms.png"
+  width="60%"
+  caption="Arduino Terms of Service"
+/>
+
+5. Wait until all the libraries are updated and the Arduino IDE is ready to use.
+
+<rk-img
+  src="/assets/images/rui3/vs/linux-arduino-ide.png"
+  width="80%"
+  caption="Arduino IDE on Linux"
 />
 
 The `sudo` command temporarily elevates privileges allowing the installer to complete sensitive tasks without logging in as the root user.
 
 #### For Mac OS X
 
-In Mac OS X, the same as Linux, there is no installation process. It is just a process of decompression, then you can open Arduino IDE successfully.
+In Mac OS X, there is no installation process. It is just a process of decompression, then you can open Arduino IDE successfully.
 
 
 ### Arduino IDE Parts Guide
@@ -129,12 +139,12 @@ You can configure some general parameters such as the serial port, the board inf
 
 2. **Operating Buttons**
 
-The operating buttons have five operations:
+The operating buttons have four operations:
 
   - **Verify/Compile** the source code;
   - **Upload** the compiled code into WisBlock;
-  - **Open** a **New** Arduino IDE window or existing application;
-  - **Save** the current application.
+  - **Debugger** test and debug programs in real time.
+  - **Board Menu** select the board and the port.
 
 <rk-img
   src="/assets/images/rui3/vs/8.operating-buttons.png"
@@ -198,7 +208,7 @@ If there are other URLs already there, just add them on the next line. After add
 
 <rk-img
   src="/assets/images/rui3/vs/rui3-bsp.png"
-  width="80%"
+  width="30%"
   caption="Installing RUI3 Board Support Package"
 />
 
@@ -208,7 +218,7 @@ Install RAKWireless RUI nRF Boards.
 
 <rk-img
   src="/assets/images/rui3/vs/rui3-nrf.png"
-  width="80%"
+  width="30%"
   caption="Installing RUI3 nRF Board Support Package"
 />
 
@@ -216,7 +226,7 @@ Install RAKWireless RUI STM32 Boards.
 
 <rk-img
   src="/assets/images/rui3/vs/rui3-stm32.png"
-  width="80%"
+  width="30%"
   caption="Installing RUI3 STM32 Board Support Package"
 />
 
@@ -240,7 +250,7 @@ You can mount the RAK1906 to the WisBlock Base Board by following the [RAK1906 H
 
 <rk-img
   src="/assets/images/rui3/vs/lib-include.png"
-  width="100%"
+  width="80%"
   caption="Include RUI3 Library"
 />
 
@@ -253,7 +263,7 @@ You can mount the RAK1906 to the WisBlock Base Board by following the [RAK1906 H
 
 ##### Open and Build RUI3 Library Example
 
-1. Launch Arduino IDE, navigate to File -> Examples -> RAKWireless RAK1906 Environment BME680 -> Example1_BasicReading as shown below.
+1. Launch Arduino IDE, navigate to **File** -> **Examples** -> **RAKWireless RAK1906 Environment BME680** -> **Example1_BasicReading** as shown below.
 
 <rk-img
   src="/assets/images/rui3/vs/rak1906-example.png"
@@ -277,7 +287,7 @@ To view the Arduino Examples, you must select the RUI3 Board under Tools-> Board
 
 <rk-img
   src="/assets/images/rui3/vs/rak1906-logs.png"
-  width="80%"
+  width="100%"
   caption="RUI3 RAK1906 Library Example Logs"
 />
 
@@ -327,7 +337,7 @@ It is highly recommended to read the section **LoRaWAN Example**:
 
 <rk-img
   src="/assets/images/rui3/vs/rui3-smart-log.png"
-  width="80%"
+  width="100%"
   caption="Arduino Serial Monitor RUI3 Smart_Farm Example"
 />
 
@@ -565,7 +575,7 @@ Check the new **build** folder on Visual Studio Code Explorer.
 
 <rk-img
   src="/assets/images/rui3/vscode/lib-include.png"
-  width="100%"
+  width="80%"
   caption="Include RUI3 Library"
 />
 
@@ -743,6 +753,11 @@ Don't forget to add [Faster Build Configuration](#faster-build-configuration) to
 
 ### Visual Studio IDE Download and Installation
 
+
+::: tip 📝 NOTE
+Currently we have arduino version 2.0 but we can still use arduino versions 1.6/1.8 in Visual Studio 2019 due to its long term support.
+:::
+
 If you don't have Visual Studio IDE yet, download the installer on [Visual Studio IDE Community 2019](https://docs.microsoft.com/en-us/visualstudio/releases/2019/release-notes), as shown in **Figure 67**.
 
 
@@ -884,7 +899,7 @@ https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main
 
 <rk-img
   src="/assets/images/rui3/vs/rak-board-manager.png"
-  width="90%"
+  width="30%"
   caption="Arduino RAKwireless Board Manager"
 />
 
@@ -894,7 +909,7 @@ Install RAKWireless RUI nRF Boards.
 
 <rk-img
   src="/assets/images/rui3/vs/rui3-nrf.png"
-  width="90%"
+  width="30%"
   caption="Installing RUI3 nRF Board Support Package"
 />
 
@@ -902,7 +917,7 @@ Install RAKWireless RUI STM32 Boards.
 
 <rk-img
   src="/assets/images/rui3/vs/rui3-stm32.png"
-  width="90%"
+  width="30%"
   caption="Installing RUI3 STM32 Board Support Package"
 />
 
@@ -1079,7 +1094,7 @@ You can mount the RAK1906 to the WisBlock Base Board by following the [RAK1906 H
 
 <rk-img
   src="/assets/images/rui3/vs/lib-include.png"
-  width="100%"
+  width=80%"
   caption="Include RUI3 Library"
 />
 

@@ -39,7 +39,7 @@ The log shows details of nearby BLE Devices: **MAC Address**, **RSSI**, and **ra
 
 <rk-img
   src="/assets/images/rui3/ble_examples/scan-log.png"
-  width="90%"
+  width="100%"
   caption="Serial monitor BLE scan log"
 />
 

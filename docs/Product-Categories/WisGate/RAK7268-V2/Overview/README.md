@@ -14,9 +14,10 @@ tags:
 
 Thank you for choosing **RAK7268V2/RAK7268CV2 WisGate Edge Lite 2** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
-- [Quick Start Guide](../Quickstart/)
-- [Support LoRa Network Servers](../Supported-LoRa-Network-Servers/)
-- [Datasheet](../Datasheet/)
+* <a href="../Quickstart/" target="_blank">Quick Start Guide</a>
+* <a href="../Supported-LoRa-Network-Servers/" target="_blank">Supported LoRa Network Servers</a>
+* <a href="../Datasheet/" target="_blank">Datasheet</a>
+* <a href="https://docs.rakwireless.com/Knowledge-Hub/Learn/OpenVPN-Server-Installation/" target="_blank">OpenVPN Server Installation Guide (For Ubuntu sys)</a>
 
 
 ## Product Description

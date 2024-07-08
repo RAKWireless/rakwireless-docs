@@ -59,9 +59,9 @@ Description: Display Product Identification Information
 
 The command shows the product information.
 
-| Command      | Input Parameter | Return Value | Return Code |
-| ------------ | --------------- | ------------ | ----------- |
-| `ATCELL+ATI` <br> `ATCELL+ATI=` | -               | ATI <br> Quectel <br> BG96 <br> Revision: BG96MAR02A07M1G | OK / ERROR |
+| Command                         | Input Parameter | Return Value                                              | Return Code |
+| ------------------------------- | --------------- | --------------------------------------------------------- | ----------- |
+| `ATCELL+ATI` <br> `ATCELL+ATI=` | -               | ATI <br> Quectel <br> BG96 <br> Revision: BG96MAR02A07M1G | OK / ERROR  |
 
 ### ATCELL+AT&F
 
@@ -79,10 +79,10 @@ Description: Extended Configuration Settings
 
 The command is used to query and configure various settings of UE. There are many configurations available like *nwscanmode*, *nwscanseq*, etc. It is highly recommended to see the *BG96_AT_Commands_Manual_V2.1.pdf* to get all possible configurations.
 
-| Command | Input Parameter | Return Value                                | Return Code |
-| ------- | --------------- | ------------------------------------------- | ----------- |
-| `ATCELL+QCFG=?`| -        | Returns all configurations settings available           | OK / ERROR  |
-| `ATCELL+QCFG=<Input>` | Input parameter depends on the specific configuration settings to modify. | -  | OK / ERROR         |
+| Command               | Input Parameter                                                           | Return Value                                            | Return Code |
+| --------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------- | ----------- |
+| `ATCELL+QCFG=?`       | -                                                                         | Returns all configurations settings available           | OK / ERROR  |
+| `ATCELL+QCFG=<Input>` | Input parameter depends on the specific configuration settings to modify. | -                                                       | OK / ERROR  |
 
 **Examples:**
 
@@ -144,10 +144,10 @@ Description: Automatic Time Zone Update
 
 The Write Command enables and disables automatic time zone updates via NITZ. The configuration is stored in NV automatically.
 
-| Command | Input Parameter | Return Value                                        | Return Code |
-| ------- | --------------- | --------------------------------------------------- | ----------- |
-| `ATCELL+CTZU?`  | -       |`+CTZU: `<0, 1 or 3>                                 | OK / ERROR  |
-| `ATCELL+CTZU=?` | -       | `+CTZU: (0,1,3)`                                    | OK / ERROR  |
+| Command         | Input Parameter | Return Value                                        | Return Code |
+| --------------- | --------------- | --------------------------------------------------- | ----------- |
+| `ATCELL+CTZU?`  | -               |`+CTZU: `<0, 1 or 3>                                 | OK / ERROR  |
+| `ATCELL+CTZU=?` | -               | `+CTZU: (0,1,3)`                                    | OK / ERROR  |
 
 +CTZU values:
 - `0` = Disable automatic time zone update via NITZ.
@@ -180,10 +180,10 @@ Description: Time Zone Reporting
 
 The command controls the time zone reporting of a changed event. If reporting is enabled, the MT returns the unsolicited result code `+CTZV: <tz>` or `+CTZE: <tz>,<dst>,<time>` whenever the time zone is changed. The configuration is stored in NV automatically.
 
-| Command | Input Parameter | Return Value                                        | Return Code |
-| ------- | --------------- | --------------------------------------------------- | ----------- |
-| `ATCELL+CTZR?`  | -       |`+CTZR: `<0, 1 or 2>                                 | OK / ERROR  |
-| `ATCELL+CTZR=?` | -       |`+CTZU: (0-2)`                                       | OK / ERROR  |
+| Command         | Input Parameter | Return Value                                        | Return Code |
+| --------------- | --------------- | --------------------------------------------------- | ----------- |
+| `ATCELL+CTZR?`  | -               |`+CTZR: `<0, 1 or 2>                                 | OK / ERROR  |
+| `ATCELL+CTZR=?` | -               |`+CTZU: (0-2)`                                       | OK / ERROR  |
 
 Reporting type:
 - `0` = Disable time zone reporting of a changed event
@@ -215,11 +215,11 @@ Description: Operator Selection
 
 The command returns the current operators and their status and allows setting automatic or manual network selection.
 
-| Command | Input Parameter | Return Value                            | Return Code |
-| ------- | --------------- | --------------------------------------- | ----------- |
-| `ATCELL+COPS?`  | -       | `+COPS: <mode, format, operator, act>`  | OK / ERROR  |
-| `ATCELL+COPS=?` | -       | Returns available network               | OK / ERROR  |
-| `ATCELL+COPS=<Input Paramter>` | `<mode, format, operator, act>`    | Configures Connection ot the Network | OK / ERROR  |
+| Command                        | Input Parameter                    | Return Value                            | Return Code |
+| ------------------------------ | ---------------------------------- | --------------------------------------- | ----------- |
+| `ATCELL+COPS?`                 | -                                  | `+COPS: <mode, format, operator, act>`  | OK / ERROR  |
+| `ATCELL+COPS=?`                | -                                  | Returns available network               | OK / ERROR  |
+| `ATCELL+COPS=<Input Paramter>` | `<mode, format, operator, act>`    | Configures Connection ot the Network    | OK / ERROR  |
 
 It is highly recommended to see the *BG96_AT_Commands_Manual_V2.1.pdf* to get complete details.
 
@@ -266,11 +266,11 @@ Description: Configure Parameters of a TCP/IP Context
 
 The command can be used to configure the `<APN>`, `<username>`, `<password>`, and other parameters of a TCP/IP context.
 
-| Command                          | Input Parameter  | Return Value                                          | Return Code |
-| -------------------------------- | ---------------- | ----------------------------------------------------- | ----------- |
-| `ATCELL+QICSGP?`                 | -                | `+QICSGP: <context_type>,<APN>,<username>,<password>,<authentication>` | OK          |
-| `ATCELL+QICSGP=?`                | -                | `+QICSGP: (1-16),(1-3),<APN>,<username>,<password>,(0-3)` | OK          |
-| `ATCELL+QICSGP=<Input Parameter>` | <*context_type*> | `<context_type>,<APN>,<username>,<password>,<authentication>`   |   OK / ERROR   |
+| Command                           | Input Parameter  | Return Value                                                           | Return Code  |
+| --------------------------------- | ---------------- | ---------------------------------------------------------------------- | ------------ |
+| `ATCELL+QICSGP?`                  | -                | `+QICSGP: <context_type>,<APN>,<username>,<password>,<authentication>` | OK           |
+| `ATCELL+QICSGP=?`                 | -                | `+QICSGP: (1-16),(1-3),<APN>,<username>,<password>,(0-3)`              | OK           |
+| `ATCELL+QICSGP=<Input Parameter>` | <*context_type*> | `<context_type>,<APN>,<username>,<password>,<authentication>`          | OK / ERROR   |
 
 It is highly recommended to see the *BG96_TCP/IP_AT_Commands_Manual_V1.0.pdf* to get complete details.
 
@@ -314,11 +314,11 @@ Description: Network Registration Status
 
 The command checks the module registration status to the network via unsolicited result code.
 
-| Command | Input Parameter | Return Value                                        | Return Code |
-| ------- | --------------- | --------------------------------------------------- | ----------- |
-| `ATCELL+CREG?`  | -       |`+CREG: 0,1`                                         | OK / ERROR  |
-| `ATCELL+CREG=?` | -       |`+CREG: (0-2)`                                       | OK / ERROR  |
-| `ATCELL+CREG=<Input Paramter>` | `0,1,2`|                                       | OK / ERROR  |
+| Command                        | Input Parameter | Return Value                                        | Return Code |
+| ------------------------------ | --------------- | --------------------------------------------------- | ----------- |
+| `ATCELL+CREG?`                 | -               |`+CREG: 0,1`                                         | OK / ERROR  |
+| `ATCELL+CREG=?`                | -               |`+CREG: (0-2)`                                       | OK / ERROR  |
+| `ATCELL+CREG=<Input Paramter>` | `0,1,2`         |                                                     | OK / ERROR  |
 
 It is highly recommended to see the *BG96_AT_Commands_Manual_V2.1.pdf* to get complete details.
 
@@ -354,10 +354,10 @@ Description: Enter PIN
 The command is used to enter a password or query whether or not the module requires a password which is necessary before it can be operated. The password may be (U)SIM PIN, (U)SIM PUK, PH-SIM PIN, etc.
 
 
-| Command | Input Parameter | Return Value    | Return Code |
-| ------- | --------------- | --------------- | ----------- |
-| `ATCELL+CPIN?`  | -       | `+CPIN: <code>` | OK / ERROR  |
-| `ATCELL+CPIN=?` | -       | -               | OK / ERROR  |
+| Command         | Input Parameter | Return Value    | Return Code |
+| --------------- | --------------- | --------------- | ----------- |
+| `ATCELL+CPIN?`  | -               | `+CPIN: <code>` | OK / ERROR  |
+| `ATCELL+CPIN=?` | -               | -               | OK / ERROR  |
 
 It is highly recommended to see the *BG96_AT_Commands_Manual_V2.1.pdf* to get complete CPIN code details and how to change the pin.
 
@@ -405,10 +405,10 @@ Description: Deactivate a PDP Context
 
 The command is used to deactivate the specific context and close all TCP/IP connections set up in the context. 
 
-| Command          | Input Parameter | Return Value                                        | Return Code |
-| ---------------- | --------------- | --------------------------------------------------- | ----------- |
-| `ATCELL+QIDEACT=?` | -               | `+QIDEACT: (1-16)`                         | OK / ERROR  |
-| `ATCELL+QIDEACT=<Input Paramter>` | `<1-16>`               | -                        | OK / ERROR  |
+| Command                           | Input Parameter | Return Value          | Return Code |
+| --------------------------------- | --------------- | --------------------- | ----------- |
+| `ATCELL+QIDEACT=?`                | -               | `+QIDEACT: (1-16)`    | OK / ERROR  |
+| `ATCELL+QIDEACT=<Input Paramter>` | `<1-16>`        | -                     | OK / ERROR  |
 
 **Examples:**
 
@@ -430,11 +430,11 @@ Description: Activate a PDP Context
 
 Before activating a PDP context via AT+QIACT, the context should be configured by AT+QICSGP. 
 
-| Command                          | Input Parameter  | Return Value                                          | Return Code |
-| -------------------------------- | ---------------- | ----------------------------------------------------- | ----------- |
-| `ATCELL+QIACT?`                 | -                | Returns current available context <br>`+QIACT: <contextID>,<context_state>,<context_type>,<ipaddress>` | OK          |
-| `ATCELL+QIACT=?`                | -                | `+QIACT: (1-16)` | OK          |
-| `ATCELL+QIACT=<Input Parameter>` | <*contextID*> | -   |   OK / ERROR   |
+| Command                          | Input Parameter  | Return Value                                                                                           | Return Code |
+| -------------------------------- | ---------------- | ------------------------------------------------------------------------------------------------------ | ----------- |
+| `ATCELL+QIACT?`                  | -                | Returns current available context <br>`+QIACT: <contextID>,<context_state>,<context_type>,<ipaddress>` | OK          |
+| `ATCELL+QIACT=?`                 | -                | `+QIACT: (1-16)`                                                                                       | OK          |
+| `ATCELL+QIACT=<Input Parameter>` | <*contextID*>    | -                                                                                                      | OK / ERROR  |
 
 It is highly recommended to see the *BG96_TCP/IP_AT_Commands_Manual_V1.0.pdf* to get complete details.
 
@@ -470,10 +470,10 @@ Description: Ping a Remote Server
 
 The command is used to test the Internet protocol reachability of a host.
 
-| Command                          | Input Parameter  | Return Value                                          | Return Code |
-| -------------------------------- | ---------------- | ----------------------------------------------------- | ----------- |
-| `ATCELL+QPING=?`                 | -                | `+QPING: (1-16),<host>,(1-255),(1-10)`                | OK          |
-| `ATCELL+QPING=<Input Parameter>` | `<contextID>,<host><timeout><pingnum>` | -   |   OK / ERROR   |
+| Command                          | Input Parameter                        | Return Value                                          | Return Code |
+| -------------------------------- | -------------------------------------- | ----------------------------------------------------- | ----------- |
+| `ATCELL+QPING=?`                 | -                                      | `+QPING: (1-16),<host>,(1-255),(1-10)`                | OK          |
+| `ATCELL+QPING=<Input Parameter>` | `<contextID>,<host><timeout><pingnum>` | -                                                     | OK / ERROR  |
 
 It is highly recommended to see the *BG96_TCP/IP_AT_Commands_Manual_V1.0.pdf* to get complete details.
 
@@ -493,10 +493,10 @@ Description: Open a Socket Service
 
 The command is used to open a socket service.
 
-| Command                          | Input Parameter  | Return Value                                          | Return Code |
-| -------------------------------- | ---------------- | ----------------------------------------------------- | ----------- |
-| `ATCELL+QIOPEN=?`                 | -                | `+QIOPEN: (1-16),(0-11),"TCP/UDP/TCP LISTENER/UDP SERVICE","<IP_address>/<domain_name>",<remote_port>,<local_port>,(0-2)` | OK          |
-| `ATCELL+QIOPEN=<Input Parameter>` | `<contextID>,<connectID>,<service_type>,<IP_address>/<domain_name>,<remote_port>[,<local_port>[,<access_mode>]]` | -   |   OK / ERROR   |
+| Command                           | Input Parameter                                                                                                  | Return Value                                                                                                                | Return Code  |
+| --------------------------------- | ---------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | ------------ |
+| `ATCELL+QIOPEN=?`                 | -                                                                                                                | `+QIOPEN: (1-16),(0-11),"TCP/UDP/TCP LISTENER/UDP SERVICE","<IP_address>/<domain_name>",<remote_port>,<local_port>,(0-2)`   | OK           |
+| `ATCELL+QIOPEN=<Input Parameter>` | `<contextID>,<connectID>,<service_type>,<IP_address>/<domain_name>,<remote_port>[,<local_port>[,<access_mode>]]` | -                                                                                                                           |  OK / ERROR  |
 
 It is highly recommended to see the *BG96_TCP/IP_AT_Commands_Manual_V1.0.pdf* to get complete details.
 
@@ -516,15 +516,15 @@ Description: Send Hex String
 
 This command is used to send hex string data. It cannot be applied for “UDP SERVICE” and “TCP LISTENER” sockets.
 
-| Command                          | Input Parameter  | Return Value                                          | Return Code |
-| -------------------------------- | ---------------- | ----------------------------------------------------- | ----------- |
-| `ATCELL+QISENDEX=?`                 | -                | `+QISENDEX: (0-11),<hex_string>)` | OK          |
-| `ATCELL+QISENDEX=<Input Parameter>` | `<connectID>,<hex_string>` | -   |  SEND OK <br> SEND FAIL <br> ERROR   |
+| Command                             | Input Parameter            | Return Value                      | Return Code                          |
+| ----------------------------------- | -------------------------- | ----------------------------------| ------------------------------------ |
+| `ATCELL+QISENDEX=?`                 | -                          | `+QISENDEX: (0-11),<hex_string>)` | OK                                   |
+| `ATCELL+QISENDEX=<Input Parameter>` | `<connectID>,<hex_string>` | -                                 |  SEND OK <br> SEND FAIL <br> ERROR   |
 
 It is highly recommended to see the *BG96_TCP/IP_AT_Commands_Manual_V1.0.pdf* to get complete details.
 
 `<connectID>` Integer type. The socket service index. The range is 0-11 <br>
-`<hex_string>` String type. Hex string. The max length is 512 bytes <br>
+`<hex_string>` String type. Hex string. The max length is 512&nbsp;bytes <br>
 
 **Examples:**
 
@@ -542,10 +542,10 @@ Description: Query Socket Service Status
 
 The command is used to query the socket service status. 
 
-| Command                          | Input Parameter  | Return Value                                          | Return Code |
-| -------------------------------- | ---------------- | ----------------------------------------------------- | ----------- |
-| `ATCELL+QISTATE=?`               | -                | -                                                     | OK          |
-| `ATCELL+QISTATE=<Input Parameter>` | `<query_type>,<contextID>` or `<query_type>,<connectID>` | Returns the status of all existing connections   |   OK / ERROR   |
+| Command                            | Input Parameter                                          | Return Value                                          | Return Code |
+| ---------------------------------- | -------------------------------------------------------- | ----------------------------------------------------- | ----------- |
+| `ATCELL+QISTATE=?`                 | -                                                        | -                                                     | OK          |
+| `ATCELL+QISTATE=<Input Parameter>` | `<query_type>,<contextID>` or `<query_type>,<connectID>` | Returns the status of all existing connections        | OK / ERROR  |
 
 It is highly recommended to see the *BG96_TCP/IP_AT_Commands_Manual_V1.0.pdf* to get complete details.
 
@@ -563,10 +563,10 @@ Description: Close a Socket Service
 
 The command is used to close the specified socket service. Depending on the network, it will take at most 10 seconds (default value, can be modified by `<timeout>`) to return “OK” or “ERROR” after executing AT+QICLOSE. Before the response is returned, other AT commands cannot be executed.
 
-| Command                          | Input Parameter  | Return Value                                          | Return Code |
-| -------------------------------- | ---------------- | ----------------------------------------------------- | ----------- |
-| `ATCELL+QICLOSE=?`               | -                | `+QICLOSE: (0-11),(0-65535)`                           | OK          |
-| `ATCELL+QICLOSE=<Input Parameter>` | `<connectID>,<timeout>` | -                                            |   OK / ERROR   |
+| Command                            | Input Parameter         | Return Value                                          | Return Code |
+| ---------------------------------- | ----------------------- | ----------------------------------------------------- | ----------- |
+| `ATCELL+QICLOSE=?`                 | -                       | `+QICLOSE: (0-11),(0-65535)`                          | OK          |
+| `ATCELL+QICLOSE=<Input Parameter>` | `<connectID>,<timeout>` | -                                                     | OK / ERROR  |
 
 It is highly recommended to see the *BG96_TCP/IP_AT_Commands_Manual_V1.0.pdf* to get complete details.
 
@@ -586,10 +586,10 @@ Description: Configure Parameters for HTTP(S) Server
 
 The command is used to configure the parameters for HTTP(S) server, including configuring a PDP context ID, customizing HTTP(S) request header, outputting HTTP(S) response header, and querying SSL settings.
 
-| Command                          | Input Parameter  | Return Value                                          | Return Code |
-| -------------------------------- | ---------------- | ----------------------------------------------------- | ----------- |
+| Command                          | Input Parameter  | Return Value                                                                                                                                                                                                                           | Return Code |
+| -------------------------------- | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
 | `ATCELL+QHTTPCFG=?`              | -                | `+QHTTPCFG: "contextid",(1-16)`<br>`+QHTTPCFG: "requestheader",(0,1)`<br>`+QHTTPCFG: "responseheader",(0,1)`<br>`+QHTTPCFG: "prefix",<ip_prefix>,<prefix_length>`<br>`+QHTTPCFG: "sslctxid",(0-5)`<br>`+QHTTPCFG: "contenttype",(0-3)` | OK          |
-| `ATCELL+QHTTPCFG?`               | - | `+QHTTPCFG: "contextid",1`<br>`+QHTTPCFG: "requestheader",0`<br>`+QHTTPCFG: "responseheader",0`<br>`+QHTTPCFG: "prefix","64:FF9B:0:0:0:0:0:0",96`<br>`+QHTTPCFG: "sslctxid",1`<br>`+QHTTPCFG: "contenttype",0` |   OK / ERROR   |
+| `ATCELL+QHTTPCFG?`               | -                | `+QHTTPCFG: "contextid",1`<br>`+QHTTPCFG: "requestheader",0`<br>`+QHTTPCFG: "responseheader",0`<br>`+QHTTPCFG: "prefix","64:FF9B:0:0:0:0:0:0",96`<br>`+QHTTPCFG: "sslctxid",1`<br>`+QHTTPCFG: "contenttype",0`                         | OK / ERROR  |
 
 It is highly recommended to see the *BG96_HTTP(S)_AT_Commands_Manual_V1.0.pdf* to get complete details.
 
@@ -657,10 +657,10 @@ Description: Set URL of HTTP(S) Server
 
 The URL must begin with `“http://”` or `“https://”`, which indicates an HTTP or HTTPS server will be accessed.
 
-| Command                          | Input Parameter  | Return Value                                          | Return Code |
-| -------------------------------- | ---------------- | ----------------------------------------------------- | ----------- |
-| `ATCELL+QHTTPURL=?`              | -                | `+QHTTPURL: (1-700),(1-65535)`                        | OK          |
-| `ATCELL+QHTTPURL=<Input Parameter>` | `<URL_length>,<timeout>` | -                                            |   OK / ERROR   |
+| Command                             | Input Parameter          | Return Value                                          | Return Code |
+| ----------------------------------- | ------------------------ | ----------------------------------------------------- | ----------- |
+| `ATCELL+QHTTPURL=?`                 | -                        | `+QHTTPURL: (1-700),(1-65535)`                        | OK          |
+| `ATCELL+QHTTPURL=<Input Parameter>` | `<URL_length>,<timeout>` | -                                                     | OK / ERROR  |
 
 It is highly recommended to see the *BG96_HTTP(S)_AT_Commands_Manual_V1.0.pdf* to get complete details.
 
@@ -682,10 +682,10 @@ Description: Send GET Request to HTTP(S) Server
 
 The command is used to query the Send and Get Request to HTTPS Server.
 
-| Command                          | Input Parameter  | Return Value                                          | Return Code |
-| -------------------------------- | ---------------- | ----------------------------------------------------- | ----------- |
-| `ATCELL+QHTTPGET=?`              | -                | `+QHTTPGET: (1-65535),(1-2048),(1-65535)`             | OK          |
-| `ATCELL+QHTTPGET=<Input Parameter>` | `<rsptime>`,`<data_length>`,`<input_time>` | -                        |   OK / ERROR   |
+| Command                             | Input Parameter                            | Return Value                                          | Return Code |
+| ----------------------------------- | ------------------------------------------ | ----------------------------------------------------- | ----------- |
+| `ATCELL+QHTTPGET=?`                 | -                                          | `+QHTTPGET: (1-65535),(1-2048),(1-65535)`             | OK          |
+| `ATCELL+QHTTPGET=<Input Parameter>` | `<rsptime>`,`<data_length>`,`<input_time>` | -                                                     | OK / ERROR  |
 
 It is highly recommended to see the *BG96_HTTP(S)_AT_Commands_Manual_V1.0.pdf* to get complete details.
 
@@ -709,10 +709,10 @@ Description: Read Response from HTTP(S) Server via UART/USB
 
 After sending HTTP(S) GET/POST requests, customers can retrieve HTTP(S) response information from HTTP(S) server via UART/USB port by the AT+QHTTPREAD command.
 
-| Command                          | Input Parameter  | Return Value             | Return Code |
-| -------------------------------- | ---------------- | ------------------------ | ----------- |
-| `ATCELL+QHTTPREAD=?`             | -                | `+QHTTPREAD: (1-65535)`  | OK          |
-| `ATCELL+QHTTPGET=<Input Parameter>` | `<wait_time>` | -                        | OK / ERROR  |
+| Command                             | Input Parameter  | Return Value             | Return Code |
+| ----------------------------------- | ---------------- | ------------------------ | ----------- |
+| `ATCELL+QHTTPREAD=?`                | -                | `+QHTTPREAD: (1-65535)`  | OK          |
+| `ATCELL+QHTTPGET=<Input Parameter>` | `<wait_time>`    | -                        | OK / ERROR  |
 
 It is highly recommended to see the *BG96_HTTP(S)_AT_Commands_Manual_V1.0.pdf* to get complete details.
 
@@ -734,10 +734,10 @@ Description: Turn on GNSS
 
 The command is used to turn on the GNSS function. Currently, it only supports turning on GNSS in stand-alone mode (that is, `<gnssmode>`=1). When `<fixcount>` is 0, GNSS will fix the position continuously, and it can be turned off via AT+QGPSEND. When `<fixcount>` is non-zero and reaches the specified value, GNSS will be turned off automatically.
 
-| Command                         | Input Parameter  | Return Value             | Return Code |
-| ------------------------------- | ---------------- | ------------------------ | ----------- |
-| `ATCELL+QGPS=?`                 | -                | `+QGPS: (1-4),(1-255),(1-1000),(0-1000),(1-65535)`  | OK          |
-| `ATCELL+QGPS=<Input Parameter>` | `<gnssmode>`,`<fixmaxtime>`,`<fixmaxdist>`,`<fixcount>`,`<fixrate>` | -    | OK / ERROR  |
+| Command                         | Input Parameter                                                     | Return Value                                        | Return Code |
+| ------------------------------- | ------------------------------------------------------------------- | --------------------------------------------------- | ----------- |
+| `ATCELL+QGPS=?`                 | -                                                                   | `+QGPS: (1-4),(1-255),(1-1000),(0-1000),(1-65535)`  | OK          |
+| `ATCELL+QGPS=<Input Parameter>` | `<gnssmode>`,`<fixmaxtime>`,`<fixmaxdist>`,`<fixcount>`,`<fixrate>` | -                                                   | OK / ERROR  |
 
 It is highly recommended to see the *Quectel_BG96_GNSS_AT_Commands_Manual_V1.1* to get complete details.
 
@@ -749,7 +749,7 @@ Before executing the command, GNSS must be turned on via AT+QGPS.
 
 | Command                         | Input Parameter  | Return Value             | Return Code |
 | ------------------------------- | ---------------- | ------------------------ | ----------- |
-| `ATCELL+QGPSLOC=?`              | -                | GNSS parameters           | OK          |
+| `ATCELL+QGPSLOC=?`              | -                | GNSS parameters          | OK          |
 
 It is highly recommended to see the *Quectel_BG96_GNSS_AT_Commands_Manual_V1.1* to get complete details.
 
@@ -781,10 +781,10 @@ Description: GNSS Configurations
 
 The command is used to query and configure various GNSS settings, including NMEA sentences output port, output type of NMEA sentences, and more 
 
-| Command                         | Input Parameter  | Return Value             | Return Code |
-| ------------------------------- | ---------------- | ------------------------ | ----------- |
-| `ATCELL+QGPSCFG=?`              | -                | GNSS settings, parameters, etc. | OK          |
-| `ATCELL+QGPSCFG=<Input Parameter>` | Specific parameter to change | -    | OK / ERROR  |
+| Command                            | Input Parameter              | Return Value                    | Return Code |
+| ---------------------------------- | ---------------------------- | ------------------------------- | ----------- |
+| `ATCELL+QGPSCFG=?`                 | -                            | GNSS settings, parameters, etc. | OK          |
+| `ATCELL+QGPSCFG=<Input Parameter>` | Specific parameter to change | -                               | OK / ERROR  |
 
 It is highly recommended to see the *Quectel_BG96_GNSS_AT_Commands_Manual_V1.1* to get complete details.
 
@@ -833,10 +833,10 @@ Description: Upload a File
 
 The command can be used to upload a file to UFS.
 
-| Command                          | Input Parameter  | Return Value             | Return Code |
-| -------------------------------- | ---------------- | ------------------------ | ----------- |
-| `ATCELL+QFUPL=?`                 | -                | `+QFUPL: <filename>[,(1-<freesize>)[,(1-65535)[,(0,1)]]]`  | OK          |
-| `ATCELL+QFUPL=<Input Parameter>` | `<filename>`,`<file_size>`,`<timeout>`,`<ackmode>]]]` | -                        | OK / ERROR  |
+| Command                          | Input Parameter                                       | Return Value                                               | Return Code |
+| -------------------------------- | ----------------------------------------------------- | ---------------------------------------------------------- | ----------- |
+| `ATCELL+QFUPL=?`                 | -                                                     | `+QFUPL: <filename>[,(1-<freesize>)[,(1-65535)[,(0,1)]]]`  | OK          |
+| `ATCELL+QFUPL=<Input Parameter>` | `<filename>`,`<file_size>`,`<timeout>`,`<ackmode>]]]` | -                                                          | OK / ERROR  |
 
 It is highly recommended to see the *BG96_FILE_AT_Commands_Manual_V1.0.pdf* to get complete details.
 

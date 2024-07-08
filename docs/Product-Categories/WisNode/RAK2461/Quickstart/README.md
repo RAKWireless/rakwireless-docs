@@ -13,7 +13,6 @@ tags:
 
 ## Prerequisite
 
-### What do you need?
 Before going through each and every step in the installation guide of the WisNode Bridge IO Lite, make sure to prepare the necessary items listed below:
 
 #### Hardware Tools
@@ -31,14 +30,16 @@ IO.Box Desktop is a software application that will allow you to configure the de
 - <a href="https://downloads.rakwireless.com/#WisIO/" target="_blank">Linux</a>
 - <a href="https://downloads.rakwireless.com/#WisIO/" target="_blank">Mac</a>
 
-#### What’s Included in the Package?
+#### Package Inclusion
 
-- One (1) RAK2461
-- One (1) Mounting kit
-- One (1) Screw kit
-- One (1) LoRa antenna
-- One (1) 4-pin terminal block 
-- Two (2) 8-pin terminal block
+- One (1) RAK2461 WisNode Bridge IO Lite
+- One (1) Mounting Kit
+- One (1) Screw Kit
+- One (1) LoRa Antenna
+- One (1) Power Adapter
+- One (1) USB Cable (Type C to Type A)
+- One (1) 4-Pin Terminal Block 
+- Two (2) 8-Pin Terminal Block
 
 ## Product Configuration
 

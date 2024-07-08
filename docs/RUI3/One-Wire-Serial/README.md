@@ -25,9 +25,9 @@ This callback receives data from the OneWire interface.
 ```
 
 | **Function**   | `void rak_onewire_serial_recv_cb callback(SERIAL_PORT port, RAK_ONEWIRE_SERIAL_RECEIVE_T *data)` |
-| -------------- | --------------------------------------------------------------------- |
-| **Parameters** | port	- the serial port used <br> *data - pointer to the received data structure  |
-| **Returns**    | void                                        |
+| -------------- | ------------------------------------------------------------------------------------------------ |
+| **Parameters** | port	- the serial port used <br> *data - pointer to the received data structure                  |
+| **Returns**    | void                                                                                             |
 
 ## RAKOneWireSerial Class
 
@@ -37,9 +37,9 @@ This API chooses the pin number for one wire serial and prepare the callback fun
 OneWireSerial(pin, callback)
 ```
 
-| **Function**   | `RAKOneWireSerial(uint32_t pin, rak_onewire_serial_recv_cb callback)`                                                                                                                                                                                   |
+| **Function**   | `RAKOneWireSerial(uint32_t pin, rak_onewire_serial_recv_cb callback)`                                                                                                               |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Parameters** | **pin** - the pin number <br> ONLY UART1_RXD_PIN and UART1_TXD_PIN are supported <br> **callback** - the callback for receiving data <br> _**not functional in RUI3 V4.1.0**_ |
+| **Parameters** | **pin** - the pin number <br> ONLY UART1_RXD_PIN and UART1_TXD_PIN are supported <br> **callback** - the callback for receiving data <br> _**not functional in RUI3 V4.1.0**_       |
 | **Returns**    | void                                                                                                                                                                                |
 
 :::warning ⚠️ WARNING

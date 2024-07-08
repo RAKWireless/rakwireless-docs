@@ -201,8 +201,8 @@ enum _RAK_LORA_JOIN_MODE
 ```
 | Enumerator    |                               |
 | ------------- | ----------------------------- |
-| RAK_LORA_ABP  | activation by personalization |
-| RAK_LORA_OTAA | over-the-air activation       |
+| RAK_LORA_ABP  | Activation by personalization |
+| RAK_LORA_OTAA | Over-the-air activation       |
 
 
 ```c
@@ -1578,11 +1578,11 @@ This API allows the user to get the global application identifier.
 api.lorawan.appeui.get(buf, len);
 ```
 
-| **Function**      | `bool get(uint8_t * buf, uint32_t len)`                                                    |
-| ----------------- | ------------------------------------------------------------------------------------------ |
-| **Parameters**    | **`buf`**: the buffer to get AppEUI <br> **`len`**: the length of AppEUI (must be 8 bytes) |
-| **Returns**       | bool                                                                                       |
-| **Return Values** | **TRUE** for getting AppEUI successfully <br> **FALSE** for setting AppEUI failure         |
+| **Function**      | `bool get(uint8_t * buf, uint32_t len)`                                                         |
+| ----------------- | ----------------------------------------------------------------------------------------------- |
+| **Parameters**    | **`buf`**: the buffer to get AppEUI <br> **`len`**: the length of AppEUI (must be 8&nbsp;bytes) |
+| **Returns**       | bool                                                                                            |
+| **Return Values** | **TRUE** for getting AppEUI successfully <br> **FALSE** for setting AppEUI failure              |
 
 
 ::: details Click to View Example
@@ -1630,11 +1630,11 @@ This API allows the user to set the global application identifier.
 api.lorawan.appeui.set(buf, len);
 ```
 
-| **Function**      | `bool set(uint8_t * buf, uint32_t len)`                                                    |
-| ----------------- | ------------------------------------------------------------------------------------------ |
-| **Parameters**    | **`buf`**: the buffer to set AppEUI <br> **`len`**: the length of AppEUI (must be 8 bytes) |
-| **Returns**       | bool                                                                                       |
-| **Return Values** | **TRUE** for setting AppEUI successfully <br> **FALSE** for setting AppEUI failure         |
+| **Function**      | `bool set(uint8_t * buf, uint32_t len)`                                                         |
+| ----------------- | ----------------------------------------------------------------------------------------------- |
+| **Parameters**    | **`buf`**: the buffer to set AppEUI <br> **`len`**: the length of AppEUI (must be 8&nbsp;bytes) |
+| **Returns**       | bool                                                                                            |
+| **Return Values** | **TRUE** for setting AppEUI successfully <br> **FALSE** for setting AppEUI failure              |
 
 
 ::: details Click to View Example
@@ -1695,11 +1695,11 @@ This API allows the user to get the application key.
 api.lorawan.appkey.get(buf, len);
 ```
 
-| **Function**      | `bool get(uint8_t* buf, uint32_t len)`                                                      |
-| ----------------- | ------------------------------------------------------------------------------------------- |
-| **Parameters**    | **`buf`**: the buffer to get AppKey <br> **`len`**: the length of AppKey (must be 16 bytes) |
-| **Returns**       | bool                                                                                        |
-| **Return Values** | **TRUE** for getting AppKey successfully <br> **FALSE** for getting AppKey failure          |
+| **Function**      | `bool get(uint8_t* buf, uint32_t len)`                                                           |
+| ----------------- | ------------------------------------------------------------------------------------------------ |
+| **Parameters**    | **`buf`**: the buffer to get AppKey <br> **`len`**: the length of AppKey (must be 16&nbsp;bytes) |
+| **Returns**       | bool                                                                                             |
+| **Return Values** | **TRUE** for getting AppKey successfully <br> **FALSE** for getting AppKey failure               |
 
 
 ::: details Click to View Example
@@ -1748,11 +1748,11 @@ This API allows the user to set the application key.
 api.lorawan.appkey.set(buf, len);
 ```
 
-| **Function**      | `bool set(uint8_t* buf, uint32_t len)`                                                      |
-| ----------------- | ------------------------------------------------------------------------------------------- |
-| **Parameters**    | **`buf`**: the buffer to set AppKey <br> **`len`**: the length of AppKey (must be 16 bytes) |
-| **Returns**       | bool                                                                                        |
-| **Return Values** | **TRUE** for setting AppKey successfully <br> **FALSE** for setting AppKey failure          |
+| **Function**      | `bool set(uint8_t* buf, uint32_t len)`                                                           |
+| ----------------- | ------------------------------------------------------------------------------------------------ |
+| **Parameters**    | **`buf`**: the buffer to set AppKey <br> **`len`**: the length of AppKey (must be 16&nbsp;bytes) |
+| **Returns**       | bool                                                                                             |
+| **Return Values** | **TRUE** for setting AppKey successfully <br> **FALSE** for setting AppKey failure               |
 
 
 ::: details Click to View Example
@@ -1813,11 +1813,11 @@ This API allows the user to get the application session key.
 bool get(uint8_t* buf, uint32_t len)
 ```
 
-| **Function**      | `bool get(uint8_t* buf, uint32_t len)`                                                        |
-| ----------------- | --------------------------------------------------------------------------------------------- |
-| **Parameters**    | **`buf`**: the buffer to get AppSKey <br> **`len`**: the length of AppSKey (must be 16 bytes) |
-| **Returns**       | bool                                                                                          |
-| **Return Values** | **TRUE** for getting AppSKey successfully <br> **FALSE** for getting AppSKey failure          |
+| **Function**      | `bool get(uint8_t* buf, uint32_t len)`                                                             |
+| ----------------- | -------------------------------------------------------------------------------------------------- |
+| **Parameters**    | **`buf`**: the buffer to get AppSKey <br> **`len`**: the length of AppSKey (must be 16&nbsp;bytes) |
+| **Returns**       | bool                                                                                               |
+| **Return Values** | **TRUE** for getting AppSKey successfully <br> **FALSE** for getting AppSKey failure               |
 
 ::: details Click to View Example
 ```c{21}
@@ -1865,11 +1865,11 @@ This API allows the user to set the application session key.
 api.lorawan.appskey.set(buf, len);
 ```
 
-| **Function**      | `bool set(uint8_t* buf, uint32_t len)`                                                        |
-| ----------------- | --------------------------------------------------------------------------------------------- |
-| **Parameters**    | **`buf`**: the buffer to set AppSKey <br> **`len`**: the length of AppSKey (must be 16 bytes) |
-| **Returns**       | bool                                                                                          |
-| **Return Values** | **TRUE** for setting AppSKey successfully <br> **FALSE** for setting AppSKey failure          |
+| **Function**      | `bool set(uint8_t* buf, uint32_t len)`                                                             |
+| ----------------- | -------------------------------------------------------------------------------------------------- |
+| **Parameters**    | **`buf`**: the buffer to set AppSKey <br> **`len`**: the length of AppSKey (must be 16&nbsp;bytes) |
+| **Returns**       | bool                                                                                               |
+| **Return Values** | **TRUE** for setting AppSKey successfully <br> **FALSE** for setting AppSKey failure               |
 
 
 ::: details Click to View Example
@@ -1930,11 +1930,11 @@ This API allows the user to get the device address.
 api.lorawan.daddr.get(buf, len);
 ```
 
-| **Function**      | `bool get(uint8_t* buf, uint32_t len)`                                                                             |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------ |
-| **Parameters**    | **`buf`**: the buffer to get the device address <br> **`len`**: the length of the device address (must be 4 bytes) |
-| **Returns**       | bool                                                                                                               |
-| **Return Values** | **TRUE** for getting device address successfully <br> **FALSE** for getting device address failure                 |
+| **Function**      | `bool get(uint8_t* buf, uint32_t len)`                                                                                  |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| **Parameters**    | **`buf`**: the buffer to get the device address <br> **`len`**: the length of the device address (must be 4&nbsp;bytes) |
+| **Returns**       | bool                                                                                                                    |
+| **Return Values** | **TRUE** for getting device address successfully <br> **FALSE** for getting device address failure                      |
 
 ::: details Click to View Example
 ```c{21}
@@ -1981,11 +1981,11 @@ This API allows the user to set the device address.
 api.lorawan.daddr.set(buf, len);
 ```
 
-| **Function**      | `bool set(uint8_t* buf, uint32_t len)`                                                                             |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------ |
-| **Parameters**    | **`buf`**: the buffer to set the device address <br> **`len`**: the length of the device address (must be 4 bytes) |
-| **Returns**       | bool                                                                                                               |
-| **Return Values** | **TRUE** for setting device address successfully <br> **FALSE** for setting device address failure                 |
+| **Function**      | `bool set(uint8_t* buf, uint32_t len)`                                                                                  |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------|
+| **Parameters**    | **`buf`**: the buffer to set the device address <br> **`len`**: the length of the device address (must be 4&nbsp;bytes) |
+| **Returns**       | bool                                                                                                                    |
+| **Return Values** | **TRUE** for setting device address successfully <br> **FALSE** for setting device address failure                      |
 
 
 ::: details Click to View Example
@@ -2046,11 +2046,11 @@ This API allows the user to get the global end-device ID.
 api.lorawan.deui.get(buf, len);
 ```
 
-| **Function**      | `bool get(uint8_t* buf, uint32_t len)`                                                                     |
-| ----------------- | ---------------------------------------------------------------------------------------------------------- |
-| **Parameters**    | **`buf`**: the buffer to get the device EUI <br> **`len`**: the length of the device EUI (must be 8 bytes) |
-| **Returns**       | bool                                                                                                       |
-| **Return Values** | **TRUE** for getting device EUI successfully <br> **FALSE** for getting device EUI failure                 |
+| **Function**      | `bool get(uint8_t* buf, uint32_t len)`                                                                          |
+| ----------------- | --------------------------------------------------------------------------------------------------------------- |
+| **Parameters**    | **`buf`**: the buffer to get the device EUI <br> **`len`**: the length of the device EUI (must be 8&nbsp;bytes) |
+| **Returns**       | bool                                                                                                            |
+| **Return Values** | **TRUE** for getting device EUI successfully <br> **FALSE** for getting device EUI failure                      |
 
 
 ::: details Click to View Example
@@ -2098,11 +2098,11 @@ This API allows the user to set the global end-device ID.
 api.lorawan.deui.set(buf, len);
 ```
 
-| **Function**      | `bool set(uint8_t* buf, uint32_t len)`                                                                     |
-| ----------------- | ---------------------------------------------------------------------------------------------------------- |
-| **Parameters**    | **`buf`**: the buffer to set the device EUI <br> **`len`**: the length of the device EUI (must be 8 bytes) |
-| **Returns**       | bool                                                                                                       |
-| **Return Values** | **TRUE** for setting device EUI successfully <br> **FALSE** for setting device EUI failure                 |
+| **Function**      | `bool set(uint8_t* buf, uint32_t len)`                                                                          |
+| ----------------- | --------------------------------------------------------------------------------------------------------------- |
+| **Parameters**    | **`buf`**: the buffer to set the device EUI <br> **`len`**: the length of the device EUI (must be 8&nbsp;bytes) |
+| **Returns**       | bool                                                                                                            |
+| **Return Values** | **TRUE** for setting device EUI successfully <br> **FALSE** for setting device EUI failure                      |
 
 
 ::: details Click to View Example
@@ -2159,11 +2159,11 @@ This API allows the user to get the network identifier (NetID).
 api.lorawan.netid.get(buf, len);
 ```
 
-| **Function**      | `bool get(uint8_t* buf, uint32_t len)`                                                                                                     |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Parameters**    | **`buf`**: the buffer to get the network identifier (NetID) <br> **`len`**: the length of the network identifier (NetID) (must be 3 bytes) |
-| **Returns**       | bool                                                                                                                                       |
-| **Return Values** | **TRUE** for getting the network identifier (NetID) successfully <br> **FALSE** for getting the network identifier (NetID) failure         |
+| **Function**      | `bool get(uint8_t* buf, uint32_t len)`                                                                                                          |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Parameters**    | **`buf`**: the buffer to get the network identifier (NetID) <br> **`len`**: the length of the network identifier (NetID) (must be 3&nbsp;bytes) |
+| **Returns**       | bool                                                                                                                                            |
+| **Return Values** | **TRUE** for getting the network identifier (NetID) successfully <br> **FALSE** for getting the network identifier (NetID) failure              |
 
 ::: tip 📝 NOTE
 Even though the length of network identifier(NetID) is 3 bytes, you should give 4-byte buffer for natural alignment.
@@ -2240,11 +2240,11 @@ This API allows the user to get the network session key.
 api.lorawan.nwkskey.get(buf, len);
 ```
 
-| **Function**      | `bool get(uint8_t* buf, uint32_t len)`                                                                                        |
-| ----------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| **Parameters**    | **`buf`**: the buffer to get the network session key <br> **`len`**: the length of the network session key (must be 16 bytes) |
-| **Returns**       | bool                                                                                                                          |
-| **Return Values** | **TRUE** for getting the network session key successfully <br> **FALSE** for getting the network session key failure          |
+| **Function**      | `bool get(uint8_t* buf, uint32_t len)`                                                                                             |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| **Parameters**    | **`buf`**: the buffer to get the network session key <br> **`len`**: the length of the network session key (must be 16&nbsp;bytes) |
+| **Returns**       | bool                                                                                                                               |
+| **Return Values** | **TRUE** for getting the network session key successfully <br> **FALSE** for getting the network session key failure               |
 
 
 ::: details Click to View Example
@@ -2292,10 +2292,10 @@ This API allows the user to set the network session key.
 api.lorawan.nwkskey.set(buf, len);
 ```
 
-| **Function**   | `bool set(uint8_t* buf, uint32_t len)`                                                                                        |
-| -------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| **Parameters** | **`buf`**: the buffer to set the network session key <br> **`len`**: the length of the network session key (must be 16 bytes) |
-| **Returns**    | **TRUE** for setting the network session key successfully <br> **FALSE** for setting the network session key failure          |
+| **Function**   | `bool set(uint8_t* buf, uint32_t len)`                                                                                             |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| **Parameters** | **`buf`**: the buffer to set the network session key <br> **`len`**: the length of the network session key (must be 16&nbsp;bytes) |
+| **Returns**    | **TRUE** for setting the network session key successfully <br> **FALSE** for setting the network session key failure               |
 
 
 ::: details Click to View Example
@@ -2360,7 +2360,7 @@ api.lorawan.rety.get();
 
 | **Function** | `uint8_t get()`                    |
 | ------------ | ---------------------------------- |
-| **Returns**  | the retry times for retransmission |
+| **Returns**  | The retry times for retransmission |
 
 
 ::: details Click to View Example
@@ -2861,11 +2861,11 @@ api.lorawan.lpsend(port, ack, payload, length);
 ```
 
 
-| **Function**      | `bool lpsend(uint8_t port, bool ack, uint8_t * payload, int length)`                                                                                                                                  |
-| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Function**      | `bool lpsend(uint8_t port, bool ack, uint8_t * payload, int length)`                                                                                                                                   |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Parameters**    | **port** - application port to be transmitted  <br> **ack** - indicate this is a confirmed message or not  <br>  **payload**	the data you want to send   <br>  **length** - the length of the payload |
-| **Returns**       | bool                                                                                                                                                                                                  |
-| **Return Values** | **TRUE** for sending data success <br> **FALSE** for sending data failure                                                                                                                             |
+| **Returns**       | bool                                                                                                                                                                                                   |
+| **Return Values** | **TRUE** for sending data success <br> **FALSE** for sending data failure                                                                                                                              |
 
 
 **Example:**
@@ -3339,6 +3339,784 @@ void loop()
 ```
 :::
 
+
+### dcs
+
+This api allows the user to access the duty cycle parameter
+
+```c
+RAKLorawan::dcs
+```
+
+#### get()
+
+This API allows the user to get the duty cycle parameter.
+
+```c
+api.lorawan.dcs.get();
+```
+
+| **Function**      | `bool get()`                                                      |
+| ----------------- | ----------------------------------------------------------------- |
+| **Returns**       | bool                                                              |
+| **Return Values** | **TRUE** - enable duty cycle  <br> **FALSE** - disable duty cycle |
+
+
+::: details Click to View Example
+```c{10}
+void setup()
+{
+    Serial.begin(115200);
+
+    Serial.printf("Enable duty cycle  %s\r\n", api.lorawan.dcs.set(1) ? "Success" : "Fail");
+}
+
+void loop()
+{
+    Serial.printf("Duty cycle is  %s\r\n", api.lorawan.adr.get() ? "Enable" : "Disable");
+    delay(1000);
+}
+```
+:::
+
+
+#### set()
+
+
+This API allows the user to set the duty cycle parameter.
+
+
+```c
+api.lorawan.dcs.set(dutyCycle);
+```
+
+
+| **Function**      | `bool set(uint8_t dutyCycle)`                                                       |
+| ----------------- | ----------------------------------------------------------------------------------- |
+| **Parameters**    | **dutyCycle** - the LoRaWAN duty cycle                                              |
+| **Returns**       | bool                                                                                |
+| **Return Values** | **TRUE** for setting duty cycle success  <br> **FALSE** for setting duty cycle fail |
+
+
+
+::: details Click to View Example
+```c{5}
+void setup()
+{
+    Serial.begin(115200);
+
+    Serial.printf("Enable duty cycle  %s\r\n", api.lorawan.dcs.set(1) ? "Success" : "Fail");
+}
+
+void loop()
+{
+    Serial.printf("Duty cycle is  %s\r\n", api.lorawan.adr.get() ? "Enable" : "Disable");
+    delay(1000);
+}
+```
+:::
+
+
+### dr
+
+This API allows the user to access the data rate.
+
+:::tip 📝 NOTE:
+Complete information about DR parameter on each region can be found on [RUI3 Appendix - LoRaWAN Regional Parameter (Data Rate)](/RUI3/Appendix/#data-rate-by-region).
+- **EU433 / RU864 / IN865 / EU868 / CN470 / KR920** and the data rate range of values is 0-5 (DR0-DR5). <br>
+- **AS923** and the data rate range of values is 2-5 (DR2-DR5). <br>
+- **US915** and the data rate range of values is 0-4 (DR0-DR4). <br>
+- **AU915** and the data rate range of values is 0-6 (DR0-DR6).
+:::
+
+```c
+RAKLorawan::dr
+```
+
+
+#### get()
+
+This API allows the user to get the data rate.
+
+```c
+api.lorawan.dr.get();
+```
+
+| **Function** | `uint8_t get()` |
+| ------------ | --------------- |
+| **Returns**  | The data rate   |
+
+
+::: details Click to View Example
+```c{10}
+void setup()
+{
+    Serial.begin(115200);
+
+    Serial.printf("Set the data rate  %s\r\n", api.lorawan.dr.set(5) ? "Success" : "Fail");
+}
+
+void loop()
+{
+    Serial.printf("The data rate is %d\r\n", api.lorawan.dr.get());
+    delay(1000);
+}
+```
+:::
+
+#### set()
+
+This API allows the user to set the data rate.
+
+
+```c
+api.lorawan.dr.set(value);
+```
+
+| **Function**      | `bool set(uint8_t value)`                                                               |
+| ----------------- | --------------------------------------------------------------------------------------- |
+| **Parameters**    | **value** - the data rate                                                               |
+| **Returns**       | bool                                                                                    |
+| **Return Values** | **TRUE** for setting data rate success   <br>   **FALSE** for setting data rate failure |
+
+
+::: details Click to View Example
+```c{5}
+void setup()
+{
+    Serial.begin(115200);
+
+    Serial.printf("Set the data rate  %s\r\n", api.lorawan.dr.set(5) ? "Success" : "Fail");
+}
+
+void loop()
+{
+    Serial.printf("The data rate is %d\r\n", api.lorawan.dr.get());
+    delay(1000);
+}
+```
+:::
+
+
+### jn1dl
+
+This API allows the user to access the join delay on RX window 1.
+
+```c
+RAKLorawan::jn1dl
+```
+
+#### get()
+
+This API allows the user to get the data rate.
+
+```c
+api.lorawan.jn1dl.get();
+```
+
+| **Function** | `int get()`                                   |
+| ------------ | --------------------------------------------- |
+| **Returns**  | The join delay on RX window 1 (Type: **int**) |
+
+
+::: details Click to View Example
+```c{10}
+void setup()
+{
+    Serial.begin(115200);
+
+    Serial.printf("Set the join delay on RX window 1  %s\r\n", api.lorawan.jn1dl.set(5000) ? "Success" : "Fail");
+}
+
+void loop()
+{
+    Serial.printf("The join delay on RX window 1 is %d\r\n", api.lorawan.jn1dl.get());
+    delay(1000);
+}
+```
+:::
+
+
+#### set()
+
+This API allows the user to set the join delay on RX window 1.
+
+```c
+api.lorawan.jn1dl.set(value);
+```
+
+| **Function**      | `bool set(int value)`                                                                 |
+| ----------------- | ------------------------------------------------------------------------------------- |
+| **Parameters**    | **value** - the join delay on RX window 1                                             |
+| **Returns**       | bool                                                                                  |
+| **Return Values** | **TRUE** for setting join delay success <br> **FALSE** for setting join delay failure |
+
+
+::: details Click to View Example
+```c{5}
+void setup()
+{
+    Serial.begin(115200);
+
+    Serial.printf("Set the join delay on RX window 1  %s\r\n", api.lorawan.jn1dl.set(5000) ? "Success" : "Fail");
+}
+
+void loop()
+{
+    Serial.printf("The join delay on RX window 1 is %d\r\n", api.lorawan.jn1dl.get());
+    delay(1000);
+}
+```
+:::
+
+
+### jn2dl
+
+
+```c
+RAKLorawan::jn2dl
+```
+
+#### get()
+
+This API allows the user to access the join delay on RX window 2.
+
+```c
+api.lorawan.jn2dl.get();
+```
+
+| **Function** | `int get()`                                    |
+| ------------ | ---------------------------------------------- |
+| **Returns**  | The join delay on RX window 2 (Type: **bool**) |
+
+
+::: details Click to View Example
+```c{8}
+void setup()
+{
+    Serial.begin(115200);
+}
+
+void loop()
+{
+    Serial.printf("The join delay on RX window 2 is %d\r\n", api.lorawan.jn2dl.get());
+    delay(1000);
+}
+```
+:::
+
+
+#### set()
+
+This API allows the user to set the join delay on RX window 2.
+
+```c
+api.lorawan.jn2dl.set(value);
+```
+
+| **Function**      | `bool set(int value)`                                                                 |
+| ----------------- | ------------------------------------------------------------------------------------- |
+| **Parameters**    | **value** - the join delay on RX window 2                                             |
+| **Returns**       | bool                                                                                  |
+| **Return Values** | **TRUE** for setting join delay success <br> **FALSE** for setting join delay failure |
+
+::: details Click to View Example
+```c{5}
+void setup()
+{
+    Serial.begin(115200);
+
+    Serial.printf("Set the join delay on RX window 2  %s\r\n", api.lorawan.jn2dl.set(5000) ? "Success" : "Fail");
+}
+
+void loop()
+{
+    Serial.printf("The join delay on RX window 2 is %d\r\n", api.lorawan.jn2dl.get());
+    delay(1000);
+}
+```
+:::
+
+### pnm
+
+This API allows the user to access the public network mode.
+
+```c
+RAKLorawan::pnm
+```
+
+#### get()
+
+This API allows the user to get the public network mode.
+
+```c
+api.lorawan.pnm.get();
+```
+
+| **Function**      | `bool get()`                     |
+| ----------------- | -------------------------------- |
+| **Returns**       | bool                             |
+| **Return Values** | **TRUE**: On <br> **FALSE**: Off |
+
+
+::: details Click to View Example
+```c{10}
+void setup()
+{
+    Serial.begin(115200);
+
+    Serial.printf("Set the public network mode  %s\r\n", api.lorawan.pnm.set(1) ? "Success" : "Fail");
+}
+
+void loop()
+{
+    Serial.printf("The public network mode is  %d\r\n", api.lorawan.pnm.get() ? "On" : "Off");
+    delay(1000);
+}
+```
+:::
+
+
+#### set()
+
+This API allows the user to set the public network mode.
+
+```c
+api.lorawan.pnm.set(value);
+```
+
+| **Function**      | `bool set(bool value)`                                                                                   |
+| ----------------- | -------------------------------------------------------------------------------------------------------- |
+| **Parameters**    | **value** - the public network mode                                                                      |
+| **Returns**       | bool                                                                                                     |
+| **Return Values** | **TRUE** for setting public network mode success  <br> **FALSE** for setting public network mode failure |
+
+
+::: details Click to View Example
+```c{5}
+void setup()
+{
+    Serial.begin(115200);
+
+    Serial.printf("Set the public network mode  %s\r\n", api.lorawan.pnm.set(1) ? "Success" : "Fail");
+}
+
+void loop()
+{
+    Serial.printf("The public network mode is  %d\r\n", api.lorawan.pnm.get() ? "On" : "Off");
+    delay(1000);
+}
+```
+:::
+
+
+### rx1dl
+
+This API allows the user to access the delay of the received window 1.
+
+
+```c
+RAKLorawan::rx1dl
+```
+
+#### get()
+
+This API allows the user to get the delay of the received window 1.
+
+```c
+api.lorawan.rx1dl.get();
+```
+
+| **Function** | `int get()`                        |
+| ------------ | ---------------------------------- |
+| **Returns**  | The delay of the received window 1 |
+
+
+::: details Click to View Example
+```c{10}
+void setup()
+{
+    Serial.begin(115200);
+
+    Serial.printf("Set the received delay on RX window 1  %s\r\n", api.lorawan.rx1dl.set(1) ? "Success" : "Fail");
+}
+
+void loop()
+{
+    Serial.printf("The received delay on RX window 1 is %d\r\n", api.lorawan.rx1dl.get());
+    delay(1000);
+}
+```
+:::
+
+
+#### set()
+
+This API allows the user to set the delay of the received window 1.
+
+```c
+api.lorawan.rx1dl.set(value);
+```
+
+| **Function**      | `bool set(int value)`                                                        |
+| ----------------- | ---------------------------------------------------------------------------- |
+| **Parameters**    | **value** - the delay of the received window 1                               |
+| **Returns**       | bool                                                                         |
+| **Return Values** | **TRUE** for setting delay success  <br> **FALSE** for setting delay failure |
+
+
+::: details Click to View Example
+```c{5}
+void setup()
+{
+    Serial.begin(115200);
+
+    Serial.printf("Set the received delay on RX window 1  %s\r\n", api.lorawan.rx1dl.set(1) ? "Success" : "Fail");
+}
+
+void loop()
+{
+    Serial.printf("The received delay on RX window 1 is %d\r\n", api.lorawan.rx1dl.get());
+    delay(1000);
+}
+```
+:::
+
+### rx2dl
+
+This API allows the user to access the delay of the received window 2
+
+```c
+RAKLorawan::rx2dl
+```
+
+#### get()
+
+This API allows the user to get the delay of the received window 2
+
+```c
+api.lorawan.rx2dl.get();
+```
+
+| **Function** | `int get()`                        |
+| ------------ | ---------------------------------- |
+| **Returns**  | The delay of the received window 2 |
+
+
+::: details Click to View Example
+```c{10}
+void setup()
+{
+    Serial.begin(115200);
+    Serial.printf("Set the received delay on RX window 2  %s\r\n", api.lorawan.rx2dl.set(2000) ? "Success" : "Fail");
+}
+
+void loop()
+{
+    Serial.printf("The received delay on RX window 2 is %d\r\n", api.lorawan.rx2dl.get());
+    delay(1000);
+}
+```
+:::
+
+#### set()
+
+This API allows the user to set the delay of the received window 2
+
+```c
+api.lorawan.rx2dl.set(value)
+```
+
+| **Function**      | `bool set(int value)`                                                       |
+| ----------------- | --------------------------------------------------------------------------- |
+| **Parameters**    | **value** - the delay of the received window 2                              |
+| **Returns**       | bool                                                                        |
+| **Return Values** | **TRUE** for setting delay success <br> **FALSE** for setting delay failure |
+
+
+::: details Click to View Example
+```c{5}
+void setup()
+{
+    Serial.begin(115200);
+
+    Serial.printf("Set the received delay on RX window 2  %s\r\n", api.lorawan.rx2dl.set(2000) ? "Success" : "Fail");
+}
+
+void loop()
+{
+    Serial.printf("The received delay on RX window 2 is %d\r\n", api.lorawan.rx2dl.get());
+    delay(1000);
+}
+```
+:::
+### rx2dr
+
+This API allows the user to access the data rate of received window 2.
+
+```c
+RAKLorawan::rx2dr
+```
+
+#### get()
+
+This API allows the user to get the data rate of received window 2.
+
+```c
+api.lorawan.rx2dr.get();
+```
+
+| **Function** | `uint8_t get()`                    |
+| ------------ | ---------------------------------- |
+| **Returns**  | The data rate of received window 2 |
+
+
+::: details Click to View Example
+```c{10}
+void setup()
+{
+    Serial.begin(115200);
+
+    Serial.printf("Set the data rate of received window 2 %s\r\n", api.lorawan.rx2dr.set(5) ? "Success" : "Fail");
+}
+
+void loop()
+{
+    Serial.printf("The data rate of received window 2 is %d\r\n", api.lorawan.rx2dr.get());
+    delay(1000);
+}
+```
+:::
+
+
+#### set()
+
+This API allows the user to set the data rate of received window 2.
+
+```c
+api.lorawan.rx2dr.set(value);
+```
+
+| **Function**      | `bool set(uint8_t value)`                                                           |
+| ----------------- | ----------------------------------------------------------------------------------- |
+| **Parameters**    | **value** - the data rate of received window 2                                      |
+| **Returns**       | bool                                                                                |
+| **Return Values** | **TRUE** for setting data rate success <br> **FALSE** for setting data rate failure |
+
+
+::: details Click to View Example
+```c{5}
+void setup()
+{
+    Serial.begin(115200);
+
+    Serial.printf("Set the data rate of received window 2 %s\r\n", api.lorawan.rx2dr.set(5) ? "Success" : "Fail");
+}
+
+void loop()
+{
+    Serial.printf("The data rate of received window 2 is %d\r\n", api.lorawan.rx2dr.get());
+    delay(1000);
+}
+```
+:::
+
+
+### rx2fq
+
+```c
+RAKLorawan::rx2fq
+```
+
+#### get()
+
+This API allows the user to access the frequency of the received window 2.
+
+```c
+api.lorawan.rx2fq.get();
+```
+
+| **Function** | `long get()`                           |
+| ------------ | -------------------------------------- |
+| **Returns**  | The frequency of the received window 2 |
+
+
+::: details Click to View Example
+```c{8}
+void setup()
+{
+    Serial.begin(115200);
+}
+
+void loop()
+{
+    Serial.printf("The frequency of received window 2 is %d\r\n", api.lorawan.rx2fq.get());
+    delay(1000);
+}
+```
+:::
+
+### txp
+
+This API allows the user to access the transmit power.
+
+:::tip 📝 NOTE:
+Highest power start from 0. Complete information about TXP parameter on each region can be found on [RUI3 Appendix - LoRaWAN Regional Parameter (TX Power)](/RUI3/Appendix/#tx-power-by-region).
+- **EU868 / RU864 / KR920 / AS923 / CN470** and Transmit power range of values is 0-7. <br>
+- **US915 / AU915** and Transmit power range of values is 0-14. <br>
+- **EU433** and Transmit power range of values is 0-5. <br>
+- **IN865** and Transmit power range of values is 0-10.
+:::
+
+```c
+RAKLorawan::txp
+```
+
+#### get()
+
+This API allows the user to get the transmit power.
+
+
+```c
+api.lorawan.txp.get();
+```
+
+| **Function** | `uint8_t get()`            |
+| ------------ | -------------------------- |
+| **Returns**  | The LoRaWAN transmit power |
+
+
+::: details Click to View Example
+```c{10}
+void setup()
+{
+    Serial.begin(115200);
+
+    Serial.printf("Set the transmit power %s\r\n", api.lorawan.txp.set(1) ? "Success" : "Fail");
+}
+
+void loop()
+{
+    Serial.printf("The transmit power is %d\r\n", api.lorawan.txp.get());
+    delay(1000);
+}
+```
+:::
+
+
+#### set()
+
+This API allows the user to set the transmit power.
+
+```c
+api.lorawan.txp.set(value);
+```
+
+| **Function**   | `bool set(uint8_t value)`                                                                      |
+| -------------- | ---------------------------------------------------------------------------------------------- |
+| **Parameters** | **value** - the LoRaWAN transmit power                                                         |
+| **Returns**    | **TRUE** for setting transmit power success <br>  **FALSE** for setting transmit power failure |
+
+
+::: details Click to View Example
+```c{5}
+void setup()
+{
+    Serial.begin(115200);
+
+    Serial.printf("Set the transmit power %s\r\n", api.lorawan.txp.set(1) ? "Success" : "Fail");
+}
+
+void loop()
+{
+    Serial.printf("The transmit power is %d\r\n", api.lorawan.txp.get());
+    delay(1000);
+}
+```
+:::
+
+
+
+### linkcheck
+
+This API allows the user to verify network link status.
+
+
+```c
+RAKLorawan::linkcheck
+```
+
+#### get()
+
+
+This API allows the user to verify network link status.
+
+
+```c
+api.lorawan.linkcheck.get();
+```
+
+
+| **Function**      | `uint32_t get()`                                                                                                                                            |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Returns**       | The mode of verifying network link status                                                                                                                   |
+| **Return Values** | **0** disable link check <br> **1** execute link check one time <br> **2** module will automatically execute one time link check after every upload of data |
+
+
+
+::: details Click to View Example
+```c{10}
+void setup()
+{
+    Serial.begin(115200);
+
+    Serial.printf("Set Verifying network link status %s\r\n", api.lorawan.linkcheck.set(1) ? "Success" : "Fail");
+}
+
+void loop()
+{
+    Serial.printf("Network link status = %d\r\n", api.lorawan.linkcheck.get());
+
+    delay(1000);
+}
+```
+:::
+
+
+#### set()
+
+This API allows the user to set the network link status.
+
+
+```c
+api.lorawan.linkcheck.set(value);
+```
+
+| **Function**      | `bool set(uint8_t value)`                                                                                                              |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| **Parameters**    | **value** - 	the mode of verifying network link status                                                                                |
+| **Returns**       | bool                                                                                                                                   |
+| **Return Values** | **TRUE** for setting mode of verifying network link status <br> **FALSE**  for setting mode of verifying network link status failure   |
+
+::: details Click to View Example
+```c{5}
+void setup()
+{
+    Serial.begin(115200);
+
+    Serial.printf("Set Verifying network link status %s\r\n", api.lorawan.linkcheck.set(1) ? "Success" : "Fail");
+}
+
+void loop()
+{
+    Serial.printf("Network link status = %d\r\n", api.lorawan.linkcheck.get());
+
+    delay(1000);
+}
+```
+:::
+
+
 ## Class B Mode
 
 
@@ -3360,7 +4138,7 @@ api.lorawan.pgslot.get();
 
 | **Function** | `uint8_t get()`           |
 | ------------ | ------------------------- |
-| **Returns**  | the ping slot periodicity |
+| **Returns**  | The ping slot periodicity |
 
 
 
@@ -3477,7 +4255,7 @@ api.lorawan.bfreq.get();
 
 | **Function** | `float get()`                                 |
 | ------------ | --------------------------------------------- |
-| **Returns**  | the current beacon frequency (Type: **long**) |
+| **Returns**  | The current beacon frequency (Type: **long**) |
 
 
 ::: details Click to View Example
@@ -3538,7 +4316,7 @@ api.lorawan.btime.get()
 
 | **Function** | `long get()`               |
 | ------------ | -------------------------- |
-| **Returns**  | the current beacon time(b) |
+| **Returns**  | The current beacon time(b) |
 
 
 ::: details Click to View Example
@@ -3667,7 +4445,7 @@ api.lorawan.ltime.get();
 
 | **Function** | `string get()`                                  |
 | ------------ | ----------------------------------------------- |
-| **Returns**  | the local time in a UTC format (Type: **bool**) |
+| **Returns**  | The local time in a UTC format (Type: **bool**) |
 
 
 ::: details Click to View Example
@@ -3735,7 +4513,7 @@ api.lorawan.rssi.get();
 
 | **Function** | `int get()`                           |
 | ------------ | ------------------------------------- |
-| **Returns**  | the RSSI on reception (Type: **int**) |
+| **Returns**  | The RSSI on reception (Type: **int**) |
 
 
 ::: details Click to View Example
@@ -3808,7 +4586,7 @@ api.lorawan.snr.get();
 
 | **Function** | `int get()`                                         |
 | ------------ | --------------------------------------------------- |
-| **Returns**  | the SNR of the last received packet (Type: **int**) |
+| **Returns**  | The SNR of the last received packet (Type: **int**) |
 
 
 ::: details Click to View Example
@@ -3878,7 +4656,7 @@ api.lorawan.ver.get();
 
 | **Function** | `string get()`                         |
 | ------------ | -------------------------------------- |
-| **Returns**  | the LoRaWAN version (Type: **string**) |
+| **Returns**  | The LoRaWAN version (Type: **string**) |
 
 
 
@@ -4244,9 +5022,9 @@ api.lorawan.band.get();
 ```
 
 
-| **Function**      | `int32_t get()`                                                                                                                                                                                                                                                |
-| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Returns**       | the active region                                                                                                                                                                                                                                              |
+| **Function**      | `int32_t get()`                                                                                                                                                                                                                                                   |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Returns**       | the active region                                                                                                                                                                                                                                                 |
 | **Return Values** | **0** - EU433  <br>  **1** - CN470 <br> **2** - RU864 <br> **3**	- IN865 <br> **4** - EU868 <br> **5**	- US915 <br> **6** - AU915 <br> **7** - KR920 <br> **8** - AS923-1 <br> **9** - AS923-2 <br> **10** - AS923-3 <br> **11** - AS923-4 <br> **12** - LA915 |
 
 
@@ -4626,7 +5404,7 @@ api.lora.nwm.get();
 
 | **Function**      | `int get()`                                                      |
 | ----------------- | ---------------------------------------------------------------- |
-| **Returns**       | the network working mode                                         |
+| **Returns**       | The network working mode                                         |
 | **Return Values** | **0** - P2P mode <br> **1** - LoRaWAN mode <br> **2** - FSK mode |
 
 
@@ -5318,11 +6096,11 @@ api.lora.enckey.get(buff, len);
 ```
 
 
-| **Function**      | `bool get(uint8_t * buff, uint32_t len)`                                                                          |
-| ----------------- | ----------------------------------------------------------------------------------------------------------------- |
+| **Function**      | `bool get(uint8_t * buff, uint32_t len)`                                                                           |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------ |
 | **Parameters**    | **buff**	- the buffer to store encryption key <br> **len** - the length of encryption key (must be 16&nbsp;bytes) |
-| **Returns**       | bool                                                                                                              |
-| **Return Values** | **TRUE** for getting encryption key success <br> **FALSE** for getting encryption key failure                     |
+| **Returns**       | bool                                                                                                               |
+| **Return Values** | **TRUE** for getting encryption key success <br> **FALSE** for getting encryption key failure                      |
 
 
 ::: details Click to View Example

@@ -143,12 +143,6 @@ module.exports = {
           download: true
         },
         {
-          title: 'BLE UART',
-          path: '/RUI3/RUI3-BLE-Examples/BLE_Uart/',
-          nested: true,
-          download: true
-        },
-        {
           title: 'BLE Custom Service',
           path: '/RUI3/RUI3-BLE-Examples/BLE_Custom_Service/',
           nested: true,

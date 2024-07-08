@@ -1915,7 +1915,7 @@ The following table explains how to build a frame to execute the `AT+JN2DL=?` AT
 
 **Example:**
 
-If the join accept delay between the end of TX and the join RX Window 2 is 6 seconds, and the example is shown as follows:
+If the join accept delay between the end of TX and the join RX Window 2 is 6&nbsp;seconds, and the example is shown as follows:
 
 Send **AT+JN2DL=?**
 ```
@@ -2566,7 +2566,7 @@ The following table explains how to build a frame to execute the `AT+BGW=?` AT c
 
 **Example:**
 
-If the local time is 03h56m52s on 09/18/2021, and the example is shown as follows:
+If the local time is 03&nbsp;h56&nbsp;m52&nbsp;s on 09/18/2021, and the example is shown as follows:
 
 Send **AT+LTIME=?**
 ```
@@ -2650,7 +2650,7 @@ Send **AT+SNR=?**
 
 ## Supplement Command
 
-This section provides the set of commands related to channels and LoRaWAN regions.
+This section provides the set of commands related to channels and LoRaWAN® regions.
 
 ### AT+MASK
 
@@ -3059,7 +3059,7 @@ The following table explains how to build a frame to request a remote API mode d
 
 **Example:**
 
-If the P2P bandwidth is 125KHz, and the example is shown as follows
+If the P2P bandwidth is 125&nbsp;KHz, and the example is shown as follows
 
 Send **AT+PBW=?**
 ```

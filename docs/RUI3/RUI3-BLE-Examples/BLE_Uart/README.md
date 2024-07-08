@@ -110,7 +110,7 @@ To finish the pairing, click the **OK** button. Pairing is the process by which 
   caption="Send text message using UART Service"
 />
 
-5. Now check the Arduino Serial Monitor if you have received a message with content `3132333435`. This is the ASCII encoding of **12345**.
+5. Now check the Arduino Serial Monitor if you have received a message with content `RAK_BLE_UART!!!`. 
 
 <rk-img
   src="/assets/images/rui3/ble_examples/uart-service-log.png"

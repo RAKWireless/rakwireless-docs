@@ -12,7 +12,7 @@ The project is available on Arduino IDE **RAK WisBlock RUI Examples**.
 1. Launch Arduino IDE then go to: **File** -> **Examples** -> **RAK WisBlock RUI Examples** -> **Example** -> **BLE_Beacon_Custom_Payload**.
 
 <rk-img
-  src="/assets/images/rui3/ble_examples/custom-upload.png"
+  src="/assets/images/rui3/ble_examples/ble-beacon-custom-payload.png"
   width="100%"
   caption="RAK WisBlock RUI BLE Beacon custom payload example"
 />
@@ -35,7 +35,7 @@ The project is available on Arduino IDE **RAK WisBlock RUI Examples**.
 
 ## Example Details
 
-This sketch sends an [Eddystone URL](https://en.wikipedia.org/wiki/Eddystone_(Google)) beacon. The BLE beacons can contain up to 31 bytes of data in their payload.
+This sketch sends an [Eddystone URL](https://en.wikipedia.org/wiki/Eddystone_(Google)) beacon. The BLE beacons can contain up to 31&nbsp;bytes of data in their payload.
 
 ## Configurable Parameters
 

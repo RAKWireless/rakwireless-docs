@@ -37,7 +37,7 @@ The project is available on Arduino IDE **RAK WisBlock RUI Examples**.
 
 <rk-img
   src="/assets/images/rui3/ble_examples/ble-conf-log.png"
-  width="90%"
+  width="100%"
   caption="Serial monitor BLE_Configuration log"
 />
 

@@ -205,7 +205,7 @@ When connecting to RAK9154, ensure that the Sensor Hub is connected to the Outpu
 
 <rk-img
   src="/assets/images/wisnode/solar-radiation-monitoring/quickstart/f18SolarSolution_Batteryins6.png"
-  width="45%"
+  width="70%"
   caption="Connect Sensor Hub and RAK9154"
 />
 

@@ -35,14 +35,9 @@ Together with a RAK WisGate Gateway and LoRa Server products, RAK2470 can quickl
 - IP67 weatherproof
 
 
-## Package Inclusions
+## Package Inclusion
 
 - One (1) RAK2470 WisNode Bridge Serial Prime
 - One (1) Mounting Kit
 - One (1) T-Type Conversion Cable
-
-<rk-img
-src="/assets/images/wisnode/rak2470-n/overview/2.package-contents.png"
-width="80%"
-caption="RAK2470 Package Inclusions"
-/>
+- One (1) Power Adapter

@@ -21,11 +21,12 @@ Thank you for choosing the **Soil Moisture, Temperature, and Electrical Conducti
 
 ### Solution Description
 
-The Soil Moisture, Temperature, and Electrical Conductivity Solution consists of RAK Sensor Hub and RK520-02, designed for use in settings such as rice fields and greenhouse cultivation.
+The Soil Moisture, Temperature, and Electrical Conductivity Solution consists of the RAK Sensor Hub and soil sensor RK520-02. This solution provides accurate measurements with a sensor equipped with built-in temperature compensation and a probe that can be permanently embedded in the ground and linked to a data recorder for continuous testing. This comprehensive monitoring system is well-suited for various applications, including agriculture, turf farming, water conservation, and soil testing.
 
-The sensor solution comes with a temperature compensation to ensure measurement precision and a stainless-steel probe for rapid testing when inserted into the soil surface or profile. These probes can be permanently embedded in the ground and connected to a data recorder for unlimited testing.
+With the plug-and-play feature of the Sensor Hub, the Soil Moisture, Temperature, and Electrical Conductivity Solution comes with pre-installed components ready for easy installation and connection. The sensor provides highly accurate soil readings, with the Sensor Hub collecting and transmitting the data via LoRaWAN or NB-IoT/CAT M1.
 
-In addition, this solution provides a comprehensive and versatile soil condition monitoring system with Sensor Hub’s form factor, allowing for the simultaneous connection of different sensors. The Sensor Hub has three isolated components: input power supply, sensing probe, and signal output. This design ensures safety, reliability, and easy installation.
+The Sensor Hub’s connectivity function allows for versatile data transmission to the cloud using the two most commonly used communication protocols in IoT. This versatility ensures that data is readily available for storage, visualization, and in-depth analysis, enabling informed decision-making based on comprehensive knowledge of Soil Moisture, Temperature, and Electrical Conductivity levels.
+
 
 
 ### Solution Features
