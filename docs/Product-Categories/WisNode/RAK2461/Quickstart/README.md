@@ -18,9 +18,9 @@ Before going through each and every step in the installation guide of the WisNod
 #### Hardware Tools
 
 1. <a href="https://store.rakwireless.com/products/rak2461-wisnode-bridge-io-lite?utm_source=rak2461&utm_medium=Document&utm_campaign=BuyFromStore" target="_blank">RAK2461 WisNode Bridge IO Lite</a>
-2. USB configuration cable (sold separately)
-3. Gateway in Range, for Testing
-4. A Windows/Mac OS/Linux Computer
+2. USB configuration cable
+3. Gateway in range, for Testing
+4. A Windows/macOS/Linux Computer
 
 #### Software Tools
 
@@ -339,7 +339,7 @@ caption="Polling task parameters"
 />
 
 
-#### Creating a **Raw Data in Binary** Poll Task
+#### Creating a Raw Data in Binary Poll Task
 
 Fill in the **register address** and other relevant fields according to the specific sensor's datasheet, then after clicking the **Check** button, you will see the Reply Frame on the IO.Box.
 
@@ -362,7 +362,7 @@ width="80%"
 caption="Uplink data"
 />
 
-#### Creating a **Wind Speed** Poll Task - Example
+#### Creating a Wind Speed Poll Task - Example
 
 Fill in the relevant fields according to the specific sensor's datasheet, then after clicking the **Check** button, you will see the Reply Frame on the IO.Box.
 

@@ -413,7 +413,7 @@ You can log in and install the package manually with the following steps:
 
 :::tip 📝 NOTE:
 - The package name would be with the prefix `upgrade_agw`.
-- Specific package name: ` magma$ sudo /opt/magma/upgrade_agw_xxx`.
+- Specific package name: ` magma$ sudo /var/opt/magma/upgrade_agw_xxx`.
 :::
 
 4. Reboot to run AGW.
@@ -449,7 +449,7 @@ RAK M310/M320 has a built-in open-source Open5GS installation package inside. Yo
 
 :::tip 📝 NOTE:
 - The package name would be with the prefix `install_open5gs`.
-- Specific package name: ` magma$ sudo /opt/open5gs/install_open5gs_xxx`.
+- Specific package name: ` magma$ sudo /var/opt/open5gs/install_open5gs_xxx`.
 :::
 
 4. Reboot to run AGW.
