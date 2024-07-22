@@ -17,7 +17,7 @@ tags:
 
 ### Descriptions
 
-The RAK7267 WisGate Soho Pro is an innovative 8-channel LoRaWAN gateway designed for both indoor and outdoor deployments. This gateway supports Wi-Fi and Cellular network backhaul, with a specifically tailored gateway enclosure to allow the LoRa, LTE, Wi-Fi, and GPS antennas to be inside the enclosure.
+The RAK7267 WisGate Soho Pro is an innovative 8-channel LoRaWAN gateway designed for outdoor deployment. This gateway supports Wi-Fi and Cellular network backhaul, with a specifically tailored gateway enclosure to allow the LoRa, LTE, Wi-Fi, and GPS antennas to be inside the enclosure.
 
 Aside from the connectivity, this gateway offers an IP67 Unify Enclosure, protecting the internal components from dust and water.  The exposure has a weatherproof fire retardant enclosure made of ABS plastic specially designed for outdoors.
 

@@ -20,7 +20,7 @@ certifications:
 
 ### Description 
 
-Battery Plus is the RAK's latest battery system incorporating a solar charging system and status monitoring. It is specially developed for the WisGate Edge Pro gateways. It will allow reliable outdoor deployment of the gateway in remote off-grid scenarios where the power is unreliable or inaccessible. Not only your gateway will be powered 24/7 with the solar panel option, but you will get all the battery data and status in the WisGateOS’ Web UI locally, and in the WisDM remotely. With its 50Ah battery, your gateway can run for more than 2 days without sun.
+Battery Plus is the RAK's latest battery system incorporating a solar charging system and status monitoring. It is specially developed for the WisGate Edge Pro gateways. It will allow reliable outdoor deployment of the gateway in remote off-grid scenarios where the power is unreliable or inaccessible. Not only your gateway will be powered 24/7 with the solar panel option, but you will get all the battery data and status in the WisGateOS’ Web UI locally, and in the WisDM remotely. With its 50Ah battery, your gateway can run for more than 5 days without sun.
 
 ### Features
 
@@ -28,6 +28,7 @@ Battery Plus is the RAK's latest battery system incorporating a solar charging s
 - **Integrated Heating Function** - The battery integrates a solar charger and heater, it can be connected to PV panels directly and charged under 0 °C. 
 - **Lightweight Design** - The weight of RAK9155 is no more than 8 kg making installation by a single person easier. 
 - **High Waterproof Grade** - With IP65 rating of the enclosure, RAK9155 is suitable for both indoor and outdoor environments.
+- **Two PV inputs** - One mandatory for primary solar panel and one optional for a second panel, ideal for high-altitude or low-sunlight areas.
 
 
 ## Specifications
@@ -149,6 +150,14 @@ For reference only, this module does not contain a sampling wiring harness.
 | --------- | ----------------------- | -------------------- | ----------------------------------------------- | ---------------------------------------------------------- |
 | Load      | LP-16-J04SX-02-101      | LP-16-C04PE-02-001   | Pin1：P+;  Pin2：P-;  Pin3: RS485A;  Pin4: RS485B | Linco;  IP67; Rated current 10 A; Contact diameter 1.5mm*4 |
 | PV INPUT  | LP-16-J02SX-02-101      | LP-16-J02PE-02-001   | Pin1: PV+;  Pin2: PV-                           | Linco; IP67; Rated current 10 A; Contact diameter 1.5mm*2  |
+
+:::tip 📝 NOTE
+The Battery Plus RAK9155 features two PV inputs for up to two Solar Panel:
+
+PV Input 1 (Mandatory): Connects to the primary solar panel to charge the battery. 
+
+PV Input 2 (Optional): Can be used for a second solar panel. This is beneficial in high-altitude regions or areas with low sunlight, ensuring adequate charging.
+:::
 
 #### Environmental Requirements
 

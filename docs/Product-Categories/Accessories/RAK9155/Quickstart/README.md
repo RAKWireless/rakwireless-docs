@@ -251,7 +251,13 @@ Replace the module with a new one if discharge time at room temperature is notic
 | 6    | GND          | M4                 | Yellow-Green                                                                                            |
 
 
+:::tip 📝 NOTE
+The Battery Plus RAK9155 features two PV inputs for up to two Solar Panel:
 
+PV Input 1 (Mandatory): Connects to the primary solar panel to charge the battery. 
+
+PV Input 2 (Optional): Can be used for a second solar panel. This is beneficial in high-altitude regions or areas with low sunlight, ensuring adequate charging.
+:::
 ## Installation
 
 ### Pre-Installation Preparation

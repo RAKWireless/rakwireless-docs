@@ -20,7 +20,7 @@ Thank you for choosing **RAK9155 Battery Plus** in your awesome IoT Project! �
 
 ## Product Description 
 
-Battery Plus is the RAK's latest battery system incorporating a solar charging system and status monitoring. It is specially developed for the WisGate Edge Pro gateways. It will allow reliable outdoor deployment of the gateway in remote off-grid scenarios where the power is unreliable or inaccessible. Not only your gateway will be powered 24/7 with the solar panel option, but you will get all the battery data and status in the WisGateOS’ Web UI locally, and in the WisDM remotely. With its 50Ah battery, your gateway can run for more than 2 days without sun.
+Battery Plus is the RAK's latest battery system incorporating a solar charging system and status monitoring. It is specially developed for the WisGate Edge Pro gateways. It will allow reliable outdoor deployment of the gateway in remote off-grid scenarios where the power is unreliable or inaccessible. Not only your gateway will be powered 24/7 with the solar panel option, but you will get all the battery data and status in the WisGateOS’ Web UI locally, and in the WisDM remotely. With its 50Ah battery, your gateway can run for more than 5 days without sun.
 
 ## Product Features
 
@@ -28,4 +28,5 @@ Battery Plus is the RAK's latest battery system incorporating a solar charging s
 - **Integrated Heating Function** - The battery integrates a solar charger and heater, it can be connected to PV panels directly and charged under 0 °C. 
 - **Lightweight Design** - The weight of RAK9155 is no more than 8 kg making installation by a single person easier. 
 - **High Waterproof Grade** - With IP65 rating of the enclosure, RAK9155 is suitable for both indoor and outdoor environments.
+- **Two PV inputs** - One mandatory for primary solar panel and one optional for a second panel, ideal for high-altitude or low-sunlight areas.
 

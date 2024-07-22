@@ -375,6 +375,92 @@ As for the following table, it shows the pin name and description of each pin in
 | 22             | NC              | NC              | NC              | NC              | NC       | Not connected                                                                                                                                   |
 | 23             | GND             | GND             | GND             | GND             | S        | Ground                                                                                                                                          |
 | 24             | RXD1            | NC              | NC              | RXD1            | I/O      | UART RX signal                                                                                                                                  |
+##### Connector for WisBlock IO Slot
+
+The WisBlock Module IO Slot connector, as shown in **Figure 13**, is a 40-pin board-to-board connector.
+
+:::tip 📝 NOTE
+The two WisBlock 40-pin connectors have the same connections for all IO, signal, and serial pins (UART, SPI, I2C).
+:::
+
+<rk-img
+  src="/assets/images/wisblock/rak19001/datasheet/io-connector.png"
+  width="35%"
+  caption="WisBlock IO slot connector"
+/>
+
+Pinout definition for IO slot:
+
+| **Connector B** | **Connector A** | **Pin Number** | **Pin Number** | **Connector A** | **Connector B** |
+| --------------- | --------------- | -------------- | -------------- | --------------- | --------------- |
+| VBAT            | VBAT            | 1              | 2              | VBAT            | VBAT            |
+| GND             | GND             | 3              | 4              | GND             | GND             |
+| 3V3             | 3V3             | 5              | 6              | 3V3_S           | 3V3_S           |
+| USB+            | USB+            | 7              | 8              | USB–            | USB–            |
+| VBUS            | VBUS            | 9              | 10             | SW1             | SW1             |
+| TXD0            | TXD0            | 11             | 12             | RXD0            | RXD0            |
+| RESET           | RESET           | 13             | 14             | LED1            | LED1            |
+| LED2            | LED2            | 15             | 16             | LED3            | LED3            |
+| VDD             | VDD             | 17             | 18             | VDD             | VDD             |
+| I2C1_SDA        | I2C1_SDA        | 19             | 20             | I2C1_SCL        | I2C1_SCL        |
+| AIN0            | AIN0            | 21             | 22             | AIN1            | AIN1            |
+| NC              | NC              | 23             | 24             | NC              | NC              |
+| SPI_CS          | SPI_CS          | 25             | 26             | SPI_CLK         | SPI_CLK         |
+| SPI_MISO        | SPI_MISO        | 27             | 28             | SPI_MOSI        | SPI_MOSI        |
+| IO1             | IO1             | 29             | 30             | IO2             | IO2             |
+| IO3             | IO3             | 31             | 32             | IO4             | IO4             |
+| TXD1            | TXD1            | 33             | 34             | RXD1            | RXD1            |
+| I2C2_SDA        | I2C2_SDA        | 35             | 36             | I2C2_SCL        | I2C2_SCL        |
+| IO5             | IO5             | 37             | 38             | IO6             | IO6             |
+| GND             | GND             | 39             | 40             | GND             | GND             |
+
+<br>
+
+As for the following table, it shows the pin name and description of the WisBlock IO module connector.
+
+| **Pin Number** | **Pin Name** | **Type** | **Description**                                                                              |
+| -------------- | ------------ | -------- | -------------------------------------------------------------------------------------------- |
+| 1              | VBAT         | S        | Power supply from battery                                                                    |
+| 2              | VBAT         | S        | Power supply from battery                                                                    |
+| 3              | GND          | S        | Ground                                                                                       |
+| 4              | GND          | S        | Ground                                                                                       |
+| 5              | 3V3          | S        | 3.3&nbsp;V power supply                                                                      |
+| 6              | 3V3_S        | S        | 3.3&nbsp;V power supply. Can be shut down by a CPU module.                                   |
+| 7              | USB+         | I/O      | USB D+                                                                                       |
+| 8              | USB–         | I/O      | USB D–                                                                                       |
+| 9              | VBUS         | S        | 5&nbsp;V input for USB                                                                       |
+| 10             | SW1          | I/O      | User Defined Button (available on RAK4631/RAK4631-R and 11200 WisBlock Cores)                |
+| 11             | TXD0         | I/O      | MCU UART0 TX signal                                                                          |
+| 12             | RXD0         | I/O      | MCU UART0 RX signal                                                                          |
+| 13             | RESET        | I        | Connected to the reset switch, for MCU reset                                                 |
+| 14             | LED1         | I/O      | LED for battery charge indicator                                                             |
+| 15             | LED2         | I/O      | LED for custom used                                                                          |
+| 16             | LED3         | I/O      | LED for custom used                                                                          |
+| 17             | VDD          | S        | Generated by CPU module - Used for power sensor board if the MCU IO level is not 3.3&nbsp;V  |
+| 18             | VDD          | S        | Generated by CPU module - Used for power sensor board if the MCU IO level is not 3.3&nbsp;V. |
+| 19             | I2C1_SDA     | I/O      | The first set of I2C data signal                                                             |
+| 20             | I2C1_SCL     | I/O      | The first set of I2C clock signal                                                            |
+| 21             | AIN0         | A        | Analog input for ADC                                                                         |
+| 22             | AIN1         | A        | Analog input for ADC                                                                         |
+| 23             | NC           | NC       | Not connect                                                                                  |
+| 24             | NC           | NC       | Not connect                                                                                  |
+| 25             | SPI_CS       | I/O      | SPI chip select signal                                                                       |
+| 26             | SP_CLK       | I/O      | SPI clock                                                                                    |
+| 27             | SPI_MISO     | I/O      | SPI MISO signal                                                                              |
+| 28             | SPI_MOSI     | I/O      | SPI MOSI signal                                                                              |
+| 29             | IO1          | I/O      | General purpose IO                                                                           |
+| 30             | IO2          | I/O      | Used for 3V3_S enable                                                                        |
+| 31             | IO3          | I/O      | General purpose IO                                                                           |
+| 32             | IO4          | I/O      | General purpose IO                                                                           |
+| 33             | TXD1         | I/O      | MCU UART1 TX signal                                                                          |
+| 34             | RXD1         | I/O      | MCU UART1 RX signal                                                                          |
+| 35             | I2C2_SDA     | I/O      | The second set of I2C data signal                                                            |
+| 36             | I2C2_SCL     | I/O      | The second set of I2C clock signal                                                           |
+| 37             | IO5          | I/O      | General purpose IO                                                                           |
+| 38             | IO6          | I/O      | General purpose IO                                                                           |
+| 39             | GND          | S        | Ground                                                                                       |
+| 40             | GND          | S        | Ground                                                                                       |
+
 
 #### Electrical Characteristics
 

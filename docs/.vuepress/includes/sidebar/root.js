@@ -34,6 +34,7 @@ module.exports = {
         '/Product-Categories/5G/',
         '/Product-Categories/WisGate/',
         '/Product-Categories/WisNode/',
+        '/Product-Categories/Meshtastic/',
         '/Product-Categories/WisBlock/',
         '/Product-Categories/WisDuo/',
         '/Product-Categories/WisTrio/',

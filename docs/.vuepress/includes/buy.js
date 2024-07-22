@@ -213,6 +213,35 @@ export default {
     store: 'https://store.rakwireless.com/products/wisnode-bridge-serial-prime-rak2470?utm_source=rak2470&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
+
+   //Meshtastic
+
+   '/Product-Categories/Meshtastic/WisMesh-Base/': {
+    label: 'Meshtastic WisMesh Base',
+    img: '/assets/images/meshtastic/meshtastic.png',
+    // store: ''
+  },
+  '/Product-Categories/Meshtastic/Meshtastic-Starter-Kit/': {
+    label: 'Meshtastic Starter Kit',
+    img: '/assets/images/meshtastic/meshtastic.png',
+    // store: 'https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884034621638'
+  },
+  '/Product-Categories/Meshtastic/WisMesh-Hub/': {
+    label: 'Meshtastic WisMesh Hub',
+    img: '/assets/images/meshtastic/meshtastic.png',
+    // store: ''
+  },
+  '/Product-Categories/Meshtastic/WisMesh-Pocket/': {
+    label: 'Meshtastic WisMesh Pocket',
+    img: '/assets/images/meshtastic/meshtastic.png',
+    store: 'https://store.rakwireless.com/products/wismesh-pocket?variant=43640511365318'
+  },
+  '/Product-Categories/Meshtastic/WisMesh-Tap/': {
+    label: 'Meshtastic WisMesh Tap',
+    img: '/assets/images/meshtastic/meshtastic.png',
+    // store: ''
+  },
+
   //WisTrio
 
   // LPWAN

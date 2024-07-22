@@ -12,6 +12,7 @@ var softwareapislibraries = require('./software-apis-libraries')
 var softwaretools = require('./software-tools')
 var fiveg = require('./5g')
 var realiotsolutions = require('./real-iot-solutions')
+var meshtastic = require('./meshtastic')
 
 module.exports = {
   ...wisduino,
@@ -27,5 +28,6 @@ module.exports = {
   ...softwareapislibraries,
   ...softwaretools,
   ...fiveg,
-  ...realiotsolutions
+  ...realiotsolutions,
+  ...meshtastic
 }
