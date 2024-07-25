@@ -9,13 +9,14 @@ rak_img: /assets/images/accessories/rak9155/RAK9155.png
 ---
 
 # RAK9155 Quick Start Guide
+
 ## Overview
 
 ### Safety Instructions
 
 This manual contains important instructions and warnings that must be followed during the installation and maintenance of the RAK Battery Plus system.
 
-RAK9155 installation and service require knowledge of DC electricity and should only be performed by certified installers (either locally or by RAKwireless). RAKwireless assumes no liability for injury or property damage due to repairs attempted by unqualified individuals or a failure to properly follow the instructions provided. 
+RAK9155 installation and service require knowledge of DC electricity and should only be performed by certified installers (either locally or by RAKwireless). RAKwireless assumes no liability for injury or property damage due to repairs attempted by unqualified individuals or a failure to properly follow the instructions provided.
 
 #### Used Symbols
 
@@ -23,7 +24,7 @@ These symbols indicate important safety information in this guide or on the equi
 
 #### Documentation
 
-- ⚠️ **WARNING** - Indicates a hazardous situation that if not avoided, could result in injury. 
+- ⚠️ **WARNING** - Indicates a hazardous situation that if not avoided, could result in injury.
 - <i class="fas fa-exclamation-triangle" style="color:red;"></i> **CAUTION** - Indicates a hazardous situation that, if not avoided, could result in minor injury or damage to the equipment.
 - **📝** **NOTE** - Indicates an important step or tip that leads to the best results, but is not safety or damage-related.
 
@@ -38,6 +39,7 @@ These symbols indicate important safety information in this guide or on the equi
 #### General Warnings and Cautions
 
 :::warning ⚠️ WARNING
+
 - Read this entire document before installing or using RAK9155. Failure to do so or to follow any of the instructions or warnings in this document can result in electrical shock, serious injury, or damage to the device, potentially rendering it inoperable.
 - A battery can present a risk of electrical shock, fire, or explosion from vented gases. Observe proper precautions.
 - RAK9155's installation must be carried out only by certified well trained professionals.
@@ -51,64 +53,73 @@ These symbols indicate important safety information in this guide or on the equi
 - Do not install RAK9155 near heat sources.
 - If there is a chance for the ambient temperature to reach 55 ℃ or higher, make sure to shield RAK9155 from direct sunlight either by placing the device under the solar panel or other type of shield.
 - Do not immerse RAK9155 or its components in water or other fluids.
-:::
+  :::
 
 :::danger <i class="fas fa-exclamation-triangle" style="color:red;"></i> CAUTION
+
 - Do not use solvents to clean RAK9155, or expose RAK9155 to flammable or harsh chemicals or vapors.
 - Do not use fluids, parts, or accessories other than those specified in this manual including the use of non-genuine RAKwireless parts or accessories, or parts or accessories not purchased directly from RAKwireless or a RAKwireless-certified party.
 - Do not keep RAK9155 in storage conditions for more than one month without performing a charge-discharge cycle.
 - Do not connect RAK9155 directly to the utility wiring.
 - When installing RAK9155 in a garage or near vehicles, keep it out of the driving path. If possible, install RAK9155 on a sidewall and/or above the height of vehicle bumpers.
-:::
+  :::
 
 ### Environmental Conditions
 
 :::warning ⚠️ WARNING
+
 - Install RAK9155 in a location that prevents damage from flooding.
 - Operating or storing the RAK9155 in temperatures outside its specified range might cause damage to the device.
-- Do not expose RAK9155 to an ambient temperature above 45 ℃ or below -20 ℃.
-:::
+- Do not expose RAK9155 to an ambient temperature above 45°&nbsp;C or below -20°&nbsp;C.
+  :::
 
 ### Safety Precautions
 
-RAK9155 is designed with full consideration for safety. However, all electrical appliances can be dangerous if used inappropriately; **it can cause a fire or electric shock that leads to severe injury. For your protection, please read these safety precautions thoroughly**. 
+RAK9155 is designed with full consideration for safety. However, all electrical appliances can be dangerous if used inappropriately. **It can cause a fire or electric shock that leads to severe injury. For your protection, please read these safety precautions thoroughly**.
 
 - **Instructions**
 
-Use designated cable. A non-designated cable use can cause an electric shock. Be sure to use the cable designated in this manual.  
+Use designated cable. A non-designated cable use can cause an electric shock. Be sure to use the cable designated in this manual.
 
 - **Prohibitions**
 
-Do not damage cables. If you damage a cable, it can cause a fire or electric shock.  
+Do not damage cables. If you damage a cable, it can cause a fire or electric shock.
 
-1. Do not work over or damage a cable.  
-2. Do not place heavy objects on a cable or pull the cable.  
-3. Do not place a heater near the cable, which may result in the cable overheating. 
-4. Do not tuck down a cable when installing in a rack. 
+1. Do not work over or damage a cable.
+2. Do not place heavy objects on a cable or pull the cable.
+3. Do not place a heater near the cable, which may result in the cable overheating.
+4. Do not tuck down a cable when installing in a rack.
+
 - **Instructions**
 
-Connect the power cable and the communication cable properly. 
+Connect the power cable and the communication cable properly.
 
-If you connect a power cable improperly, contact resistance will increase and it may damage the parts or cause a fire.  
+If you connect a power cable improperly, contact resistance will increase and it may damage the parts or cause a fire.
 
-Insert the connector of the communication cable all the way in. If it is connected improperly, the system may be deactivated. 
+Insert the connector of the communication cable all the way in. If it is connected improperly, the system may be deactivated.
 
 - **Prohibitions**
-1. Do not install in a closed area. If the module/controller is installed in a closed area with no air-conditioning, heat may build up inside the set and cause a fire.  
 
-2. Do not place the set in direct sunlight or near a heater. Doing so can cause deformation, a breakdown, or a fire. Pay extra attention when you place the set near windows.  
+1. Do not install in a closed area. If the module/controller is installed in a closed area with no air-conditioning, heat may build up inside the set and cause a fire.
 
-3. Do not install the set where excessive oil smoke, steam, moisture, or dust is contained in the air. If the set is installed in such a place, it may cause a fire or electric shock.  
+2. Do not place the set in direct sunlight or near a heater. Doing so can cause deformation, a breakdown, or a fire. Pay extra attention when you place the set near windows.
+
+3. Do not install the set where excessive oil smoke, steam, moisture, or dust is contained in the air. If the set is installed in such a place, it may cause a fire or electric shock.
+
 - **Instructions**
-1. Wear insulating gloves and protection glasses during installation and connection  
-2. Wear insulating gloves and protection glasses during the installation and connection of the set to prevent electric shock or other injuries.  
+
+1. Wear insulating gloves and protection glasses during installation and connection
+2. Wear insulating gloves and protection glasses during the installation and connection of the set to prevent electric shock or other injuries.
+
 - **Keep Dry**
-1. Do not allow water and/or foreign objects inside the battery.  
-2. Water or foreign objects inside the battery can cause a fire or electric shock.  
-3. If any water or foreign objects inside the battery, in case any malfunction happens, please turn off the POWER ON/OFF switch in order to shut down, and remove the power connector from **RAK9155**. 
+
+1. Do not allow water and/or foreign objects inside the battery.
+2. Water or foreign objects inside the battery can cause a fire or electric shock.
+3. If any water or foreign objects inside the battery, in case any malfunction happens, please turn off the POWER ON/OFF switch in order to shut down, and remove the power connector from **RAK9155**.
+
 - **Do not disassemble**
 
-Do not open the set unnecessarily. Opening and modifying the unit can cause a fire or electric shock. 
+Do not open the set unnecessarily. Opening and modifying the unit can cause a fire or electric shock.
 
 :::danger <i class="fas fa-exclamation-triangle" style="color:red;"></i> CAUTION
 If you ignore any of the following instructions, it can cause injury or damage to nearby products.
@@ -116,44 +127,46 @@ If you ignore any of the following instructions, it can cause injury or damage t
 
 - **Prohibitions**
 
-Do not cover the vent. If the vent is covered, heat may build up inside the set and cause an accident.  
+Do not cover the vent. If the vent is covered, heat may build up inside the set and cause an accident.
 
-1. Remove any dust buildup in the vent.  
-2. Do not place it on a shag carpet.  
-3. Do not cover the vent with a cloth, etc.  
-- **Instructions**
-
-Install in a stable place. 
-
-1. If you install the set in an unstable place, such as an unstable rack, it may fall and cause injury.  
-2. Do not install upside down or sideways. The set may drop and cause injury.  
-- **Instructions**
-
-Use the designated packaging materials for transportation. If you do not use the designated packaging materials, the packaging material may be damaged by vibration during transportation and it may cause injury. 
+1. Remove any dust buildup in the vent.
+2. Do not place it on a shag carpet.
+3. Do not cover the vent with a cloth.
 
 - **Instructions**
 
-Install based on the designated way of installation. If you do not follow the designated way of installation, the set may drop due to the strength poverty and can cause injury.  
+Install in a stable place.
+
+1. If you install the set in an unstable place, such as an unstable rack, it may fall and cause injury.
+2. Do not install upside down or sideways. The set may drop and cause injury.
+
+- **Instructions**
+
+Use the designated packaging materials for transportation. If you do not use the designated packaging materials, the packaging material may be damaged by vibration during transportation and it may cause injury.
+
+- **Instructions**
+
+Install based on the designated way of installation. If you do not follow the designated way of installation, the set may drop due to the strength poverty and can cause injury.
 
 - **Keep Dry**
 
-Do not touch with wet hands. If you touch the set with wet hands, it may cause an electric shock.   
+Do not touch with wet hands. If you touch the set with wet hands, it may cause an electric shock.
 
 - **Instructions**
 
-Install other equipment or accessories properly. If you inadequately install other equipment or accessories sold separately, they may fall and cause injury. When you install any of the following accessories, install it properly based on this manual.  
+Install other equipment or accessories properly. If you inadequately install other equipment or accessories sold separately, they may fall and cause injury. When you install any of the following accessories, install it properly based on this manual.
 
 - **Instructions**
 
-Set up cables properly If your foot is caught by a cable, the set may fall and cause injury. Connect and install cables carefully.  
+Set up cables properly If your foot is caught by a cable, the set may fall and cause injury. Connect and install cables carefully.
 
 - **Instructions**
 
-Power off at a malfunction. If any malfunction happens, please turn off the power switch to shut down and remove the power connector from the power connector terminal.   
+Power off at a malfunction. If any malfunction happens, please turn off the power switch to shut down and remove the power connector from the power connector terminal.
 
 - **Prohibitions**
 
-Do not put anything, stand or sit on the set. If you put anything heavy on the set, it may damage the product.  
+Do not put anything, stand or sit on the set. If you put anything heavy on the set, it may damage the product.
 
 - **Instructions**
 
@@ -161,77 +174,76 @@ Follow the related laws or ordinances for disposal. When you dispose of this pro
 
 - **Instructions**
 
-Disposal with specified method Contact technical vendor when you discard. Do not disassemble, destroy, or dispose of in fire. 
+Disposal with specified method Contact technical vendor when you discard. Do not disassemble, destroy, or dispose of in fire.
 
 :::warning ⚠️ WARNING
 If liquid is leaking from the product, observe the following measures.
 :::
 
-Do not allow the liquid to come in contact with skin or clothing.  
+Do not allow the liquid to come in contact with skin or clothing.
 
-1. If the liquid comes in contact with skin or clothing, wash thoroughly with plenty of water. 
-2. If the liquid gets into the eyes or mouth, flush immediately with clean water, and immediately seek medical treatment.  
-3. Contact customer service. 
+1. If the liquid comes in contact with skin or clothing, wash thoroughly with plenty of water.
+2. If the liquid gets into the eyes or mouth, flush immediately with clean water, and immediately seek medical treatment.
+3. Contact customer service.
 
 ### Precautions for Use
 
-In the case of a failure, or any of the abnormalities shown below, turn off the unit and contact RAKwireless customer service.  
+In the case of a failure, or any of the abnormalities shown below, turn off the unit and contact RAKwireless customer service.
 
-- Abnormal sound, smell, or smoke. 
-- Water or particles inside the product.  
+- Abnormal sound, smell, or smoke.
+- Water or particles inside the product.
 - The product is dropped, or the outer shell is damaged.
 
-Replace the module with a new one if discharge time at room temperature is noticeably short, even from fully charged. 
+Replace the module with a new one if discharge time at room temperature is noticeably short, even from fully charged.
 
 ### **DO NOT**
 
 - Disassemble.
-- Modify the product (Modification may destroy the protection function inside, or cause abnormal charge/ discharge, heat generation, gas eruption, or fire). 
-- Touch the rear output terminal except for the installation. 
-- Throw the product into fire or heat, or otherwise expose the set to heat or naked flame. 
-- Submerge the product in liquid or allow it to become wet. 
-- Apply strong shock, crush, or drop. 
-- Use for medical purposes. 
-- Place any foreign objects inside. 
-- Connect any devices that exceed the operating voltage and current range. 
-- Unplug the power connector from the terminal while the power is on. 
-- Hammer a nail or punch a hole in the product. 
+- Modify the product (Modification may destroy the protection function inside, or cause abnormal charge/ discharge, heat generation, gas eruption, or fire).
+- Touch the rear output terminal except for the installation.
+- Throw the product into fire or heat, or otherwise expose the set to heat or naked flame.
+- Submerge the product in liquid or allow it to become wet.
+- Apply strong shock, crush, or drop.
+- Use for medical purposes.
+- Place any foreign objects inside.
+- Connect any devices that exceed the operating voltage and current range.
+- Unplug the power connector from the terminal while the power is on.
+- Hammer a nail or punch a hole in the product.
 - Touch the output positive and negative cable ends together.
 
 ## Specifications
-### Specifications
 
-| Parameter                              | Value                                    |
-| -------------------------------------- | ---------------------------------------- |
-| Cell Type                              | LiFePO4 (LFP)                            |
-| Rated Voltage (V)                      | 12.8                                     |
-| Rated Capacity (Ah)                    | 50                                       |
-| Rated Energy  (Wh)                     | 600                                      |
-| Usable Battery Capacity (Ah)           | 50                                       |
-| Usable Battery Energy(Wh)              | 600                                      |
-| Battery Depth of Discharge             | 100%                                     |
-| Battery Max Charge/Discharge Power(W)  | 128/128                                  |
-| Configuration                          | 1P4S                                     |
-| Working Voltage Range (V)              | 10.0～14.6                               |
-| Standard Charge Current (A)            | 8                                        |
-| Max. Continuous Charge Current (A)     | 10                                       |
-| Standard Discharge Current (A)         | 8                                        |
-| Max Continuous Discharge Current(A)    | 10                                       |
-| Rated DC Power(W)                      | 102.4                                    |
-| The short circuit current              | 40A                                      |
-| Standard Charging Method               | 0.1C CC to 14.6V                         |
-| Working Temperature (℃)                | Charging: 0 ～55; Discharging: -15～55   |
-| Heating at Low Temperature             | Start heating at 0℃; Stop heating at 3℃. |
-| Heating Power (W)                      | 60                                       |
-| Working ROH                            | 20%～80%                                 |
-| Storage Temperature (°C)               | -20~50                                   |
-| Self-discharging rate                  | ≤5% (25 °C, 50% SOC)                     |
-| SOC at the end of product line         | 50%                                      |
-| Voltage Difference in each module (mV) | ≤20                                      |
-| IP Rating                              | IP65                                     |
-| Recommended Usage (indoor/outdoor)     | Outdoor                                  |
-| Net Weight (kg)                        | ~8 kg                                    |
-| Dimension (L/W/H, mm)                  | 499x280x75（±3) mm                       |
+| Parameter                              | Value                                                 |
+| -------------------------------------- | ----------------------------------------------------- |
+| Cell Type                              | LiFePO4 (LFP)                                         |
+| Rated Voltage (V)                      | 12.8                                                  |
+| Rated Capacity (Ah)                    | 50                                                    |
+| Rated Energy (Wh)                      | 600                                                   |
+| Usable Battery Capacity (Ah)           | 50                                                    |
+| Usable Battery Energy(Wh)              | 600                                                   |
+| Battery Depth of Discharge             | 100%                                                  |
+| Battery Max Charge/Discharge Power(W)  | 128/128                                               |
+| Configuration                          | 1P4S                                                  |
+| Working Voltage Range (V)              | 10.0 ～ 14.6                                          |
+| Standard Charge Current (A)            | 8                                                     |
+| Max. Continuous Charge Current (A)     | 10                                                    |
+| Standard Discharge Current (A)         | 8                                                     |
+| Max Continuous Discharge Current(A)    | 10                                                    |
+| Rated DC Power(W)                      | 102.4                                                 |
+| The short circuit current              | 40&nbsp;A                                             |
+| Standard Charging Method               | 0.1&nbsp;C CC to 14.6&nbsp;V                          |
+| Working Temperature (℃)                | Charging: 0 ～ 55; Discharging: -15 ～ 55             |
+| Heating at Low Temperature             | Start heating at 0°&nbsp;C; Stop heating at 3°&nbsp;C |
+| Heating Power (W)                      | 60                                                    |
+| Working ROH                            | 20%～ 80%                                             |
+| Storage Temperature (°C)               | -20~50                                                |
+| Self-discharging rate                  | ≤5% (25°&nbsp;C, 50% SOC)                             |
+| SOC at the end of product line         | 50%                                                   |
+| Voltage Difference in each module (mV) | ≤20                                                   |
+| IP Rating                              | IP65                                                  |
+| Recommended Usage (indoor/outdoor)     | Outdoor                                               |
+| Net Weight (kg)                        | ~8&nbsp;kg                                                 |
+| Dimension (L/W/H, mm)                  | 499x280x75（±3) mm                                    |
 
 ### Interfaces
 
@@ -241,29 +253,29 @@ Replace the module with a new one if discharge time at room temperature is notic
   caption="Right-Rear View of L051100-A"
 />
 
-| Item | Name         | Model              | Remarks                                                                                                 |
-| ---- | ------------ | ------------------ | ------------------------------------------------------------------------------------------------------- |
-| 1    | PV Input 1   | LP-16-C02PE-02-001 | IP67, 2pins, Pin1-Positive; Pin2-Negative, Max. current 10A                                             |
-| 2    | PV Input 2   | LP-16-C02PE-02-001 | IP67, 2pins, Pin1-Positive; Pin2-Negative, Max. current 10A                                             |
-| 3    | Output       | LP-16-C04PE-02-001 | IP67, 4pins, Pin1-Positive (Red), Pin2-Negative (Yellow-green), Pin3-RS485A (Brown), Pin4-RS485B (Blue) |
-| 4    | Power Switch | MPB12-SL4P-FRG3-B7 | Turn on/off the battery                                                                                 |
-| 5    | Valve        | GLS-VTB-M12        | Safety valve                                                                                            |
-| 6    | GND          | M4                 | Yellow-Green                                                                                            |
-
+| Item | Name         | Model              | Remarks                                                                                                                              |
+| ---- | ------------ | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
+| 1    | PV Input 1   | LP-16-C02PE-02-001 | IP67, 2pins, Pin1-Positive; Pin2-Negative, Max. current 10&nbsp;A - Mandatory - Connects to the primary solar panel to charge the battery. |
+| 2    | PV Input 2   | LP-16-C02PE-02-001 | IP67, 2pins, Pin1-Positive; Pin2-Negative, Max. current 10&nbsp;A - Optional - To be used for a second solar panel.                        |
+| 3    | Output       | LP-16-C04PE-02-001 | IP67, 4pins, Pin1-Positive (Red), Pin2-Negative (Yellow-green), Pin3-RS485A (Brown), Pin4-RS485B (Blue)                              |
+| 4    | Power Switch | MPB12-SL4P-FRG3-B7 | Turn on/off the battery                                                                                                              |
+| 5    | Valve        | GLS-VTB-M12        | Safety valve                                                                                                                         |
+| 6    | GND          | M4                 | Yellow-Green                                                                                                                         |
 
 :::tip 📝 NOTE
 The Battery Plus RAK9155 features two PV inputs for up to two Solar Panel:
 
-PV Input 1 (Mandatory): Connects to the primary solar panel to charge the battery. 
+PV Input 1 (Mandatory): Connects to the primary solar panel to charge the battery.
 
 PV Input 2 (Optional): Can be used for a second solar panel. This is beneficial in high-altitude regions or areas with low sunlight, ensuring adequate charging.
 :::
+
 ## Installation
 
 ### Pre-Installation Preparation
 
-The equipment is heavy, please ensure personal safety when carrying it.
-During installation, please ensure the installer complies with all the necessary safety regulations to ensure personal safety.
+The equipment is heavy, ensure personal safety when carrying it.
+During installation, make sure the installer complies with all the necessary safety regulations to ensure personal safety.
 Do not place equipment and mounting kit on pedestrian walkways to avoid accidental damage to equipment.
 
 ### Carry the Equipment
@@ -276,11 +288,10 @@ You can carry the equipment with both hands. If the equipment is lifted with one
   caption="Handle installation"
 />
 
-
 ### Installation
 
 :::tip 📝 NOTE
-The diameter of the pole that is supported by the brackets is 50-75mm. If the pole diameter is more than this value, larger hose clamps can be used. The standard mounting kit does not include larger hose clamps. If needed, they should be purchased separately.
+The diameter of the pole that is supported by the brackets is 50-75&nbsp;mm. If the pole diameter is more than this value, larger hose clamps can be used. The standard mounting kit does not include larger hose clamps. If needed, they should be purchased separately.
 :::
 
 1. Fix the mounting bracket on the pole with three hose clamps.
@@ -291,9 +302,8 @@ The diameter of the pole that is supported by the brackets is 50-75mm. If the po
   caption="Fix mounting bracket"
 />
 
-2. Install two M6 screws on the back of the equipment, leave a gap of about 3 mm.
-3. Connect the Cables to the circular connectors. The other terminal of 2pin cables (PV INPUT1 and PV INPUT2) are connected to the PV panel outputs. 
-
+2. Install two M6 screws on the back of the equipment, leave a gap of about 3&nbsp;mm.
+3. Connect the Cables to the circular connectors. The 4 pin cable connects to the Output port. The 2 pin cable connects to the PV Input 1 port. If second Solar Panel need to be connected, connect it to PV Input 2 port.
 
 <rk-img
   src="/assets/images/accessories/rak9155/quickstart/08.png"
@@ -352,17 +362,17 @@ Confirmed that the system is off before taking off the DC cables.
 
 ### Transportation
 
-It is forbidden to encounter serious vibrations and shock during transportation. 
+It is forbidden to encounter serious vibrations and shock during transportation.
 
 ### Storage
 
-If the system is not placed to use, it must be properly stored.  
+If the system is not placed to use, it must be properly stored.
 
 - It should be stored in 60% SOC status.
-- It should be stored in a well-ventilated environment, Temp. < 35 °C, ROH <65%.
+- It should be stored in a well-ventilated environment, Temp. < 35°&nbsp;C, ROH <65%.
 - It should be stored avoiding humid conditions.
-- It should be stored in a place where it can be monitored by a professional. 
+- It should be stored in a place where it can be monitored by a professional.
 
 ## Disclaimer
 
-It should be noted that RAKwireless shall not be liable if any necessary materials are added to this user’s manual without further informing the already existing customers. 
+It should be noted that RAKwireless shall not be liable if any necessary materials are added to this user’s manual without further informing the already existing customers.

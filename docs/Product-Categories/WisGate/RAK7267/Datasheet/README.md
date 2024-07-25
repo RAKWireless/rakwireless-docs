@@ -68,7 +68,7 @@ This section presents the block diagram for the RAK7267 that shows the internal 
 <table>
     <thead><tr><th>Feature</th><th>Specifications</th></tr></thead>
     <tbody>
-        <tr><td>Computing</td><td>MT7628, DDR2 RAM 256&nbsp;MB</td></tr>
+        <tr><td>Computing</td><td>MT7628, DDR2 RAM 128&nbsp;MB</td></tr>
         <tr><td>Frequency</td><td>EU868/US915/AS923/AS923-1/AS923-2/AS923-3/AS923-4/AU915/IN865/RU864/KR920</td></tr>
         <tr><td rowspan="5">LoRa feature</td><td>SX1303 On Board</td></tr>
         <tr><td>8 Channels</td></tr>
