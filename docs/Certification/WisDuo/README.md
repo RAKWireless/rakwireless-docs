@@ -9,6 +9,7 @@ rak_img: /assets/images/certifications/certification-banner.jpg
   'AUSTRALIA',
   'BRAZIL',
   'CANADA',
+  'INDIA',
   'JAPAN',
   'KOREA',
   'LORA ALLIANCE',

@@ -6,6 +6,7 @@ export const WISDUO_HEADER = {
     'CANADA',
     'AUSTRALIA',
     'BRAZIL',
+    'INDIA',
     'JAPAN',
     'KOREA',
     'LORA ALLIANCE',
