@@ -8,6 +8,7 @@ The Hardware page contains Product Change Notifications (PCNs), which serve as c
 
 - <b> 2024 </b>
 
+    - [RAK9155 Battery Plus PCN July 29](https://downloads.rakwireless.com/PCN/Accessories/RAK9155%20Battery%20Plus/Product%20Change%20Notification-PCN20240722901_Battery%20Plus%20RAK9155%20Color%20Update-202407291137.pdf)
     - [RAK7285/RAK7285C WisGate Edge Ultra PCN June 22](https://downloads.rakwireless.com/PCN/WisGate/RAK7285-RAK7285C%20WisGate%20Edge%20Ultra/Product%20Change%20Notification-PCN20240622001_WisGate%20Edge%20Pro%20RAK7289%20and%20WisGate%20Edge%20Ultra%20Full-Duplex%20RAK7285%20Series%20Update%20N-Type%20Connector%20Holes%20Cap%20202406221348.pdf)
     - [RAK7289V2/RAK7289CV2 WisGate Edge Pro PCN June 22](https://downloads.rakwireless.com/PCN/WisGate/RAK7289V2-RAK7289CV2%20WisGate%20Edge%20Pro/Product%20Change%20Notification-PCN20240622001_WisGate%20Edge%20Pro%20RAK7289%20and%20WisGate%20Edge%20Ultra%20Full-Duplex%20RAK7285%20Series%20Update%20N-Type%20Connector%20Holes%20Cap%20202406221348.pdf)
     - [RAK10701 WisNode Map Series PCN June 22](https://downloads.rakwireless.com/PCN/WisNode/RAK10701/Product%20Change%20Notification-PCN20240622001_RAK10701%20Frequency%20Option%20Update-202406221624.pdf)
