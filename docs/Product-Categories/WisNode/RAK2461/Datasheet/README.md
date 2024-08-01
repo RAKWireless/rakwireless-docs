@@ -56,7 +56,7 @@ The device comes in two variants:
 | RS485 data rate         | 9600                                                                                                             |                    |
 | RS485 carrying capacity | Up to 10 devices                                                                                                 |                    |
 | RS485 protection        | 18&nbsp;kV HBM protection<br>13&nbsp;kV IEC61000-4-2 contact discharge<br>4&nbsp;kV IEC61000-4-4 fast transient burst |                    |
-| Input voltage           | 6&nbsp;V~24&nbsp;V                                                                                               | 5&nbsp;V for USB-C |
+| Input voltage           | 9&nbsp;V~24&nbsp;V                                                                                               | 5&nbsp;V for USB-C |
 | Rated power             | DI type: 1&nbsp;W <br>DO type (Relay): 2&nbsp;W                                                                  |                    |
 | Output voltage          | 9&nbsp;V~24&nbsp;V                                                                                               |                    |
 | Configuration interface | USB Type-C                                                                                                       |                    |

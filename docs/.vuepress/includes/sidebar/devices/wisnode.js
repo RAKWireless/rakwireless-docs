@@ -33,6 +33,184 @@ module.exports = {
     },
   ],
 
+  // Sensor Hub & Solutions
+  '/Product-Categories/WisNode/RAK2560/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisNode/RAK2560/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Quick Start Guide',
+    path: '/Product-Categories/WisNode/RAK2560/Quickstart/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Installation Guide',
+    path: '/Product-Categories/WisNode/RAK2560/Installation/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Hub Datasheet',
+    path: '/Product-Categories/WisNode/RAK2560/Hub-Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'IO Datasheet',
+    path: '/Product-Categories/WisNode/RAK2560/IO-Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Probe Datasheet',
+    path: '/Product-Categories/WisNode/RAK2560/Probe-Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  }
+],
+
+  '/Product-Categories/WisNode/Soil-Monitoring/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisNode/Soil-Monitoring/Overview/',
+    collapsable: false,
+    nested: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Quick Start Guide',
+    path: '/Product-Categories/WisNode/Soil-Monitoring/Quickstart/',
+    collapsable: false,
+    nested: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Supported LoRa Network Servers',
+    path: '/Product-Categories/WisNode/Soil-Monitoring/Supported-LoRa-Network-Servers/',
+    collapsable: false,
+    nested: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisNode/Soil-Monitoring/Datasheet/',
+    collapsable: false,
+    nested: true,
+    sidebarDepth: 4
+  },
+  ],
+  '/Product-Categories/WisNode/Soil-pH-Monitoring/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisNode/Soil-pH-Monitoring/Overview/',
+    collapsable: false,
+    nested: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Quick Start Guide',
+    path: '/Product-Categories/WisNode/Soil-pH-Monitoring/Quickstart/',
+    collapsable: false,
+    nested: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Supported LoRa Network Servers',
+    path: '/Product-Categories/WisNode/Soil-pH-Monitoring/Supported-LoRa-Network-Servers/',
+    collapsable: false,
+    nested: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisNode/Soil-pH-Monitoring/Datasheet/',
+    collapsable: false,
+    nested: true,
+    sidebarDepth: 4
+  },
+  ],
+
+'/Product-Categories/WisNode/Weather-Station/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisNode/Weather-Station/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Quick Start Guide',
+  path: '/Product-Categories/WisNode/Weather-Station/Quickstart/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Supported LoRa Network Servers',
+  path: '/Product-Categories/WisNode/Weather-Station/Supported-LoRa-Network-Servers/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisNode/Weather-Station/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+],
+
+'/Product-Categories/WisNode/Water-Level-Monitoring/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisNode/Water-Level-Monitoring/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Quickstart',
+  path: '/Product-Categories/WisNode/Water-Level-Monitoring/Quickstart/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Supported LoRa Network Servers',
+  path: '/Product-Categories/WisNode/Water-Level-Monitoring/Supported-LoRa-Network-Servers/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisNode/Water-Level-Monitoring/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+],
+
   '/Product-Categories/WisNode/RAK7200/': [{
       title: 'Product Overview',
       path: '/Product-Categories/WisNode/RAK7200/Overview/',

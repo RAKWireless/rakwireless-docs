@@ -61,10 +61,10 @@ An example would be using the <a href="https://store.rakwireless.com/products/ra
 
 The RAK2461 device can be powered either by:
 
-- 6-24&nbsp;V<sub>DC</sub> input
+-9-24&nbsp;V<sub>DC</sub> input
 - USB type-C
 
-The USB type-C port of the device can be used for configuration. Powering the device from the type-C port will not provide power to the sensor but only to the device itself. To power the device and sensor, you should use the 6-24&nbsp;V<sub>DC</sub> input of the RAK2461.
+The USB type-C port of the device can be used for configuration. Powering the device from the type-C port will not provide power to the sensor but only to the device itself. To power the device and sensor, you should use the 9-24&nbsp;V<sub>DC</sub> input of the RAK2461.
 
 The RS485 serial interface supports up to 32 RS485 devices. The Vout pin can supply the external power to the RS485 sensors connected to RAK2561.
 
@@ -227,7 +227,7 @@ caption="Confirmation message for adding a device"
 #### Connect the rak2461 to Your Network
 
 1. Download and open the IO.Box application.
-2. Connect the rak2461 to a computer using the USB type-C cable. Note that this will work for the LoRaWAN configuration, but when configuring the sensor you would need to connect the 6-24&nbsp;V<sub>DC</sub> power supply in order to provide power to the sensor itself. Make sure that the USB type-C cable that you are using supports data transfer and no other serial software is connected to the COM port that RAK2461 uses.
+2. Connect the rak2461 to a computer using the USB type-C cable. Note that this will work for the LoRaWAN configuration, but when configuring the sensor you would need to connect the 9-24&nbsp;V<sub>DC</sub> power supply in order to provide power to the sensor itself. Make sure that the USB type-C cable that you are using supports data transfer and no other serial software is connected to the COM port that RAK2461 uses.
 3. Click **Connect Device** in the IO.Box console.
 
 <rk-img

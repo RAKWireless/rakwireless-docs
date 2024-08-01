@@ -29,7 +29,6 @@ Together with a RAK WisGate Gateway and LoRa Server products, RAK2470 can quickl
 ## Product Features
 
 - **LoRaWAN 1.0.3** protocol stack, supports **Class C**
-- **Industrial grade STM MCU:** Ultra-low power (**4&nbsp;µA sleep**) and wide temperature range of operation
 - **Input range:** 5 ~ 12&nbsp;V<sub>DC</sub>
 - **Mounting:** Pole
 - IP67 weatherproof

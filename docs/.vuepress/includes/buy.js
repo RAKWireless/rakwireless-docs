@@ -159,10 +159,10 @@ export default {
     img: '/assets/images/wisnode/soil-ph-monitoring/soil-ph.png',
     store: 'https://store.rakwireless.com/products/soil-ph-monitoring?m=3&h=sensor-hub&variant=42505216786630?utm_source=SoilpH&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-  '/Product-Categories/WisNode/Weather-Station/': {
-    label: 'Weather Station Solution',
-    img: '/assets/images/wisnode/weather-station/weather-station-solution.png',
-    store: 'https://store.rakwireless.com/products/weather-station-monitoring?variant=42505214427334?utm_source=W&utm_medium=Document&utm_campaign=BuyFromStore'
+  '/Product-Categories/WisNode/Water-Level-Monitoring/': {
+    label: 'Water Level Monitoring Sensor Hub Solutions',
+    img: '/assets/images/wisnode/water-level-monitoring/water-level-monitoring.png',
+    store: 'https://store.rakwireless.com/products/water-level-monitoring?_pos=2&_sid=edfcc1110&_ss=r&variant=42505217638598?utm_source=WaterLevel&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisNode/Solar-Radiation-Monitoring/': {
     label: 'Solar Radiation Monitoring Solutions',
