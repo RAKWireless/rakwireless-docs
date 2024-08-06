@@ -83,7 +83,6 @@ An example would be using the <a href="https://store.rakwireless.com/products/ra
 />
 
 
-
 ### Hardware
 
 The hardware specification covers only the interfacing and detailed parameters and functions of the RAK2461 WisNode Bridge IO. It also includes the installation of which different types of mounting are presented.
@@ -110,7 +109,7 @@ The hardware specification covers only the interfacing and detailed parameters a
 
 ##### Power Supply and Configuration Interface
 
-RAK2461 WisNode Bridge IO can be powered through the V<sub>IN</sub> (J1/pin1) by a DC power supply (6&nbsp;V~24&nbsp;V) and the voltage must be stable. V<sub>IN</sub> power is also used to power the V<sub>OUT</sub> (J4/pin3).
+RAK2461 WisNode Bridge IO can be powered through the V<sub>IN</sub> (J1/pin1) by a DC power supply (9&nbsp;V~24&nbsp;V) and the voltage must be stable. V<sub>IN</sub> power is also used to power the V<sub>OUT</sub> (J4/pin3).
 
 For configuration purposes, the device can be powered by the Console port only, but the Console port will not provide power to the V<sub>OUT</sub> (J4/pin3).
 

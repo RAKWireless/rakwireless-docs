@@ -15,14 +15,14 @@ tags:
 
 Before going through each and every step in the installation guide of the WisNode Bridge IO Lite, make sure to prepare the necessary items listed below:
 
-#### Hardware Tools
+### Hardware Tools
 
 1. <a href="https://store.rakwireless.com/products/wisnode-bridge-serial-prime-rak2470?utm_source=rak2470&utm_medium=Document&utm_campaign=BuyFromStore&variant=43592626634950" target="_blank">RAK2470 WisNode Bridge Serial Prime</a>
 2. USB configuration cable (sold separately)
 3. Gateway in range (for testing)
 4. A Windows/macOS/Linux Computer
 
-#### Software Tools
+### Software Tools
 
 IO.Box Desktop is a software application that will allow you to configure the devices from the RAK24XX series. You can download the application from here: 
 
@@ -30,7 +30,7 @@ IO.Box Desktop is a software application that will allow you to configure the de
 - <a href="https://downloads.rakwireless.com/#WisIO/" target="_blank">Linux</a>
 - <a href="https://downloads.rakwireless.com/#WisIO/" target="_blank">macOS</a>
 
-## Package Inclusion
+### Package Inclusion
 
 <rk-img
 src="/assets/images/wisnode/rak2470-n/overview/2.package-contents.png"
@@ -42,6 +42,39 @@ caption="RAK2470 Package Inclusions"
 - One (1) Mounting Kit
 - One (1) T-Type Conversion Cable
 - One (1) Power Adapter
+
+## Installation
+
+RAK2470 allows for pole mounting. Follow the provided installation steps to ensure secure mounting.
+
+1. Fix the RAK2470 to the mounting kit with four (4) M4\*20 screws.
+
+<rk-img
+src="/assets/images/wisnode/rak2470-n/datasheet/5.fixing-the-device-to-the-mounting-kit.png"
+width="30%"
+caption="Fixing the device to the mounting kit"
+/>
+
+2. Using two (2) steel strips, fasten the RAK2470 on the pole.
+
+<rk-img
+src="/assets/images/wisnode/rak2470-n/datasheet/6.using-the-steel-strips.png"
+width="45%"
+caption="Using the steel strips"
+/>
+
+:::tip 📝 NOTE
+The pole diameter supported by the included steel strips is 55 ~ 80&nbsp;mm.
+:::
+
+3. Link the connector of the RAK2470 to the corresponding port.
+
+<rk-img
+src="/assets/images/wisnode/rak2470-n/datasheet/7.adding-the-connector.png"
+width="45%"
+caption="Adding the connector"
+/>
+
 
 ## Product Configuration
 
@@ -59,6 +92,21 @@ An example would be using the <a href="https://store.rakwireless.com/products/ra
 
 ### Connect the RAK2470 to the Sensor
 
+There are two ways to connect devices to RAK2470:
+
+- When the device has its own power source (e.g. a MPPT solar charge controller), it can be directly connected to the connector on the RAK2470.
+- When the device cannot provide power, it needs to be powered through the T-type conversion cable as follows:
+
+  1. The Modbus device or RS485 sensor is connected to the L20-4 four-core straight-through port of the T-type conversion cable.
+  2. RAK2470 connects to the M12-4 female-pin port (threaded) of the T-type conversion cable.
+  3. The DC port for connection to a power supply.
+
+<rk-img
+src="/assets/images/wisnode/rak2470-n/datasheet/8.connecting-the-bridge-to-a-device.png"
+width="80%"
+caption="Connecting the bridge to a device"
+/>
+
 #### Power Interface Configuration
 
 The RAK2470 device can be powered with 5 ~ 24&nbsp;V<sub>DC</sub> wide-range input via a 12&nbsp;V<sub>DC</sub> adapter. Simply connect the adapter to the DC port of the T-type conversion cable.
@@ -71,7 +119,7 @@ The RAK2470 device can be powered with 5 ~ 24&nbsp;V<sub>DC</sub> wide-range inp
 
 #### Data Interface Connection
 
-The connection to a sensor Is via the L20-4 Port of the T-type conversion cable, shown in **Figure 4**.
+The connection to a sensor Is via the L20-4 Port of the T-type conversion cable, shown in **Figure 8**.
 
 <rk-img
   src="/assets/images/wisnode/rak2470-n/quickstart/device-with-data-interface.png"
@@ -239,7 +287,7 @@ caption="List of connected devices"
 
 - **Device EUI** - This is the unique identifier provided by RAKwireless.
 - **Region** - The LoRaWAN region/band.
-- **Class** - The LoRaWAN class (A,B or C).
+- **Class** - The LoRaWAN Class (A).
 - **Join Mode** - Choose between OTAA and ABP according to LoRaWAN protocol.
 - **Application EUI** - Enter the unique identifier assigned by the application server.
 - **Application Key** - Enter the unique secure key assigned by the application server.
@@ -257,8 +305,8 @@ width="80%"
 caption="LoRaWAN tab"
 />
 
-6. Make sure you've added the RAK2470 Bridge Serial Prime to the LoRaWAN Network Server of choice (Built-in LNS in this example).
-7. After the device has successfully joined the LNS, you will see the LoRaWAN status toggle as activated. You might need to refresh the page.
+1. Make sure you've added the RAK2470 Bridge Serial Prime to the LoRaWAN Network Server of choice (Built-in LNS in this example).
+2. After the device has successfully joined the LNS, you will see the LoRaWAN status toggle as activated. You might need to refresh the page.
 
 <rk-img
 src="/assets/images/wisnode/rak2470-n/quickstart/lorawan-status.png"
@@ -346,7 +394,7 @@ After saving the polling task and disconnecting the device to pull it out from c
 
 <rk-img
 src="/assets/images/wisnode/rak2470-n/quickstart/uplink-data.png"
-width="80%"
+width="100%"
 caption="Uplink data"
 />
 
@@ -374,7 +422,7 @@ After saving the polling task wait awhile and you will see the uplink data from 
 
 <rk-img
 src="/assets/images/wisnode/rak2470-n/quickstart/uplink-data_wind.png"
-width="80%"
+width="100%"
 caption="Uplink data"
 />
 

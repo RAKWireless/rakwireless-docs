@@ -61,7 +61,7 @@ An example would be using the <a href="https://store.rakwireless.com/products/ra
 
 The RAK2461 device can be powered either by:
 
--9-24&nbsp;V<sub>DC</sub> input
+- 9-24&nbsp;V<sub>DC</sub> input
 - USB type-C
 
 The USB type-C port of the device can be used for configuration. Powering the device from the type-C port will not provide power to the sensor but only to the device itself. To power the device and sensor, you should use the 9-24&nbsp;V<sub>DC</sub> input of the RAK2461.

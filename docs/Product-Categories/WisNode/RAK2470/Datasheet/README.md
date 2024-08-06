@@ -40,21 +40,21 @@ Together with a RAK WisGate Gateway and LoRa Server products, RAK2470 can quickl
 
 ### Overview
 
-| Parameter           | Value                                           | Remarks                                                                    |
-| ------------------- | ----------------------------------------------- | -------------------------------------------------------------------------- |
-| LoRaWAN Protocol    | LoRaWAN 1.0.3                                   |                                                                            |
-| LoRa Frequency      | RU864, IN865, EU868, US915, AU915, KR920, AS923 | Model specific                                                             |
-| LoRaWAN Mode        | Class C                                         |                                                                            |
-| LoRa Tx Power       | 20&nbsp;dBm                                     |                                                                            |
-| LoRa Antenna        | Built-in fiberglass antenna                     | 863 ~ 928&nbsp;MHz<br>VSWR < 2<br>Efficiency > 80%<br>Max Gain: 3&nbsp;dBi |
-| RS485 Data Rate     | 115200&nbsp;bps                                 |                                                                            |
-| Input Voltage       | 5 ~ 12&nbsp;V                                   |                                                                            |
-| Enclosure Material  | Fiberglass                                      |                                                                            |
-| Dimensions          | 30&nbsp;mm × 215&nbsp;mm                        |                                                                            |
-| Protection Grade    | IP67                                            |                                                                            |
-| Installation        | Pole                                            |                                                                            |
-| Working Temperature | -20 ~ +70°&nbsp;C                               | Typical +25°&nbsp;C                                                        |
-| Storage Temperature | -30 ~ 85°&nbsp;C                                |                                                                            |
+| Parameter           | Value                                                  | Remarks                                                                    |
+| ------------------- | ------------------------------------------------------ | -------------------------------------------------------------------------- |
+| LoRaWAN Protocol    | LoRaWAN 1.0.3                                          |                                                                            |
+| LoRa Frequency      | RU864, IN865, EU868, US915, AU915, KR920, CN470, AS923 | Model specific                                                             |
+| LoRaWAN Mode        | Class C                                                |                                                                            |
+| LoRa Tx Power       | 20&nbsp;dBm                                            |                                                                            |
+| LoRa Antenna        | Built-in fiberglass antenna                            | 863 ~ 928&nbsp;MHz<br>VSWR < 2<br>Efficiency > 80%<br>Max Gain: 3&nbsp;dBi |
+| RS485 Data Rate     | 115200&nbsp;bps                                        |                                                                            |
+| Input Voltage       | 5 ~ 12&nbsp;V                                          |                                                                            |
+| Enclosure Material  | Fiberglass                                             |                                                                            |
+| Dimensions          | 30&nbsp;mm × 215&nbsp;mm                               |                                                                            |
+| Protection Grade    | IP67                                                   |                                                                            |
+| Installation        | Pole                                                   |                                                                            |
+| Working Temperature | -20 ~ +70°&nbsp;C                                      | Typical +25°&nbsp;C                                                        |
+| Storage Temperature | -30 ~ 85°&nbsp;C                                       |                                                                            |
 
 ### Hardware
 
@@ -101,53 +101,4 @@ As shown in the **Figure 3**, the T-type conversion cable consists of an L20-4 F
 src="/assets/images/wisnode/rak2470-n/datasheet/4.t-type-conversion-cable.png"
 width="70%"
 caption="T-type conversion cable"
-/>
-
-## Installation
-
-RAK2470 allows for pole mounting. Follow the provided installation steps to ensure secure mounting.
-
-1. Fix the RAK2470 to the mounting kit with four (4) M4\*20 screws.
-
-<rk-img
-src="/assets/images/wisnode/rak2470-n/datasheet/5.fixing-the-device-to-the-mounting-kit.png"
-width="30%"
-caption="Fixing the device to the mounting kit"
-/>
-
-2. Using two (2) steel strips, fasten the RAK2470 on the pole.
-
-<rk-img
-src="/assets/images/wisnode/rak2470-n/datasheet/6.using-the-steel-strips.png"
-width="45%"
-caption="Using the steel strips"
-/>
-
-:::tip 📝 NOTE
-The pole diameter supported by the included steel strips is 55 ~ 80&nbsp;mm.
-:::
-
-3. Link the connector of the RAK2470 to the corresponding port.
-
-<rk-img
-src="/assets/images/wisnode/rak2470-n/datasheet/7.adding-the-connector.png"
-width="45%"
-caption="Adding the connector"
-/>
-
-## Connect to a Device
-
-There are two ways to connect devices to RAK2470:
-
-- When the device has its own power source (e.g. a MPPT solar charge controller), it can be directly connected to the connector on the RAK2470.
-- When the device cannot provide power, it needs to be powered through the T-type conversion cable as follows:
-
-  1. The Modbus device or RS485 sensor is connected to the L20-4 four-core straight-through port of the T-type conversion cable.
-  2. RAK2470 connects to the M12-4 female-pin port (threaded) of the T-type conversion cable.
-  3. The DC port for connection to a power supply.
-
-<rk-img
-src="/assets/images/wisnode/rak2470-n/datasheet/8.connecting-the-bridge-to-a-device.png"
-width="80%"
-caption="Connecting the bridge to a device"
 />
