@@ -12,6 +12,7 @@ rak_img: /assets/images/certifications/certification-banner.jpg
   'CHILE',
   'CHINA',
   'COSTA RICA',
+  'INDIA',
   'JAPAN',
   'KOREA',
   'MOROCCO',

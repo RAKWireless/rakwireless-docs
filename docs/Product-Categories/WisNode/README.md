@@ -62,7 +62,7 @@ Connect your sensor network with the plug-and-play setup of Sensor Hub. It is a 
 
 <rk-head img="/assets/rakwireless/product-categories/sensorhub-solutions.png">
 
-Sensor Hub Solutions is a ready-to-use modular sensor ecosystem that includes a weather station, atmospheric monitoring, motion detection, and a customized solution that makes use of third-party sensors. Each solution is ready for field deployment using LoRaWAN/NB-IoT communication, making it a suitable and versatile solution platform for a wide range of IoT applications.
+Sensor Hub Solutions are a series of fully prepared, ready-to-deploy devices designed for remote environmental measurement and wireless data transmission via NB-IoT or LoRaWAN. This selection is ideal for various IoT applications, offering modular expandability and seamless integration with third-party devices. Each Sensor Hub Solution has a comprehensive end-to-end guide, ensuring straightforward setup and operation.
 
 </rk-head>
 

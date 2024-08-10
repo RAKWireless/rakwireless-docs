@@ -17,6 +17,7 @@ certifications:
   - [RoHS, https://downloads.rakwireless.com/LoRa/RAK7289/Certification/RAK7289C_RAK7289_RAK7289CV2_RAK7289V2_RoHS_Report.pdf]
   - [SRRC, https://downloads.rakwireless.com/LoRa/RAK7289/Certification/RAK7289_SRRC_Certification.pdf]
   - [UKCA, https://downloads.rakwireless.com/LoRa/RAK7289/Certification/RAK7289_RAK7289V2_UKCA_Certification.pdf]
+  - [WPC, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289CV2_WPC_Certification.pdf]
 ---
 
 

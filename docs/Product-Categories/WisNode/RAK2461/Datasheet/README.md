@@ -119,48 +119,6 @@ For configuration purposes, the device can be powered by the Console port only, 
 - **Relay (DO)**: The maximum voltage is 240&nbsp;V. You can choose between NC and NO based on the use case. (DC - 30&nbsp;V / 3&nbsp;A, AC - 250&nbsp;V / 3&nbsp;A).
 - **Photocoupler (DI)**: The maximum input voltage should be 5&nbsp;V and the DI com should be connected to the negative pole.
 
-
-
-## Installation
-
-RAK2461 allows for two installation methods: wall mounting and DIN rail installation.
-
-#### Wall Mounting
-
-1. Drill the wall corresponding to the device dimensions and insert the anchors in the holes.
-
-<rk-img
-  src="/assets/images/wisnode/rak2461-n/datasheet/mounting_wall_1.png"
-  width="100%"
-  caption="Hole drilling"
-/>
-
-2. Fix the device to the wall with two tapping screws.
-
-<rk-img
-  src="/assets/images/wisnode/rak2461-n/datasheet/mounting_wall_2.png"
-  width="60%"
-  caption="Wall mounting"
-/>
-
-#### DIN Rail Mounting
-
-1. Attach the DIN rail mounting clip on the device with two M3*6 countersink screws.
-
-<rk-img
-  src="/assets/images/wisnode/rak2461-n/datasheet/mounting_din_3.png"
-  width="70%"
-  caption="Attaching the clip"
-/>
-
-2. Mount the device to the DIN rail.
-
-<rk-img
-  src="/assets/images/wisnode/rak2461-n/datasheet/mounting_din_4.png"
-  width="70%"
-  caption="DIN rail mounting"
-/>
-
 ## Models/Bundles
 
 | Model       | RS-485 | Relay (DO) | Photocoupler (DI) |

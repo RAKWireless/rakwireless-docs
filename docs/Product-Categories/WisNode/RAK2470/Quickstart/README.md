@@ -287,7 +287,7 @@ caption="List of connected devices"
 
 - **Device EUI** - This is the unique identifier provided by RAKwireless.
 - **Region** - The LoRaWAN region/band.
-- **Class** - The LoRaWAN Class (A).
+- **Class** - The LoRaWAN Class (C).
 - **Join Mode** - Choose between OTAA and ABP according to LoRaWAN protocol.
 - **Application EUI** - Enter the unique identifier assigned by the application server.
 - **Application Key** - Enter the unique secure key assigned by the application server.

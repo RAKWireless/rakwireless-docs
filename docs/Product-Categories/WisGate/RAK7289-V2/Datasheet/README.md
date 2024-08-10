@@ -25,6 +25,7 @@ certifications:
     - [RSM, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289C_RAK7289CV2_RSM_Certification.pdf]
     - [TDRA, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289CV2_TDRA_Certification.pdf]
     - [UKCA, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289C_RAK7289CV2_UKCA_Certification.pdf]
+    - [WPC, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289CV2_WPC_Certification.pdf]
 
 ---
 

@@ -15,14 +15,14 @@ tags:
 
 Before going through each and every step in the installation guide of the WisNode Bridge IO Lite, make sure to prepare the necessary items listed below:
 
-#### Hardware Tools
+### Hardware Tools
 
 1. <a href="https://store.rakwireless.com/products/rak2461-wisnode-bridge-io-lite?utm_source=rak2461&utm_medium=Document&utm_campaign=BuyFromStore" target="_blank">RAK2461 WisNode Bridge IO Lite</a>
 2. USB configuration cable
 3. Gateway in range, for Testing
 4. A Windows/macOS/Linux Computer
 
-#### Software Tools
+### Software Tools
 
 IO.Box Desktop is a software application that will allow you to configure the devices from the RAK24XX series. You can download the application from here: 
 
@@ -30,7 +30,7 @@ IO.Box Desktop is a software application that will allow you to configure the de
 - <a href="https://downloads.rakwireless.com/#WisIO/" target="_blank">Linux</a>
 - <a href="https://downloads.rakwireless.com/#WisIO/" target="_blank">Mac</a>
 
-#### Package Inclusion
+### Package Inclusion
 
 - One (1) RAK2461 WisNode Bridge IO Lite
 - One (1) Mounting Kit
@@ -40,6 +40,46 @@ IO.Box Desktop is a software application that will allow you to configure the de
 - One (1) USB Cable (Type C to Type A)
 - One (1) 4-Pin Terminal Block 
 - Two (2) 8-Pin Terminal Block
+
+## Installation
+
+RAK2461 allows for two installation methods: wall mounting and DIN rail installation.
+
+### Wall Mounting
+
+1. Drill the wall corresponding to the device dimensions and insert the anchors in the holes.
+
+<rk-img
+  src="/assets/images/wisnode/rak2461-n/datasheet/mounting_wall_1.png"
+  width="100%"
+  caption="Hole drilling"
+/>
+
+2. Fix the device to the wall with two tapping screws.
+
+<rk-img
+  src="/assets/images/wisnode/rak2461-n/datasheet/mounting_wall_2.png"
+  width="60%"
+  caption="Wall mounting"
+/>
+
+### DIN Rail Mounting
+
+1. Attach the DIN rail mounting clip on the device with two M3*6 countersink screws.
+
+<rk-img
+  src="/assets/images/wisnode/rak2461-n/datasheet/mounting_din_3.png"
+  width="70%"
+  caption="Attaching the clip"
+/>
+
+2. Mount the device to the DIN rail.
+
+<rk-img
+  src="/assets/images/wisnode/rak2461-n/datasheet/mounting_din_4.png"
+  width="70%"
+  caption="DIN rail mounting"
+/>
 
 ## Product Configuration
 

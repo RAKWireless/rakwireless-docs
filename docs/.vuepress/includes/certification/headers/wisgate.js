@@ -9,6 +9,7 @@ export const WISGATE_HEADER = {
     'CHILE',
     'CHINA',
     'COSTA RICA',
+    'INDIA',
     'JAPAN',
     'KOREA',
     'MOROCCO',
