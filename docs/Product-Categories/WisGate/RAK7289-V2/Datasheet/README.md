@@ -69,7 +69,6 @@ This product is designed to be powered by 12&nbsp;V<sub>DC</sub> via a dedicated
 - LoRa Frame filtering (node whitelisting)
 - MQTT v3.1 bridging with TLS encryption
 - Buffering of LoRa frames in Packet Forwarder mode in case of NS outage (no data loss)
-- Full-duplex (optional)
 - Listen Before Talk (optional)
 - Fine timestamping (optional)
 
