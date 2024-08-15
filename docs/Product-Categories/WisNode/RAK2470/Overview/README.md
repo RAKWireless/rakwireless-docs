@@ -3,7 +3,7 @@ rak_img: /assets/images/wisnode/rak2470-n/datasheet/RAK2470.png
 rak_grp: [wisnode,bridge]
 rak_desc: The RAK2470 WisNode Bridge Serial Prime is an RS485 to LoRaWAN converter designed for outdoor industrial applications. The device relays RS485 data using the LoRaWAN network to wirelessly transmit to and from the end devices.
 prev: ../../
-next: ../Datasheet/
+next: ../Quickstart/
 tags:
   - RAK2470
   - wisnode

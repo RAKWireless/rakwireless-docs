@@ -121,6 +121,7 @@ You can check each guide on how to use the RAK10701-L Field Tester for LoRaWAN i
 - [The Things Network](/Product-Categories/WisNode/RAK10701-L/Quickstart/#rak10701-l-field-tester-guide-for-the-things-network)
 - [Chirpstack (with Datacake)](/Product-Categories/WisNode/RAK10701-L/Quickstart/#rak10701-l-field-tester-guide-for-chirpstack)
 - [Loriot (with Datacake)](/Product-Categories/WisNode/RAK10701-L/Quickstart/#rak10701-l-field-tester-pro-guide-for-loriot-and-datacake)
+- [Chirpstack (with NodeRED)](/Product-Categories/WisNode/RAK10701-L/Quickstart/#rak10701-l-field-tester-guide-for-chirpstack-and-nodered)     
 
 Additional information:
 
@@ -626,7 +627,7 @@ function Decode(fPort, bytes, variables) {
 This decoder script can be found on [RAKwireless Standardize Payload repository](https://github.com/RAKWireless/RAKwireless_Standardized_Payload) which also includes a custom decoder script for TTN and Helium.
 :::
 
-4. After creating the device profile, you can now create an application and add the RAK10701 device. And then attached the `Device-profile` you created. You have to take note of the DEVEUI and APPKEY in this section. These parameters must match the ones in our RAK10701 Field Tester.
+4. After creating the device profile, you can now create an application and add the RAK10701 device. And then attached the `Device-profile` you created. Note the DEVEUI and APPKEY in this section. These parameters must match the ones in our RAK10701 Field Tester.
 
 <rk-img
   src="/assets/images/wisnode/rak10701/quickstart/6_create_application.png"
@@ -646,7 +647,7 @@ This decoder script can be found on [RAKwireless Standardize Payload repository]
   caption="Device APPKEY"
 />
 
-5. You also need to secure that you have a Gateway registered in Chirpstack and with the correct Network Server profile.
+5. You also need to ensure that you have a Gateway registered in Chirpstack and with the correct Network Server profile.
 
 <rk-img
   src="/assets/images/wisnode/rak10701/quickstart/9_gateway.png"
@@ -730,6 +731,8 @@ This decoder script can be found on [RAKwireless Standardize Payload repository]
 
 10. Just below the `LoRaWAN` section in datacake.co, you'll see the `Payload Decoder`. This is a very critical step to ensure that all important data will be covered.
 
+
+::: details Click to view the decoder code
 ```js
 function distance(lat1, lon1, lat2, lon2) {
     if ((lat1 == lat2) && (lon1 == lon2)) {
@@ -951,6 +954,7 @@ function Decoder(bytes, fPort) {
 
 }
 ```
+:::
 
 This decoder is not only decoding data from the LoRaWAN packet but is as well reading gateway information from the additional data that the LoRaWAN server added to the data it forwarded to Datacake.
 
@@ -1219,8 +1223,9 @@ You can generate a new access token or use the existing one.
 
 ##### Setting up the Uplink Payload Decoder and the Downlink Encoder
 
-1. In the Datacake console, navigate to the **Configuration** tab of your RAK10701 device. At the bottom of the page, you will find the **Payload Decoder** field. Copy the decoder provided below and paste it in that field. This decoder will calculate the values displayed on the screen of the Field Tester.
+1. In the Datacake console, navigate to the **Configuration** tab of your RAK10701 device. At the bottom of the page, you will find the **Payload Decoder** field. Copy the decoder code provided below and paste it in the payload decoder field. This decoder will calculate the values displayed on the screen of the Field Tester.
 
+::: details Click to view the decoder code
 ```js
 function distance(lat1, lon1, lat2, lon2) {
 	if ((lat1 == lat2) && (lon1 == lon2)) {
@@ -1409,6 +1414,7 @@ function Decoder(bytes, fPort) {
 
 }
 ```
+:::
 
 <rk-img
 src="/assets/images/wisnode/rak10701/quickstart/14. datacake payload decoder field.png"
@@ -1446,6 +1452,250 @@ caption="Downlink Configuration"
 />
 
 3. You should now be able to see the data from the downlink on your Field Tester's screen.
+
+#### RAK10701-L Field Tester Guide for Chirpstack and NodeRED
+
+##### How Does It Work?
+
+The Field Tester performs two steps:
+
+- In the first step, it sends data packets over LoRaWAN, which are then received by one or multiple gateways. These packets are forwarded by the LoRaWAN network server to a backend server, including information about signal strength and the number of gateways that received the packet.
+
+<rk-img
+  src="/assets/images/wisnode/rak10701/quickstart/1_flow_1.png"
+  width="55%"
+  caption="Step 1 - Field Tester Sending Uplink Payload"
+/>
+
+- In the second step, the backend server calculates the minimum and maximum distances from the Field Tester to the gateways, along with the minimum and maximum RSSI levels, and sends information back to the Field Tester as a LoRaWAN downlink.
+
+<rk-img
+  src="/assets/images/wisnode/rak10701/quickstart/2_flow_2.png"
+  width="55%"
+  caption="Step 2 - Backend Server Sending Useful Information as Downlink"
+/>
+
+To use Chirpstack and NodeRED for RAK10701-L, you need a working Chirpstack LoRaWAN network server. This can be on a dedicated machine, a Raspberry Pi, or a cloud VPS. You also need NodeRED installed and connected to the Chirpstack MQTT broker.
+
+1. To start with Chirpstack, you must create a device profile for your RAK10701-L Field Tester Pro device. You must select `LoRaWAN MAC version 1.0.3` which is the LoRaWAN specification version that the RAK10701 Field Tester supports.
+
+<rk-img
+  src="/assets/images/wisnode/rak10701/quickstart/3_device_profile.png"
+  width="80%"
+  caption="Creating Device Profile in Chirpstack"
+/>
+
+2. You must enable `Device supports OTAA` as the network join method as well.
+
+<rk-img
+  src="/assets/images/wisnode/rak10701/quickstart/4_device_profile.png"
+  width="80%"
+  caption="Enable support for OTAA"
+/>
+
+3. Once done with the device profile, you can now create an application and add the RAK10701 device. And then attached the `Device-profile` you created. 
+
+<rk-img
+  src="/assets/images/wisnode/rak10701/quickstart/6_create_application.png"
+  width="80%"
+  caption="Create application in Chirpstack"
+/>
+
+:::tip 📝 NOTE  
+Take note of the DEVEUI and APPKEY in this section. These parameters must match the ones in our RAK10701 Field Tester.
+:::
+
+<rk-img
+  src="/assets/images/wisnode/rak10701/quickstart/7_create_device.png"
+  width="80%"
+  caption="Create device in Chirpstack."
+/>
+
+<rk-img
+  src="/assets/images/wisnode/rak10701/quickstart/8_create_device_appkey.png"
+  width="80%"
+  caption="Device APPKEY"
+/>
+
+4. Make sure your Gateway is registered in Chirpstack with the correct Network Server profile.
+
+<rk-img
+  src="/assets/images/wisnode/rak10701/quickstart/9_gateway.png"
+  width="80%"
+  caption="Gateways registered in Chripstack"
+/>
+
+5. After setting up the network server, devices, and gateway, install the NodeRED. This is required to run the backend server, which is in this case a NodeRED flow.
+
+  :::tip 📝 NOTE        
+  Check the [NodeRED documentation](https://nodered.org/#get-started) about installation options.
+  :::
+
+  - Once the NodeRED is installed, start it and select a flow to add the required nodes.
+
+6. Install the Field Tester Service node     
+
+  a. Before starting to set up the flow, the Field Tester Service node needs to be added to the NodeRED palette.    
+  Use the top-right icon in NodeRED and select **Manage Palette** from the new menu:    
+
+  <rk-img
+    src="/assets/images/wisnode/rak10701/quickstart/manage-palette.png"
+    height="50%"
+    caption="Manage Palette"
+  />
+
+  b. In the new window, select the **Install** tab and type ***`rakwireless/field-tester-server`*** in the search box. The node will show up in the search result. Install the node by clicking the **Install** button.    
+
+  <rk-img
+    src="/assets/images/wisnode/rak10701/quickstart/install-palette.png"
+    height="50%"
+    caption="Install Palette"
+  />
+
+  c. Once the node is installed, we can start to setup the NodeRED flow.
+
+7. Setup the input Node    
+  
+  a. For Chirpstack V4 we need first an input node that can receive information from Chirpstacks MQTT broker. Pull the _**`mqtt in`**_ node from the left side bar to your flow:
+
+  <rk-img
+    src="/assets/images/wisnode/rak10701/quickstart/prepare-input.png"
+    width="50%"
+    caption="Prepare input node"
+  />
+
+  b. Then set up the MQTT connection, double click the ***`mqtt in`*** node to open the setup window. Then click on the Server ***Edit*** icon.    
+
+  <rk-img
+    src="/assets/images/wisnode/rak10701/quickstart/mqtt-connect-1.png"
+    width="100%"
+    caption="Setup input node"
+  />
+
+  c. In the setup window, add your server connection in the **Connection** tab:
+
+  <rk-img
+    src="/assets/images/wisnode/rak10701/quickstart/mqtt-connect-2.png"
+    width="40%"
+    caption="Add MQTT Broker"
+  />
+
+  d. Server can be an URL or an IP address where your Chirpstack MQTT broker can be reached. This and the port number depends on your Chirpstack installation and MQTT settings.
+
+  e. Next go to the **Security** tab and enter the required username and password. Again, this depends on your MQTT settings:    
+
+  <rk-img
+    src="/assets/images/wisnode/rak10701/quickstart/mqtt-connect-3.png"
+    width="40%"
+    caption="Add credentials"
+  />
+
+  f. To receive the data from the MQTT broker, we need to set up the topic we want to listen to. The first step is to get the ID of the application in Chirpstack:    
+
+  <rk-img
+    src="/assets/images/wisnode/rak10701/quickstart/get-cs-application-id.png"
+    width="50%"
+    caption="Get Chirpstack application ID"
+  />
+
+  g. Copy the application ID, to use it in the MQTT input node to set up the topic.
+
+  h. Open the MQTT input settings in the NodeRED flow by double clicking on the icon in the flow.<br>
+  Then edit the topic field. The syntax is:    
+  `application` = fixed        
+  `application ID` = from the Chirpstack LNS application        
+  `#` = get all messages        
+
+  In this example the topic is:
+  ```
+  application/57184973-d64d-4656-be1d-84d4427bcb1a/#
+  ```
+
+  i. Select as **Output** the option **`a parsed JSON object`**.    
+
+  <rk-img
+    src="/assets/images/wisnode/rak10701/quickstart/setup-topic.png"
+    width="60%"
+    caption="Setup MQTT topic"
+  />
+
+8. Set up the output node
+
+  a. We need an output node as well to be able to send downlinks to the Chirpstack MQTT Broker.    
+
+  b. Pull the _**`mqtt out`**_ node from the left side bar to your flow:
+
+  <rk-img
+    src="/assets/images/wisnode/rak10701/quickstart/prepare-output.png"
+    width="60%"
+    caption="Prepare output node"
+  />
+
+  c. The only setup required is to select the same server that is used in the ***`mqtt in`*** node.
+
+9. Setup the Field Tester Backend Node
+
+  a. Now we can add and setup the Field Tester Server node.
+
+  b. Pull the ***`field tester service`*** node from the left side bar to your flow:
+
+  <rk-img
+    src="/assets/images/wisnode/rak10701/quickstart/add-field-tester-service.png"
+    width="60%"
+    caption="Add Field Tester Service node"
+  />
+
+  c. Double click on the new node to setup the parser:
+
+  <rk-img
+    src="/assets/images/wisnode/rak10701/quickstart/setup-parser.png"
+    width="60%"
+    caption="Set up the parser"
+  />
+
+  For this example, the required parser is **Chirpstack v3 and v4**.
+
+:::tip 📝 NOTE        
+The Field Tester Service node can be used with other LoRaWAN servers as well. Depending on the server and the options to receive uplinks and create downlinks, additional nodes might be required to convert this data into **Raw data** before sending it to the Field Tester Service.    
+However, guides on how to use it with other LNS are not available at this time.        
+:::
+
+10. Connect the nodes
+
+  - The last step is to connect the nodes:
+
+  <rk-img
+    src="/assets/images/wisnode/rak10701/quickstart/connect-nodes.png"
+    width="60%"
+    caption="Connect the node"
+  />
+
+  :::tip 📝 NOTE
+  - For debugging, it will be helpful to add a debug output node to the flow. This helps to check whether the output of the parser is correct:
+
+  <rk-img
+    src="/assets/images/wisnode/rak10701/quickstart/prepare-debug.png"
+    width="60%"
+    caption="Device"
+  />
+  :::
+
+  - Select **complete msg object** as output.<br>
+  The result of parser can then be checked on the right side in the debug window:
+
+  <rk-img
+    src="/assets/images/wisnode/rak10701/quickstart/debug-flow.png"
+    width="100%"
+    caption="Device"
+  />
+
+  That's all, a simple implementation of a backend server for the RAK10701 Field Tester with NodeRED.    
+
+  On the other hand, the uplink packets from the Field Tester can be sent in parallel to Datacake for a visualization of the locations, but in this case, there is no need to set up the downlink procedure in Datacake.
+
+  :::tip 📝 NOTE
+  _**All credits for the Field Tester Service node go to Xose from RAKwireless.**_  
+  :::
 
 ### Configuration of RAK10701-L Using WisToolBox
 
@@ -1488,10 +1738,10 @@ The Field Mapper should have the correct credentials to connect to the Helium Co
 :::tip 📝 NOTE:
 These are the only parameters that you need to change via WisToolBox. Other configurations like frequency plan, the interval of uplinks, TX power, and data rate can be done on the touchscreen of RAK10701.
 
-For the frequency plan change, the device has to restart to activate this newly configured frequency band. There will be a notification on the UI touchscreen LCD. If you use WisToolBox to configure the band, you have to restart the device manually, and there will be no notification from the UI of the LCD.
+For the frequency plan change, the device must be restarted to activate this newly configured frequency band. There will be a notification on the UI touchscreen LCD. If you use WisToolBox to configure the band, you have to restart the device manually, and there will be no notification from the UI of the LCD.
 :::
 
-6. You will see the summary of commands that was applied successfully. If the update is unsuccessful, just resend the needed changes. After the successful update, click the **CLOSE** button to return to Dashboard.
+6. You will see the summary of commands that were applied successfully. If the update is unsuccessful, just resend the needed changes. After the successful update, click the **CLOSE** button to return to Dashboard.
 
 <rk-img
   src="/assets/images/wisnode/rak10701/quickstart/wistoolbox-config-success.png"
@@ -1522,7 +1772,7 @@ This part of the guide shows the Field Tester interface and how to update the fi
 
 #### Field Tester Display Interface
 
-This section discusses the interfaces on the LCD of the device as well as its pages.
+This section discusses the interfaces on the device's LCD and its pages.
 
 ##### Display Status and Indicator
 
@@ -1542,7 +1792,7 @@ The RAK10701-L WisNode Field Tester has status indicators that show the current 
 
 **Status:**
 
-- **IDLE**: RAK10701-L Field Tester state is in between the previous uplink and the next uplink. The duration of IDLE depends on the interval configured on the device.
+- **IDLE**: RAK10701-L Field Tester state is in between the previous uplink and the next uplink. The duration of an IDLE depends on the interval configured on the device.
 - **JOINING**: RAK10701-L Field Tester is trying to join the network. This status is triggered when a Join request is sent.
 - **JOINED**: RAK10701-L Field Tester successfully received the Join accept the packet. This status will be displayed until refreshed when new data is sent.
 - **FAILED**: RAK10701-L Field Tester failed to join the network. Triggered by receive timeout. There might be no available gateway reachable by the Field Tester.
@@ -1621,7 +1871,7 @@ The Uplink packet format send on Fport 1:
 
 When the GPS position is invalid of GPS is disable, the frame is fill with 0's.
 
-The downlink response format send on Fport 2:
+The downlink response format sends on Fport 2:
 | Byte | Usage                               |
 | ---- | ----------------------------------- |
 | 0    | Sequence ID % 255                   |
@@ -1631,7 +1881,7 @@ The downlink response format send on Fport 2:
 | 4    | Max Distance step 250&nbsp;m        |
 | 5    | Seen hotspot                        |
 
-The distance is calculated from the GPS position and the gateways position returned by LoRaWAN server meta-data. Under 250&nbsp;m value is 250&nbsp;m, over 32&nbsp;km value is 32&nbsp;km. 0 is considered as invalid response.
+The distance is calculated from the GPS position and the gateways position returned by LoRaWAN server meta-data. Under 250&nbsp;m value is 250&nbsp;m, over 32&nbsp;km value is 32&nbsp;km. 0 is considered as an invalid response.
 
 The following integration and payload transformation allows to decode the gps position and report is to mapper.
 
@@ -1640,7 +1890,7 @@ Dicovery uplink format send on Fport 3 (no ack):
 | ----- | -------------------------------------------------------------------------------------------------- |
 | 0 - 5 | [GPS position](https://www.disk91.com/2015/technology/sigfox/telecom-design-sdk-decode-gps-frame/) |
 
-Discovery is sending 10 messages SF10 on every 40 seconds. All the other information comes from the metadata provided by the network server.
+Discovery is sending 10 messages SF10 every 40 seconds. All the other information comes from the metadata provided by the network server.
 
 
 #### Upgrading the Firmware

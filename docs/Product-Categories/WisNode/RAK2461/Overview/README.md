@@ -3,7 +3,7 @@ rak_img: /assets/images/wisnode/rak2461-n/datasheet/RAK2461.png
 rak_grp: [wisnode,bridge]
 rak_desc: The RAK2461 WisNode Bridge IO Lite is the ultimate solution for seamless LoRaWAN communication in industrial environments. It has industrial-grade reliability and is based on the RAK3172-T LoRaWAN module, ensuring long-range connectivity even in harsh temperature conditions.
 prev: ../../
-next: ../Datasheet/
+next: ../Quickstart/
 tags:
   - RAK2461
   - wisnode

@@ -1,7 +1,7 @@
 ---
 rak_desc: Provides comprehensive information about your RAK2461 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 rak_img: /assets/images/wisnode/rak2461-n/datasheet/RAK2461.png
-prev: ../Overview/
+prev: ../Quickstart/
 next: false
 tags:
   - datasheet

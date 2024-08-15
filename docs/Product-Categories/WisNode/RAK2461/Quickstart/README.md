@@ -32,6 +32,12 @@ IO.Box Desktop is a software application that will allow you to configure the de
 
 ### Package Inclusion
 
+<rk-img
+  src="/assets/images/wisnode/rak2461-n/quickstart/package-inclusions.png"
+  width="70%"
+  caption="RAK2461 Package Inclusions"
+/>
+
 - One (1) RAK2461 WisNode Bridge IO Lite
 - One (1) Mounting Kit
 - One (1) Screw Kit
