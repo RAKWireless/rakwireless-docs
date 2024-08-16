@@ -24,9 +24,9 @@ Thank you for choosing **RAK19015 WisBlock Battery Power Slot Module** in your a
 
 ## Product Description
 
-The RAK19015 WisBlock Battery Power Slot Module is a power board that comprises a battery connector, a reset push button, and two LEDs. It is designed to be used with WisBlock Base Board with Power Slot via the 40-pin WisBlock connector.
+The **RAK19015 WisBlock Battery Power Slot Module** is a power board that consists of a battery connector, reset push button, and two LEDs. It is designed to be used with WisBlock Base Board with Power Slot via the 40-pin WisBlock connector.
 
-RAK19015 is optimized to support very low-power applications since it only has a Li-Ion battery and 3.3V switching regulator in the circuit removing unnecessary components that consume extra current consumption.
+RAK19015 is optimized to support very low-power applications since it only has a Li-Ion battery and 3.3&nbsp;V switching regulator in the circuit removing unnecessary components that consume extra current consumption.
 
 ## Product Features
 
@@ -41,8 +41,8 @@ RAK19015 is optimized to support very low-power applications since it only has a
 To use a **RAK19015**, you need at least a **WisBlock Base** Board with Power Slot to plug the module in. Furthermore, you need a **WisBlock Core** module to control the two user LEDs.
 
 :::warning ⚠️ WARNING
-- Battery can cause harm if not handled properly.
-- 3.7-4.2&nbsp;V Li-Ion batteries are primarily supported. It is highly recommended not to use other types of batteries with the system unless you know what you are doing.
+- Improper handling of the battery can be harmful.
+- 3.7 ~ 4.2&nbsp;V Li-Ion batteries are primarily supported. It is highly recommended not to use other types of batteries with the system unless you know what you are doing.
 - Make sure the battery wires, both rechargeable and non-rechargeable, match the polarity on the RAK19015 board. Not all batteries have the same wiring.
 - Make sure to fix the module with the screws to ensure a proper function.
 :::

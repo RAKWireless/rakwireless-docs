@@ -15,9 +15,9 @@ next: false
 
 ### Description
 
-The RAK19015 WisBlock Battery Power Slot Module is a power board that comprises a battery connector, a reset push button, and two LEDs. It is designed to be used with WisBlock Base Board with Power Slot via the 40-pin WisBlock connector.
+The **RAK19015 WisBlock Battery Power Slot Module** is a power board that comprises a battery connector, a reset push button, and two LEDs. It is designed to be used with WisBlock Base Board with Power Slot via the 40-pin WisBlock connector.
 
-RAK19015 is optimized to support very low-power applications since it only has a Li-Ion battery and 3.3V switching regulator in the circuit removing unnecessary components that consume extra current consumption.
+RAK19015 is optimized to support very low-power applications since it only has a Li-Ion battery and 3.3&nbsp;V switching regulator in the circuit removing unnecessary components that consume extra current consumption.
 
 ### Features
 
@@ -62,7 +62,7 @@ RAK19015 WisBlock Battery Power Slot Module provides the following interfaces, h
 * 1 Reset button
 
 ::: tip 📝 NOTE
-RAK19015 doesn't have a USB connector, so when RAK19015 and RAK19010 are used together, it is not possible to program the core (unless you use Jlink). If you want to program the core, you need the RAK5804. Then you can supply over RAK19015 and program over RAK5804.
+RAK19015 doesn't have a USB connector, so when RAK19015 and RAK19010 are used together, it is not possible to program the core (unless you use Jlink). If you want to program the core, you need the <a href="https://store.rakwireless.com/products/rak5804-wisblock-interface-extension-board" target="_blank">RAK5804</a>. Then you can supply over RAK19015 and program over RAK5804.
 :::
 
 <rk-img
@@ -116,7 +116,7 @@ VBAT, 3V3, RESET, LED1, LED2, and GND are connected to the WisBlock IO connector
 
 The Absolute Maximum Ratings of the device are shown in the table below. The stress ratings are the functional operation of the device.
 
-:::warning ⚠️WARNING
+:::warning ⚠️ WARNING
 1. If the stress rating goes above what is listed, it may cause permanent damage to the device.
 2. Exposure to maximum rating conditions may affect the device reliability.
 :::
@@ -169,9 +169,9 @@ The table below lists the operation and storage temperature requirements of RAK1
 
 | **Parameter**                 | **Minimum** | **Typical** | **Maximum** |
 | ----------------------------- | :---------: | :---------: | :---------: |
-| Operational temperature range | –35&nbsp;ºC | +25&nbsp;ºC | +75&nbsp;ºC |
-| Extended temperature range    | –40&nbsp;ºC | +25&nbsp;ºC | +80&nbsp;ºC |
-| Storage temperature range     | –40&nbsp;ºC | +25&nbsp;ºC | +80&nbsp;ºC |
+| Operational temperature range | –35º&nbsp;C | +25º&nbsp;C | +75º&nbsp;C |
+| Extended temperature range    | –40º&nbsp;C | +25º&nbsp;C | +80º&nbsp;C |
+| Storage temperature range     | –40º&nbsp;C | +25º&nbsp;C | +80º&nbsp;C |
 
 #### Schematic Diagram
 

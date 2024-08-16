@@ -13,17 +13,17 @@ tags:
 
 Thank you for choosing **RAK19017 WisBlock POE Slot Module** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
-* [Datasheet](../Datasheet/)
+* <a href="../Datasheet/" target="_blank">Datasheet</a>
 * <a href="../../Quickstart/" target="_blank">WisBlock Quick Start Guide</a>
-* [WisBlock Source Code Repository](https://github.com/RAKWireless/WisBlock/)
-* [RAK19017 3D Model](https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK19017.stp)
-* [40-Pin Male Connector 3D file](https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp)
+* <a href="https://github.com/RAKWireless/WisBlock/" target="_blank">WisBlock Source Code Repository</a>
+* <a href="https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK19017.stp" target="_blank">RAK19017 3D Model</a>
+* <a href="https://downloads.rakwireless.com/3D_File/Accessory/WisConnector/M40S1003K6M.stp" target="_blank">40-Pin Male Connector 3D file</a>
 
 ## Product Description
 
-RAK19017 is a WisBlock POE Power Slot Module that has an Ethernet connector with POE capability (power supply only, no Ethernet connection capability) and a reset button. It is compatible with the WisBlock Base board with Power Slot.
+The **RAK19017** is a WisBlock POE Power Slot Module that has an Ethernet connector with POE (power supply only, no Ethernet connection) capability and a reset button. It is compatible with the WisBlock Base board with Power Slot.
 
-RAK19017 WisBlock POE module is a power board that is designed based on Ag99005 MT from Silver. The Ag9905MT Power-over-Ethernet (PoE) modules are designed to extract power from a conventional twisted pair Category 5 Ethernet cable, conforming to the IEEE 802.3af PoE standard. The Ag9905MT signature and control circuit provides the PoE compatibility signature required by the Power Sourcing Equipment (PSE) before applying up to 9&nbsp;W power to the port. The Ag9905 MT provides a Class 0 signature. The DC/DC converter operates over a wide input voltage range and provides a regulated output. The DC/DC converter also has built-in short-circuit output protection.
+The RAK19017 WisBlock POE module is a power board that is designed based on Ag9905MT from Silvertel. RAK19017 Wisblock POE module is an IEEE 802.3af compliant POE module that can draw power from the conventional twisted pair CAT5 ethernet cable. This circuit provides the necessary signature required by the Power Sourcing Equipment (PSE) before delivering up to 9&nbsp;W of power to the port. The Ag9905MT provides a regulated 5&nbsp;V output from the internal DC-DC converter that has a built-in short-circuit output protection.
 
 ## Product Features
 

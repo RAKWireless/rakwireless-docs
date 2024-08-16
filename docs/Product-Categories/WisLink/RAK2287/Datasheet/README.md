@@ -25,13 +25,15 @@ rak_img: /assets/images/wislink-lora/rak2287/quickstart/1main/RAK2287.png
 
 ### Description
 
-The **RAK2287** is an LPWAN Concentrator Module with mini-PCIe form factor based on Semtech SX1302, which enables an easy integration into an existing router or other network equipment with LPWAN Gateway capabilities. It can be used in any embedded platform offering a free mini-PCIe slot with SPI connection. Furthermore, **ZOE-M8Q GPS chip** is integrated on board.
+The **RAK2287** is an LPWAN Concentrator Module with a mini-PCIe form factor based on Semtech SX1302, facilitating easy integration into an existing router or other network equipment with LPWAN Gateway capabilities. It can be utilized in any embedded platform offering a free mini-PCIe slot with SPI connection. Additionally, the **ZOE-M8Q GPS chip** is integrated on board.
 
-This module is an exceptional, complete and cost efficient gateway solution offering up to 10 programmable parallel demodulation paths, an 8 x 8 channel LoRa packet detectors, 8 x SF5-SF12 LoRa demodulators and 8 x SF5-SF10 LoRa demodulators. It is capable of detecting uninterrupted combination of packets at 8 different spreading factors and 10 channels with continuous demodulation of up to 16 packets. This product is best for smart metering fixed networks and Internet-of-Things (IoT) applications, that can cover up to 500&nbsp;nodes per km² in an environment of moderate interference.
+This module offers an exceptional, comprehensive, and cost-efficient gateway solution. It provides up to 10 programmable parallel demodulation paths, an 8 x 8 channel LoRa packet detector, 8 x SF5-SF12 LoRa demodulators, and 8 x SF5-SF10 LoRa demodulators. 
+
+Additionally, RAK2287 can detect an uninterrupted combination of packets at 8 different spreading factors and 10 channels. It can continuously demodulate up to 16 packets, making it suitable for smart metering fixed networks and Internet-of-Things (IoT) applications. It can cover up to 500 nodes per km² in an environment with moderate interference.
 
 ### Features
 
-- Designed based on **Mini PCI-e form factor** with heat sink
+- Designed based on **Mini PCI-e form factor** with a heat sink
 - **SX1302 base band processor** emulates 8 x 8 channels LoRa packet detectors, 8 x SF5-SF12 LoRa demodulators, 8 x SF5-SF10 LoRa demodulators, one 125/250/500&nbsp;kHz high-speed LoRa demodulator and one (G) FSK demodulator
 - 3.3&nbsp;V **Mini PCI-e**, compatible with 3G/LTE card of Mini PCI-e type
 - Compatible with **3G/LTE card** of Mini PCI-e type
@@ -48,7 +50,7 @@ The overview shows the top and back views of the RAK2287 board. It also presents
 
 #### Board Overview
 
-RAK2287 is a compact LPWAN Gateway Module, making it suitable for integration in systems where mass and size constraints are essential. It has been designed with the PCI Express Mini Card form factor in mind, so it can easily become a part of products that comply with the standard, where they allow cards with a thickness of at least 10.5&nbsp;mm.
+The RAK2287 is a compact LPWAN Gateway Module, making it suitable for integration in systems where mass and size constraints are essential. It has been designed with the PCI Express Mini Card form factor in mind, so it can easily become a part of products that comply with the standard, where they allow cards with a thickness of at least 10.5&nbsp;mm.
 
 The board has two UFL interfaces for the LoRa and GNSS antennas and a standard 52-pin connector (mPCIe).
 
@@ -60,7 +62,7 @@ The board has two UFL interfaces for the LoRa and GNSS antennas and a standard 5
 
 #### Block Diagram
 
-RAK2287 card is equipped with one SX1302 chip and two SX1250. The first chip is utilized for RF signal and the core of the device. While the latter provides the related LoRa modem and processing functionalities. Additional signal conditioning circuitry is implemented for PCI Express Mini Card compliance, and one UFL connector is available for external antennas integration.
+The RAK2287 card is equipped with one SX1302 chip and two SX1250 chips. The SX1302 chip is used for RF signal processing and serves as the core of the device, while the SX1250 chips handle the related LoRa modem and processing functionalities. Additional signal conditioning circuitry is implemented to comply with the PCI Express Mini Card standard, and one UFL connector is provided for the integration of external antennas.
 
 <rk-img
   src="/assets/images/wislink-lora/rak2287/datasheet/interfaces/block-diagram.png"
@@ -76,7 +78,7 @@ The hardware is categorized into seven (7) parts. It discusses the interfacing, 
 
 ##### Power Supply
 
-RAK2287 card must be supplied through the 3.3&nbsp;Vaux pins by a DC power supply. The voltage needs to be stable since the current drawn can vary significantly during operation based on the power consumption profile of the SX1302 chip (see [SX1302 Datasheet](https://www.mouser.com/pdfDocs/Semtech_08072019_DS_SX1302_V10-1626824.pdf))
+The RAK2287 card must be powered through the 3.3 Vaux pins by a DC power supply. It is crucial that the voltage remains stable, as the current drawn can vary significantly during operation, depending on the power consumption profile of the SX1302 chip. For more detailed information, refer to the [SX1302 Datasheet](https://www.mouser.com/pdfDocs/Semtech_08072019_DS_SX1302_V10-1626824.pdf).
 
 ##### SPI Interface
 
@@ -84,16 +86,15 @@ SPI interface mainly provides for the Host_SCK, Host_MISO, Host_MOSI, Host_CSN p
 
 ##### UART and I2C Interface
 
-RAK2287 integrates ZOE-M8Q GPS module which has UART and I2C interface. The PINs on golden finger provide an UART connection and an I2C connection, which allows direct access to the GPS module. The PPS signal is not only connected to SX1302 internally, but also connected to golden finger which can be used by host board.
+The RAK2287 integrates a ZOE-M8Q GPS module, which supports both UART and I2C interfaces. The pins on the golden finger provide connections for UART and I2C, allowing direct access to the GPS module. The PPS (Pulse Per Second) signal is connected internally to the SX1302, as well as to the golden finger, making it available for use by the host board.
 
 ##### GPS_PPS
 
-RAK2287 card includes
-the GPS_PPS input for received packets time-stamped.
+The RAK2287 card includes the GPS_PPS input for received packets time-stamped.
 
 ##### RESET
 
-RAK2287 card includes the RESET active-high input signal to reset the radio operations as specified by the SX1302 Specification[.](#_bookmark73)
+The RAK2287 card includes the RESET active-high input signal to reset the radio operations as specified by the SX1302 Specification.
 
 ##### Antenna RF Interface
 
@@ -129,7 +130,7 @@ The modules have one RF interface over a standard UFL connector (Hirose U. FL-R-
 | **3**          | COEX1                       | NC              |          | No Connection                               |                                                                             |
 | **4**          | GND                         | GND             |          | Ground                                      |                                                                             |
 | **5**          | COEX2                       | NC              |          | No Connection                               |                                                                             |
-| **6**          | 1.5V                        | GPIO(6)         | IO       |                                             | Connect to SX1302’s GPIO [6].                                               |
+| **6**          | 1.5&nbsp;V                  | GPIO(6)         | IO       |                                             | Connect to SX1302’s GPIO [6].                                               |
 | **7**          | CLKREQ#                     | NC              |          | No Connection                               |                                                                             |
 | **8**          | UIM_PWR                     | NC              |          | No Connection                               |                                                                             |
 | **9**          | GND                         | GND             |          | Ground                                      |                                                                             |
@@ -151,7 +152,7 @@ The modules have one RF interface over a standard UFL connector (Hirose U. FL-R-
 | **25**         | PERp0                       | STANDBY_GPS     | DI       | GPS module ZOE-M8Q external interrupt input | Active low, Leave open if not used.                                         |
 | **26**         | GND                         | GND             |          | Ground                                      |                                                                             |
 | **27**         | GND                         | GND             |          | Ground                                      |                                                                             |
-| **28**         | 1.5V                        | NC              |          | No Connection                               |                                                                             |
+| **28**         | 1.5&nbsp;V                  | NC              |          | No Connection                               |                                                                             |
 | **29**         | GND                         | GND             |          | Ground                                      |                                                                             |
 | **30**         | SMB_CLK                     | I2C_SCL         | IO       | HOST SCL                                    | Connect to GPS module ZOE-M8Q’s SCL internally. Leave open if not used.     |
 | **31**         | PETn0                       | PI_UART_TX      | DI       | HOST UART_TX                                | Connect to GPS module ZOE-M8Q’s UART_RX internally. Leave open if not used. |
@@ -171,7 +172,7 @@ The modules have one RF interface over a standard UFL connector (Hirose U. FL-R-
 | **45**         | RESERVED                    | HOST_SCK        | I/O      | Host SPI CLK                                |                                                                             |
 | **46**         | LED_WPAN#                   | NC              |          | No Connection                               |                                                                             |
 | **47**         | RESERVED                    | HOST \_MISO     | I/O      | Host SPI MISO                               |                                                                             |
-| **48**         | 1.5V                        | NC              |          | No Connection                               |                                                                             |
+| **48**         | 1.5&nbsp;V                  | NC              |          | No Connection                               |                                                                             |
 | **49**         | RESERVED                    | HOST \_MOSI     | I/O      | Host SPI MOSI                               |                                                                             |
 | **50**         | GND                         | GND             |          | Ground                                      |                                                                             |
 | **51**         | RESERVED                    | HOST \_CSN      | I/O      | Host SPI CS                                 |                                                                             |
@@ -207,9 +208,9 @@ The following table gives typically sensitivity level of the RAK2287 card.
 
 #### Electrical Requirements
 
-Stressing the device above one or more of the ratings listed in the Absolute Maximum Rating section may cause permanent damage. These are stress ratings only. Operating the module at these or at any conditions other than those specified in the Operating Conditions sections of the specification should be avoided. Exposure to Absolute Maximum Rating conditions for extended periods may affect device reliability.
+Exceeding one or more of the limits specified in the Absolute Maximum Rating section may cause permanent damage to the device. These are stress ratings only. Operating the module under these conditions, or any conditions other than those specified in the Operating Conditions section of the specifications, should be avoided. Prolonged exposure to Absolute Maximum Rating conditions may affect the device's reliability.
 
-The operating condition range defines those limit within which the functionality of the device is guaranteed. Where application information is given, it is advisory only and does not form part of the specification.
+The operating condition range defines the limits within which the functionality of the device is guaranteed. While application information is provided, it is advisory only and does not form part of the specification.
 
 ##### Absolute Maximum Rating
 
@@ -226,7 +227,7 @@ Limiting values given below are in accordance with the Absolute Maximum Rating S
 | Tstg       | Storage Temperature   | -                                          | -40°&nbsp;C | 85°&nbsp;C |
 
 ::: warning ⚠️ WARNING
-The product is not protected against overvoltage or reversed voltages. If necessary, voltage spikes exceeding the power supply voltage specification, given in table above, must be limited to values within the specified boundaries by using appropriate protection devices.
+The product is not protected against overvoltage or reversed voltages. If necessary, voltage spikes exceeding the power supply voltage specification, as outlined in the table above, must be limited to values within the specified boundaries by using appropriate protection devices.
 :::
 
 ##### Maximum ESD
@@ -261,7 +262,7 @@ Input voltage at **3.3Vaux** must be above the normal operating range minimum li
 
 #### Mechanical Characteristics
 
-The board weighs 16.3&nbsp;grams, it is 30&nbsp;mm wide and 50.96&nbsp;mm tall. The dimensions of the module fall completely within the **PCI Express Mini Card Electromechanical Specification**, except of the card's thickness (10.5&nbsp;mm at its thickest).
+The board weighs 16.3&nbsp;grams, is 30&nbsp;mm wide, and 50.96&nbsp;mm tall. The dimensions of the module fall completely within the **PCI Express Mini Card Electromechanical Specification**, except for the card's thickness, which is 10.5&nbsp;mm at its thickest point.
 
 <rk-img
   src="/assets/images/wislink-lora/rak2287/datasheet/mechanical/dimension.png"
@@ -285,7 +286,7 @@ Unless otherwise indicated, all operating condition specifications are at an amb
 
 #### Schematic Diagram
 
-RAK2287 card refers to Semtech's reference design of SX1302. The SPI interface can be used on PCIE connector. The next figure shows the minimum application schematic of RAK2287 card. You should use it at least 3.3&nbsp;V / 1&nbsp;A DC power, connect SPI interface to the main processor.
+The RAK2287 card is based on Semtech's reference design for the SX1302. The SPI interface is available on the PCIe connector. **Figure 5** illustrates the minimum application schematic for the RAK2287 card. It should be powered with at least 3.3&nbsp;V / 1&nbsp;A DC power and have the SPI interface connected to the main processor.
 
 <rk-img
   src="/assets/images/wislink-lora/rak2287/datasheet/schematic-diagram/gpvh8ltdwzxkureac6jq.jpg"
@@ -299,13 +300,13 @@ Download the latest firmware of the RAK2287 WisLink-LoRa in the table provided b
 
 | Model   | Raspberry Pi Board  | Firmware Version | Source                                                                                                    |
 | ------- | ------------------- | ---------------- | --------------------------------------------------------------------------------------------------------- |
-| RAK2287 | Raspberry Pi 3B+, 4 | V4.2.7R | [Download](https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Firmware/RAK2287_Latest_Firmware.zip) |
+| RAK2287 | Raspberry Pi 3B+, 4 | V4.2.7R          | [Download](https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Firmware/RAK2287_Latest_Firmware.zip) |
 
 ## Models / Bundles
 
 **Order Information**
 
-In general, the RAK2287's variation is defined as **RAK2287 - XY**, where **X is the model variant** and **Y is the supported region**. Take a look at the tables below to know the variants and their individual specification.
+In general, the variations of the RAK2287 are defined as **RAK2287 - XY**, where **X represents the model variant** and **Y indicates the supported region**. Refer to the tables below to understand the different variants and their specific specifications.
 
 | Parameter            | Variations                                                       |
 | -------------------- | ---------------------------------------------------------------- |

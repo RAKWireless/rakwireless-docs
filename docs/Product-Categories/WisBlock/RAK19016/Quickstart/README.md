@@ -15,28 +15,28 @@ next: ../Datasheet/
 
 ### What Do You Need?
 
-Before going through each and every step on using the RAK19016 WisBlock 5-24V Power Slot Module, make sure to prepare the necessary items listed below:
+Before going through each and every step on using the RAK19016 WisBlock 5~24&nbsp;V Power Slot Module, make sure to prepare the necessary items listed below.
 
 #### Hardware
 
-- [RAK19016 WisBlock 5-24V Power Slot Module](https://store.rakwireless.com/products/rak19016-5-24v-power-slot-module?utm_source=RAK19016&utm_medium=Document&utm_campaign=BuyFromStore)
-- Your choice of [WisBlock Base board with Power Slot](https://store.rakwireless.com/collections/wisblock-base/)
-- Your choice of [WisBlock Core](https://store.rakwireless.com/collections/wisblock-core)
-- [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
-- [RAK5804 WisBlock Interface Module](https://store.rakwireless.com/products/rak5804-io-extension-board?utm_source=RAK5804&utm_medium=Document&utm_campaign=BuyFromStore) (Reprogramming of the WisBlock Core via USB of RAK5804)
+- <a href="https://store.rakwireless.com/products/rak19016-5-24v-power-slot-module?utm_source=RAK19016&utm_medium=Document&utm_campaign=BuyFromStore" target="_blank">RAK19016 WisBlock 5~24&nbsp;V Power Slot Module</a> 
+- Your choice of <a href="https://store.rakwireless.com/collections/wisblock-base/" target="_blank">WisBlock Base board with Power Slot</a> 
+- Your choice of <a href="https://store.rakwireless.com/collections/wisblock-core" target="_blank">WisBlock Core</a> 
+- <a href="https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore" target="_blank">Li-Ion/LiPo battery (optional)</a> 
+- <a href="https://store.rakwireless.com/products/rak5804-wisblock-interface-extension-board?_pos=1&_sid=28059bad2&_ss=r" target="_blank">RAK5804 WisBlock Interface Module</a> (Reprogramming of the WisBlock Core via USB of RAK5804)
 
 #### Software
 
 ##### Arduino
 
-- Download and install the [Arduino IDE](https://www.arduino.cc/en/Main/Software).
-- To add the RAKwireless WisBlock Core boards to your Arduino Boards Manager, install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index).
+- Download and install the <a href="https://www.arduino.cc/en/Main/Software" target="_blank">Arduino IDE</a> .
+- To add the RAKwireless WisBlock Core boards to your Arduino Boards Manager, install the <a href="https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index" target="_blank">RAKwireless Arduino BSP</a> .
 
 ## Product Configuration
 
 ### Hardware Setup
 
-RAK19016 should be attached to the power slot connector of WisBlock Base board with power slot. The 5&nbsp;V to 24&nbsp;V DC input voltage must be connected to the 3-pin screw terminal connector. The LiPo/Li-Ion battery can be connected to the standard battery connector.
+RAK19016 should be attached to the power slot connector of WisBlock Base board with power slot. The 5~24&nbsp;V<sub>DC</sub> input voltage must be connected to the 3-pin screw terminal connector. The LiPo/Li-Ion battery can be connected to the standard battery connector.
 
 :::warning ⚠️ WARNING
 
@@ -44,7 +44,7 @@ RAK19016 **only** supports WisBlock Base boards with power slot. It is not compa
 
 :::
 
-For more information about RAK19016, refer to the [Datasheet](../Datasheet/).
+For more information about RAK19016, refer to the <a href="../Datasheet/" target="_blank">Datasheet</a>.
 
 #### RAK19016 Connection to WisBlock Base board with Power Slot
 
@@ -84,7 +84,7 @@ The RAK19016 module can be mounted on the power slot of the WisBlock Base board,
 
 The procedure in disassembling any type of WisBlock module is the same.
 
-1. First, remove the screws.
+1. Start by removing the screws.
 
 <rk-img
   src="/assets/images/wisblock/rak19016/quickstart/removing_screw.png"
@@ -109,21 +109,21 @@ The procedure in disassembling any type of WisBlock module is the same.
 />
 
 ::: tip 📝 NOTE
-If you will connect other modules to the remaining WisBlock Base slots, check on the [WisBlock Pin Mapper](https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/) tool for possible conflicts.
+If you will connect other modules to the remaining WisBlock Base slots, check on the <a href="https://docs.rakwireless.com/Knowledge-Hub/Pin-Mapper/" target="_target">WisBlock Pin Mapper</a> tool for possible conflicts.
 :::
 
 #### Battery Connector
 
 ##### Rechargeable Battery
 
-RAK19016 supports a rechargeable Li-Ion/LiPo battery via the dedicated connector. The battery and external 5-24&nbsp;V DC input can simultaneously be connected to provide power to all WisBlock modules. The 5-24&nbsp;V<sub>DC</sub> goes to a buck converter with 4.4&nbsp;V<sub>DC</sub> output which is higher than the max 4.2 of LiPo battery. 5-24<sub>DC</sub>V DC is the primary power source and also charges the LiPo battery at the same time.
+RAK19016 supports a rechargeable Li-Ion/LiPo battery via the dedicated connector. The battery and external 5~24&nbsp;V<sub>DC</sub> input can simultaneously be connected to provide power to all WisBlock modules. The 5~24&nbsp;V<sub>DC</sub> goes to a buck converter with 4.4&nbsp;V<sub>DC</sub> output which is higher than the max 4.2&nbsp;V<sub>DC</sub> of LiPo battery. 5~24&nbsp;V<sub>DC</sub> is the primary power source and also charges the LiPo battery at the same time.
 
-The matching connector for the rechargeable battery wires is a [JST PHR-2 2&nbsp;mm pitch female](https://www.jst-mfg.com/product/detail_e.php?series=199). A cable assembly for the rechargeable battery connector is also available for purchase in [RAK store](https://store.rakwireless.com/products/battery-connector-cable).
+The matching connector for the rechargeable battery wires is a <a href="https://www.jst-mfg.com/product/detail_e.php?series=199" target="_blank">JST PHR-2 2&nbsp;mm pitch female</a>. A <a href="https://store.rakwireless.com/products/battery-connector-cable" target="_blank">cable assembly</a> for the rechargeable battery connector is also available for purchase in **RAK store**.
 
 :::warning ⚠️ WARNING
 
-- Battery can cause harm if not handled properly.
-- Only 3.7-4.2&nbsp;V rechargeable LiPo batteries are supported. It is highly recommended not to use other types of batteries with the system unless you know what you are doing.
+- Improper handling of the battery can be harmful.
+- Only 3.7~4.2&nbsp;V rechargeable LiPo batteries are supported. It is highly recommended not to use other types of batteries with the system unless you know what you are doing.
 - Make sure the battery wires, both rechargeable and non-rechargeable, match the polarity on the RAK19016 board. Not all batteries have the same wiring.
 
 :::
@@ -134,6 +134,5 @@ There is no software required to use RAK19016. But to control the two user LEDs 
 
 #### WisBlock Examples Repository
 
-To quickly build your IoT device with less hassle, example codes for WisBlock Core are provided. You can access the codes on the [WisBlock Example code repository](https://github.com/RAKWireless/WisBlock/tree/master/examples). The example codes on folder `common` are compatible with RAK4631, RAK11200, and RAK11310 WisBlock Cores.
-The two user LEDs of RAK19016 can be accessed using macrodefinitions `LED_GREEN` / `PIN_LED1` for the green LED and `LED_BLUE` / `PIN_LED2` for the blue LED. For the battery voltage reading, `WB_A0` is used.
+To quickly build your IoT device with less hassle, example codes for WisBlock Core are provided. You can access the codes on the <a href="https://github.com/RAKWireless/WisBlock/tree/master/examples" target="_blank">WisBlock Example code repository</a>. The example codes on folder `common` are compatible with <a href="https://store.rakwireless.com/products/rak4631-lpwan-node?_pos=1&_sid=b95028f52&_ss=r&variant=37505443791046" target="_blank">RAK4631</a>, <a href="https://store.rakwireless.com/products/wiscore-esp32-module-rak11200?_pos=1&_sid=978afa15b&_ss=r&variant=42402030452934" target="_blank">RAK11200</a>, and <a href="https://store.rakwireless.com/products/rak11310-wisblock-lpwan-module?_pos=1&_sid=ef971caa0&_ss=r" target="_blank">RAK11310 WisBlock Cores</a>. The two user LEDs of RAK19016 can be accessed using macro definitions `LED_GREEN` / `PIN_LED1` for the green LED and `LED_BLUE` / `PIN_LED2` for the blue LED. For the battery voltage reading, `WB_A0` is used.
 

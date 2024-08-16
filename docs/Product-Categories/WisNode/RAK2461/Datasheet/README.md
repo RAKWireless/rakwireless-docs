@@ -7,7 +7,6 @@ tags:
   - datasheet
   - wisnode
   - RAK2461
-
 ---
 
 # RAK2461 WisNode Bridge IO Lite
@@ -16,7 +15,7 @@ tags:
 
 ### Description
 
-The **RAK2461 WisNode Bridge IO Lite** is an ideal solution for seamless LoRaWAN communication within industrial environments, providing different Digital Inputs, Outputs (Relay), and RS-485 communication. Engineered with industrial-grade reliability and based on the RAK3172-T LoRaWAN module, the RAK2461 ensures long-range connectivity, even in extreme temperatures from -20°&nbsp;C to +70°&nbsp;C.
+The **RAK2461 WisNode Bridge IO Lite** is an ideal solution for seamless LoRaWAN communication within industrial environments, providing different Digital Inputs, Outputs (Relay), and RS-485 communication. Engineered with industrial-grade reliability and based on the RAK3172-T LoRaWAN module, the RAK2461 ensures long-range connectivity, even in extreme temperatures from -40°&nbsp;C to +80°&nbsp;C.
 
 This device can operate on all LoRaWAN bands within the standard parameters set by the LoRa Alliance. It offers versatile mounting options for easy installation in any environment, whether for industrial automation or smart city infrastructure. Together with a <a href="https://docs.rakwireless.com/Product-Categories/WisGate/" target="_blank"> RAK Gateway </a>, building a wireless industrial system or extending an existing one can be easy and quick. Moreover, the RAK2461 offers unparalleled performance and durability.
 
@@ -26,7 +25,7 @@ The device comes in two variants:
 - RAK2461 Bridge IO Lite – RS485-DOx4
 
 | Model       | RS-485 | Relay (DO) | Photocoupler (DI) |
-|-------------|:------:|:----------:|:-----------------:|
+| ----------- | :----: | :--------: | :---------------: |
 | RAK2461-X01 |   ✓    |   ✓ (4x)   |                   |
 | RAK2461-X11 |   ✓    |     ✓      |      ✓ (4x)       |
 
@@ -46,29 +45,29 @@ The device comes in two variants:
 
 ### Overview
 
-| Parameter               | Value                                                                                                            | Remarks            |
-|-------------------------|------------------------------------------------------------------------------------------------------------------|--------------------|
-| LoRaWAN protocol        | LoRaWAN 1.0.3                                                                                                    |                    |
-| LoRa frequency          | RU864, IN865, EU868, US915, AU915, KR920, KR923                                                                  | Model specific     |
-| LoRaWAN mode            | Class A / Class B / Class C                                                                                      |                    |
-| LoRa Tx power           | 20&nbsp;dBm                                                                                                      |                    |
-| LoRa antenna interface  | RP-SMA external omnidirectional antenna                                                                          |                    |
-| RS485 data rate         | 9600                                                                                                             |                    |
-| RS485 carrying capacity | Up to 10 devices                                                                                                 |                    |
+| Parameter               | Value                                                                                                                 | Remarks            |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| LoRaWAN protocol        | LoRaWAN 1.0.3                                                                                                         |                    |
+| LoRa frequency          | RU864, IN865, EU868, US915, AU915, KR920, KR923                                                                       | Model specific     |
+| LoRaWAN mode            | Class A / Class B / Class C                                                                                           |                    |
+| LoRa Tx power           | 22&nbsp;dBm                                                                                                           |                    |
+| LoRa antenna interface  | RP-SMA external omnidirectional antenna                                                                               |                    |
+| RS485 data rate         | 9600                                                                                                                  |                    |
+| RS485 carrying capacity | Up to 10 devices                                                                                                      |                    |
 | RS485 protection        | 18&nbsp;kV HBM protection<br>13&nbsp;kV IEC61000-4-2 contact discharge<br>4&nbsp;kV IEC61000-4-4 fast transient burst |                    |
-| Input voltage           | 9&nbsp;V~24&nbsp;V                                                                                               | 5&nbsp;V for USB-C |
-| Rated power             | DI type: 1&nbsp;W <br>DO type (Relay): 2&nbsp;W                                                                  |                    |
-| Output voltage          | 9&nbsp;V~24&nbsp;V                                                                                               |                    |
-| Configuration interface | USB Type-C                                                                                                       |                    |
-| LED indicator           | Power LED                                                                                                        |                    |
-| Housing material        | Metal                                                                                                            |                    |
-| Dimensions              | 93.6×100.3×24&nbsp;mm                                                                                            |                    |
-| Protection grade        | IP31                                                                                                             |                    |
-| Installation method     | Wall, DIN rail                                                                                                   |                    |
-| Working temperature     | -20°&nbsp;C~+70°&nbsp;C                                                                                          |                    |
-| Working humidity        | 0~90%&nbsp;RH                                                                                                    |                    |
-| Storage temperature     | -20°&nbsp;C~+70°&nbsp;C                                                                                          |                    |
-| Storage humidity        | 0~90%&nbsp;RH                                                                                                    |                    |
+| Input voltage           | 9&nbsp;V~24&nbsp;V                                                                                                    | 5&nbsp;V for USB-C |
+| Rated power             | DI type: 1&nbsp;W <br>DO type (Relay): 2&nbsp;W                                                                       |                    |
+| Output voltage          | 9&nbsp;V~24&nbsp;V                                                                                                    |                    |
+| Configuration interface | USB Type-C                                                                                                            |                    |
+| LED indicator           | Power LED                                                                                                             |                    |
+| Housing material        | Metal                                                                                                                 |                    |
+| Dimensions              | 93.6×100.3×24&nbsp;mm                                                                                                 |                    |
+| Protection grade        | IP31                                                                                                                  |                    |
+| Installation method     | Wall, DIN rail                                                                                                        |                    |
+| Working temperature     | -40°&nbsp;C to +80°&nbsp;C                                                                                            |                    |
+| Storage temperature     | -40°&nbsp;C to +80°&nbsp;C                                                                                            |                    |
+| Working humidity        | 0~90%&nbsp;RH                                                                                                         |                    |
+| Storage humidity        | 0~90%&nbsp;RH                                                                                                         |                    |
 
 #### Networking Applications
 
@@ -81,7 +80,6 @@ An example would be using the <a href="https://store.rakwireless.com/products/ra
   width="100%"
   caption="RAK2461 WisNode Bridge IO Lite network structure"
 />
-
 
 ### Hardware
 
@@ -122,9 +120,6 @@ For configuration purposes, the device can be powered by the Console port only, 
 ## Models/Bundles
 
 | Model       | RS-485 | Relay (DO) | Photocoupler (DI) |
-|-------------|:------:|:----------:|:-----------------:|
-| RAK2461-X01 | ✓      | ✓ (4x)     |                   |
-| RAK2461-X11 | ✓      | ✓          | ✓ (4x)            |
-
-
-
+| ----------- | :----: | :--------: | :---------------: |
+| RAK2461-X01 |   ✓    |   ✓ (4x)   |                   |
+| RAK2461-X11 |   ✓    |     ✓      |      ✓ (4x)       |

@@ -15,9 +15,9 @@ next: false
 
 ### Description
 
-RAK19017 is a WisBlock POE Power Slot Module that has an Ethernet connector with POE capability (power supply only, no Ethernet connection capability) and a reset button. It is compatible with the WisBlock Base board with Power Slot.
+The **RAK19017** is a WisBlock POE Power Slot Module that has an Ethernet connector with POE (power supply only, no Ethernet connection) capability and a reset button. It is compatible with the WisBlock Base board with Power Slot.
 
-RAK19017 WisBlock POE module is a power board that is designed based on Ag99005 MT from Silver. The Ag9905MT Power-over-Ethernet (PoE) modules are designed to extract power from a conventional twisted pair Category 5 Ethernet cable, conforming to the IEEE 802.3af PoE standard. The Ag9905MT signature and control circuit provides the PoE compatibility signature required by the Power Sourcing Equipment (PSE) before applying up to 9&nbsp;W power to the port. The Ag9905 MT provides a Class 0 signature. The DC/DC converter operates over a wide input voltage range and provides a regulated output. The DC/DC converter also has built-in short-circuit output protection.
+The RAK19017 WisBlock POE module is a power board that is designed based on Ag9905MT from Silvertel. RAK19017 Wisblock POE module is an IEEE 802.3af compliant POE module that can draw power from the conventional twisted pair CAT5 ethernet cable. This circuit provides the necessary signature required by the Power Sourcing Equipment (PSE) before delivering up to 9&nbsp;W of power to the port. The Ag9905MT provides a regulated 5&nbsp;V output from the internal DC-DC converter that has a built-in short-circuit output protection.
 
 ### Features
 
@@ -66,7 +66,7 @@ RAK19017 WisBlock PoE Power Slot Module provides the following interfaces:
 * Reset button
 
 ::: tip 📝 NOTE
-RAK19017 doesn't have a USB connector. So when RAK19017 is used together with WisBlock Base board with power slot, it is not possible to program the core (unless via SWD pins using external tools like Jlink and RAKDAP1). If you want to program the WisBlock Core via USB, you need the RAK5804. Then you can use the USB connector of RAK5804 to program the WisBlock Core.
+RAK19017 doesn't have a USB connector. So when RAK19017 is used together with WisBlock Base board with power slot, it is not possible to program the core (unless via SWD pins using external tools like Jlink and RAKDAP1). If you want to program the WisBlock Core via USB, you will need the <a href="https://store.rakwireless.com/products/rak5804-wisblock-interface-extension-board?_pos=1&_sid=d6a01685d&_ss=r" target="_blank">RAK5804</a>, along with its USB connector to do so.
 :::
 
 <br>
@@ -109,7 +109,7 @@ VBAT, 3V3, RESET, LED1, LED2, and GND have connected to WisBlock 40-pin connecto
 
 The Absolute Maximum Ratings of the device are shown in the table below. The stress ratings are the functional operation of the device.
 
-:::warning ⚠️WARNING
+:::warning ⚠️ WARNING
 1. If the stress rating goes above what is listed, it may cause permanent damage to the device.
 2. Exposure to maximum rating conditions may affect the device reliability.
 :::
@@ -144,9 +144,9 @@ The table below lists the operation and storage temperature requirements of RAK1
 
 | **Parameter**                 | **Minimum** | **Typical** | **Maximum** |
 | ----------------------------- | :---------: | :---------: | :---------: |
-| Operational temperature range | –35&nbsp;ºC | +25&nbsp;ºC | +75&nbsp;ºC |
-| Extended temperature range    | –40&nbsp;ºC | +25&nbsp;ºC | +80&nbsp;ºC |
-| Storage temperature range     | –40&nbsp;ºC | +25&nbsp;ºC | +80&nbsp;ºC |
+| Operational temperature range | –35º&nbsp;C | +25º&nbsp;C | +75º&nbsp;C |
+| Extended temperature range    | –40º&nbsp;C | +25º&nbsp;C | +80º&nbsp;C |
+| Storage temperature range     | –40º&nbsp;C | +25º&nbsp;C | +80º&nbsp;C |
 
 #### Schematic Diagram
 

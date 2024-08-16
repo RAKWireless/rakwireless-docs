@@ -1,7 +1,8 @@
 ---
 rak_img: /assets/images/wisgate/rak7289-v2/RAK7289V2.png
-rak_desc: RAK7289 V2 WisGate Edge Pro is an ideal product for IoT commercial deployment. With its industrial-grade components, it achieves a high standard of reliability. It supports WisGateOS 2, which is based on the latest OpenWRT kernel and accommodates the latest security update.
+rak_desc: The RAK7289 V2 WisGate Edge Pro is an ideal product for commercial IoT deployment. With its industrial-grade components, it achieves a high standard of reliability. It supports WisGateOS 2, which is based on the latest OpenWRT kernel and accommodates the latest security updates.
 rak_grp: [wisgate, edge]
+rak_model: RAK7289V2/RAK7289CV2
 prev: ../../
 next: ../Quickstart/
 tags:
@@ -11,7 +12,7 @@ tags:
 ---
 
 
-#  RAK7289V2/RAK7289CV2 WisGate Edge Pro
+#  WisGate Edge Pro V2
 
 Thank you for choosing **RAK7289V2/RAK7289CV2 WisGate Edge Pro** in your awesome IoT Project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
@@ -24,14 +25,16 @@ Thank you for choosing **RAK7289V2/RAK7289CV2 WisGate Edge Pro** in your awesome
 ## Product Description
 
 
-RAK7289 V2 WisGate Edge Pro is the latest edition of the RAK Edge Series. It is an ideal product for IoT commercial deployment. With its industrial-grade components, it achieves a high standard of reliability. The new RAK7289 V2 supports up to 16 LoRa channels, multi-backhaul with Ethernet, Wi-Fi, and Cellular connectivity. Optionally, there is a dedicated port for different power options, solar panels, and batteries. Its new enclosure is designed to allow the LTE, Wi-Fi, and GPS antennas to be inside the enclosure.
+The RAK7289 V2 WisGate Edge Pro represents the latest iteration of the RAK Edge Series, designed specifically for commercial IoT deployment. Featuring industrial-grade components, it ensures a high level of reliability. 
 
-The RAK7289 V2 supports WisGateOS 2, which is based on the latest OpenWRT kernel and accommodates the latest security updates like IPv6, OpenSSL 1.1 support, multiple accounts access, and more. The web UI has a fresh new look, with more user-friendly information tooltips.
+The new RAK7289 V2 supports up to 16 LoRa channels and offers multi-backhaul options with Ethernet, Wi-Fi, and Cellular connectivity. Additionally, it provides a dedicated port for various power options, including solar panels and batteries. Its redesigned enclosure accommodates LTE, Wi-Fi, and GPS antennas internally for enhanced aesthetics and functionality.
 
-Simply said, the RAK7289 V2 is suited for any use case scenario, be it rapid deployment or customization with regard to UI and functionality.
+The RAK7289 V2 supports [WisGateOS 2,](https://docs.rakwireless.com/Product-Categories/Software-APIs-and-Libraries/WisGateOS-2/Overview/#overview) built on the latest OpenWRT kernel, ensuring compatibility with the latest security updates. It incorporates key features such as IPv6 support, OpenSSL 1.1 compatibility, multi-account access, and more. The updated web UI features a modern design with improved user-friendly information tooltips for enhanced usability.
+
+In essence, the RAK7289 V2 is versatile, catering to various use case scenarios, whether for rapid deployment or customization, offering flexibility in both UI and functionality.
 
 :::warning ⚠️ WARNING
-This product is designed to be powered by 12&nbsp;V<sub>DC</sub> via a dedicated power port. The use of solar chargers is prohibited, as they may provide overvoltage and cause damage to the device. We strongly advise against using such chargers with this product, and any damage resulting from their use will void the warranty.
+This product is intended to be powered by 12&nbsp;V<sub>DC</sub> through a designated power port. The use of solar chargers is not recommended, as they may supply overvoltage, potentially damaging the device. We strongly discourage the use of such chargers with this product, and any damage incurred as a result will void the warranty.
 :::
 
 ## Product Features
@@ -48,6 +51,10 @@ This product is designed to be powered by 12&nbsp;V<sub>DC</sub> via a dedicated
 - Dying-gasp (optional)
 
 ### Software
+
+:::tip 📝 NOTE:
+The new version of the WisGate Edge Pro comes pre-installed with WisGate OS 2. This operating system, based on OpenWRT, enables new security updates and the option to install extensions for expanded functionality. To explore WisGate OS 2 further, visit the [User Manual.](https://docs.rakwireless.com/Product-Categories/Software-APIs-and-Libraries/WisGateOS-2/) Additionally, check out the [WisGate OS 2 Extension page](https://docs.rakwireless.com/Product-Categories/Software-APIs-and-Libraries/WisGateOS-2-Extensions/) to discover how to enhance the capabilities of your WisGate Edge Pro V2.
+:::
 
 - Built-in Network Server (full LoRaWAN support V 1.0.3)
 - OpenVPN

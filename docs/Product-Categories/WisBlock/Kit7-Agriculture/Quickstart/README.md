@@ -19,9 +19,9 @@ tags:
 
 ### What Do You Need?
 
-The **WisBlock Agriculture Kit** comes with **RAK19007** and **RAK19001** **WisBlock Base boards**, two **RAK4631** **WisBlock Core modules**, and set of sensor modules to explore with. Before going through each and every step on using the **WisBlock Agriculture Kit**, make sure to prepare the necessary items listed below:
+The **WisBlock Agriculture Kit** includes the **RAK19007** and **RAK19001** **WisBlock Base boards**, along with two **RAK4631** **WisBlock Core modules**, and a set of sensor modules. Before proceeding with the steps for using the **WisBlock Agriculture Kit**, ensure you have the following items prepared:
 
-- [RAK4631 WisBlock Core](https://store.rakwireless.com/products/nordic-nrf52840-ble-core-module-for-lorawan-with-lora-sx1262-rak4631-rak4631-c?variant=42576992436422&utm_source=RAK4631WisBlockLPWANModule&utm_medium=Document&utm_campaign=BuyFromStore)
+- [RAK4631 WisBlock Core](https://store.rakwireless.com/products/rak4631-lpwan-node?variant=37505443987654)
 - [RAK19007 WisBlock Base Board](https://store.rakwireless.com/products/rak19007-wisblock-base-board-2nd-gen?utm_source=RAK19007&utm_medium=Document&utm_campaign=BuyFromStore)
 - [RAK19001 WisBlock Base Board](https://store.rakwireless.com/products/rak19001-wisblock-dual-io-base-board?utm_source=RAK19001&utm_medium=Document&utm_campaign=BuyFromStore)
 - [RAK12019 UV Sensor](https://store.rakwireless.com/products/rak12019-wisblock-uv-sensor?utm_source=RAK12019&utm_medium=Document&utm_campaign=BuyFromStore)
@@ -29,7 +29,7 @@ The **WisBlock Agriculture Kit** comes with **RAK19007** and **RAK19001** **WisB
 - [RAK1906 Environment Sensor](https://store.rakwireless.com/products/rak1906-bme680-environment-sensor?utm_source=RAK1906&utm_medium=Document&utm_campaign=BuyFromStore)
 - [RAK12023 + RAK12035 Soil Moisture Sensor](https://store.rakwireless.com/products/rak12023-rak12035-wisblock-soil-moisture-sensor?utm_source=RAK12023&utm_source=RAK12035&utm_medium=Document&utm_campaign=BuyFromStore)
 - [RAK12005 + RAK12030 Rain Sensor](https://store.rakwireless.com/products/rain-sensor-rak12005-module-and-rak12030-sensor?utm_source=RAK12005&utm_medium=Document&utm_campaign=BuyFromStore)
-- USB C Cable
+- USB-C Cable
 - [RAK19005 Sensor Extension Cable (optional)](https://store.rakwireless.com/products/fpc-extension-cable-for-slot-a-to-d-rak19005?utm_source=RAK19005&utm_medium=Document&utm_campaign=BuyFromStore)
 - [RAK19008 IO Extension Cable (optional)](https://store.rakwireless.com/products/wisblock-io-extension-cable-rak19008?utm_source=RAK19008&utm_medium=Document&utm_campaign=BuyFromStore)
 - [Li-Ion/LiPo battery (optional)](https://store.rakwireless.com/collections/wisblock-accessory/products/battery-connector-cable?utm_source=BatteryConnector&utm_medium=Document&utm_campaign=BuyFromStore)
@@ -46,9 +46,9 @@ The **WisBlock Agriculture Kit** comes with **RAK19007** and **RAK19001** **WisB
 
 ### Hardware Setup and Sample Applications
 
-**WisBlock Agriculture Kit** comprises of soil moisture, UV light sensors, barometric pressure, ambient light, and environment sensor modules. These sensors can be used with **RAK19007**, and **RAK19001** **WisBlock Base boards** which you can choose from.
+The **WisBlock Agriculture Kit** includes soil moisture, UV light, barometric pressure, ambient light, and environmental sensor modules. These sensors are compatible with both the **RAK19007** and **RAK19001** **WisBlock Base boards**, providing you with options to choose from.
 
-Primarily, this kit will help you learn how to measure the soil condition and monitor the environment. You can select one of these devices for your specific application.
+Primarily, this kit will assist you in learning how to measure soil conditions and monitor the environment. You can select the appropriate device for your specific application.
 
 - **Soil Monitoring Device - RAK4631 + RAK12023/RAK12035 + RAK12005/RAK12030**
 
@@ -78,7 +78,7 @@ Primarily, this kit will help you learn how to measure the soil condition and mo
   caption="RAK1906 connected at Sensor Slot C of RAK19007"
 />
 
-#### Assembly and Functionality Tests of WisBlock Agriculture Modules
+#### Assembly and Functionality Testing of WisBlock Agriculture Modules
 
 This kit makes use of the different WisBlock Agriculture modules. Refer to the following list for more information on their assemblies and functionalities:
 
@@ -98,7 +98,7 @@ This kit makes use of the different WisBlock Agriculture modules. Refer to the f
 
 ##### Soil Condition Monitoring LoRaWAN Application
 
-The **Soil Condition Monitoring LoRaWAN Application** is used to oversee soil conditions through multiple sensor modules. It uses the **RAK12023/RAK12035** combination for soil condition measurement and the **RAK12005/RAK12030** combination for rain detection and monitoring.
+The **Soil Condition Monitoring LoRaWAN Application** is utilized for monitoring soil conditions using multiple sensor modules. It employs the **RAK12023/RAK12035** combination for measuring soil conditions and the **RAK12005/RAK12030** combination for rain detection and monitoring.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/soil_monitor_2.png"
@@ -106,15 +106,15 @@ The **Soil Condition Monitoring LoRaWAN Application** is used to oversee soil co
   caption="Soil Monitoring Device"
 />
 
-###### Soil Condition Monitoring - TTN Registration Section and Device Registration
+###### Soil Condition Monitoring - TTN and Device Registration Section
 
 1. If you already have an existing TTN account, you may proceed to the next steps. If you do not have an account yet, go to the [The Things Network Configuration](#the-things-network-configuration) section and create one.
-2. Once done with the TTN account creation, you may now proceed with the device registration. You may proceed to the [OTAA Device Registration](#otaa-device-registration) section. After creating the application and adding the device in TTN, you can proceed on the LoRaWAN Code uploading steps.
+2. Once you've created your TTN account, you can proceed with device registration. Go to the [OTAA Device Registration](#otaa-device-registration) section.
 
 ###### LoRaWAN Code for Soil Condition Monitoring
 
-1. If you already have **Arduino IDE** installed on your laptop or PC and added **RAK4631 board** into it, you may proceed to the next step. If you have not yet installed the **Arduino IDE**, go to the [RAK4631 Installation](#arduino-ide-installation-rak4631) section and execute the following steps.
-2. After the installation, you can now proceed programming your **Soil Condition Monitoring** device. Simply copy the **Soil Condition Monitoring LoRaWAN Application** code below and paste it into the **Arduino IDE**.
+1. If you already have the **Arduino IDE** installed on your laptop or PC and have added the **RAK4631 board** to it, you can proceed to the next step. If you haven't installed the Arduino IDE yet, go to the [RAK4631 Installation](#arduino-ide-installation-rak4631) section and follow the provided steps.
+2. After the installation, proceed to program the **Soil Condition Monitoring** device. Simply copy the **Soil Condition Monitoring LoRaWAN Application** code provided below and paste it into the **Arduino IDE**.
 
 ::: tip 📝 NOTE
 
@@ -412,9 +412,9 @@ void send_lora_frame(void) {
 
 :::
 
-Before uploading the Arduino Code, there are configurations that you need to set up to ensure that the device can join a LoRaWAN Network server. The steps below will explain the default settings and how to configure them.
+Before uploading the Arduino code, there are some additional configurations to set up. 
 
-- Set up the LoRaWAN region. The **LORAMAC_REGION** can be any of your desired region to work with. You can change this to a region that is applicable to you like `LORAMAC_REGION_US915`, `LORAMAC_REGION_AU915`, etc.
+- Specify the LoRaWAN region by defining the **LORAMAC_REGION** parameter. You can choose any region that is suitable for your application, such as `LORAMAC_REGION_US915`, `LORAMAC_REGION_AU915`, etc.
 
 The following table lists the LoRaWAN regions and the countries where they are used:
 
@@ -437,7 +437,7 @@ The following table lists the LoRaWAN regions and the countries where they are u
 LoRaMacRegion_t g_CurrentRegion = LORAMAC_REGION_US915;    /* Region:US915*/
 ```
 
-- Set up the LoRaWAN activation method. In this case, we will be using the **OTAA** configuration which is also the default from the given code.
+- Set up the LoRaWAN activation method. In this case, we will be using the **OTAA** (Over-The-Air Activation) configuration, which is also the default configuration in the provided code.
 
 ```c
 bool doOTAA = true;   // OTAA is used by default.
@@ -470,7 +470,7 @@ uint8_t nodeAppKey[16] = { 0x96, 0xBD, 0xC5, 0x98, 0x17, 0x69, 0x8D, 0xFA, 0x1F,
   caption="OTAA device successfully registered to TTN"
 />
 
-3. Once you're done with the code, you can now proceed with uploading it to your device. You must first choose your RAK4631 board on your desktop or laptop. To do so, navigate to **Tools** > **Board:XXXXX** > **RAKwireless nRF Boards** and select **WisBlock RAK4631**.
+3. Once you're done with the code, proceed with uploading it to your device. Choose your RAK4631 board on your desktop or laptop. To do so, navigate to **Tools** > **Board: XXXXX** > **RAKwireless nRF Boards**, and select **WisBlock RAK4631**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/TTN_RAK12035_1.png"
@@ -478,7 +478,7 @@ uint8_t nodeAppKey[16] = { 0x96, 0xBD, 0xC5, 0x98, 0x17, 0x69, 0x8D, 0xFA, 0x1F,
   caption="Selecting the RAK4631 board"
 />
 
-4. After you have selected your board, go to **Tools** > **Port** and then select the specific port of your board.
+4. Go to **Tools**&nbsp;>&nbsp;**Port** and then select the specific port of your board.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/TTN_RAK12035_2.png"
@@ -486,13 +486,13 @@ uint8_t nodeAppKey[16] = { 0x96, 0xBD, 0xC5, 0x98, 0x17, 0x69, 0x8D, 0xFA, 0x1F,
   caption="Selecting the port of RAK4631 board"
 />
 
-5. You can then upload your code by clicking the **Upload** button.
+5. Upload the code by clicking the **Upload** button <img src="/assets/images/wisblock/kits/kit7_quickstart/TTN_RAK12035_3-1.png" width="15"/>.
 
-<rk-img
+<!-- <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/TTN_RAK12035_3.png"
   width="80%"
   caption="Uploading your code into your RAK4631 board"
-/>
+/> -->
 
 Once completed, the **Device programmed** notification will appear in the console at the bottom of the Arduino IDE.
 
@@ -508,19 +508,19 @@ Once completed, the **Device programmed** notification will appear in the consol
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/TTN_Soil_1.png"
-  width="90%"
+  width="80%"
   caption="Your Soil Condition Monitoring device in TTN"
 />
 
-2. Then go to **Payload formatters**. Under **Formatter type**, select **Custom Javascript formatter**.
+2. Then, go to **Payload formatters**. Under **Formatter type**, select **Custom Javascript formatter**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/TTN_Soil_2.png"
-  width="90%"
+  width="80%"
   caption="Payload Formatter"
 />
 
-3. Under the **Formatter code**, replace the default code with the code given below. This decodes data transmitted from your device to **TTN**. Once done, simply click **Save changes**.
+3. Under the **Formatter code** field, replace the default code with the code given below. This decodes data transmitted from your device to **TTN**. Once done, simply click **Save changes**.
 
 ```c
 // LoRaWAN code for RAK12035 + RAK12005 Application
@@ -554,13 +554,13 @@ function Decoder(bytes, port)
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/TTN_Soil_3.png"
-  width="90%"
+  width="80%"
   caption="Live data from your device in TTN"
 />
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/TTN_Soil_4.png"
-  width="90%"
+  width="80%"
   caption="Live data from your device in its Serial Monitor"
 />
 
@@ -586,11 +586,11 @@ Here's the outline of the guide:
   caption="Creating Akenza Account"
 />
 
-2. After completing the account registration, login to your **Akenza Account**. Configure your set-up, and then select **Create Workspace**.
+2. After completing the account registration, log in to your **Akenza Account**. Configure your setup, and then select **Create Workspace**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_5.png"
-  width="90%"
+  width="80%"
   caption="Create a Workspace"
 />
 
@@ -598,7 +598,7 @@ Here's the outline of the guide:
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_6.png"
-  width="50%"
+  width="40%"
   caption="Create a Workspace"
 />
 
@@ -606,7 +606,7 @@ Here's the outline of the guide:
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_7.png"
-  width="90%"
+  width="80%"
   caption="Workspace successfully created"
 />
 
@@ -639,7 +639,7 @@ To do so, execute the following steps:
 />
 
 2. Setup your first **Connectivity Integration** by following the steps below:
-  - Under **TTN LoRaWAN host** of **Integration login**, choose the appropriate community to which you belong.
+  - Under **TTN LoRaWAN host** in the **Integration login** section, choose the appropriate community to which you belong.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_11.png"
@@ -655,19 +655,20 @@ To do so, execute the following steps:
   caption="Authentication"
 />
 
-  - For the **Application ID**, copy the TTN **Application ID** and then paste it to your Akenza workspace. <br>
+  - For the **Application ID**, copy the TTN **Application ID** and then paste it to your Akenza workspace.
+
   a. Navigate to your TTN Applications, and select **Soil Condition Monitoring**
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_13.png"
-  width="90%"
+  width="80%"
   caption="Applications in TTN"
 />
   b. In the Overview page of your application, copy **Application ID**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_14.png"
-  width="90%"
+  width="80%"
   caption="Copying the Application ID of your application in TTN"
 />
 
@@ -679,20 +680,21 @@ To do so, execute the following steps:
   caption="Pasting the Application ID in your Akenza workspace"
 />
 
- - Finally, for the **API keys**, follow the steps below: <br>
-  a. Go back to your TTN Applications, and select **Soil Condition Monitoring**.
+ - Finally, for the **API keys**, follow the steps below:
+ 
+  a. Go back to your TTN Applications, and select **Soil Condition Monitoring**. In the left panel, click **API keys**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_16.png"
-  width="90%"
+  width="80%"
   caption="API keys"
 />
 
-  b. In the left panel, click **API keys** then the **Add API key** button.
+  b. Click on the **Add API key** button.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_17.png"
-  width="90%"
+  width="80%"
   caption="Add API key"
 />
 
@@ -704,7 +706,7 @@ To do so, execute the following steps:
   caption="API key creation"
 />
 
-  d. Once done, copy the created **API key** and then click **I have copied the key**.
+  d. Once done, copy the created **API key** and click **I have copied the key**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_19.png"
@@ -736,19 +738,19 @@ To do so, execute the following steps:
   caption="Successful Integration setup"
 />
 
-  h. After clicking **Done** your window should look like **Figure&nbsp;33**.
+  h. After clicking **Done** your window should look like **Figure&nbsp;32**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_23.png"
-  width="90%"
+  width="80%"
   caption="Successful Integration setup"
 />
 
-  i. Go back to your application in TTN and go to **Integrations**. You should now see the created API key.
+  i. Go back to your application in TTN and go to **Integrations**. You should see the created API key.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_24.png"
-  width="90%"
+  width="80%"
   caption="Integrations"
 />
 
@@ -756,28 +758,28 @@ To do so, execute the following steps:
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_25.png"
-  width="90%"
+  width="80%"
   caption="Webhooks"
 />
 
-  k. Then go back to your Akenza workspace and click on **Assets**. Then click on your device integrated with Akenza.
+  k. Go back to your Akenza workspace and click on **Assets**, then click on your device integrated with Akenza.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_27A.png"
-  width="90%"
+  width="80%"
   caption="Your device integrated with Akenza"
 />
 
 <b>Add Device Connectors</b>
 
-**Device connectors** define the protocol and authorization the device communicates with akenza. These are the steps on how to add Device connectors:
+**Device connectors** define the protocol and authorization the device communicates with Akenza. Here are the steps on how to add Device connectors:
 
 1.	Create a **New Data Flow**
 <!-- Click **Data Flows**. -->
 
 <!-- <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_28.png"
-  width="90%"
+  width="80%"
   caption="Data Flows"
 /> -->
 
@@ -787,7 +789,7 @@ To do so, execute the following steps:
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_29.png"
-  width="90%"
+  width="80%"
   caption="Create a Data Flow"
 />
 
@@ -795,7 +797,7 @@ To do so, execute the following steps:
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_30.png"
-  width="90%"
+  width="80%"
   caption="Create a new Data Flow"
 />
 
@@ -804,7 +806,7 @@ To do so, execute the following steps:
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_31.png"
-  width="70%"
+  width="50%"
   caption="Device Connector"
 />
 
@@ -812,7 +814,7 @@ To do so, execute the following steps:
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_32.png"
-  width="90%"
+  width="80%"
   caption="LoRa under Device connector"
 />
 
@@ -820,15 +822,15 @@ To do so, execute the following steps:
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_33.png"
-  width="90%"
+  width="80%"
   caption="The Things Stack"
 />
 
-- Then click **TTN Connector - akenza-wisblock-integration**.
+- Then, click **TTN Connector - akenza-wisblock-integration**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_34.png"
-  width="90%"
+  width="80%"
   caption="TTN Connector - akenza-wisblock-integration"
 />
 
@@ -837,7 +839,7 @@ To do so, execute the following steps:
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_35.png"
-  width="90%"
+  width="80%"
   caption="Add Output Connector"
 />
 
@@ -845,7 +847,7 @@ To do so, execute the following steps:
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_36.png"
-  width="90%"
+  width="80%"
   caption="akenza DB"
 />
 
@@ -853,15 +855,15 @@ To do so, execute the following steps:
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_37.png"
-  width="90%"
+  width="80%"
   caption="Save Data Flow"
 />
 
-- Enter the **Name** on the popup window, then click **Save Data Flow**.
+- Enter the **Name** on the popup window and click **Save Data Flow**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_38.png"
-  width="90%"
+  width="40%"
   caption="Save Data Flow"
 />
 
@@ -869,7 +871,7 @@ To do so, execute the following steps:
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_39.png"
-  width="90%"
+  width="40%"
   caption="Quick start"
 />
 
@@ -878,23 +880,23 @@ To do so, execute the following steps:
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_40.png"
-  width="90%"
+  width="80%"
   caption="Assets"
 />
 
-- Then highlight your device integrated with Akenza.
+- Highlight your device integrated with Akenza.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_41.png"
-  width="90%"
+  width="80%"
   caption="Your device integrated with Akenza"
 />
 
--	Click on the drop down **More** then choose **Edit**.
+-	Click on the drop down **More**, which is located on the upper right corner, then choose **Edit**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_42.png"
-  width="90%"
+  width="80%"
   caption="Your device integrated with Akenza"
 />
 
@@ -906,7 +908,7 @@ To do so, execute the following steps:
   caption="Data Flow"
 />
 
-- Then select the **Data Flow** of your device.
+- Then, select the **Data Flow** of your device.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_44.png"
@@ -918,7 +920,7 @@ To do so, execute the following steps:
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_45.png"
-  width="90%"
+  width="80%"
   caption="Update Device"
 />
 
@@ -926,7 +928,7 @@ To do so, execute the following steps:
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_46.png"
-  width="90%"
+  width="80%"
   caption="Data Overview"
 />
 
@@ -934,7 +936,7 @@ To do so, execute the following steps:
 
 **Device Types** extract, transform and normalize the data sent from the device. These are the steps on how to add a Device Type:
 
--	Go to **Device Types** then click **Create Device Type**.
+-	Go to **Device Types** and click **Create Device Type**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_47.png"
@@ -942,7 +944,7 @@ To do so, execute the following steps:
   caption="Create a Device Type"
 />
 
-- Once done, provide details under **Device type name** then click **Next**.
+- Once done, provide details under **Device type name** then, click **Next**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_48.png"
@@ -950,7 +952,7 @@ To do so, execute the following steps:
   caption="Device type name"
 />
 
-- Then on the next portion, click **Next**.
+- Then, on the next portion, click **Next**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_49.png"
@@ -958,7 +960,7 @@ To do so, execute the following steps:
   caption="Other information of your device"
 />
 
-- After that, click on **Open script editor**.
+- Click on **Open script editor**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_50.png"
@@ -970,11 +972,11 @@ To do so, execute the following steps:
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_51.png"
-  width="90%"
+  width="80%"
   caption="Uplink script"
 />
 
-- Then into the **Uplink script**, replace the default script with the code below:
+- Into the **Uplink script**, replace the default script with the code below:
 
 ```c
 function consume(event)
@@ -999,7 +1001,7 @@ function consume(event)
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_53.png"
-  width="90%"
+  width="80%"
   caption="Decoder of your Soil Monitoring device in TTN"
 />
 
@@ -1011,27 +1013,27 @@ function consume(event)
   caption="Uplink script"
 />
 
-- Then insert the word **"let"** at the beginning of every variable and rearrange the code in the sequence shown in **Figure&nbsp;63** then click **Save**.
+- Insert the word **"let"** at the beginning of every variable and rearrange the code in the sequence shown in **Figure&nbsp;62**. Finally, click **Save**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_55.png"
-  width="90%"
+  width="80%"
   caption="Modified script"
 />
 
-- Once done, go to **Data Flows** then click on your device's data flow.
+- Once done, go to **Data Flows** and click on your device's data flow.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_56.png"
-  width="90%"
+  width="80%"
   caption="Your device's data flow"
 />
 
-- Click **Add Device Type** then select your custom device.
+- Click **Add Device Type**, to select your custom device.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_57.png"
-  width="90%"
+  width="80%"
   caption="Soil Monitoring device"
 />
 
@@ -1039,15 +1041,15 @@ function consume(event)
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_58.png"
-  width="90%"
+  width="80%"
   caption="Save Data Flow"
 />
 
-- Go to **Assets**, then click on your device.
+- Go to **Assets** and click on your device.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_59.png"
-  width="90%"
+  width="80%"
   caption="Assets"
 />
 
@@ -1055,7 +1057,7 @@ function consume(event)
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_60.png"
-  width="90%"
+  width="80%"
   caption="Your device's data overview"
 />
 
@@ -1063,12 +1065,12 @@ function consume(event)
 
 The **dashboard builder** makes it easy to create custom dashboards and display data stored in Akenza. These are the steps on how to create a working dashboard for your **Soil Monitoring** device:
 
-1. Access Dashboard module <br>
-a. Click on **Home** then go to **Device Management > Dashboard Builder**.
+1. Access to the Dashboard module <br>
+a. Click on **Home**, then go to **Device Management&nbsp;>&nbsp;Dashboard Builder**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_61.png"
-  width="90%"
+  width="80%"
   caption="Dashboard Builder"
 />
 
@@ -1076,41 +1078,41 @@ b. Click **Create a Dashboard**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_62.png"
-  width="90%"
+  width="80%"
   caption="Create a Dashboard"
 />
 
 2. Configure Dashboard Settings <br>
-a. Enter the desired **Name** for your application then click **Next**.
+a. Enter the desired **Name** for your application, then click **Next**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_63.png"
-  width="90%"
+  width="80%"
   caption="Create a Dashboard"
 />
 
-b. Select the specific workspace of your application then click **Next**.
+b. Select the specific workspace of your application and click **Next**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_64.png"
-  width="90%"
+  width="80%"
   caption="Create a Dashboard"
 />
 
-c. Under **Refresh interval**, choose **1 min** to load the latest data for every 1 minute, then click **Create a Dashboard**.
+c. Under **Refresh interval**, choose **1 min** to load the latest data for every 1 minute. Click **Create a Dashboard**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_65.png"
-  width="90%"
+  width="80%"
   caption="Create a Dashboard"
 />
 
 3. Add Components <br>
-a. Once you created your dashboard, click **Add Component** then choose **Chart**.
+a.Once you have created your dashboard, click **Add Component**. In the dropdown menu, select **Chart**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_66.png"
-  width="90%"
+  width="80%"
   caption="Soil Monitoring Dashboard"
 />
 
@@ -1118,23 +1120,23 @@ b. Under the **Content** tab, on the **Heading** field, input the details of the
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_67.png"
-  width="90%"
+  width="80%"
   caption="Chart Component"
 />
 
-c. After that, click on the **Source** tab, then select your **Soil Monitoring** device on the **Device** field.
+c. Click on the **Source** tab, select your **Soil Monitoring** device on the **Device** field.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_68.png"
-  width="90%"
+  width="80%"
   caption="Chart Component"
 />
 
-d. Move to **Data Point** field, then select **Default** and the specific parameter for your chart.
+d. Move to the **Data Point** field, select the **Default** option, and choose the specific parameter for your chart.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_69.png"
-  width="90%"
+  width="80%"
   caption="Chart Component"
 />
 
@@ -1142,7 +1144,7 @@ e. Once done, click **Add Component**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_70.png"
-  width="90%"
+  width="80%"
   caption="Chart Component"
 />
 
@@ -1150,7 +1152,7 @@ e. Once done, click **Add Component**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_71.png"
-  width="90%"
+  width="80%"
   caption="Saving your dashboard"
 />
 
@@ -1158,7 +1160,7 @@ e. Once done, click **Add Component**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_72.png"
-  width="90%"
+  width="80%"
   caption="Soil Monitoring Dashboard"
 />
 
@@ -1166,7 +1168,7 @@ e. Once done, click **Add Component**.
 
 ##### Weather Condition Monitoring LoRaWAN Application
 
-The **Weather Condition Monitoring LoRaWAN Application** is used to monitor the weather condition monitored by several sensor modules. It uses **RAK1906** which measures the temperature and humidity of the enviroment, **RAK12010** which measures the light intensity and **RAK12019** which measures the UV index from the sun exposure. This integated monitoring device will help monitor the farm environment.
+The **Weather Condition Monitoring LoRaWAN Application** is used to monitor the weather conditions via several sensor modules. It utilizes **RAK1906** to measure the temperature and humidity of the environment, **RAK12010** to measure light intensity, and **RAK12019** to measure the UV index from sun exposure. This integrated monitoring device will aid in monitoring the farm environment.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/TTN_Weather.png"
@@ -1177,11 +1179,11 @@ The **Weather Condition Monitoring LoRaWAN Application** is used to monitor the 
 ###### Weather Condition Monitoring - TTN Registration Section and Device Registration
 
 1. If you already have an existing TTN account, you may proceed to the next steps. If you do not have an account yet, go to the [The Things Network Configuration](#the-things-network-configuration) section and create one.
-2. Once done with the TTN account creation, you may now proceed with the device registration. You may proceed to the [OTAA Device Registration](#otaa-device-registration) section. After creating the application and adding the device in TTN, you can proceed on the LoRaWAN Code uploading steps.
+2. Once done with the TTN account creation, proceed to the [OTAA Device Registration](#otaa-device-registration) section. After creating the application and adding the device in TTN, you can proceed on the LoRaWAN Code uploading steps.
 
 ###### LoRaWAN Code for Weather Condition Monitoring
 
-1. If you already have **Arduino IDE** installed on your laptop or PC and added **RAK4631 board** into it, you may proceed to the next step. If you have not yet installed the **Arduino IDE**, go to the [RAK4631 Installation](#arduino-ide-installation-rak4631) section and execute the following steps.
+1. If you already have **Arduino IDE** installed on your laptop or PC and have added the **RAK4631 board** to it, you may proceed to the next step. If you have not yet installed the Arduino IDE, go to the [RAK4631 Installation](#arduino-ide-installation-rak4631) section and follow the steps provided.
 2. After the installation, you can now proceed programming your **Weather Condition Monitoring** device. Simply copy the **Weather Condition Monitoring LoRaWAN Application** code below and paste it into the **Arduino IDE**.
 
 ::: tip 📝 NOTE
@@ -1621,9 +1623,9 @@ void send_lora_frame(void) {
 
 :::
 
-Before uploading the Arduino Code, there are configurations that you need to set up to ensure that the device can join a LoRaWAN Network server. The steps below will explain the default settings and how to configure them.
+Before uploading the Arduino code, there are some additional configurations to set up. 
 
-- Set up the LoRaWAN region. The **LORAMAC_REGION** can be any of your desired region to work with. You can change this to a region that is applicable to you like `LORAMAC_REGION_US915`, `LORAMAC_REGION_AU915`, etc.
+- Specify the LoRaWAN region by defining the **LORAMAC_REGION** parameter. You can choose any region that is suitable for your application, such as `LORAMAC_REGION_US915`, `LORAMAC_REGION_AU915`, etc.
 
 The following table lists the LoRaWAN regions and the countries where they are used:
 
@@ -1674,49 +1676,49 @@ uint8_t nodeAppKey[16] = { 0xE9, 0x0D, 0x28, 0x1D, 0x92, 0x3D, 0xE4, 0x9F, 0xD9,
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/TTN_Weather_1.png"
-  width="90%"
+  width="80%"
   caption="Device's credentials registered in TTN"
 />
 
-3. Once you're done with the code, you can now proceed with uploading it to your device. You must first choose your RAK4631 board on your desktop or laptop. To do so, navigate to **Tools** > **Board:XXXXX** > **RAKwireless nRF Boards** and select **WisBlock RAK4631**.
+3. Once you're done with the code, proceed with uploading it to your device. Choose your RAK4631 board on your desktop or laptop. To do so, navigate to **Tools**&nbsp;>&nbsp;**Board:XXXXX**&nbsp;>&nbsp;**RAKwireless nRF Boards** and select **WisBlock RAK4631**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/TTN_RAK12030_1.png"
-  width="90%"
+  width="80%"
   caption="Selecting the RAK4631 board"
 />
 
-4. After you have selected your board, go to **Tools** > **Port** and then select the specific port of your board.
+4. After you have selected your board, go to **Tools**&nbsp;>&nbsp;**Port** and select the specific port of your board.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/TTN_RAK12030_2.png"
-  width="90%"
+  width="80%"
   caption="Selecting the port of RAK4631 board"
 />
 
-5. You can then upload your code by clicking the Upload button (the right arrow sign).
+5. Upload your code by clicking the Upload button <img src="/assets/images/wisblock/kits/kit7_quickstart/TTN_RAK12035_3-1.png" width="15"/>.
 
-<rk-img
+<!-- <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/TTN_RAK12030_3.png"
-  width="90%"
+  width="80%"
   caption="Uploading your code into your RAK4631 board"
-/>
+/> -->
 
 Once completed, the **Device programmed** notification will appear in the console at the bottom of the Arduino IDE.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/TTN_RAK12030_4.png"
-  width="90%"
+  width="80%"
   caption="Arduino code is successfully uploaded into your RAK4631 board"
 />
 
 ###### Weather Condition Monitoring via TTN
 
-1. To monitor the data of your **Weather Condition Monitoring** device via **TTN**, go back to your TTN account where you created your application and registered your device.
+1. To monitor the data of your **Weather Condition Monitoring** device via **TTN**, go back to the TTN account where you created your application and registered your device.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/TTN_Weather_2.png"
-  width="90%"
+  width="80%"
   caption="Your Weather Condition Monitoring device in TTN"
 />
 
@@ -1724,11 +1726,11 @@ Once completed, the **Device programmed** notification will appear in the consol
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/TTN_Weather_3.png"
-  width="90%"
+  width="80%"
   caption="Payload Formatter"
 />
 
-3. Then under the **Formatter code**, you need to replace the default code with the one below. This will decode the data from your device going to **TTN**. Once done, simply click **Save changes**.
+3. Under the **Formatter code**, replace the default code with the one below. This will decode the data from your device going to **TTN**. Once done, simply click **Save changes**.
 
 ```c
 // LoRaWAN code for RAK12019 + RAK12010 + RAK1906 Application
@@ -1756,19 +1758,19 @@ function Decoder(bytes, port)
 }
 ```
 
-4. Then go back to **Live data** of your device in TTN and compare it with the live data from the **Serial Monitor** of your device.
+4. Go back to **Live data** of your device in TTN and compare it with the live data from the **Serial Monitor** of your device.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/TTN_Weather_4.png"
-  width="90%"
+  width="80%"
   caption="Live data from your device in TTN"
 />
 
-You should now seeing identical results between them.
+You should see identical results between them.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/TTN_Weather_5.png"
-  width="90%"
+  width="80%"
   caption="Live data from your device in its Serial Monitor"
 />
 
@@ -1790,19 +1792,19 @@ Here's the outline of the guide:
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_1.png"
-  width="40%"
+  width="30%"
   caption="Creating Akenza Account"
 />
 
-2. After completing the account registration, login to your **Akenza Account**. Configure your set-up, and then select **Create Workspace**.
+2. After completing the account registration, log in to your **Akenza Account**. Configure your setup, and then select **Create Workspace**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_5.png"
-  width="90%"
+  width="80%"
   caption="Create a Workspace"
 />
 
-- On the pop-up window, provide details such as your workspace **Name** and its description. Then click **Create Workspace**.
+- On the pop-up window, provide details such as your workspace **Name** and its description. Then, click **Create Workspace**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_New_6.png"
@@ -1814,23 +1816,23 @@ Here's the outline of the guide:
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_New_7.png"
-  width="90%"
+  width="80%"
   caption="Workspace successfully created"
 />
 
 <b>Setup Connectivity Integration</b>
 
-After successfully creating the **Workspace**, connect your workspace to **The Things Stack**.
+After successfully creating the **Workspace**, connect it to **The Things Stack**.
 
 To do so, execute the following steps:
 
 <!-- <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_New_8.png"
-  width="90%"
+  width="80%"
   caption="Integrations"
 /> -->
 
-1. On the left panel, navigate to **Integrations**, then click **Create Integration** button.
+1. On the left panel, navigate to **Integrations** and click **Create Integration** button.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_9.png"
@@ -1863,20 +1865,21 @@ To do so, execute the following steps:
   caption="Authentication"
 />
 
-  - For the **Application ID**, copy the TTN **Application ID** and then paste it to your Akenza workspace. <br>
-  a. Navigate to your TTN Applications, and select **Weather Condition Monitoring**
+  - For the **Application ID**, copy the TTN **Application ID** and paste it to your Akenza workspace.
+
+ a. Navigate to your TTN Applications, and select **Weather Condition Monitoring**
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_New_13.png"
-  width="90%"
+  width="80%"
   caption="Applications in TTN"
 />
 
-b. In the Overview page of your application, copy **Application ID**.
+b. In the Overview page, copy the **Application ID**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_New_14.png"
-  width="90%"
+  width="80%"
   caption="Copying the Application ID of your application in TTN"
 />
 
@@ -1888,36 +1891,37 @@ c. Paste the copied application ID into your Akenza workspace **Application ID**
   caption="Pasting the Application ID in your Akenza workspace"
 />
 
- - Finally, for the **API keys**, follow the steps below: <br>
+ - Finally, for the **API keys**, follow the steps below:
+ 
   a. Go back to your TTN Applications, and select **Weather Condition Monitoring**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_New_16.png"
-  width="90%"
+  width="80%"
   caption="API keys"
 />
 
- b. In the left panel, click **API keys** then the **Add API key** button.
+ b. In the left panel, click **API keys**, then click on the **Add API key** button.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_New_17.png"
-  width="90%"
+  width="80%"
   caption="Add API key"
 />
 
-  c. Enter the **Name** and select the **Rights**, then click **Create API** key.
+  c. Enter the **Name**, select the **Rights**, and click **Create API** key.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_18.png"
-  width="50%"
+  width="40%"
   caption="API key creation"
 />
 
-  d. Once done, copy the created **API key** and then click **I have copied the key**.
+  d. Once done, copy the created **API key** and click on the **I have copied the key** button.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_19.png"
-  width="50%"
+  width="40%"
   caption="Created API key"
 />
 
@@ -1949,7 +1953,7 @@ c. Paste the copied application ID into your Akenza workspace **Application ID**
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_23.png"
-  width="90%"
+  width="80%"
   caption="Successful Integration setup"
 />
 
@@ -1957,7 +1961,7 @@ c. Paste the copied application ID into your Akenza workspace **Application ID**
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_New_24.png"
-  width="90%"
+  width="80%"
   caption="Integrations"
 />
 
@@ -1965,15 +1969,15 @@ c. Paste the copied application ID into your Akenza workspace **Application ID**
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_New_25.png"
-  width="90%"
+  width="80%"
   caption="Webhooks"
 />
 
-  k. Then go back to your Akenza workspace and click on **Assets**. Then click on your device integrated with Akenza.
+  k. Go back to your Akenza workspace and click on **Assets**. Then, click on your device integrated with Akenza.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_New_27A.png"
-  width="90%"
+  width="80%"
   caption="Your device integrated with Akenza"
 />
 
@@ -1991,7 +1995,7 @@ c. Paste the copied application ID into your Akenza workspace **Application ID**
 
 <!-- Click **Create Data Flow**. -->
 
-- On the left panel, navigate to **Data Flows**, then click **Create Data Flow** button.
+- On the left panel, navigate to **Data Flows** and click the **Create Data Flow** button.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_29.png"
@@ -2012,7 +2016,7 @@ c. Paste the copied application ID into your Akenza workspace **Application ID**
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_31.png"
-  width="50%"
+  width="40%"
   caption="Device Connector"
 />
 
@@ -2020,7 +2024,7 @@ c. Paste the copied application ID into your Akenza workspace **Application ID**
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_32.png"
-  width="90%"
+  width="80%"
   caption="LoRa under Device connector"
 />
 
@@ -2028,15 +2032,15 @@ c. Paste the copied application ID into your Akenza workspace **Application ID**
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_33.png"
-  width="90%"
+  width="80%"
   caption="The Things Stack"
 />
 
-- Then click **TTN Connector - akenza-wisblock-integration**.
+- Then, click **TTN Connector - akenza-wisblock-integration**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_34.png"
-  width="90%"
+  width="80%"
   caption="TTN Connector - akenza-wisblock-integration"
 />
 
@@ -2045,7 +2049,7 @@ c. Paste the copied application ID into your Akenza workspace **Application ID**
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_35.png"
-  width="90%"
+  width="80%"
   caption="Add Output Connector"
 />
 
@@ -2053,7 +2057,7 @@ c. Paste the copied application ID into your Akenza workspace **Application ID**
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_36.png"
-  width="90%"
+  width="80%"
   caption="akenza DB"
 />
 
@@ -2061,7 +2065,7 @@ c. Paste the copied application ID into your Akenza workspace **Application ID**
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_37.png"
-  width="90%"
+  width="80%"
   caption="Save Data Flow"
 />
 
@@ -2069,16 +2073,16 @@ c. Paste the copied application ID into your Akenza workspace **Application ID**
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_New_38.png"
-  width="90%"
+  width="40%"
   caption="Save Data Flow"
 />
 
 4.	Set the Data Overview
--	Go back to Assets.
+-	Go back to **Assets**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_New_40.png"
-  width="90%"
+  width="80%"
   caption="Assets"
 />
 
@@ -2086,15 +2090,15 @@ c. Paste the copied application ID into your Akenza workspace **Application ID**
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_New_41.png"
-  width="90%"
+  width="80%"
   caption="Your device integrated with Akenza"
 />
 
--	Click on the drop down **More** then choose **Edit**.
+-	Click on the drop down **More**, then choose **Edit**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_New_42.png"
-  width="90%"
+  width="80%"
   caption="Your device integrated with Akenza"
 />
 
@@ -2118,15 +2122,15 @@ c. Paste the copied application ID into your Akenza workspace **Application ID**
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_New_45.png"
-  width="90%"
+  width="80%"
   caption="Update Device"
 />
 
-- You should be now looking at the data overview of your device integrated with **Akenza**.
+- You should now be looking at the data overview of your device integrated with **Akenza**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_New_46.png"
-  width="90%"
+  width="80%"
   caption="Data Overview"
 />
 
@@ -2142,7 +2146,7 @@ c. Paste the copied application ID into your Akenza workspace **Application ID**
   caption="Create a Device Type"
 />
 
-- Once done, provide details under **Device type name** then click **Next**.
+- Once done, provide details under **Device type name**, then click **Next**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_New_48.png"
@@ -2150,7 +2154,7 @@ c. Paste the copied application ID into your Akenza workspace **Application ID**
   caption="Device type name"
 />
 
-- Then on the next portion, click **Next**.
+- On the next portion, click **Next**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_49.png"
@@ -2170,7 +2174,7 @@ c. Paste the copied application ID into your Akenza workspace **Application ID**
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_51.png"
-  width="90%"
+  width="80%"
   caption="Uplink script"
 />
 
@@ -2199,7 +2203,7 @@ function consume(event)
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_New_53.png"
-  width="90%"
+  width="80%"
   caption="Decoder of your Weather Monitoring device in TTN"
 />
 
@@ -2211,27 +2215,27 @@ function consume(event)
   caption="Uplink script"
 />
 
-- Then insert the word **"let"** at the beginning of every variable and rearrange the code in the sequence shown in **Figure&nbsp;138** then click **Save**.
+- Then insert the word **"let"** at the beginning of every variable and rearrange the code in the sequence shown in **Figure&nbsp;136**. Finally, click on **Save**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_New_55.png"
-  width="90%"
+  width="80%"
   caption="Modified script"
 />
 
-- Once done, go to **Data Flows** then click on your device's data flow.
+- Once done, go to **Data Flows** and click on your device's data flow.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_New_56.png"
-  width="90%"
+  width="80%"
   caption="Your device's data flow"
 />
 
-- Click **Add Device Type** then select your custom device.
+- Click **Add Device Type**, then select your custom device.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_New_57.png"
-  width="90%"
+  width="80%"
   caption="Weather Monitoring device"
 />
 
@@ -2239,15 +2243,15 @@ function consume(event)
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_58.png"
-  width="90%"
+  width="80%"
   caption="Save Data Flow"
 />
 
-- Go to **Assets** then click on your device.
+- Go to **Assets** and click on your device.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_New_59.png"
-  width="90%"
+  width="80%"
   caption="Assets"
 />
 
@@ -2255,20 +2259,20 @@ function consume(event)
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_New_60.png"
-  width="90%"
+  width="80%"
   caption="Your device's data overview"
 />
 
 <b>Create a Dashboard</b>
 
-The **dashboard builder** makes it easy to create custom dashboards and display data stored in akenza. These are the steps on how to create a working dashboard for your **Weather Monitoring** device:
+The **dashboard builder** makes it easy to create custom dashboards and display data stored in Akenza. These are the steps on how to create a working dashboard for your **Weather Monitoring** device:
 
 1. Access Dashboard module <br>
-a. Click on **Home** then go to **Device Management>Dashboard Builder**.
+a. Click on **Home** then go to **Device Management > Dashboard Builder**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_61.png"
-  width="90%"
+  width="80%"
   caption="Dashboard Builder"
 />
 
@@ -2276,24 +2280,25 @@ b. Click **Create a Dashboard**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_62.png"
-  width="90%"
+  width="80%"
   caption="Create a Dashboard"
 />
 
-2. Configure Dashboard Settings <br>
-a. Enter the desired **Name** for your application then click **Next**.
+2. Configure Dashboard Settings
+
+a. Enter the desired **Name** for your application and click **Next**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_New_63.png"
-  width="90%"
+  width="80%"
   caption="Create a Dashboard"
 />
 
-b. Select the specific workspace of your application then click **Next**.
+b. Select the specific workspace of your application. Click **Next**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_64.png"
-  width="90%"
+  width="80%"
   caption="Create a Dashboard"
 />
 
@@ -2301,16 +2306,17 @@ c. Under **Refresh interval**, choose **1 min** to load the latest data for ever
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_65.png"
-  width="90%"
+  width="80%"
   caption="Create a Dashboard"
 />
 
-3. Add Components <br>
-a. Once you created your dashboard, click **Add Component** then choose **Chart**.
+3. Add Components
+
+a. Once you created your dashboard, click the **Add Component** dropdown menu and choose **Chart**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_New_66.png"
-  width="90%"
+  width="80%"
   caption="Weather Monitoring Dashboard"
 />
 
@@ -2318,15 +2324,15 @@ b. Under the **Content** tab, on the **Heading** field, input the details of the
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_New_67.png"
-  width="90%"
+  width="80%"
   caption="Chart Component"
 />
 
-c. After that, click on the **Source** tab, then select your **Weather Monitoring** device on the **Device** field.
+c. After that, click on the **Source** tab. Select your **Weather Monitoring** device on the **Device** field.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_New_68.png"
-  width="90%"
+  width="80%"
   caption="Chart Component"
 />
 
@@ -2334,7 +2340,7 @@ d. Move to **Data Point** field, then select **Default** and the specific parame
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_New_69.png"
-  width="90%"
+  width="80%"
   caption="Chart Component"
 />
 
@@ -2342,15 +2348,15 @@ e. Once done, click **Add Component**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_New_70.png"
-  width="90%"
+  width="80%"
   caption="Chart Component"
 />
 
-4. To add charts for other parameters to be included in the dashboard, just repeat **Step 3** then click **Save**.
+4. To add charts for other parameters to be included in the dashboard, simply repeat **Step 3**. When you're finished, click **Save**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_New_71.png"
-  width="90%"
+  width="80%"
   caption="Saving your ashboard"
 />
 
@@ -2358,7 +2364,7 @@ e. Once done, click **Add Component**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/Akenza_New_72.png"
-  width="90%"
+  width="80%"
   caption="Weather Monitoring Dashboard"
 />
 
@@ -2374,7 +2380,7 @@ e. Once done, click **Add Component**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/TTN_Kit_Soil_1.png"
-  width="90%"
+  width="80%"
   caption="Signing up an account in TTN"
 />
 
@@ -2382,7 +2388,7 @@ e. Once done, click **Add Component**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/TTN_Kit_Soil_2.png"
-  width="90%"
+  width="80%"
   caption="Signing up an account in TTN"
 />
 
@@ -2390,7 +2396,7 @@ e. Once done, click **Add Component**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/TTN_Kit_Soil_3.png"
-  width="90%"
+  width="80%"
   caption="Selecting Cluster in TTN"
 />
 
@@ -2398,7 +2404,7 @@ You can also opt to sign up and create an account using your The Things ID.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/TTN_Kit_Soil_4.png"
-  width="90%"
+  width="40%"
   caption="Signing up through the Things ID"
 />
 
@@ -2406,7 +2412,7 @@ If you have a TTN V2, you can use the same login credentials. If you do not yet 
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/TTN_Kit_Soil_5.png"
-  width="90%"
+  width="80%"
   caption="Creation of an account through the Things ID"
 />
 
@@ -2416,15 +2422,15 @@ If you have a TTN V2, you can use the same login credentials. If you do not yet 
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/TTN_Kit_Soil_7.png"
-  width="90%"
+  width="80%"
   caption="The Things Stack Platform"
 />
 
 2. Fill in the needed information, then click the **Create application** button.
 
-   - **Application ID** - This will be the unique ID of your application in the Network. ID must contain only lowercase letters, numbers, and dashes (-).
-   - **Application name** (optional) - This is the name of your application.
-   - **Description** (optional) – Description of your application. Optional application description; can also be used to save notes about the application.
+   - **Application ID**: This will be the unique ID of your application in the network. The ID must contain only lowercase letters, numbers, and dashes (-).
+   - **Application name** (optional): This is the name of your application.
+   - **Description** (optional): Description of your application. Optional application description; can also be used to save notes about the application.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/TTN_Kit_Soil_9.png"
@@ -2434,7 +2440,7 @@ If you have a TTN V2, you can use the same login credentials. If you do not yet 
 
 ::: tip 📝 NOTE
 
-The details and information are dependent to what device you are using (e.g. **RAK12019**, etc.).
+The details and information depend on the device you are using (e.g., **RAK12019**, etc.).
 
 :::
 
@@ -2443,7 +2449,7 @@ The details and information are dependent to what device you are using (e.g. **R
 ::: tip 📝 NOTE
 
 The procedures above are applicable to all applications you will be using. Once done with the TTN account creation, you can visit these following links:
-- [Soil Condition Monitoring](#soil-condition-monitoring-ttn-registration-section-and-device-registration)
+- [Soil Condition Monitoring](#soil-condition-monitoring-lorawan-application)
 - [Weather Condition Monitoring](#weather-condition-monitoring-ttn-registration-section-and-device-registration)
 
 :::
@@ -2454,7 +2460,7 @@ The procedures above are applicable to all applications you will be using. Once 
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/TTN_Kit_Soil_11.png"
-  width="90%"
+  width="80%"
   caption="Register End Device"
 />
 
@@ -2501,7 +2507,7 @@ Then configure the following parameters, then click **Confirm**:
   caption="Setting up your device"
 />
 
-Click the **Generate** button under **Provisioning Information** > **AppKey** to automatically generate the specific end-device ID of your board.
+Click the **Generate** button under **Provisioning Information**&nbsp;>&nbsp;**AppKey** to automatically generate the specific end-device ID of your board.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/TTN_Kit_Soil_18.png"
@@ -2539,7 +2545,7 @@ Then click **Register end device**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/TTN_Kit_Soil_21.png"
-  width="90%"
+  width="80%"
   caption="OTAA device successfully registered to TTN"
 />
 
@@ -2562,7 +2568,7 @@ The procedures above are applicable to all applications you will be using. Once 
 />
 
 2. Install the [RAKwireless Arduino BSP](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) for WisBlock by using the `package_rakwireless_index.json` board installation package. The WisBlock Core should now be available on the Arduino IDE.
-3. Open the **Arduino IDE** and go to **File** > **Preference**.
+3. Open the **Arduino IDE** and go to **File**&nbsp;>&nbsp;**Preference**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/TTN_Kit_Soil_23.png"
@@ -2594,7 +2600,7 @@ The procedures above are applicable to all applications you will be using. Once 
   caption="Completing the setup of the RAKwireless BSP support for the Arduino Board Manager"
 />
 
-7. In your **Arduino IDE**, go to **Tools** > **Board:XXXXX** > **Boards Manager**.
+7. In your **Arduino IDE**, go to **Tools**&nbsp;>&nbsp;**Board:XXXXX**&nbsp;>&nbsp;**Boards Manager**.
 
 <rk-img
   src="/assets/images/wisblock/kits/kit7_quickstart/TTN_Kit_Soil_27.png"

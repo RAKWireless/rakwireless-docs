@@ -1173,7 +1173,7 @@ export default {
   '/Product-Categories/WisBlock/RAK5804/': {
     label: 'RAK5804 WisBlock Interface Module',
     img: '/assets/images/wisblock/rak5804/RAK5804.png',
-    store: 'https://store.rakwireless.com/products/rak5804-io-extension-board?utm_source=RAK5804&utm_medium=Document&utm_campaign=BuyFromStore'
+    store: 'https://store.rakwireless.com/products/rak5804-wisblock-interface-extension-board?utm_source=RAK5804&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/WisBlock/RAK5811/': {
     label: 'RAK5811 WisBlock 0-5V Interface Module',

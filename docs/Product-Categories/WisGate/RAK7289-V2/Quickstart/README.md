@@ -21,10 +21,13 @@ tags:
 2. A Windows/Mac OS/Linux Computer
 
 :::warning ⚠️ WARNING
-- The SIM card slot of the cellular versions is not hot-swappable. Make sure the gateway is switched off before inserting or ejecting the SIM card.
-- The SD card found in the SD card slot must not be ejected, as it might affect the performance of the device, as different logs and data are stored on it.
+- The SIM card slot on cellular versions is not hot-swappable. Ensure the gateway is powered off before inserting or ejecting the SIM card.
+- The SD card located in the SD card slot should not be ejected, as doing so may impact the device's performance, as various logs and data are stored on it.
 :::
 
+:::tip 📝 NOTE:
+The new version of the WisGate Edge Pro comes pre-installed with WisGate OS 2. Before starting the configuration of your WisGate Edge Pro V2, explore WisGate OS 2 further by visiting the [User Manual.](https://docs.rakwireless.com/Product-Categories/Software-APIs-and-Libraries/WisGateOS-2/)
+:::
 
 ### What is Included in the Package?
 
@@ -36,7 +39,7 @@ tags:
 
 
 :::tip 📝 NOTE
-Thе product does not include the LoRa antenna/s out of the box. The antennas are sold separately.
+Thе product does not include the LoRa antenna(s) out of the box. The antennas are sold separately.
 :::
 
 
@@ -58,7 +61,7 @@ This section provides the instructions on mounting and securing the mounting kit
 />
 
 
-2. Position and tighten the pole clamps together around the pole with bolts, washers, and nuts. 
+2. Position the pole clamps together around the pole, then tighten them with bolts, washers, and nuts. 
 
 <rk-img
   src="/assets/images/wisgate/rak7289-v2/quickstart/3.clamps.png"
@@ -120,7 +123,7 @@ To better protect the Ethernet cable gland and the antenna connector from the we
   caption="Wrapping with waterproof tape"
 />
 
-3. Wrap three additional layers with PVC tape with natural uncoiling force and a 50% overlap. Make sure to cover the head and the tail of the connector. 
+3. Wrap three additional layers with PVC tape with natural uncoiling force and a 50% overlap. Ensure to cover the head and the tail of the connector. 
 
 <rk-img
   src="/assets/images/wisgate/rak7289-v2/quickstart/9.pvc-wrapping.png"
@@ -131,7 +134,7 @@ To better protect the Ethernet cable gland and the antenna connector from the we
 
 #### Lightning Protection
 
-This section covers the installation of the lightning surge protection system, addressing both indoor and outdoor placements of your RAK7289 V2 WisGate Edge Pro V2. Such a protection system must be taken into consideration to make sure of a fully functional gateway without interruption or damage from the lighting.               
+This section covers the installation of the lightning surge protection system, addressing both indoor and outdoor placements of your RAK7289 V2 WisGate Edge Pro V2. Such a protection system must be considered to ensure a fully functional gateway without interruption or damage from lightning.              
 
 <rk-img
   src="/assets/images/wisgate/rak7289-v2/quickstart/10.lightning-protection.jpg"
@@ -141,8 +144,8 @@ This section covers the installation of the lightning surge protection system, a
 
 ##### Outdoor Surge Protection System
 
-- **Antenna Grounding** - RAKwireless recommends a lightning arrestor to be installed on all the antenna N-type terminals. The arrestors have to be N-type Female to Male to fit the antenna and enclosure connectors. Make sure you use a 10 AWG or better wire to connect the screw terminals of the arrestors to the grounding rail mounted on the building wall (grounding bar in case of field deployment).
-- **Gateway Grounding** - Additionally, it is recommended to use another 10 AWG or better grounding wire to connect the screw terminal on the bottom left side of the gateway casing to the grounding rail (bar).
+- **Antenna Grounding**: RAKwireless recommends installing a lightning arrestor on all the antenna N-type terminals. The arrestors should be N-type Female to Male to fit the antenna and enclosure connectors. Ensure you use a 10 AWG or better wire to connect the screw terminals of the arrestors to the grounding rail mounted on the building wall (grounding bar in the case of field deployment).
+- **Gateway Grounding**: Furthermore, it is advisable to use another 10 AWG or better grounding wire to connect the screw terminal on the bottom left side of the gateway casing to the grounding rail (bar).
 
 :::tip 📝 NOTE
 No additional protection for the Ethernet cabling is required at the gateway side. There is a surge protection system built-in (GDT + Anti-surge resistor).            
@@ -155,19 +158,19 @@ For protecting the indoor equipment and circuitry connected to the gateway, it i
 
 :::warning ⚠️ WARNING
 
-Should you fail to adhere to the recommendations in this document RAKwireless carries no responsibility for any damage your equipment incurs due to a lightning strike.
+Should you fail to adhere to the recommendations in this document, RAKwireless carries no responsibility for any damage your equipment incurs due to a lightning strike.
 
 :::
 
 #### Recommended Equipment
 
-- [Lightning arrestor for the LoRa antennas](https://store.rakwireless.com/products/lightning-arrestor) - This is a surge protective device for securing transceivers against over-voltage and surge current induced by bolts of lightning. RAKwireless recommends installing a lightning arrestor on all LoRa N-type antenna terminals.  
+- [Lightning arrestor for the LoRa antennas:](https://store.rakwireless.com/products/lightning-arrestor) This surge protective device safeguards transceivers against over-voltage and surge current induced by lightning strikes. RAKwireless recommends installing a lightning arrestor on all LoRa N-type antenna terminals. 
 
-- [Pulsar cable RAK9731](https://store.rakwireless.com/products/pulsar-cable-rak9731-rak9733?variant=39677580968134) - RAK9731 Pulsar cable is used for RAK7289 V2 Lightning Protection. This cable is an N-Type Male - N-Type Female cable with 1.5 m, 3 m, 5 m, 10 m, or longer custom lengths. It is an LMR-400 coaxial cable with N-type connectors.
+- [Pulsar cable RAK9731:](https://store.rakwireless.com/products/pulsar-cable-rak9731-rak9733?variant=39677580968134) The RAK9731 Pulsar cable is utilized for lightning protection with the RAK7289 V2. This cable features an N-Type Male to N-Type Female configuration and is available in custom lengths of 1.5&nbsp;m, 3&nbsp;m, 5&nbsp;m, 10&nbsp;m, or longer. It is constructed with LMR-400 coaxial cable and N-type connectors.
 
-- [Signal Surge Protective Device](https://store.rakwireless.com/products/signal-surge-protective?variant=29842390122541) - This surge protective device is suitable for Category 6 cable or Class E cable for the protection of equipment from surge and over-voltage induced by lightning or produced in the inner systems. It is widely used in office and industry comprehensive network wiring projects or similar telecommunication applications, such as Gigabit Ethernet, ATM, ISDN, and VoIP systems.
+- [Signal Surge Protective Device:](https://store.rakwireless.com/products/signal-surge-protective?variant=29842390122541) This device is designed to protect Category 6 or Class E cables, safeguarding equipment from surge and over-voltage events caused by lightning or internal system factors. It finds extensive application in office and industrial network wiring projects, as well as telecommunications setups including Gigabit Ethernet, ATM, ISDN, and VoIP systems.
 
-- [Ethernet Cabling](https://store.rakwireless.com/products/cat5-ethernet-cable) - A CAT5 Ethernet Cable is recommended for an outdoor surge protection system. It is used for connections between the PoE injector, Ethernet SPD, router/switch, and the Ethernet/PoE port on RAK7289. 
+- [Ethernet Cabling:](https://store.rakwireless.com/products/cat5-ethernet-cable) For outdoor surge protection systems, a CAT5 Ethernet Cable is recommended. It serves to establish connections between the PoE injector, Ethernet SPD, router/switch, and the Ethernet/PoE port on RAK7289. 
 
 ### Power on the Gateway
 
@@ -181,7 +184,7 @@ In this section, it is assumed that you have read and performed the procedures l
   caption="RAK7289 V2 with attached antennas"
 />
 
-2. Power on the gateway. It is recommended to use **CAT5 Cable** to provide power to the gateway. Attach one end to the **PoE injector** and the other to the **Ethernet Port** on the bottom of the casing.
+2. Power on the gateway. It is recommended to use a **CAT5 Cable** to provide power to the gateway. Attach one end to the **PoE injector** and the other to the **Ethernet Port** on the bottom of the casing.
 
 <rk-img
   src="/assets/images/wisgate/rak7289-v2/quickstart/12.powering-the-gateway.jpg"
@@ -192,20 +195,20 @@ In this section, it is assumed that you have read and performed the procedures l
 
 ### Access the Gateway
 
-In this section, several ways of accessing the gateway are provided to have different alternatives for you to choose from depending on the availability of the requirements needed.
+In this section, several methods of accessing the gateway are provided to offer different alternatives based on the availability of the required resources.
 
 :::warning ⚠️ WARNING
 
-Do not power the device if the LoRa antenna port has been left open to avoid potential damage to the RAK7289 V2 WisGate Edge Pro.
+Do not power on the device if the LoRa antenna port has been left open to avoid potential damage to the RAK7289 V2 WisGate Edge Pro.
 
 ::: 
 
 
 #### Wi-Fi AP Mode
 
-By default, the gateway will work in Wi-Fi AP Mode, which means that you can find an SSID, named **"RAK7289_XXXX"** on your PC's Wi-Fi Network List. **"XXXX"** is the last two bytes of the Gateway MAC address. 
+By default, the gateway will operate in Wi-Fi AP Mode. This means that you can find an SSID named **"RAK7289_XXXX"** on your PC's Wi-Fi Network List, where **"XXXX"** represents the last two bytes of the Gateway MAC address.
 
-1. To access the Web Management Platform, input the following IP Address in your Web browser: `192.168.230.1`.
+1. To access the Web Management Platform, enter the following IP Address in your Web browser: `192.168.230.1`.
 
 
 <rk-img
@@ -222,7 +225,7 @@ No password is required to connect via Wi-Fi.
 :::
 
 
-2. Using your preferred Web browser, input the aforementioned IP address and you should see the Login Page. Login with the provided credentials.
+2. Using your preferred web browser, enter the IP address mentioned in Step 1, and you should see the login page. Log in with the provided credentials.
 
 - **Username:** root
 - **Password:** root
@@ -238,9 +241,9 @@ No password is required to connect via Wi-Fi.
   caption="Accessing the gateway via WAN Port (Ethernet)"
 />
 
-2. The default IP is **169.254.X.X**, where the last two segments are mapped from the last four bits of the MAC address of your gateway. For example, the last four bits of the MAC address are 0F:01 and the IP address is `169.254.15.1`. Make sure to manually set the address of your PC to one in the same network (for example, `169.254.15.100`).
+2. The default IP is **169.254.X.X**, where the last two segments are mapped from the last four bits of the MAC address of your gateway. For example, if the last four bits of the MAC address are 0F:01, the IP address would be `169.254.15.1`. Ensure to manually set the address of your PC to one in the same network (for example, `169.254.15.100`).
 
-3. To do this, open the head to the **Ethernet Properties** and click the **Internet Protocol Version 4 (TCP/IPv4)**.
+3. To do this, open the **Ethernet Properties** and click the **Internet Protocol Version 4 (TCP/IPv4)**.
 <rk-img
   src="/assets/images/wisgate/rak7289-v2/quickstart/15.internet-properties.png"
   width="45%"
@@ -255,7 +258,7 @@ No password is required to connect via Wi-Fi.
   caption="Setting IP address of the PC"
 />
 
-In this example, you can access the gateway on the `169.254.15.1` address.
+In this example, you can access the gateway at the `169.254.15.1` address.
 
 ####  Set Login Password
 
@@ -316,7 +319,7 @@ In this example, you can access the gateway on the `169.254.15.1` address.
 
 
 2. You can either click the **Scan** button to choose your **ESSID** or manually type the ESSID of the network by clicking **enter network (E)SSID manually**.
-3. Select the right **Encryption** method and enter the correct **Key**.
+3. Select the appropriate **Encryption** method and enter the correct **Key**.
 
 :::tip 📝 NOTE
 Assuming you have entered the correct parameter values, you should get an IP address assigned by your Wi-Fi router's (AP) built-in DHCP server. You can use this new IP address to log in via a web browser (the same way as in AP mode).
@@ -330,9 +333,9 @@ Assuming you have entered the correct parameter values, you should get an IP add
   caption="Accessing the Internet through Ethernet"
 />
 
-1. Connect the Ethernet cable to the port marked **ETH** on the gateway and the other end to the PoE port of the PoE injector. 
+1. Connect the Ethernet cable to the port labeled **ETH** on the gateway and the other end to the PoE port of the PoE injector. 
 2. Connect the LAN port of the PoE injector to your router. The router's DHCP server should assign an IP Address to the gateway. 
-3. Now, you can access the assigned IP to access the gateway. You can change the default settings below if you wish (details in the [WisGate2 OS User Manual](https://docs.rakwireless.com/Product-Categories/Software-APIs-and-Libraries/WisGateOS-2/Overview/#overview)).
+3. Now, you can access the assigned IP address to access the gateway. If you wish, you can change the default settings below (details in the [WisGate2 OS User Manual](https://docs.rakwireless.com/Product-Categories/Software-APIs-and-Libraries/WisGateOS-2/Overview/#overview)).
 
 
 <rk-img

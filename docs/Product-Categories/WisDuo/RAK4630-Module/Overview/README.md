@@ -1,6 +1,6 @@
 ---
 rak_img: /assets/images/wisduo/rak4630-module/RAK4630-Module.png
-rak_desc: RAK4630 is a low-power LoRa module based on Nordic nRF52840 MCU that supports Bluetooth 5.0 (Bluetooth Low Energy) and the newest SX1262 LoRa transceiver from Semtech. RAK4630 firmware is based on RUI3.
+rak_desc: The RAK4630 is a low-power LoRa module powered by the Nordic nRF52840 MCU, offering support for Bluetooth 5.0 (Bluetooth Low Energy) and the latest SX1262 LoRa transceiver from Semtech. Its firmware is built on RUI3.
 next: ../Quickstart/
 prev: ../../
 rak_grp: [wisduo, module]
@@ -22,9 +22,11 @@ Thank you for choosing **RAK4630 WisDuo LPWAN+BLE Module** in your awesome IoT p
 
 ## Product Description
 
-The RAK4630 is a low-power long-range transceiver module based on Nordic nRF52840 MCU that supports Bluetooth 5.0 (Bluetooth Low Energy) and the newest SX1262 LoRa transceiver from Semtech. This module complies with Class A, B, & C of LoRaWAN 1.0.3 specifications and also supports LoRa Point-to-Point (P2P) communication mode, which helps you in implementing your own customized LoRa network quickly. The two RF communication characteristic of the module (LoRa + BLE) makes it suitable for a variety of applications in the IoT field, such as home automation, sensor networks, building automation, and IoT network applications.
+The RAK4630 is a low-power, long-range transceiver module featuring the Nordic nRF52840 MCU, which supports Bluetooth 5.0 (Bluetooth Low Energy) and the latest SX1262 LoRa transceiver from Semtech. This module adheres to Class A, B, & C specifications of LoRaWAN 1.0.3 and also facilitates LoRa Point-to-Point (P2P) communication mode, enabling rapid implementation of custom LoRa networks. 
 
-The default firmware of RAK4630 is based on RUI3 (RAKwireless Unified Interface). This allows you to easily use RAK4630 as a stand-alone module by developing your own custom firmware via RUI APIs. You can directly interface sensors and other external peripherals to it without needing an additional MCU. On top of that, RAK4630 can be interfaced to an external host MCU using AT commands via USB, UART, or BLE connection.
+With its dual RF communication capabilities (LoRa + BLE), the module is well-suited for diverse IoT applications including home automation, sensor networks, building automation, and various IoT network scenarios.
+
+The default firmware of the RAK4630 is built on RUI3 (RAKwireless Unified Interface), which simplifies using the RAK4630 as a standalone module by enabling the development of custom firmware through RUI APIs. This setup allows direct interfacing with sensors and other external peripherals without requiring an additional MCU. Additionally, the RAK4630 can communicate with an external host MCU using AT commands via USB, UART, or BLE connection.
 
 ## Product Features
 
@@ -35,7 +37,7 @@ The default firmware of RAK4630 is based on RUI3 (RAKwireless Unified Interface)
 - Custom firmware using Arduino via RUI3 API
 - Easy-to-use AT Command set via UART interface
 - TCXO crystal for LoRa chip
-- I/O ports: UART/I2C/GPIO/USB
+- IO ports: UART, I2C, GPIO, USB
 - Temperature range: -40°&nbsp;C to +85°&nbsp;C
 - Supply voltage: 2.0 ~ 3.6&nbsp;V
 - Low-Power Wireless Systems with 7.8&nbsp;kHz to 500&nbsp;kHz bandwidth
@@ -43,5 +45,5 @@ The default firmware of RAK4630 is based on RUI3 (RAKwireless Unified Interface)
 - LoRa PA Boost mode with 22&nbsp;dBm output power
 - BLE 5.0 (Tx power -20 to +4&nbsp;dBm in 4&nbsp;dB steps)
 - Serial Wire Debug (SWD) interface
-- Module size: 15 x 23 x 3&nbsp;mm
+- Module size: 15&nbsp;mm x 23&nbsp;mm x 3&nbsp;mm
 

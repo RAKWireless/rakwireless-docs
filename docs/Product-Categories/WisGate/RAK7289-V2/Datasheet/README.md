@@ -30,26 +30,28 @@ certifications:
 ---
 
 
-# RAK7289V2/RAK7289CV2 WisGate Edge Pro Datasheet
+# WisGate Edge Pro Datasheet
 
 ## Overview
 
-### Descriptions
+## Product Description
 
-RAK7289V2 WisGate Edge Pro is the latest edition of the RAK Edge Series. It is an ideal product for IoT commercial deployment. With its industrial-grade components, it achieves a high standard of reliability. The new RAK7289V2 supports up to 16 LoRa channels, multi-backhaul with Ethernet, Wi-Fi, and Cellular connectivity. Optionally, there is a dedicated port for different power options, solar panels, and batteries. Its new enclosure is designed to allow the LTE, Wi-Fi, and GPS antennas to be inside the enclosure.
+RAK7289V2 WisGate Edge Pro is the latest edition of the RAK Edge Series, designed specifically for commercial IoT deployment. With its industrial-grade components, it ensures a high standard of reliability. 
 
-The RAK7289V2 supports WisGateOS 2, which is based on the latest OpenWRT kernel and accommodates the latest security updates like IPv6, OpenSSL 1.1 support, multiple accounts access, and more. The web UI has a fresh new look, with more user-friendly information tooltips.
+The new RAK7289V2 supports up to 16 LoRa channels, multi-backhaul with Ethernet, Wi-Fi, and Cellular connectivity. Its redesigned enclosure accommodates LTE, Wi-Fi, and GPS antennas internally for enhanced aesthetics and functionality. Optionally, there is a dedicated port for different power options, solar panels, and batteries. 
 
-Simply said, the RAK7289 is suited for any use case scenario, be it rapid deployment or customization with regard to UI and functionality.
+This gateway supports [WisGateOS 2,](https://docs.rakwireless.com/Product-Categories/Software-APIs-and-Libraries/WisGateOS-2/Overview/#overview) built on the latest OpenWRT kernel, ensuring compatibility with the latest security updates. It incorporates key features such as IPv6 support, OpenSSL 1.1 compatibility, multi-account access, and more. The updated web UI features a modern design with improved user-friendly information tooltips for enhanced usability.
+
+In essence, the RAK7289 V2 is versatile, catering to various use case scenarios, whether for rapid deployment or customization, offering flexibility in both UI and functionality.
 
 
 :::warning ⚠️ WARNING
-This product is designed to be powered by 12&nbsp;V<sub>DC</sub> via a dedicated power port. The use of solar chargers is prohibited, as they may provide overvoltage and cause damage to the device. We strongly advise against using such chargers with this product, and any damage resulting from their use will void the warranty.
+This product is intended to be powered by 12&nbsp;V<sub>DC</sub> through a designated power port. The use of solar chargers is not recommended, as they may supply overvoltage, potentially damaging the device. We strongly discourage the use of such chargers with this product, and any damage incurred as a result will void the warranty.
 :::
 
-### Product Features
+## Product Features
 
-#### Hardware
+### Hardware
 
 - IP67/NEMA-6 industrial-grade enclosure with cable glands
 - PoE (802.3af) + Surge Protection
@@ -60,7 +62,11 @@ This product is designed to be powered by 12&nbsp;V<sub>DC</sub> via a dedicated
 - Internal antenna for Wi-Fi, GPS, and LTE, external antenna for LoRa
 - Dying-gasp (optional)
 
-#### Software
+### Software
+
+:::tip 📝 NOTE:
+The new version of the WisGate Edge Pro comes pre-installed with WisGate OS 2. This operating system, based on OpenWRT, enables new security updates and the option to install extensions for expanded functionality. To explore WisGate OS 2 further, visit the [User Manual.](https://docs.rakwireless.com/Product-Categories/Software-APIs-and-Libraries/WisGateOS-2/) Additionally, check out the [WisGate OS 2 Extension page](https://docs.rakwireless.com/Product-Categories/Software-APIs-and-Libraries/WisGateOS-2-Extensions/) to discover how to enhance the capabilities of your WisGate Edge Pro V2.
+:::
 
 - Built-in Network Server (full LoRaWAN support V 1.0.3)
 - OpenVPN
@@ -76,7 +82,7 @@ This product is designed to be powered by 12&nbsp;V<sub>DC</sub> via a dedicated
 
 ### Overview
 
-The overview presents the block diagram for the RAK7289V2 that shows the internal architecture of the board.
+The overview presents the block diagram for the RAK7289 V2, illustrating the internal architecture of the board.
 
 ## Block Diagram
 
@@ -99,18 +105,18 @@ The overview presents the block diagram for the RAK7289V2 that shows the interna
     <thead><tr><th>Feature</th><th>Specifications</th></tr></thead>
     <tbody>
         <tr><td>Computing</td><td>MT7628, DDR2 RAM 128&nbsp;MB</td></tr>
-        <tr><td rowspan="5">Wi-Fi feature</td><td>Frequency: 2.4&nbsp;GHz (802.11b/g/n)</td></tr>
+        <tr><td rowspan="5">Wi-Fi features</td><td>Frequency: 2.4&nbsp;GHz (802.11b/g/n)</td></tr>
         <tr><td>2x2 MIMO</td></tr>
         <tr><td>RX Sensitivity: -95&nbsp;dBm (Min)</td></tr>
         <tr><td>TX Power: 20&nbsp;dBm (Max)</td></tr>
         <tr><td>Operation channels: 2.4&nbsp;GHz: 1-13</td></tr>
-        <tr><td rowspan="5">LoRa feature</td><td>SX1303 mPCIe card (connects maximum of two)</td></tr>
+        <tr><td rowspan="5">LoRa features</td><td>SX1303 mPCIe card (connects maximum of two)</td></tr>
         <tr><td>8 Channels (16 channels optional)</td></tr>
         <tr><td>RX Sensitivity: -139&nbsp;dBm (Min)</td></tr>
         <tr><td>TX Power: 27&nbsp;dBm (Max)</td></tr>
         <tr><td>Listen Before Talk</td></tr>
-        <tr><td>Frequency</td><td>EU433/CN470/EU868/US915/AS923/AS923-1/AS923-2/AS923-3/AS923-4/AU915/IN865/KR920</td></tr>
-        <tr><td rowspan="8">Cellular Feature (available with RAK7289C V2)</td><td>Supports Quectel EG95-E/EG95-NA (IoT/M2M -optimized LTE Cat 4 Module)</td></tr>
+        <tr><td>Frequency</td><td>EU433, CN470, EU868, US915, AS923/1/2/3/4, AU915, IN865, KR920</td></tr>
+        <tr><td rowspan="8">Cellular Features (available with RAK7289C V2)</td><td>Supports Quectel EG95-E/EG95-NA (IoT/M2M -optimized LTE Cat 4 Module)</td></tr>
         <tr><td>EG95-E for EMEA Region (Europe, Middle East and Africa)</td></tr>
         <tr><td>LTE FDD: B1/B3/B7/B8/B20/B28A</td></tr>
         <tr><td>WCDMA: B1/B8</td></tr>
@@ -118,7 +124,7 @@ The overview presents the block diagram for the RAK7289V2 that shows the interna
         <tr><td>EG95-NA for North America Region</td></tr>
         <tr><td>LTE FDD: B2/B4/B5/B12/B13</td></tr>
         <tr><td>WCDMA: B2/B4/B5</td></tr>
-        <tr><td>Power Supply</td><td>PoE (IEEE 802.3af) - 37~57&nbsp;VDC</td></tr>
+        <tr><td>Power Supply</td><td>PoE (IEEE 802.3af) - 37~57&nbsp;V<sub>DC</sub></td></tr>
         <tr><td>ETH</td><td>RJ45 (10/100 M)</td></tr>
         <tr><td rowspan="3">Antenna</td><td>LoRa: 1 or 2 N-Type connectors</td></tr>
         <tr><td>LTE: Internal antenna</td></tr>
@@ -133,7 +139,7 @@ The overview presents the block diagram for the RAK7289V2 that shows the interna
 
 ### Hardware
 
-The hardware specification covers the interfacing of the RAK7289V2 and its corresponding functionalities. It also presents the parameters and the standard values of the gateway.
+The hardware specification details the interfacing of the RAK7289 V2 and its corresponding functionalities. It also outlines the parameters and standard values of the gateway.
 
 #### RF Specifications
 
@@ -143,7 +149,7 @@ The hardware specification covers the interfacing of the RAK7289V2 and its corre
     <thead><tr><th>Feature</th><th>Specifications</th></tr></thead>
     <tbody>
         <tr><td>Wireless Standard</td><td>IEEE 802.11b/g/n</td></tr>
-        <tr><td>Operating Frequency</td><td>ISM band: 2.412~2.472 GHz</td></tr>
+        <tr><td>Operating Frequency</td><td>ISM band: 2.412~2.472&nbsp;GHz</td></tr>
         <tr><td>Operation Channels</td><td>2.4&nbsp;GHz: 1-13</td></tr>
         <tr><td rowspan="11">Transmit Power (The max power maybe different depending on local regulations) - per chain</td><td>802.11b</td></tr>
         <tr><td>  19&nbsp;dBm @1&nbsp;Mbps</td></tr>
@@ -175,7 +181,7 @@ The hardware specification covers the interfacing of the RAK7289V2 and its corre
 <table>
     <thead><tr><th>Feature</th><th>Specifications</th></tr></thead>
     <tbody>
-        <tr><td>Operating Frequency</td><td>EU433/CN470/EU868/US915/AS923/AU915/IN865/KR920</td></tr>
+        <tr><td>Operating Frequency</td><td>EU433, CN470, EU868, US915, AS923, AU915, IN865, KR920</td></tr>
         <tr><td>Transmit Power</td><td>27&nbsp;dBm (Max)</td></tr>
         <tr><td>Receiver Sensitivity</td><td>-139&nbsp;dBm (Min)</td></tr>
 </tbody>
@@ -232,7 +238,8 @@ The hardware specification covers the interfacing of the RAK7289V2 and its corre
 
 ### Firmware
 
-The firmware sits on OpenWRT. There is a Web UI for easy configuration and management of the device, as well as the possibility for SSH2 management. The WisGateOS V2 supports the feature to install extensions (WireGuard, Custom Logo, Breathing Light, and more to come). The extensions are available in [RAK download center](https://downloads.rakwireless.com/#LoRa/WisGateOS2/WisGateOS2-Extensions/).
+
+The firmware operates on OpenWRT, providing a user-friendly Web UI for convenient device configuration and management. Additionally, SSH2 management is supported. WisGateOS V2 also facilitates the [installation of extensions](https://docs.rakwireless.com/Product-Categories/Software-APIs-and-Libraries/WisGateOS-2-Extensions/Overview/), such as WireGuard, Custom Logo, Breathing Light, and more, which can be accessed from the [RAK download center.](https://downloads.rakwireless.com/#LoRa/WisGateOS2/WisGateOS2-Extensions/)
 
 
 |                 Model                 | Firmware Version |                                            Source                                            |

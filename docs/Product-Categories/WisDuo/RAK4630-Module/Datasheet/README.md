@@ -24,10 +24,11 @@ certifications:
 
 ### Description
 
-The RAK4630 is a low-power long-range transceiver module based on Nordic nRF52840 MCU that supports Bluetooth 5.0 (Bluetooth Low Energy) and the newest SX1262 LoRa transceiver from Semtech. This module complies with Class A, B, & C of LoRaWAN 1.0.3 specifications and also supports LoRa Point-to-Point (P2P) communication mode which helps you in implementing your own customized long-range LoRa network quickly. The two RF communication characteristic of the module (LoRa + BLE) makes it suitable for a variety of applications in the IoT field, such as home automation, sensor networks, building automation, and IoT network applications.
+The RAK4630 is a low-power, long-range transceiver module featuring the Nordic nRF52840 MCU, which supports Bluetooth 5.0 (Bluetooth Low Energy) and the latest SX1262 LoRa transceiver from Semtech. This module adheres to Class A, B, & C specifications of LoRaWAN 1.0.3 and also facilitates LoRa Point-to-Point (P2P) communication mode, enabling rapid implementation of custom LoRa networks. 
 
-The default firmware of RAK4630 is based on RUI3 (RAKwireless Unified Interface). This allows you to easily use RAK4630 as a stand-alone module by developing your own custom firmware via RUI APIs. You can directly interface sensors and other external peripherals to it without needing an additional MCU. On top of that, RAK4630 still has the capability to be interfaced to an external host MCU using AT commands via USB, UART, or BLE connection.
+With its dual RF communication capabilities (LoRa + BLE), the module is well-suited for diverse IoT applications including home automation, sensor networks, building automation, and various IoT network scenarios.
 
+The default firmware of the RAK4630 is built on RUI3 (RAKwireless Unified Interface), which simplifies using the RAK4630 as a standalone module by enabling the development of custom firmware through RUI APIs. This setup allows direct interfacing with sensors and other external peripherals without requiring an additional MCU. Additionally, the RAK4630 can communicate with an external host MCU using AT commands via USB, UART, or BLE connection.
 
 ### Features
 
@@ -38,16 +39,15 @@ The default firmware of RAK4630 is based on RUI3 (RAKwireless Unified Interface)
 - Custom firmware using Arduino via RUI3 API
 - Easy-to-use AT Command set via UART interface
 - TCXO crystal for LoRa chip
-- I/O ports: UART/I2C/GPIO/USB
-- SPI pins and optional NFC interface are accessible using WisBlock IO module
+- IO ports: UART, I2C, GPIO, USB
 - Temperature range: -40°&nbsp;C to +85°&nbsp;C
 - Supply voltage: 2.0 ~ 3.6&nbsp;V
-- Low-Power Wireless Systems with 7.8&nbsp;kHz to 500&nbsp;kHz Bandwidth
+- Low-Power Wireless Systems with 7.8&nbsp;kHz to 500&nbsp;kHz bandwidth
 - Ultra-Low Power Consumption 4.23&nbsp;uA in sleep mode
 - LoRa PA Boost mode with 22&nbsp;dBm output power
-- BLE5.0 (Tx power -20 to +4&nbsp;dBm in 4&nbsp;dB steps)
+- BLE 5.0 (Tx power -20 to +4&nbsp;dBm in 4&nbsp;dB steps)
 - Serial Wire Debug (SWD) interface
-- Module size: 15 x 23 x 3&nbsp;mm
+- Module size: 15&nbsp;mm x 23&nbsp;mm x 3&nbsp;mm
 
 ## Specifications
 
@@ -55,7 +55,7 @@ The default firmware of RAK4630 is based on RUI3 (RAKwireless Unified Interface)
 
 ### Hardware
 
-The hardware specification is categorized into three parts. It covers the RF, electrical, and mechanical parameters that include the tabular data of the functionalities and standard values of the RAK4630 WisBlock LPWAN Module.
+The hardware specification is categorized into three parts, covering the RF, electrical, and mechanical parameters. This includes tabular data detailing the functionalities and standard values of the RAK4630 WisBlock LPWAN Module.
 
 #### Interfaces
 
@@ -133,9 +133,9 @@ In addition, with a commitment to making IoT easy, RAK offers a dedicated servic
 
 ##### Setup of the SX1262
 
-Information to write custom firmware for the RAK4630.  This shows the internal connection between the RAK4630 and required information when initializing the SX1262 LoRa Transceiver.
+Information for writing custom firmware for the RAK4630 includes details about the internal connections between the RAK4630 and the necessary initialization parameters for the SX1262 LoRa Transceiver.
 
-| nRF52840 GPIO	| SX1262 pin | function                          |
+| nRF52840 GPIO	| SX1262 Pin | function                          |
 | :-----------: | :--------: | :-------------------------------: |
 | P1.10         | NSS        | SPI NSS                           |
 | P1.11         | SCK        | SPI CLK                           |
@@ -145,15 +145,15 @@ Information to write custom firmware for the RAK4630.  This shows the internal c
 | P1.15         | DIO1       | DIO1 event interrupt              |
 | P1.06         | NRESET     | NRESET manual reset of the SX1262 |
 
-Important for successful SX1262 initialization:
-- Setup DIO2 to control the antenna switch
-- Setup DIO3 to control the TCXO power supply
-- Setup the SX1262 to use it's DCDC regulator and not the LDO
-- RAK4630 schematics show GPIO P1.07 connected to the antenna switch, but it should not be initialized, as DIO2 will do the control of the antenna switch
+Important for a successful SX1262 initialization:
+- Set up DIO2 to control the antenna switch.
+- Set up DIO3 to control the TCXO power supply.
+- Set up the SX1262 to use it's DCDC regulator and not the LDO.
+- The RAK4630 schematics show GPIO P1.07 connected to the antenna switch, but it should not be initialized, as DIO2 will control the antenna switch.
 
 #### RF Characteristics
 
-The RAK4630 module supports the LoRaWAN bands shown in the table below. When buying a RAK4630 module, pay attention to specifying the correct core module RAK4630 H/L for your region, in which H stands for high-frequency regions and L for low-frequency regions.
+When purchasing a RAK4630 module, it's essential to specify the correct core module RAK4630 H/L for your region, where H indicates high-frequency regions, and L indicates low-frequency regions. The RAK4630 module supports LoRaWAN bands as outlined in the table below.
 
 :::tip 📝 NOTE
 Detailed information about the RAK4630 BLE and LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/#LoRa/WisBlock/Accessories/).

@@ -41,11 +41,11 @@ Together with a RAK WisGate Gateway and LoRa Server products, RAK2470 can quickl
 ### Overview
 
 | Parameter           | Value                                                  | Remarks                                                                    |
-| ------------------- | ------------------------------------------------------ | -------------------------------------------------------------------------- |
+|---------------------|--------------------------------------------------------|----------------------------------------------------------------------------|
 | LoRaWAN Protocol    | LoRaWAN 1.0.3                                          |                                                                            |
 | LoRa Frequency      | RU864, IN865, EU868, US915, AU915, KR920, CN470, AS923 | Model specific                                                             |
 | LoRaWAN Mode        | Class C                                                |                                                                            |
-| LoRa Tx Power       | 20&nbsp;dBm                                            |                                                                            |
+| LoRa Tx Power       | 22&nbsp;dBm                                            |                                                                            |
 | LoRa Antenna        | Built-in fiberglass antenna                            | 863 ~ 928&nbsp;MHz<br>VSWR < 2<br>Efficiency > 80%<br>Max Gain: 3&nbsp;dBi |
 | RS485 Data Rate     | 115200&nbsp;bps                                        |                                                                            |
 | Input Voltage       | 5 ~ 12&nbsp;V                                          |                                                                            |
@@ -53,8 +53,8 @@ Together with a RAK WisGate Gateway and LoRa Server products, RAK2470 can quickl
 | Dimensions          | 30&nbsp;mm × 215&nbsp;mm                               |                                                                            |
 | Protection Grade    | IP67                                                   |                                                                            |
 | Installation        | Pole                                                   |                                                                            |
-| Working Temperature | -20 ~ +70°&nbsp;C                                      | Typical +25°&nbsp;C                                                        |
-| Storage Temperature | -30 ~ 85°&nbsp;C                                       |                                                                            |
+| Working Temperature | -40°&nbsp;C ~ +80°&nbsp;C                              | Typical +25°&nbsp;C                                                        |
+| Storage Temperature | -40°&nbsp;C ~ +80°&nbsp;C                               |                                                                            |
 
 ### Hardware
 
@@ -71,7 +71,7 @@ In addition, the RS485 host baud rate is 115200, and multiple devices can be con
 ##### Definition of I/O Parameters
 
 | Type | Description   |
-| ---- | ------------- |
+|------|---------------|
 | IO   | Bidirectional |
 | PI   | Power input   |
 | N/A  | Not connected |
@@ -85,7 +85,7 @@ caption="M12-4 connector pin definition"
 />
 
 | Pin # | Circular connector | Type | Description | Remarks       |
-| ----- | ------------------ | ---- | ----------- | ------------- |
+|-------|--------------------|------|-------------|---------------|
 | 1     | VCC                | PI   | Power In    | 5 ~ 12&nbsp;V |
 | 2     | RS485_A            | IO   | RS485 A+    |               |
 | 3     | RS485_B            | IO   | RS485 B-    |               |
