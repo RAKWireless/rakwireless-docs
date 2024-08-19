@@ -53,8 +53,8 @@ Together with a RAK WisGate Gateway and LoRa Server products, RAK2470 can quickl
 | Dimensions          | 30&nbsp;mm × 215&nbsp;mm                               |                                                                            |
 | Protection Grade    | IP67                                                   |                                                                            |
 | Installation        | Pole                                                   |                                                                            |
-| Working Temperature | -40°&nbsp;C ~ +80°&nbsp;C                              | Typical +25°&nbsp;C                                                        |
-| Storage Temperature | -40°&nbsp;C ~ +80°&nbsp;C                               |                                                                            |
+| Working Temperature | -40°&nbsp;C ~ +85°&nbsp;C                              | Typical +25°&nbsp;C                                                        |
+| Storage Temperature | -40°&nbsp;C ~ +85°&nbsp;C                               |                                                                            |
 
 ### Hardware
 

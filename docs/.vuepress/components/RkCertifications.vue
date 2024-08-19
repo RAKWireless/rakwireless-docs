@@ -148,7 +148,10 @@ export default {
             break
           case 'BSMI':
             data.img = '/assets/images/certifications/BSMI.png'
-            break             
+            break
+          case 'ERP':
+            data.img = '/assets/images/certifications/ERP.png'
+            break              
           default:
             data.img =
               'https://image.shutterstock.com/image-illustration/white-unknown-document-icon-isolated-600w-1517588975.jpg'

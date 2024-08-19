@@ -615,7 +615,8 @@ The table below lists the operation and storage temperature requirements:
 Download the latest firmware version of the RAK5010-M-BG95 WisTrio provided in the table below.
 
 :::warning ⚠️ WARNING
-RAK5010-M-BG95 and RAK5010-BG95 have the same PCB, but their firmware is different and not interchangeable.:::
+RAK5010-M-BG95 and RAK5010-BG95 have the same PCB, but their firmware is different and not interchangeable.
+:::
 
 | Model          | Version   | Source                                                                                                |
 | -------------- | --------- | ----------------------------------------------------------------------------------------------------- |

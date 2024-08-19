@@ -47,7 +47,7 @@ The RAK9154 Solar Battery is created especially to power RAK Sensor Hub or provi
 | Cell type                        | Rechargeable Lithium-Ion                                                      |                                        |
 | Nominal capacity                 | 5200&nbsp;mAh                                                                 | 5.2&nbsp;Ah                            |
 | Rated voltage                    | 10.8&nbsp;V                                                                   | Single cell voltage 3.6&nbsp;V         |
-| Operating voltage range          | 9～12.6&nbsp;V                                                                |                                        |
+| Operating voltage range          | 9～13.2&nbsp;V                                                                |Output 1 – if SensorHub is connected – 12V DC <br>Output 1 and 2 – if used with other devices, the connected device should withstand a voltage of up to 16 V DC. |
 | Rated energy                     | 56.16&nbsp;Wh                                                                 |                                        |
 | SOC transportation range         | 50%                                                                           |                                        |
 | Operating temperature            | Charging temperature: 0～45°&nbsp;C<br>Discharge temperature: -20～60°&nbsp;C |                                        |

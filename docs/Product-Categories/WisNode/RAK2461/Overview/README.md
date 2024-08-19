@@ -19,7 +19,7 @@ Thank you for choosing **RAK2461 WisNode Bridge IO Lite** in your awesome IoT pr
 
 ## Product Description
 
-The **RAK2461 WisNode Bridge IO Lite** is an ideal solution for seamless LoRaWAN communication within industrial environments, providing different Digital Inputs, Outputs (Relay), and RS-485 communication. Engineered with industrial-grade reliability and based on the RAK3172-T LoRaWAN module, the RAK2461 ensures long-range connectivity, even in extreme temperatures from -40°&nbsp;C to +80°&nbsp;C.
+The **RAK2461 WisNode Bridge IO Lite** is an ideal solution for seamless LoRaWAN communication within industrial environments, providing different Digital Inputs, Outputs (Relay), and RS-485 communication. Engineered with industrial-grade reliability and based on the RAK3172-T LoRaWAN module, the RAK2461 ensures long-range connectivity, even in extreme temperatures from -20°&nbsp;C to +70°&nbsp;C.
 
 This device can operate on all LoRaWAN bands within the standard parameters set by the LoRa Alliance. It offers versatile mounting options for easy installation in any environment, whether for industrial automation or smart city infrastructure. Together with a <a href="https://docs.rakwireless.com/Product-Categories/WisGate/" target="_blank"> RAK Gateway </a>, building a wireless industrial system or extending an existing one can be easy and quick. Moreover, the RAK2461 offers unparalleled performance and durability.
 

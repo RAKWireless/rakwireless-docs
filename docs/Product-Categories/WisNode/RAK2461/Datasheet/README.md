@@ -15,7 +15,7 @@ tags:
 
 ### Description
 
-The **RAK2461 WisNode Bridge IO Lite** is an ideal solution for seamless LoRaWAN communication within industrial environments, providing different Digital Inputs, Outputs (Relay), and RS-485 communication. Engineered with industrial-grade reliability and based on the RAK3172-T LoRaWAN module, the RAK2461 ensures long-range connectivity, even in extreme temperatures from -40°&nbsp;C to +80°&nbsp;C.
+The **RAK2461 WisNode Bridge IO Lite** is an ideal solution for seamless LoRaWAN communication within industrial environments, providing different Digital Inputs, Outputs (Relay), and RS-485 communication. Engineered with industrial-grade reliability and based on the RAK3172-T LoRaWAN module, the RAK2461 ensures long-range connectivity, even in extreme temperatures from -20°&nbsp;C to +70°&nbsp;C.
 
 This device can operate on all LoRaWAN bands within the standard parameters set by the LoRa Alliance. It offers versatile mounting options for easy installation in any environment, whether for industrial automation or smart city infrastructure. Together with a <a href="https://docs.rakwireless.com/Product-Categories/WisGate/" target="_blank"> RAK Gateway </a>, building a wireless industrial system or extending an existing one can be easy and quick. Moreover, the RAK2461 offers unparalleled performance and durability.
 
@@ -64,8 +64,8 @@ The device comes in two variants:
 | Dimensions              | 93.6×100.3×24&nbsp;mm                                                                                                 |                    |
 | Protection grade        | IP31                                                                                                                  |                    |
 | Installation method     | Wall, DIN rail                                                                                                        |                    |
-| Working temperature     | -40°&nbsp;C to +80°&nbsp;C                                                                                            |                    |
-| Storage temperature     | -40°&nbsp;C to +80°&nbsp;C                                                                                            |                    |
+| Working temperature     | -20°&nbsp;C to +70°&nbsp;C                                                                                           |                    |
+| Storage temperature     | -20°&nbsp;C to +70°&nbsp;C                                                                                           |                    |
 | Working humidity        | 0~90%&nbsp;RH                                                                                                         |                    |
 | Storage humidity        | 0~90%&nbsp;RH                                                                                                         |                    |
 

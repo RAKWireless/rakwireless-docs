@@ -27,6 +27,6 @@ The RAK9154 Solar Battery is created especially to power RAK Sensor Hub or provi
 - Battery capacity: 5200&nbsp;mAh
 - Operating temperature: -20～60°&nbsp;C
 - Dimensions: 180 x 130 x 60&nbsp;mm
-- Outputs: one 12&nbsp;V<sub>DC</sub> output for Sensor Hub; one 9-12&nbsp;V<sub>DC</sub> output for WisGate Edge Pro/Prime
+- Outputs: one 12&nbsp;V<sub>DC</sub> output for Sensor Hub; one 9-13.2&nbsp;V<sub>DC</sub> output for WisGate Edge Pro/Prime/Other devices
 - Integrated BMS and heater
 - Supported mounting pole diameter: 55～80&nbsp;mm
