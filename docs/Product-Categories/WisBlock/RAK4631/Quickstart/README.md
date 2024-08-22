@@ -540,7 +540,7 @@ In this method, you need two things that must be in the same directory:
 
 ##### For Windows
 
-Download the [adafruit-nrfutil.exe](https://github.com/adafruit/Adafruit_nRF52_nrfutil/releases/download/%24(APPVEYOR_REPO_TAG_NAME)/adafruit-nrfutil.exe) and the latest [RAK4631 bootloader firmware](https://github.com/RAKWireless/WisBlock/releases).
+Download the [adafruit-nrfutil.exe (you need to unzip the downloaded file)](https://github.com/adafruit/Adafruit_nRF52_nrfutil/releases/download/0.5.3.post17/adafruit-nrfutil--0.5.3.post17-win.zip) and the latest [RAK4631 bootloader firmware](https://github.com/RAKWireless/WisBlock/releases).
 
 :::tip 📝 NOTE
 Detailed information about the RAK4631 Bootloader can be found on the [bootloader repository](https://github.com/RAKWireless/WisBlock/blob/master/bootloader/RAK4630).
