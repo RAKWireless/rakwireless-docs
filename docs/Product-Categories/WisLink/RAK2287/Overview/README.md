@@ -29,6 +29,13 @@ This module offers an exceptional, comprehensive, and cost-efficient gateway sol
 
 Additionally, RAK2287 can detect an uninterrupted combination of packets at 8 different spreading factors and 10 channels. It can continuously demodulate up to 16 packets, making it suitable for smart metering fixed networks and Internet-of-Things (IoT) applications. It can cover up to 500 nodes per km² in an environment with moderate interference.
 
+:::tip 📝 NOTE:
+- **Brand-New, Not Repurposed**: RAK modules are 100% new, unlike some excess inventory on the market.
+- **Industrial-Grade Quality**: Designed and tested for the highest reliability in industrial applications.
+- **Consistent Pricing**: Fair and stable prices without sacrificing quality.
+- **Certified Compliance**: Fully certified with CE, REACH, RoHS, FCC, ISED, ANATEL, KC, and NCC standards.
+:::
+
 
 ## Product Features
 
