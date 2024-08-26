@@ -15,9 +15,7 @@ tags:
 
 The configuration of RAK7201V2 can be done by AT commands send by RAK Serial Tool through a USB cable between a PC and the button.
 
-::: tip 📝 NOTE
-To use the AT commands to configure the RAK WisNode Button, you need to activate the Configuration Mode. To activate it, press the number 1 key for 3 seconds. All four LED’s will light in blue. After that, you can use the Serial Tool to send AT commands.
-:::
+
 
 ### AT Commands Basics
 

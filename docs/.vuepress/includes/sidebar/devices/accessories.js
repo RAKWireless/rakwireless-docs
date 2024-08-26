@@ -1127,6 +1127,32 @@ module.exports = {
       sidebarDepth: 4
     }
   ],
+  '/Product-Categories/Accessories/UPS-12WA-DC-Mini/': [
+    {
+      title: 'Overview',
+      path: '/Product-Categories/Accessories/UPS-12WA-DC-Mini/Overview/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Quick Start Guide',
+      path: '/Product-Categories/Accessories/UPS-12WA-DC-Mini/Quickstart/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    },
+    {
+      title: 'Datasheet',
+      path: '/Product-Categories/Accessories/UPS-12WA-DC-Mini/Datasheet/',
+      collapsable: false,
+      nested: true,
+      download: true,
+      sidebarDepth: 4
+    }
+  ],
   '/Product-Categories/Accessories/UPS-PoE-03/': [
     {
       title: 'Overview',
