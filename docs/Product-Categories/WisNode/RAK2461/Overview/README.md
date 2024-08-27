@@ -38,7 +38,7 @@ The device comes in two variants:
 ## Product Features
 
 - **LoRaWAN 1.0.3** protocol stack
-- **Class support:** A, B, and C
+- **Class support:** Class C
 - One (1) **RS-485 host port**
 - Four (4) **Relay NC/NO port** (optional)
 - Four (4) **Photocoupler DI ports** and one (1) **Relay NC/NO port** (optional)

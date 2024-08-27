@@ -7,20 +7,58 @@ tags:
   - wisduo
   - RAK3172
 certifications:
-  - [Anatel, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_ANATEL_Certification.pdf]
-  - [CE, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_CE_Certification.pdf]
-  - [FCC, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_FCC_Certification.zip]
-  - [ISED, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_ISED_Certification.pdf]
-  - [JRL, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_JRL_Certfication.pdf]
-  - [KCC, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_KC_Certification.pdf]
-  - [LoRaWAN, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_Lora_Alliance_Certification.pdf]
-  - [RCM, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_RCM_Certification.pdf]
-  - [REACH, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_REACH_Report.pdf]
-  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_RoHS_Report.pdf]
-  - [RSM, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_RSM_Certification.pdf]
-  - [UKCA, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_UKCA_Certification.pdf]
-  - [WPC, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_WPC_Certification.pdf]
-
+  - [
+      Anatel,
+      https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_ANATEL_Certification.pdf,
+    ]
+  - [
+      CE,
+      https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_CE_Certification.pdf,
+    ]
+  - [
+      FCC,
+      https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_FCC_Certification.zip,
+    ]
+  - [
+      ISED,
+      https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_ISED_Certification.pdf,
+    ]
+  - [
+      JRL,
+      https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_JRL_Certfication.pdf,
+    ]
+  - [
+      KCC,
+      https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_KC_Certification.pdf,
+    ]
+  - [
+      LoRaWAN,
+      https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_Lora_Alliance_Certification.pdf,
+    ]
+  - [
+      RCM,
+      https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_RCM_Certification.pdf,
+    ]
+  - [
+      REACH,
+      https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_REACH_Report.pdf,
+    ]
+  - [
+      RoHS,
+      https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_RoHS_Report.pdf,
+    ]
+  - [
+      RSM,
+      https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_RSM_Certification.pdf,
+    ]
+  - [
+      UKCA,
+      https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_UKCA_Certification.pdf,
+    ]
+  - [
+      WPC,
+      https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_WPC_Certification.pdf,
+    ]
 ---
 
 # RAK3172 WisDuo LPWAN Module Datasheet
@@ -84,14 +122,13 @@ The hardware specification discusses the interfaces, pinouts and its correspondi
 
 #### Interfaces
 
-| Module  | Interfaces           |
+| Module  |      Interfaces      |
 | :-----: | :------------------: |
 | RAK3172 | UART2/LPUART1, UART1 |
 
 ##### Sub-GHz SPI interface
 
 A dedicated internal SPI interface called **SUBGHZSPI** is used to communicate with the RF subsystem of the **STM32WLE5CCU6**.
-
 
 #### Pin Definition
 
@@ -213,25 +250,24 @@ Performance test and evaluation of RAK3172-T (with TXCO), can be found on the [R
 
 ##### Operating Voltage
 
-| Feature | Minimum | Typical | Maximum | Unit      |
+| Feature | Minimum | Typical | Maximum |   Unit    |
 | :-----: | :-----: | :-----: | :-----: | :-------: |
-| VCC     | 2.0     | 3.3     | 3.6     | Volts (V) |
-
+|   VCC   |   2.0   |   3.3   |   3.6   | Volts (V) |
 
 ##### Operating Current
 
-| Feature           | Condition | Minimum                              | Typical | Maximum | Unit |
+|      Feature      | Condition |               Minimum                | Typical | Maximum | Unit |
 | :---------------: | :-------: | :----------------------------------: | :-----: | :-----: | :--: |
-| Operating Current | TX Mode   | 87 (@&nbsp;20&nbsp;dBm 868&nbsp;Mhz) |         |         | mA   |
-|                   | RX Mode   | 5.22                                 |         |         | mA   |
+| Operating Current |  TX Mode  | 87 (@&nbsp;20&nbsp;dBm 868&nbsp;Mhz) |         |         |  mA  |
+|                   |  RX Mode  |                 5.22                 |         |         |  mA  |
 
 ##### Sleep Current
 
-| Feature             | Condition | Minimum (2.1&nbsp;V) | Typical (3.3&nbsp;V) | Maximum | Unit |
+|       Feature       | Condition | Minimum (2.1&nbsp;V) | Typical (3.3&nbsp;V) | Maximum | Unit |
 | :-----------------: | :-------: | :------------------: | :------------------: | :-----: | :--: |
-| Current Consumption | EU868     | -                    | 1.69                 | -       | μA   |
-|                     | US915     | -                    | 1.69                 | -       | μA   |
-|                     | CN470     | -                    | 1.69                 | -       | μA   |
+| Current Consumption |   EU868   |          -           |         1.69         |    -    |  μA  |
+|                     |   US915   |          -           |         1.69         |    -    |  μA  |
+|                     |   CN470   |          -           |         1.69         |    -    |  μA  |
 
 :::tip 📝 NOTE:
 For the reference application schematic of RAK3172 with minimum components requirements, refer to the [RAK3272S Breakout Board Datasheet.](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3272S-Breakout-Board/Datasheet/#schematic-diagram)
@@ -259,16 +295,16 @@ For the reference application schematic of RAK3172 with minimum components requi
 
 ##### Operating Temperature
 
-| Module    | Minimum | Typical | Maximum | Unit |
+|  Module   | Minimum | Typical | Maximum | Unit |
 | :-------: | :-----: | :-----: | :-----: | :--: |
-| RAK3172   | -20     | 25      | 85      | °C   |
-| RAK3172-T | -40     | 25      | 85      | °C   |
+|  RAK3172  |   -20   |   25    |   85    |  °C  |
+| RAK3172-T |   -40   |   25    |   85    |  °C  |
 
 ##### Storage Temperature
 
-| Feature             | Minimum | Typical | Maximum | Unit |
+|       Feature       | Minimum | Typical | Maximum | Unit |
 | :-----------------: | :-----: | :-----: | :-----: | :--: |
-| Storage Temperature | -40     |         | 85      | °C   |
+| Storage Temperature |   -40   |         |   85    |  °C  |
 
 ##### Recommended Reflow Profile
 
@@ -309,13 +345,13 @@ If BOOT mode is not initiated, you can manually send `AT+BOOT` command to start 
 
 ### Firmware
 
-| Model            | Version                                                          | Source                                                                                          |
+|      Model       |                             Version                              |                                             Source                                              |
 | :--------------: | :--------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: |
-| RAK3172 (.bin)   | RUI3 Application Code only (default baudrate = 115200)           | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3172-E_latest.bin)               |
-| RAK3172 (.hex)   | RUI3 Bootloader and Application Code(default baudrate = 115200)  | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3172-E_latest_final.hex)         |
-| RAK3172-T (.bin) | RUI3 Application Code only(default baudrate = 115200)            | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3172-T_latest.bin)               |
-| RAK3172-T (.hex) | RUI3 Bootloader and Application Code (default baudrate = 115200) | [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3172-T_latest_final.hex)         |
-| RAK3172 (OLD)    | **DEPRECATED** V1.0.4 (default baudrate = 9600)                  | [Download](https://downloads.rakwireless.com/LoRa/RAK3172/Firmware/RAK3172_Latest_Firmware.zip) |
+|  RAK3172 (.bin)  |      RUI3 Application Code only (default baudrate = 115200)      |        [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3172-E_latest.bin)        |
+|  RAK3172 (.hex)  | RUI3 Bootloader and Application Code(default baudrate = 115200)  |     [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3172-E_latest_final.hex)     |
+| RAK3172-T (.bin) |      RUI3 Application Code only(default baudrate = 115200)       |        [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3172-T_latest.bin)        |
+| RAK3172-T (.hex) | RUI3 Bootloader and Application Code (default baudrate = 115200) |     [Download](https://downloads.rakwireless.com/RUI/RUI3/Image/RAK3172-T_latest_final.hex)     |
+|  RAK3172 (OLD)   |         **DEPRECATED** V1.0.4 (default baudrate = 9600)          | [Download](https://downloads.rakwireless.com/LoRa/RAK3172/Firmware/RAK3172_Latest_Firmware.zip) |
 
 :::warning ⚠️ WARNING
 There are RAK3172 devices loaded with old firmware versions which are not based on RUI3 (RAKwireless Unified Interface V3). These devices have v1.0.4 and below.
@@ -327,27 +363,26 @@ If the host microcontroller code is based on this old firmware, we have a [RAK31
 
 ### Ordering Information
 
-| P/N                | Model     | TXCO         | Antenna Interface | Frequency                           | SKU    |
-| ------------------ | --------- | ------------ | ----------------- | ----------------------------------- | ------ |
-| RAK3172-8-SM-NI    | RAK3172   | Without TCXO | No IPEX           | 8XX MHz for RU864/IN865/EU868       | 305044 |
-| RAK3172-9-SM-NI    | RAK3172   | Without TCXO | No IPEX           | 9XX MHz for US915/AU915/KR920/AS923 | 306041 |
-| RAK3172-43-SM-NI   | RAK3172   | Without TCXO | No IPEX           | EU433                               | 301026 |
-| RAK3172-47-SM-NI   | RAK3172   | Without TCXO | No IPEX           | CN470                               | 302033 |
-| RAK3172-T-8-SM-NI  | RAK3172-T | With TCXO    | No IPEX           | 8XX MHz for RU864/IN865/EU868       | 305054 |
-| RAK3172-T-8-SM-NI  | RAK3172-T | With TCXO    | No IPEX           | 8XX MHz for RU864/IN865/EU868       | 305054 |
-| RAK3172-T-8-SM-NI  | RAK3172-T | With TCXO    | No IPEX           | 8XX MHz for RU864/IN865/EU868       | 305054 |
-| RAK3172-T-9-SM-NI  | RAK3172-T | With TCXO    | No IPEX           | 9XX MHz for US915/AU915/KR920/AS923 | 306051 |
-| RAK3172-T-43-SM-NI | RAK3172-T | With TCXO    | No IPEX           | EU433                               | 301029 |
-| RAK3172-T-47-SM-NI | RAK3172-T | With TCXO    | No IPEX           | CN470                               | 302037 |
-| RAK3172-8-SM-I     | RAK3172   | Without TCXO | With IPEX         | 8XX MHz for RU864/IN865/EU868       | 305045 |
-| RAK3172-9-SM-I     | RAK3172   | Without TCXO | With IPEX         | 9XX MHz for US915/AU915/KR920/AS923 | 306042 |
-| RAK3172-43-SM-I    | RAK3172   | Without TCXO | With IPEX         | EU433                               | 301025 |
-| RAK3172-47-SM-I    | RAK3172   | Without TCXO | With IPEX         | CN470                               | 302032 |
-| RAK3172-T-8-SM-I   | RAK3172-T | With TCXO    | With IPEX         | 8XX MHz for RU864/IN865/EU868       | 305055 |
-| RAK3172-T-9-SM-I   | RAK3172-T | With TCXO    | With IPEX         | 9XX MHz for US915/AU915/KR920/AS923 | 306052 |
-| RAK3172-T-43-SM-I  | RAK3172-T | With TCXO    | With IPEX         | EU433                               | 301030 |
-| RAK3172-T-47-SM-I  | RAK3172-T | With TCXO    | With IPEX         | CN470                               | 302038 |
-
+| P/N                | Model     | TXCO                    | Antenna Interface | Frequency                           | SKU    |
+| ------------------ | --------- | ----------------------- | ----------------- | ----------------------------------- | ------ |
+| RAK3172-8-SM-NI    | RAK3172   | Without TCXO            | No IPEX           | 8XX MHz for RU864/IN865/EU868       | 305044 |
+| RAK3172-9-SM-NI    | RAK3172   | Without TCXO            | No IPEX           | 9XX MHz for US915/AU915/KR920/AS923 | 306041 |
+| RAK3172-43-SM-NI   | RAK3172   | Without TCXO            | No IPEX           | EU433                               | 301026 |
+| RAK3172-47-SM-NI   | RAK3172   | Without TCXO            | No IPEX           | CN470                               | 302033 |
+| RAK3172-T-8-SM-NI  | RAK3172-T | With ±2.5&nbsp;ppm TCXO | No IPEX           | 8XX MHz for RU864/IN865/EU868       | 305054 |
+| RAK3172-T-8-SM-NI  | RAK3172-T | With ±2.5&nbsp;ppm TCXO | No IPEX           | 8XX MHz for RU864/IN865/EU868       | 305054 |
+| RAK3172-T-8-SM-NI  | RAK3172-T | With ±2.5&nbsp;ppm TCXO | No IPEX           | 8XX MHz for RU864/IN865/EU868       | 305054 |
+| RAK3172-T-9-SM-NI  | RAK3172-T | With ±2.5&nbsp;ppm TCXO | No IPEX           | 9XX MHz for US915/AU915/KR920/AS923 | 306051 |
+| RAK3172-T-43-SM-NI | RAK3172-T | With ±2.5&nbsp;ppm TCXO | No IPEX           | EU433                               | 301029 |
+| RAK3172-T-47-SM-NI | RAK3172-T | With ±2.5&nbsp;ppm TCXO | No IPEX           | CN470                               | 302037 |
+| RAK3172-8-SM-I     | RAK3172   | Without TCXO            | With IPEX         | 8XX MHz for RU864/IN865/EU868       | 305045 |
+| RAK3172-9-SM-I     | RAK3172   | Without TCXO            | With IPEX         | 9XX MHz for US915/AU915/KR920/AS923 | 306042 |
+| RAK3172-43-SM-I    | RAK3172   | Without TCXO            | With IPEX         | EU433                               | 301025 |
+| RAK3172-47-SM-I    | RAK3172   | Without TCXO            | With IPEX         | CN470                               | 302032 |
+| RAK3172-T-8-SM-I   | RAK3172-T | With ±2.5&nbsp;ppm TCXO | With IPEX         | 8XX MHz for RU864/IN865/EU868       | 305055 |
+| RAK3172-T-9-SM-I   | RAK3172-T | With ±2.5&nbsp;ppm TCXO | With IPEX         | 9XX MHz for US915/AU915/KR920/AS923 | 306052 |
+| RAK3172-T-43-SM-I  | RAK3172-T | With ±2.5&nbsp;ppm TCXO | With IPEX         | EU433                               | 301030 |
+| RAK3172-T-47-SM-I  | RAK3172-T | With ±2.5&nbsp;ppm TCXO | With IPEX         | CN470                               | 302038 |
 
 ## Certification
 

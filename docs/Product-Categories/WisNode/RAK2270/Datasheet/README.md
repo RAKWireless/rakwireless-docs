@@ -85,7 +85,7 @@ RAK2270 integrates one RAK3172-SiP, one LIS3DHTR, one LiMnO2 battery, and one EE
 | Battery Type             | LiMnO2                                                                                                                          |
 | Nominal Battery Capacity | 600&nbsp;mAh                                                                                                                    |
 | Antenna Gain             | 2.0&nbsp;dBi                                                                                                                    |
-| Maximum Output Power     | 22&nbspdBm                                                                                                                      |
+| Maximum Output Power     | 22&nbsp;dBm                                                                                                                      |
 | Module Size              | 85&nbsp;mm x 118&nbsp;mm x 1.5&nbsp;mm                                                                                          |
 | Activation Method        | Ri sensor (buttonless)                                                                                                          |
 

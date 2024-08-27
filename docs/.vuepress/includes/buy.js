@@ -1703,7 +1703,7 @@ export default {
   },
   '/Product-Categories/Accessories/UPS-12V1A-V01/': {
     label: 'UPS 12V1A-V01',
-    img: '/assets/images/accessories/ups-12v1a-v01/1.ups-12v1a-v01.png',
+    img: '/assets/images/accessories/ups-12v1a-v01/ups-buy-image.png',
     store: 'https://store.rakwireless.com/products/poe-backup-ups-with-12v-dc-output-compatible-with-rak7286v2?utm_source=UPS12V1A&utm_medium=Document&utm_campaign=BuyFromStore'
   },
   '/Product-Categories/Accessories/UPS-12WA-DC-Mini/': {

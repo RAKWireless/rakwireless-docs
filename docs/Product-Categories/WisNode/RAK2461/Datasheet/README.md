@@ -32,7 +32,7 @@ The device comes in two variants:
 ### Features
 
 - **LoRaWAN 1.0.3** protocol stack
-- **Class support:** A, B, and C
+- **Class support:** C
 - One (1) **RS-485 host port**
 - Four (4) **Relay NC/NO port** (optional)
 - Four (4) **Photocoupler DI ports** and one (1) **Relay NC/NO port** (optional)
@@ -49,7 +49,7 @@ The device comes in two variants:
 | ----------------------- | --------------------------------------------------------------------------------------------------------------------- | ------------------ |
 | LoRaWAN protocol        | LoRaWAN 1.0.3                                                                                                         |                    |
 | LoRa frequency          | RU864, IN865, EU868, US915, AU915, KR920, KR923                                                                       | Model specific     |
-| LoRaWAN mode            | Class A / Class B / Class C                                                                                           |                    |
+| LoRaWAN mode            | Class C                                                                                                               |                    |
 | LoRa Tx power           | 22&nbsp;dBm                                                                                                           |                    |
 | LoRa antenna interface  | RP-SMA external omnidirectional antenna                                                                               |                    |
 | RS485 data rate         | 9600                                                                                                                  |                    |
@@ -64,8 +64,8 @@ The device comes in two variants:
 | Dimensions              | 93.6×100.3×24&nbsp;mm                                                                                                 |                    |
 | Protection grade        | IP31                                                                                                                  |                    |
 | Installation method     | Wall, DIN rail                                                                                                        |                    |
-| Working temperature     | -20°&nbsp;C to +70°&nbsp;C                                                                                           |                    |
-| Storage temperature     | -20°&nbsp;C to +70°&nbsp;C                                                                                           |                    |
+| Working temperature     | -20°&nbsp;C to +70°&nbsp;C                                                                                            |                    |
+| Storage temperature     | -20°&nbsp;C to +70°&nbsp;C                                                                                            |                    |
 | Working humidity        | 0~90%&nbsp;RH                                                                                                         |                    |
 | Storage humidity        | 0~90%&nbsp;RH                                                                                                         |                    |
 
