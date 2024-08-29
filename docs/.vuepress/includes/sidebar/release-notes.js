@@ -258,6 +258,11 @@ module.exports = {
           collapsed: true,
           children : [
             {
+              title : 'August 29',
+              path : '/Release-Notes/WisGateOS2/2024/August-29',
+              collapsable: false
+            },
+            {
               title : 'June 20',
               path : '/Release-Notes/WisGateOS2/2024/June-20',
               collapsable: false

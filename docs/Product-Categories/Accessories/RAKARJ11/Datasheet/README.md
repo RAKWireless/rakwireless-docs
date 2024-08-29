@@ -9,7 +9,7 @@ rak_img: /assets/images/accessories/rakarj11/black_antenna_overview_800.png
 
 ---
 
-# RAKARJ11 902-930 MHz Black Plastic Antenna
+# RAKARJ11 860-868 MHz Black Plastic Antenna Datasheet
 
 ## Overview
 
