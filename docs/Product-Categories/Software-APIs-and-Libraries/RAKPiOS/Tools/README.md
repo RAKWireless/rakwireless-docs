@@ -44,24 +44,84 @@ If you need to disable the OLED script, edit the `/etc/rc.local` file and commen
 exit 0
 ```
 
+## Miromico's Mioty Edge Card Management
+
+The Miromico's Mioty Edge Card is the Swiss company solution for a Mioty base station. It's a MiniPCIe card with USB interface that hosts a complete Linux system with the base station software already built-in. From the host point of view, it's necessary to route the traffic from and to the Ethernet interface the card exposes (Ethernet over USB). Since the RAKPiOS 0.9.0, the Miromico's Mioty Edge Card Management is included by default, allowing to configure the host and the Edge Card to use Mioty on compatible devices like the RAK7391 WisGate Connect.
+
+Miromico provides a comprehensive documentation, but the `mioty` CLI utility included in RAKPiOS handles all the required steps for you. This includes configuring the host and also the base station inside the card. Given that Miromico preprovisions, the cards on Loriot the minimal steps to get it running and get the station information are:
+
+```
+rak@rakpios:~ $ mioty install
+
+Installing connection and firewall rules
+
+[sudo] password for rak: 
+Connection 'mioty' (c4a06b8c-f222-4918-a0e3-f68d70536dc2) successfully added.
+Connection successfully activated (D-Bus active path: /org/freedesktop/NetworkManager/ActiveConnection/468)
+
+rak@rakpios:~ $ mioty restart
+
+Restarting packet forwarder
+
+k@rakpios:~ $ mioty getall
+
+Packet forwarder parameters
+
+uniqueBaseStationId : 9D-45-D9-FF-FE-5D-C8-C1
+baseStationName     : miro Edge mioty
+baseStationVendor   : Miromico
+baseStationModel    : EDGE-GW-MY-868
+serviceCenterAddr   : eu3.loriot.io
+serviceCenterPort   : 727
+tlsAuthRequired     : true
+profile             : eu1
+```
+
+Now head to Loriot Backend (https://eu3.loriot.io/login) and login with the credentials Miromico provides with the card. Under `Networks`, you should see an existing network and inside your new base station connected. The EUI of the base station is the `uniqueBaseStationId` above without the dashes.
+
+For more information on what the `mioty` script can do, just call it without arguments:
+
+```
+rak@rakpios:~ $ mioty 
+
+Host configuration:
+
+  /usr/local/bin/mioty install              --> setups connection and firewall rules
+  /usr/local/bin/mioty uninstall            --> deletes connection
+  /usr/local/bin/mioty up                   --> brings up connection to edge card
+  /usr/local/bin/mioty down                 --> brings down connection to edge card
+
+Edge card configuration:
+
+  /usr/local/bin/mioty start                --> starts packet forwarder
+  /usr/local/bin/mioty stop                 --> stops packet forwarder
+  /usr/local/bin/mioty restart              --> restarts packet forwarder
+  /usr/local/bin/mioty enable               --> enables packet forwarder on boot by default
+  /usr/local/bin/mioty disable              --> disables packet forwarder on boot by default
+  /usr/local/bin/mioty getall               --> gets params from builtin packer forwarder
+  /usr/local/bin/mioty set <param> <value>  --> sets a param of the builtin packer forwarder
+  /usr/local/bin/mioty cert <file>          --> pushes a certificate file to card
+  /usr/local/bin/mioty reset                --> resets packet forwarder params to factory values
+```
+
 ## Deploy on Boot Folder
 
-RAKPiOS is built on the official Raspberry Pi OS image, with all changes made defined in the [stage2-rak](https://github.com/RAKWireless/rakpios/tree/arm64/stage2-rak) stage. This stage contains an **on boot** folder that allows users to create an image that can deploy Docker services on the first boot. The scripts required to implement this feature are included in the **.04-pre-install-containers** folder.
+RAKPiOS is built on the official Raspberry Pi OS image, with all changes made defined in the [stage2-rak](https://github.com/RAKWireless/rakpios/tree/arm64/stage2-rak) repo. This stage contains an **on boot** folder that allows users to create an image that can deploy Docker services on the first boot. The scripts required to implement this feature are included in the `.04-pre-install-containers` folder.
 
-By default, this stage is hidden, and users can use a command such as `ls -a` to view it. This stage is optional and serves the purpose of having Docker containers installed by default on boot and running a set of commands on the device's first boot to install Docker-related services or tools.
+By default, this stage is hidden, and users can use a command such as `ls -a` to view it. The stage is optional and serves the purpose of having Docker containers installed by default on boot and running a set of commands on the device's first boot to install Docker-related services or tools.
 
-1. To activate this stage when building a new image, remove the dot at the beginning of the directory. This will download the compressed images for the UDP packet forwarder, Basic station packet forwarder, Portainer, and The Things Stack and save them to `/usr/local/etc/images` (see `stage2-rak/.04-pre-install-containers/00-run.sh`).
-2. To start some customized services during the first boot, a simple script called `runonce` (check `stage2-rak/.04-pre-install-containers/files/runonce`) is created. This script can be used to start customized services defined in the directory `stage2-rak/.04-pre-install-containers/files/run-once-services`.
+1. Remove the dot at the beginning of the directory to activate this stage when building a new image. This will download the compressed images for the UDP packet forwarder, Basic station packet forwarder, Portainer, and The Things Stack, then save them to `/usr/local/etc/images` (see `stage2-rak/.04-pre-install-containers/00-run.sh`).
+2. To start with customized services during the first boot, a simple script called `runonce` is created (check `stage2-rak/.04-pre-install-containers/files/runonce`). This script can be used to start the customized services defined in the directory `stage2-rak/.04-pre-install-containers/files/run-once-services`.
 
 Some example scripts are also provided:
-- To load the compressed image for Portainer and start the Portainer service during the first boot
+- To load the compressed image for Portainer and start the Portainer service during the first boot:
     -  `stage2-rak/.04-pre-install-containers/files/run-once-services/portainer.sh.sample`
-- To load the required images defined in the `.YML` file
+- To load the required images defined in the `.YML` file:
     -  `stage2-rak/.04-pre-install-containers/files/docker-compose-file`
-- To start the services
+- To start the services:
     - `stage2-rak/.04-pre-install-containers/files/run-once-services/docker-compose.sh.sample`
 
-3. Once a script stored in `stage2-rak/.04-pre-install-containers/files/run-once-services` is completed, it will be moved to the host's `/etc/local/runonce.d/ran` directory, with the date and time appended to its name. There will also be an entry in your syslog.
+3. Once a script stored in `stage2-rak/.04-pre-install-containers/files/run-once-services` is completed, it will be moved to the host's directory `/etc/local/runonce.d/ran`, with the date and time appended to its name. There will also be an entry in your syslog.
 4. To add customized compressed Docker images to the customized RAKPiOS image, use the `docker save` command to create the compressed images first. For example, `docker save -o container-tar-portainer.tar portainer/portainer-ce:2.16.0` will save the image `portainer/portainer-ce:2.16.0` as a compressed file called `container-tar-portainer.tar`.
-5. Move the compressed images to the RAKPiOS build directory (or download the images provided - see `stage2-rak/.04-pre-install-containers/00-run.sh` for an example)
-6. Use `docker load` to load the compressed images (see `stage2-rak/.04-pre-install-containers/files/run-once-services/portainer.sh.sample` for an example).
+5. Move the compressed images to the RAKPiOS build directory. You can also download the images provided - refer to `stage2-rak/.04-pre-install-containers/00-run.sh` for example.
+6. Use `docker load` to load the compressed images. Check `stage2-rak/.04-pre-install-containers/files/run-once-services/portainer.sh.sample`.

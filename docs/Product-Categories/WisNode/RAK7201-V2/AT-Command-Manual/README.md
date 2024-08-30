@@ -1,6 +1,6 @@
 ---
 rak_desc: For an easier experience with your LoRaWAN Module, a comprehensive list of commands for the LoRa P2P and LoRaWAN communication is provided. A serial communication interface is also presented for the two-way communication of the RAK7201V2.
-rak_img: /assets/images/wisnode/rak7201-v2/datasheet/RAK7201V2.png
+rak_img: https://images.docs.rakwireless.com/wisnode/rak7201v2/datasheet/rak7201v2.png
 prev: ../Quickstart/
 next: ../Datasheet/
 tags:

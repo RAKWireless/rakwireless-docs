@@ -181,6 +181,7 @@ This section discusses the different interaces of RAK7391 WisGate Connect.
         - [mPCIe Interfaces](#mpcie-interfaces)
         - [M.2 Interface](#m2-interface)
         - [WisBlock IO Slots](#wisblock-io-slots)
+      - [Mechanical Characteristics](#mechanical-characteristics)
   - [Certification](#certification)
 
 
@@ -315,7 +316,9 @@ If you want to use ID_SC and ID_SD signals on the Raspberry PI Hat, you can remo
 | Real-Time Clock	   | PCF85063A	| 0x51            |
 | Secure IC	         | ATECC608A	| 0x60            |
 
-Note you can change the address of some of these devices by modifying the resistor configuration.
+:::tip 📝 NOTE
+You can change the address of some of these devices by modifying the resistor configuration.
+:::
 
 ##### ADC
 
@@ -370,24 +373,26 @@ The mPCIe interfaces schematic:
   caption="mPCIe Schematic"
 />
 
-Note:
+  * SPI0.0 (`/dev/spidev0.0`) is available on slot #1.
+  * SPI0.1 (`/dev/spidev0.1`) is available on slot #2.
+  * UART0 (GPIO 14/15) is available on slot #1.
+  * GPIO6 is reset signal on slot #2 (SX130X_RESET).
+  * GPIO17 is reset signal on slot #1 (SX130X_RESET).
+  * GPIO25 is connected to slot#1 pin 23 (RESET_GPS on some LoRaWAN concentrators).
+  * GPIO26 is connected to slot#1 pin 19 (PPS on some LoRaWAN concentrators).
+  * IO0.0 is connected to !WAKE on slot #3.
+  * IO0.1 is connected to COEX1 on slot #3.
+  * IO0.2 is connected to COEX2 on slot #3.
+  * IO0.3 is connected to !DISABLE on slot #3.
+  * IO0.4 is connected to !WAKE on slot #2.
+  * IO0.5 is connected to !DISABLE on slot #2.
+  * USB2.0 is available on slots #1 and #2.
+  * USB3.0 is available on slot #3.
+  * 1x PCIe lane is available on slot #3.
 
-  * SPI0.0 (`/dev/spidev0.0`) is available on slot #1
-  * SPI0.1 (`/dev/spidev0.1`) is available on slot #2
-  * UART0 (GPIO 14/15) is available on slot #1
-  * GPIO6 is reset signal on slot #2 (SX130X_RESET)
-  * GPIO17 is reset signal on slot #1 (SX130X_RESET)
-  * GPIO25 is connected to slot#1 pin 23 (RESET_GPS on some LoRaWAN concentrators)
-  * GPIO26 is connected to slot#1 pin 19 (PPS on some LoRaWAN concentrators)
-  * IO0.0 is connected to !WAKE on slot #3
-  * IO0.1 is connected to COEX1 on slot #3
-  * IO0.2 is connected to COEX2 on slot #3
-  * IO0.3 is connected to !DISABLE on slot #3
-  * IO0.4 is connected to !WAKE on slot #2
-  * IO0.5 is connected to !DISABLE on slot #2
-  * USB2.0 is available on slots #1 and #2
-  * USB3.0 is available on slot #3
-  * 1x PCIe lane is available on slot #3
+:::tip 📝 NOTE
+MiniPCIe slot #1 has UART wired to the main UART in the CM4. If using a LoRaWAN Concentrator with GPS support over UART, place it in that slot and disable login shell and enable serial port using `raspi-config` to read the GPS data on `/dev/ttyAMA0` or `/dev/ttyS0`.
+:::
 
 ##### M.2 Interface
 

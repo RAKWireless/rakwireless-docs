@@ -14,6 +14,6 @@ The Hardware page contains Product Change Notifications (PCNs), which serve as c
     - [RAK10701 WisNode Map Series PCN June 22](https://downloads.rakwireless.com/PCN/WisNode/RAK10701/Product%20Change%20Notification-PCN20240622001_RAK10701%20Frequency%20Option%20Update-202406221624.pdf)
     - [WisBlock Meshtastic Starter Kit PCN June 13](https://downloads.rakwireless.com/PCN/WisBlock/Meshtastic%20Starter%20Kit/Product%20Change%20Notification-PCN20240613001_Meshtastic%20Starter%20Kit%20LoRa%20Antenna%20Update202406131559.pdf)
     - [RAK7240 WisGate Edge Prime PCN June 12](https://downloads.rakwireless.com/PCN/WisGate/RAK7240%20WisGate%20Edge%20Prime/Product%20Change%20Notification-PCN20240612001_WisGate%20Edge%20Prime%20RAK7240%20Update202406121408.pdf)
-    - [WisDuo PCN April 28](https://downloads.rakwireless.com/PCN/WisDuo/Product%20Change%20Notification-PCN20240428001_WisDuo%20Frequency%20Option%20Update%20V2%20BG.pdf)
+    - [WisDuo PCN April 28](https://downloads.rakwireless.com/PCN/WisDuo/Product%20Change%20Notification-PCN20240428001_WisDuo%20Frequency%20Option%20Update.pdf)
     - [WisBlock Meshtastic Starter Kit PCN March 29](https://downloads.rakwireless.com/PCN/WisBlock/Meshtastic%20Starter%20Kit/Product%20Change%20Notification-PCN202404261748_Meshtastic%20Starter%20Kit%20LoRa%20Antenna%20Update202404261748.pdf)
     - [RAK9155 Battery Plus PCN March 6](https://downloads.rakwireless.com/PCN/Accessories/RAK9155%20Battery%20Plus/Product%20Change%20Notice%20(PCN)-PCN202403081153_RAK9155%20Solar%20Panel%20Update.pdf)

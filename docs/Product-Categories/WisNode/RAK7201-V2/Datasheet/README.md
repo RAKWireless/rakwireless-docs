@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your RAK7201V2 to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
-rak_img: /assets/images/wisnode/rak7201-v2/datasheet/RAK7201V2.png
+rak_img: https://images.docs.rakwireless.com/wisnode/rak7201v2/datasheet/rak7201v2.png
 prev: ../AT-Command-Manual/
 next: ../Firmware-Upgrade-Guide/
 tags:
@@ -20,7 +20,7 @@ The **RAK7201V2 WisNode Button 4K** is a remote wireless trigger device. It supp
 With its long-range wireless connectivity, impressive battery life, and four programmable buttons, this device is suitable for a wide range of applications. The Button is suitable for a variety of Smart Home applications, including entertainment system control, light control, an alarm snooze button, and a remote trigger.
 
 <rk-img
-    src="/assets/images/wisnode/rak7201-v2/datasheet/RAK7201V2.png"
+    src="https://images.docs.rakwireless.com/wisnode/rak7201v2/datasheet/rak7201v2.png"
     width="40%"
     caption="RAK7201V2 WisNode Button 4k"
 />
@@ -62,7 +62,7 @@ With its long-range wireless connectivity, impressive battery life, and four pro
 <br>
 
 <rk-img
-    src="/assets/images/wisnode/rak7201-v2/datasheet/2.deployment.png"
+    src="https://images.docs.rakwireless.com/wisnode/rak7201v2/datasheet/2.deployment.png"
     width="90%"
     caption="Typical Deployment Scenario"
 />
@@ -95,7 +95,7 @@ The RAK7201V2 supports different LoRaWAN frequency bands for different country r
 #### Actuators
 
 <rk-img
-    src="/assets/images/wisnode/rak7201-v2/datasheet/3.buttons-leds.png"
+    src="https://images.docs.rakwireless.com/wisnode/rak7201v2/datasheet/3.buttons-leds.png"
     width="60%"
     caption="RAK7201V2 Buttons and LEDs"
 />

@@ -1,6 +1,6 @@
 ---
 rak_desc: A step-by-step guide in installing and upgrading the latest firmware of your RAK7201V2. With this guide, you can ensure that your LoRaWAN Module is always updated, and you can also use this to upload your custom firmware.
-rak_img: /assets/images/wisnode/rak7201-v2/datasheet/RAK7201V2.png
+rak_img: https://images.docs.rakwireless.com/wisnode/rak7201v2/datasheet/rak7201v2.png
 prev: ../Datasheet/
 next: false
 tags:
@@ -37,7 +37,7 @@ The OS used for this guide is Windows.
 5. Open the DFU Tool.
 
 <rk-img
-    src="/assets/images/wisnode/rak7201-v2/firmware-upgrade-guide/1.rak-dfu.png"
+    src="https://images.docs.rakwireless.com/wisnode/rak7201v2/firmware-upgrade-guide/1.rak-dfu.png"
     width="75%"
     caption="RAK DFU tool overview"
 />
@@ -49,7 +49,7 @@ If you have multiple serial devices connected to your PC, you can check the Seri
 :::
 
 <rk-img
-    src="/assets/images/wisnode/rak7201-v2/firmware-upgrade-guide/2.port-number.png"
+    src="https://images.docs.rakwireless.com/wisnode/rak7201v2/firmware-upgrade-guide/2.port-number.png"
     width="40%"
     caption="Checking the serial port number"
 />
@@ -58,7 +58,7 @@ If you have multiple serial devices connected to your PC, you can check the Seri
 8. Select the firmware by pressing the **Select Firmware** button, and navigate to the downloaded `.bin` file.
 
 <rk-img
-    src="/assets/images/wisnode/rak7201-v2/firmware-upgrade-guide/3.firmware.png"
+    src="https://images.docs.rakwireless.com/wisnode/rak7201v2/firmware-upgrade-guide/3.firmware.png"
     width="75%"
     caption="Selecting the firmware"
 />
@@ -72,7 +72,7 @@ Do not cancel the process or disconnect the button.
 :::
 
 <rk-img
-    src="/assets/images/wisnode/rak7201-v2/firmware-upgrade-guide/4.upgrade-process.png"
+    src="https://images.docs.rakwireless.com/wisnode/rak7201v2/firmware-upgrade-guide/4.upgrade-process.png"
     width="75%"
     caption="Upgrade process"
 />
@@ -80,7 +80,7 @@ Do not cancel the process or disconnect the button.
 10. Upon successful upgrade, the device will automatically run the new firmware, restart, and join the network. At this time, the four blue LED lights of the device will flash clockwise 1-2-4-3, indicating the normal operation of the new firmware.
 
 <rk-img
-    src="/assets/images/wisnode/rak7201-v2/firmware-upgrade-guide/5.success.png"
+    src="https://images.docs.rakwireless.com/wisnode/rak7201v2/firmware-upgrade-guide/5.success.png"
     width="75%"
     caption="Successful firmware upgrade"
 />

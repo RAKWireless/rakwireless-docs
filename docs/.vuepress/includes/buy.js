@@ -185,7 +185,7 @@ export default {
   },
   '/Product-Categories/WisNode/RAK7201-V2/': {
     label: 'RAK7201V2 WisNode Button 4K',
-    img: '/assets/images/wisnode/rak7201-v2/datasheet/RAK7201V2.png',
+    img: '/assets/images/wisnode/rak7201-v2/datasheet/rak7201-v2.png',
     store: 'https://store.rakwireless.com/products/wisnode-button-4k-rak7201v2?utm_source=RAK7201V2WisNodeButton4K&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
