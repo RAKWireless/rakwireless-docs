@@ -367,20 +367,22 @@ If the host microcontroller code is based on this old firmware, we have a [RAK31
 | ------------------ | --------- | ----------------------- | ----------------- | ----------------------------------- | ------ |
 | RAK3172-8-SM-NI    | RAK3172   | Without TCXO            | No IPEX           | 8XX MHz for RU864/IN865/EU868       | 305044 |
 | RAK3172-9-SM-NI    | RAK3172   | Without TCXO            | No IPEX           | 9XX MHz for US915/AU915/KR920/AS923 | 306041 |
+| RAK3172-9-SM-NI    | RAK3172   | Without TCXO            | No IPEX           | AS923-1 Japan                       | 309044 |
 | RAK3172-43-SM-NI   | RAK3172   | Without TCXO            | No IPEX           | EU433                               | 301026 |
 | RAK3172-47-SM-NI   | RAK3172   | Without TCXO            | No IPEX           | CN470                               | 302033 |
 | RAK3172-T-8-SM-NI  | RAK3172-T | With ±2.5&nbsp;ppm TCXO | No IPEX           | 8XX MHz for RU864/IN865/EU868       | 305054 |
-| RAK3172-T-8-SM-NI  | RAK3172-T | With ±2.5&nbsp;ppm TCXO | No IPEX           | 8XX MHz for RU864/IN865/EU868       | 305054 |
-| RAK3172-T-8-SM-NI  | RAK3172-T | With ±2.5&nbsp;ppm TCXO | No IPEX           | 8XX MHz for RU864/IN865/EU868       | 305054 |
 | RAK3172-T-9-SM-NI  | RAK3172-T | With ±2.5&nbsp;ppm TCXO | No IPEX           | 9XX MHz for US915/AU915/KR920/AS923 | 306051 |
+| RAK3172-T-9-SM-NI  | RAK3172-T | With ±2.5&nbsp;ppm TCXO | No IPEX           | AS923-1 Japan                       | 309054 |
 | RAK3172-T-43-SM-NI | RAK3172-T | With ±2.5&nbsp;ppm TCXO | No IPEX           | EU433                               | 301029 |
 | RAK3172-T-47-SM-NI | RAK3172-T | With ±2.5&nbsp;ppm TCXO | No IPEX           | CN470                               | 302037 |
 | RAK3172-8-SM-I     | RAK3172   | Without TCXO            | With IPEX         | 8XX MHz for RU864/IN865/EU868       | 305045 |
 | RAK3172-9-SM-I     | RAK3172   | Without TCXO            | With IPEX         | 9XX MHz for US915/AU915/KR920/AS923 | 306042 |
+| RAK3172-9-SM-I     | RAK3172   | Without TCXO            | With IPEX         | AS923-1 Japan                       | 309044 |
 | RAK3172-43-SM-I    | RAK3172   | Without TCXO            | With IPEX         | EU433                               | 301025 |
 | RAK3172-47-SM-I    | RAK3172   | Without TCXO            | With IPEX         | CN470                               | 302032 |
 | RAK3172-T-8-SM-I   | RAK3172-T | With ±2.5&nbsp;ppm TCXO | With IPEX         | 8XX MHz for RU864/IN865/EU868       | 305055 |
-| RAK3172-T-9-SM-I   | RAK3172-T | With ±2.5&nbsp;ppm TCXO | With IPEX         | 9XX MHz for US915/AU915/KR920/AS923 | 306052 |
+| RAK3172-T-9-SM-I   | RAK3172-T | With ±2.5&nbsp;ppm TCXO | With IPEX         | 9XX MHz for US915/AU915/KR920/AS923 | 309055 |
+| RAK3172-T-9-SM-I   | RAK3172-T | With ±2.5&nbsp;ppm TCXO | With IPEX         | AS923-1 Japan                       | 306052 |
 | RAK3172-T-43-SM-I  | RAK3172-T | With ±2.5&nbsp;ppm TCXO | With IPEX         | EU433                               | 301030 |
 | RAK3172-T-47-SM-I  | RAK3172-T | With ±2.5&nbsp;ppm TCXO | With IPEX         | CN470                               | 302038 |
 

@@ -5,7 +5,7 @@ tags:
   - UPS 12WA-DC Mini
   - quickstart
 rak_desc: Contains instructions and tutorials on using your 12WA-DC Mini UPS. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your device.
-rak_img: /assets/images/accessories/ups-12wa-dc-mini/overview.png
+rak_img: /assets/images/accessories/ups-12wa-dc/overview.png
 ---
 
 # 12WA-DC Mini UPS Quick Start Guide
@@ -13,7 +13,7 @@ rak_img: /assets/images/accessories/ups-12wa-dc-mini/overview.png
 ## Connecting 12WA-DC Mini UPS and RAK7268
 
 <rk-img
-  src="/assets/images/accessories/ups-12wa-dc-mini/connection.png"
+  src="/assets/images/accessories/ups-12wa-dc/connection.png"
   width="70%"
   caption="UPS 12WA-DC Mini and RAK7268 Connection"
 />

@@ -36,7 +36,7 @@ If you can't find a module that fits your IoT requirements, use the standard con
 * Supports lithium battery charging
 * Supports solar charging
 * Fulfills Industrial level design
-* Compact size: 30 x 35&nbsp;mm
+* Compact size: 30 x 37&nbsp;mm
 
 ## Specifications
 

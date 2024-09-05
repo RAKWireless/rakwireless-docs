@@ -244,7 +244,7 @@ The firmware operates on OpenWRT, providing a user-friendly Web UI for convenien
 
 |                 Model                 | Firmware Version |                                            Source                                            |
 | :-----------------------------------: | :--------------: | :------------------------------------------------------------------------------------------: |
-| RAK7289V2/RAK7289CV2 WisGate Edge Pro |      v2.2.1      | [Download](https://downloads.rakwireless.com/LoRa/WisGateOS2/WisGateOS2_Latest_Firmware.zip) |
+| RAK7289V2/RAK7289CV2 WisGate Edge Pro |      v2.2.8      | [Download](https://downloads.rakwireless.com/LoRa/WisGateOS2/WisGateOS2_Latest_Firmware.zip) |
 
 ### Software
 

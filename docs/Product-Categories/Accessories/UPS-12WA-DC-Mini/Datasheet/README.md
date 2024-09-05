@@ -1,6 +1,6 @@
 ---
 rak_desc: Provides comprehensive information about your 12WA-DC mini UPS to help you use it. This information includes technical specifications and characteristics.
-rak_img: /assets/images/accessories/ups-12wa-dc-mini/overview.png
+rak_img: /assets/images/accessories/ups-12wa-dc/overview.png
 prev: ../Quickstart/
 next: false
 tags:
@@ -38,7 +38,7 @@ This Mini UPS ensures that your equipment remains powered on for 1.5-2 hours dur
 ### Overview
 
 <rk-img
-  src="/assets/images/accessories/ups-12wa-dc-mini/overview.png"
+  src="/assets/images/accessories/ups-12wa-dc/overview.png"
   width="55%"
   caption="UPS 12WA-DC Mini overview"
 />
@@ -46,7 +46,7 @@ This Mini UPS ensures that your equipment remains powered on for 1.5-2 hours dur
 #### Functional Diagram
 
 <rk-img
-  src="/assets/images/accessories/ups-12wa-dc-mini/3.function-diagram.png"
+  src="/assets/images/accessories/ups-12wa-dc/3.function-diagram.png"
   width="70%"
   caption="UPS 12WA-DC Mini function diagram"
 />
@@ -56,7 +56,7 @@ This Mini UPS ensures that your equipment remains powered on for 1.5-2 hours dur
 #### Interfaces
 
 <rk-img
-  src="/assets/images/accessories/ups-12wa-dc-mini/diagram.png"
+  src="/assets/images/accessories/ups-12wa-dc/diagram.png"
   width="75%"
   caption="UPS 12WA-DC Mini interfaces"
 />
@@ -71,10 +71,10 @@ This Mini UPS ensures that your equipment remains powered on for 1.5-2 hours dur
 
 | Symbol                                                                 | Description                                                                                                       |
 | ---------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| ![Icon](/assets/images/accessories/ups-12wa-dc-mini/lightning.png)     | **RED ON**: The UPS is charging.<br>**RED OFF**: The UPS is fully charged.                                        |
-| ![Icon](/assets/images/accessories/ups-12wa-dc-mini/full_battery.png)  | **BLUE ON (without input)**: The UPS is not receiving input power but is providing power to the connected device. |
-| ![Icon](/assets/images/accessories/ups-12wa-dc-mini/socket.png)        | **BLUE ON (with input)**: The device is powered by the main supply, and the UPS is not releasing energy.          |
-| ![Icon](/assets/images/accessories/ups-12wa-dc-mini/empty_battery.png) | **RED ON (low power)**: The UPS is in a low power state.                                                          |
+| ![Icon](/assets/images/accessories/ups-12wa-dc/lightning.png)     | **RED ON**: The UPS is charging.<br>**RED OFF**: The UPS is fully charged.                                        |
+| ![Icon](/assets/images/accessories/ups-12wa-dc/full_battery.png)  | **BLUE ON (without input)**: The UPS is not receiving input power but is providing power to the connected device. |
+| ![Icon](/assets/images/accessories/ups-12wa-dc/socket.png)        | **BLUE ON (with input)**: The device is powered by the main supply, and the UPS is not releasing energy.          |
+| ![Icon](/assets/images/accessories/ups-12wa-dc/empty_battery.png) | **RED ON (low power)**: The UPS is in a low power state.                                                          |
 
 ##### On/Off switch and working modes
 

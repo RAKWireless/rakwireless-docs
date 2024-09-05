@@ -52,7 +52,7 @@ Additionally, it has two user-definable LEDs - one power supply/charging indicat
     * Has an electronic load switch to power the **WisBlock modules**. The power supply for the **WisBlock modules** boards can be controlled by the **WisBlock Core** modules application.
 
 * **Size**
-    * A compact size of 30 x 35&nbsp;mm, which lets you create solutions that fit into smallest housings.
+    * A compact size of 30 x 37&nbsp;mm, which lets you create solutions that fit into smallest housings.
 
 
 ## Prerequisites

@@ -12,7 +12,7 @@
     </div>
     <div class="column q-mx-md text-center">
       <span>
-        © 2014-2023
+        © 2014-2024
         <a
           href="https://www.rakwireless.com/en-us/?utm_source=RAK-Doc-Home&utm_medium=footer"
           target="_blank"

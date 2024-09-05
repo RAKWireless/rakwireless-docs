@@ -25,7 +25,6 @@ certifications:
 
 # RAK7268V2/RAK7268CV2 WisGate Edge Lite 2 Datasheet
 
-
 ## Overview
 
 ### Description
@@ -51,9 +50,8 @@ RAK7268V2 is especially suitable for small and medium-sized deployment scenarios
 - LTE Cat 4 network (optional)
 
 :::tip 📝 NOTE:
-A model of RAK7268V2/RAK7268CV2 WisGate Edge Lite 2 is available upon request, featuring support for 9~24&nbsp;V<sub>DC</sub> power input. For more information or to make a purchase, kindly contact [inquiry@rakwireless.com](mailto:inquiry@rakwireless.com).
+A 9~24 VDC power input version of RAK7268V2 or RAK7268CV2 WisGate Edge Lite 2 is available upon request. For more information or to make a purchase, kindly contact [inquiry@rakwireless.com](mailto:inquiry@rakwireless.com).
 :::
-
 
 ## Specifications
 
@@ -78,6 +76,68 @@ The overview presents the block diagram for the RAK7268V2 that shows the interna
   caption="RAK7268CV2 WisGate Edge Lite 2 with LTE Block Diagram"
 />
 
+### Main Specifications
+
+<table>
+    <thead>
+      <tr><th>Feature</th><th>Specifications</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>Computing</td><td>MT7628, DDR2 RAM 128&nbsp;MB</td></tr>
+        <tr><td rowspan="4">Wi-Fi Feature</td><td>Frequency: 2.4&nbsp;GHz (802.11b /g / n)</td></tr>
+        <tr><td>RX Sensitivity:﹣95&nbsp;dBm (Min)</td></tr>
+        <tr><td>TX Power: 20&nbsp;dBm (Max)</td></tr>
+        <tr><td>Operation channels: 2.4&nbsp;GHz, 1-13</td></tr>
+        <tr><td rowspan="5">LoRa Feature</td><td>SX1302 Mini PCIe card</td></tr>
+        <tr><td>8 Channels</td></tr>
+        <tr><td>RX Sensitivity:﹣139&nbsp;dBm (Min)</td></tr>
+        <tr><td>TX Power: 27&nbsp;dBm (Max)</td></tr>
+        <tr><td>Frequency: EU868 / IN865 / RU864 / US915 / AU915 / KR920 /AS923-1-2-3-4 / EU433 / CN470</td></tr>
+        <tr><td rowspan="23">Cellular Feature (optional, available with RAK7268CV2)</td><td><b>Nano SIM Card:</b> 12.30 x 8.80 x 0.67&nbsp;mm<br>Supports Quectel EG95-E / EG95-NA / EC25-J / EC25-AU / EC25-E (IoT / M2M -optimized LTE Cat 4 Module)</td></tr>
+        <tr><td><b>EG95-E for EMEA Region</b></td></tr>
+        <tr><td>LTE FDD: B1 / B3 / B7 / B8 / B20 / B28A</td></tr>
+        <tr><td>WCDMA: B1 / B8</td></tr>
+        <tr><td>GSM/EDGE: B3 / B8</td></tr>
+        <tr><td><b>EG95-NA for North America Region</b></td></tr>
+        <tr><td>LTE FDD: B2 / B4 / B5 / B12 / B13</td></tr>
+        <tr><td>WCDMA: B2 / B4 / B5</td></tr>
+        <tr><td><b>EC25-J for Japan Region</b></td></tr>
+        <tr><td>LTE FDD: B1 / B3 / B8 / B18 / B19 / B26</td></tr>
+        <tr><td>LTE TDD: B41</td></tr>
+        <tr><td>WCDMA: B1 / B6 / B8 /B19</td></tr>
+        <tr><td><b>EC25-AU for Latin American/Australia/New Zealand Region</b></td></tr>
+        <tr><td>LTE FDD: B1 / B2 / B3/ B4/ B5 / B7 / B8 /B28</td></tr>
+        <tr><td>LTE TDD: B40</td></tr>
+        <tr><td>WCDMA: B1 / B2 / B5 / B8</td></tr>
+        <tr><td>GSM: B2 / B3 / B5 / B8</td></tr>
+        <tr><td><b>EC25-E for Korea/India Region</b></td></tr>
+        <tr><td>LTE FDD: B1 / B3 / B5 / B7 / B8 / B20</td></tr>
+        <tr><td>LTE TDD: B38 / B40 / B41</td></tr>
+        <tr><td>WCDMA: B1 / B5 / B8</td></tr>
+        <tr><td>GSM: B3 / B8</td></tr>
+        <tr><td><b>Optional supports other PCIe LTE module for Global Region</b></td></tr>
+        <tr><td rowspan="3">Power Supply</td><td>DC 12&nbsp;V - 1&nbsp;A</td></tr>
+        <tr><td>PoE (IEEE 802.3 af), 36~57&nbsp;VDC</td></tr>
+        <tr><td>(Optional) 9~24&nbsp;VDC input upon request. Kindly contact <a href="mailto:inquiry@rakwireless.com">inquiry@rakwireless.com</a>. </td></tr>
+        <tr><td>Power Consumption</td><td>12&nbsp;W (typical)</td></tr>
+        <tr><td>ETH</td><td>RJ45 (10/100 M)</td></tr>
+        <tr><td>Console</td><td>Type-C USB</td></tr>
+        <tr><td rowspan="2">Antenna</td><td>LoRa: RP-SMA female connector</td></tr>
+        <tr><td>Wi-Fi / LTE: Internal antenna</td></tr>
+        <tr><td rowspan="6">LEDs</td><td>Power LED</td></tr>
+        <tr><td>Breathing LED (Top side)</td></tr>
+        <tr><td>ETH LED (On ETH connector)</td></tr>
+        <tr><td>LoRa LED</td></tr>
+        <tr><td>WLAN LED</td></tr>
+        <tr><td>LTE LED (functional only in RAK7268CV2)</td></tr>
+        <tr><td>Ingress Protection</td><td>IP30</td></tr>
+        <tr><td>Enclosure Material</td><td>Plastic (PC+ABS)</td></tr>
+        <tr><td>Weight</td><td>0.3 kg</td></tr>
+        <tr><td>Dimensions</td><td>166 x 127.5 x 36&nbsp;mm Gateway only (no antenna, no bracket)</td></tr>
+        <tr><td>Operating Conditions</td><td>Operating Temperature:﹣10&nbsp;˚C to﹢55&nbsp;˚C<br>Storage Temperature:﹣40&nbsp;˚C to﹢85&nbsp;˚C<br>Operating Humidity: 0~95&nbsp;% RH non-condensing<br>Storage Humidity: 0~95&nbsp;% RH non-condensing</td></tr>
+        <tr><td>Installation Method</td><td>Desktop mounting<br>Wall mounting (via included bracket)<br>Rail mounting (via included bracket)</td></tr>
+    </tbody>
+</table>
 
 ### Hardware
 
@@ -85,9 +145,7 @@ The hardware specification covers the interfacing of the RAK7268V2 and its corre
 
 #### Interfaces
 
-
-The hardware interfaces of RAK7268V2 gateway include DC 12 V, ETH interface, Console interface, Reset key, SD Card slot, Status indicator LEDs, LoRa Antenna connector, etc.
-
+The hardware interfaces of RAK7268V2 / RAK7268CV2 gateway include DC 12 V, ETH interface, Console interface, Reset key, SD Card slot, NanoSIM Card slot, Status indicator LEDs, LoRa Antenna connector, etc.
 
 <rk-img
   src="/assets/images/wisgate/rak7268-v2/datasheet/interfaces.png"
@@ -95,14 +153,20 @@ The hardware interfaces of RAK7268V2 gateway include DC 12 V, ETH interface, Con
   caption="RAK7268V2 interfaces"
 />
 
+:::tip 📝 NOTE
+
+- Both RAK7268V2 and RAK7268CV2 have SIM slots, but only RAK7268CV2 has an integrated cellular module.
+
+- The SD card found in the SD card slot must not be ejected, as it might affect the performance of the device, as different logs and data are stored on it.
+
+:::
 
 ##### Reset Key Functions
 
+The functions of the Reset key are as follows:
 
-The function of the Reset key is as follows:
-
-  - **Short press**: Restart the gateway.
-  - **Long press** (5&nbsp;sec and above): Restore factory settings.
+- **Short press**: Restart the gateway.
+- **Long press** (5&nbsp;sec and above): Restore factory settings.
 
 ##### LED Indicators
 
@@ -133,66 +197,6 @@ only in RAK7268CV2)</td><td>Slow Flicker (1800&nbsp;ms High / 200&nbsp;ms Low) -
         <tr><td>Fast flicker (125&nbsp;ms High / 125&nbsp;ms Low) - Ongoing data transfer</td></tr>
     </tbody>
 </table>
-
-
-
-#### Main Specifications
-
-<table>
-    <thead>
-      <tr><th>Feature</th><th>Specifications</th></tr>
-    </thead>
-    <tbody>
-        <tr><td>Computing</td><td>MT7628, DDR2 RAM 128&nbsp;MB</td></tr>
-        <tr><td rowspan="4">Wi-Fi feature</td><td>Frequency: 2.4&nbsp;GHz (802.11b/g/n)</td></tr>
-        <tr><td>RX Sensitivity: -95&nbsp;dBm (Min)</td></tr>
-        <tr><td>TX Power: 20&nbsp;dBm (Max)</td></tr>
-        <tr><td>Operation channels: 2.4&nbsp;GHz: 1-13</td></tr>
-        <tr><td rowspan="5">LoRa feature</td><td>SX1302 Mini PCIe card</td></tr>
-        <tr><td>8 Channels</td></tr>
-        <tr><td>RX Sensitivity: -139&nbsp;dBm (Min)</td></tr>
-        <tr><td>TX Power: 27&nbsp;dBm (Max)</td></tr>
-        <tr><td>Frequency: EU433/CN470/EU868/US915/AS923/AU915/IN865/KR920</td></tr>
-        <tr><td rowspan="9">Cellular (optional, available with RAK7268CV2)</td><td>Supports Quectel EG95-E/EG95-NA (IoT/M2M -optimized LTE Cat 4 Module)</td></tr>
-        <tr><td>EG95-E for EMEA Region</td></tr>
-        <tr><td>- LTE FDD: B1/B3/B7/B8/B20/B28A</td></tr>
-        <tr><td>- WCDMA: B1/B8</td></tr>
-        <tr><td>- GSM/EDGE: B3/B8</td></tr>
-        <tr><td>EG95-NA for North America Region</td></tr>
-        <tr><td>- LTE FDD: B2/B4/B5/B12/B13</td></tr>
-        <tr><td>- WCDMA: B2/B4/B5</td></tr>
-        <tr><td>Optional supports other PCIe LTE module for Global Region</td></tr>
-        <tr><td rowspan="3">Power supply</td><td>DC 12&nbsp;V - 1&nbsp;A</td></tr>
-        <tr><td>PoE (IEEE 802.3 af), 36~57&nbsp;VDC</td></tr>
-        <tr><td>(Optional) 9-24&nbsp;V<sub>DC</sub> input upon request. Kindly contact <a href="mailto:inquiry@rakwireless.com">inquiry@rakwireless.com</a>. </td></tr>
-        <tr><td>Power consumption</td><td>12&nbsp;W (typical)</td></tr>
-        <tr><td>ETH</td><td>RJ45 (10/100 M)</td></tr>
-        <tr><td>Console</td><td>Type-C USB</td></tr>
-        <tr><td rowspan="3">Antenna</td><td>LoRa: RP-SMA female connector</td></tr>
-        <tr><td>LTE: Internal antenna</td></tr>
-        <tr><td>Wi-Fi: Internal antenna</td></tr>
-        <tr><td rowspan="6">LEDs</td><td>POWER LED</td></tr>
-        <tr><td>Breathing LED (Top side)</td></tr>
-        <tr><td>ETH LED (On ETH connector)</td></tr>
-        <tr><td>LoRa LED</td></tr>
-        <tr><td>WLAN LED</td></tr>
-        <tr><td>LTE LED (functional only in RAK7268CV2)</td></tr>
-        <tr><td>Ingress protection</td><td>IP30</td></tr>
-        <tr><td>Enclosure material</td><td>Plastic</td></tr>
-        <tr><td>Weight</td><td>0.3 kg</td></tr>
-        <tr><td>Dimensions</td><td>166 x 127.5 x 36&nbsp;mm</td></tr>
-        <tr><td>Operating temperature</td><td>-10 to 55&nbsp;˚C</td></tr>
-        <tr><td>Installation method</td><td>Wall mounting</td></tr>
-    </tbody>
-</table>
-
-
-:::tip 📝 NOTE
-
-Both RAK7268V2 and RAK7268CV2 have SIM slots, but only RAK7268CV2 has an integrated cellular module.
-
-:::
-
 
 #### RF Specifications
 
@@ -229,7 +233,6 @@ Both RAK7268V2 and RAK7268CV2 have SIM slots, but only RAK7268CV2 has an integra
     </tbody>
 </table>
 
-
 ##### LoRa Radio Specifications
 
 
@@ -243,7 +246,6 @@ Both RAK7268V2 and RAK7268CV2 have SIM slots, but only RAK7268CV2 has an integra
         <tr><td>Receiver Sensitivity</td><td>-139&nbsp;dBm (Min)</td></tr>
 </tbody>
 </table>
-
 
 ##### LTE Radio Specifications (optional, available with RAK7268CV2)
 
@@ -260,8 +262,6 @@ Both RAK7268V2 and RAK7268CV2 have SIM slots, but only RAK7268CV2 has an integra
 </tbody>
 </table>
 
-
-
 #### Antennas
 
 Depending on the frequency range, the included LoRa antenna will be as follows:
@@ -269,11 +269,24 @@ Depending on the frequency range, the included LoRa antenna will be as follows:
 - Frequency Range 863~870&nbsp;MHz - [RAKARJ15 868&nbsp;MHz White Blade Antenna](https://docs.rakwireless.com/Product-Categories/Accessories/RAKARJ15/Overview/#features)
 - Frequency Range 902~928&nbsp;MHz - [RAKARJ14 915&nbsp;MHz White Blade Antenna](https://docs.rakwireless.com/Product-Categories/Accessories/RAKARJ14/Overview/)
 
-
 #### Electrical Characteristics
 
 The Gateway comes with a 12&nbsp;V - 1&nbsp;A power adaptor. It is also fully compatible with PoE (IEEE 802.3af), 36~57&nbsp;VDC. The typical power consumption is 12&nbsp;W.
 
+#### Mechanical Characteristics
+
+<table>    
+    <thead>
+        <tr><th>Parameter</th><th colspan="3">Value</th></tr>
+    </thead>    
+    <tbody>        
+        <tr><td>Dimensions</td>
+            <td>166 x 127.5 x 36&nbsp;mm Gateway only (no antenna, no bracket)</td>
+        </tr>  
+        <tr><td>Weight</td><td>0.3&nbsp;kg</td></tr>    
+        <tr><td>Ingress protection</td><td>IP30</td></tr>
+    </tbody>
+</table>
 
 #### Environmental Requirements
 
@@ -288,14 +301,6 @@ The casing is IP30 rated and is made of plastic. There are holes for a mounting 
         <tr><td>Operating temperature</td><td>-10&nbsp;°C to 55&nbsp;°C</td></tr>
 </tbody>
 </table>
-
-### Firmware
-
-The firmware sits on OpenWRT. There is a Web UI for easy configuration and management of the device, as well as the possibility for SSH2 management. The WisGateOS V2 supports the feature to install extensions (WireGuard, Custom Logo, Breathing Light, and more to come). The extensions are available in [RAK download center](https://downloads.rakwireless.com/#LoRa/WisGateOS2/WisGateOS2-Extensions/).
-
-|             Model             | Firmware Version |                                            Source                                            |
-| :---------------------------: | :--------------: | :------------------------------------------------------------------------------------------: |
-| RAK7268V2 WisGate Edge Lite 2 |      v2.2.1      | [Download](https://downloads.rakwireless.com/LoRa/WisGateOS2/WisGateOS2_Latest_Firmware.zip) |
 
 ### Software
 
@@ -318,6 +323,13 @@ The firmware sits on OpenWRT. There is a Web UI for easy configuration and manag
 </tbody>
 </table>
 
+### Firmware
+
+The firmware sits on OpenWrt. There is a Web UI for easy configuration and management of the device, as well as the possibility for SSH2 management. The WisGateOS V2 supports the feature to install extensions (OpenVPN, WireGuard, Custom Logo, etc). Detailed information about the extensions can be found on the [WisGateOS 2 Extensions](https://docs.rakwireless.com/Product-Categories/Software-APIs-and-Libraries/WisGateOS-2-Extensions/Overview/#extensions).
+
+|                   Model                    | Firmware Version |                                            Source                                            |
+| :----------------------------------------: | :--------------: | :------------------------------------------------------------------------------------------: |
+| RAK7268V2 / RAK7268CV2 WisGate Edge Lite 2 |      v2.2.8      | [Download](https://downloads.rakwireless.com/LoRa/WisGateOS2/WisGateOS2_Latest_Firmware.zip) |
 
 ## Certification
 
@@ -329,7 +341,6 @@ Any changes or modifications not expressly approved by the party responsible for
 
 This device complies with part 15 of the FCC Rules. Operation is subject to the following two conditions: (1) This device may not cause harmful interference, and (2) this device must accept any interference received, including interference that may cause undesired operation.
 
-
 :::tip 📝 NOTE
 
 This equipment has been tested and found to comply with the limits for a Class B digital device, according to part 15 of the FCC Rules. These limits are designed to provide reasonable protection against harmful interference in a residential installation. This equipment generates, uses, and can radiate radio frequency energy and, if not installed and used following the instructions, may cause harmful interference to radio communications. However, there is no guarantee that interference will not occur in a particular installation. If this equipment does cause harmful interference to radio or television reception, which can be determined by turning the equipment off and on, the user is encouraged to try to correct the interference by one or more of the following measures:
@@ -340,7 +351,6 @@ This equipment has been tested and found to comply with the limits for a Class B
 4. Consult the dealer or an experienced radio/TV technician for help.
 
 :::
-
 
 ### FCC Radiation Exposure Statement
 

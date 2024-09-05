@@ -18,6 +18,10 @@ Thank you for choosing **RAK7200 WisNode Track Lite** in your awesome IoT projec
 * [Datasheet](../Datasheet/)
 * [AT Command Manual](../AT-Command-Manual)
 
+:::warning 📝 IMPORTANT
+RAK7200 WisNode Track Lite has reached End of Life (EOL) and has been superseded by <a href="https://docs.rakwireless.com/Product-Categories/WisBlock/RAK10700/Overview/" target="_blank">RAK10700 WisBlock GNSS Tracker for LoRaWAN</a>.
+:::
+
 ## Product Description
 
 The **RAK7200 WisNode Track Lite** is an LPWAN Tracker device with a 3.7&nbsp;V rechargeable Li-Ion battery and a GPS modem. It is built around low power LPWAN Module, which integrates the ultra low power STM32L073 micro-controller, the SX1276 LoRa long range modem and the CXD5603GF GPS modem.
