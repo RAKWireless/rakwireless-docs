@@ -10,7 +10,7 @@ tags:
     - wisgate
     - datasheet
 certifications:
-    - [CE, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289C_RAK7289V2_CE_Certification.pdf]
+    - [CE, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289_RAK7289V2_CE_Certification.pdf]
     - [FCC, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289_FCC_Certification.pdf]
     - [ISED, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289_ISED_Certification.zip]
     - [JRL, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289CV2_RAK7289V2_JRL_certification.pdf]
@@ -18,10 +18,9 @@ certifications:
     - [KCC, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289_RAK7289C_RAK7289V2_RAK7289CV2_KC_Certification.pdf]
     - [MA, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289V2_MA_Certification.pdf]
     - [NBTC, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289CV2_NBTC_Certification.pdf]
-    - [RCM, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289_RAK7289V2_RCM_Certification.pdf]
     - [REACH, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289C_RAK7289_RAK7289CV2_RAK7289V2_REACH_Report.pdf]
     - [RoHS, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289C_RAK7289_RAK7289CV2_RAK7289V2_RoHS_Report.pdf]
-    - [RCM, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289C_RAK7289CV2_RCM_Certification.pdf]
+    - [RCM, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289_RAK7289V2_RCM_Certification.pdf]
     - [RSM, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289C_RAK7289CV2_RSM_Certification.pdf]
     - [TDRA, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289CV2_TDRA_Certification.pdf]
     - [UKCA, https://downloads.rakwireless.com/LoRa/RAK7289V2/Certification/RAK7289C_RAK7289CV2_UKCA_Certification.pdf]

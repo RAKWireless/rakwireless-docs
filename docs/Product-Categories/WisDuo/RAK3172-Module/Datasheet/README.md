@@ -7,58 +7,19 @@ tags:
   - wisduo
   - RAK3172
 certifications:
-  - [
-      Anatel,
-      https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_ANATEL_Certification.pdf,
-    ]
-  - [
-      CE,
-      https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_CE_Certification.pdf,
-    ]
-  - [
-      FCC,
-      https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_FCC_Certification.zip,
-    ]
-  - [
-      ISED,
-      https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_ISED_Certification.pdf,
-    ]
-  - [
-      JRL,
-      https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_JRL_Certfication.pdf,
-    ]
-  - [
-      KCC,
-      https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_KC_Certification.pdf,
-    ]
-  - [
-      LoRaWAN,
-      https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_Lora_Alliance_Certification.pdf,
-    ]
-  - [
-      RCM,
-      https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_RCM_Certification.pdf,
-    ]
-  - [
-      REACH,
-      https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_REACH_Report.pdf,
-    ]
-  - [
-      RoHS,
-      https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_RoHS_Report.pdf,
-    ]
-  - [
-      RSM,
-      https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_RSM_Certification.pdf,
-    ]
-  - [
-      UKCA,
-      https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_UKCA_Certification.pdf,
-    ]
-  - [
-      WPC,
-      https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_WPC_Certification.pdf,
-    ]
+  - [Anatel, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_ANATEL_Certification.pdf]
+  - [CE, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_CE_Certification.pdf]
+  - [FCC, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_FCC_Certification.zip]
+  - [ISED, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_ISED_Certification.pdf]
+  - [JRL,  https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_JRL_Certfication.pdf]
+  - [KCC, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_KC_Certification.pdf]
+  - [LoRaWAN, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_Lora_Alliance_Certification.pdf]
+  - [RCM, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_RCM_Certification.pdf]
+  - [REACH, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_REACH_Report.pdf]
+  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_RoHS_Report.pdf]
+  - [RSM, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_RSM_Certification.pdf]
+  - [UKCA, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_UKCA_Certification.pdf]
+  - [WPC, https://downloads.rakwireless.com/LoRa/RAK3172/Certification/RAK3172_WPC_Certification.pdf]
 ---
 
 # RAK3172 WisDuo LPWAN Module Datasheet
@@ -377,12 +338,12 @@ If the host microcontroller code is based on this old firmware, we have a [RAK31
 | RAK3172-T-47-SM-NI | RAK3172-T | With ±2.5&nbsp;ppm TCXO | No IPEX           | CN470                               | 302037 |
 | RAK3172-8-SM-I     | RAK3172   | Without TCXO            | With IPEX         | 8XX MHz for RU864/IN865/EU868       | 305045 |
 | RAK3172-9-SM-I     | RAK3172   | Without TCXO            | With IPEX         | 9XX MHz for US915/AU915/KR920/AS923 | 306042 |
-| RAK3172-9-SM-I     | RAK3172   | Without TCXO            | With IPEX         | AS923-1 Japan                       | 309044 |
+| RAK3172-9-SM-I     | RAK3172   | Without TCXO            | With IPEX         | AS923-1 Japan                       | 309045 |
 | RAK3172-43-SM-I    | RAK3172   | Without TCXO            | With IPEX         | EU433                               | 301025 |
 | RAK3172-47-SM-I    | RAK3172   | Without TCXO            | With IPEX         | CN470                               | 302032 |
 | RAK3172-T-8-SM-I   | RAK3172-T | With ±2.5&nbsp;ppm TCXO | With IPEX         | 8XX MHz for RU864/IN865/EU868       | 305055 |
-| RAK3172-T-9-SM-I   | RAK3172-T | With ±2.5&nbsp;ppm TCXO | With IPEX         | 9XX MHz for US915/AU915/KR920/AS923 | 309055 |
-| RAK3172-T-9-SM-I   | RAK3172-T | With ±2.5&nbsp;ppm TCXO | With IPEX         | AS923-1 Japan                       | 306052 |
+| RAK3172-T-9-SM-I   | RAK3172-T | With ±2.5&nbsp;ppm TCXO | With IPEX         | 9XX MHz for US915/AU915/KR920/AS923 | 309052 |
+| RAK3172-T-9-SM-I   | RAK3172-T | With ±2.5&nbsp;ppm TCXO | With IPEX         | AS923-1 Japan                       | 306055 |
 | RAK3172-T-43-SM-I  | RAK3172-T | With ±2.5&nbsp;ppm TCXO | With IPEX         | EU433                               | 301030 |
 | RAK3172-T-47-SM-I  | RAK3172-T | With ±2.5&nbsp;ppm TCXO | With IPEX         | CN470                               | 302038 |
 

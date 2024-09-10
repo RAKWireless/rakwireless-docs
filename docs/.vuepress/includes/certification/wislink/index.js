@@ -38,6 +38,7 @@ export const categoriesWisLink = [
             { country: "Europe", cert: "RoHS", link: "https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification-Report/RAK2287_RoHS_Report.pdf" },
             { country: "USA", cert: "FCC", link: "https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification-Report/RAK2287_FCC_Certification.zip" },
             { country: "Canada", cert: "ISED", link: "https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification-Report/RAK2287_ISED_Certification.zip" },
+            { country: "Australia", cert: "RCM", link: "https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification-Report/RAK2287_RCM_Certification.pdf" },
             { country: "Brazil", cert: "ANATEL", link: "https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification-Report/RAK2287_ANATEL_Certification.pdf" },
             { country: "Korea", cert: "KC", link: "https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification-Report/RAK2287_KC_Certification.zip" },
             { country: "Taiwan, China", cert: "NCC", link: "https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification-Report/RAK2287_NCC_Certification.pdf" },

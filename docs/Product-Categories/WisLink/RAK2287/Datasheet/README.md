@@ -13,6 +13,7 @@ certifications:
   - [KCC, https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification-Report/RAK2287_KC_Certification.zip]
   - [NCC, https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification-Report/RAK2287_NCC_Certification.pdf]
   - [REACH, https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification-Report/RAK2287_REACH_Report.pdf]
+  - [RCM, https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification-Report/RAK2287_RCM_Certification.pdf]
   - [RoHS, https://downloads.rakwireless.com/LoRa/RAK2287-Mini-PCIe/Certification-Report/RAK2287_RoHS_Report.pdf]
 
 rak_desc: Provides comprehensive information about your RAK2287 WisLink LPWAN Concentrator to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
