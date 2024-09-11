@@ -359,7 +359,7 @@ If you want to use TTN or an independent ChirpStack, which may be deployed in a 
 If you want to connect through Wi-Fi, it can easily be done with the wireless capabilities of the Raspberry Pi 3B+ or Raspberry Pi 4 by choosing "**5 Configure WIFI**". By default, the RAK5146 WisLink LPWAN Concentrator works in Wi-Fi AP Mode. For the gateway to connect to the router, it must work in Wi-Fi Client Mode.
 
 <rk-img
-  src="/assets/images/wislink-lora//rak5146/quickstart/25.png"
+  src="/assets/images/wislink-lora/rak5146/quickstart/25.png"
   width="40%"
   caption="Configuration options for WIFI"
 />
@@ -379,7 +379,7 @@ To enable Wi-Fi Client Mode, you have to disable first the AP Mode.
 Once Wi-Fi AP Mode has been disabled by choosing "**2 Enable Client Mode/Disable AP Mode**", you can now then connect to a new Wi-Fi Network by choosing "**4 Add New SSID for Client**":
 
 <rk-img
-  src="/assets/images/wislink-lora//rak5146/quickstart/26.png"
+  src="/assets/images/wislink-lora/rak5146/quickstart/26.png"
   width="40%"
   caption="Add a new SSID"
 />
@@ -387,7 +387,7 @@ Once Wi-Fi AP Mode has been disabled by choosing "**2 Enable Client Mode/Disable
 - Start by selecting your country of residence:
 
 <rk-img
-  src="/assets/images/wislink-lora//rak5146/quickstart/27.png"
+  src="/assets/images/wislink-lora/rak5146/quickstart/27.png"
   width="40%"
   caption="Selecting Country of Residence"
 />
@@ -399,7 +399,7 @@ Make sure to input the correct Wi-Fi SSID and Password or you will not be able t
 :::
 
 <rk-img
-  src="/assets/images/wislink-lora//rak5146/quickstart/28.png"
+  src="/assets/images/wislink-lora/rak5146/quickstart/28.png"
   width="40%"
   caption="SSID of the Network you want to connect to."
 />
@@ -408,7 +408,7 @@ Make sure to input the correct Wi-Fi SSID and Password or you will not be able t
 - Enter also the password. Just leave it empty if None.
 
 <rk-img
-  src="/assets/images/wislink-lora//rak5146/quickstart/29.png"
+  src="/assets/images/wislink-lora/rak5146/quickstart/29.png"
   width="40%"
   caption="Password of the Wi-Fi"
 />
@@ -423,7 +423,7 @@ If you want to connect to the router through Ethernet Cable, do the following st
 
 
 <rk-img
-  src="/assets/images/wislink-lora//rak5146/quickstart/30.png"
+  src="/assets/images/wislink-lora/rak5146/quickstart/30.png"
   width="30%"
   caption="Default gateway Ethernet IP address"
 />
@@ -431,7 +431,7 @@ If you want to connect to the router through Ethernet Cable, do the following st
 - Then configure the IP address of the Router. This is the LAN Interface IP address of the router.
 
 <rk-img
-  src="/assets/images/wislink-lora//rak5146/quickstart/31.png"
+  src="/assets/images/wislink-lora/rak5146/quickstart/31.png"
   width="30%"
   caption="LAN Interface IP address of the Router"
 />
@@ -450,7 +450,7 @@ If you have entered either or both incorrect Wi-Fi SSID and Password in the Wi-F
 - Remove the SD Card from your RAK5146 WisLink LPWAN Concentrator and insert it into your PC. Your PC should be able to detect it the same as **Figure 32**.
 
 <rk-img
-  src="/assets/images/wislink-lora//rak5146/quickstart/32.png"
+  src="/assets/images/wislink-lora/rak5146/quickstart/32.png"
   width="30%"
   caption="Creating rak_ap file to your SD Card"
 />

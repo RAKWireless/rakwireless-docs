@@ -12,6 +12,7 @@ tags:
 # RAK5146 WisLink LPWAN Concentrator
 Thank you for choosing **RAK5146 WisLink LPWAN Concentrator** in your awesome IoT project! 🎉 To help you get started, we have provided you with all the necessary documentation for your product.
 
+* [Quick Start Guide](../Quickstart/)
 * [Datasheet](../Datasheet/)
 * [RAK5146 USB Latest Firmware](https://downloads.rakwireless.com/LoRa/RAK5146/Firmware/RAK5146_USB_Latest_Firmware.zip)
 * [Quick Start Guide for Raspberry Pi and RAK LPWAN Concentrators](https://docs.rakwireless.com/Knowledge-Hub/Learn/Raspberry-Pi-and-RAK-LPWAN-Concentrators/)
