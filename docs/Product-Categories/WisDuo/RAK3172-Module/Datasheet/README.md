@@ -342,8 +342,8 @@ If the host microcontroller code is based on this old firmware, we have a [RAK31
 | RAK3172-43-SM-I    | RAK3172   | Without TCXO            | With IPEX         | EU433                               | 301025 |
 | RAK3172-47-SM-I    | RAK3172   | Without TCXO            | With IPEX         | CN470                               | 302032 |
 | RAK3172-T-8-SM-I   | RAK3172-T | With ±2.5&nbsp;ppm TCXO | With IPEX         | 8XX MHz for RU864/IN865/EU868       | 305055 |
-| RAK3172-T-9-SM-I   | RAK3172-T | With ±2.5&nbsp;ppm TCXO | With IPEX         | 9XX MHz for US915/AU915/KR920/AS923 | 309052 |
-| RAK3172-T-9-SM-I   | RAK3172-T | With ±2.5&nbsp;ppm TCXO | With IPEX         | AS923-1 Japan                       | 306055 |
+| RAK3172-T-9-SM-I   | RAK3172-T | With ±2.5&nbsp;ppm TCXO | With IPEX         | 9XX MHz for US915/AU915/KR920/AS923 | 306052 |
+| RAK3172-T-9-SM-I   | RAK3172-T | With ±2.5&nbsp;ppm TCXO | With IPEX         | AS923-1 Japan                       | 309055 |
 | RAK3172-T-43-SM-I  | RAK3172-T | With ±2.5&nbsp;ppm TCXO | With IPEX         | EU433                               | 301030 |
 | RAK3172-T-47-SM-I  | RAK3172-T | With ±2.5&nbsp;ppm TCXO | With IPEX         | CN470                               | 302038 |
 
