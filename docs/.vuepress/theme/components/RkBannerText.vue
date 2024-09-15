@@ -5,9 +5,9 @@
     <div class="event-banner-content">
       <div id="banner-flip">
         <div>
-          <a href="https://docs.rakwireless.com/Product-Categories/WisGate/RAK7271-7371/Datasheet/#certification?utm_source=textad_docs&utm_medium=organic&utm_campaign=rak7271_rak7371_cert" class="event-banner-link "><span :style="{
+          <a href="https://docs.rakwireless.com/Release-Notes/WisDM/2024/August-29/?utm_source=textad_docs&utm_medium=organic&utm_campaign=release_notes_wisdm_v170&utm_id=release_notes_wisdm_v170" class="event-banner-link "><span :style="{
             paddingRight: '2px',
-          }">RAK7271/RAK7371 now complies with RoHS and REACH for global sale.</span> &nbsp;  <u>Read full reports.</u></a>
+          }">WisDM V1.7.0: new gateway list pagination and sync point access search function.</span> &nbsp;  <u>Check the updates.</u></a>
         </div>
       </div>
       <span @click="closePopUpBanner" class="close-event-banner-btn">

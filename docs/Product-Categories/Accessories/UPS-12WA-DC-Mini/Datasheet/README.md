@@ -14,7 +14,7 @@ tags:
 
 ### Description
 
-The 12WA-DC Mini UPS is a reliable standby power supply with lit-ion cells. It is specifically designed for our LoRaWAN gateway (or IoT Devices) with 12V DC input. It features a high-grade battery charging BMS IC with trickle/constant-current/constant-voltage for optimal performance.
+The 12WA-DC Mini UPS is a reliable standby power supply with li-ion cells. It is specifically designed for our LoRaWAN gateway (or IoT Devices) with 12V DC input. It features a high-grade battery charging BMS IC with constant-current/constant-voltage for optimal performance.
 
 The Mini UPS is equipped with robust over-charging, over-discharging, over-current, and short-circuit protection mechanisms to ensure the safety of your devices.
 This Mini UPS ensures that your equipment remains powered on for 1.5-2 hours during a power outage. It's the ultimate solution to keep your devices running seamlessly, even in challenging circumstances.
