@@ -88,7 +88,18 @@ export default {
     store: 'https://store.rakwireless.com/products/lx200v50-power-line-communicationplc-module?utm_source=%20lx200v50&utm_medium=Document&utm_campaign=BuyFromStore'
   },
 
+  '/Product-Categories/WisLink/LX200V30/': {
+    label: 'LX200V30 WisLink 500 Mbps Broadband PLC Module + EVB',
+    img: '/assets/images/wislink-plc/lx200v30/1.lx200v30.png',
+    store: 'https://store.rakwireless.com/products/lx200v30-plc-homeplug-av-module?utm_source=lx200v30&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
 
+  '/Product-Categories/WisLink/LX200V20/': {
+    label: 'LX200V20 WisLink 200 Mbps PLC Module + EVB',
+    img: '/assets/images/wislink-plc/lx200v20/lx200v20.png',
+    store: 'https://store.rakwireless.com/products/lx200v20-embedded-plc-module?utm_source=lx200v20&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
+  
 
   //WisDuino
 

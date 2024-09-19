@@ -112,7 +112,7 @@ The RAK2461 device can be powered either by:
 
 The USB type-C port of the device can be used for configuration. Powering the device from the type-C port will not provide power to the sensor but only to the device itself. To power the device and sensor, you should use the 9-24&nbsp;V<sub>DC</sub> input of the RAK2461.
 
-The RS485 serial interface supports up to 32 RS485 devices. The Vout pin can supply the external power to the RS485 sensors connected to RAK2561.
+The RS485 serial interface supports up to 32 RS485 devices. The Vout pin can supply the external power to the RS485 sensors connected to RAK2461.
 
 <rk-img
   src="/assets/images/wisnode/rak2461-n/quickstart/device-with-power-supply.png"

@@ -234,6 +234,40 @@ module.exports = {
     sidebarDepth: 4
   },
   ],
+  '/Product-Categories/WisLink/LX200V30/': [{
+    title: 'Product Overview',
+    path: '/Product-Categories/WisLink/LX200V30/Overview/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+  {
+    title: 'Datasheet',
+    path: '/Product-Categories/WisLink/LX200V30/Datasheet/',
+    collapsable: false,
+    nested: true,
+    download: true,
+    sidebarDepth: 4
+  },
+],
+'/Product-Categories/WisLink/LX200V20/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisLink/LX200V20/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisLink/LX200V20/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+  ],
   '/Product-Categories/WisLink/RAK5146L/': [{
     title: 'Product Overview',
     path: '/Product-Categories/WisLink/RAK5146L/Overview/',
