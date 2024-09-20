@@ -8,6 +8,8 @@ tags:
     - RAK7267
     - wisgate
     - datasheet
+certifications:
+  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK7267/Certification/RAK7267_ROHS_Report.pdf]
 ---
 
 
@@ -266,3 +268,6 @@ The firmware sits on OpenWrt. There is a Web UI for easy configuration and manag
 </table>
 
 
+## Certification
+
+<rk-certifications :params="$page.frontmatter.certifications" />

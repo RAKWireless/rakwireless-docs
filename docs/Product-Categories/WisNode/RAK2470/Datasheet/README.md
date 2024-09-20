@@ -7,6 +7,8 @@ tags:
   - datasheet
   - wisnode
   - RAK2470
+certifications:
+  - [RoHS, https://downloads.rakwireless.com/LoRa/RAK2470/Certification/RAK2470_ROHS_Report.pdf]
 ---
 
 # RAK2470 WisNode Bridge Serial Prime
@@ -102,3 +104,8 @@ src="/assets/images/wisnode/rak2470-n/datasheet/4.t-type-conversion-cable.png"
 width="70%"
 caption="T-type conversion cable"
 />
+
+
+## Certification
+
+<rk-certifications :params="$page.frontmatter.certifications" />

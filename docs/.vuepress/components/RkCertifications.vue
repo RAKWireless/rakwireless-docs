@@ -38,6 +38,9 @@ export default {
           case 'CE':
             data.img = '/assets/images/certifications/CE.png'
             break
+          case 'ENACOM':
+            data.img = '/assets/images/certifications/ENACOM.png'
+            break
           case 'FAC':
             data.img = '/assets/images/certifications/FAC.png'
             break

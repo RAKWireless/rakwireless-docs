@@ -211,6 +211,39 @@ module.exports = {
 },
 ],
 
+'/Product-Categories/WisNode/Environmental-Monitoring/': [{
+  title: 'Product Overview',
+  path: '/Product-Categories/WisNode/Environmental-Monitoring/Overview/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Quickstart',
+  path: '/Product-Categories/WisNode/Environmental-Monitoring/Quickstart/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Supported LoRa Network Servers',
+  path: '/Product-Categories/WisNode/Environmental-Monitoring/Supported-LoRa-Network-Servers/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+{
+  title: 'Datasheet',
+  path: '/Product-Categories/WisNode/Environmental-Monitoring/Datasheet/',
+  collapsable: false,
+  nested: true,
+  download: true,
+  sidebarDepth: 4
+},
+],
   '/Product-Categories/WisNode/RAK7200/': [{
       title: 'Product Overview',
       path: '/Product-Categories/WisNode/RAK7200/Overview/',

@@ -34,5 +34,11 @@ export const categories = [
     path:"/Release-Notes/Hardware/",
     label:"Hardware",
     desc:"Updates on product changes, including hardware modifications, discontinuations, and production adjustments"
-  }
+  },
+  {
+    img:"/assets/images/release-notes/rakpios.png",
+    path:"/Release-Notes/RAKPiOS/",
+    label:"RAKPiOS",
+    desc:"A custom OS based on the Raspberry Pi OS for the RAK WisGate Connect and Developer products."
+  },
 ]

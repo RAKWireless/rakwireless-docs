@@ -66,6 +66,12 @@ export const categoriesWisGate = [
           ]
         },
         {
+          device: "RAK7267",
+          data: [
+            { country: "Europe", cert: "RoHS", link: "https://downloads.rakwireless.com/LoRa/RAK7267/Certification/RAK7267_ROHS_Report.pdf" },
+          ]
+        },
+        {
           device: "RAK7268",
           data: [
             { country: "Europe", cert: "CE", link: "https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_RAK7268V2_RAK7268C_RAK7268CV2_CE_Certification.pdf" },
@@ -106,7 +112,7 @@ export const categoriesWisGate = [
             { country: "Europe", cert: "REACH", link: "https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268C_RAK7268CV2_RAK7268_RAK7268V2_REACH_Report.pdf" },
             { country: "Europe", cert: "RoHS", link: "https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268C_RAK7268CV2_RAK7268_RAK7268V2_RoHS_Report.pdf" },
             { country: "USA", cert: "FCC", link: "https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_RAK7268V2_FCC_Certification.pdf" },
-            { country: "Canada", cert: "ISED", link: "https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_ISED_Certification.zip" },
+            { country: "Argentina", cert: "ENACOM", link: "https://downloads.rakwireless.com/LoRa/RAK7268V2/Certification/RAK7268V2_ENACOM_Certification.pdf" },            { country: "Canada", cert: "ISED", link: "https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_ISED_Certification.zip" },
             { country: "Australia", cert: "RCM", link: "https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_RAK7268V2_RAK7268C_RAK7268CV2_RCM_Certification.pdf" },
             { country: "Brazil", cert: "Anatel", link: "https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268V2_ANATEL_Certification.pdf" },
             { country: "Japan", cert: "JRL", link: "https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_RAK7268V2_RAK7268C_RAK7268CV2_JRL_Certification.pdf" },
@@ -124,6 +130,7 @@ export const categoriesWisGate = [
             { country: "Europe", cert: "RoHS", link: "https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268C_RAK7268CV2_RAK7268_RAK7268V2_RoHS_Report.pdf" },
             { country: "USA", cert: "FCC", link: "https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268C_RAK7268CV2_FCC_Certification.pdf" },
             { country: "Canada", cert: "ISED", link: "https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268C_ISED_Certification.zip" },
+            { country: "Argentina", cert: "ENACOM", link: "https://downloads.rakwireless.com/LoRa/RAK7268V2/Certification/RAK7268CV2_ENACOM_Certification.pdf" },
             { country: "Australia", cert: "RCM", link: "https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_RAK7268V2_RAK7268C_RAK7268CV2_RCM_Certification.pdf" },
             { country: "Brazil", cert: "Anatel", link: "https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268CV2_ANATEL_Certification.pdf" },
             { country: "Japan", cert: "JRL", link: "https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_RAK7268V2_RAK7268C_RAK7268CV2_JRL_Certification.pdf" },

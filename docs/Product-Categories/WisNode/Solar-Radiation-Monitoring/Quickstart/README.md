@@ -1,5 +1,5 @@
 ---
-rak_desc: Contains instructions and tutorials for installing and deploying your Sensor Hub Solar Radiation solution. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module.
+rak_desc: Contains instructions and tutorials for installing and deploying your Sensor Hub Solar Radiation Solution. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module.
 rak_img: /assets/images/wisnode/solar-radiation-monitoring/SolarSolution.png
 prev: ../Overview/
 next: ../Supported-LoRa-Network-Servers/
@@ -11,11 +11,11 @@ tags:
   - Solar Radiation
 ---
 
-# Solar Radiation Monitoring Sensor Quick Start Guide
+# Solar Radiation Monitoring Quick Start Guide
 
 ## Prerequisites
 
-Before proceeding with each step for using the RAK2560 WisNode Sensor Hub module, ensure that you have the necessary items listed below:
+Before proceeding with each step for using the Solar Radiation Monitoring Solution, ensure that you have the necessary items listed below:
 
 <rk-img
   src="/assets/images/wisnode/solar-radiation-monitoring/quickstart/f1SolarSolution_accesories.png"

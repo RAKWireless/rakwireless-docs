@@ -12,6 +12,8 @@ certifications:
   - [Anatel, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268V2_ANATEL_Certification.pdf]
   - [Anatel, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268CV2_ANATEL_Certification.pdf]
   - [CE, https://downloads.rakwireless.com/LoRa/RAK7268V2/Certification/RAK7268V2_CE_Certification.zip]
+  - [ENACOM, https://downloads.rakwireless.com/LoRa/RAK7268V2/Certification/RAK7268V2_ENACOM_Certification.pdf]
+  - [ENACOM, https://downloads.rakwireless.com/LoRa/RAK7268V2/Certification/RAK7268CV2_ENACOM_Certification.pdf]
   - [FCC, https://downloads.rakwireless.com/LoRa/RAK7268V2H/Certification/RAK7268CV2H_RAK7268V2H_FCC_Certification.pdf]
   - [JRL, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_RAK7268V2_RAK7268C_RAK7268CV2_JRL_Certification.pdf]
   - [JTBL, https://downloads.rakwireless.com/LoRa/RAK7268/Certification/RAK7268_RAK7268V2_JTBL_Certification.pdf]

@@ -496,6 +496,63 @@ module.exports = {
       path: '/Release-Notes/Hardware/',
       collapsible: false,
       sidebarDepth: 4,
-    }
+    },
+    {
+      title : 'RAKPiOS',
+      path: '/Release-Notes/RAKPiOS/',
+      collapsible: false,
+      sidebarDepth: 4,
+      children : [
+        {
+          title : '2024',
+          nested: false,
+          collapsible: true,
+          collapsed : true,
+          children : [
+            {
+              title : 'July 4',
+              path : '/Release-Notes/RAKPiOS/2024/July-4',
+              collapsable: false
+            },
+            {
+              title : 'February 29',
+              path : '/Release-Notes/RAKPiOS/2024/February-29',
+              collapsable: false
+            },
+          ]
+        },
+        {
+          title : '2023',
+          nested: false,
+          collapsible: true,
+          collapsed : true,
+          children : [
+            {
+              title : 'July 26',
+              path : '/Release-Notes/RAKPiOS/2023/July-26',
+              collapsable: false
+            },
+            {
+              title : 'March 28',
+              path : '/Release-Notes/RAKPiOS/2024/March-28',
+              collapsable: false
+            },
+          ]
+        },
+        {
+          title : '2022',
+          nested: false,
+          collapsible: true,
+          collapsed : true,
+          children : [
+            {
+              title : 'October 19',
+              path : '/Release-Notes/RAKPiOS/2022/October-19',
+              collapsable: false
+            },
+          ]
+        }
+      ]
+    },    
   ],
 }

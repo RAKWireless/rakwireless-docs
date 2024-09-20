@@ -22,6 +22,12 @@ export const categoriesWisNode = [
           ]
         },
         {
+          device: "RAK2470",
+          data: [
+            { country: "Europe", cert: "RoHS", link: "https://downloads.rakwireless.com/LoRa/RAK2470/Certification/RAK2470_ROHS_Report.pdf" },
+          ]
+        },
+        {
           device: "RAK2560",
           data: [
             { country: "Europe", cert: "CE", link: "https://downloads.rakwireless.com/LoRa/SensorHub/Certification/SensorHub_RAK2560_RAK2560C_CE_Certification.pdf" },

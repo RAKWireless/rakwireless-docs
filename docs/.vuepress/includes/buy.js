@@ -180,7 +180,11 @@ export default {
     img: '/assets/images/wisnode/solar-radiation-monitoring/SolarSolution.png',
     store: 'https://store.rakwireless.com/products/solar-power-monitoring?variant=42505218719942?variant=42505214427334?utm_source=solarpower&utm_medium=Document&utm_campaign=BuyFromStore'
   },
-
+  '/Product-Categories/WisNode/Environmental-Monitoring/': {
+    label: 'Environmental Monitoring Solutions',
+    img: '/assets/images/wisnode/Environmental-Monitoring/environmental-monitoring.png',
+    store: 'https://store.rakwireless.com/products/environmental-monitoring?variant=42510931329222?utm_source=solarpower&utm_medium=Document&utm_campaign=BuyFromStore'
+  },
 
   // Button
 

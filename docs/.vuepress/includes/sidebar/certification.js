@@ -67,6 +67,11 @@ module.exports = {
                 collapsable: false
               },
               {
+                title: 'RAK7267',
+                path: '/Certification/wisgate/?device=RAK7267',
+                collapsable: false
+              },
+              {
                 title: 'RAK7268',
                 path: '/Certification/wisgate/?device=RAK7268',
                 collapsable: false
@@ -268,6 +273,11 @@ module.exports = {
               {
                 title: 'RAK2270',
                 path: '/Certification/wisnode/?device=RAK2270',
+                collapsable: false
+              },
+              {
+                title: 'RAK2470',
+                path: '/Certification/wisnode/?device=RAK2470',
                 collapsable: false
               },
               {

@@ -4,6 +4,7 @@ export const WISGATE_HEADER = {
     'EUROPE',
     'USA',
     'CANADA',
+    'ARGENTINA',
     'AUSTRALIA',
     'BRAZIL',
     'CHILE',

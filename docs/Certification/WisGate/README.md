@@ -6,6 +6,7 @@ rak_img: /assets/images/certifications/certification-banner.jpg
 <rk-show-certification :product="'wisgate'" :headers="[
   'EUROPE',
   'USA',
+  'ARGENTINA',
   'AUSTRALIA',
   'BRAZIL',
   'CANADA',
