@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisnode/environmental-monitoring/environmental-monitoring.png
+rak_img: /assets/images/wisnode/environment-monitoring/environmental-monitoring.png
 rak_desc: Provides comprehensive information on your Environmental Monitoring Solution to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 prev: ../Supported-LoRa-Network-Servers/
 next: false
@@ -242,7 +242,7 @@ For detailed information about the Sensor Hub, refer to the <a href="https://doc
 As shown in **Figure 1**, the RAK9154 battery system comprises two sets of three 2600&nbsp;mAh battery units connected in series. The system also incorporates one (1) BMS board integrated with an 18&nbsp;V input solar charger.
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/datasheet/3-appearance-of-the-RAK9154.png"
+  src="/assets/images/wisnode/environment-monitoring/datasheet/3-appearance-of-the-RAK9154.png"
   width="75%"
   caption="RAK9154 battery system"
 />
@@ -251,13 +251,13 @@ As shown in **Figure 1**, the RAK9154 battery system comprises two sets of three
 
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/datasheet/1-Eletrical-Diagram.png"
+  src="/assets/images/wisnode/environment-monitoring/datasheet/1-Eletrical-Diagram.png"
   width="75%"
   caption="RAK9154 Electrical Diagram"
 />
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/datasheet/2-System-Circuit-Diagram.png"
+  src="/assets/images/wisnode/environment-monitoring/datasheet/2-System-Circuit-Diagram.png"
   width="75%"
   caption="System circuit diagram"
 />

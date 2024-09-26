@@ -1,5 +1,5 @@
 ---
-rak_img: /assets/images/wisnode/environmental-monitoring/environmental-monitoring.png
+rak_img: /assets/images/wisnode/environment-monitoring/environmental-monitoring.png
 rak_desc: Provides comprehensive information on your Environmental Monitoring Solution to help you use it. This information includes technical specifications, characteristics, and requirements, and it also discusses the device components.
 prev: ../Datasheet/
 next: ../Supported-LoRa-Network-Servers/
@@ -18,7 +18,7 @@ tags:
 Before proceeding with each step for using the Environmental Monitoring Solutions, ensure you have the necessary items.
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/1-Device-List.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/1-Device-List.png"
   width="75%"
   caption="Solutions package inclusion"
 />
@@ -46,7 +46,7 @@ If the selected solution utilizes the NB-IoT/LTE CAT-M wireless communication mo
 1. Remove the back cover by unscrewing the four screws with a cross screwdriver.
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/2-Remove-the-back-cover.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/2-Remove-the-back-cover.png"
   width="30%"
   caption="Remove the back cover"
 />
@@ -54,7 +54,7 @@ If the selected solution utilizes the NB-IoT/LTE CAT-M wireless communication mo
 2. Insert the SIM card into the groove, then gently push it into the card slot.
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/3-Put-the-SIM-card.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/3-Put-the-SIM-card.png"
   width="50%"
   caption="Insert the SIM card"
 />
@@ -66,7 +66,7 @@ If the selected solution utilizes the NB-IoT/LTE CAT-M wireless communication mo
 1. Use a 5&nbsp;mm drill bit to drill holes in the wall, then insert the screw anchors into the holes.
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/4-wall-mounting.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/4-wall-mounting.png"
   width="75%"
   caption="Installation preparation"
 />
@@ -74,7 +74,7 @@ If the selected solution utilizes the NB-IoT/LTE CAT-M wireless communication mo
 2. Secure the mounting bracket to the wall by using tapping screws.
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/5-attach-the-mounting-bracket.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/5-attach-the-mounting-bracket.png"
   width="40%"
   caption="Secure the mounting bracket"
 />
@@ -82,7 +82,7 @@ If the selected solution utilizes the NB-IoT/LTE CAT-M wireless communication mo
 3. Align the device's hanging tab with the slots on the bracket, and then insert the tab into the slots. Pull the device downwards until it snaps into place.
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/6-Installation-of-equipment.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/6-Installation-of-equipment.png"
   width="50%"
   caption="Align the device with the hanging tabs"
 />
@@ -92,7 +92,7 @@ If the selected solution utilizes the NB-IoT/LTE CAT-M wireless communication mo
 1. Secure the mounting bracket to the pole using a steel strap.
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/7-Fix-the-mounting-bracket.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/7-Fix-the-mounting-bracket.png"
   width="20%"
   caption="Fix the mounting bracket"
 />
@@ -105,7 +105,7 @@ If the selected solution utilizes the NB-IoT/LTE CAT-M wireless communication mo
 2. Align the hanging tab of the device with the slots on the bracket, then insert the tab into the slots. Gently pull the device downwards until it securely snaps in place.
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/8-Installation-of-equipment1.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/8-Installation-of-equipment1.png"
   width="35%"
   caption="Device installation"
 />
@@ -113,7 +113,7 @@ If the selected solution utilizes the NB-IoT/LTE CAT-M wireless communication mo
 3. Insert a security screw at the top to fasten the device and the bracket together.
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/9-lock-the-device-and-the-bracket.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/9-lock-the-device-and-the-bracket.png"
   width="30%"
   caption="Fasten the device and the bracket"
 />
@@ -126,7 +126,7 @@ The RAK1901 Temperature and Humidity sensor comes pre-assembled with Sensor Hub 
 
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/12-Installation-completed.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/12-Installation-completed.png"
   width="50%"
   caption="Installation completed"
 />
@@ -145,7 +145,7 @@ The Sensor Hub Environmental Monitoring Solution supports a battery, solar panel
 1. Secure the mounting bracket on the pole with two steel straps.
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/13-Fix-the-mounting-bracket1.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/13-Fix-the-mounting-bracket1.png"
   width="20%"
   caption="Secure the mounting bracket"
 />
@@ -153,7 +153,7 @@ The Sensor Hub Environmental Monitoring Solution supports a battery, solar panel
 2. Attach the mounting plate to the RAK9154 with two (2) M3 screws.
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/14-Secure-the-mounting-plate.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/14-Secure-the-mounting-plate.png"
   width="35%"
   caption="Secure the mounting plate"
 />
@@ -161,7 +161,7 @@ The Sensor Hub Environmental Monitoring Solution supports a battery, solar panel
 3. Install the RAK9154 to the back of the solar panel with four (4) screws and nuts.
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/15-Attach-RAK9154-to-solar-panel.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/15-Attach-RAK9154-to-solar-panel.png"
   width="40%"
   caption="Attach RAK9154 to solar panel"
 />
@@ -169,7 +169,7 @@ The Sensor Hub Environmental Monitoring Solution supports a battery, solar panel
 4. Connect the cable of the solar panel to the **PV input** connector of RAK9154. Install two (2) M6 screws to the mounting plate with a clearance of about 3&nbsp;mm.
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/16-Connector-the-RAK9154.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/16-Connector-the-RAK9154.png"
   width="40%"
   caption="RAK9154 and Solar Panel Connection"
 />
@@ -177,7 +177,7 @@ The Sensor Hub Environmental Monitoring Solution supports a battery, solar panel
 5. Suspend the solar panel on the mounting bracket, adjust its angle and direction, and then tighten the two (2) M6 screws along with the remaining two screws.
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/17-Adjust-the-solar-panel.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/17-Adjust-the-solar-panel.png"
   width="40%"
   caption="Install the solar panel combination"
 />
@@ -189,7 +189,7 @@ When connecting to RAK9154, ensure that the Sensor Hub is connected to the Outpu
 :::
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/18-Connect-Sensor-Hub-and-RAK9154-1.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/18-Connect-Sensor-Hub-and-RAK9154-1.png"
   width="60%"
   caption="Connect Sensor Hub and RAK9154"
 />
@@ -201,7 +201,7 @@ When connecting to RAK9154, ensure that the Sensor Hub is connected to the Outpu
 1. Connect the power adapter to the external power cable of the Sensor Hub using a circular DC connector. 
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/20-Connect-the-power-adapter.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/20-Connect-the-power-adapter.png"
   width="40%"
   caption="Power adapter connection"
 />
@@ -211,7 +211,7 @@ When connecting to RAK9154, ensure that the Sensor Hub is connected to the Outpu
 4. After the plug and socket are connected, tighten the locking nut to secure the connection of the SP11 connector. The external power cable can connect to any Sensor Hub connection port.
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/21-Connect-the-external-power.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/21-Connect-the-external-power.png"
   width="35%"
   caption="Connect the external power cable"
 />
@@ -234,7 +234,7 @@ To prevent damage to the device, refrain from powering up the Sensor Hub before 
 2. Initiate the app and confirm that NFC and Bluetooth are enabled on your mobile device. Click on **START**.
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/22-SELECT-DEVICE.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/22-SELECT-DEVICE.png"
   width="35%"
   caption="Start the app"
 />
@@ -242,7 +242,7 @@ To prevent damage to the device, refrain from powering up the Sensor Hub before 
 3. On the **Select connection mode** menu, choose **NFC Activation**.
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/23-Select-sensor-hub.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/23-Select-sensor-hub.png"
   width="35%"
   caption="Select NFC Activation"
 />
@@ -250,7 +250,7 @@ To prevent damage to the device, refrain from powering up the Sensor Hub before 
 4. Select the **Sensor HUB** option in the device selection interface to establish a connection.
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/24-Scan-device.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/24-Scan-device.png"
   width="35%"
   caption="Select Sensor Hub"
 />
@@ -258,7 +258,7 @@ To prevent damage to the device, refrain from powering up the Sensor Hub before 
 5. Click the **CONNECT** button to initiate the scanning process for devices.
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/25-Synchronization-of-device-data.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/25-Synchronization-of-device-data.png"
   width="35%"
   caption="Click on the CONNECT button"
 />
@@ -266,7 +266,7 @@ To prevent damage to the device, refrain from powering up the Sensor Hub before 
 6. Hold your mobile device close to the **N** symbol on the Sensor Hub device.
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/26-Scanning-in-progess.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/26-Scanning-in-progess.png"
   width="35%"
   caption="Scanning in progress"
 />
@@ -276,7 +276,7 @@ The detection of the Sensor Hub device indicates that the device has been succes
 :::
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/27-Scan-Successful.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/27-Scan-Successful.png"
   width="35%"
   caption="Scan Successful"
 />
@@ -284,7 +284,7 @@ The detection of the Sensor Hub device indicates that the device has been succes
 7. After the connection is established, there will be a synchronization of device data. This process may take some time.
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/28-Sync-Device.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/28-Sync-Device.png"
   width="35%"
   caption="Sync Device"
 />
@@ -297,7 +297,7 @@ The detection of the Sensor Hub device indicates that the device has been succes
 8. Upon completion of data synchronization, the app will automatically transition to the **SENSOR HUB INFO** page.
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/29-Sensor-Hub-Info-Page.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/29-Sensor-Hub-Info-Page.png"
   width="35%"
   caption="SENSOR HUB INFO page"
 />
@@ -305,7 +305,7 @@ The detection of the Sensor Hub device indicates that the device has been succes
 9. While on the **SENSOR HUB INFO** page, configure the Uplink Settings according to the selected network.
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/31-Uplink-Settings-Option.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/31-Uplink-Settings-Option.png"
   width="35%"
   caption="Uplink Settings option"
 />
@@ -313,7 +313,7 @@ The detection of the Sensor Hub device indicates that the device has been succes
 10. Once configured, click **SAVE SELECTION**, and then the **APPLY** button to implement the configuration options.
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/32-Apply-the-configuration-options.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/32-Apply-the-configuration-options.png"
   width="35%"
   caption="Apply the configuration options"
 />
@@ -321,7 +321,7 @@ The detection of the Sensor Hub device indicates that the device has been succes
 After a few seconds, the synchronization progress will be completed, concluding this process.
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/33-Commands-applied-successfully.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/33-Commands-applied-successfully.png"
   width="35%"
   caption="Commands applied successfully"
 />
@@ -339,7 +339,7 @@ Refer to the <a href="/Product-Categories/WisNode/Environmental-Monitoring/Suppo
 - **Global Settings**
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/34-global-settings.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/34-global-settings.png"
   width="35%"
   caption="Global Settings"
 />
@@ -354,7 +354,7 @@ Supported frequency bands include CN470, RU864, IN865, EU868, US915, AU915, KR92
 - For the **OTAA join mode**, configure the following parameters: **Application EUI**, **Application key**, and **Device EUI**.
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/30-LoRaWAN-keys-ID-EUI.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/30-LoRaWAN-keys-ID-EUI.png"
   width="35%"
   caption="OTAA Join Mode Configuration"
 />
@@ -366,7 +366,7 @@ Supported frequency bands include CN470, RU864, IN865, EU868, US915, AU915, KR92
 - For the **ABP** join mode, configure the required parameters: **Application session key, Device address**, and **Network session key**. 
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/35-ABP-Join-Mode.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/35-ABP-Join-Mode.png"
   width="35%"
   caption="ABP Join Mode"
 />
@@ -375,7 +375,7 @@ Supported frequency bands include CN470, RU864, IN865, EU868, US915, AU915, KR92
 
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/36-data-on-lora-network.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/36-data-on-lora-network.png"
   width="35%"
   caption="Data on LoRa® network"
 />
@@ -389,7 +389,7 @@ Supported frequency bands include CN470, RU864, IN865, EU868, US915, AU915, KR92
 2. After clicking **JOIN NETWORK**, a message **Message sent** will appear, indicating that the join network command has been sent.
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/37-Join-the-Network.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/37-Join-the-Network.png"
   width="35%"
   caption="Join the network"
 />
@@ -401,7 +401,7 @@ This section primarily introduces the configuration of LTE-M network parameters.
 1. Click the **LTE-M PARAMETERS** tab and check the following parameters to ensure that the network is working properly.
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/38-View-the-LTE-M-Parameters-tab.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/38-View-the-LTE-M-Parameters-tab.png"
   width="35%"
   caption="View the LTE-M Parameters tab"
 />
@@ -417,7 +417,7 @@ This section primarily introduces the configuration of LTE-M network parameters.
 2. Select the **Application** option to configure the cellular network parameters.
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/39-configure-the-cellular-network-parameters.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/39-configure-the-cellular-network-parameters.png"
   width="50%"
   caption="Configure the cellular network parameters"
 />
@@ -435,7 +435,7 @@ This section primarily introduces the configuration of LTE-M network parameters.
 3. Following the configuration, click **APPLY** in the command list at the bottom of the interface to implement the changes. If the message **All commands applied successfully** appears, it indicates a successful configuration modification.
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/40-apply-the-modified-configuration.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/40-apply-the-modified-configuration.png"
   width="50%"
   caption="Apply the modified configuration"
 />
@@ -443,7 +443,7 @@ This section primarily introduces the configuration of LTE-M network parameters.
 4. When configured correctly and successfully connected to the server, the **Connection Status** will display as **connected**.
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/41-successfully-connected-to-the-server.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/41-successfully-connected-to-the-server.png"
   width="50%"
   caption="Successfully connected to the server"
 />
@@ -455,7 +455,7 @@ This section details the configuration process of the RAK1901 Temperature and Hu
 1. To start with, click the **SENSOR PROBE** tab to display the connected sensor on the interface. 
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/42-environment-sensor.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/42-environment-sensor.png"
   width="35%"
   caption="Connected temperature and humidity sensor"
 />
@@ -463,7 +463,7 @@ This section details the configuration process of the RAK1901 Temperature and Hu
 2. Click the dropdown to expand the details of the environmental monitoring sensor.
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/43-Details-of-the-sensor.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/43-Details-of-the-sensor.png"
   width="35%"
   caption="Sensor details"
 />
@@ -474,7 +474,7 @@ This section details the configuration process of the RAK1901 Temperature and Hu
 - **Device details**
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/44-device-details.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/44-device-details.png"
   width="35%"
   caption="Sensor details"
 />
@@ -482,7 +482,7 @@ This section details the configuration process of the RAK1901 Temperature and Hu
 3. Fetch the temperature data and configure the periodic uplink data sending, thresholds, and other relevant information for the sensor. 
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/45-set-the-sensor-parameters.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/45-set-the-sensor-parameters.png"
   width="35%"
   caption="Set the sensor parameters"
 />
@@ -502,7 +502,7 @@ This section details the configuration process of the RAK1901 Temperature and Hu
 4. After completing the modifications, a message **Commands in queue** will appear at the bottom of the interface. Click **APPLY** to send the parameter update commands.
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/46-Apply-Commands.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/46-Apply-Commands.png"
   width="35%"
   caption="Apply commands"
 />
@@ -510,7 +510,7 @@ This section details the configuration process of the RAK1901 Temperature and Hu
 5. When the message **All commands applied successfully**, appears on the interface, it indicates that the parameter update commands have been successfully sent.
 
 <rk-img
-  src="/assets/images/wisnode/environmental-monitoring/quickstart/47-applied-successfully.png"
+  src="/assets/images/wisnode/environment-monitoring/quickstart/47-applied-successfully.png"
   width="35%"
   caption="Commands applied successfully"
 />
