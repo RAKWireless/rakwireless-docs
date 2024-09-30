@@ -10,7 +10,7 @@
           }">WisDM V1.7.0: new gateway list pagination and sync point access search function.</span> &nbsp;  <u>Check the updates.</u></a>
           <a href="https://docs.rakwireless.com/Release-Notes/WisGateOS2/2024/August-29/?utm_source=textad_docs&utm_medium=organic&utm_campaign=release_notes_wisgateOS2" class="event-banner-link "><span :style="{
             paddingRight: '2px',
-          }">Upgrade to WisGateOS 2.2.8! Enjoy better performance, bug fixes, and enhanced gateway reliability.</span></a>
+          }"><u>Upgrade to WisGateOS 2.2.8</u>! Enjoy better performance, bug fixes, and enhanced gateway reliability.</span></a>
         </div>
       </div>
       <span @click="closePopUpBanner" class="close-event-banner-btn">
