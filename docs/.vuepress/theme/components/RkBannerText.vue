@@ -5,9 +5,9 @@
     <div class="event-banner-content">
       <div id="banner-flip">
         <div>
-          <a href="https://docs.rakwireless.com/Release-Notes/WisDM/2024/August-29/?utm_source=textad_docs&utm_medium=organic&utm_campaign=release_notes_wisdm_v170&utm_id=release_notes_wisdm_v170" class="event-banner-link "><span :style="{
+          <!-- <a href="https://docs.rakwireless.com/Release-Notes/WisDM/2024/August-29/?utm_source=textad_docs&utm_medium=organic&utm_campaign=release_notes_wisdm_v170&utm_id=release_notes_wisdm_v170" class="event-banner-link "><span :style="{
             paddingRight: '2px',
-          }">WisDM V1.7.0: new gateway list pagination and sync point access search function.</span> &nbsp;  <u>Check the updates.</u></a>
+          }">WisDM V1.7.0: new gateway list pagination and sync point access search function.</span> &nbsp;  <u>Check the updates.</u></a> -->
           <a href="https://docs.rakwireless.com/Release-Notes/WisGateOS2/2024/August-29/?utm_source=textad_docs&utm_medium=organic&utm_campaign=release_notes_wisgateOS2" class="event-banner-link "><span :style="{
             paddingRight: '2px',
           }"><u>Upgrade to WisGateOS 2.2.8</u>! Enjoy better performance, bug fixes, and enhanced gateway reliability.</span></a>
@@ -96,7 +96,7 @@
   }
 
   #banner-flip div:first-child {
-    animation: flip2 10s linear infinite;
+    animation: flip1 5s linear infinite;
   }
 
   @keyframes show {
@@ -109,7 +109,7 @@
     99.99% {margin-top:0px;}
     100% {margin-top:-270px;}
   }
- 
+/*
   @keyframes flip2 {
     0% { margin-top: -180px; }
     5% { margin-top: -90px;  }
@@ -118,7 +118,7 @@
     99.99% { margin-top: 0px; }
     100% { margin-top: -180px; }
   }
-/*
+
   @keyframes flip3 {
     0% { margin-top: -270px; }
     5% { margin-top: -180px; }
