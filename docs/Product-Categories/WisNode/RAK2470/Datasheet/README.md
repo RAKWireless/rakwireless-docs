@@ -33,6 +33,7 @@ Together with a RAK WisGate Gateway and LoRa Server products, RAK2470 can quickl
 
 ### Features
 
+- **Regional Parameters Version**: RP001-1.03
 - **LoRaWAN 1.0.3** protocol stack, supports **Class C**
 - **Input range:** 5 ~ 12&nbsp;V<sub>DC</sub>
 - **Mounting:** Pole

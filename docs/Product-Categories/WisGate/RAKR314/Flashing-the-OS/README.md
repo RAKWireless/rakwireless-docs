@@ -22,7 +22,7 @@ RAKR314 utilizes a Raspberry Pi Compute Module 4 (CM4). As these come either wit
 
 ### Preparing the Software
 
-RAK offers two options for the OS, either a prepared image [RAKPiOS](https://downloads.rakwireless.com/LoRa/WisGate-Connect/RAK7391/20221019-rakpios-0.6.0-arm64-lite.zip) or a [public repo](https://github.com/RAKWireless/rakpios).
+RAK offers two options for the OS, either a prepared image [RAKPiOS](https://downloads.rakwireless.com/LoRa/Software_Firmware/RAKPiOS/History-Version-Release/20221019-rakpios-0.6.0-arm64-lite.zip) or a [public repo](https://github.com/RAKWireless/rakpios).
 
 You can use either Windows, MacOS, or Linux to flash the image. Using [balenaEtcher](https://www.balena.io/etcher/), a cross-platform tool that works with either of the three is recommended.
 
