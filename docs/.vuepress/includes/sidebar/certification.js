@@ -97,6 +97,11 @@ module.exports = {
                 collapsable: false
               },
               {
+                title: 'RAK7271/RAK7371',
+                path: '/Certification/wisgate/?device=RAK7271/RAK7371',
+                collapsable: false
+              },
+              {
                 title: 'RAK7284',
                 path: '/Certification/wisgate/?device=RAK7284',
                 collapsable: false

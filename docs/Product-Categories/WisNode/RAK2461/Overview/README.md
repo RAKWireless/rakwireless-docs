@@ -37,7 +37,7 @@ The device comes in two variants:
 
 ## Product Features
 
-- **Regional Parameters Version**: RP001-1.03
+- **Regional Parameters Version**: RP001-1.0.3
 - **LoRaWAN 1.0.3** protocol stack
 - **Class support:** Class C
 - One (1) **RS-485 host port**

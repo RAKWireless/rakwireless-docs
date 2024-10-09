@@ -778,3 +778,10 @@ src="/assets/images/wisgate/rak7394/datasheet/1.dimensions.png"
         </tr>
     </tbody>
 </table>
+
+
+#### Firmware/OS
+
+| Version |                                                                       Source                                                                       |
+| :-----: | :------------------------------------------------------------------------------------------------------------------------------------------------: |
+| v0.7.1  | [Download](https://downloads.rakwireless.com/LoRa/Software_Firmware/RAKPiOS/History-Version-Release/20230815-rakpios-0.7.1-RAK7394-arm64-lite.zip) |
