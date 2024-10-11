@@ -218,6 +218,7 @@ Detailed information about the RAK4630 BLE and LoRa antenna can be found on the 
   caption="nRF51840 and Module Pinout"
 />
 
+- [L10 Location](docs\Product-Categories\WisDuo\RAK4630-Module\Quickstart\#hardware-setup)
 
 #### Mechanical Characteristics
 

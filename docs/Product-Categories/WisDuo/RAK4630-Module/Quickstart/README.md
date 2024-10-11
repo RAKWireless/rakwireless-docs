@@ -59,6 +59,14 @@ In standard mode, you can use 3.3V power source to all voltage supply input.
   caption="RAK4630 Standard Mode"
 />
 
+To reduce power consumption when 3.3V is already supplied, deactivate the DC/DC converter on the nRF52840. This can be achieved by removing **L10** from the RAK4630 and supplying 3.3V to pins 43 (VDD_NRF) and 44 (VBAT_NRF). L10 should be accessible beneath the RF shielding with a soldering iron.
+
+<rk-img
+  src="/assets/images/wisduo/rak4630-module/quickstart/RAK4630_L10_location.png"
+  width="65%"
+  caption="L10 location"
+/>
+
 **2. High Voltage Mode**
 
 In high voltage mode, you can directly connect your external source (usually battery) to VBAT_NRF pin. VBAT_NRF should be higher than 3.3&nbsp;V which is the nominal operating VDD level and must be left floating. The maximum allowed voltage for VBAT_NRF is 5.5&nbsp;V. 
