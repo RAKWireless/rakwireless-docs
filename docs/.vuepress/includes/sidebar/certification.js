@@ -343,6 +343,21 @@ module.exports = {
                 collapsable: false
               },
               {
+                title: 'RAK5148',
+                path: '/Certification/wislink/?device=RAK5148',
+                collapsable: false
+              },
+              {
+                title: 'RAK7371',
+                path: '/Certification/wislink/?device=RAK7371',
+                collapsable: false
+              },
+              {
+                title: 'LX200V30',
+                path: '/Certification/wislink/?device=LX200V30',
+                collapsable: false
+              },
+              {
                 title: 'LX200V50',
                 path: '/Certification/wislink/?device=LX200V50',
                 collapsable: false
