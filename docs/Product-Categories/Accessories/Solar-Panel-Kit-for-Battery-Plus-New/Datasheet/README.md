@@ -28,7 +28,7 @@ With the included mounting kit, you can build and power an off-grid deployment s
 - Open circuit voltage (V<sub>oc</sub>): 24.4&nbsp;V
 - Max. power voltage (V<sub>mp</sub>): 20.5&nbsp;V
 - Max. power current (I<sub>mp</sub>): 3.90&nbsp;A
-- Dimensions: 795&nbsp;x&nbsp;580&nbsp;x&nbsp;25&nbsp;mm
+- Dimensions: 795&nbsp;x&nbsp;580&nbsp;x&nbsp;30&nbsp;mm
 - Operating temperature: -40°&nbsp;C to +85°&nbsp;C
 
 ## Specifications
@@ -43,7 +43,7 @@ With the included mounting kit, you can build and power an off-grid deployment s
 
 | Parameter                      | Value                                                         |
 | ------------------------------ | ------------------------------------------------------------- |
-| Dimensions (lwh)               | 795&nbsp;x&nbsp;580&nbsp;x&nbsp;25&nbsp;mm                    |
+| Dimensions (lwh)               | 795&nbsp;x&nbsp;580&nbsp;x&nbsp;30&nbsp;mm                    |
 | Solar cell type                | Monocrystalline Silicon                                       |
 | No. of cells                   | 36                                                            |
 | Front cover                    | Material: Low-Iron Tempered Glass <br> Thickness: 3.2&nbsp;mm |
