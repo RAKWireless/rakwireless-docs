@@ -30,22 +30,42 @@ IO.Box Desktop is a software application that will allow you to configure the de
 - <a href="https://downloads.rakwireless.com/#WisIO/" target="_blank">Linux</a>
 - <a href="https://downloads.rakwireless.com/#WisIO/" target="_blank">Mac</a>
 
-### Package Inclusion
+### Package Inclusions
+
+#### Variant for Wall Mounting
 
 <rk-img
-  src="/assets/images/wisnode/rak2461-n/quickstart/package-inclusions.png"
+  src="/assets/images/wisnode/rak2461-n/quickstart/package-inclusions1.png"
   width="70%"
-  caption="RAK2461 Package Inclusions"
+  caption="RAK2461 Package Inclusions 1"
 />
 
-- One (1) RAK2461 WisNode Bridge IO Lite
-- One (1) Mounting Kit
-- One (1) Screw Kit
-- One (1) LoRa Antenna
-- One (1) Power Adapter
-- One (1) USB Cable (Type C to Type A)
-- One (1) 4-Pin Terminal Block 
-- Two (2) 8-Pin Terminal Block
+#### Variant for DIN Rail Mounting
+
+<rk-img
+  src="/assets/images/wisnode/rak2461-n/quickstart/package-inclusions2.png"
+  width="70%"
+  caption="RAK2461 Package Inclusions 2"
+/>
+
+The package inclusions depend on the bundle you purchase.
+
++ **Variant for Wall Mounting**
+  + One (1) RAK2461 WisNode Bridge IO Lite (RS485-DIx4-DOx1 or RS485-DOx4)
+  + One (1) Screw Kit
+  + One (1) LoRa Antenna
+  + One (1) Power Adapter
+  + One (1) USB Cable (Type C to Type A)
+  + One (1) 4-Pin Terminal Block 
+  + Two (2) 8-Pin Terminal Block
++ **Variant for DIN Rail Mounting**
+  + One (1) RAK2461 WisNode Bridge IO Lite (RS485-DIx4-DOx1 or RS485-DOx4)
+  + One (1) DIN rail Mounting Kit
+  + One (1) LoRa Antenna
+  + One (1) Power Adapter
+  + One (1) USB Cable (Type C to Type A)
+  + One (1) 4-Pin Terminal Block 
+  + Two (2) 8-Pin Terminal Block
 
 ## Installation
 
@@ -56,7 +76,7 @@ RAK2461 allows for two installation methods: wall mounting and DIN rail installa
 1. Drill the wall corresponding to the device dimensions and insert the anchors in the holes.
 
 <rk-img
-  src="/assets/images/wisnode/rak2461-n/datasheet/mounting_wall_1.png"
+  src="/assets/images/wisnode/rak2461-n/quickstart/mounting_wall_1.png"
   width="100%"
   caption="Hole drilling"
 />
@@ -64,8 +84,8 @@ RAK2461 allows for two installation methods: wall mounting and DIN rail installa
 2. Fix the device to the wall with two tapping screws.
 
 <rk-img
-  src="/assets/images/wisnode/rak2461-n/datasheet/mounting_wall_2.png"
-  width="60%"
+  src="/assets/images/wisnode/rak2461-n/quickstart/mounting_wall_2.png"
+  width="40%"
   caption="Wall mounting"
 />
 
@@ -74,16 +94,16 @@ RAK2461 allows for two installation methods: wall mounting and DIN rail installa
 1. Attach the DIN rail mounting clip on the device with two M3*6 countersink screws.
 
 <rk-img
-  src="/assets/images/wisnode/rak2461-n/datasheet/mounting_din_3.png"
-  width="70%"
+  src="/assets/images/wisnode/rak2461-n/quickstart/mounting_din_3.png"
+  width="30%"
   caption="Attaching the clip"
 />
 
 2. Mount the device to the DIN rail.
 
 <rk-img
-  src="/assets/images/wisnode/rak2461-n/datasheet/mounting_din_4.png"
-  width="70%"
+  src="/assets/images/wisnode/rak2461-n/quickstart/mounting_din_4.png"
+  width="50%"
   caption="DIN rail mounting"
 />
 

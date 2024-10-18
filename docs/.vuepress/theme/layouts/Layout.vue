@@ -128,7 +128,7 @@ import { Screen } from 'quasar'
 import debounce from 'lodash.debounce'
 import RkFaqFooter from '../../components/RkFaqFooter.vue'
 import RkBanner from '@theme/components/RkBanner.vue'
-import RkBannerText from '@theme/components/RkBannerText.vue'
+// import RkBannerText from '@theme/components/RkBannerText.vue'
 
 function findPos(obj) {
     var curtop = 0;
@@ -156,7 +156,7 @@ export default {
     RkZoom,
     RkSearchBox,
     RkBanner,
-    RkBannerText
+    // RkBannerText
   },
   mixins:
     [ScrollMixin, TagsMixin, CommonMixin],
